@@ -199,6 +199,16 @@ public class ShowMap : MonoBehaviour
                             showMap.InstantiateObject(content, content.Attributes.GetNamedItem("Name").Value, content.Attributes.GetNamedItem("X").Value, content.Attributes.GetNamedItem("Y").Value);
                             showMap.actualObject = null;
                         }
+                        else if (content.Name == "Platform")
+                        {
+                            showMap.layer += 1;
+                            showMap.actualObject = new GameObject(content.Attributes.GetNamedItem("X").Value); //not sure why did i do this but it works.
+                            showMap.actualObject.name = "Platform";
+                            showMap.actualObject.transform.SetParent(showMap.part.transform);
+                            showMap.actualObject.transform.localPosition = new Vector3(0, 0, 0);
+                            showMap.InstantiateObject(content, content.Name, content.Attributes.GetNamedItem("X").Value, content.Attributes.GetNamedItem("Y").Value);
+                            showMap.actualObject = null;
+                        }
                     }
                 }
             }

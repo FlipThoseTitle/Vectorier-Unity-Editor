@@ -5,6 +5,7 @@ using System.IO;
 public class NameVariation : MonoBehaviour
 {
     public string nameString = ""; // string to be add behind the name of each files
+    public bool addInFront; // add infront instead of the back
 
     [MenuItem("Vectorier/Miscellaneous/Batch Rename")]
     static void RenameFiles()
@@ -24,6 +25,7 @@ public class NameVariation : MonoBehaviour
         }
 
         string nameString = fileRenamer.nameString;
+        bool addInFront = fileRenamer.addInFront;
 
         if (!Directory.Exists(folderPath))
         {
@@ -38,12 +40,24 @@ public class NameVariation : MonoBehaviour
             string fileName = Path.GetFileName(filePath);
             string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
             string fileExtension = Path.GetExtension(fileName);
-            string newFileName = fileNameWithoutExtension + nameString + fileExtension;
+            string newFileName;
+
+            if (addInFront)
+            {
+                // Add nameString to the front of the file name
+                newFileName = nameString + fileNameWithoutExtension + fileExtension;
+            }
+            else
+            {
+                // Add nameString to the back of the file name
+                newFileName = fileNameWithoutExtension + nameString + fileExtension;
+            }
 
             string newFilePath = Path.Combine(Path.GetDirectoryName(filePath), newFileName);
 
             File.Move(filePath, newFilePath);
         }
+
 
         Debug.Log("File renaming completed!");
     }

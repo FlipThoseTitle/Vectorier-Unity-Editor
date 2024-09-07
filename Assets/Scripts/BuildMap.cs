@@ -9,6 +9,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
+using System.Collections.Generic;
 
 
 // -=-=-=- //
@@ -308,17 +309,28 @@ public class BuildMap : MonoBehaviour
             }
 
             // Backdrop
+
+            // Get all GameObjects with tag "Backdrop", then arrange them based on sorting order
+            GameObject[] BackdropsInScene = GameObject.FindGameObjectsWithTag("Backdrop")
+                                        .OrderBy(obj => obj.GetComponent<SpriteRenderer>().sortingOrder)
+                                        .ToArray();
+
+            // Get all GameObjects with tag "Top Image", then arrange them based on sorting order
+            GameObject[] frontimagesInScene = GameObject.FindGameObjectsWithTag("Top Image")
+                                        .OrderBy(obj => obj.GetComponent<SpriteRenderer>().sortingOrder)
+                                        .ToArray();
+
             if (node.Attributes.GetNamedItem("Factor").Value == "0.5")
             {
                 //Write every GameObject with tag "Backdrop" in the build-map.xml
-                foreach (GameObject bdInScene in GameObject.FindGameObjectsWithTag("Backdrop"))
+                foreach (GameObject bdInScene in BackdropsInScene)
                 {
                     buildMap.ConvertToBackdrop(node, xml, bdInScene);
                 }
             }
             if (node.Attributes.GetNamedItem("Factor").Value == "1.001")
             {
-                foreach (GameObject frontimageInScene in GameObject.FindGameObjectsWithTag("Top Image"))
+                foreach (GameObject frontimageInScene in frontimagesInScene)
                 {
                     buildMap.ConvertToTopImage(node, xml, frontimageInScene);
                 }
@@ -1269,6 +1281,7 @@ public class BuildMap : MonoBehaviour
 
     void ConvertToDynamic(XmlNode node, XmlDocument xml, GameObject dynamicInScene, UnityEngine.Transform dynamicInSceneTransform)
     {
+
         // Dynamic component in the hierachy
         Dynamic dynamicComponent = dynamicInScene.GetComponent<Dynamic>();
 
@@ -1467,6 +1480,82 @@ public class BuildMap : MonoBehaviour
         // Create Content element
         XmlElement contentElement = xml.CreateElement("Content");
 
+        // image list for the dynamic
+        List<GameObject> ImageObjects = new List<GameObject>();
+
+        // add image to the list
+        foreach (UnityEngine.Transform child in dynamicInSceneTransform)
+        {
+            if (child.gameObject.CompareTag("Image"))
+            {
+                ImageObjects.Add(child.gameObject);
+            }
+        }
+
+        // sort the list based on order in layer
+        ImageObjects.Sort((a, b) =>
+        {
+            SpriteRenderer rendererA = a.GetComponent<SpriteRenderer>();
+            SpriteRenderer rendererB = b.GetComponent<SpriteRenderer>();
+
+            // Handle cases where SpriteRenderer might be null
+            int orderA = rendererA != null ? rendererA.sortingOrder : 0;
+            int orderB = rendererB != null ? rendererB.sortingOrder : 0;
+
+            return orderA.CompareTo(orderB);
+        });
+
+        foreach (GameObject imageObject in ImageObjects)
+        {
+            XmlElement ielement = xml.CreateElement("Image"); //Create a new node from scratch
+            ielement.SetAttribute("X", (imageObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+            ielement.SetAttribute("Y", (-imageObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+            ielement.SetAttribute("ClassName", Regex.Replace(imageObject.name, @" \((.*?)\)", string.Empty)); //Add a name
+            SpriteRenderer spriteRenderer = imageObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Image Size in Width and Height
+            {
+
+                Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                Vector3 scale = imageObject.transform.localScale; // Get the GameObject scale
+
+                // Retrieve the image resolution of the sprite
+                float width = bounds.size.x * 100;
+                float height = bounds.size.y * 100;
+
+                // Set the width and height accordingly to the scale in the editor
+                ielement.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                ielement.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                // Set the Native resolution of sprite
+                ielement.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
+                ielement.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
+
+                // Check the rotation
+                if (Mathf.Abs(imageObject.transform.eulerAngles.z) > Mathf.Epsilon || spriteRenderer.flipX || spriteRenderer.flipY)
+                {
+                    // Convert the rotation to the Marmalade transformation matrix
+                    float A, B, C, D, Tx, Ty;
+                    ConvertToMarmaladeMatrix(imageObject.gameObject, width * scale.x, height * scale.y, out A, out B, out C, out D, out Tx, out Ty);
+
+                    XmlElement matrixElement = xml.CreateElement("Matrix");
+                    matrixElement.SetAttribute("A", A.ToString());
+                    matrixElement.SetAttribute("B", B.ToString());
+                    matrixElement.SetAttribute("C", C.ToString());
+                    matrixElement.SetAttribute("D", D.ToString());
+                    matrixElement.SetAttribute("Tx", Tx.ToString());
+                    matrixElement.SetAttribute("Ty", Ty.ToString());
+
+                    XmlElement propertiesElement1 = xml.CreateElement("Properties");
+                    XmlElement staticElement = xml.CreateElement("Static");
+                    staticElement.AppendChild(matrixElement);
+                    propertiesElement1.AppendChild(staticElement);
+                    ielement.AppendChild(propertiesElement1);
+                }
+
+            }
+            contentElement.AppendChild(ielement);
+        }
+
         foreach (UnityEngine.Transform childObject in dynamicInSceneTransform)
         {
             //check if the gameobject has specific tag
@@ -1481,57 +1570,6 @@ public class BuildMap : MonoBehaviour
                     objElement.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
                     contentElement.AppendChild(objElement);
                 }
-            }
-            else if (childObject.gameObject.CompareTag("Image"))
-            {
-                XmlElement ielement = xml.CreateElement("Image"); //Create a new node from scratch
-                ielement.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                ielement.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-                ielement.SetAttribute("ClassName", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add a name
-                SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
-                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Image Size in Width and Height
-                {
-
-                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
-                    Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
-
-                    // Retrieve the image resolution of the sprite
-                    float width = bounds.size.x * 100;
-                    float height = bounds.size.y * 100;
-
-                    // Set the width and height accordingly to the scale in the editor
-                    ielement.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                    ielement.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
-
-                    // Set the Native resolution of sprite
-                    ielement.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
-                    ielement.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
-
-                    // Check the rotation
-                    if (Mathf.Abs(childObject.transform.eulerAngles.z) > Mathf.Epsilon || spriteRenderer.flipX || spriteRenderer.flipY)
-                    {
-                        // Convert the rotation to the Marmalade transformation matrix
-                        float A, B, C, D, Tx, Ty;
-                        ConvertToMarmaladeMatrix(childObject.gameObject, width * scale.x, height * scale.y, out A, out B, out C, out D, out Tx, out Ty);
-
-                        XmlElement matrixElement = xml.CreateElement("Matrix");
-                        matrixElement.SetAttribute("A", A.ToString());
-                        matrixElement.SetAttribute("B", B.ToString());
-                        matrixElement.SetAttribute("C", C.ToString());
-                        matrixElement.SetAttribute("D", D.ToString());
-                        matrixElement.SetAttribute("Tx", Tx.ToString());
-                        matrixElement.SetAttribute("Ty", Ty.ToString());
-
-                        XmlElement propertiesElement1 = xml.CreateElement("Properties");
-                        XmlElement staticElement = xml.CreateElement("Static");
-                        staticElement.AppendChild(matrixElement);
-                        propertiesElement1.AppendChild(staticElement);
-                        ielement.AppendChild(propertiesElement1);
-                    }
-
-
-                }
-                contentElement.AppendChild(ielement);
             }
             else if (childObject.gameObject.CompareTag("Platform"))
             {
@@ -1825,6 +1863,43 @@ public class BuildMap : MonoBehaviour
                     }
 
                     contentElement.AppendChild(Modelelement);
+                }
+            }
+            else if (childObject.gameObject.CompareTag("Animation"))
+            {
+                AnimationProperties AnimationComponent = childObject.GetComponent<AnimationProperties>(); // Animation Properties Component
+
+                if (childObject.name != "Camera")
+                {
+                    XmlElement animationElement = xml.CreateElement("Animation"); //Create a new node from scratch
+                    animationElement.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                    animationElement.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+                    animationElement.SetAttribute("Width", AnimationComponent.Width); //Add a Width
+                    animationElement.SetAttribute("Height", AnimationComponent.Height); //Add a Height
+                    animationElement.SetAttribute("Type", AnimationComponent.Type); //Type (default: 1)
+
+
+                    if (!string.IsNullOrEmpty(AnimationComponent.Direction))
+                    {
+                        animationElement.SetAttribute("Direction", AnimationComponent.Direction); //Direction (ex: Direction="10|-1.5")
+                    }
+
+                    if (!string.IsNullOrEmpty(AnimationComponent.Acceleration))
+                    {
+                        animationElement.SetAttribute("Acceleration", AnimationComponent.Acceleration); //Acceleration (ex: Acceleration="0.02|-0.1")
+                    }
+
+
+                    animationElement.SetAttribute("ScaleX", AnimationComponent.ScaleX); //Add a ScaleX
+                    animationElement.SetAttribute("ScaleY", AnimationComponent.ScaleY); //Add a ScaleY
+
+                    if (!string.IsNullOrEmpty(AnimationComponent.Time))
+                    {
+                        animationElement.SetAttribute("Time", AnimationComponent.Time); //Add a Time
+                    }
+
+                    animationElement.SetAttribute("ClassName", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add a name
+                    contentElement.AppendChild(animationElement);
                 }
             }
 

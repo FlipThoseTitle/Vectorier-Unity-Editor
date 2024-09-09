@@ -907,6 +907,9 @@ public class BuildMap : MonoBehaviour
                 ielement.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
                 ielement.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
 
+                XmlElement propertiesElement = xml.CreateElement("Properties");
+                XmlElement staticElement = xml.CreateElement("Static");
+
                 // Check the rotation
                 if (Mathf.Abs(imageInScene.transform.eulerAngles.z) > Mathf.Epsilon || spriteRenderer.flipX || spriteRenderer.flipY)
                 {
@@ -922,9 +925,16 @@ public class BuildMap : MonoBehaviour
                     matrixElement.SetAttribute("Tx", Tx.ToString());
                     matrixElement.SetAttribute("Ty", Ty.ToString());
 
-                    XmlElement propertiesElement = xml.CreateElement("Properties");
-                    XmlElement staticElement = xml.CreateElement("Static");
                     staticElement.AppendChild(matrixElement);
+                    propertiesElement.AppendChild(staticElement);
+                    ielement.AppendChild(propertiesElement);
+                }
+                Color color = spriteRenderer.color;
+                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000)
+                {
+                    XmlElement colorElement = xml.CreateElement("StartColor");
+                    colorElement.SetAttribute("Color", "#" + ColorUtility.ToHtmlStringRGB(color).ToString() + "FF");
+                    staticElement.AppendChild(colorElement);
                     propertiesElement.AppendChild(staticElement);
                     ielement.AppendChild(propertiesElement);
                 }
@@ -1530,6 +1540,9 @@ public class BuildMap : MonoBehaviour
                 ielement.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
                 ielement.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
 
+                XmlElement propertiesElement1 = xml.CreateElement("Properties");
+                XmlElement staticElement = xml.CreateElement("Static");
+
                 // Check the rotation
                 if (Mathf.Abs(imageObject.transform.eulerAngles.z) > Mathf.Epsilon || spriteRenderer.flipX || spriteRenderer.flipY)
                 {
@@ -1545,11 +1558,18 @@ public class BuildMap : MonoBehaviour
                     matrixElement.SetAttribute("Tx", Tx.ToString());
                     matrixElement.SetAttribute("Ty", Ty.ToString());
 
-                    XmlElement propertiesElement1 = xml.CreateElement("Properties");
-                    XmlElement staticElement = xml.CreateElement("Static");
                     staticElement.AppendChild(matrixElement);
                     propertiesElement1.AppendChild(staticElement);
                     ielement.AppendChild(propertiesElement1);
+                }
+                Color color = spriteRenderer.color;
+                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000)
+                {
+                    XmlElement colorElement = xml.CreateElement("StartColor");
+                    colorElement.SetAttribute("Color", "#" + ColorUtility.ToHtmlStringRGB(color).ToString() + "FF");
+                    staticElement.AppendChild(colorElement);
+                    propertiesElement.AppendChild(staticElement);
+                    ielement.AppendChild(propertiesElement);
                 }
 
             }

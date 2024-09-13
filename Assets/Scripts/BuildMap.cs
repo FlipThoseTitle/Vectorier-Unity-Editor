@@ -245,6 +245,18 @@ public class BuildMap : MonoBehaviour
                     buildMap.ConvertToPlatform(node, xml, platformInScene);
                 }
 
+                // Trapezoid
+                foreach (GameObject trapezoidInScene in GameObject.FindGameObjectsWithTag("Trapezoid"))
+                {
+                    UnityEngine.Transform parent = trapezoidInScene.transform.parent;
+                    if (parent != null && parent.CompareTag("Dynamic"))
+                    {
+                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
+                        continue;
+                    }
+                    buildMap.ConvertToTrapezoid(node, xml, trapezoidInScene);
+                }
+
                 // Trigger
                 foreach (GameObject triggerInScene in GameObject.FindGameObjectsWithTag("Trigger"))
                 {
@@ -1031,7 +1043,7 @@ public class BuildMap : MonoBehaviour
         if (debugObjectWriting)
             Debug.Log("Writing object : " + Regex.Replace(platformInScene.name, @" \((.*?)\)", string.Empty));
 
-        if (platformInScene.name != "trapezoid_type2" && platformInScene.name != "trapezoid_type1") // Use a texture called "collision" which should come with this buildmap update folder.
+        if (platformInScene.name != "Camera") // Use a texture called "collision" which should come with this buildmap update folder.
         {
             XmlElement P_element = xml.CreateElement("Platform"); //Create a new node from scratch
             P_element.SetAttribute("X", (platformInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -1056,30 +1068,69 @@ public class BuildMap : MonoBehaviour
             node.FirstChild.AppendChild(P_element); //Place it into the Object node
             xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
         }
+    }
 
-        // Trapezoid Slope (Type 2 is Downhill, Type 1 is Uphill)
-        else if (platformInScene.name == "trapezoid_type2")
+
+    void ConvertToTrapezoid(XmlNode node, XmlDocument xml, GameObject trapezoidInScene) // Trapezoid Collision (Slope)
+    {
+        //Debug in log every platform it writes
+        if (debugObjectWriting)
+            Debug.Log("Writing object : " + Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty));
+
+        if (Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty) == "trapezoid_type1") // Slope Default
         {
             XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
-            T_element.SetAttribute("X", (platformInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-            T_element.SetAttribute("Y", (-platformInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-            T_element.SetAttribute("Width", "1000"); //Width of the Trapezoid
-            T_element.SetAttribute("Height", "600"); //Height of the Trapezoid
-            T_element.SetAttribute("Height1", "100"); //Height1 of the Trapezoid
-            T_element.SetAttribute("Type", "2"); //Type of the Trapezoid
+            T_element.SetAttribute("X", (trapezoidInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+            T_element.SetAttribute("Y", (-trapezoidInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+            SpriteRenderer spriteRenderer = trapezoidInScene.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+            {
+
+                Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                Vector3 scale = trapezoidInScene.transform.localScale; // Get the GameObject scale
+
+                // Retrieve the image resolution of the sprite
+                float width = bounds.size.x * 100;
+                float height = bounds.size.y * 100;
+
+                // Set the width and height accordingly to the scale in the editor
+                T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Trapezoid
+                T_element.SetAttribute("Height", "1"); //Height of the Trapezoid
+                T_element.SetAttribute("Height1", (height * scale.y + 1).ToString()); //Height1 of the Trapezoid
+
+            }
+            T_element.SetAttribute("Type", "1"); //Type of the Trapezoid
+
             node.FirstChild.AppendChild(T_element); //Place it into the Object node
             xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
         }
 
-        else if (platformInScene.name == "trapezoid_type1")
+        else if (Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty) == "trapezoid_type2") // Slope Mirrored
         {
             XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
-            T_element.SetAttribute("X", (platformInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-            T_element.SetAttribute("Y", (-platformInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-            T_element.SetAttribute("Width", "1000"); //Width of the Trapezoid
-            T_element.SetAttribute("Height", "250"); //Height of the Trapezoid
-            T_element.SetAttribute("Height1", "750"); //Height1 of the Trapezoid
-            T_element.SetAttribute("Type", "1"); //Type of the Trapezoid
+            T_element.SetAttribute("X", (trapezoidInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+            T_element.SetAttribute("Y", (-trapezoidInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+            SpriteRenderer spriteRenderer = trapezoidInScene.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+            {
+
+                Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                Vector3 scale = trapezoidInScene.transform.localScale; // Get the GameObject scale
+
+                // Retrieve the image resolution of the sprite
+                float width = bounds.size.x * 100;
+                float height = bounds.size.y * 100;
+
+                // Set the width and height accordingly to the scale in the editor
+                T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Trapezoid
+                T_element.SetAttribute("Height", (height * scale.y + 1).ToString()); //Height of the Trapezoid
+                T_element.SetAttribute("Height1", "1"); //Height1 of the Trapezoid
+
+            }
+            T_element.SetAttribute("Type", "2"); //Type of the Trapezoid
+
             node.FirstChild.AppendChild(T_element); //Place it into the Object node
             xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
         }
@@ -1591,10 +1642,11 @@ public class BuildMap : MonoBehaviour
                     contentElement.AppendChild(objElement);
                 }
             }
+
             else if (childObject.gameObject.CompareTag("Platform"))
             {
                 //Platform
-                if (childObject.name != "trapezoid_type2" && childObject.name != "trapezoid_type1" && childObject.gameObject.CompareTag("Platform")) // Use a texture called "collision" which should come with this buildmap update folder.
+                if (childObject.name != "Camera") // Use a texture called "collision" which should come with this buildmap update folder.
                 {
                     XmlElement P_element = xml.CreateElement("Platform"); //Create a new node from scratch
                     P_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -1618,31 +1670,68 @@ public class BuildMap : MonoBehaviour
                     }
                     contentElement.AppendChild(P_element);
                 }
-                // Trapezoid Slope (Type 2 is Downhill, Type 1 is Uphill)
-                else if (childObject.name == "trapezoid_type2" && childObject.CompareTag("Platform"))
+            }
+
+            else if (childObject.gameObject.CompareTag("Trapezoid"))
+            {
+                // Trapezoid
+                if (Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty) == "trapezoid_type1") // Slope Default
                 {
                     XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
                     T_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
                     T_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-                    T_element.SetAttribute("Width", "1000"); //Width of the Trapezoid
-                    T_element.SetAttribute("Height", "600"); //Height of the Trapezoid
-                    T_element.SetAttribute("Height1", "100"); //Height1 of the Trapezoid
-                    T_element.SetAttribute("Type", "2"); //Type of the Trapezoid
+
+                    SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                    {
+
+                        Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                        Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
+
+                        // Retrieve the image resolution of the sprite
+                        float width = bounds.size.x * 100;
+                        float height = bounds.size.y * 100;
+
+                        // Set the width and height accordingly to the scale in the editor
+                        T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Trapezoid
+                        T_element.SetAttribute("Height", "1"); //Height of the Trapezoid
+                        T_element.SetAttribute("Height1", (height * scale.y + 1).ToString()); //Height1 of the Trapezoid
+
+                    }
+                    T_element.SetAttribute("Type", "1"); //Type of the Trapezoid
+
                     contentElement.AppendChild(T_element);
                 }
 
-                else if (childObject.name == "trapezoid_type1" && childObject.CompareTag("Platform"))
+                else if (Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty) == "trapezoid_type2") // Slope Mirrored
                 {
                     XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
                     T_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
                     T_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-                    T_element.SetAttribute("Width", "1000"); //Width of the Trapezoid
-                    T_element.SetAttribute("Height", "250"); //Height of the Trapezoid
-                    T_element.SetAttribute("Height1", "750"); //Height1 of the Trapezoid
-                    T_element.SetAttribute("Type", "1"); //Type of the Trapezoid
+
+                    SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                    {
+
+                        Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                        Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
+
+                        // Retrieve the image resolution of the sprite
+                        float width = bounds.size.x * 100;
+                        float height = bounds.size.y * 100;
+
+                        // Set the width and height accordingly to the scale in the editor
+                        T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Trapezoid
+                        T_element.SetAttribute("Height", (height * scale.y + 1).ToString()); //Height of the Trapezoid
+                        T_element.SetAttribute("Height1", "1"); //Height1 of the Trapezoid
+
+                    }
+                    T_element.SetAttribute("Type", "2"); //Type of the Trapezoid
+
                     contentElement.AppendChild(T_element);
                 }
             }
+
             else if (childObject.gameObject.CompareTag("Area"))
             {
                 XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
@@ -1669,6 +1758,7 @@ public class BuildMap : MonoBehaviour
                 A_element.SetAttribute("Type", "Animation"); //Type="Animation"/>
                 contentElement.AppendChild(A_element);
             }
+
             else if (childObject.gameObject.CompareTag("Trigger"))
             {
                 DynamicTrigger dynamicTrigger = childObject.GetComponent<DynamicTrigger>();
@@ -1779,6 +1869,7 @@ public class BuildMap : MonoBehaviour
                     contentElement.AppendChild(T_element);
 
                 }
+
                 else if (dynamicTrigger == null)
                 {
                     if (childObject.name != "Camera")
@@ -1823,6 +1914,7 @@ public class BuildMap : MonoBehaviour
                             }
                             contentElement.AppendChild(T_element);
                         }
+
                         else //continues as normal without any setting attached
                         {
                             XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
@@ -1865,6 +1957,7 @@ public class BuildMap : MonoBehaviour
                 }
 
             }
+
             else if (childObject.gameObject.CompareTag("Model"))
             {
                 if (childObject.name != "Camera")
@@ -1885,6 +1978,7 @@ public class BuildMap : MonoBehaviour
                     contentElement.AppendChild(Modelelement);
                 }
             }
+
             else if (childObject.gameObject.CompareTag("Animation"))
             {
                 AnimationProperties AnimationComponent = childObject.GetComponent<AnimationProperties>(); // Animation Properties Component

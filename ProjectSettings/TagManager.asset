@@ -7,6 +7,7 @@ TagManager:
   - Object
   - Image
   - Platform
+  - Trapezoid
   - Area
   - Trigger
   - Backdrop

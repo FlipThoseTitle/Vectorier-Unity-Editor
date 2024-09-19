@@ -942,10 +942,14 @@ public class BuildMap : MonoBehaviour
                     ielement.AppendChild(propertiesElement);
                 }
                 Color color = spriteRenderer.color;
-                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000)
+                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
                 {
+                    string alphaHex = Mathf.RoundToInt(color.a * 255).ToString("X2");
+                    string rgbaColor = ColorUtility.ToHtmlStringRGB(color) + alphaHex;
+
                     XmlElement colorElement = xml.CreateElement("StartColor");
-                    colorElement.SetAttribute("Color", "#" + ColorUtility.ToHtmlStringRGB(color).ToString() + "FF");
+                    colorElement.SetAttribute("Color", $"#{rgbaColor}");
+
                     staticElement.AppendChild(colorElement);
                     propertiesElement.AppendChild(staticElement);
                     ielement.AppendChild(propertiesElement);
@@ -1614,10 +1618,14 @@ public class BuildMap : MonoBehaviour
                     ielement.AppendChild(propertiesElement1);
                 }
                 Color color = spriteRenderer.color;
-                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000)
+                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
                 {
+                    string alphaHex = Mathf.RoundToInt(color.a * 255).ToString("X2");
+                    string rgbaColor = ColorUtility.ToHtmlStringRGB(color) + alphaHex;
+
                     XmlElement colorElement = xml.CreateElement("StartColor");
-                    colorElement.SetAttribute("Color", "#" + ColorUtility.ToHtmlStringRGB(color).ToString() + "FF");
+                    colorElement.SetAttribute("Color", $"#{rgbaColor}");
+
                     staticElement.AppendChild(colorElement);
                     propertiesElement.AppendChild(staticElement);
                     ielement.AppendChild(propertiesElement);

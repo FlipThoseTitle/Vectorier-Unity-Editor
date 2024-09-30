@@ -17,6 +17,7 @@ TagManager:
   - Top Image
   - Model
   - Animation
+  - Unused
   layers:
   - Default
   - TransparentFX

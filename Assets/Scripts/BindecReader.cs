@@ -6,7 +6,9 @@ public class BindecReader : EditorWindow
 {
     private string filePath = "";
     private bool incrementNames = false;
+    private bool useSF2Rig = false;
 
+    // node name for Vector
     private static readonly string[] predefinedNames = new string[]
     {
         "NHip_1", "NHip_2", "NStomach", "NChest", "NNeck", "NShoulder_1", "NShoulder_2",
@@ -15,6 +17,21 @@ public class BindecReader : EditorWindow
         "NKnucklesS_1", "NKnuckles_2", "NFingertips_2", "NKnucklesS_2", "NHead", "NTop", "NChestS_1", "NChestS_2",
         "NStomachS_1", "NStomachS_2", "NChestF", "NStomachF", "NPelvisF", "NHeadS_1", "NHeadS_2", "NHeadF", "NPivot",
         "DetectorH", "DetectorV", "COM", "Camera"
+    };
+
+    // node name for Shadow Fight 2
+    private static readonly string[] predefinedNamesSF2 = new string[]
+    {
+        "NTop", "NNeck", "NShoulder_2", "NShoulder_1", "NElbow_2", "NElbow_1", "NWrist_2", "NWrist_1",
+        "NFingertipsSS_2", "NFingertipsSS_1", "NHip_2", "NHip_1", "NKnee_2", "NKnee_1", "NAnkle_2",
+        "NAnkle_1", "NToe_2", "NToe_1", "NPivot", "Weapon-Node1_1", "Weapon-Node2_1", "Weapon-Node3_1",
+        "Weapon-Node4_1", "Weapon-Node1_2", "Weapon-Node2_2", "Weapon-Node3_2", "Weapon-Node4_2",
+        "NStomach", "NChest", "NToeTip_2", "NHeel_2", "NHeel_1", "NToeS_2", "NToeTip_1", "NToeS_1",
+        "NKnuckles_2", "NKnucklesS_2", "NKnuckles_1", "NKnucklesS_1", "NFingertips_2", "NFingertips_1",
+        "NFingertipsS_2", "NFingertipsS_1", "NHead", "NChestS_2", "NChestS_1", "NStomachS_2",
+        "NStomachS_1", "NChestF", "NStomachF", "NPelvisF", "NHeadS_2", "NHeadS_1", "NHeadF", "COM",
+        "MacroNode1_2", "MacroNode2_2", "MacroNode3_2", "MacroNode4_2", "MacroNode5_2", "MacroNode6_2",
+        "MacroNode1_1", "MacroNode2_1", "MacroNode3_1", "MacroNode4_1", "MacroNode5_1", "MacroNode6_1"
     };
 
     [MenuItem("Vectorier/Miscellaneous/Bin/Bindec Read")]
@@ -36,13 +53,16 @@ public class BindecReader : EditorWindow
 
         incrementNames = GUILayout.Toggle(incrementNames, "Increment Sphere Names");
 
+        // Add checkbox for Use SF2 Rig
+        useSF2Rig = GUILayout.Toggle(useSF2Rig, "Use SF2 Rig");
+
         if (!string.IsNullOrEmpty(filePath) && GUILayout.Button("Read and Place Objects"))
         {
-            ReadFileAndPlaceObjects(filePath, incrementNames);
+            ReadFileAndPlaceObjects(filePath, incrementNames, useSF2Rig);
         }
     }
 
-    private static void ReadFileAndPlaceObjects(string path, bool incrementNames)
+    private static void ReadFileAndPlaceObjects(string path, bool incrementNames, bool useSF2Rig)
     {
         if (!File.Exists(path))
         {
@@ -51,13 +71,14 @@ public class BindecReader : EditorWindow
         }
 
         string[] lines = File.ReadAllLines(path);
-        int frameIndex = 1; // Frame naming starts from 1
+        int frameIndex = 1; // frame starts from 1
+
+        string[] selectedNames = useSF2Rig ? predefinedNamesSF2 : predefinedNames;
 
         foreach (string line in lines)
         {
             if (line.Contains("END"))
             {
-                // Create a parent GameObject for each line
                 GameObject parentObject = new GameObject("Frame" + frameIndex);
                 frameIndex++;
 
@@ -73,16 +94,15 @@ public class BindecReader : EditorWindow
 
                         if (incrementNames)
                         {
-                            if (i < predefinedNames.Length)
+                            if (i < selectedNames.Length)
                             {
-                                sphere.name = predefinedNames[i];
+                                sphere.name = selectedNames[i];
                             }
                             else
                             {
-                                sphere.name = "Sphere_" + (i + 1); // Default naming if names run out
+                                sphere.name = "Sphere_" + (i + 1); // name to default if node name ran out
                             }
                         }
-                        // Else, keep the default name
                     }
                 }
             }

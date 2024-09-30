@@ -140,6 +140,9 @@ public class BuildMap : MonoBehaviour
     public bool debugObjectWriting;
     public bool hunterPlaced;
 
+    [Tooltip("Divide backdrop's position by 2.")]
+    public bool divideBackdropsPositions = true;
+
 
     // -=-=-=- //
 
@@ -355,6 +358,7 @@ public class BuildMap : MonoBehaviour
             buildMap.StartDzip(useDZ);
             buildMap.hunterPlaced = false;
         }
+
         
 
         // Show Stopwatch
@@ -850,21 +854,36 @@ public class BuildMap : MonoBehaviour
 
         if (bdInScene.name != "Camera")
         {
+            // Alternative backdrops scaling
+
+            // ugly
+
+            BuildMap buildMapInstance = FindObjectOfType<BuildMap>();
+            Vector3 DefaultPosition = bdInScene.transform.position;
+            float positionX = DefaultPosition.x;
+            float positionY = DefaultPosition.y;
+
+            if (buildMapInstance != null && buildMapInstance.divideBackdropsPositions)
+            {
+                positionX /= 2;
+                positionY /= 2;
+            }
+
             if (spriteRenderer == null)
             {
                 XmlElement BD_element = xml.CreateElement("Object"); //Create a new node from scratch
                 BD_element.SetAttribute("Name", Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
-                BD_element.SetAttribute("X", (bdInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                BD_element.SetAttribute("Y", (-bdInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-
+                BD_element.SetAttribute("X", (positionX * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                BD_element.SetAttribute("Y", (-positionY * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
                 node.FirstChild.AppendChild(BD_element); //Place it into the Object node
                 xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
             }
+
             else if (spriteRenderer.sprite != null)
             {
                 XmlElement BD_element = xml.CreateElement("Image"); //Create a new node from scratch
-                BD_element.SetAttribute("X", (bdInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                BD_element.SetAttribute("Y", (-bdInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+                BD_element.SetAttribute("X", (positionX * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                BD_element.SetAttribute("Y", (-positionY * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
                 BD_element.SetAttribute("ClassName", Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty)); //Add a name
 
                 Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
@@ -884,8 +903,11 @@ public class BuildMap : MonoBehaviour
 
                 node.FirstChild.AppendChild(BD_element); //Place it into the Object node
                 xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
+
             }
+
         }
+
     }
 
     void ConvertToImage(XmlNode node, XmlDocument xml, GameObject imageInScene)

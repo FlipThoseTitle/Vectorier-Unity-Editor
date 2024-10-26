@@ -140,8 +140,8 @@ public class BuildMap : MonoBehaviour
     public bool debugObjectWriting;
     public bool hunterPlaced;
 
-    [Tooltip("Divide backdrop's position by 2.")]
-    public bool divideBackdropsPositions = true;
+    [Tooltip("Divide Gameobject's position by object factor.")]
+    public bool correctFactorPosition = true;
 
 
     // -=-=-=- //
@@ -190,10 +190,15 @@ public class BuildMap : MonoBehaviour
         XmlDocument xml = new XmlDocument();
         xml.Load(Application.dataPath + "/XML/build-map.xml");
 
+        XmlNode rootNode = xml.DocumentElement.SelectSingleNode("/Root/Track");
+
         //Search for the selected object in the object.xml
-        foreach (XmlNode node in xml.DocumentElement.SelectSingleNode("/Root/Track"))
+        foreach (XmlNode node in rootNode)
         {
-            if (node.Attributes.GetNamedItem("Factor").Value == "1")
+
+            string factorValue = node.Attributes.GetNamedItem("Factor").Value;
+
+            if (factorValue == "1")
             {
 
                 //Set the properties into the level
@@ -335,15 +340,52 @@ public class BuildMap : MonoBehaviour
                                         .OrderBy(obj => obj.GetComponent<SpriteRenderer>().sortingOrder)
                                         .ToArray();
 
-            if (node.Attributes.GetNamedItem("Factor").Value == "0.5")
+            //Write every GameObject with tag "Backdrop" in the build-map.xml
+            if (factorValue == "0.1")
             {
-                //Write every GameObject with tag "Backdrop" in the build-map.xml
                 foreach (GameObject bdInScene in BackdropsInScene)
                 {
-                    buildMap.ConvertToBackdrop(node, xml, bdInScene);
+                    SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_0.1")
+                    {
+                        buildMap.ConvertToBackdrop(node, xml, bdInScene, 0.1f);
+                    }
                 }
             }
-            if (node.Attributes.GetNamedItem("Factor").Value == "1.001")
+            if (factorValue == "0.25")
+            {
+                foreach (GameObject bdInScene in BackdropsInScene)
+                {
+                    SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_0.25")
+                    {
+                        buildMap.ConvertToBackdrop(node, xml, bdInScene, 0.25f);
+                    }
+                }
+            }
+            if (factorValue == "0.5")
+            {
+                foreach (GameObject bdInScene in BackdropsInScene)
+                {
+                    SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_0.5" || spriteRenderer.sortingLayerName == "Default")
+                    {
+                        buildMap.ConvertToBackdrop(node, xml, bdInScene, 0.5f);
+                    }
+                }
+            }
+            if (factorValue == "0.8")
+            {
+                foreach (GameObject bdInScene in BackdropsInScene)
+                {
+                    SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_0.8")
+                    {
+                        buildMap.ConvertToBackdrop(node, xml, bdInScene, 0.8f);
+                    }
+                }
+            }
+            if (factorValue == "1.001")
             {
                 foreach (GameObject frontimageInScene in frontimagesInScene)
                 {
@@ -657,13 +699,23 @@ public class BuildMap : MonoBehaviour
             triggerContentElement.AppendChild(initElement);
 
             // create template element inside content element
-            XmlElement templateElement = xml.CreateElement("Loop");
-            templateElement.SetAttribute("Template", "Respawn_OnScreen.Player");
-            XmlElement templateElement2 = xml.CreateElement("Loop");
-            templateElement2.SetAttribute("Template", "Respawn_OnScreen.Timeout");
+            if (RespawnComponent.RespawnOnScreen)
+            {
+                XmlElement templateElement = xml.CreateElement("Loop");
+                templateElement.SetAttribute("Template", "Respawn_OnScreen.Player");
+                XmlElement templateElement2 = xml.CreateElement("Loop");
+                templateElement2.SetAttribute("Template", "Respawn_OnScreen.Timeout");
+                triggerContentElement.AppendChild(templateElement);
+                triggerContentElement.AppendChild(templateElement2);
+            }
+            else
+            {
+                XmlElement templateElement = xml.CreateElement("Template");
+                templateElement.SetAttribute("Name", "Respawn_OnScreen");
+                triggerContentElement.AppendChild(templateElement);
+            }
 
-            triggerContentElement.AppendChild(templateElement);
-            triggerContentElement.AppendChild(templateElement2);
+            
             triggerElement.AppendChild(triggerContentElement);
             contentElement.AppendChild(triggerElement);
             objectElement.AppendChild(contentElement);
@@ -843,7 +895,7 @@ public class BuildMap : MonoBehaviour
     }
 
 
-    void ConvertToBackdrop(XmlNode node, XmlDocument xml, GameObject bdInScene)
+    void ConvertToBackdrop(XmlNode node, XmlDocument xml, GameObject bdInScene, float FactorAmount)
     {
         //Debug in log every backdrop it writes
         if (debugObjectWriting)
@@ -856,17 +908,15 @@ public class BuildMap : MonoBehaviour
         {
             // Alternative backdrops scaling
 
-            // ugly
-
             BuildMap buildMapInstance = FindObjectOfType<BuildMap>();
             Vector3 DefaultPosition = bdInScene.transform.position;
             float positionX = DefaultPosition.x;
             float positionY = DefaultPosition.y;
 
-            if (buildMapInstance != null && buildMapInstance.divideBackdropsPositions)
+            if (buildMapInstance != null && buildMapInstance.correctFactorPosition)
             {
-                positionX /= 2;
-                positionY /= 2;
+                positionX /= (1 / FactorAmount);
+                positionY /= (1 / FactorAmount);
             }
 
             if (spriteRenderer == null)

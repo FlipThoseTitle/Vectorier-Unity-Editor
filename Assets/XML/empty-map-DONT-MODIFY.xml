@@ -24,7 +24,22 @@
         <Image X="3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
       </Content>
     </Object>
+	<Object Factor="0.1">
+      <Content>
+	    
+      </Content>
+    </Object>
+	<Object Factor="0.25">
+      <Content>
+	    
+      </Content>
+    </Object>
     <Object Factor="0.5">
+      <Content>
+	    
+      </Content>
+    </Object>
+	<Object Factor="0.8">
       <Content>
 	    
       </Content>
@@ -36,6 +51,7 @@
     </Object>
     <Object Factor="1.001">
 	  <Content>
+	  
 	  </Content>
 	</Object>
   </Track>

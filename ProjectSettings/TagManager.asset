@@ -52,6 +52,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Factor_0.1
+    uniqueID: 4062569445
+    locked: 0
+  - name: Factor_0.25
+    uniqueID: 1211513949
+    locked: 0
+  - name: Factor_0.5
+    uniqueID: 355133127
+    locked: 0
+  - name: Factor_0.8
+    uniqueID: 3195460675
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

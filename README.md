@@ -3,6 +3,9 @@ Vectorier-Unity-Editor is an level editor for the game Vector using the Unity En
 
 A Discord server is open for the project : https://discord.com/invite/pVRuFBVwC2
 
+![image](https://github.com/user-attachments/assets/d5edd083-b504-49aa-a39b-9839373dd1f7)
+
+
 # Features
  * Object importer
  * Level importer

@@ -1122,8 +1122,8 @@ public class BuildMap : MonoBehaviour
         if (platformInScene.name != "Camera") // Use a texture called "collision" which should come with this buildmap update folder.
         {
             XmlElement P_element = xml.CreateElement("Platform"); //Create a new node from scratch
-            P_element.SetAttribute("X", (platformInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-            P_element.SetAttribute("Y", (-platformInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+            P_element.SetAttribute("X", (Mathf.Round(platformInScene.transform.position.x * 100f)).ToString("F2", CultureInfo.InvariantCulture)); //Add X position (Refit into the Vector units)
+            P_element.SetAttribute("Y", (Mathf.Round(-platformInScene.transform.position.y * 100f)).ToString("F2", CultureInfo.InvariantCulture)); // Add Y position (Negative because Vector see the world upside down)
 
             SpriteRenderer spriteRenderer = platformInScene.GetComponent<SpriteRenderer>();
             if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
@@ -1136,9 +1136,13 @@ public class BuildMap : MonoBehaviour
                 float width = bounds.size.x * 100;
                 float height = bounds.size.y * 100;
 
+                // Round the width and height to the nearest integer
+                int finalWidth = Mathf.RoundToInt(width * scale.x);
+                int finalHeight = Mathf.RoundToInt(height * scale.y);
+
                 // Set the width and height accordingly to the scale in the editor
-                P_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                P_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+                P_element.SetAttribute("Width", finalWidth.ToString()); // Width of the Collision
+                P_element.SetAttribute("Height", finalHeight.ToString()); // Height of the Collision
 
             }
             node.FirstChild.AppendChild(P_element); //Place it into the Object node
@@ -1326,29 +1330,89 @@ public class BuildMap : MonoBehaviour
 
         if (areaInScene.name != "Camera")
         {
-            XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
-            A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
-            A_element.SetAttribute("X", (areaInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-            A_element.SetAttribute("Y", (-areaInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-
-            SpriteRenderer spriteRenderer = areaInScene.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+            if (areaInScene.name == "TriggerCatch" || areaInScene.name == "TriggerCatchFront")
             {
+                XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("X", (areaInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                A_element.SetAttribute("Y", (-areaInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
 
-                Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
-                Vector3 scale = areaInScene.transform.localScale; // Get the GameObject scale
+                SpriteRenderer spriteRenderer = areaInScene.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                {
 
-                // Retrieve the image resolution of the sprite
-                float width = bounds.size.x * 100;
-                float height = bounds.size.y * 100;
+                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                    Vector3 scale = areaInScene.transform.localScale; // Get the GameObject scale
 
-                // Set the width and height accordingly to the scale in the editor
-                A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+                    // Retrieve the image resolution of the sprite
+                    float width = bounds.size.x * 100;
+                    float height = bounds.size.y * 100;
 
+                    // Set the width and height accordingly to the scale in the editor
+                    A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                    A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                }
+                A_element.SetAttribute("Type", "Catch"); //Type="Catch"/>
+                A_element.SetAttribute("Distance", "300"); //Distance="300"/>
+                node.FirstChild.AppendChild(A_element); //Place it into the Object node
             }
-            A_element.SetAttribute("Type", "Animation"); //Type="Animation"/>
-            node.FirstChild.AppendChild(A_element); //Place it into the Object node
+            else if (areaInScene.name == "TriggerCatchFast")
+            {
+                XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("X", (areaInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                A_element.SetAttribute("Y", (-areaInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+                SpriteRenderer spriteRenderer = areaInScene.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                {
+
+                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                    Vector3 scale = areaInScene.transform.localScale; // Get the GameObject scale
+
+                    // Retrieve the image resolution of the sprite
+                    float width = bounds.size.x * 100;
+                    float height = bounds.size.y * 100;
+
+                    // Set the width and height accordingly to the scale in the editor
+                    A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                    A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                }
+                A_element.SetAttribute("Type", "Catch"); //Type="Catch"/>
+                A_element.SetAttribute("Distance", "0"); //Distance="0"/>
+                node.FirstChild.AppendChild(A_element); //Place it into the Object node
+            }
+            else
+            {
+                XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("X", (areaInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                A_element.SetAttribute("Y", (-areaInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+                SpriteRenderer spriteRenderer = areaInScene.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                {
+
+                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                    Vector3 scale = areaInScene.transform.localScale; // Get the GameObject scale
+
+                    // Retrieve the image resolution of the sprite
+                    float width = bounds.size.x * 100;
+                    float height = bounds.size.y * 100;
+
+                    // Set the width and height accordingly to the scale in the editor
+                    A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                    A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                }
+                A_element.SetAttribute("Type", "Animation"); //Type="Catch"/>
+                node.FirstChild.AppendChild(A_element); //Place it into the Object node
+            }
+
+
+
             xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
         }
     }
@@ -1729,8 +1793,8 @@ public class BuildMap : MonoBehaviour
                 if (childObject.name != "Camera") // Use a texture called "collision" which should come with this buildmap update folder.
                 {
                     XmlElement P_element = xml.CreateElement("Platform"); //Create a new node from scratch
-                    P_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                    P_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+                    P_element.SetAttribute("X", (Mathf.Round(childObject.transform.position.x * 100f)).ToString("F2", CultureInfo.InvariantCulture)); //Add X position (Refit into the Vector units)
+                    P_element.SetAttribute("Y", (Mathf.Round(-childObject.transform.position.y * 100f)).ToString("F2", CultureInfo.InvariantCulture)); // Add Y position (Negative because Vector see the world upside down)
 
                     SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
                     if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
@@ -1811,32 +1875,88 @@ public class BuildMap : MonoBehaviour
                     contentElement.AppendChild(T_element);
                 }
             }
-
             else if (childObject.gameObject.CompareTag("Area"))
             {
-                XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
-                A_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
-                A_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                A_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-
-                SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
-                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                if (childObject.name == "TriggerCatch" || childObject.name == "TriggerCatchFront")
                 {
+                    XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                    A_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
+                    A_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                    A_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
 
-                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
-                    Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
+                    SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                    {
 
-                    // Retrieve the image resolution of the sprite
-                    float width = bounds.size.x * 100;
-                    float height = bounds.size.y * 100;
+                        Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                        Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
 
-                    // Set the width and height accordingly to the scale in the editor
-                    A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                    A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+                        // Retrieve the image resolution of the sprite
+                        float width = bounds.size.x * 100;
+                        float height = bounds.size.y * 100;
 
+                        // Set the width and height accordingly to the scale in the editor
+                        A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                        A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                    }
+                    A_element.SetAttribute("Type", "Catch"); //Type="Catch"/>
+                    A_element.SetAttribute("Distance", "300"); //Distance="300"/>
+                    contentElement.AppendChild(A_element); //Place it into the Object node
                 }
-                A_element.SetAttribute("Type", "Animation"); //Type="Animation"/>
-                contentElement.AppendChild(A_element);
+                else if (childObject.name == "TriggerCatchFast")
+                {
+                    XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                    A_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
+                    A_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                    A_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+                    SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                    {
+
+                        Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                        Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
+
+                        // Retrieve the image resolution of the sprite
+                        float width = bounds.size.x * 100;
+                        float height = bounds.size.y * 100;
+
+                        // Set the width and height accordingly to the scale in the editor
+                        A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                        A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                    }
+                    A_element.SetAttribute("Type", "Catch"); //Type="Catch"/>
+                    A_element.SetAttribute("Distance", "0"); //Distance="0"/>
+                    contentElement.AppendChild(A_element); //Place it into the Object node
+                }
+                else
+                {
+                    XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
+                    A_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
+                    A_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                    A_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+                    SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
+                    if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                    {
+
+                        Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                        Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
+
+                        // Retrieve the image resolution of the sprite
+                        float width = bounds.size.x * 100;
+                        float height = bounds.size.y * 100;
+
+                        // Set the width and height accordingly to the scale in the editor
+                        A_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                        A_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+
+                    }
+                    A_element.SetAttribute("Type", "Animation"); //Type="Catch"/>
+                    contentElement.AppendChild(A_element); //Place it into the Object node
+                }
             }
 
             else if (childObject.gameObject.CompareTag("Trigger"))

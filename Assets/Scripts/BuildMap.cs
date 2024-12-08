@@ -571,6 +571,9 @@ public class BuildMap : MonoBehaviour
             ielement.SetAttribute("Y", (-frontimageInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
             ielement.SetAttribute("ClassName", Regex.Replace(frontimageInScene.name, @" \((.*?)\)", string.Empty)); //Add a name
 
+            XmlElement propertiesElement = xml.CreateElement("Properties");
+            XmlElement staticElement = xml.CreateElement("Static");
+
             SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
 
             if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Image Size in Width and Height
@@ -590,6 +593,19 @@ public class BuildMap : MonoBehaviour
                 // Set the Native resolution of sprite
                 ielement.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
                 ielement.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
+            }
+            Color color = spriteRenderer.color;
+            if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
+            {
+                string alphaHex = Mathf.RoundToInt(color.a * 255).ToString("X2");
+                string rgbaColor = ColorUtility.ToHtmlStringRGB(color) + alphaHex;
+
+                XmlElement colorElement = xml.CreateElement("StartColor");
+                colorElement.SetAttribute("Color", $"#{rgbaColor}");
+
+                staticElement.AppendChild(colorElement);
+                propertiesElement.AppendChild(staticElement);
+                ielement.AppendChild(propertiesElement);
             }
 
 
@@ -951,6 +967,44 @@ public class BuildMap : MonoBehaviour
                 BD_element.SetAttribute("NativeX", width.ToString()); //Native Resolution of the Image in X
                 BD_element.SetAttribute("NativeY", height.ToString()); //Native Resolution of the Image in Y
 
+                XmlElement propertiesElement = xml.CreateElement("Properties");
+                XmlElement staticElement = xml.CreateElement("Static");
+
+                // Check the rotation
+                if (Mathf.Abs(bdInScene.transform.eulerAngles.z) > Mathf.Epsilon || spriteRenderer.flipX || spriteRenderer.flipY)
+                {
+                    // Convert the rotation to the Marmalade transformation matrix
+                    float A, B, C, D, Tx, Ty;
+                    ConvertToMarmaladeMatrix(bdInScene, width * scale.x, height * scale.y, out A, out B, out C, out D, out Tx, out Ty);
+
+                    XmlElement matrixElement = xml.CreateElement("Matrix");
+                    matrixElement.SetAttribute("A", A.ToString());
+                    matrixElement.SetAttribute("B", B.ToString());
+                    matrixElement.SetAttribute("C", C.ToString());
+                    matrixElement.SetAttribute("D", D.ToString());
+                    matrixElement.SetAttribute("Tx", Tx.ToString());
+                    matrixElement.SetAttribute("Ty", Ty.ToString());
+
+                    staticElement.AppendChild(matrixElement);
+                    propertiesElement.AppendChild(staticElement);
+                    BD_element.AppendChild(propertiesElement);
+                }
+
+                // Color
+                Color color = spriteRenderer.color;
+                if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
+                {
+                    string alphaHex = Mathf.RoundToInt(color.a * 255).ToString("X2");
+                    string rgbaColor = ColorUtility.ToHtmlStringRGB(color) + alphaHex;
+
+                    XmlElement colorElement = xml.CreateElement("StartColor");
+                    colorElement.SetAttribute("Color", $"#{rgbaColor}");
+
+                    staticElement.AppendChild(colorElement);
+                    propertiesElement.AppendChild(staticElement);
+                    BD_element.AppendChild(propertiesElement);
+                }
+
                 node.FirstChild.AppendChild(BD_element); //Place it into the Object node
                 xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
 
@@ -972,6 +1026,7 @@ public class BuildMap : MonoBehaviour
             ielement.SetAttribute("X", (imageInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
             ielement.SetAttribute("Y", (-imageInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
             ielement.SetAttribute("ClassName", Regex.Replace(imageInScene.name, @" \((.*?)\)", string.Empty)); //Add a name
+
             SpriteRenderer spriteRenderer = imageInScene.GetComponent<SpriteRenderer>();
             if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Image Size in Width and Height
             {
@@ -1013,6 +1068,8 @@ public class BuildMap : MonoBehaviour
                     propertiesElement.AppendChild(staticElement);
                     ielement.AppendChild(propertiesElement);
                 }
+
+                // see if color changes
                 Color color = spriteRenderer.color;
                 if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
                 {
@@ -1024,6 +1081,36 @@ public class BuildMap : MonoBehaviour
 
                     staticElement.AppendChild(colorElement);
                     propertiesElement.AppendChild(staticElement);
+                    ielement.AppendChild(propertiesElement);
+                }
+
+
+                // Dynamic Color
+                DynamicColor dynamicColor = imageInScene.GetComponent<DynamicColor>();
+                if (dynamicColor != null)
+                {
+                    XmlElement dynamicElement = xml.CreateElement("Dynamic");
+                    XmlElement transformationElement = xml.CreateElement("Transformation");
+                    XmlElement colorElement = xml.CreateElement("Color");
+
+                    // Transformation Name
+                    transformationElement.SetAttribute("Name", dynamicColor.TransformationName);
+
+                    // Set ColorStart (current sprite color) and ColorFinish (target color)
+                    Color currentColor = spriteRenderer.color;
+                    string startColorHex = ColorUtility.ToHtmlStringRGB(currentColor) + Mathf.RoundToInt(currentColor.a * 255).ToString("X2");
+                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.ChangeToColor) + Mathf.RoundToInt(dynamicColor.ChangeToColor.a * 255).ToString("X2");
+
+                    colorElement.SetAttribute("ColorStart", $"#{startColorHex}");
+                    colorElement.SetAttribute("ColorFinish", $"#{finishColorHex}");
+
+                    // Calculate Frames (Duration * 60) or 1 if Duration is 0
+                    int frames = dynamicColor.Duration > 0 ? Mathf.CeilToInt(dynamicColor.Duration * 60) : 1;
+                    colorElement.SetAttribute("Frames", frames.ToString());
+
+                    transformationElement.AppendChild(colorElement);
+                    dynamicElement.AppendChild(transformationElement);
+                    propertiesElement.AppendChild(dynamicElement);
                     ielement.AppendChild(propertiesElement);
                 }
             }
@@ -1511,8 +1598,10 @@ public class BuildMap : MonoBehaviour
         {
             XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
             moveIntervalElement.SetAttribute("Number", "1");
-            moveIntervalElement.SetAttribute("FramesToMove", (dynamicComponent.MoveInterval1.MoveDuration * 60).ToString()); //multiply second by 60 frames per second
-            moveIntervalElement.SetAttribute("Delay", (dynamicComponent.MoveInterval1.Delay * 60).ToString()); //multiply second by 60 frames per second
+            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval1.MoveDuration * 60)); // Ensure at least 1 frame
+            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval1.Delay * 60); //multiply by 60 frames per second
+            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
             // Create Points (Start, Support, Finish)
             XmlElement startPointElement = xml.CreateElement("Point");
@@ -1544,8 +1633,10 @@ public class BuildMap : MonoBehaviour
         {
             XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
             moveIntervalElement.SetAttribute("Number", "2");
-            moveIntervalElement.SetAttribute("FramesToMove", (dynamicComponent.MoveInterval2.MoveDuration * 60).ToString()); //multiply second by 60 frames per second
-            moveIntervalElement.SetAttribute("Delay", (dynamicComponent.MoveInterval2.Delay * 60).ToString()); //multiply second by 60 frames per second
+            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval2.MoveDuration * 60)); // Ensure at least 1 frame
+            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval2.Delay * 60); //multiply by 60 frames per second
+            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
             // Create Points (Start, Support, Finish)
             XmlElement startPointElement = xml.CreateElement("Point");
@@ -1577,8 +1668,10 @@ public class BuildMap : MonoBehaviour
         {
             XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
             moveIntervalElement.SetAttribute("Number", "3");
-            moveIntervalElement.SetAttribute("FramesToMove", (dynamicComponent.MoveInterval3.MoveDuration * 60).ToString()); //multiply second by 60 frames per second
-            moveIntervalElement.SetAttribute("Delay", (dynamicComponent.MoveInterval3.Delay * 60).ToString()); //multiply second by 60 frames per second
+            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval3.MoveDuration * 60)); // Ensure at least 1 frame
+            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval3.Delay * 60); //multiply by 60 frames per second
+            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
             // Create Points (Start, Support, Finish)
             XmlElement startPointElement = xml.CreateElement("Point");
@@ -1610,8 +1703,10 @@ public class BuildMap : MonoBehaviour
         {
             XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
             moveIntervalElement.SetAttribute("Number", "4");
-            moveIntervalElement.SetAttribute("FramesToMove", (dynamicComponent.MoveInterval4.MoveDuration * 60).ToString()); //multiply second by 60 frames per second
-            moveIntervalElement.SetAttribute("Delay", (dynamicComponent.MoveInterval4.Delay * 60).ToString()); //multiply second by 60 frames per second
+            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval4.MoveDuration * 60)); // Ensure at least 1 frame
+            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval4.Delay * 60); //multiply by 60 frames per second
+            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
             // Create Points (Start, Support, Finish)
             XmlElement startPointElement = xml.CreateElement("Point");
@@ -1643,8 +1738,10 @@ public class BuildMap : MonoBehaviour
         {
             XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
             moveIntervalElement.SetAttribute("Number", "5");
-            moveIntervalElement.SetAttribute("FramesToMove", (dynamicComponent.MoveInterval5.MoveDuration * 60).ToString()); //multiply second by 60 frames per second
-            moveIntervalElement.SetAttribute("Delay", (dynamicComponent.MoveInterval5.Delay * 60).ToString()); //multiply second by 60 frames per second
+            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval5.MoveDuration * 60)); // Ensure at least 1 frame
+            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval5.Delay * 60); //multiply by 60 frames per second
+            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
             // Create Points (Start, Support, Finish)
             XmlElement startPointElement = xml.CreateElement("Point");
@@ -1764,6 +1861,34 @@ public class BuildMap : MonoBehaviour
 
                     staticElement.AppendChild(colorElement);
                     propertiesElement.AppendChild(staticElement);
+                    ielement.AppendChild(propertiesElement);
+                }
+                // Dynamic Color
+                DynamicColor dynamicColor = imageObject.GetComponent<DynamicColor>();
+                if (dynamicColor != null)
+                {
+                    XmlElement dynamicElementImage = xml.CreateElement("Dynamic");
+                    XmlElement transformationElementImage = xml.CreateElement("Transformation");
+                    XmlElement colorElementImage = xml.CreateElement("Color");
+
+                    // Transformation Name
+                    transformationElement.SetAttribute("Name", dynamicColor.TransformationName);
+
+                    // Set ColorStart (current sprite color) and ColorFinish (target color)
+                    Color currentColor = spriteRenderer.color;
+                    string startColorHex = ColorUtility.ToHtmlStringRGB(currentColor) + Mathf.RoundToInt(currentColor.a * 255).ToString("X2");
+                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.ChangeToColor) + Mathf.RoundToInt(dynamicColor.ChangeToColor.a * 255).ToString("X2");
+
+                    colorElementImage.SetAttribute("ColorStart", $"#{startColorHex}");
+                    colorElementImage.SetAttribute("ColorFinish", $"#{finishColorHex}");
+
+                    // Calculate Frames (Duration * 60) or 1 if Duration is 0
+                    int frames = dynamicColor.Duration > 0 ? Mathf.CeilToInt(dynamicColor.Duration * 60) : 1;
+                    colorElementImage.SetAttribute("Frames", frames.ToString());
+
+                    transformationElement.AppendChild(colorElementImage);
+                    dynamicElement.AppendChild(transformationElement);
+                    propertiesElement.AppendChild(dynamicElement);
                     ielement.AppendChild(propertiesElement);
                 }
 

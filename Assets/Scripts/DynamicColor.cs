@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 
+[AddComponentMenu("Vectorier/DynamicColor")]
 public class DynamicColor : MonoBehaviour
 {
     [SerializeField]

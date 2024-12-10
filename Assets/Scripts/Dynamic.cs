@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 
@@ -60,16 +61,52 @@ public class Dynamic : MonoBehaviour
     private Dictionary<string, bool> isLoopActive = new Dictionary<string, bool>();
     private Dictionary<string, float> nextCheckTimes = new Dictionary<string, float>();
 
+    private bool isImageDynamic = false;
+
     public void DuplicateChildrenPreview(string newParentName)
     {
         // Ignore List
         string[] excludedNames = { "MovePreview1", "MovePreview2", "MovePreview3", "MovePreview4", "MovePreview5", "VisualPointParent", "VisualLineParent" };
         string triggerTag = "Trigger";
 
+        // In case of Image
+        if (transform.CompareTag("Image"))
+        {
+            if (transform.childCount == 0)
+            {
+                GameObject duplicateParent = Instantiate(gameObject, transform);
+                duplicateParent.name = name;
+                duplicateParent.tag = "Unused";
+                duplicateParent.transform.position = transform.position;
+                duplicateParent.transform.rotation = transform.rotation;
+
+                SpriteRenderer renderer = duplicateParent.GetComponent<SpriteRenderer>();
+                if (renderer != null)
+                {
+                    Color color = renderer.color;
+                    color.a = 120 / 255f; // Set alpha transparency to 120
+                    renderer.color = color;
+                }
+
+                // Clear components except Transform and SpriteRenderer
+                var components = duplicateParent.GetComponents<UnityEngine.Component>();
+                foreach (var component in components)
+                {
+                    if (!(component is Transform || component is SpriteRenderer))
+                    {
+                        DestroyImmediate(component);
+                    }
+                }
+                isImageDynamic = true;
+            }
+        }
+
         // Create new empty object
         GameObject newParent = new GameObject(newParentName);
         newParent.tag = "Unused";
         newParent.transform.SetParent(transform);
+        newParent.transform.position = transform.position;
+
 
         // Run through all child objects
         foreach (UnityEngine.Transform child in transform)
@@ -78,18 +115,23 @@ public class Dynamic : MonoBehaviour
             if (child.CompareTag(triggerTag) && child.GetComponent<DynamicTrigger>()) continue;
             if (Array.Exists(excludedNames, name => name == child.name)) continue;
 
-            // Duplicate the child object
-            GameObject duplicate = Instantiate(child.gameObject, newParent.transform);
+            // Duplication
+            GameObject duplicate = null;
+            duplicate = Instantiate(child.gameObject, newParent.transform);
 
-            duplicate.name = child.name + "_Preview";
-            duplicate.tag = "Unused";
-
-            SpriteRenderer renderer = duplicate.GetComponent<SpriteRenderer>();
-            if (renderer != null)
+            if (duplicate != null)
             {
-                Color color = renderer.color;
-                color.a = 120 / 255f; // Set alpha transparency to 120
-                renderer.color = color;
+                duplicate.name = child.name + "_Preview";
+                duplicate.tag = "Unused";
+
+                // Adjust SpriteRenderer transparency
+                SpriteRenderer renderer = duplicate.GetComponent<SpriteRenderer>();
+                if (renderer != null)
+                {
+                    Color color = renderer.color;
+                    color.a = 120 / 255f; // Set alpha transparency to 120
+                    renderer.color = color;
+                }
             }
         }
     }
@@ -348,6 +390,7 @@ public class Dynamic : MonoBehaviour
         SpriteRenderer spriteRenderer = redObject.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = redSprite;
         redObject.tag = "Unused";
+        spriteRenderer.sortingOrder = 999;
         redObject.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
 
         // Determine parent and position based on boolean parameter
@@ -400,6 +443,7 @@ public class Dynamic : MonoBehaviour
         lineRenderer.endWidth = 0.05f;
         lineRenderer.positionCount = 2;
         lineRenderer.material = new Material(Shader.Find("Sprites/Default")) { color = Color.red };
+        lineRenderer.sortingOrder = 999;
 
         // Store references to the start and end points
         UnityEngine.Transform startPoint = transform.Find(startPointName);
@@ -476,6 +520,7 @@ public class Dynamic : MonoBehaviour
         }
 
         DuplicateChildrenPreview("MovePreview2");
+
         if (AddVisualLines)
         {
             AddRedSprite(false, "VisualPoint2", "MovePreview2");
@@ -501,6 +546,7 @@ public class Dynamic : MonoBehaviour
         }
 
         DuplicateChildrenPreview("MovePreview3");
+
         if (AddVisualLines)
         {
             AddRedSprite(false, "VisualPoint3", "MovePreview3");
@@ -526,6 +572,7 @@ public class Dynamic : MonoBehaviour
         }
 
         DuplicateChildrenPreview("MovePreview4");
+
         if (AddVisualLines)
         {
             AddRedSprite(false, "VisualPoint4", "MovePreview4");
@@ -551,6 +598,7 @@ public class Dynamic : MonoBehaviour
         }
 
         DuplicateChildrenPreview("MovePreview5");
+
         if (AddVisualLines)
         {
             AddRedSprite(false, "VisualPoint5", "MovePreview5");
@@ -575,15 +623,26 @@ public class Dynamic : MonoBehaviour
                 DestroyImmediate(previewObject.gameObject); // Immediate destroy in editor mode
             }
         }
+
+        if (isImageDynamic)
+        {
+            foreach (Transform child in transform)
+            {
+                if (child.name == transform.name)
+                {
+                    DestroyImmediate(child.gameObject);
+                }
+            }
+            isImageDynamic = false;
+        }
     }
     public void FinishSetUp()
     {
         UnityEngine.Transform previewObject = transform.Find("MovePreview1");
 
-        // If it exists, destroy it
         if (previewObject != null)
         {
-            DestroyImmediate(previewObject.gameObject); // Immediate destroy in editor mode
+            DestroyImmediate(previewObject.gameObject);
             Debug.Log("MovePreview1 has been cleared.");
         }
         else
@@ -876,7 +935,6 @@ public class Dynamic : MonoBehaviour
             Debug.LogWarning("Cannot reset position during preview!");
             return;
         }
-
         transform.position = originalPosition;
     }
 

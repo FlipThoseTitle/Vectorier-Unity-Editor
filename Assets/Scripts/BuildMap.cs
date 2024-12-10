@@ -1020,6 +1020,11 @@ public class BuildMap : MonoBehaviour
         if (debugObjectWriting)
             Debug.Log("Writing object : " + Regex.Replace(imageInScene.name, @" \((.*?)\)", string.Empty));
 
+        DynamicColor dynamicColor = imageInScene.GetComponent<DynamicColor>();
+        Dynamic[] dynamicComponents = imageInScene.GetComponents<Dynamic>();
+
+        XmlElement dynamicElement = xml.CreateElement("Dynamic");
+
         if (imageInScene.name != "Camera")
         {
             XmlElement ielement = xml.CreateElement("Image"); //Create a new node from scratch
@@ -1069,6 +1074,54 @@ public class BuildMap : MonoBehaviour
                     ielement.AppendChild(propertiesElement);
                 }
 
+                //Dynamic
+                if (dynamicComponents.Length > 0)
+                {
+
+                    foreach (var dynamicComponent in dynamicComponents)
+                    {
+                        XmlElement transformationElement = xml.CreateElement("Transformation");
+                        transformationElement.SetAttribute("Name", dynamicComponent.TransformationName);
+
+                        XmlElement moveElement = xml.CreateElement("Move");
+
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            var movementUsage = dynamicComponent.MovementUsage;
+                            var moveInterval = GetMoveInterval(dynamicComponent, i);
+
+                            if (movementUsage != null && movementUsage.UseMovement(i) && moveInterval != null)
+                            {
+                                XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
+                                moveIntervalElement.SetAttribute("Number", i.ToString());
+
+                                int framesToMove = Mathf.Max(1, Mathf.RoundToInt(moveInterval.MoveDuration * 60));
+                                int delayFrames = Mathf.RoundToInt(moveInterval.Delay * 60);
+                                moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+                                moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
+
+                                XmlElement startPointElement = CreatePointElement(xml, "Start", 0, 0);
+                                XmlElement supportPointElement = CreatePointElement(xml, "Support", moveInterval.SupportXAxis * 100, -moveInterval.SupportYAxis * 100);
+                                supportPointElement.SetAttribute("Number", i.ToString());
+                                XmlElement finishPointElement = CreatePointElement(xml, "Finish", moveInterval.MoveXAxis * 100, -moveInterval.MoveYAxis * 100);
+
+                                moveIntervalElement.AppendChild(startPointElement);
+                                moveIntervalElement.AppendChild(supportPointElement);
+                                moveIntervalElement.AppendChild(finishPointElement);
+
+                                moveElement.AppendChild(moveIntervalElement);
+                            }
+                        }
+
+                        transformationElement.AppendChild(moveElement);
+                        dynamicElement.AppendChild(transformationElement);
+                    }
+
+                    propertiesElement.AppendChild(dynamicElement);
+                    ielement.AppendChild(propertiesElement);
+
+                }
+
                 // see if color changes
                 Color color = spriteRenderer.color;
                 if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
@@ -1086,10 +1139,8 @@ public class BuildMap : MonoBehaviour
 
 
                 // Dynamic Color
-                DynamicColor dynamicColor = imageInScene.GetComponent<DynamicColor>();
                 if (dynamicColor != null)
                 {
-                    XmlElement dynamicElement = xml.CreateElement("Dynamic");
                     XmlElement transformationElement = xml.CreateElement("Transformation");
                     XmlElement colorElement = xml.CreateElement("Color");
 

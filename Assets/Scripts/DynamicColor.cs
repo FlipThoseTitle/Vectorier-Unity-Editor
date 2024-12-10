@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,11 +10,13 @@ public class DynamicColor : MonoBehaviour
     [SerializeField]
     public string TransformationName = "";
     [Tooltip("Duration in seconds")] public float Duration = 1.0f;
-    [Tooltip("Which color and transparency to change into.")] public Color ChangeToColor = Color.white;
+    [Tooltip("Starting Color")] public Color StartColor = Color.white;
+    [Tooltip("Color to change into")] public Color EndColor = Color.white;
 
     private SpriteRenderer spriteRenderer;
-    private Color savedColor;
+    private Dictionary<SpriteRenderer, Color> savedColors = new Dictionary<SpriteRenderer, Color>();
     private bool isTransitioning = false;
+    public bool IsTransitioning => isTransitioning;
 
     private void GetSpriteRenderer()
     {
@@ -25,47 +28,84 @@ public class DynamicColor : MonoBehaviour
 
     public void PreviewColor(Action onFinish = null)
     {
-        GetSpriteRenderer();
+        if (isTransitioning) return;
 
-        if (spriteRenderer != null)
+        if (gameObject.CompareTag("Dynamic"))
         {
-            if (!isTransitioning)
+            SpriteRenderer[] childRenderers = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+            foreach (var childRenderer in childRenderers)
             {
-                savedColor = spriteRenderer.color;
+                if (childRenderer.gameObject != this.gameObject) // Exclude the parent
+                {
+                    if (!savedColors.ContainsKey(childRenderer))
+                    {
+                        savedColors[childRenderer] = childRenderer.color; // Save original color
+                    }
+                    EditorCoroutine.Start(GraduallyChangeColor(childRenderer, StartColor, EndColor, Duration, null));
+                }
             }
-            EditorCoroutine.Start(GraduallyChangeColor(spriteRenderer, ChangeToColor, Duration, onFinish));
+        }
+        else
+        {
+            // Handle single SpriteRenderer
+            GetSpriteRenderer();
+            if (spriteRenderer != null)
+            {
+                if (!savedColors.ContainsKey(spriteRenderer))
+                {
+                    savedColors[spriteRenderer] = spriteRenderer.color; // Save original color
+                }
+                EditorCoroutine.Start(GraduallyChangeColor(spriteRenderer, StartColor, EndColor, Duration, null));
+            }
         }
     }
+
 
     public void ResetColor()
     {
-        GetSpriteRenderer();
-
-        if (spriteRenderer != null)
+        if (gameObject.CompareTag("Dynamic"))
         {
-            spriteRenderer.color = savedColor;
+            // Reset all child SpriteRenderers
+            SpriteRenderer[] childRenderers = GetComponentsInChildren<SpriteRenderer>(includeInactive: true);
+            foreach (var childRenderer in childRenderers)
+            {
+                if (childRenderer.gameObject != this.gameObject && savedColors.ContainsKey(childRenderer))
+                {
+                    childRenderer.color = savedColors[childRenderer]; // Reset to saved color
+                }
+            }
         }
+        else
+        {
+            // Reset single SpriteRenderer
+            GetSpriteRenderer();
+            if (spriteRenderer != null && savedColors.ContainsKey(spriteRenderer))
+            {
+                spriteRenderer.color = savedColors[spriteRenderer]; // Reset to saved color
+            }
+        }
+        isTransitioning = false;
     }
 
-    private IEnumerator GraduallyChangeColor(SpriteRenderer spriteRenderer, Color targetColor, float duration, Action onFinish)
+    private IEnumerator GraduallyChangeColor(SpriteRenderer targetRenderer, Color startColor, Color endColor, float duration, Action onFinish)
     {
         isTransitioning = true;
-        Color initialColor = spriteRenderer.color;
         float elapsedTime = 0f;
+
+        targetRenderer.color = startColor;
 
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
-            spriteRenderer.color = Color.Lerp(initialColor, targetColor, elapsedTime / duration);
+            targetRenderer.color = Color.Lerp(startColor, endColor, elapsedTime / duration);
             EditorApplication.QueuePlayerLoopUpdate();
             yield return null;
         }
 
-        spriteRenderer.color = targetColor;
+        targetRenderer.color = endColor;
         yield return new EditorWaitForSeconds(0.5f);
 
-        ResetColor();
-        isTransitioning = false;
+        ResetColor(); // Reset all or single
         onFinish?.Invoke();
     }
 }
@@ -79,6 +119,8 @@ public class DynamicColorButton : Editor
 
         DynamicColor dynamicColorComponent = (DynamicColor)target;
 
+        GUI.enabled = !dynamicColorComponent.IsTransitioning;
+
         if (GUILayout.Button("Preview Color"))
         {
             dynamicColorComponent.PreviewColor(() =>
@@ -86,6 +128,8 @@ public class DynamicColorButton : Editor
                 MarkObjectAsDirty(dynamicColorComponent);
             });
         }
+
+        GUI.enabled = true; // Re-enable GUI for other controls
     }
 
     private void MarkObjectAsDirty(DynamicColor dynamicColorComponent)

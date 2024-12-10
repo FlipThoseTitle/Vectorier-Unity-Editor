@@ -25,12 +25,26 @@ public class DynamicPreview : MonoBehaviour
 
         foreach (GameObject dynamicObject in dynamicObjects)
         {
-            Dynamic dynamicComponent = dynamicObject.GetComponent<Dynamic>();
-            if (dynamicComponent != null && DynamicTransformationNames.Contains(dynamicComponent.TransformationName))
+            // Get all Dynamic components
+            Dynamic[] dynamicComponents = dynamicObject.GetComponents<Dynamic>();
+            if (dynamicComponents != null && dynamicComponents.Length > 0)
             {
-                dynamicComponent.ResetAfterPreviewFinish = false; // Set ResetAfterPreviewFinish to false
-                matchedDynamics.Add(dynamicComponent);
+                foreach (Dynamic dynamicComponent in dynamicComponents)
+                {
+                    // Match the transformation name
+                    if (DynamicTransformationNames.Contains(dynamicComponent.TransformationName))
+                    {
+                        dynamicComponent.ResetAfterPreviewFinish = false; // Set ResetAfterPreviewFinish to false
+                        matchedDynamics.Add(dynamicComponent);
+                    }
+                }
             }
+        }
+
+        if (matchedDynamics.Count == 0)
+        {
+            Debug.LogWarning("No matching Dynamic components found for the specified transformation names.");
+            return;
         }
 
         // Play preview on matched dynamic
@@ -56,10 +70,18 @@ public class DynamicPreview : MonoBehaviour
 
         foreach (GameObject dynamicObject in dynamicObjects)
         {
-            Dynamic dynamicComponent = dynamicObject.GetComponent<Dynamic>();
-            if (dynamicComponent != null && DynamicTransformationNames.Contains(dynamicComponent.TransformationName))
+            // Get all Dynamic components
+            Dynamic[] dynamicComponents = dynamicObject.GetComponents<Dynamic>();
+            if (dynamicComponents != null && dynamicComponents.Length > 0)
             {
-                dynamicComponent.ResetPreviewPosition(); // Reset position
+                foreach (Dynamic dynamicComponent in dynamicComponents)
+                {
+                    // Match the transformation name
+                    if (DynamicTransformationNames.Contains(dynamicComponent.TransformationName))
+                    {
+                        dynamicComponent.ResetPreviewPosition(); // Reset position
+                    }
+                }
             }
         }
     }

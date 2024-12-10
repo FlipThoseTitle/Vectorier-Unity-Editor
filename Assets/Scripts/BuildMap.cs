@@ -1096,10 +1096,9 @@ public class BuildMap : MonoBehaviour
                     // Transformation Name
                     transformationElement.SetAttribute("Name", dynamicColor.TransformationName);
 
-                    // Set ColorStart (current sprite color) and ColorFinish (target color)
-                    Color currentColor = spriteRenderer.color;
-                    string startColorHex = ColorUtility.ToHtmlStringRGB(currentColor) + Mathf.RoundToInt(currentColor.a * 255).ToString("X2");
-                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.ChangeToColor) + Mathf.RoundToInt(dynamicColor.ChangeToColor.a * 255).ToString("X2");
+                    // Set ColorStart (StartColor) and ColorFinish (EndColor)
+                    string startColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.StartColor) + Mathf.RoundToInt(dynamicColor.StartColor.a * 255).ToString("X2");
+                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.EndColor) + Mathf.RoundToInt(dynamicColor.EndColor.a * 255).ToString("X2");
 
                     colorElement.SetAttribute("ColorStart", $"#{startColorHex}");
                     colorElement.SetAttribute("ColorFinish", $"#{finishColorHex}");
@@ -1312,10 +1311,136 @@ public class BuildMap : MonoBehaviour
 
         if (triggerInScene.name != "Camera")
         {
-            if (triggerInScene.GetComponent<TriggerSettings>() != null) //Checks if the trigger has a setting component
+            DynamicTrigger dynamicTrigger = triggerInScene.GetComponent<DynamicTrigger>();
+            TriggerSettings triggerSettings = triggerInScene.GetComponent<TriggerSettings>(); //Trigger Settings.cs
+
+            if (triggerSettings && dynamicTrigger)
+            {
+                Debug.LogError($"GameObject '{triggerInScene.name}' cannot contain both TriggerSetting and DynamicTrigger.");
+                return;
+            }
+            else if (!triggerSettings && !dynamicTrigger)
+            {
+                Debug.LogError($"GameObject '{triggerInScene.name}' must contain at least TriggerSetting or DynamicTrigger.");
+                return;
+            }
+
+            if (dynamicTrigger != null)
             {
                 XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
-                TriggerSettings triggerSettings = triggerInScene.GetComponent<TriggerSettings>(); //Trigger Settings.cs
+                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                T_element.SetAttribute("X", (triggerInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
+                T_element.SetAttribute("Y", (-triggerInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+
+                SpriteRenderer spriteRenderer = triggerInScene.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
+                {
+
+                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
+                    Vector3 scale = triggerInScene.transform.localScale; // Get the GameObject scale
+
+                    float width = bounds.size.x * 100;
+                    float height = bounds.size.y * 100;
+
+                    T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
+                    T_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
+                }
+                XmlElement initElement = xml.CreateElement("Init");
+
+                // Add SetVariable elements to Init
+                XmlElement setVariable1 = xml.CreateElement("SetVariable");
+                setVariable1.SetAttribute("Name", "$Active");
+                setVariable1.SetAttribute("Value", "1");
+                initElement.AppendChild(setVariable1);
+
+                XmlElement setVariable2 = xml.CreateElement("SetVariable");
+                setVariable2.SetAttribute("Name", "$AI");
+                setVariable2.SetAttribute("Value", dynamicTrigger.AIAllowed.ToString());
+                initElement.AppendChild(setVariable2);
+
+                XmlElement setVariable3 = xml.CreateElement("SetVariable");
+                setVariable3.SetAttribute("Name", "$Node");
+                setVariable3.SetAttribute("Value", "COM");
+                initElement.AppendChild(setVariable3);
+
+                if (dynamicTrigger.PlaySound)
+                {
+                    XmlElement setVariable4 = xml.CreateElement("SetVariable");
+                    setVariable4.SetAttribute("Name", "Sound");
+                    setVariable4.SetAttribute("Value", dynamicTrigger.Sound);
+                    initElement.AppendChild(setVariable4);
+                }
+
+                XmlElement setVariable5 = xml.CreateElement("SetVariable");
+                setVariable5.SetAttribute("Name", "Flag1");
+                setVariable5.SetAttribute("Value", "0");
+                initElement.AppendChild(setVariable5);
+
+                XmlElement triggerContentElement = xml.CreateElement("Content");
+                triggerContentElement.AppendChild(initElement);
+
+                XmlElement loopElement = xml.CreateElement("Loop");
+
+                // Create Events element and EventBlock element
+                XmlElement eventsElement = xml.CreateElement("Events");
+                XmlElement eventBlockElement = xml.CreateElement("EventBlock");
+                eventBlockElement.SetAttribute("Template", "FreqUsed.Enter");
+                eventsElement.AppendChild(eventBlockElement);
+
+                // Append Events to Loop
+                loopElement.AppendChild(eventsElement);
+
+                // Create Actions element and ActionBlock element
+                XmlElement actionsElement = xml.CreateElement("Actions");
+                XmlElement actionBlockElement = xml.CreateElement("ActionBlock");
+                actionBlockElement.SetAttribute("Template", "FreqUsed.SwitchOff");
+                actionsElement.AppendChild(actionBlockElement);
+
+                if (dynamicTrigger.MultipleTransformation)
+                {
+                    XmlElement chooseElement = xml.CreateElement("Choose");
+                    chooseElement.SetAttribute("Order", dynamicTrigger.Order.ToString());
+                    chooseElement.SetAttribute("Set", dynamicTrigger.Set.ToString());
+
+                    foreach (string transformationName in dynamicTrigger.TransformationNames)
+                    {
+                        XmlElement transformElement = xml.CreateElement("Transform");
+                        transformElement.SetAttribute("Name", transformationName);
+                        chooseElement.AppendChild(transformElement);
+                    }
+
+                    actionsElement.AppendChild(chooseElement);
+                }
+                else
+                {
+                    XmlElement transformElement = xml.CreateElement("Transform");
+                    transformElement.SetAttribute("Name", dynamicTrigger.TriggerTransformName);
+                    actionsElement.AppendChild(transformElement);
+                }
+
+                if (dynamicTrigger.PlaySound)
+                {
+                    // Create Actionsblock sound
+                    XmlElement actionBlockSoundElement = xml.CreateElement("ActionBlock");
+                    actionBlockSoundElement.SetAttribute("Template", "CommonLib.Sound");
+                    actionsElement.AppendChild(actionBlockSoundElement);
+                }
+
+                // Append Actions to Loop
+                loopElement.AppendChild(actionsElement);
+
+                // Append Loop to Trigger
+                triggerContentElement.AppendChild(loopElement);
+
+                // Append Content to Trigger
+                T_element.AppendChild(triggerContentElement);
+
+                node.FirstChild.AppendChild(T_element); //Place it into the Object node
+            }
+
+            if (triggerSettings != null) //Checks if the trigger has a setting component
+            {
+                XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
                 T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
                 T_element.SetAttribute("X", (triggerInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
                 T_element.SetAttribute("Y", (-triggerInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
@@ -1351,30 +1476,6 @@ public class BuildMap : MonoBehaviour
 
                     node.FirstChild.AppendChild(T_element); //Place it into the Object node
 
-                }
-            }
-            else //continues as normal without any setting attached
-            {
-                XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
-                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
-                T_element.SetAttribute("X", (triggerInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                T_element.SetAttribute("Y", (-triggerInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-
-                SpriteRenderer spriteRenderer = triggerInScene.GetComponent<SpriteRenderer>();
-                if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
-                {
-
-                    Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
-                    Vector3 scale = triggerInScene.transform.localScale; // Get the GameObject scale
-
-                    // Retrieve the image resolution of the sprite
-                    float width = bounds.size.x * 100;
-                    float height = bounds.size.y * 100;
-
-                    // Set the width and height accordingly to the scale in the editor
-                    T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                    T_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
-                    node.FirstChild.AppendChild(T_element); //Place it into the Object node
                 }
             }
 
@@ -1570,8 +1671,9 @@ public class BuildMap : MonoBehaviour
     void ConvertToDynamic(XmlNode node, XmlDocument xml, GameObject dynamicInScene, UnityEngine.Transform dynamicInSceneTransform)
     {
 
-        // Dynamic component in the hierachy
-        Dynamic dynamicComponent = dynamicInScene.GetComponent<Dynamic>();
+        // Get all Dynamic components
+        Dynamic[] dynamicComponents = dynamicInScene.GetComponents<Dynamic>();
+        DynamicColor dynamicColorParent = dynamicInScene.GetComponent<DynamicColor>();
 
         // Object
         XmlElement objectElement = xml.CreateElement("Object");
@@ -1584,196 +1686,75 @@ public class BuildMap : MonoBehaviour
         // Dynamic
         XmlElement dynamicElement = xml.CreateElement("Dynamic");
 
-        // Create Transformation element
-        XmlElement transformationElement = xml.CreateElement("Transformation");
-        transformationElement.SetAttribute("Name", dynamicComponent.TransformationName);
-
-        // Create Move element
-        XmlElement moveElement = xml.CreateElement("Move");
-
-        // MoveInterval element
-
-        // Move Interval 1
-        if (dynamicComponent.MovementUsage.UseMovement1)
+        foreach (var dynamicComponent in dynamicComponents)
         {
-            XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
-            moveIntervalElement.SetAttribute("Number", "1");
-            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval1.MoveDuration * 60)); // Ensure at least 1 frame
-            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval1.Delay * 60); //multiply by 60 frames per second
-            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
-            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
+            XmlElement transformationElement = xml.CreateElement("Transformation");
+            transformationElement.SetAttribute("Name", dynamicComponent.TransformationName);
 
-            // Create Points (Start, Support, Finish)
-            XmlElement startPointElement = xml.CreateElement("Point");
-            startPointElement.SetAttribute("Name", "Start");
-            startPointElement.SetAttribute("X", "0.0");
-            startPointElement.SetAttribute("Y", "0.0");
+            XmlElement moveElement = xml.CreateElement("Move");
 
-            XmlElement supportPointElement = xml.CreateElement("Point");
-            supportPointElement.SetAttribute("Name", "Support");
-            supportPointElement.SetAttribute("Number", "1");
-            supportPointElement.SetAttribute("X", (dynamicComponent.MoveInterval1.SupportXAxis * 100).ToString());
-            supportPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval1.SupportYAxis * 100).ToString());
+            // Handle Move Intervals (1 to 5)
+            for (int i = 1; i <= 5; i++)
+            {
+                var movementUsage = dynamicComponent.MovementUsage;
+                var moveInterval = GetMoveInterval(dynamicComponent, i); // Get MoveInterval by index
 
-            XmlElement finishPointElement = xml.CreateElement("Point");
-            finishPointElement.SetAttribute("Name", "Finish");
-            finishPointElement.SetAttribute("X", (dynamicComponent.MoveInterval1.MoveXAxis * 100).ToString());
-            finishPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval1.MoveYAxis * 100).ToString());
+                if (movementUsage != null && movementUsage.UseMovement(i) && moveInterval != null)
+                {
+                    XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
+                    moveIntervalElement.SetAttribute("Number", i.ToString());
 
-            // Append points to MoveInterval
-            moveIntervalElement.AppendChild(startPointElement);
-            moveIntervalElement.AppendChild(supportPointElement);
-            moveIntervalElement.AppendChild(finishPointElement);
+                    int framesToMove = Mathf.Max(1, Mathf.RoundToInt(moveInterval.MoveDuration * 60));
+                    int delayFrames = Mathf.RoundToInt(moveInterval.Delay * 60);
+                    moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
+                    moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
 
-            moveElement.AppendChild(moveIntervalElement);
+                    // Create Points (Start, Support, Finish)
+                    XmlElement startPointElement = CreatePointElement(xml, "Start", 0, 0);
+                    XmlElement supportPointElement = CreatePointElement(xml, "Support", moveInterval.SupportXAxis * 100, -moveInterval.SupportYAxis * 100);
+                    supportPointElement.SetAttribute("Number", i.ToString());
+
+                    XmlElement finishPointElement = CreatePointElement(xml, "Finish", moveInterval.MoveXAxis * 100, -moveInterval.MoveYAxis * 100);
+
+                    // Append points to MoveInterval
+                    moveIntervalElement.AppendChild(startPointElement);
+                    moveIntervalElement.AppendChild(supportPointElement);
+                    moveIntervalElement.AppendChild(finishPointElement);
+
+                    moveElement.AppendChild(moveIntervalElement);
+                }
+            }
+            transformationElement.AppendChild(moveElement);
+            dynamicElement.AppendChild(transformationElement);
         }
 
-        // Move Interval 2
-        if (dynamicComponent.MovementUsage.UseMovement2)
+        // DynamicColor 
+        if (dynamicColorParent != null)
         {
-            XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
-            moveIntervalElement.SetAttribute("Number", "2");
-            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval2.MoveDuration * 60)); // Ensure at least 1 frame
-            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval2.Delay * 60); //multiply by 60 frames per second
-            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
-            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
+            XmlElement transformationElement = xml.CreateElement("Transformation");
+            transformationElement.SetAttribute("Name", dynamicColorParent.TransformationName);
 
-            // Create Points (Start, Support, Finish)
-            XmlElement startPointElement = xml.CreateElement("Point");
-            startPointElement.SetAttribute("Name", "Start");
-            startPointElement.SetAttribute("X", "0.0");
-            startPointElement.SetAttribute("Y", "0.0");
+            XmlElement colorElement = xml.CreateElement("Color");
 
-            XmlElement supportPointElement = xml.CreateElement("Point");
-            supportPointElement.SetAttribute("Name", "Support");
-            supportPointElement.SetAttribute("Number", "2");
-            supportPointElement.SetAttribute("X", (dynamicComponent.MoveInterval2.SupportXAxis * 100).ToString());
-            supportPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval2.SupportYAxis * 100).ToString());
+            // Set ColorStart (StartColor) and ColorFinish (EndColor)
+            string startColorHex = ColorUtility.ToHtmlStringRGB(dynamicColorParent.StartColor) + Mathf.RoundToInt(dynamicColorParent.StartColor.a * 255).ToString("X2");
+            string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColorParent.EndColor) + Mathf.RoundToInt(dynamicColorParent.EndColor.a * 255).ToString("X2");
 
-            XmlElement finishPointElement = xml.CreateElement("Point");
-            finishPointElement.SetAttribute("Name", "Finish");
-            finishPointElement.SetAttribute("X", (dynamicComponent.MoveInterval2.MoveXAxis * 100).ToString());
-            finishPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval2.MoveYAxis * 100).ToString());
+            colorElement.SetAttribute("ColorStart", $"#{startColorHex}");
+            colorElement.SetAttribute("ColorFinish", $"#{finishColorHex}");
 
-            // Append points to MoveInterval
-            moveIntervalElement.AppendChild(startPointElement);
-            moveIntervalElement.AppendChild(supportPointElement);
-            moveIntervalElement.AppendChild(finishPointElement);
+            // Calculate Frames (Duration * 60) or 1 if Duration is 0
+            int frames = dynamicColorParent.Duration > 0 ? Mathf.CeilToInt(dynamicColorParent.Duration * 60) : 1;
+            colorElement.SetAttribute("Frames", frames.ToString());
 
-            moveElement.AppendChild(moveIntervalElement);
-        }
-
-        // Move Interval 3
-        if (dynamicComponent.MovementUsage.UseMovement3)
-        {
-            XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
-            moveIntervalElement.SetAttribute("Number", "3");
-            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval3.MoveDuration * 60)); // Ensure at least 1 frame
-            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval3.Delay * 60); //multiply by 60 frames per second
-            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
-            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
-
-            // Create Points (Start, Support, Finish)
-            XmlElement startPointElement = xml.CreateElement("Point");
-            startPointElement.SetAttribute("Name", "Start");
-            startPointElement.SetAttribute("X", "0.0");
-            startPointElement.SetAttribute("Y", "0.0");
-
-            XmlElement supportPointElement = xml.CreateElement("Point");
-            supportPointElement.SetAttribute("Name", "Support");
-            supportPointElement.SetAttribute("Number", "2");
-            supportPointElement.SetAttribute("X", (dynamicComponent.MoveInterval3.SupportXAxis * 100).ToString());
-            supportPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval3.SupportYAxis * 100).ToString());
-
-            XmlElement finishPointElement = xml.CreateElement("Point");
-            finishPointElement.SetAttribute("Name", "Finish");
-            finishPointElement.SetAttribute("X", (dynamicComponent.MoveInterval3.MoveXAxis * 100).ToString());
-            finishPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval3.MoveYAxis * 100).ToString());
-
-            // Append points to MoveInterval
-            moveIntervalElement.AppendChild(startPointElement);
-            moveIntervalElement.AppendChild(supportPointElement);
-            moveIntervalElement.AppendChild(finishPointElement);
-
-            moveElement.AppendChild(moveIntervalElement);
-        }
-
-        // Move Interval 4
-        if (dynamicComponent.MovementUsage.UseMovement4)
-        {
-            XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
-            moveIntervalElement.SetAttribute("Number", "4");
-            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval4.MoveDuration * 60)); // Ensure at least 1 frame
-            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval4.Delay * 60); //multiply by 60 frames per second
-            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
-            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
-
-            // Create Points (Start, Support, Finish)
-            XmlElement startPointElement = xml.CreateElement("Point");
-            startPointElement.SetAttribute("Name", "Start");
-            startPointElement.SetAttribute("X", "0.0");
-            startPointElement.SetAttribute("Y", "0.0");
-
-            XmlElement supportPointElement = xml.CreateElement("Point");
-            supportPointElement.SetAttribute("Name", "Support");
-            supportPointElement.SetAttribute("Number", "2");
-            supportPointElement.SetAttribute("X", (dynamicComponent.MoveInterval4.SupportXAxis * 100).ToString());
-            supportPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval4.SupportYAxis * 100).ToString());
-
-            XmlElement finishPointElement = xml.CreateElement("Point");
-            finishPointElement.SetAttribute("Name", "Finish");
-            finishPointElement.SetAttribute("X", (dynamicComponent.MoveInterval4.MoveXAxis * 100).ToString());
-            finishPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval4.MoveYAxis * 100).ToString());
-
-            // Append points to MoveInterval
-            moveIntervalElement.AppendChild(startPointElement);
-            moveIntervalElement.AppendChild(supportPointElement);
-            moveIntervalElement.AppendChild(finishPointElement);
-
-            moveElement.AppendChild(moveIntervalElement);
-        }
-
-        // Move Interval 5
-        if (dynamicComponent.MovementUsage.UseMovement5)
-        {
-            XmlElement moveIntervalElement = xml.CreateElement("MoveInterval");
-            moveIntervalElement.SetAttribute("Number", "5");
-            int framesToMove = Mathf.Max(1, Mathf.RoundToInt(dynamicComponent.MoveInterval5.MoveDuration * 60)); // Ensure at least 1 frame
-            int delayFrames = Mathf.RoundToInt(dynamicComponent.MoveInterval5.Delay * 60); //multiply by 60 frames per second
-            moveIntervalElement.SetAttribute("FramesToMove", framesToMove.ToString());
-            moveIntervalElement.SetAttribute("Delay", delayFrames.ToString());
-
-            // Create Points (Start, Support, Finish)
-            XmlElement startPointElement = xml.CreateElement("Point");
-            startPointElement.SetAttribute("Name", "Start");
-            startPointElement.SetAttribute("X", "0.0");
-            startPointElement.SetAttribute("Y", "0.0");
-
-            XmlElement supportPointElement = xml.CreateElement("Point");
-            supportPointElement.SetAttribute("Name", "Support");
-            supportPointElement.SetAttribute("Number", "2");
-            supportPointElement.SetAttribute("X", (dynamicComponent.MoveInterval5.SupportXAxis * 100).ToString());
-            supportPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval5.SupportYAxis * 100).ToString());
-
-            XmlElement finishPointElement = xml.CreateElement("Point");
-            finishPointElement.SetAttribute("Name", "Finish");
-            finishPointElement.SetAttribute("X", (dynamicComponent.MoveInterval5.MoveXAxis * 100).ToString());
-            finishPointElement.SetAttribute("Y", (-dynamicComponent.MoveInterval5.MoveYAxis * 100).ToString());
-
-            // Append points to MoveInterval
-            moveIntervalElement.AppendChild(startPointElement);
-            moveIntervalElement.AppendChild(supportPointElement);
-            moveIntervalElement.AppendChild(finishPointElement);
-
-            moveElement.AppendChild(moveIntervalElement);
+            transformationElement.AppendChild(colorElement);
+            dynamicElement.AppendChild(transformationElement);
         }
 
 
-        transformationElement.AppendChild(moveElement);
-        dynamicElement.AppendChild(transformationElement);
+
         propertiesElement.AppendChild(dynamicElement);
         objectElement.AppendChild(propertiesElement);
-
 
         // Create Content element
         XmlElement contentElement = xml.CreateElement("Content");
@@ -1806,6 +1787,7 @@ public class BuildMap : MonoBehaviour
         foreach (GameObject imageObject in ImageObjects)
         {
             XmlElement ielement = xml.CreateElement("Image"); //Create a new node from scratch
+            XmlElement transformationElement = xml.CreateElement("Transformation");
             ielement.SetAttribute("X", (imageObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
             ielement.SetAttribute("Y", (-imageObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
             ielement.SetAttribute("ClassName", Regex.Replace(imageObject.name, @" \((.*?)\)", string.Empty)); //Add a name
@@ -1872,12 +1854,11 @@ public class BuildMap : MonoBehaviour
                     XmlElement colorElementImage = xml.CreateElement("Color");
 
                     // Transformation Name
-                    transformationElement.SetAttribute("Name", dynamicColor.TransformationName);
+                    transformationElementImage.SetAttribute("Name", dynamicColor.TransformationName);
 
-                    // Set ColorStart (current sprite color) and ColorFinish (target color)
-                    Color currentColor = spriteRenderer.color;
-                    string startColorHex = ColorUtility.ToHtmlStringRGB(currentColor) + Mathf.RoundToInt(currentColor.a * 255).ToString("X2");
-                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.ChangeToColor) + Mathf.RoundToInt(dynamicColor.ChangeToColor.a * 255).ToString("X2");
+                    // Set ColorStart (StartColor) and ColorFinish (EndColor)
+                    string startColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.StartColor) + Mathf.RoundToInt(dynamicColor.StartColor.a * 255).ToString("X2");
+                    string finishColorHex = ColorUtility.ToHtmlStringRGB(dynamicColor.EndColor) + Mathf.RoundToInt(dynamicColor.EndColor.a * 255).ToString("X2");
 
                     colorElementImage.SetAttribute("ColorStart", $"#{startColorHex}");
                     colorElementImage.SetAttribute("ColorFinish", $"#{finishColorHex}");
@@ -1886,11 +1867,12 @@ public class BuildMap : MonoBehaviour
                     int frames = dynamicColor.Duration > 0 ? Mathf.CeilToInt(dynamicColor.Duration * 60) : 1;
                     colorElementImage.SetAttribute("Frames", frames.ToString());
 
-                    transformationElement.AppendChild(colorElementImage);
-                    dynamicElement.AppendChild(transformationElement);
-                    propertiesElement.AppendChild(dynamicElement);
+                    transformationElementImage.AppendChild(colorElementImage);
+                    dynamicElementImage.AppendChild(transformationElementImage);
+                    propertiesElement.AppendChild(dynamicElementImage);
                     ielement.AppendChild(propertiesElement);
                 }
+
 
             }
             contentElement.AppendChild(ielement);
@@ -2092,9 +2074,9 @@ public class BuildMap : MonoBehaviour
                 {
                     XmlElement T_element = xml.CreateElement("Trigger");
                     T_element.SetAttribute("Name", "");
-                    T_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
-                    T_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                    T_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
+                    T_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty));
+                    T_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.'));
+                    T_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.'));
 
                     SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
                     if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
@@ -2168,10 +2150,27 @@ public class BuildMap : MonoBehaviour
                     actionBlockElement.SetAttribute("Template", "FreqUsed.SwitchOff");
                     actionsElement.AppendChild(actionBlockElement);
 
-                    // Create Transform element and append to Loop
-                    XmlElement transformElement = xml.CreateElement("Transform");
-                    transformElement.SetAttribute("Name", dynamicTrigger.TriggerTransformName);
-                    actionsElement.AppendChild(transformElement);
+                    if (dynamicTrigger.MultipleTransformation)
+                    {
+                        XmlElement chooseElement = xml.CreateElement("Choose");
+                        chooseElement.SetAttribute("Order", dynamicTrigger.Order.ToString());
+                        chooseElement.SetAttribute("Set", dynamicTrigger.Set.ToString());
+
+                        foreach (string transformationName in dynamicTrigger.TransformationNames)
+                        {
+                            XmlElement transformElement = xml.CreateElement("Transform");
+                            transformElement.SetAttribute("Name", transformationName);
+                            chooseElement.AppendChild(transformElement);
+                        }
+
+                        actionsElement.AppendChild(chooseElement);
+                    }
+                    else
+                    {
+                        XmlElement transformElement = xml.CreateElement("Transform");
+                        transformElement.SetAttribute("Name", dynamicTrigger.TriggerTransformName);
+                        actionsElement.AppendChild(transformElement);
+                    }
 
                     if (dynamicTrigger.PlaySound)
                     {
@@ -2242,27 +2241,7 @@ public class BuildMap : MonoBehaviour
 
                         else //continues as normal without any setting attached
                         {
-                            XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
-                            T_element.SetAttribute("Name", Regex.Replace(childObject.name, @" \((.*?)\)", string.Empty)); //Add an name
-                            T_element.SetAttribute("X", (childObject.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                            T_element.SetAttribute("Y", (-childObject.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-
-                            SpriteRenderer spriteRenderer = childObject.GetComponent<SpriteRenderer>();
-                            if (spriteRenderer != null && spriteRenderer.sprite != null) //Get the Sprite Size in Width and Height
-                            {
-
-                                Bounds bounds = spriteRenderer.sprite.bounds;// Get the bounds of the sprite
-                                Vector3 scale = childObject.transform.localScale; // Get the GameObject scale
-
-                                // Retrieve the image resolution of the sprite
-                                float width = bounds.size.x * 100;
-                                float height = bounds.size.y * 100;
-
-                                // Set the width and height accordingly to the scale in the editor
-                                T_element.SetAttribute("Width", (width * scale.x).ToString()); //Width of the Image
-                                T_element.SetAttribute("Height", (height * scale.y).ToString()); //Height of the Image
-                            }
-                            contentElement.AppendChild(T_element);
+                            Debug.LogError($"GameObject '{childObject.name}' must contains TriggerSetting or DynamicTrigger!");
                         }
                     }
 
@@ -2350,4 +2329,29 @@ public class BuildMap : MonoBehaviour
         xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + mapToOverride + ".xml"); //Apply the modification to the build-map.xml file}
     }
 
+    // Helper Method: Create a Point element
+    XmlElement CreatePointElement(XmlDocument xml, string name, float x, float y)
+    {
+        XmlElement pointElement = xml.CreateElement("Point");
+        pointElement.SetAttribute("Name", name);
+        pointElement.SetAttribute("X", x.ToString("0.0"));
+        pointElement.SetAttribute("Y", y.ToString("0.0"));
+        return pointElement;
+    }
+
+    // Helper Method: Get MoveInterval by index
+    Dynamic.Movement GetMoveInterval(Dynamic dynamicComponent, int index)
+    {
+        switch (index)
+        {
+            case 1: return dynamicComponent.MoveInterval1;
+            case 2: return dynamicComponent.MoveInterval2;
+            case 3: return dynamicComponent.MoveInterval3;
+            case 4: return dynamicComponent.MoveInterval4;
+            case 5: return dynamicComponent.MoveInterval5;
+            default: return null;
+        }
+    }
+
 }
+

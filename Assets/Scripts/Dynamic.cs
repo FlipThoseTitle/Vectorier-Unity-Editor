@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [AddComponentMenu("Vectorier/Dynamic")]
 public class Dynamic : MonoBehaviour
@@ -20,6 +18,19 @@ public class Dynamic : MonoBehaviour
         public bool UseMovement3 = false;
         public bool UseMovement4 = false;
         public bool UseMovement5 = false;
+
+        public bool UseMovement(int index)
+        {
+            switch (index)
+            {
+                case 1: return UseMovement1;
+                case 2: return UseMovement2;
+                case 3: return UseMovement3;
+                case 4: return UseMovement4;
+                case 5: return UseMovement5;
+                default: return false; // Out of range
+            }
+        }
     }
 
 
@@ -140,6 +151,13 @@ public class Dynamic : MonoBehaviour
         // Define monitoring action
         EditorApplication.CallbackFunction monitoringAction = () =>
         {
+            if (this == null || transform == null)
+            {
+                StopPositionMonitoring(MovePreview);
+                Debug.LogError("Dynamic Parent removed! Cancelling position monitoring.");
+                return;
+            }
+
             if (EditorApplication.timeSinceStartup >= nextCheckTimes[MovePreview])
             {
                 nextCheckTimes[MovePreview] = (float)EditorApplication.timeSinceStartup + checkInterval;
@@ -173,6 +191,14 @@ public class Dynamic : MonoBehaviour
     {
         UnityEngine.Transform specificObject = transform.Find(movePreview);
 
+        // Check if parent is null or removed
+        if (this == null || transform == null)
+        {
+            StopPositionMonitoring(movePreview);
+            Debug.LogError("DynamicParent is null or removed! Cancelling position monitoring.");
+            return;
+        }
+
         // Stop monitoring when MovePreview is removed and clear all previews.
         if (specificObject == null)
         {
@@ -187,6 +213,7 @@ public class Dynamic : MonoBehaviour
 
         // reference top-left position
         Vector2 referenceTopLeft;
+
         if (movePreview == "MovePreview1")
         {
             // Use the dynamic parent's top-left position for MovePreview1
@@ -219,7 +246,7 @@ public class Dynamic : MonoBehaviour
             // Difference result
             Vector2 positionDifference = topLeftSpecific - referenceTopLeft;
 
-            // Update the corresponding MoveInterval
+            // Update the MoveInterval
             UpdateMoveInterval(movePreview, positionDifference);
         }
     }
@@ -242,10 +269,9 @@ public class Dynamic : MonoBehaviour
                                 "VisualPointParent", "VisualPoint1", "VisualPoint2", "VisualPoint3", "VisualPoint4", "VisualPoint5" };
         string triggerTag = "Trigger";
 
-        if (calculateFromParent)
+        void AccumulateBounds(UnityEngine.Transform parent)
         {
-            // Calculate from Dynamic Parent's child objects
-            foreach (UnityEngine.Transform child in transform)
+            foreach (Transform child in parent)
             {
                 if (child.CompareTag(triggerTag) && child.GetComponent<DynamicTrigger>()) continue;
                 if (Array.Exists(excludedNames, name => name == child.name)) continue;
@@ -255,15 +281,23 @@ public class Dynamic : MonoBehaviour
                 {
                     if (!hasBounds)
                     {
-                        combinedBounds = renderer.bounds; // World space bounds
+                        combinedBounds = renderer.bounds;
                         hasBounds = true;
                     }
                     else
                     {
-                        combinedBounds.Encapsulate(renderer.bounds); // Encapsulate in world space
+                        combinedBounds.Encapsulate(renderer.bounds); // Combine bounds
                     }
                 }
+
+                // Recurse into child objects
+                AccumulateBounds(child);
             }
+        }
+
+        if (calculateFromParent)
+        {
+            AccumulateBounds(transform);
         }
         else
         {
@@ -275,25 +309,7 @@ public class Dynamic : MonoBehaviour
                 return Vector2.zero;
             }
 
-            foreach (UnityEngine.Transform child in specificObject)
-            {
-                // Skip 
-                if (Array.Exists(excludedNames, name => name == child.name)) continue;
-
-                SpriteRenderer renderer = child.GetComponent<SpriteRenderer>();
-                if (renderer != null)
-                {
-                    if (!hasBounds)
-                    {
-                        combinedBounds = renderer.bounds; // World space bounds
-                        hasBounds = true;
-                    }
-                    else
-                    {
-                        combinedBounds.Encapsulate(renderer.bounds); // Encapsulate in world space
-                    }
-                }
-            }
+            AccumulateBounds(specificObject);
         }
 
         if (!hasBounds)
@@ -704,8 +720,15 @@ public class Dynamic : MonoBehaviour
             return;
         }
 
+        // Null check
+        if (this == null || transform == null)
+        {
+            Debug.LogError("DynamicParent is null or removed! Cancelling preview.");
+            return;
+        }
+
         // Check for "MovePreview1"
-        Transform movePreview1 = transform.Find("MovePreview1");
+        UnityEngine.Transform movePreview1 = transform.Find("MovePreview1");
         if (movePreview1 != null)
         {
             Debug.LogWarning("Cannot play preview while setting up move!");
@@ -743,7 +766,12 @@ public class Dynamic : MonoBehaviour
 
     private void UpdatePreviewMovement()
     {
-        if (!isPlayingPreview) return;
+        if (this == null || transform == null)
+        {
+            Debug.LogError("Dynamic Parent is removed during preview! Stopping preview.");
+            StopPreviewOnNull();
+            return;
+        }
 
         Movement currentMovement = activeMovements[currentMovementIndex];
 
@@ -815,6 +843,20 @@ public class Dynamic : MonoBehaviour
         {
             IsPreviewDisabled = false; // Reenable buttons
         }
+    }
+
+    private void StopPreviewOnNull()
+    {
+        isPlayingPreview = false;
+        EditorApplication.update -= UpdatePreviewMovement;
+
+        if (ResetAfterPreviewFinish)
+        {
+            elapsedTime = 0f;
+            EditorApplication.update -= HandleResetDelay;
+        }
+
+        IsPreviewDisabled = false;
     }
 
     private void HandleResetDelay()

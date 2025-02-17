@@ -215,7 +215,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 68162301}
-  - component: {fileID: 68162300}
   - component: {fileID: 68162299}
   - component: {fileID: 68162298}
   m_Layer: 0
@@ -237,11 +236,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
-  spawnHunter: 1
+  levelMusic: music_dinamic
+  MusicVolume: 0.3
+  customBackground: v_bg
+  bg_Width: 2121
+  bg_Height: 1116
+  Player:
+    playerModelName: Player
+    playerSpawnName: PlayerSpawn
+    playerSpawnTime: 0
+    playerSkin: 1
+  Hunter:
+    hunterModelName: Hunter
+    hunterSpawnName: DefaultSpawn
+    hunterSpawnTime: 0
+    hunterAllowedSpawn: Respawn
+    hunterSkin: hunter
+    hunterTrickAllowed: 0
+    hunterIcon: 1
+    hunterAIType: 1
+  useCustomProperties: 0
+  CustomModelProperties: "<Model Name=\"Player\" Type=\"1\" Color=\"0\" BirthSpawn=\"PlayerSpawn\"
+    AI=\"0\" Time=\"0\" Respawns=\"Hunter\" ForceBlasts=\"Hunter\" Trick=\"1\" Item=\"1\"
+    Victory=\"1\" Lose=\"1\"/>\r\n    <Model Name=\"Hunter\" Type=\"0\" Color=\"0\"
+    BirthSpawn=\"DefaultSpawn\" AI=\"1\" Time=\"0.8\" AllowedSpawns=\"Respawn\" Skins=\"hunter\"
+    Murders=\"Player\" Arrests=\"Player\" Icon=\"1\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
+  correctFactorPosition: 1
 --- !u!114 &68162299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,20 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_name: CONSTRUCTION_BONUS_01.xml
---- !u!114 &68162300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68162297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToConvert: TriggerCatch
+  levelName: DOWNTOWN_STORY_03.xml
+  fromBackupDirectory: 1
+  addBuildMap: 1
   debugObjectFound: 0
 --- !u!4 &68162301
 Transform:

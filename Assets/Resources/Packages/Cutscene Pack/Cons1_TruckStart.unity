@@ -297,7 +297,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 884518195}
-  - component: {fileID: 884518194}
   - component: {fileID: 884518193}
   - component: {fileID: 884518192}
   m_Layer: 0
@@ -319,7 +318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -346,6 +344,7 @@ MonoBehaviour:
     Victory=\"1\" Lose=\"1\"/>\r"
   debugObjectWriting: 0
   hunterPlaced: 0
+  correctFactorPosition: 1
 --- !u!114 &884518193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,20 +357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_name: CONSTRUCTION_BONUS_01.xml
---- !u!114 &884518194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884518191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToConvert: 
+  levelName: 
+  fromBackupDirectory: 1
+  addBuildMap: 1
   debugObjectFound: 0
 --- !u!4 &884518195
 Transform:

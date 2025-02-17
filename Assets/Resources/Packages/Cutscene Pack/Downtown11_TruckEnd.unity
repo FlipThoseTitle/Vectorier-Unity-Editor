@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 33664024}
   m_Layer: 0
   m_Name: trigger truck animation
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,7 +349,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368958859}
-  - component: {fileID: 368958858}
   - component: {fileID: 368958857}
   - component: {fileID: 368958856}
   m_Layer: 0
@@ -371,7 +370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -400,6 +398,7 @@ MonoBehaviour:
     AllowedSpawns=\"RespawnCS02HelpbotPart2\" LifeTime=\"5\" GeneratesBuildings=\"COM\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
+  correctFactorPosition: 1
 --- !u!114 &368958857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,20 +411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_name: CONSTRUCTION_BONUS_01.xml
---- !u!114 &368958858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368958855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToConvert: 
+  levelName: 
+  fromBackupDirectory: 1
+  addBuildMap: 1
   debugObjectFound: 0
 --- !u!4 &368958859
 Transform:
@@ -753,7 +741,7 @@ GameObject:
   - component: {fileID: 762119700}
   m_Layer: 0
   m_Name: Start helper animation spot
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,7 +1303,7 @@ GameObject:
   - component: {fileID: 1586988491}
   m_Layer: 0
   m_Name: Start player animation spot
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,7 +1385,7 @@ GameObject:
   - component: {fileID: 1591487242}
   m_Layer: 0
   m_Name: where helper will stand
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1726,7 +1714,7 @@ GameObject:
   - component: {fileID: 2018060737}
   m_Layer: 0
   m_Name: jumpoff spot
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

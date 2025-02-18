@@ -10,7 +10,6 @@ public class Dynamic : MonoBehaviour
     [Tooltip("Transformation name of the dynamic object")] public string TransformationName = "Transform_name";
     [Tooltip("Whether or not to add the red visual line while setting up")] public bool AddVisualLines = true;
     [Tooltip("Whether or not to automatically reset after the preview is finished")] public bool ResetAfterPreviewFinish = true;
-    [Tooltip("Repeating the same movement up to 32 MoveInterval")] public bool Loop = false;
 
     [Serializable]
     public class UseCheck

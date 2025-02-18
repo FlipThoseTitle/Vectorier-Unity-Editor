@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 456021268}
   m_Layer: 0
   m_Name: animation start
-  m_TagString: Image
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 774654014}
   m_Layer: 0
   m_Name: bike spot
-  m_TagString: Image
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 1547295515}
   m_Layer: 0
   m_Name: bike clone spot
-  m_TagString: Image
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,6 +1095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583664797}
+  - component: {fileID: 1583664796}
   - component: {fileID: 1583664795}
   - component: {fileID: 1583664794}
   m_Layer: 0
@@ -1116,6 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -1138,13 +1140,12 @@ MonoBehaviour:
     hunterAIType: 1
   useCustomProperties: 1
   CustomModelProperties: "<Model Name=\"Player\" Type=\"1\" Color=\"0\" BirthSpawn=\"PlayerSpawn\"
-    AI=\"0\" Time=\"0\" Respawns=\"Hunter\" ForceBlasts=\"Hunter\" Trick=\"1\" Item=\"1\"
+    AI=\"0\" Time=\"1\" Respawns=\"Hunter\" ForceBlasts=\"Hunter\" Trick=\"1\" Item=\"1\"
     Victory=\"1\" Lose=\"1\" Stocks=\"bike\"/>\r\n    <Model Name=\"Helper\" Type=\"0\"
     Color=\"0\" BirthSpawn=\"HelperSpawn\" AllowedSpawns=\"RespawnHunterMode\" AI=\"3\"
     Time=\"0\" Skins=\"helper|shirt|cap\" LifeTime=\"15\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
-  correctFactorPosition: 1
 --- !u!114 &1583664795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,9 +1158,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  fromBackupDirectory: 1
-  addBuildMap: 1
+  level_name: CONSTRUCTION_BONUS_01.xml
+--- !u!114 &1583664796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583664793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToConvert: 
   debugObjectFound: 0
 --- !u!4 &1583664797
 Transform:

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6474371122073354333}
   m_Layer: 0
   m_Name: TriggerCameraStart
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,11 +27,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8243143195130998756}
+  - {fileID: 7480519942880967118}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4622807001013752861
+--- !u!1 &4832731283948637537
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,37 +39,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8243143195130998756}
-  - component: {fileID: 2791750841196056495}
-  - component: {fileID: 1792473898202308724}
+  - component: {fileID: 7480519942880967118}
+  - component: {fileID: 7135638406110527062}
   m_Layer: 0
-  m_Name: TriggerStart
-  m_TagString: Trigger
+  m_Name: TriggerStart(Clone)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8243143195130998756
+--- !u!4 &7480519942880967118
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622807001013752861}
+  m_GameObject: {fileID: 4832731283948637537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.34375, y: 3.125, z: 1}
+  m_LocalScale: {x: 2.34375, y: 3.125, z: 0}
   m_Children: []
   m_Father: {fileID: 6474371122073354333}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2791750841196056495
+--- !u!212 &7135638406110527062
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622807001013752861}
+  m_GameObject: {fileID: 4832731283948637537}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -102,7 +101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 255
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 36039ac4c4b43404ca39cb3bdea5b5e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -114,19 +113,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1792473898202308724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4622807001013752861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6efe946d935848142abaa5de3f808a65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Content: <Init><SetVariable Name="$Active" Value="1" /><SetVariable Name="$Node"
-    Value="COM" /><SetVariable Name="Follow" Value="_$Model" /><SetVariable Name="$AI"
-    Value="0" /><SetVariable Name="Flag1" Value="0" /></Init><Template Name="CameraFollow"
-    />

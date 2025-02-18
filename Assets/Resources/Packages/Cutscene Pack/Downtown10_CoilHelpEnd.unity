@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 86864071}
   m_Layer: 0
   m_Name: animation start point
-  m_TagString: Image
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,6 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 235626402}
+  - component: {fileID: 235626401}
   - component: {fileID: 235626400}
   - component: {fileID: 235626399}
   m_Layer: 0
@@ -235,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -263,7 +265,6 @@ MonoBehaviour:
     Skins=\"helper|shirt|cap\" LifeTime=\"15\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
-  correctFactorPosition: 1
 --- !u!114 &235626400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,9 +277,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  fromBackupDirectory: 1
-  addBuildMap: 1
+  level_name: CONSTRUCTION_BONUS_01.xml
+--- !u!114 &235626401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235626398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToConvert: 
   debugObjectFound: 0
 --- !u!4 &235626402
 Transform:
@@ -973,7 +985,6 @@ MonoBehaviour:
   RespawnSecond: 0
   TriggerName: TriggerHelperRespawn
   Spawnmodel: Helper
-  RespawnOnScreen: 1
 --- !u!212 &1338944059
 SpriteRenderer:
   m_ObjectHideFlags: 0

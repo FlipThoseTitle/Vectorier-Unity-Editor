@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7383857099633572013
+--- !u!1 &7332943795530804719
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7755371053812216639}
-  - component: {fileID: 1756027125953353768}
-  - component: {fileID: 7912423267588755079}
+  - component: {fileID: 6669641937490939022}
+  - component: {fileID: 4955900288994296748}
   m_Layer: 0
-  m_Name: HunterModSpeedUp
-  m_TagString: Trigger
+  m_Name: HunterModSpeedUp(Clone)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7755371053812216639
+--- !u!4 &6669641937490939022
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383857099633572013}
+  m_GameObject: {fileID: 7332943795530804719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78125, y: 1.5625, z: 1}
+  m_LocalScale: {x: 0.78125, y: 1.5625, z: 0}
   m_Children: []
   m_Father: {fileID: 987244635601638803}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1756027125953353768
+--- !u!212 &4955900288994296748
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383857099633572013}
+  m_GameObject: {fileID: 7332943795530804719}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 255
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 36039ac4c4b43404ca39cb3bdea5b5e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83,21 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7912423267588755079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7383857099633572013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6efe946d935848142abaa5de3f808a65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Content: <Init><SetVariable Name="$Active" Value="1" /><SetVariable Name="$AI"
-    Value="5" /><SetVariable Name="$Node" Value="COM" /><SetVariable Name="Key" Value="Right"
-    /><SetVariable Name="Flag1" Value="0" /></Init><Template Name="AI_noFollow" />
 --- !u!1 &7984615023960817872
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +93,7 @@ GameObject:
   - component: {fileID: 987244635601638803}
   m_Layer: 0
   m_Name: HunterModSpeedUp
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +109,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7755371053812216639}
+  - {fileID: 6669641937490939022}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

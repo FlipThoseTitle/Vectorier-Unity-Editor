@@ -719,7 +719,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639006449}
-  - component: {fileID: 1639006448}
   - component: {fileID: 1639006447}
   - component: {fileID: 1639006446}
   m_Layer: 0
@@ -741,7 +740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -770,6 +768,7 @@ MonoBehaviour:
     AllowedSpawns=\"RespawnCS02HelpbotPart2\" LifeTime=\"5\" GeneratesBuildings=\"COM\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
+  correctFactorPosition: 1
 --- !u!114 &1639006447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,20 +781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_name: CONSTRUCTION_BONUS_01.xml
---- !u!114 &1639006448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639006445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToConvert: 
+  levelName: 
+  fromBackupDirectory: 1
+  addBuildMap: 1
   debugObjectFound: 0
 --- !u!4 &1639006449
 Transform:

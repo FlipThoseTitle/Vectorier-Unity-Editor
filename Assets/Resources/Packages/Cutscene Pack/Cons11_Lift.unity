@@ -157,6 +157,7 @@ MonoBehaviour:
   RespawnSecond: 0
   TriggerName: RevolutionGirlSpawn
   Spawnmodel: RevolutionGirl
+  RespawnOnScreen: 1
 --- !u!212 &30134971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -266,11 +267,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf16abcc0c0fde747880fa63cb708714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerName: 
   TriggerTransformName: Transform_liftdoortrigger
   AIAllowed: -1
   PlaySound: 0
   Sound: 
+  MultipleTransformation: 0
+  TransformationNames: []
+  Order: 1
+  Set: 1
 --- !u!212 &36728266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1103,11 +1107,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf16abcc0c0fde747880fa63cb708714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerName: 
   TriggerTransformName: Transform_lifttrigger
   AIAllowed: -1
   PlaySound: 0
   Sound: 
+  MultipleTransformation: 0
+  TransformationNames: []
+  Order: 1
+  Set: 1
 --- !u!212 &679181452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1427,6 +1434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1389758059}
     m_Modifications:
+    - target: {fileID: 7743904899147764623, guid: 143a674696204af4a92862be6bee3166, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9044203416572223812, guid: 143a674696204af4a92862be6bee3166, type: 3}
       propertyPath: m_Name
       value: TriangleRoof
@@ -1516,6 +1527,7 @@ MonoBehaviour:
   RespawnSecond: 0.1
   TriggerName: RevolutionGirlSpawn2
   Spawnmodel: RevolutionGirl
+  RespawnOnScreen: 1
 --- !u!212 &813212736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1836,7 +1848,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921838675}
-  - component: {fileID: 921838674}
   - component: {fileID: 921838673}
   - component: {fileID: 921838672}
   m_Layer: 0
@@ -1858,7 +1869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff65c9c0293f9048b5a72fd6b3c11c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vectorFilePath: C:\Program Files (x86)\Steam\steamapps\common\Vector
   mapToOverride: DOWNTOWN_STORY_02
   levelMusic: music_dinamic
   MusicVolume: 0.3
@@ -1886,6 +1896,7 @@ MonoBehaviour:
     AllowedSpawns=\"RevolutionGirlSpawn\" AI=\"2\" Skins=\"revolution_girl\"/>"
   debugObjectWriting: 0
   hunterPlaced: 0
+  correctFactorPosition: 1
 --- !u!114 &921838673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,20 +1909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef584acc067ba643b96df4f206f65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level_name: CONSTRUCTION_BONUS_01.xml
---- !u!114 &921838674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921838671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c8626e90e19ff43b70b65d23d59bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToConvert: 
+  levelName: 
+  fromBackupDirectory: 1
+  addBuildMap: 1
   debugObjectFound: 0
 --- !u!4 &921838675
 Transform:
@@ -2639,6 +2639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TransformationName: Transform_liftdoortrigger
+  AddVisualLines: 1
+  ResetAfterPreviewFinish: 1
   MovementUsage:
     UseMovement1: 1
     UseMovement2: 1
@@ -3255,6 +3257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TransformationName: Transform_lifttrigger
+  AddVisualLines: 1
+  ResetAfterPreviewFinish: 1
   MovementUsage:
     UseMovement1: 1
     UseMovement2: 0
@@ -3411,7 +3415,7 @@ GameObject:
   - component: {fileID: 1738814293}
   m_Layer: 0
   m_Name: animation start spot
-  m_TagString: Untagged
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

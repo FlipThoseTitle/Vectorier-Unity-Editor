@@ -6,17 +6,19 @@ TagManager:
   tags:
   - Object
   - Image
+  - Top Image
+  - Backdrop
   - Platform
   - Trapezoid
   - Area
   - Trigger
-  - Backdrop
   - Camera
   - Spawn
   - Dynamic
-  - Top Image
   - Model
+  - Item
   - Animation
+  - Particle
   - Unused
   layers:
   - Default
@@ -52,6 +54,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Factor_0.05
+    uniqueID: 193920657
+    locked: 0
   - name: Factor_0.1
     uniqueID: 4062569445
     locked: 0

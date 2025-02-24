@@ -855,7 +855,7 @@ public class ShowMap : MonoBehaviour
         if (content.Attributes["Type"].Value == "0")
         {
             SpriteRenderer spriteRenderer = lastContent.AddComponent<SpriteRenderer>();
-            spriteRenderer.sprite = Resources.Load<Sprite>("Textures/bonus_v4");
+            spriteRenderer.sprite = Resources.Load<Sprite>("Textures/pill");
             spriteRenderer.sortingOrder = 999;
         }
         if (content.Attributes["Type"].Value == "1")

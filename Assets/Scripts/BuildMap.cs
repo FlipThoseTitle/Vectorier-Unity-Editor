@@ -156,6 +156,9 @@ public class BuildMap : MonoBehaviour
     [MenuItem("Vectorier/BuildMap XML Only")]
     public static void BuildXml() { Build(false, false); }
 
+    // -=-=-=- //
+    // Variables
+    public string globalRegex = @" ?\((.*?)\)| ?\[.*?\]";
 
     // -=-=-=- //
 
@@ -837,7 +840,7 @@ public class BuildMap : MonoBehaviour
 		animationElement.SetAttribute("ScaleX", AnimationComponent.ScaleX);
 		animationElement.SetAttribute("ScaleY", AnimationComponent.ScaleY);
 
-        animationElement.SetAttribute("ClassName", Regex.Replace(animationInScene.name, @" ?\((.*?)\)| ?\[.*?\]", string.Empty));
+        animationElement.SetAttribute("ClassName", Regex.Replace(animationInScene.name, globalRegex, string.Empty));
         animNode = animationElement;
     }
 
@@ -847,7 +850,7 @@ public class BuildMap : MonoBehaviour
         topimgNode = null;
 
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(frontimageInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(frontimageInScene.name, globalRegex, string.Empty));
 
         if (frontimageInScene.name != "Camera")
         {
@@ -956,7 +959,7 @@ public class BuildMap : MonoBehaviour
                     // Setting all of the attributes
                     ielement.SetAttribute("X", Math.Round(topLeftX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(topLeftY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(frontimageInScene.name, @" \((.*?)\)", string.Empty));
+                    ielement.SetAttribute("ClassName", Regex.Replace(frontimageInScene.name, globalRegex, string.Empty));
                     ielement.SetAttribute("Width", worldWidth.ToString().Replace(',', '.'));
                     ielement.SetAttribute("Height", worldHeight.ToString().Replace(',', '.'));
                     ielement.SetAttribute("NativeX", nativeWidth.ToString());
@@ -983,7 +986,7 @@ public class BuildMap : MonoBehaviour
                     float height = bounds.size.y * 100;
                     ielement.SetAttribute("X", Math.Round(imagePosX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(imagePosY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(frontimageInScene.name, @" \((.*?)\)", string.Empty));
+                    ielement.SetAttribute("ClassName", Regex.Replace(frontimageInScene.name, globalRegex, string.Empty));
                     ielement.SetAttribute("Width", (width * scale.x).ToString());
                     ielement.SetAttribute("Height", (height * scale.y).ToString());
                     ielement.SetAttribute("NativeX", width.ToString());
@@ -1204,7 +1207,7 @@ public class BuildMap : MonoBehaviour
         backdropNode = null;
 
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(bdInScene.name, globalRegex, string.Empty));
 
         SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
         DynamicColor dynamicColor = bdInScene.GetComponent<DynamicColor>();
@@ -1229,7 +1232,7 @@ public class BuildMap : MonoBehaviour
             if (spriteRenderer == null)
             {
                 XmlElement BD_element = xml.CreateElement("Object");
-                BD_element.SetAttribute("Name", Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty));
+                BD_element.SetAttribute("Name", Regex.Replace(bdInScene.name, globalRegex, string.Empty));
                 BD_element.SetAttribute("X", Math.Round(positionX * 100).ToString().Replace(',', '.'));
                 BD_element.SetAttribute("Y", Math.Round(-positionY * 100).ToString().Replace(',', '.'));
                 backdropNode = BD_element;
@@ -1334,7 +1337,7 @@ public class BuildMap : MonoBehaviour
                     // Apply Attributes
                     BD_element.SetAttribute("X", Math.Round(topLeftX).ToString().Replace(',', '.'));
                     BD_element.SetAttribute("Y", Math.Round(topLeftY).ToString().Replace(',', '.'));
-                    BD_element.SetAttribute("ClassName", Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty));
+                    BD_element.SetAttribute("ClassName", Regex.Replace(bdInScene.name, globalRegex, string.Empty));
                     BD_element.SetAttribute("Width", (worldWidth * scale.x).ToString());
                     BD_element.SetAttribute("Height", (worldHeight * scale.y).ToString());
                     BD_element.SetAttribute("NativeX", nativeWidth.ToString());
@@ -1359,7 +1362,7 @@ public class BuildMap : MonoBehaviour
                     float height = bounds.size.y * 100;
                     BD_element.SetAttribute("X", Math.Round(positionX * 100).ToString().Replace(',', '.'));
                     BD_element.SetAttribute("Y", Math.Round(-positionY * 100).ToString().Replace(',', '.'));
-                    BD_element.SetAttribute("ClassName", Regex.Replace(bdInScene.name, @" \((.*?)\)", string.Empty));
+                    BD_element.SetAttribute("ClassName", Regex.Replace(bdInScene.name, globalRegex, string.Empty));
                     BD_element.SetAttribute("Width", (width * scale.x).ToString());
                     BD_element.SetAttribute("Height", (height * scale.y).ToString());
                     BD_element.SetAttribute("NativeX", width.ToString());
@@ -1415,7 +1418,7 @@ public class BuildMap : MonoBehaviour
         imageNode = null;
 
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(imageInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(imageInScene.name, globalRegex, string.Empty));
 
         if (imageInScene.name != "Camera")
         {
@@ -1534,7 +1537,6 @@ public class BuildMap : MonoBehaviour
                     // Setting all of the attributes
                     ielement.SetAttribute("X", Math.Round(topLeftX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(topLeftY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(imageInScene.name, @" \((.*?)\)", string.Empty));
                     ielement.SetAttribute("Width", worldWidth.ToString().Replace(',', '.'));
                     ielement.SetAttribute("Height", worldHeight.ToString().Replace(',', '.'));
                     ielement.SetAttribute("NativeX", nativeWidth.ToString());
@@ -1561,12 +1563,15 @@ public class BuildMap : MonoBehaviour
                     float height = bounds.size.y * 100;
                     ielement.SetAttribute("X", Math.Round(imagePosX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(imagePosY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(imageInScene.name, @" \((.*?)\)", string.Empty));
                     ielement.SetAttribute("Width", (width * scale.x).ToString());
                     ielement.SetAttribute("Height", (height * scale.y).ToString());
                     ielement.SetAttribute("NativeX", width.ToString());
                     ielement.SetAttribute("NativeY", height.ToString());
                 }
+
+                string objRegex = Regex.Replace(imageInScene.name, globalRegex, string.Empty);
+                string objName = (spriteRenderer != null && spriteRenderer.sprite != null) ? spriteRenderer.sprite.name : objRegex;
+                ielement.SetAttribute("ClassName", objName);
 
                 // Color of the Image
                 if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)
@@ -1631,7 +1636,7 @@ public class BuildMap : MonoBehaviour
                 Melement.SetAttribute("Y", Math.Round(-modelInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
             }
             Melement.SetAttribute("Type", modelProperties.Type.ToString()); //Add an name
-            Melement.SetAttribute("ClassName", Regex.Replace(modelInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+            Melement.SetAttribute("ClassName", Regex.Replace(modelInScene.name, globalRegex, string.Empty)); //Add an name
 
             if (modelProperties.UseLifeTime)
             {
@@ -1647,7 +1652,7 @@ public class BuildMap : MonoBehaviour
         objectNode = null;
         //Debug in log every object it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(objectInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(objectInScene.name, globalRegex, string.Empty));
 
         if (objectInScene.name != "Camera")
         {
@@ -1655,7 +1660,7 @@ public class BuildMap : MonoBehaviour
             XmlElement element = xml.CreateElement("Object"); //Create a new node from scratch
             if (name != string.Empty)
             {
-                element.SetAttribute("Name", Regex.Replace(name, @" \((.*?)\)", string.Empty)); //Add an name
+                element.SetAttribute("Name", Regex.Replace(name, globalRegex, string.Empty)); //Add an name
             }
 
             if (localPosition)
@@ -1815,7 +1820,7 @@ public class BuildMap : MonoBehaviour
         platformNode = null;
         //Debug in log every platform it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(platformInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(platformInScene.name, globalRegex, string.Empty));
 
         if (platformInScene.name != "Camera") // Use a texture called "collision" which should come with this buildmap update folder.
         {
@@ -1861,9 +1866,9 @@ public class BuildMap : MonoBehaviour
         trapezoidNode = null;
         //Debug in log every platform it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(trapezoidInScene.name, globalRegex, string.Empty));
 
-        if (Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty) == "trapezoid_type1") // Slope Default
+        if (Regex.Replace(trapezoidInScene.name, globalRegex, string.Empty) == "trapezoid_type1") // Slope Default
         {
             XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
             if (localPosition)
@@ -1899,7 +1904,7 @@ public class BuildMap : MonoBehaviour
             trapezoidNode = T_element;
         }
 
-        else if (Regex.Replace(trapezoidInScene.name, @" \((.*?)\)", string.Empty) == "trapezoid_type2") // Slope Mirrored
+        else if (Regex.Replace(trapezoidInScene.name, globalRegex, string.Empty) == "trapezoid_type2") // Slope Mirrored
         {
             XmlElement T_element = xml.CreateElement("Trapezoid"); //Create a new node from scratch
             if (localPosition)
@@ -1941,7 +1946,7 @@ public class BuildMap : MonoBehaviour
         triggerNode = null;
         //Debug in log every trigger it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(triggerInScene.name, globalRegex, string.Empty));
 
         if (triggerInScene.name != "Camera")
         {
@@ -1962,7 +1967,7 @@ public class BuildMap : MonoBehaviour
             if (dynamicTrigger != null)
             {
                 XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
-                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, globalRegex, string.Empty)); //Add an name
                 if (localPosition)
                 {
                     T_element.SetAttribute("X", Math.Round(triggerInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2002,7 +2007,7 @@ public class BuildMap : MonoBehaviour
 
                 XmlElement setVariable3 = xml.CreateElement("SetVariable");
                 setVariable3.SetAttribute("Name", "$Node");
-                setVariable3.SetAttribute("Value", "COM");
+                setVariable3.SetAttribute("Value", string.IsNullOrEmpty(dynamicTrigger.modelNode) ? "COM" : dynamicTrigger.modelNode);
                 initElement.AppendChild(setVariable3);
 
                 if (dynamicTrigger.PlaySound)
@@ -2083,7 +2088,7 @@ public class BuildMap : MonoBehaviour
             if (triggerSettings != null) //Checks if the trigger has a setting component
             {
                 XmlElement T_element = xml.CreateElement("Trigger"); //Create a new node from scratch
-                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                T_element.SetAttribute("Name", Regex.Replace(triggerInScene.name, globalRegex, string.Empty)); //Add an name
                 if (localPosition)
                 {
                     T_element.SetAttribute("X", Math.Round(triggerInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2138,7 +2143,7 @@ public class BuildMap : MonoBehaviour
 
         if (debugObjectWriting)
         {
-            Debug.Log("Writing object : " + Regex.Replace(itemInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(itemInScene.name, globalRegex, string.Empty));
         }
 
         if (itemInScene.name == "Camera")
@@ -2187,14 +2192,14 @@ public class BuildMap : MonoBehaviour
         areaNode = null;
         //Debug in log every Area it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(areaInScene.name, globalRegex, string.Empty));
 
         if (areaInScene.name != "Camera")
         {
             if (areaInScene.name == "TriggerCatch" || areaInScene.name == "TriggerCatchFront")
             {
                 XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
-                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, globalRegex, string.Empty)); //Add an name
                 if (localPosition)
                 {
                     A_element.SetAttribute("X", Math.Round(areaInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2229,7 +2234,7 @@ public class BuildMap : MonoBehaviour
             else if (areaInScene.name == "TriggerCatchFast")
             {
                 XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
-                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, globalRegex, string.Empty)); //Add an name
                 if (localPosition)
                 {
                     A_element.SetAttribute("X", Math.Round(areaInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2264,7 +2269,7 @@ public class BuildMap : MonoBehaviour
             else
             {
                 XmlElement A_element = xml.CreateElement("Area"); //Create a new node from scratch
-                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+                A_element.SetAttribute("Name", Regex.Replace(areaInScene.name, globalRegex, string.Empty)); //Add an name
                 if (localPosition)
                 {
                     A_element.SetAttribute("X", Math.Round(areaInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2311,7 +2316,7 @@ public class BuildMap : MonoBehaviour
 
         // Debug in log every Area it writes
         if (debugObjectWriting)
-            Debug.Log("Writing object : " + Regex.Replace(camInScene.name, @" \((.*?)\)", string.Empty));
+            Debug.Log("Writing object : " + Regex.Replace(camInScene.name, globalRegex, string.Empty));
 
 
         if (camInScene.name != "Camera") //kinda ironic
@@ -2334,7 +2339,7 @@ public class BuildMap : MonoBehaviour
 
 
             XmlElement triggerElement = xml.CreateElement("Trigger");
-            triggerElement.SetAttribute("Name", Regex.Replace(camInScene.name, @" \((.*?)\)", string.Empty));
+            triggerElement.SetAttribute("Name", Regex.Replace(camInScene.name, globalRegex, string.Empty));
             if (localPosition)
             {
                 triggerElement.SetAttribute("X", Math.Round(camInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
@@ -2393,7 +2398,7 @@ public class BuildMap : MonoBehaviour
             Pelement.SetAttribute("Height", particleProperties.Height.ToString());
             Pelement.SetAttribute("Frame", particleProperties.Frame.ToString());
             Pelement.SetAttribute("Type", particleProperties.Type.ToString());
-            Pelement.SetAttribute("ClassName", Regex.Replace(particleInScene.name, @" \((.*?)\)", string.Empty)); //Add an name
+            Pelement.SetAttribute("ClassName", Regex.Replace(particleInScene.name, globalRegex, string.Empty)); //Add an name
 
             particleNode = Pelement;
         }
@@ -2636,7 +2641,7 @@ public class BuildMap : MonoBehaviour
                     // Setting all of the attributes
                     ielement.SetAttribute("X", Math.Round(topLeftX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(topLeftY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(imageObject.name, @" \((.*?)\)", string.Empty));
+                    ielement.SetAttribute("ClassName", Regex.Replace(imageObject.name, globalRegex, string.Empty));
                     ielement.SetAttribute("Width", worldWidth.ToString().Replace(',', '.'));
                     ielement.SetAttribute("Height", worldHeight.ToString().Replace(',', '.'));
                     ielement.SetAttribute("NativeX", nativeWidth.ToString());
@@ -2663,12 +2668,15 @@ public class BuildMap : MonoBehaviour
                     float height = bounds.size.y * 100;
                     ielement.SetAttribute("X", Math.Round(imagePosX).ToString().Replace(',', '.'));
                     ielement.SetAttribute("Y", Math.Round(imagePosY).ToString().Replace(',', '.'));
-                    ielement.SetAttribute("ClassName", Regex.Replace(imageObject.name, @" \((.*?)\)", string.Empty));
                     ielement.SetAttribute("Width", (width * scale.x).ToString());
                     ielement.SetAttribute("Height", (height * scale.y).ToString());
                     ielement.SetAttribute("NativeX", width.ToString());
                     ielement.SetAttribute("NativeY", height.ToString());
                 }
+
+                string objRegex = Regex.Replace(imageObject.name, globalRegex, string.Empty);
+                string objName = (spriteRenderer != null && spriteRenderer.sprite != null) ? spriteRenderer.sprite.name : objRegex;
+                ielement.SetAttribute("ClassName", objName);
 
                 // Color of the Image
                 if (color.r != 1.000 || color.g != 1.000 || color.b != 1.000 || color.a != 1.000)

@@ -153,12 +153,19 @@ public class BuildMap : MonoBehaviour
     [MenuItem("Vectorier/BuildMap (Fast) #&B")]
     public static void BuildZlib() { Build(false, true); }
 
-    [MenuItem("Vectorier/BuildMap Xml Only")]
+    [MenuItem("Vectorier/BuildMap XML Only")]
     public static void BuildXml() { Build(false, false); }
 
 
     // -=-=-=- //
 
+	public static bool IsVisible(GameObject obj)
+	{
+		return !obj.CompareTag("EditorOnly") && 
+			!obj.CompareTag("Unused") && 
+			!SceneVisibilityManager.instance.IsHidden(obj) && 
+			obj.activeInHierarchy;
+	}
 
     public static void Build(bool useDZ, bool compileMap)
     {
@@ -166,9 +173,11 @@ public class BuildMap : MonoBehaviour
         // This is a slow operation.
         var buildMap = FindObjectOfType<BuildMap>();
 
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
+
         UnityEditor.SceneManagement.EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
-#endif
+
+		#endif
 
         if (string.IsNullOrEmpty(buildMap.vectorFilePath))
         {
@@ -213,11 +222,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject spawnInScene in GameObject.FindGameObjectsWithTag("Spawn"))
                 {
                     UnityEngine.Transform parent = spawnInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && parent.CompareTag("Object") && !IsVisible(spawnInScene))
+					{
+						continue;
+					}
+
                     XmlElement spawnNode;
                     buildMap.ConvertToSpawn(node, xml, spawnInScene, out spawnNode, false);
                     if (spawnNode != null) // Check if spawnNode is not null before appending
@@ -231,16 +240,10 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject imageInScene in imagesInScene)
                 {
                     UnityEngine.Transform parent = imageInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(imageInScene))
+					{
+						continue;
+					}
 
                     XmlElement imageNode;
                     buildMap.ConvertToImage(node, xml, imageInScene, out imageNode, false);
@@ -252,17 +255,10 @@ public class BuildMap : MonoBehaviour
                 // Object
                 foreach (GameObject objectInScene in GameObject.FindGameObjectsWithTag("Object"))
                 {
-                    UnityEngine.Transform parent = objectInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (!IsVisible(objectInScene))
+					{
+						continue;
+					}
 
                     XmlElement objectNode;
                     buildMap.ConvertToObject(node, xml, objectInScene, out objectNode, false);
@@ -273,16 +269,10 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject itemInScene in GameObject.FindGameObjectsWithTag("Item"))
                 {
                     UnityEngine.Transform parent = itemInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(itemInScene))
+					{
+						continue;
+					}
 
                     XmlElement itemNode;
                     buildMap.ConvertToItem(node, xml, itemInScene, out itemNode, false);
@@ -294,16 +284,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject platformInScene in GameObject.FindGameObjectsWithTag("Platform"))
                 {
                     UnityEngine.Transform parent = platformInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(platformInScene))
+					{
+						continue;
+					}
+
                     XmlElement platformNode;
                     buildMap.ConvertToPlatform(node, xml, platformInScene, out platformNode, false);
                     node.FirstChild.AppendChild(platformNode);
@@ -315,16 +300,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject trapezoidInScene in GameObject.FindGameObjectsWithTag("Trapezoid"))
                 {
                     UnityEngine.Transform parent = trapezoidInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(trapezoidInScene))
+					{
+						continue;
+					}
+
                     XmlElement trapezoidNode;
                     buildMap.ConvertToTrapezoid(node, xml, trapezoidInScene, out trapezoidNode, false);
                     node.FirstChild.AppendChild(trapezoidNode);
@@ -335,16 +315,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject triggerInScene in GameObject.FindGameObjectsWithTag("Trigger"))
                 {
                     UnityEngine.Transform parent = triggerInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(triggerInScene))
+					{
+						continue;
+					}
+
                     XmlElement triggerNode;
                     buildMap.ConvertToTrigger(node, xml, triggerInScene, out triggerNode, false);
                     node.FirstChild.AppendChild(triggerNode);
@@ -368,16 +343,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject areaInScene in GameObject.FindGameObjectsWithTag("Area"))
                 {
                     UnityEngine.Transform parent = areaInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(areaInScene))
+					{
+						continue;
+					}
+
                     XmlElement areaNode;
                     buildMap.ConvertToArea(node, xml, areaInScene, out areaNode, false);
                     node.FirstChild.AppendChild(areaNode);
@@ -388,16 +358,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject modelInScene in GameObject.FindGameObjectsWithTag("Model"))
                 {
                     UnityEngine.Transform parent = modelInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(modelInScene))
+					{
+						continue;
+					}
+
                     XmlElement modelNode;
                     buildMap.ConvertToModel(node, xml, modelInScene, out modelNode, false);
                     node.FirstChild.AppendChild(modelNode);
@@ -407,6 +372,11 @@ public class BuildMap : MonoBehaviour
                 // Camera
                 foreach (GameObject camInScene in GameObject.FindGameObjectsWithTag("Camera"))
                 {
+					if (!IsVisible(camInScene))
+					{
+						continue;
+					}
+
                     //Note: This is actually a trigger, but with camera zoom properties
                     XmlElement cameraNode;
                     buildMap.ConvertToCamera(node, xml, camInScene, out cameraNode, false);
@@ -417,6 +387,11 @@ public class BuildMap : MonoBehaviour
                 // Dynamic
                 foreach (GameObject dynamicInScene in GameObject.FindGameObjectsWithTag("Dynamic"))
                 {
+					if (!IsVisible(dynamicInScene))
+					{
+						continue;
+					}
+
                     XmlElement dynamicNode;
                     UnityEngine.Transform dynamicInSceneTransform = dynamicInScene.transform;
                     UnityEngine.Transform parent = dynamicInSceneTransform.parent;
@@ -434,16 +409,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject animationInScene in GameObject.FindGameObjectsWithTag("Animation"))
                 {
                     UnityEngine.Transform parent = animationInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(animationInScene))
+					{
+						continue;
+					}
+
                     XmlElement animNode;
                     buildMap.ConvertToAnimation(node, xml, animationInScene, out animNode, false);
                     node.FirstChild.AppendChild(animNode);
@@ -454,16 +424,11 @@ public class BuildMap : MonoBehaviour
                 foreach (GameObject particleInScene in GameObject.FindGameObjectsWithTag("Particle"))
                 {
                     UnityEngine.Transform parent = particleInScene.transform.parent;
-                    if (parent != null && parent.CompareTag("Dynamic"))
-                    {
-                        // If the parent has the tag "Dynamic" skip this GameObject and continue.
-                        continue;
-                    }
-                    if (parent != null && parent.CompareTag("Object"))
-                    {
-                        // If the parent has the tag "Object" skip this GameObject and continue.
-                        continue;
-                    }
+					if (parent != null && (parent.CompareTag("Dynamic") || parent.CompareTag("Object")) || !IsVisible(particleInScene))
+					{
+						continue;
+					}
+
                     XmlElement particleNode;
                     buildMap.ConvertToParticle(node, xml, particleInScene, out particleNode, false);
                     node.FirstChild.AppendChild(particleNode);
@@ -836,49 +801,46 @@ public class BuildMap : MonoBehaviour
     void ConvertToAnimation(XmlNode node, XmlDocument xml, GameObject animationInScene, out XmlElement animNode, bool localPosition)
     {
         animNode = null;
-        AnimationProperties AnimationComponent = animationInScene.GetComponent<AnimationProperties>(); // Animation Properties Component
 
-        if (animationInScene.name != "Camera")
+		// Animation Properties Component
+        AnimationProperties AnimationComponent = animationInScene.GetComponent<AnimationProperties>();
+
+        if (animationInScene.name == "Camera")
         {
-            XmlElement animationElement = xml.CreateElement("Animation"); //Create a new node from scratch
-            if (localPosition)
-            {
-                animationElement.SetAttribute("X", Math.Round(animationInScene.transform.localPosition.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                animationElement.SetAttribute("Y", Math.Round(-animationInScene.transform.localPosition.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-            }
-            else
-            {
-                animationElement.SetAttribute("X", Math.Round(animationInScene.transform.position.x * 100).ToString().Replace(',', '.')); //Add X position (Refit into the Vector units)
-                animationElement.SetAttribute("Y", Math.Round(-animationInScene.transform.position.y * 100).ToString().Replace(',', '.')); // Add Y position (Negative because Vector see the world upside down)
-            }
-            animationElement.SetAttribute("Width", AnimationComponent.Width); //Add a Width
-            animationElement.SetAttribute("Height", AnimationComponent.Height); //Add a Height
-            animationElement.SetAttribute("Type", AnimationComponent.Type); //Type (default: 1)
+			return;
+		}
+
+		XmlElement animationElement = xml.CreateElement("Animation");
+
+		Vector3 pos = localPosition ? animationInScene.transform.localPosition : animationInScene.transform.position;
+		animationElement.SetAttribute("X", Math.Round(pos.x * 100).ToString("0.#####", CultureInfo.InvariantCulture));
+		animationElement.SetAttribute("Y", Math.Round(-pos.y * 100).ToString("0.#####", CultureInfo.InvariantCulture));
+
+		animationElement.SetAttribute("Width", AnimationComponent.Width);
+		animationElement.SetAttribute("Height", AnimationComponent.Height);
+		animationElement.SetAttribute("Type", AnimationComponent.Type); // default is 1
 
 
-            if (!string.IsNullOrEmpty(AnimationComponent.Direction))
-            {
-                animationElement.SetAttribute("Direction", AnimationComponent.Direction); //Direction (ex: Direction="10|-1.5")
-            }
+		foreach (var (attribute, value) in new (string, string)[] 
+		{ 
+			("Direction", AnimationComponent.Direction), 
+			("Acceleration", AnimationComponent.Acceleration),
+			("Time", AnimationComponent.Time) 
+		})
+		{
+			if (!string.IsNullOrEmpty(value))
+			{
+				animationElement.SetAttribute(attribute, value);
+			}
+		}
 
-            if (!string.IsNullOrEmpty(AnimationComponent.Acceleration))
-            {
-                animationElement.SetAttribute("Acceleration", AnimationComponent.Acceleration); //Acceleration (ex: Acceleration="0.02|-0.1")
-            }
+		animationElement.SetAttribute("ScaleX", AnimationComponent.ScaleX);
+		animationElement.SetAttribute("ScaleY", AnimationComponent.ScaleY);
 
-
-            animationElement.SetAttribute("ScaleX", AnimationComponent.ScaleX); //Add a ScaleX
-            animationElement.SetAttribute("ScaleY", AnimationComponent.ScaleY); //Add a ScaleY
-
-            if (!string.IsNullOrEmpty(AnimationComponent.Time))
-            {
-                animationElement.SetAttribute("Time", AnimationComponent.Time); //Add a Time
-            }
-
-            animationElement.SetAttribute("ClassName", Regex.Replace(animationInScene.name, @" \((.*?)\)", string.Empty)); //Add a name
-            animNode = animationElement;
-        }
+        animationElement.SetAttribute("ClassName", Regex.Replace(animationInScene.name, @" ?\((.*?)\)| ?\[.*?\]", string.Empty));
+        animNode = animationElement;
     }
+
 
     void ConvertToTopImage(XmlNode node, XmlDocument xml, GameObject frontimageInScene, out XmlElement topimgNode)
     {

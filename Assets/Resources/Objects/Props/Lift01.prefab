@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6831288221721564680}
   - component: {fileID: 80971993172076494}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &80971993172076494
 SpriteRenderer:
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 9057105747676894379}
   - component: {fileID: 4344001100047205929}
   m_Layer: 0
-  m_Name: v_Pipe_5(Clone)
+  m_Name: v_Pipe_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4344001100047205929
 SpriteRenderer:
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 814467265760217103}
   - component: {fileID: 4249462086916317714}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,7 +193,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4249462086916317714
 SpriteRenderer:
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 7151003145511351966}
   - component: {fileID: 9171993499827809410}
   m_Layer: 0
-  m_Name: v_black(Clone)
+  m_Name: v_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 0.06, y: 3.82, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9171993499827809410
 SpriteRenderer:
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 4064170308987628208}
   - component: {fileID: 8246333382091392398}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8246333382091392398
 SpriteRenderer:
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 129154550585311331}
   - component: {fileID: 1799542629555132745}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,7 +439,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1799542629555132745
 SpriteRenderer:
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 389827730082580434}
   - component: {fileID: 8968629792258768301}
   m_Layer: 0
-  m_Name: v_black(Clone)
+  m_Name: v_black (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,7 +521,7 @@ Transform:
   m_LocalScale: {x: 0.06, y: 3.82, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 5
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8968629792258768301
 SpriteRenderer:
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 4605184749550149441}
   - component: {fileID: 559141712661654587}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &559141712661654587
 SpriteRenderer:
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 6735061875639652495}
   - component: {fileID: 9183341686584049479}
   m_Layer: 0
-  m_Name: v_railing_1(Clone)
+  m_Name: v_railing_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +685,7 @@ Transform:
   m_LocalScale: {x: 0.50179213, y: 0.5046729, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9183341686584049479
 SpriteRenderer:
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 8442633248704199087}
   - component: {fileID: 4296056605648165766}
   m_Layer: 0
-  m_Name: vent_lamp(Clone)
+  m_Name: vent_lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,11 +763,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6111488411170546263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: -6.01, z: 0}
+  m_LocalPosition: {x: 0.54, y: -5.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4296056605648165766
 SpriteRenderer:
@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 1320291180539002405}
   - component: {fileID: 6729814393467974727}
   m_Layer: 0
-  m_Name: v_object_02(Clone)
+  m_Name: v_object_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +849,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6729814393467974727
 SpriteRenderer:
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 804871895043828987}
   - component: {fileID: 2597498758866883826}
   m_Layer: 0
-  m_Name: v_Pipe_5(Clone)
+  m_Name: v_Pipe_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -931,7 +931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 2
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2597498758866883826
 SpriteRenderer:
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 2941169084595466978}
   - component: {fileID: 8795770925589497558}
   m_Layer: 0
-  m_Name: gas(Clone)
+  m_Name: gas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1013,7 +1013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8795770925589497558
 SpriteRenderer:
@@ -1093,23 +1093,23 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8442633248704199087}
   - {fileID: 9057105747676894379}
-  - {fileID: 804871895043828987}
-  - {fileID: 6735061875639652495}
-  - {fileID: 7151003145511351966}
-  - {fileID: 389827730082580434}
-  - {fileID: 2692597354155391700}
-  - {fileID: 1320291180539002405}
-  - {fileID: 2941169084595466978}
   - {fileID: 4064170308987628208}
+  - {fileID: 2941169084595466978}
+  - {fileID: 7151003145511351966}
+  - {fileID: 2692597354155391700}
+  - {fileID: 8442633248704199087}
   - {fileID: 129154550585311331}
   - {fileID: 242712633957965033}
+  - {fileID: 6735061875639652495}
+  - {fileID: 1320291180539002405}
   - {fileID: 9106632616791940977}
   - {fileID: 865897409592194196}
-  - {fileID: 4605184749550149441}
   - {fileID: 814467265760217103}
+  - {fileID: 4605184749550149441}
   - {fileID: 6831288221721564680}
+  - {fileID: 804871895043828987}
+  - {fileID: 389827730082580434}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 242712633957965033}
   - component: {fileID: 7121515531601595532}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1142,7 +1142,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7121515531601595532
 SpriteRenderer:
@@ -1206,7 +1206,7 @@ GameObject:
   - component: {fileID: 9106632616791940977}
   - component: {fileID: 231083263721449121}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,7 +1224,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &231083263721449121
 SpriteRenderer:
@@ -1288,7 +1288,7 @@ GameObject:
   - component: {fileID: 865897409592194196}
   - component: {fileID: 6233495144081410735}
   m_Layer: 0
-  m_Name: v_object_01(Clone)
+  m_Name: v_object_01 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1306,7 @@ Transform:
   m_LocalScale: {x: 0.516129, y: 0.50526315, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6233495144081410735
 SpriteRenderer:
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 2692597354155391700}
   - component: {fileID: 2835256036970863264}
   m_Layer: 0
-  m_Name: gas(Clone)
+  m_Name: gas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1388,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 6438768184214846930}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2835256036970863264
 SpriteRenderer:

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7258044854662352579}
   - component: {fileID: 2140194984980067736}
   m_Layer: 0
-  m_Name: v_Pipe_3(Clone)
-  m_TagString: Untagged
+  m_Name: v_Pipe_3
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2140194984980067736
 SpriteRenderer:
@@ -93,8 +93,8 @@ GameObject:
   - component: {fileID: 2841004815130058494}
   - component: {fileID: 9148076457538414707}
   m_Layer: 0
-  m_Name: v_Pipe_3(Clone)
-  m_TagString: Untagged
+  m_Name: v_Pipe_3 (3)
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9148076457538414707
 SpriteRenderer:
@@ -191,15 +191,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 499990415373204445}
+  - {fileID: 1946847951707958761}
+  - {fileID: 7258044854662352579}
+  - {fileID: 7333563792023459772}
+  - {fileID: 4196846964816545070}
   - {fileID: 6076456755075968873}
   - {fileID: 2024899600875778696}
   - {fileID: 2841004815130058494}
-  - {fileID: 7258044854662352579}
-  - {fileID: 7333563792023459772}
-  - {fileID: 1946847951707958761}
   - {fileID: 2928169259779919240}
-  - {fileID: 499990415373204445}
-  - {fileID: 4196846964816545070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -214,8 +214,8 @@ GameObject:
   - component: {fileID: 6076456755075968873}
   - component: {fileID: 6964877251874543766}
   m_Layer: 0
-  m_Name: v_object_02(Clone)
-  m_TagString: Untagged
+  m_Name: v_object_02
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ Transform:
   m_LocalScale: {x: 1.2020202, y: 1.1979166, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6964877251874543766
 SpriteRenderer:
@@ -296,8 +296,8 @@ GameObject:
   - component: {fileID: 2928169259779919240}
   - component: {fileID: 3967785748737818414}
   m_Layer: 0
-  m_Name: gas_vertical(Clone)
-  m_TagString: Untagged
+  m_Name: gas_vertical (1)
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3967785748737818414
 SpriteRenderer:
@@ -378,8 +378,8 @@ GameObject:
   - component: {fileID: 2024899600875778696}
   - component: {fileID: 6833282146108998957}
   m_Layer: 0
-  m_Name: v_Pipe_3(Clone)
-  m_TagString: Untagged
+  m_Name: v_Pipe_3 (2)
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +396,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6833282146108998957
 SpriteRenderer:
@@ -460,8 +460,8 @@ GameObject:
   - component: {fileID: 7333563792023459772}
   - component: {fileID: 76522775263955076}
   m_Layer: 0
-  m_Name: v_Pipe_3(Clone)
-  m_TagString: Untagged
+  m_Name: v_Pipe_3 (1)
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,7 +478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &76522775263955076
 SpriteRenderer:
@@ -542,8 +542,8 @@ GameObject:
   - component: {fileID: 1946847951707958761}
   - component: {fileID: 660735346656091532}
   m_Layer: 0
-  m_Name: v_crane_1_02(Clone)
-  m_TagString: Untagged
+  m_Name: v_crane_1_02
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +560,7 @@ Transform:
   m_LocalScale: {x: 0.5007342, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &660735346656091532
 SpriteRenderer:
@@ -624,8 +624,8 @@ GameObject:
   - component: {fileID: 4196846964816545070}
   - component: {fileID: 3978808795875871660}
   m_Layer: 0
-  m_Name: generator(Clone)
-  m_TagString: Untagged
+  m_Name: generator
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -642,7 +642,7 @@ Transform:
   m_LocalScale: {x: 0.50214595, y: 0.4642857, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3978808795875871660
 SpriteRenderer:
@@ -706,8 +706,8 @@ GameObject:
   - component: {fileID: 499990415373204445}
   - component: {fileID: 5487941803104032762}
   m_Layer: 0
-  m_Name: gas_vertical(Clone)
-  m_TagString: Untagged
+  m_Name: gas_vertical
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,7 +724,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 1104520350334778217}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5487941803104032762
 SpriteRenderer:

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9075638911040948057}
   m_Layer: 0
   m_Name: collision
-  m_TagString: Platform
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8562325163872927983}
   m_Layer: 0
   m_Name: cons_tower2
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

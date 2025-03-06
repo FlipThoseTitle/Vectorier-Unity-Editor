@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2140194984980067736}
   m_Layer: 0
   m_Name: v_Pipe_3
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 9148076457538414707}
   m_Layer: 0
   m_Name: v_Pipe_3 (3)
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6964877251874543766}
   m_Layer: 0
   m_Name: v_object_02
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 3967785748737818414}
   m_Layer: 0
   m_Name: gas_vertical (1)
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 6833282146108998957}
   m_Layer: 0
   m_Name: v_Pipe_3 (2)
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 76522775263955076}
   m_Layer: 0
   m_Name: v_Pipe_3 (1)
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 660735346656091532}
   m_Layer: 0
   m_Name: v_crane_1_02
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 3978808795875871660}
   m_Layer: 0
   m_Name: generator
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 5487941803104032762}
   m_Layer: 0
   m_Name: gas_vertical
-  m_TagString: Image
+  m_TagString: Unused
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

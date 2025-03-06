@@ -7,19 +7,21 @@
   </Sets>
   <Music Name="music_dinamic" Volume="0.3"/>
   <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="PlayerSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0.8" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+    <Model Name="Player" Type="1" Color="0" AI="0" Time="0" AllowedSpawns="BikeScene" BirthSpawn="PlayerSpawn" Respawns="Hunter" Trick="1" Item="1" Lose="1" Victory="1" ForceBlasts="Hunter"/>
+    <Model Name="Hunter" Type="0" Color="0" AI="1" Time="0.8" AllowedSpawns="Respawn|BikeScene" BirthSpawn="DefaultSpawn" Icon="1" Murders="Player" Arrests="Player" Skins="hunter"/>
   </Models>
   <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Item="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1" AllowedSpawns="Despawn"/>
+    <Model Name="Player" Type="0" Color="0" AI="5" Time="0" AllowedSpawns="BikeScene" BirthSpawn="DefaultSpawn" Respawns="Hunter" Victory="1"/>
+    <Model Name="Hunter" Type="1" Color="0" AI="0" Time="1.5" AllowedSpawns="Despawn|BikeScene" BirthSpawn="DefaultSpawn" Trick="1" Item="1" Lose="1" Murders="Player" Arrests="Player" Skins="hunter"/>
   </Models>
   <Coins Value="40"/>
   <Objects Name="Money"/>
   <Track>
     <Object Factor="0.05">
       <Content>
-	    <Image X="-500" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+        <Image X="-3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+        <Image X="-1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+        <Image X="-500" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
         <Image X="1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
         <Image X="3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
       </Content>

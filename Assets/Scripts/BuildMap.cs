@@ -11,7 +11,6 @@ using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
 
-
 // -=-=-=- //
 
 public class BuildMap : MonoBehaviour
@@ -47,13 +46,24 @@ public class BuildMap : MonoBehaviour
     [Tooltip("Volume of the music.")]
     public string MusicVolume = "0.3";
 
-    [Tooltip("Background Image")]
+    [Tooltip(@"Background image.
+
+If empty, inherited from ""customBackgroundMirror"" variable.
+
+⚠️ Has to be located inside “track_content_2048.dz” file archive base!")]
     public string customBackground = "v_bg";
 
-    [Tooltip("Background Width")]
+    [Tooltip(@"Background image for left side. (even nodes)
+
+If empty, inherited from ""customBackground"" variable.
+
+⚠️ Has to be located inside “track_content_2048.dz” file archive base!")]
+    public string customBackgroundMirror = "";
+
+    [Tooltip("Background width")]
     public string bg_Width = "2121";
 
-    [Tooltip("Background Height")]
+    [Tooltip("Background height")]
     public string bg_Height = "1116";
 
     // Gameplay
@@ -61,9 +71,11 @@ public class BuildMap : MonoBehaviour
     public class PlayerSettings
     {
         public string playerModelName = "Player";
-        [Tooltip("Player's Spawn Name")] public string playerSpawnName = "PlayerSpawn";
 
-        [Tooltip("Duration until the player appears.")]
+        [Tooltip("Player's spawn name.")]
+        public string playerSpawnName = "PlayerSpawn";
+
+        [Tooltip("Duration until the player appears, in seconds.")]
         public float playerSpawnTime;
 
         [Tooltip("Player Appearance (Default: 1)")]
@@ -74,73 +86,114 @@ public class BuildMap : MonoBehaviour
     {
         public string hunterModelName = "Hunter";
 
-        [Tooltip("Hunter's Spawn Name")]
+        [Tooltip("Hunter's spawn name")]
         public string hunterSpawnName = "DefaultSpawn";
 
-        [Tooltip("Time it takes for the hunter to spawn in.")]
+        [Tooltip("Duration until the hunter appears, in seconds.")]
         public float hunterSpawnTime;
 
-        [Tooltip("Hunter Respawn Name")]
+        [Tooltip("Hunter respawn name.")]
         public string hunterAllowedSpawn = "Respawn";
 
-        [Tooltip("Hunter Appearance (Default: hunter)")]
+        [Tooltip("Hunter model appearance (default: “hunter”)")]
         public string hunterSkin = "hunter";
 
-        [Tooltip("Hunter is able do to tricks")]
+        [Tooltip("Determines whether hunter is able do to tricks")]
         public bool hunterTrickAllowed;
 
-        [Tooltip("Shows hunter icon or not")]
+        [Tooltip("Determines whether hunter's icon is shown")]
         public bool hunterIcon = true;
 
-        [Tooltip("Ai Number (Default: 1)")]
+        [Tooltip("Hunter AI type number (Default: 1)")]
         public int hunterAIType = 1;
     }
 
-    [Header("Gameplay")]
+    [Header("Gameplay (Common Mode)")]
     [SerializeField]
     private PlayerSettings Player;
 
     [SerializeField]
     private HunterSettings Hunter;
 
-    [Tooltip("Uses custom properties instead of prefixed (Will ignore the settings for player and hunter above.)")]
-    public bool useCustomProperties;
+	[Tooltip(@"Uses custom properties instead of prefixed
 
-    [TextArea(5, 20)]
-    public string CustomModelProperties = @"<Model Name=""Player""
-		Type=""1""
-		Color=""0""
-		BirthSpawn=""PlayerSpawn""
-		AI=""0""
-		Time=""0""
-		Respawns=""Hunter""
-		ForceBlasts=""Hunter""
-		Trick=""1""
-		Item=""1""
-		Victory=""1""
-		Lose=""1""
-	/>
+⚠️ Ignores the above settings for player and hunter!")]
+	public bool useCustomProperties;
 
-	<Model Name=""Hunter""
-		Type=""0""
-		Color=""0""
-		BirthSpawn=""DefaultSpawn""
-		AI=""1""
-		Time=""0.8""
-		AllowedSpawns=""Respawn""
-		Skins=""hunter""
-		Murders=""Player""
-		Arrests=""Player""
-		Icon=""1""
-	/>";
+	[TextArea(5, 20)]
+	public string CustomModelProperties = @"<Model
+	Name=""Player""
+	Type=""1""
+	Color=""0""
+	BirthSpawn=""PlayerSpawn""
+	AI=""0""
+	Time=""0""
+	Skins=""1""
+	Respawns=""Hunter""
+	ForceBlasts=""Hunter""
+	Trick=""1""
+	Item=""1""
+	Victory=""1""
+	Lose=""1""
+	LifeTime=""3""
+/>
 
+<Model
+	Name=""Hunter""
+	Type=""0""
+	Color=""0""
+	BirthSpawn=""DefaultSpawn""
+	AI=""1""
+	Time=""0.8""
+	AllowedSpawns=""Respawn""
+	Skins=""hunter""
+	Murders=""Player|Helper""
+	Arrests=""Player""
+	Icon=""1""
+	LifeTime=""3""
+/>
+
+<!-- Uncomment those lines to add more models --/>
+
+<!-- Model
+	Name=""Hunter2""
+	Type=""0""
+	Color=""0""
+	BirthSpawn=""DefaultSpawn""
+	AI=""2""
+	Time=""0.8""
+	AllowedSpawns=""Respawn""
+	Skins=""hunter""
+	Murders=""Player|Helper""
+	Arrests=""Player""
+	Icon=""1""
+	LifeTime=""3""
+--/>
+
+<!--Model
+	Name=""Helper""
+	Type=""0""
+	Color=""0""
+	BirthSpawn=""HelperSpawn""
+	AI=""3""
+	Time=""0.3""
+	AllowedSpawns=""RespawnHelper""
+	Skins=""revolution_girl""
+	Trick=""0""
+	Item=""0""
+	Victory=""0""
+	Lose=""0""
+	LifeTime=""3""
+--/>";
 
     // Miscellaneous
     [Header("Miscellaneous")]
+
+	[Tooltip("Outputs objects writing to console while building the map.")]
     public bool debugObjectWriting;
     public bool hunterPlaced;
 
-    [Tooltip("Divide Gameobject's position by object factor.")]
+	[Tooltip("Divide GameObject's position by it's layer object factor.")]
     public bool correctFactorPosition = false;
 
 
@@ -656,18 +709,36 @@ public class BuildMap : MonoBehaviour
         // Set the background
         XmlNode objNode = xml.SelectSingleNode("/Root/Track/Object[@Factor='0.05']");
         if (objNode != null)
-        {
+		{
             XmlNode contentNode = objNode.SelectSingleNode("Content");
-            if (contentNode != null)
-            {
-                XmlNodeList imageNodes = contentNode.SelectNodes("Image");
-                foreach (XmlNode imageNode in imageNodes)
-                {
-                    imageNode.Attributes["ClassName"].Value = customBackground;
-                    imageNode.Attributes["Width"].Value = bg_Width;
-                    imageNode.Attributes["Height"].Value = bg_Height;
-                }
-            }
+
+			if (contentNode != null)
+			{
+				XmlNodeList imageNodes = contentNode.SelectNodes("Image");
+
+				// Indexing starts at 0 (relatively even)
+				for (int i = 0; i < imageNodes.Count; i++)
+				{
+					XmlNode imageNode = imageNodes[i];
+
+					if (i % 2 == 0)
+					{
+						imageNode.Attributes["ClassName"].Value = 
+							!string.IsNullOrEmpty(customBackground) ? customBackground : 
+							(string.IsNullOrEmpty(customBackgroundMirror) ? "defaultBackground" : customBackgroundMirror);
+					}
+					else
+					{
+						imageNode.Attributes["ClassName"].Value = 
+							!string.IsNullOrEmpty(customBackgroundMirror) ? customBackgroundMirror : 
+							(string.IsNullOrEmpty(customBackground) ? "defaultBackground" : customBackground);
+					}
+
+					// Set dimensions
+					imageNode.Attributes["Width"].Value = bg_Width.ToString();
+					imageNode.Attributes["Height"].Value = bg_Height.ToString();
+				}
+			}
         }
 
 

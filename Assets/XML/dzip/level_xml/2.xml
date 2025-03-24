@@ -1,57 +1,57 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Node215 Type="Node"  X="-4.87838745117188"  Y="204.47428894043"  Z="7.96725082397461"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node216 Type="Node"  X="-8.11598682403564"  Y="206.377670288086"  Z="-11.6769742965698"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node217 Type="Node"  X="-11.1614656448364"  Y="208.62109375"  Z="-31.3160305023193"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node218 Type="Node"  X="-11.2832489013672"  Y="216.499176025391"  Z="-49.6986618041992"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node223 Type="Node"  X="-0.00314045953564346"  Y="189.623291015625"  Z="0.0977022275328636"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node224 Type="Node"  X="-11.3088483810425"  Y="189.831985473633"  Z="-16.3988857269287"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node225 Type="Node"  X="-14.5778837203979"  Y="192.108764648438"  Z="-35.998119354248"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-    <Node226 Type="Node"  X="-18.418327331543"  Y="200.980163574219"  Z="-53.5066757202148"  Mass="1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1" Attenuation="0.1" />
-  </Nodes>
-  <Edges>
-    <Edge219 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node215"  End2="NHead" />
-    <Edge220 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node215"  End2="Node216" />
-    <Edge221 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node216"  End2="Node217" />
-    <Edge222 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node217"  End2="Node218" />
-    <Edge227 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node225"  End2="Node226" />
-    <Edge228 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node224"  End2="Node225" />
-    <Edge229 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node223"  End2="Node224" />
-    <Edge231 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NNeck"  End2="Node223" />
-    <Edge232 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node215"  End2="Node223" />
-    <Edge233 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node216"  End2="Node224" />
-    <Edge234 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node217"  End2="Node225" />
-    <Edge235 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node218"  End2="Node226" />
-  </Edges>
-  <Figures>
-    <Triangle-1 Type="Triangle"  Shading="0"  Node1="Node217"  Node2="Node218"  Node3="Node226" />
-    <Triangle-2 Type="Triangle"  Shading="0"  Node1="Node217"  Node2="Node225"  Node3="Node226" />
-    <Triangle-3 Type="Triangle"  Shading="0"  Node1="Node216"  Node2="Node225"  Node3="Node217" />
-    <Triangle-4 Type="Triangle"  Shading="0"  Node1="Node224"  Node2="Node216"  Node3="Node225" />
-    <Triangle-6 Type="Triangle"  Shading="0"  Node1="Node215"  Node2="Node223"  Node3="Node224" />
-    <Triangle-5 Type="Triangle"  Shading="0"  Node1="Node215"  Node2="Node224"  Node3="Node216" />
-    <Triangle-8 Type="Triangle"  Shading="0"  Node1="NNeck"  Node2="NHead"  Node3="Node223" />
-    <Triangle-7 Type="Triangle"  Shading="0"  Node1="NHead"  Node2="Node223"  Node3="Node215" />
-    <NP_Node215 Type="NodePoint"  Node="Node215"  Radius="3" />
-    <NP_Node216 Type="NodePoint"  Node="Node216"  Radius="3" />
-    <NP_Node217 Type="NodePoint"  Node="Node217"  Radius="3" />
-    <NP_Node218 Type="NodePoint"  Node="Node218"  Radius="3" />
-    <EL_Edge219 Type="EdgeLine"  Edge="Edge219"  Width="0" />
-    <EL_Edge220 Type="EdgeLine"  Edge="Edge220"  Width="0" />
-    <EL_Edge221 Type="EdgeLine"  Edge="Edge221"  Width="0" />
-    <EL_Edge222 Type="EdgeLine"  Edge="Edge222"  Width="0" />
-    <NP_Node223 Type="NodePoint"  Node="Node223"  Radius="3" />
-    <NP_Node224 Type="NodePoint"  Node="Node224"  Radius="3" />
-    <NP_Node225 Type="NodePoint"  Node="Node225"  Radius="3" />
-    <NP_Node226 Type="NodePoint"  Node="Node226"  Radius="3" />
-    <EL_Edge227 Type="EdgeLine"  Edge="Edge227"  Width="0" />
-    <EL_Edge228 Type="EdgeLine"  Edge="Edge228"  Width="0" />
-    <EL_Edge229 Type="EdgeLine"  Edge="Edge229"  Width="0" />
-    <EL_Edge231 Type="EdgeLine"  Edge="Edge231"  Width="0" />
-    <EL_Edge232 Type="EdgeLine"  Edge="Edge232"  Width="0" />
-    <EL_Edge233 Type="EdgeLine"  Edge="Edge233"  Width="0" />
-    <EL_Edge234 Type="EdgeLine"  Edge="Edge234"  Width="0" />
-    <EL_Edge235 Type="EdgeLine"  Edge="Edge235"  Width="0" />
-  </Figures>
+	<Nodes>
+		<Node215 Type="Node" X="-4.87838745117188" Y="204.47428894043" Z="7.96725082397461" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node216 Type="Node" X="-8.11598682403564" Y="206.377670288086" Z="-11.6769742965698" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node217 Type="Node" X="-11.1614656448364" Y="208.62109375" Z="-31.3160305023193" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node218 Type="Node" X="-11.2832489013672" Y="216.499176025391" Z="-49.6986618041992" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node223 Type="Node" X="-0.00314045953564346" Y="189.623291015625" Z="0.0977022275328636" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node224 Type="Node" X="-11.3088483810425" Y="189.831985473633" Z="-16.3988857269287" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node225 Type="Node" X="-14.5778837203979" Y="192.108764648438" Z="-35.998119354248" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+		<Node226 Type="Node" X="-18.418327331543" Y="200.980163574219" Z="-53.5066757202148" Mass="1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Attenuation="0.1"/>
+	</Nodes>
+	<Edges>
+		<Edge219 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node215" End2="NHead"/>
+		<Edge220 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node215" End2="Node216"/>
+		<Edge221 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node216" End2="Node217"/>
+		<Edge222 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node217" End2="Node218"/>
+		<Edge227 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node225" End2="Node226"/>
+		<Edge228 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node224" End2="Node225"/>
+		<Edge229 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node223" End2="Node224"/>
+		<Edge231 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NNeck" End2="Node223"/>
+		<Edge232 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node215" End2="Node223"/>
+		<Edge233 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node216" End2="Node224"/>
+		<Edge234 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node217" End2="Node225"/>
+		<Edge235 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node218" End2="Node226"/>
+	</Edges>
+	<Figures>
+		<Triangle-1 Type="Triangle" Shading="0" Node1="Node217" Node2="Node218" Node3="Node226"/>
+		<Triangle-2 Type="Triangle" Shading="0" Node1="Node217" Node2="Node225" Node3="Node226"/>
+		<Triangle-3 Type="Triangle" Shading="0" Node1="Node216" Node2="Node225" Node3="Node217"/>
+		<Triangle-4 Type="Triangle" Shading="0" Node1="Node224" Node2="Node216" Node3="Node225"/>
+		<Triangle-6 Type="Triangle" Shading="0" Node1="Node215" Node2="Node223" Node3="Node224"/>
+		<Triangle-5 Type="Triangle" Shading="0" Node1="Node215" Node2="Node224" Node3="Node216"/>
+		<Triangle-8 Type="Triangle" Shading="0" Node1="NNeck" Node2="NHead" Node3="Node223"/>
+		<Triangle-7 Type="Triangle" Shading="0" Node1="NHead" Node2="Node223" Node3="Node215"/>
+		<NP_Node215 Type="NodePoint" Node="Node215" Radius="3"/>
+		<NP_Node216 Type="NodePoint" Node="Node216" Radius="3"/>
+		<NP_Node217 Type="NodePoint" Node="Node217" Radius="3"/>
+		<NP_Node218 Type="NodePoint" Node="Node218" Radius="3"/>
+		<EL_Edge219 Type="EdgeLine" Edge="Edge219" Width="0"/>
+		<EL_Edge220 Type="EdgeLine" Edge="Edge220" Width="0"/>
+		<EL_Edge221 Type="EdgeLine" Edge="Edge221" Width="0"/>
+		<EL_Edge222 Type="EdgeLine" Edge="Edge222" Width="0"/>
+		<NP_Node223 Type="NodePoint" Node="Node223" Radius="3"/>
+		<NP_Node224 Type="NodePoint" Node="Node224" Radius="3"/>
+		<NP_Node225 Type="NodePoint" Node="Node225" Radius="3"/>
+		<NP_Node226 Type="NodePoint" Node="Node226" Radius="3"/>
+		<EL_Edge227 Type="EdgeLine" Edge="Edge227" Width="0"/>
+		<EL_Edge228 Type="EdgeLine" Edge="Edge228" Width="0"/>
+		<EL_Edge229 Type="EdgeLine" Edge="Edge229" Width="0"/>
+		<EL_Edge231 Type="EdgeLine" Edge="Edge231" Width="0"/>
+		<EL_Edge232 Type="EdgeLine" Edge="Edge232" Width="0"/>
+		<EL_Edge233 Type="EdgeLine" Edge="Edge233" Width="0"/>
+		<EL_Edge234 Type="EdgeLine" Edge="Edge234" Width="0"/>
+		<EL_Edge235 Type="EdgeLine" Edge="Edge235" Width="0"/>
+	</Figures>
 </Scene>

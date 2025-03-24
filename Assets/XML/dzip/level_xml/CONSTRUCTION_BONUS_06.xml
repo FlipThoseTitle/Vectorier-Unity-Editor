@@ -1,270 +1,270 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.8" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
-  </Models>
-  <Coins Value="40"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="ConstructionYardBackground" X="-500" Y="-500"/>
-        <Object Name="ConstructionYardBackground" X="1621" Y="-500"/>
-        <Object Name="ConstructionYardBackground" X="3742" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="ConstructionYardBuilding2" X="125" Y="-575"/>
-        <Object Name="ConstructionYardBuilding1" X="1375" Y="-380"/>
-        <Object Name="ConstructionYardBuilding2" X="3040" Y="-205"/>
-        <Object Name="ConstructionYardBuilding2" X="4630" Y="165"/>
-        <Object Name="ConstructionYardBuilding1" X="6130" Y="165"/>
-        <Object Name="ConstructionYardBuilding2" X="7732" Y="615"/>
-        <Object Name="ConstructionYardBuilding1" X="9495" Y="346"/>
-        <Object Name="ConstructionYardBuilding1" X="11090" Y="635"/>
-        <Object Name="ConstructionYardBuilding2" X="13328" Y="441"/>
-        <Object Name="ConstructionYardBuilding2" X="14613" Y="371"/>
-        <Object Name="ConstructionYardBuilding1" X="16068" Y="796"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_8" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerZoomMin" X="3640" Y="-1380"/>
-            <Object Name="TriggerZoomMax" X="640" Y="-1910"/>
-            <Object Name="TrackStart" X="-125" Y="5"/>
-            <Object Name="Pill" X="4635" Y="-128"/>
-            <Trigger Name="TriggerJump" X="3955" Y="-195" Width="155" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="CommonMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                  <SetVariable Name="FollowAI" Value="1"/>
-                  <SetVariable Name="LineType" Value="Vertical"/>
-                  <SetVariable Name="FixedLine" Value="0"/>
-                  <SetVariable Name="LineValue" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_Follow"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_2" X="5080" Y="1280" DeltaX="965" DeltaY="1280"/>
-            <Object Name="TriggerZoomMin" X="6259" Y="-941"/>
-            <Object Name="TriggerZoomNormal" X="8704" Y="-601"/>
-            <Object Name="TriggerLoss" X="6289" Y="1754"/>
-            <Object Name="Pill" X="7650" Y="1756"/>
-            <Object Name="Pill" X="7500" Y="1441"/>
-            <Object Name="Pill" X="7310" Y="1141"/>
-            <Object Name="Pill" X="7115" Y="916"/>
-            <Object Name="Pill" X="6825" Y="786"/>
-            <Object Name="TriggerZoomNormal" X="5690" Y="-1134"/>
-            <Object Name="Pill" X="5338" Y="982"/>
-            <Object Name="Pill" X="5030" Y="366"/>
-            <Object Name="Pill" X="4843" Y="82"/>
-            <Object Name="Respawn_2.5sec" X="5255" Y="1279"/>
-            <Object Name="Pill" X="5202" Y="679"/>
-            <Object Name="Respawn_3sec" X="8700" Y="1464"/>
-            <Object Name="TriggerMonkeyVault" X="9225" Y="1264"/>
-            <Object Name="TriggerZoomMin" X="10150" Y="-920"/>
-            <Object Name="TriggerLoss" X="10094" Y="2037"/>
-            <Object Name="TriggerJump" X="10260" Y="1264"/>
-            <Object Name="HunterModeRespawn_3sec" X="6290" Y="535"/>
-            <Trigger Name="TriggerLoss" X="4030" Y="1830" Width="1080" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Item X="10240" Y="1380" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="9640" Y="1305" Score="10" Radius="80" Type="1" GroupId="1"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_5" X="11090" Y="1680" DeltaX="730" DeltaY="215"/>
-            <Object Name="TriggerZoomNormal" X="11129" Y="-260"/>
-            <Object Name="Respawn_3.3sec" X="12837" Y="2680"/>
-            <Object Name="Pill" X="12947" Y="2183"/>
-            <Object Name="Pill" X="12777" Y="1953"/>
-            <Object Name="Pill" X="13042" Y="2433"/>
-            <Object Name="Pill" X="12577" Y="1750"/>
-            <Object Name="TriggerLoss" X="15308" Y="2958"/>
-            <Object Name="TriggerZoomMin" X="15333" Y="358"/>
-            <Object Name="TriggerJump" X="15372" Y="2489"/>
-            <Object Name="HunterModeRespawn_3sec" X="11435" Y="1190"/>
-            <Item X="11315" Y="1591" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="15010" Y="2516" Score="10" Radius="80" Type="1" GroupId="2"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_6" X="15930" Y="2650" DeltaX="460" DeltaY="-35"/>
-            <Object Name="TriggerZoomNormal" X="19600" Y="112"/>
-            <Object Name="Pill" X="17604" Y="1932"/>
-            <Object Name="Pill" X="17289" Y="2027"/>
-            <Object Name="Pill" X="18114" Y="2212"/>
-            <Object Name="Pill" X="17879" Y="2047"/>
-            <Object Name="TriggerJump" X="19535" Y="2010"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="18220" Y="1900"/>
-            <Item X="16475" Y="2480" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="18440" Y="2315" Score="10" Radius="80" Type="1" GroupId="2"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_3" X="20035" Y="2010" DeltaX="395" DeltaY="-200"/>
-            <Object Name="TriggerZoomMin" X="22216" Y="608"/>
-            <Object Name="Respawn_2sec" X="20037" Y="2007"/>
-            <Object Name="Pill" X="23634" Y="2487"/>
-            <Object Name="Pill" X="23856" Y="2411"/>
-            <Object Name="Pill" X="24067" Y="2375"/>
-            <Object Name="Pill" X="24297" Y="2350"/>
-            <Object Name="Pill" X="24526" Y="2380"/>
-            <Trigger Name="TriggerLoss" X="17018" Y="3113" Width="3020" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerLoss" X="23735" Y="3155" Width="1450" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Item X="20330" Y="1925" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="22365" Y="2514" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="23285" Y="2521" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Trigger Name="TriggerJump" X="23665" Y="2399" Width="120" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="CommonMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_06_4" X="25124" Y="2778" DeltaX="1340" DeltaY="180"/>
-            <Object Name="TriggerZoom80" X="25292" Y="850"/>
-            <Object Name="TriggerZoomMax" X="26942" Y="905"/>
-            <Object Name="TriggerZoomNormal" X="28021" Y="730"/>
-            <Object Name="Pill" X="28644" Y="2631"/>
-            <Object Name="Pill" X="28513" Y="2515"/>
-            <Object Name="Pill" X="28339" Y="2490"/>
-            <Object Name="Pill" X="28162" Y="2490"/>
-            <Object Name="Pill" X="24772" Y="2465"/>
-            <Object Name="Pill" X="25007" Y="2580"/>
-            <Object Name="TriggerSideFlip" X="26845" Y="2360"/>
-            <Object Name="TriggerZoomMax" X="29480" Y="891"/>
-            <Object Name="TriggerMonkeyToBomb" X="28820" Y="2515"/>
-            <Object Name="TriggerJump" X="29250" Y="2515"/>
-            <Object Name="Respawn_2.7sec" X="25145" Y="2795"/>
-            <Object Name="Pill" X="29747" Y="2585"/>
-            <Object Name="HunterModeRespawn_3sec" X="26610" Y="2065"/>
-            <Item X="26020" Y="2610" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="27960" Y="2480" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="25505" Y="2700" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Trigger Name="TriggerLoss" X="29176" Y="3270" Width="955" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Final_CONSTRUCTION_BONUS_06_5" X="29879" Y="3013" DeltaX="300" DeltaY="390"/>
-            <Object Name="TriggerZoomNormal" X="30280" Y="1005"/>
-            <Object Name="Pill" X="30205" Y="2920"/>
-            <Object Name="Pill" X="29985" Y="2740"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.8" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
+	</Models>
+	<Coins Value="40"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="ConstructionYardBackground" X="-500" Y="-500"/>
+				<Object Name="ConstructionYardBackground" X="1621" Y="-500"/>
+				<Object Name="ConstructionYardBackground" X="3742" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="ConstructionYardBuilding2" X="125" Y="-575"/>
+				<Object Name="ConstructionYardBuilding1" X="1375" Y="-380"/>
+				<Object Name="ConstructionYardBuilding2" X="3040" Y="-205"/>
+				<Object Name="ConstructionYardBuilding2" X="4630" Y="165"/>
+				<Object Name="ConstructionYardBuilding1" X="6130" Y="165"/>
+				<Object Name="ConstructionYardBuilding2" X="7732" Y="615"/>
+				<Object Name="ConstructionYardBuilding1" X="9495" Y="346"/>
+				<Object Name="ConstructionYardBuilding1" X="11090" Y="635"/>
+				<Object Name="ConstructionYardBuilding2" X="13328" Y="441"/>
+				<Object Name="ConstructionYardBuilding2" X="14613" Y="371"/>
+				<Object Name="ConstructionYardBuilding1" X="16068" Y="796"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_8" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerZoomMin" X="3640" Y="-1380"/>
+						<Object Name="TriggerZoomMax" X="640" Y="-1910"/>
+						<Object Name="TrackStart" X="-125" Y="5"/>
+						<Object Name="Pill" X="4635" Y="-128"/>
+						<Trigger Name="TriggerJump" X="3955" Y="-195" Width="155" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="CommonMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="FollowAI" Value="1"/>
+									<SetVariable Name="LineType" Value="Vertical"/>
+									<SetVariable Name="FixedLine" Value="0"/>
+									<SetVariable Name="LineValue" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_Follow"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_2" X="5080" Y="1280" DeltaX="965" DeltaY="1280"/>
+						<Object Name="TriggerZoomMin" X="6259" Y="-941"/>
+						<Object Name="TriggerZoomNormal" X="8704" Y="-601"/>
+						<Object Name="TriggerLoss" X="6289" Y="1754"/>
+						<Object Name="Pill" X="7650" Y="1756"/>
+						<Object Name="Pill" X="7500" Y="1441"/>
+						<Object Name="Pill" X="7310" Y="1141"/>
+						<Object Name="Pill" X="7115" Y="916"/>
+						<Object Name="Pill" X="6825" Y="786"/>
+						<Object Name="TriggerZoomNormal" X="5690" Y="-1134"/>
+						<Object Name="Pill" X="5338" Y="982"/>
+						<Object Name="Pill" X="5030" Y="366"/>
+						<Object Name="Pill" X="4843" Y="82"/>
+						<Object Name="Respawn_2.5sec" X="5255" Y="1279"/>
+						<Object Name="Pill" X="5202" Y="679"/>
+						<Object Name="Respawn_3sec" X="8700" Y="1464"/>
+						<Object Name="TriggerMonkeyVault" X="9225" Y="1264"/>
+						<Object Name="TriggerZoomMin" X="10150" Y="-920"/>
+						<Object Name="TriggerLoss" X="10094" Y="2037"/>
+						<Object Name="TriggerJump" X="10260" Y="1264"/>
+						<Object Name="HunterModeRespawn_3sec" X="6290" Y="535"/>
+						<Trigger Name="TriggerLoss" X="4030" Y="1830" Width="1080" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Item X="10240" Y="1380" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="9640" Y="1305" Score="10" Radius="80" Type="1" GroupId="1"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_5" X="11090" Y="1680" DeltaX="730" DeltaY="215"/>
+						<Object Name="TriggerZoomNormal" X="11129" Y="-260"/>
+						<Object Name="Respawn_3.3sec" X="12837" Y="2680"/>
+						<Object Name="Pill" X="12947" Y="2183"/>
+						<Object Name="Pill" X="12777" Y="1953"/>
+						<Object Name="Pill" X="13042" Y="2433"/>
+						<Object Name="Pill" X="12577" Y="1750"/>
+						<Object Name="TriggerLoss" X="15308" Y="2958"/>
+						<Object Name="TriggerZoomMin" X="15333" Y="358"/>
+						<Object Name="TriggerJump" X="15372" Y="2489"/>
+						<Object Name="HunterModeRespawn_3sec" X="11435" Y="1190"/>
+						<Item X="11315" Y="1591" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="15010" Y="2516" Score="10" Radius="80" Type="1" GroupId="2"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_6" X="15930" Y="2650" DeltaX="460" DeltaY="-35"/>
+						<Object Name="TriggerZoomNormal" X="19600" Y="112"/>
+						<Object Name="Pill" X="17604" Y="1932"/>
+						<Object Name="Pill" X="17289" Y="2027"/>
+						<Object Name="Pill" X="18114" Y="2212"/>
+						<Object Name="Pill" X="17879" Y="2047"/>
+						<Object Name="TriggerJump" X="19535" Y="2010"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="18220" Y="1900"/>
+						<Item X="16475" Y="2480" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="18440" Y="2315" Score="10" Radius="80" Type="1" GroupId="2"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_3" X="20035" Y="2010" DeltaX="395" DeltaY="-200"/>
+						<Object Name="TriggerZoomMin" X="22216" Y="608"/>
+						<Object Name="Respawn_2sec" X="20037" Y="2007"/>
+						<Object Name="Pill" X="23634" Y="2487"/>
+						<Object Name="Pill" X="23856" Y="2411"/>
+						<Object Name="Pill" X="24067" Y="2375"/>
+						<Object Name="Pill" X="24297" Y="2350"/>
+						<Object Name="Pill" X="24526" Y="2380"/>
+						<Trigger Name="TriggerLoss" X="17018" Y="3113" Width="3020" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerLoss" X="23735" Y="3155" Width="1450" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Item X="20330" Y="1925" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="22365" Y="2514" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="23285" Y="2521" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Trigger Name="TriggerJump" X="23665" Y="2399" Width="120" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="CommonMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_06_4" X="25124" Y="2778" DeltaX="1340" DeltaY="180"/>
+						<Object Name="TriggerZoom80" X="25292" Y="850"/>
+						<Object Name="TriggerZoomMax" X="26942" Y="905"/>
+						<Object Name="TriggerZoomNormal" X="28021" Y="730"/>
+						<Object Name="Pill" X="28644" Y="2631"/>
+						<Object Name="Pill" X="28513" Y="2515"/>
+						<Object Name="Pill" X="28339" Y="2490"/>
+						<Object Name="Pill" X="28162" Y="2490"/>
+						<Object Name="Pill" X="24772" Y="2465"/>
+						<Object Name="Pill" X="25007" Y="2580"/>
+						<Object Name="TriggerSideFlip" X="26845" Y="2360"/>
+						<Object Name="TriggerZoomMax" X="29480" Y="891"/>
+						<Object Name="TriggerMonkeyToBomb" X="28820" Y="2515"/>
+						<Object Name="TriggerJump" X="29250" Y="2515"/>
+						<Object Name="Respawn_2.7sec" X="25145" Y="2795"/>
+						<Object Name="Pill" X="29747" Y="2585"/>
+						<Object Name="HunterModeRespawn_3sec" X="26610" Y="2065"/>
+						<Item X="26020" Y="2610" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="27960" Y="2480" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="25505" Y="2700" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Trigger Name="TriggerLoss" X="29176" Y="3270" Width="955" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Final_CONSTRUCTION_BONUS_06_5" X="29879" Y="3013" DeltaX="300" DeltaY="390"/>
+						<Object Name="TriggerZoomNormal" X="30280" Y="1005"/>
+						<Object Name="Pill" X="30205" Y="2920"/>
+						<Object Name="Pill" X="29985" Y="2740"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

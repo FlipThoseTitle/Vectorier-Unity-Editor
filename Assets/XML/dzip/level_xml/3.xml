@@ -1,174 +1,163 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  
-  <Music Name="music_dinamic" Volume="0.3"/>
-
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
- 
-  <!--Models>
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1"/>
-  </Models-->
-  
-  <Coins Value="40"/>
-  <Variable Name="Money">40</Variable>
-  
-  <Layers>
-    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
-      <ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
-      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
-      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
-      <ConstructionYardBackground DeltaX="0" DeltaY="0"/>
-  </Layer>
-    
-    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
-      <ConstructionYardBuilding1 X="0" Y="-250" DeltaX="0" DeltaY="-250"/>
-      <ConstructionYardBuilding2 X="1792" Y="114" DeltaX="629" DeltaY="364"/>
-      <ConstructionYardBuilding2 X="3305" Y="606" DeltaX="513" DeltaY="492"/>
-      <ConstructionYardBuilding1 X="4699" Y="528" DeltaX="394" DeltaY="-78"/>
-      <ConstructionYardBuilding1 X="6265" Y="1102" DeltaX="403" DeltaY="574"/>
-      <ConstructionYardBuilding2 X="7886" Y="830" DeltaX="458" DeltaY="-272"/>
-      <ConstructionYardBuilding2 X="9323" Y="1074" DeltaX="437" DeltaY="244"/>
-      <ConstructionYardBuilding1 X="10754" Y="450" DeltaX="431" DeltaY="-624"/>
-      <ConstructionYardBuilding1 X="12289" Y="1610" DeltaX="372" DeltaY="1160"/>
-      <ConstructionYardBuilding2 X="13641" Y="1115" DeltaX="189" DeltaY="-495"/>
-      <ConstructionYardBuilding1 X="15240" Y="115" DeltaX="599" DeltaY="-1000"/>
-    </Layer>
-    
-    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
-  
-    
-    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
-      <CONSTRUCTION_STORY_09_1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-435" BoxY="-1805" BoxWidth="7995" BoxHeight="3715">
-        <TriggerZoomMax X="970" Y="-1805"/>
-        <Pill X="4929" Y="247"/>
-        <TriggerZoomNormal X="5365" Y="-1645"/>
-        <TriggerJump X="6510" Y="-155"/>
-        <TriggerLossPanic X="6560" Y="660"/>
-        <TriggerSwallow X="2320" Y="295"/>
-        <TriggerLossPanic X="2220" Y="1030"/>
-        <TriggerAboveCar X="4415" Y="290"/>
-        <Respawn_2sec X="3085" Y="490"/>
-        <Spawn X="-385" Y="-340"/>
-        <TriggerCameraStart X="435" Y="-100"/>
-        <Camera X="470" Y="165"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger X="2375" Y="850" Width="688" Height="100" Name="Zoom" Type="2" Node="COM" Priority="0" Value="1.2" SubType="0"/>
-            <Comment X="-440" Y="-190" Width="460" Height="145" Text="СДЕЛАНО&#xD;нужна графика уголка&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_09_1>
-      <Crane_cons X="7195" Y="275" DeltaX="595" DeltaY="275" BoxX="0" BoxY="-2235" BoxWidth="4010" BoxHeight="3500">
-        <Respawn X="1155" Y="-10"/>
-        <TriggerZoomMin X="2130" Y="-2235"/>
-        <TriggerJump X="3880" Y="-205"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger X="625" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
-            <Trigger X="3880" Y="-205" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
-            <Trigger Name="TriggerSpeedUp" Type="1" AI="5" Node="COM" Key1="2" PressType="0" Priority="1" Factor="1" X="1430" Y="-200" Width="100" Height="200" Follow="0"/>
-          </Elements>
-        </ObjectNULL>
-      </Crane_cons>
-      <CONSTRUCTION_STORY_09_2 X="11725" Y="445" DeltaX="530" DeltaY="-105" Override="0" BoxX="-875" BoxY="-2455" BoxWidth="5812" BoxHeight="4424">
-        <TriggerLossPanic X="-875" Y="335"/>
-        <TriggerZoomMax X="-505" Y="-2455"/>
-        <TriggerZoomNormal X="595" Y="-2390"/>
-        <TriggerZoomMax X="2185" Y="-1570"/>
-        <TriggerZoomNormal X="3720" Y="-1531"/>
-        <Pill X="4000" Y="-45"/>
-        <TriggerDashVault X="3087" Y="622"/>
-        <TriggerLossPanic X="3900" Y="1565"/>
-        <Respawn_2.5sec X="1860" Y="830"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger X="-800" Y="115" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
-            <Trigger X="3937" Y="1522" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
-            <Item X="2247" Y="747" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="3947" Y="742" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="3587" Y="657" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Comment X="3375" Y="360" Width="460" Height="220" Text="СДЕЛАНО&#xD;Графика куба должна быть под графикой трубы" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="3900" Y="-865" Width="745" Height="385" Text="СДЕЛАНО&#xD;Сейчас тут виден обрезанный потолок при воллджампе, надо добавить графику, либо увеличить потолок вверх&#xD;" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="1760" Y="925" Width="1960" Height="700" Text="СДЕЛАНО&#xD;Где-то в этом районе нужно поставить респаун. Сейчас можно убить бота на кране и бежать самый сложный участок трассы без него" FontSize="40" Colour="13382400" Transparency="0"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_09_2>
-      <CONSTRUCTION_STORY_09_3 X="16505" Y="1560" DeltaX="585" DeltaY="985" Override="0" BoxX="0" BoxY="-3782" BoxWidth="6665" BoxHeight="5602">
-        <TriggerZoomMax X="4052" Y="-3052"/>
-        <TriggerZoomMin X="4668" Y="-3782"/>
-        <Pill X="5185" Y="60"/>
-        <Pill X="5190" Y="-240"/>
-        <Pill X="5185" Y="360"/>
-        <Pill X="5395" Y="-90"/>
-        <Pill X="5395" Y="210"/>
-        <TriggerJump X="5740" Y="-680"/>
-        <TriggerLossPanic X="2535" Y="1030"/>
-        <TriggerLossPanic X="5665" Y="515"/>
-        <TriggerZoomMin X="1180" Y="-2015"/>
-        <Respawn_2.5sec X="175" Y="0"/>
-        <Pill X="5190" Y="-540"/>
-        <Pill X="5395" Y="-390"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger X="5682" Y="140" Width="847" Height="67" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
-            <Trigger X="2511" Y="985" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
-            <Item X="1690" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="1100" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="2350" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Comment X="-375" Y="265" Width="450" Height="430" Text="СДЕЛАНО&#xD;Можно провалиться в графику, надо продлить платформу вниз" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="3075" Y="1025" Width="450" Height="430" Text="СДЕЛАНО&#xD;Можно провалиться в графику, надо продлить платформу вниз" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="2575" Y="-445" Width="890" Height="700" Text="СДЕЛАНО&#xD;Стоит заранее показать развилку и нужно упростить охотника. Сейчас при малейшей ошибке бот обгоняет после волджампа. Надо чтобы он обгонял только при самом неудачном попадании на нижний путь" FontSize="40" Colour="13382400" Transparency="0"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_09_3>
-      <CONSTRUCTION_STORY_09_4 X="22960" Y="1360" DeltaX="640" DeltaY="280" BoxX="-45" BoxY="-1865" BoxWidth="8220" BoxHeight="3857">
-        <TriggerZoomNormal X="1430" Y="-1508"/>
-        <Pill X="3120" Y="-105"/>
-        <Pill X="3725" Y="-144"/>
-        <Pill X="4410" Y="-215"/>
-        <Pill X="5223" Y="-1"/>
-        <Pill X="5993" Y="-35"/>
-        <TriggerZoomMax X="185" Y="-1865"/>
-        <TriggerJump X="7180" Y="-120"/>
-        <TriggerLossPanic X="6965" Y="720"/>
-        <TriggerZoomMin X="7310" Y="-1635"/>
-        <Respawn_2sec X="10" Y="0"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger X="7040" Y="441" Width="1135" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
-            <Item X="6360" Y="86" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="3460" Y="-49" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="740" Y="-164" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="1795" Y="120" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="7150" Y="1" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="5755" Y="86" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Comment X="2670" Y="-715" Width="1265" Height="430" Text="СДЕЛАНО&#xD;Расстояние между столбиками и расположение бонусов надо немного переделать. Сейчас при прыжках с одной ноги постоянно спотыкаешься на одном из столбов. Также, при неудачном приземлении на столб проигрывается анимация спотыкания с быстрым перебиранием ногами с опущенной головой. При этом модель проходит головой под бонусом" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="7245" Y="-860" Width="960" Height="565" Text="СДЕЛАНО&#xD;Добавить сюда средний план" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="140" Y="-870" Width="645" Height="450" Text="СДЕЛАНО&#xD;Бот спавнится на глазах игрока, если вслайдиться в препятствие" FontSize="40" Colour="13382400" Transparency="0"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_09_4>
-      <FinalRoof_4 X="30750" Y="1500" DeltaX="550" DeltaY="60" BoxX="0" BoxY="-485" BoxWidth="19970" BoxHeight="2925">
-        <TriggerVictory X="1446" Y="-299"/>
-        <Respawn_3sec X="40" Y="15"/>
-        <ObjectNULL X="-30750" Y="-1500" Group="1">
-          <Objects/>
-          <Elements>
-            <Spawn X="50565" Y="2785" Name="Respawn" Animation="JumpOff|18"/>
-            <Trigger X="50570" Y="2400" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
-          </Elements>
-        </ObjectNULL>
-      </FinalRoof_4>
-    </Layer>
-    
-  </Layers>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<!--Models>
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1"/>
+	</Models-->
+	<Coins Value="40"/>
+	<Variable Name="Money">40</Variable>
+	<Layers>
+		<Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+			<ConstructionYardBackground DeltaX="0" DeltaY="-500"/>
+			<ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+			<ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+			<ConstructionYardBackground DeltaX="0" DeltaY="0"/>
+		</Layer>
+		<Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+			<ConstructionYardBuilding1 X="0" Y="-250" DeltaX="0" DeltaY="-250"/>
+			<ConstructionYardBuilding2 X="1792" Y="114" DeltaX="629" DeltaY="364"/>
+			<ConstructionYardBuilding2 X="3305" Y="606" DeltaX="513" DeltaY="492"/>
+			<ConstructionYardBuilding1 X="4699" Y="528" DeltaX="394" DeltaY="-78"/>
+			<ConstructionYardBuilding1 X="6265" Y="1102" DeltaX="403" DeltaY="574"/>
+			<ConstructionYardBuilding2 X="7886" Y="830" DeltaX="458" DeltaY="-272"/>
+			<ConstructionYardBuilding2 X="9323" Y="1074" DeltaX="437" DeltaY="244"/>
+			<ConstructionYardBuilding1 X="10754" Y="450" DeltaX="431" DeltaY="-624"/>
+			<ConstructionYardBuilding1 X="12289" Y="1610" DeltaX="372" DeltaY="1160"/>
+			<ConstructionYardBuilding2 X="13641" Y="1115" DeltaX="189" DeltaY="-495"/>
+			<ConstructionYardBuilding1 X="15240" Y="115" DeltaX="599" DeltaY="-1000"/>
+		</Layer>
+		<Layer Name="Forward_Layer" Factor="2" Type="2"/>
+		<Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+			<CONSTRUCTION_STORY_09_1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-435" BoxY="-1805" BoxWidth="7995" BoxHeight="3715">
+				<TriggerZoomMax X="970" Y="-1805"/>
+				<Pill X="4929" Y="247"/>
+				<TriggerZoomNormal X="5365" Y="-1645"/>
+				<TriggerJump X="6510" Y="-155"/>
+				<TriggerLossPanic X="6560" Y="660"/>
+				<TriggerSwallow X="2320" Y="295"/>
+				<TriggerLossPanic X="2220" Y="1030"/>
+				<TriggerAboveCar X="4415" Y="290"/>
+				<Respawn_2sec X="3085" Y="490"/>
+				<Spawn X="-385" Y="-340"/>
+				<TriggerCameraStart X="435" Y="-100"/>
+				<Camera X="470" Y="165"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger X="2375" Y="850" Width="688" Height="100" Name="Zoom" Type="2" Node="COM" Priority="0" Value="1.2" SubType="0"/>
+						<Comment X="-440" Y="-190" Width="460" Height="145" Text="СДЕЛАНО&#13;нужна графика уголка&#13;" FontSize="40" Colour="13382400" Transparency="1"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_09_1>
+			<Crane_cons X="7195" Y="275" DeltaX="595" DeltaY="275" BoxX="0" BoxY="-2235" BoxWidth="4010" BoxHeight="3500">
+				<Respawn X="1155" Y="-10"/>
+				<TriggerZoomMin X="2130" Y="-2235"/>
+				<TriggerJump X="3880" Y="-205"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger X="625" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+						<Trigger X="3880" Y="-205" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+						<Trigger Name="TriggerSpeedUp" Type="1" AI="5" Node="COM" Key1="2" PressType="0" Priority="1" Factor="1" X="1430" Y="-200" Width="100" Height="200" Follow="0"/>
+					</Elements>
+				</ObjectNULL>
+			</Crane_cons>
+			<CONSTRUCTION_STORY_09_2 X="11725" Y="445" DeltaX="530" DeltaY="-105" Override="0" BoxX="-875" BoxY="-2455" BoxWidth="5812" BoxHeight="4424">
+				<TriggerLossPanic X="-875" Y="335"/>
+				<TriggerZoomMax X="-505" Y="-2455"/>
+				<TriggerZoomNormal X="595" Y="-2390"/>
+				<TriggerZoomMax X="2185" Y="-1570"/>
+				<TriggerZoomNormal X="3720" Y="-1531"/>
+				<Pill X="4000" Y="-45"/>
+				<TriggerDashVault X="3087" Y="622"/>
+				<TriggerLossPanic X="3900" Y="1565"/>
+				<Respawn_2.5sec X="1860" Y="830"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger X="-800" Y="115" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+						<Trigger X="3937" Y="1522" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+						<Item X="2247" Y="747" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="3947" Y="742" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="3587" Y="657" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Comment X="3375" Y="360" Width="460" Height="220" Text="СДЕЛАНО&#13;Графика куба должна быть под графикой трубы" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="3900" Y="-865" Width="745" Height="385" Text="СДЕЛАНО&#13;Сейчас тут виден обрезанный потолок при воллджампе, надо добавить графику, либо увеличить потолок вверх&#13;" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="1760" Y="925" Width="1960" Height="700" Text="СДЕЛАНО&#13;Где-то в этом районе нужно поставить респаун. Сейчас можно убить бота на кране и бежать самый сложный участок трассы без него" FontSize="40" Colour="13382400" Transparency="0"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_09_2>
+			<CONSTRUCTION_STORY_09_3 X="16505" Y="1560" DeltaX="585" DeltaY="985" Override="0" BoxX="0" BoxY="-3782" BoxWidth="6665" BoxHeight="5602">
+				<TriggerZoomMax X="4052" Y="-3052"/>
+				<TriggerZoomMin X="4668" Y="-3782"/>
+				<Pill X="5185" Y="60"/>
+				<Pill X="5190" Y="-240"/>
+				<Pill X="5185" Y="360"/>
+				<Pill X="5395" Y="-90"/>
+				<Pill X="5395" Y="210"/>
+				<TriggerJump X="5740" Y="-680"/>
+				<TriggerLossPanic X="2535" Y="1030"/>
+				<TriggerLossPanic X="5665" Y="515"/>
+				<TriggerZoomMin X="1180" Y="-2015"/>
+				<Respawn_2.5sec X="175" Y="0"/>
+				<Pill X="5190" Y="-540"/>
+				<Pill X="5395" Y="-390"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger X="5682" Y="140" Width="847" Height="67" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+						<Trigger X="2511" Y="985" Width="1000" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="2" SubType="0"/>
+						<Item X="1690" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="1100" Y="-85" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="2350" Y="-80" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Comment X="-375" Y="265" Width="450" Height="430" Text="СДЕЛАНО&#13;Можно провалиться в графику, надо продлить платформу вниз" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="3075" Y="1025" Width="450" Height="430" Text="СДЕЛАНО&#13;Можно провалиться в графику, надо продлить платформу вниз" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="2575" Y="-445" Width="890" Height="700" Text="СДЕЛАНО&#13;Стоит заранее показать развилку и нужно упростить охотника. Сейчас при малейшей ошибке бот обгоняет после волджампа. Надо чтобы он обгонял только при самом неудачном попадании на нижний путь" FontSize="40" Colour="13382400" Transparency="0"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_09_3>
+			<CONSTRUCTION_STORY_09_4 X="22960" Y="1360" DeltaX="640" DeltaY="280" BoxX="-45" BoxY="-1865" BoxWidth="8220" BoxHeight="3857">
+				<TriggerZoomNormal X="1430" Y="-1508"/>
+				<Pill X="3120" Y="-105"/>
+				<Pill X="3725" Y="-144"/>
+				<Pill X="4410" Y="-215"/>
+				<Pill X="5223" Y="-1"/>
+				<Pill X="5993" Y="-35"/>
+				<TriggerZoomMax X="185" Y="-1865"/>
+				<TriggerJump X="7180" Y="-120"/>
+				<TriggerLossPanic X="6965" Y="720"/>
+				<TriggerZoomMin X="7310" Y="-1635"/>
+				<Respawn_2sec X="10" Y="0"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger X="7040" Y="441" Width="1135" Height="100" Name="" Type="2" Node="COM" Priority="0" Value="1.5" SubType="0"/>
+						<Item X="6360" Y="86" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="3460" Y="-49" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="740" Y="-164" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="1795" Y="120" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="7150" Y="1" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="5755" Y="86" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Comment X="2670" Y="-715" Width="1265" Height="430" Text="СДЕЛАНО&#13;Расстояние между столбиками и расположение бонусов надо немного переделать. Сейчас при прыжках с одной ноги постоянно спотыкаешься на одном из столбов. Также, при неудачном приземлении на столб проигрывается анимация спотыкания с быстрым перебиранием ногами с опущенной головой. При этом модель проходит головой под бонусом" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="7245" Y="-860" Width="960" Height="565" Text="СДЕЛАНО&#13;Добавить сюда средний план" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="140" Y="-870" Width="645" Height="450" Text="СДЕЛАНО&#13;Бот спавнится на глазах игрока, если вслайдиться в препятствие" FontSize="40" Colour="13382400" Transparency="0"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_09_4>
+			<FinalRoof_4 X="30750" Y="1500" DeltaX="550" DeltaY="60" BoxX="0" BoxY="-485" BoxWidth="19970" BoxHeight="2925">
+				<TriggerVictory X="1446" Y="-299"/>
+				<Respawn_3sec X="40" Y="15"/>
+				<ObjectNULL X="-30750" Y="-1500" Group="1">
+					<Objects/>
+					<Elements>
+						<Spawn X="50565" Y="2785" Name="Respawn" Animation="JumpOff|18"/>
+						<Trigger X="50570" Y="2400" Width="150" Height="500" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="1.5" SubType="0"/>
+					</Elements>
+				</ObjectNULL>
+			</FinalRoof_4>
+		</Layer>
+	</Layers>
 </Root>

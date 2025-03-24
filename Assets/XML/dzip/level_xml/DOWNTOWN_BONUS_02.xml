@@ -1,373 +1,373 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1" AllowedSpawns="Despawn"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background" X="-500" Y="-500"/>
-        <Object Name="Background" X="1621" Y="-500"/>
-        <Object Name="Background" X="3742" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1" X="765" Y="-685"/>
-        <Object Name="Building2" X="3579" Y="-735"/>
-        <Object Name="Building3" X="5400" Y="-145"/>
-        <Object Name="Billboard" X="7050" Y="525"/>
-        <Object Name="Building1" X="7407" Y="-235"/>
-        <Object Name="Building3" X="9496" Y="-235"/>
-        <Object Name="Building3" X="11299" Y="-212"/>
-        <Object Name="Building3" X="13063" Y="93"/>
-        <Object Name="Billboard" X="14328" Y="866"/>
-        <Object Name="Building1" X="15508" Y="566"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DOWNTOWN_BONUS_02_1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerZoomMax" X="-670" Y="-1798"/>
-            <Object Name="TriggerZoomNormal" X="1349" Y="-1678"/>
-            <Object Name="TriggerZoomMin" X="5025" Y="-2395"/>
-            <Object Name="TriggerJump" X="5895" Y="-965"/>
-            <Object Name="Respawn_2.5sec" X="2520" Y="-485"/>
-            <Spawn X="-665" Y="-695" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Object Name="TriggerCameraStart" X="-5" Y="-335"/>
-            <Camera X="146" Y="-93"/>
-            <Trigger Name="TriggerJump" X="5895" Y="-985" Width="100" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="5"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="5800" Y="-1185" Width="100" Height="400">
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1" AllowedSpawns="Despawn"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background" X="-500" Y="-500"/>
+				<Object Name="Background" X="1621" Y="-500"/>
+				<Object Name="Background" X="3742" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1" X="765" Y="-685"/>
+				<Object Name="Building2" X="3579" Y="-735"/>
+				<Object Name="Building3" X="5400" Y="-145"/>
+				<Object Name="Billboard" X="7050" Y="525"/>
+				<Object Name="Building1" X="7407" Y="-235"/>
+				<Object Name="Building3" X="9496" Y="-235"/>
+				<Object Name="Building3" X="11299" Y="-212"/>
+				<Object Name="Building3" X="13063" Y="93"/>
+				<Object Name="Billboard" X="14328" Y="866"/>
+				<Object Name="Building1" X="15508" Y="566"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DOWNTOWN_BONUS_02_1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerZoomMax" X="-670" Y="-1798"/>
+						<Object Name="TriggerZoomNormal" X="1349" Y="-1678"/>
+						<Object Name="TriggerZoomMin" X="5025" Y="-2395"/>
+						<Object Name="TriggerJump" X="5895" Y="-965"/>
+						<Object Name="Respawn_2.5sec" X="2520" Y="-485"/>
+						<Spawn X="-665" Y="-695" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Object Name="TriggerCameraStart" X="-5" Y="-335"/>
+						<Camera X="146" Y="-93"/>
+						<Trigger Name="TriggerJump" X="5895" Y="-985" Width="100" Height="200">
 							<Properties>
 								<Static>
 									<Selection Choice="AITriggers" Variant="HunterMode"/>
 								</Static>
 							</Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="3625" Y="-870" Width="100" Height="400">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DOWNTOWN_BONUS_02_2" X="7015" Y="-85" DeltaX="1040" DeltaY="720"/>
-            <Object Name="TriggerLossPanic" X="6065" Y="635"/>
-            <Object Name="Pill" X="8645" Y="615"/>
-            <Object Name="TriggerJump" X="10478" Y="570"/>
-            <Object Name="Constantine_ZoomNormal" X="10865" Y="1660"/>
-            <Object Name="Respawn_2.5sec" X="8550" Y="760"/>
-            <Trigger Name="Constantine_ZoomNormal" X="5955" Y="520" Width="1145" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerLossPanic" X="10840" Y="2090" Width="2070" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value="FlyPanic"/>
-                  <SetVariable Name="StartFrame" Value="1"/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerJump" X="10865" Y="565" Width="100" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="5"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DOWNTOWN_BONUS_02_3" X="12800" Y="1550" DeltaX="1820" DeltaY="785"/>
-            <Object Name="Pill" X="12665" Y="1415"/>
-            <Object Name="TriggerZoomNormal" X="12994" Y="-405"/>
-            <Object Name="TriggerZoomMax" X="14842" Y="-409"/>
-            <Object Name="TriggerZoomNormal" X="15649" Y="-240"/>
-            <Object Name="TriggerJump" X="18285" Y="1355"/>
-            <Object Name="Pill" X="18139" Y="825"/>
-            <Object Name="TriggerRocketVault" X="13299" Y="1350"/>
-            <Object Name="Respawn" X="12810" Y="1555"/>
-            <Object Name="TriggerZoom80" X="16205" Y="-540"/>
-            <Object Name="TriggerLossPanic" X="17971" Y="1999"/>
-            <Item X="13209" Y="1435" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="15350" Y="1055" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="14439" Y="1445" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Trigger Name="TriggerJump" X="17935" Y="860" Width="100" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="5"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="15235" Y="755" Width="100" Height="400">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DOWNTOWN_BONUS_02_4" X="18620" Y="1100" DeltaX="220" DeltaY="-450"/>
-            <Object Name="TriggerZoomMin" X="19016" Y="-1080"/>
-            <Object Name="TriggerZoomNormal" X="21106" Y="-990"/>
-            <Object Name="TriggerZoomMin" X="22173" Y="-1260"/>
-            <Object Name="TriggerJump" X="25496" Y="1204"/>
-            <Object Name="Respawn_3sec" X="18651" Y="1110"/>
-            <Item X="18926" Y="1014" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="20136" Y="1014" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="20811" Y="1029" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="25026" Y="1318" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="24021" Y="1316" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="24501" Y="1320" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Trigger Name="TriggerJump" X="25575" Y="1200" Width="100" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="5"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="22270" Y="1000" Width="100" Height="400">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="18795" Y="700" Width="100" Height="400">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DOWNTOWN_BONUS_02_5" X="27585" Y="2155" DeltaX="1990" DeltaY="755"/>
-            <Object Name="Constantine_ZoomNormal" X="25597" Y="2364"/>
-            <Object Name="TriggerZoomMax" X="28299" Y="241"/>
-            <Object Name="TriggerSpinningVaultTrick0High" X="28328" Y="1955"/>
-            <Object Name="TriggerZoomNormal" X="29513" Y="260"/>
-            <Object Name="Pill" X="30176" Y="1923"/>
-            <Object Name="Pill" X="31959" Y="2460"/>
-            <Object Name="TriggerZoomMax" X="33267" Y="604"/>
-            <Object Name="TriggerRailFlipVault" X="33415" Y="2081"/>
-            <Object Name="TriggerZoomNormal" X="34976" Y="505"/>
-            <Object Name="Respawn_2.5sec" X="28019" Y="2160"/>
-            <Object Name="Respawn_2.5sec" X="33154" Y="2280"/>
-            <Object Name="TriggerLossPanic" X="35180" Y="2842"/>
-            <Object Name="TriggerJump" X="35436" Y="2085"/>
-            <Trigger Name="TriggerLossPanic" X="25457" Y="2744" Width="2290" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value="FlyPanic"/>
-                  <SetVariable Name="StartFrame" Value="1"/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Item X="30491" Y="2145" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="33109" Y="2200" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="33370" Y="2199" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Trigger Name="TriggerJump" X="35150" Y="2085" Width="100" Height="200">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="5"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="33465" Y="1885" Width="100" Height="400">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="HunterMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="FinalRoof_DownTown_04" X="35975" Y="2217" DeltaX="440" DeltaY="-65"/>
-            <Item X="36760" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
-            <Item X="36545" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
-            <Item X="36935" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="5"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="5800" Y="-1185" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="3625" Y="-870" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DOWNTOWN_BONUS_02_2" X="7015" Y="-85" DeltaX="1040" DeltaY="720"/>
+						<Object Name="TriggerLossPanic" X="6065" Y="635"/>
+						<Object Name="Pill" X="8645" Y="615"/>
+						<Object Name="TriggerJump" X="10478" Y="570"/>
+						<Object Name="Constantine_ZoomNormal" X="10865" Y="1660"/>
+						<Object Name="Respawn_2.5sec" X="8550" Y="760"/>
+						<Trigger Name="Constantine_ZoomNormal" X="5955" Y="520" Width="1145" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerLossPanic" X="10840" Y="2090" Width="2070" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value="FlyPanic"/>
+									<SetVariable Name="StartFrame" Value="1"/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerJump" X="10865" Y="565" Width="100" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="5"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DOWNTOWN_BONUS_02_3" X="12800" Y="1550" DeltaX="1820" DeltaY="785"/>
+						<Object Name="Pill" X="12665" Y="1415"/>
+						<Object Name="TriggerZoomNormal" X="12994" Y="-405"/>
+						<Object Name="TriggerZoomMax" X="14842" Y="-409"/>
+						<Object Name="TriggerZoomNormal" X="15649" Y="-240"/>
+						<Object Name="TriggerJump" X="18285" Y="1355"/>
+						<Object Name="Pill" X="18139" Y="825"/>
+						<Object Name="TriggerRocketVault" X="13299" Y="1350"/>
+						<Object Name="Respawn" X="12810" Y="1555"/>
+						<Object Name="TriggerZoom80" X="16205" Y="-540"/>
+						<Object Name="TriggerLossPanic" X="17971" Y="1999"/>
+						<Item X="13209" Y="1435" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="15350" Y="1055" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="14439" Y="1445" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Trigger Name="TriggerJump" X="17935" Y="860" Width="100" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="5"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="15235" Y="755" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DOWNTOWN_BONUS_02_4" X="18620" Y="1100" DeltaX="220" DeltaY="-450"/>
+						<Object Name="TriggerZoomMin" X="19016" Y="-1080"/>
+						<Object Name="TriggerZoomNormal" X="21106" Y="-990"/>
+						<Object Name="TriggerZoomMin" X="22173" Y="-1260"/>
+						<Object Name="TriggerJump" X="25496" Y="1204"/>
+						<Object Name="Respawn_3sec" X="18651" Y="1110"/>
+						<Item X="18926" Y="1014" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="20136" Y="1014" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="20811" Y="1029" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="25026" Y="1318" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="24021" Y="1316" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="24501" Y="1320" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Trigger Name="TriggerJump" X="25575" Y="1200" Width="100" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="5"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="22270" Y="1000" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="18795" Y="700" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DOWNTOWN_BONUS_02_5" X="27585" Y="2155" DeltaX="1990" DeltaY="755"/>
+						<Object Name="Constantine_ZoomNormal" X="25597" Y="2364"/>
+						<Object Name="TriggerZoomMax" X="28299" Y="241"/>
+						<Object Name="TriggerSpinningVaultTrick0High" X="28328" Y="1955"/>
+						<Object Name="TriggerZoomNormal" X="29513" Y="260"/>
+						<Object Name="Pill" X="30176" Y="1923"/>
+						<Object Name="Pill" X="31959" Y="2460"/>
+						<Object Name="TriggerZoomMax" X="33267" Y="604"/>
+						<Object Name="TriggerRailFlipVault" X="33415" Y="2081"/>
+						<Object Name="TriggerZoomNormal" X="34976" Y="505"/>
+						<Object Name="Respawn_2.5sec" X="28019" Y="2160"/>
+						<Object Name="Respawn_2.5sec" X="33154" Y="2280"/>
+						<Object Name="TriggerLossPanic" X="35180" Y="2842"/>
+						<Object Name="TriggerJump" X="35436" Y="2085"/>
+						<Trigger Name="TriggerLossPanic" X="25457" Y="2744" Width="2290" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value="FlyPanic"/>
+									<SetVariable Name="StartFrame" Value="1"/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Item X="30491" Y="2145" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="33109" Y="2200" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="33370" Y="2199" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Trigger Name="TriggerJump" X="35150" Y="2085" Width="100" Height="200">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="5"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="33465" Y="1885" Width="100" Height="400">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="HunterMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="FinalRoof_DownTown_04" X="35975" Y="2217" DeltaX="440" DeltaY="-65"/>
+						<Item X="36760" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
+						<Item X="36545" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
+						<Item X="36935" Y="2134" Score="10" Radius="80" Type="1" GroupId="5"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

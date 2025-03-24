@@ -1,444 +1,444 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <NPivot Type="Node"  X="170"  Y="650.988830566406"  Z="-17.5608310699463"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node10 Type="Node"  X="200"  Y="650.625"  Z="-18.3521862030029"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node11 Type="Node"  X="200"  Y="870"  Z="-18.3582534790039"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node12 Type="Node"  X="170"  Y="870"  Z="-17.6327342987061"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node13 Type="Node"  X="170"  Y="651.021423339844"  Z="32.4279136657715"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node14 Type="Node"  X="200"  Y="650.625"  Z="31.6465396881104"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node15 Type="Node"  X="200"  Y="870"  Z="31.6112728118896"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node16 Type="Node"  X="170"  Y="870"  Z="32.3853607177734"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node17 Type="Node"  X="319.440734863281"  Y="870.006286621094"  Z="0.0194365177303553"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node18 Type="Node"  X="429.440704345703"  Y="870.012634277344"  Z="0.0197582226246595"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node19 Type="Node"  X="429.434448242188"  Y="890.012634277344"  Z="0.0260747279971838"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node20 Type="Node"  X="319.434448242188"  Y="890.006286621094"  Z="0.0257176011800766"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node21 Type="Node"  X="319.440368652344"  Y="870"  Z="50.0194282531738"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node22 Type="Node"  X="429.440399169922"  Y="870.006286621094"  Z="50.0197448730469"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node23 Type="Node"  X="429.43408203125"  Y="890.006286621094"  Z="50.0260772705078"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node24 Type="Node"  X="319.43408203125"  Y="890"  Z="50.0257263183594"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node25 Type="Node"  X="169.943115234375"  Y="870"  Z="-0.483284384012222"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node26 Type="Node"  X="209.943115234375"  Y="870"  Z="-0.483300536870956"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node27 Type="Node"  X="209.943115234375"  Y="890"  Z="-0.483296543359756"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node28 Type="Node"  X="169.943115234375"  Y="890"  Z="-0.483277946710587"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node29 Type="Node"  X="169.943115234375"  Y="870"  Z="49.5167198181152"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node30 Type="Node"  X="209.943115234375"  Y="870"  Z="49.5167045593262"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node31 Type="Node"  X="209.943130493164"  Y="890"  Z="49.5166969299316"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node32 Type="Node"  X="169.943115234375"  Y="890"  Z="49.5167236328125"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node33 Type="Node"  X="399.943115234375"  Y="650"  Z="-0.4832763671875"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node34 Type="Node"  X="429.943115234375"  Y="650"  Z="-0.483305066823959"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node35 Type="Node"  X="429.928497314453"  Y="870.66259765625"  Z="-0.483303070068359"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node36 Type="Node"  X="399.957733154297"  Y="869.33740234375"  Z="-0.483272552490234"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node37 Type="Node"  X="399.943115234375"  Y="650"  Z="49.5167274475098"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node38 Type="Node"  X="429.943115234375"  Y="650"  Z="49.5166969299316"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node39 Type="Node"  X="429.928497314453"  Y="870.66259765625"  Z="49.5166969299316"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node40 Type="Node"  X="399.957733154297"  Y="869.33740234375"  Z="49.5167274475098"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node41 Type="Node"  X="204.470748901367"  Y="869.981506347656"  Z="-9.72747802734375E-5"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node42 Type="Node"  X="324.470245361328"  Y="870.307434082031"  Z="-8.58306520967744E-5"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node43 Type="Node"  X="324.415985107422"  Y="890.307556152344"  Z="-7.45985671528615E-5"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node44 Type="Node"  X="204.416427612305"  Y="889.9814453125"  Z="-8.7314190750476E-5"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node45 Type="Node"  X="204.470748901367"  Y="869.981506347656"  Z="49.9999122619629"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node46 Type="Node"  X="324.470245361328"  Y="870.307434082031"  Z="49.9998893737793"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node47 Type="Node"  X="324.415985107422"  Y="890.307556152344"  Z="49.9998817443848"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node48 Type="Node"  X="204.416427612305"  Y="889.9814453125"  Z="49.9999084472656"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node49 Type="Node"  X="170"  Y="606"  Z="0"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node50 Type="Node"  X="430"  Y="606"  Z="0"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node51 Type="Node"  X="430"  Y="651"  Z="0"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node52 Type="Node"  X="170"  Y="651"  Z="0"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node53 Type="Node"  X="170"  Y="606"  Z="50"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node54 Type="Node"  X="430"  Y="606"  Z="50"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node55 Type="Node"  X="430"  Y="651"  Z="50"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node56 Type="Node"  X="170"  Y="651"  Z="50"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-  </Nodes>
-  <Edges>
-    <Edge25 Type="Edge"  Length="30.0126399993896"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node10" />
-    <Edge26 Type="Edge"  Length="221.057754516602"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node11" />
-    <Edge27 Type="Edge"  Length="219.011184692383"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node12" />
-    <Edge28 Type="Edge"  Length="219.375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node10"  End2="Node11" />
-    <Edge29 Type="Edge"  Length="221.417953491211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node10"  End2="Node12" />
-    <Edge30 Type="Edge"  Length="30.0087718963623"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node11"  End2="Node12" />
-    <Edge31 Type="Edge"  Length="30.0127906799316"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node13"  End2="Node14" />
-    <Edge32 Type="Edge"  Length="221.025588989258"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node13"  End2="Node15" />
-    <Edge33 Type="Edge"  Length="218.978637695313"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node13"  End2="Node16" />
-    <Edge34 Type="Edge"  Length="219.375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node14"  End2="Node15" />
-    <Edge35 Type="Edge"  Length="221.418014526367"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node14"  End2="Node16" />
-    <Edge36 Type="Edge"  Length="30.0099849700928"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node15"  End2="Node16" />
-    <Edge37 Type="Edge"  Length="49.9887504577637"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node13" />
-    <Edge38 Type="Edge"  Length="57.632438659668"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node14" />
-    <Edge39 Type="Edge"  Length="58.9811401367188"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node13"  End2="Node10" />
-    <Edge40 Type="Edge"  Length="49.9987258911133"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node14"  End2="Node10" />
-    <Edge41 Type="Edge"  Length="50.0180969238281"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node12"  End2="Node16" />
-    <Edge42 Type="Edge"  Length="57.6625671386719"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node12"  End2="Node15" />
-    <Edge43 Type="Edge"  Length="58.9484062194824"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node16"  End2="Node11" />
-    <Edge44 Type="Edge"  Length="49.9695281982422"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node15"  End2="Node11" />
-    <Edge45 Type="Edge"  Length="224.992752075195"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node10"  End2="Node15" />
-    <Edge46 Type="Edge"  Length="225.001937866211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node14"  End2="Node11" />
-    <Edge47 Type="Edge"  Length="224.634185791016"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node16" />
-    <Edge48 Type="Edge"  Length="224.627944946289"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node13"  End2="Node12" />
-    <Edge49 Type="Edge"  Length="110"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node18" />
-    <Edge50 Type="Edge"  Length="111.79833984375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node19" />
-    <Edge51 Type="Edge"  Length="20.0000019073486"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node20" />
-    <Edge52 Type="Edge"  Length="20.0000019073486"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node18"  End2="Node19" />
-    <Edge53 Type="Edge"  Length="111.808456420898"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node18"  End2="Node20" />
-    <Edge54 Type="Edge"  Length="110"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node19"  End2="Node20" />
-    <Edge55 Type="Edge"  Length="110"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node21"  End2="Node22" />
-    <Edge56 Type="Edge"  Length="111.798324584961"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node21"  End2="Node23" />
-    <Edge57 Type="Edge"  Length="19.9999408721924"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node21"  End2="Node24" />
-    <Edge58 Type="Edge"  Length="20.0000019073486"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node22"  End2="Node23" />
-    <Edge59 Type="Edge"  Length="111.808456420898"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node22"  End2="Node24" />
-    <Edge60 Type="Edge"  Length="110"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node23"  End2="Node24" />
-    <Edge61 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node21" />
-    <Edge62 Type="Edge"  Length="120.830276489258"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node22" />
-    <Edge63 Type="Edge"  Length="120.830642700195"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node21"  End2="Node18" />
-    <Edge64 Type="Edge"  Length="49.9999847412109"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node22"  End2="Node18" />
-    <Edge65 Type="Edge"  Length="50.0000114440918"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node20"  End2="Node24" />
-    <Edge66 Type="Edge"  Length="120.830284118652"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node20"  End2="Node23" />
-    <Edge67 Type="Edge"  Length="120.830642700195"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node24"  End2="Node19" />
-    <Edge68 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node23"  End2="Node19" />
-    <Edge69 Type="Edge"  Length="53.855152130127"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node18"  End2="Node23" />
-    <Edge70 Type="Edge"  Length="53.8481369018555"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node22"  End2="Node19" />
-    <Edge71 Type="Edge"  Length="53.855152130127"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node17"  End2="Node24" />
-    <Edge72 Type="Edge"  Length="53.8481369018555"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node21"  End2="Node20" />
-    <Edge73 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node26" />
-    <Edge74 Type="Edge"  Length="44.7213745117188"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node27" />
-    <Edge75 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node28" />
-    <Edge76 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node26"  End2="Node27" />
-    <Edge77 Type="Edge"  Length="44.7213478088379"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node26"  End2="Node28" />
-    <Edge78 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node27"  End2="Node28" />
-    <Edge79 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node29"  End2="Node30" />
-    <Edge80 Type="Edge"  Length="44.7213745117188"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node29"  End2="Node31" />
-    <Edge81 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node29"  End2="Node32" />
-    <Edge82 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node30"  End2="Node31" />
-    <Edge83 Type="Edge"  Length="44.7213478088379"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node30"  End2="Node32" />
-    <Edge84 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node31"  End2="Node32" />
-    <Edge85 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node29" />
-    <Edge86 Type="Edge"  Length="64.0312423706055"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node30" />
-    <Edge87 Type="Edge"  Length="64.03125"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node29"  End2="Node26" />
-    <Edge88 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node30"  End2="Node26" />
-    <Edge89 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node28"  End2="Node32" />
-    <Edge90 Type="Edge"  Length="64.0312347412109"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node28"  End2="Node31" />
-    <Edge91 Type="Edge"  Length="64.03125"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node32"  End2="Node27" />
-    <Edge92 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node31"  End2="Node27" />
-    <Edge93 Type="Edge"  Length="53.8516502380371"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node26"  End2="Node31" />
-    <Edge94 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node30"  End2="Node27" />
-    <Edge95 Type="Edge"  Length="53.8516502380371"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node25"  End2="Node32" />
-    <Edge96 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node29"  End2="Node28" />
-    <Edge97 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node34" />
-    <Edge98 Type="Edge"  Length="222.69059753418"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node35" />
-    <Edge99 Type="Edge"  Length="219.33740234375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node36" />
-    <Edge100 Type="Edge"  Length="220.66259765625"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node34"  End2="Node35" />
-    <Edge101 Type="Edge"  Length="221.377548217773"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node34"  End2="Node36" />
-    <Edge102 Type="Edge"  Length="30.0000476837158"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node35"  End2="Node36" />
-    <Edge103 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node37"  End2="Node38" />
-    <Edge104 Type="Edge"  Length="222.69059753418"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node37"  End2="Node39" />
-    <Edge105 Type="Edge"  Length="219.33740234375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node37"  End2="Node40" />
-    <Edge106 Type="Edge"  Length="220.66259765625"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node38"  End2="Node39" />
-    <Edge107 Type="Edge"  Length="221.377548217773"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node38"  End2="Node40" />
-    <Edge108 Type="Edge"  Length="30.0000476837158"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node39"  End2="Node40" />
-    <Edge109 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node37" />
-    <Edge110 Type="Edge"  Length="58.309497833252"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node38" />
-    <Edge111 Type="Edge"  Length="58.3095474243164"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node37"  End2="Node34" />
-    <Edge112 Type="Edge"  Length="50.0000038146973"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node38"  End2="Node34" />
-    <Edge113 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node36"  End2="Node40" />
-    <Edge114 Type="Edge"  Length="58.3095169067383"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node36"  End2="Node39" />
-    <Edge115 Type="Edge"  Length="58.3095703125"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node40"  End2="Node35" />
-    <Edge116 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node39"  End2="Node35" />
-    <Edge117 Type="Edge"  Length="226.256454467773"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node34"  End2="Node39" />
-    <Edge118 Type="Edge"  Length="226.256454467773"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node38"  End2="Node35" />
-    <Edge119 Type="Edge"  Length="224.964218139648"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node33"  End2="Node40" />
-    <Edge120 Type="Edge"  Length="224.964218139648"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node37"  End2="Node36" />
-    <Edge121 Type="Edge"  Length="119.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node42" />
-    <Edge122 Type="Edge"  Length="121.655235290527"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node43" />
-    <Edge123 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node44" />
-    <Edge124 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node42"  End2="Node43" />
-    <Edge125 Type="Edge"  Length="121.655235290527"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node42"  End2="Node44" />
-    <Edge126 Type="Edge"  Length="119.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node43"  End2="Node44" />
-    <Edge127 Type="Edge"  Length="119.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node45"  End2="Node46" />
-    <Edge128 Type="Edge"  Length="121.655235290527"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node45"  End2="Node47" />
-    <Edge129 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node45"  End2="Node48" />
-    <Edge130 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node46"  End2="Node47" />
-    <Edge131 Type="Edge"  Length="121.655235290527"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node46"  End2="Node48" />
-    <Edge132 Type="Edge"  Length="119.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node47"  End2="Node48" />
-    <Edge133 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node45" />
-    <Edge134 Type="Edge"  Length="129.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node46" />
-    <Edge135 Type="Edge"  Length="129.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node45"  End2="Node42" />
-    <Edge136 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node46"  End2="Node42" />
-    <Edge137 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node44"  End2="Node48" />
-    <Edge138 Type="Edge"  Length="129.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node44"  End2="Node47" />
-    <Edge139 Type="Edge"  Length="129.999984741211"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node48"  End2="Node43" />
-    <Edge140 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node47"  End2="Node43" />
-    <Edge141 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node42"  End2="Node47" />
-    <Edge142 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node46"  End2="Node43" />
-    <Edge143 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node41"  End2="Node48" />
-    <Edge144 Type="Edge"  Length="53.8516464233398"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node45"  End2="Node44" />
-    <Edge145 Type="Edge"  Length="230"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node50" />
-    <Edge146 Type="Edge"  Length="234.36083984375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node51" />
-    <Edge147 Type="Edge"  Length="45"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node52" />
-    <Edge148 Type="Edge"  Length="45"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node50"  End2="Node51" />
-    <Edge149 Type="Edge"  Length="234.36083984375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node50"  End2="Node52" />
-    <Edge150 Type="Edge"  Length="230"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node51"  End2="Node52" />
-    <Edge151 Type="Edge"  Length="230"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node53"  End2="Node54" />
-    <Edge152 Type="Edge"  Length="234.36083984375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node53"  End2="Node55" />
-    <Edge153 Type="Edge"  Length="45"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node53"  End2="Node56" />
-    <Edge154 Type="Edge"  Length="45"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node54"  End2="Node55" />
-    <Edge155 Type="Edge"  Length="234.36083984375"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node54"  End2="Node56" />
-    <Edge156 Type="Edge"  Length="230"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node55"  End2="Node56" />
-    <Edge157 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node53" />
-    <Edge158 Type="Edge"  Length="235.372039794922"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node54" />
-    <Edge159 Type="Edge"  Length="235.372039794922"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node53"  End2="Node50" />
-    <Edge160 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node54"  End2="Node50" />
-    <Edge161 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node52"  End2="Node56" />
-    <Edge162 Type="Edge"  Length="235.372039794922"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node52"  End2="Node55" />
-    <Edge163 Type="Edge"  Length="235.372039794922"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node56"  End2="Node51" />
-    <Edge164 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node55"  End2="Node51" />
-    <Edge165 Type="Edge"  Length="67.2681198120117"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node50"  End2="Node55" />
-    <Edge166 Type="Edge"  Length="67.2681198120117"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node54"  End2="Node51" />
-    <Edge167 Type="Edge"  Length="67.2681198120117"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node49"  End2="Node56" />
-    <Edge168 Type="Edge"  Length="67.2681198120117"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node53"  End2="Node52" />
-  </Edges>
-  <Figures>
-    <Triangle-13 Type="Triangle"  Shading="-1"  Node1="NPivot"  Node2="Node10"  Node3="Node11" />
-    <Triangle-14 Type="Triangle"  Shading="-1"  Node1="NPivot"  Node2="Node11"  Node3="Node12" />
-    <Triangle-18 Type="Triangle"  Shading="-1"  Node1="Node10"  Node2="Node15"  Node3="Node11" />
-    <Triangle-24 Type="Triangle"  Shading="-1"  Node1="Node11"  Node2="Node15"  Node3="Node12" />
-    <Triangle-22 Type="Triangle"  Shading="-1"  Node1="NPivot"  Node2="Node14"  Node3="Node10" />
-    <Triangle-20 Type="Triangle"  Shading="-1"  Node1="Node12"  Node2="Node16"  Node3="NPivot" />
-    <Triangle-49 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node34"  Node3="Node35" />
-    <Triangle-37 Type="Triangle"  Shading="-1"  Node1="Node25"  Node2="Node26"  Node3="Node27" />
-    <Triangle-38 Type="Triangle"  Shading="-1"  Node1="Node25"  Node2="Node27"  Node3="Node28" />
-    <Triangle-50 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node35"  Node3="Node36" />
-    <Triangle-2 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node43"  Node3="Node44" />
-    <Triangle-1 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node42"  Node3="Node43" />
-    <Triangle-62 Type="Triangle"  Shading="-1"  Node1="Node49"  Node2="Node51"  Node3="Node52" />
-    <Triangle-61 Type="Triangle"  Shading="-1"  Node1="Node49"  Node2="Node50"  Node3="Node51" />
-    <Triangle-25 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node18"  Node3="Node19" />
-    <Triangle-26 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node19"  Node3="Node20" />
-    <Triangle-17 Type="Triangle"  Shading="-1"  Node1="Node10"  Node2="Node14"  Node3="Node15" />
-    <Triangle-23 Type="Triangle"  Shading="-1"  Node1="Node15"  Node2="Node16"  Node3="Node12" />
-    <Triangle-21 Type="Triangle"  Shading="-1"  Node1="NPivot"  Node2="Node13"  Node3="Node14" />
-    <Triangle-19 Type="Triangle"  Shading="-1"  Node1="Node16"  Node2="Node13"  Node3="NPivot" />
-    <Triangle-54 Type="Triangle"  Shading="-1"  Node1="Node34"  Node2="Node39"  Node3="Node35" />
-    <Triangle-42 Type="Triangle"  Shading="-1"  Node1="Node26"  Node2="Node31"  Node3="Node27" />
-    <Triangle-46 Type="Triangle"  Shading="-1"  Node1="Node25"  Node2="Node30"  Node3="Node26" />
-    <Triangle-58 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node38"  Node3="Node34" />
-    <Triangle-48 Type="Triangle"  Shading="-1"  Node1="Node27"  Node2="Node31"  Node3="Node28" />
-    <Triangle-60 Type="Triangle"  Shading="-1"  Node1="Node35"  Node2="Node39"  Node3="Node36" />
-    <Triangle-44 Type="Triangle"  Shading="-1"  Node1="Node28"  Node2="Node32"  Node3="Node25" />
-    <Triangle-56 Type="Triangle"  Shading="-1"  Node1="Node36"  Node2="Node40"  Node3="Node33" />
-    <Triangle-10 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node46"  Node3="Node42" />
-    <Triangle-12 Type="Triangle"  Shading="-1"  Node1="Node43"  Node2="Node47"  Node3="Node44" />
-    <Triangle-8 Type="Triangle"  Shading="-1"  Node1="Node44"  Node2="Node48"  Node3="Node41" />
-    <Triangle-6 Type="Triangle"  Shading="-1"  Node1="Node42"  Node2="Node47"  Node3="Node43" />
-    <Triangle-68 Type="Triangle"  Shading="-1"  Node1="Node52"  Node2="Node56"  Node3="Node49" />
-    <Triangle-70 Type="Triangle"  Shading="-1"  Node1="Node49"  Node2="Node54"  Node3="Node50" />
-    <Triangle-72 Type="Triangle"  Shading="-1"  Node1="Node51"  Node2="Node55"  Node3="Node52" />
-    <Triangle-66 Type="Triangle"  Shading="-1"  Node1="Node50"  Node2="Node55"  Node3="Node51" />
-    <Triangle-34 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node22"  Node3="Node18" />
-    <Triangle-32 Type="Triangle"  Shading="-1"  Node1="Node20"  Node2="Node24"  Node3="Node17" />
-    <Triangle-30 Type="Triangle"  Shading="-1"  Node1="Node18"  Node2="Node23"  Node3="Node19" />
-    <Triangle-36 Type="Triangle"  Shading="-1"  Node1="Node19"  Node2="Node23"  Node3="Node20" />
-    <Triangle-15 Type="Triangle"  Shading="-1"  Node1="Node15"  Node2="Node14"  Node3="Node13" />
-    <Triangle-16 Type="Triangle"  Shading="-1"  Node1="Node16"  Node2="Node15"  Node3="Node13" />
-    <Triangle-53 Type="Triangle"  Shading="-1"  Node1="Node34"  Node2="Node38"  Node3="Node39" />
-    <Triangle-41 Type="Triangle"  Shading="-1"  Node1="Node26"  Node2="Node30"  Node3="Node31" />
-    <Triangle-45 Type="Triangle"  Shading="-1"  Node1="Node25"  Node2="Node29"  Node3="Node30" />
-    <Triangle-57 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node37"  Node3="Node38" />
-    <Triangle-47 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node32"  Node3="Node28" />
-    <Triangle-43 Type="Triangle"  Shading="-1"  Node1="Node32"  Node2="Node29"  Node3="Node25" />
-    <Triangle-59 Type="Triangle"  Shading="-1"  Node1="Node39"  Node2="Node40"  Node3="Node36" />
-    <Triangle-55 Type="Triangle"  Shading="-1"  Node1="Node40"  Node2="Node37"  Node3="Node33" />
-    <Triangle-5 Type="Triangle"  Shading="-1"  Node1="Node42"  Node2="Node46"  Node3="Node47" />
-    <Triangle-11 Type="Triangle"  Shading="-1"  Node1="Node47"  Node2="Node48"  Node3="Node44" />
-    <Triangle-9 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node45"  Node3="Node46" />
-    <Triangle-7 Type="Triangle"  Shading="-1"  Node1="Node48"  Node2="Node45"  Node3="Node41" />
-    <Triangle-67 Type="Triangle"  Shading="-1"  Node1="Node56"  Node2="Node53"  Node3="Node49" />
-    <Triangle-69 Type="Triangle"  Shading="-1"  Node1="Node49"  Node2="Node53"  Node3="Node54" />
-    <Triangle-71 Type="Triangle"  Shading="-1"  Node1="Node55"  Node2="Node56"  Node3="Node52" />
-    <Triangle-65 Type="Triangle"  Shading="-1"  Node1="Node50"  Node2="Node54"  Node3="Node55" />
-    <Triangle-33 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node21"  Node3="Node22" />
-    <Triangle-31 Type="Triangle"  Shading="-1"  Node1="Node24"  Node2="Node21"  Node3="Node17" />
-    <Triangle-29 Type="Triangle"  Shading="-1"  Node1="Node18"  Node2="Node22"  Node3="Node23" />
-    <Triangle-35 Type="Triangle"  Shading="-1"  Node1="Node23"  Node2="Node24"  Node3="Node20" />
-    <Triangle-39 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node30"  Node3="Node29" />
-    <Triangle-51 Type="Triangle"  Shading="-1"  Node1="Node39"  Node2="Node38"  Node3="Node37" />
-    <Triangle-40 Type="Triangle"  Shading="-1"  Node1="Node32"  Node2="Node31"  Node3="Node29" />
-    <Triangle-52 Type="Triangle"  Shading="-1"  Node1="Node40"  Node2="Node39"  Node3="Node37" />
-    <Triangle-3 Type="Triangle"  Shading="-1"  Node1="Node47"  Node2="Node46"  Node3="Node45" />
-    <Triangle-4 Type="Triangle"  Shading="-1"  Node1="Node48"  Node2="Node47"  Node3="Node45" />
-    <Triangle-64 Type="Triangle"  Shading="-1"  Node1="Node56"  Node2="Node55"  Node3="Node53" />
-    <Triangle-63 Type="Triangle"  Shading="-1"  Node1="Node55"  Node2="Node54"  Node3="Node53" />
-    <Triangle-27 Type="Triangle"  Shading="-1"  Node1="Node23"  Node2="Node22"  Node3="Node21" />
-    <Triangle-28 Type="Triangle"  Shading="-1"  Node1="Node24"  Node2="Node23"  Node3="Node21" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-    <NP_Node10 Type="NodePoint"  Node="Node10"  Radius="3" />
-    <NP_Node11 Type="NodePoint"  Node="Node11"  Radius="3" />
-    <NP_Node12 Type="NodePoint"  Node="Node12"  Radius="3" />
-    <NP_Node13 Type="NodePoint"  Node="Node13"  Radius="3" />
-    <NP_Node14 Type="NodePoint"  Node="Node14"  Radius="3" />
-    <NP_Node15 Type="NodePoint"  Node="Node15"  Radius="3" />
-    <NP_Node16 Type="NodePoint"  Node="Node16"  Radius="3" />
-    <EL_Edge25 Type="EdgeLine"  Edge="Edge25"  Width="0" />
-    <EL_Edge27 Type="EdgeLine"  Edge="Edge27"  Width="0" />
-    <EL_Edge28 Type="EdgeLine"  Edge="Edge28"  Width="0" />
-    <EL_Edge30 Type="EdgeLine"  Edge="Edge30"  Width="0" />
-    <EL_Edge31 Type="EdgeLine"  Edge="Edge31"  Width="0" />
-    <EL_Edge33 Type="EdgeLine"  Edge="Edge33"  Width="0" />
-    <EL_Edge34 Type="EdgeLine"  Edge="Edge34"  Width="0" />
-    <EL_Edge36 Type="EdgeLine"  Edge="Edge36"  Width="0" />
-    <EL_Edge37 Type="EdgeLine"  Edge="Edge37"  Width="0" />
-    <EL_Edge40 Type="EdgeLine"  Edge="Edge40"  Width="0" />
-    <EL_Edge41 Type="EdgeLine"  Edge="Edge41"  Width="0" />
-    <EL_Edge44 Type="EdgeLine"  Edge="Edge44"  Width="0" />
-    <NP_Node17 Type="NodePoint"  Node="Node17"  Radius="3" />
-    <NP_Node18 Type="NodePoint"  Node="Node18"  Radius="3" />
-    <NP_Node19 Type="NodePoint"  Node="Node19"  Radius="3" />
-    <NP_Node20 Type="NodePoint"  Node="Node20"  Radius="3" />
-    <NP_Node21 Type="NodePoint"  Node="Node21"  Radius="3" />
-    <NP_Node22 Type="NodePoint"  Node="Node22"  Radius="3" />
-    <NP_Node23 Type="NodePoint"  Node="Node23"  Radius="3" />
-    <NP_Node24 Type="NodePoint"  Node="Node24"  Radius="3" />
-    <EL_Edge49 Type="EdgeLine"  Edge="Edge49"  Width="0" />
-    <EL_Edge51 Type="EdgeLine"  Edge="Edge51"  Width="0" />
-    <EL_Edge52 Type="EdgeLine"  Edge="Edge52"  Width="0" />
-    <EL_Edge54 Type="EdgeLine"  Edge="Edge54"  Width="0" />
-    <EL_Edge55 Type="EdgeLine"  Edge="Edge55"  Width="0" />
-    <EL_Edge57 Type="EdgeLine"  Edge="Edge57"  Width="0" />
-    <EL_Edge58 Type="EdgeLine"  Edge="Edge58"  Width="0" />
-    <EL_Edge60 Type="EdgeLine"  Edge="Edge60"  Width="0" />
-    <EL_Edge61 Type="EdgeLine"  Edge="Edge61"  Width="0" />
-    <EL_Edge64 Type="EdgeLine"  Edge="Edge64"  Width="0" />
-    <EL_Edge65 Type="EdgeLine"  Edge="Edge65"  Width="0" />
-    <EL_Edge68 Type="EdgeLine"  Edge="Edge68"  Width="0" />
-    <NP_Node25 Type="NodePoint"  Node="Node25"  Radius="3" />
-    <NP_Node26 Type="NodePoint"  Node="Node26"  Radius="3" />
-    <NP_Node27 Type="NodePoint"  Node="Node27"  Radius="3" />
-    <NP_Node28 Type="NodePoint"  Node="Node28"  Radius="3" />
-    <NP_Node29 Type="NodePoint"  Node="Node29"  Radius="3" />
-    <NP_Node30 Type="NodePoint"  Node="Node30"  Radius="3" />
-    <NP_Node31 Type="NodePoint"  Node="Node31"  Radius="3" />
-    <NP_Node32 Type="NodePoint"  Node="Node32"  Radius="3" />
-    <EL_Edge73 Type="EdgeLine"  Edge="Edge73"  Width="0" />
-    <EL_Edge75 Type="EdgeLine"  Edge="Edge75"  Width="0" />
-    <EL_Edge76 Type="EdgeLine"  Edge="Edge76"  Width="0" />
-    <EL_Edge78 Type="EdgeLine"  Edge="Edge78"  Width="0" />
-    <EL_Edge79 Type="EdgeLine"  Edge="Edge79"  Width="0" />
-    <EL_Edge81 Type="EdgeLine"  Edge="Edge81"  Width="0" />
-    <EL_Edge82 Type="EdgeLine"  Edge="Edge82"  Width="0" />
-    <EL_Edge84 Type="EdgeLine"  Edge="Edge84"  Width="0" />
-    <EL_Edge85 Type="EdgeLine"  Edge="Edge85"  Width="0" />
-    <EL_Edge88 Type="EdgeLine"  Edge="Edge88"  Width="0" />
-    <EL_Edge89 Type="EdgeLine"  Edge="Edge89"  Width="0" />
-    <EL_Edge92 Type="EdgeLine"  Edge="Edge92"  Width="0" />
-    <NP_Node33 Type="NodePoint"  Node="Node33"  Radius="3" />
-    <NP_Node34 Type="NodePoint"  Node="Node34"  Radius="3" />
-    <NP_Node35 Type="NodePoint"  Node="Node35"  Radius="3" />
-    <NP_Node36 Type="NodePoint"  Node="Node36"  Radius="3" />
-    <NP_Node37 Type="NodePoint"  Node="Node37"  Radius="3" />
-    <NP_Node38 Type="NodePoint"  Node="Node38"  Radius="3" />
-    <NP_Node39 Type="NodePoint"  Node="Node39"  Radius="3" />
-    <NP_Node40 Type="NodePoint"  Node="Node40"  Radius="3" />
-    <EL_Edge97 Type="EdgeLine"  Edge="Edge97"  Width="0" />
-    <EL_Edge99 Type="EdgeLine"  Edge="Edge99"  Width="0" />
-    <EL_Edge100 Type="EdgeLine"  Edge="Edge100"  Width="0" />
-    <EL_Edge102 Type="EdgeLine"  Edge="Edge102"  Width="0" />
-    <EL_Edge103 Type="EdgeLine"  Edge="Edge103"  Width="0" />
-    <EL_Edge105 Type="EdgeLine"  Edge="Edge105"  Width="0" />
-    <EL_Edge106 Type="EdgeLine"  Edge="Edge106"  Width="0" />
-    <EL_Edge108 Type="EdgeLine"  Edge="Edge108"  Width="0" />
-    <EL_Edge109 Type="EdgeLine"  Edge="Edge109"  Width="0" />
-    <EL_Edge112 Type="EdgeLine"  Edge="Edge112"  Width="0" />
-    <EL_Edge113 Type="EdgeLine"  Edge="Edge113"  Width="0" />
-    <EL_Edge116 Type="EdgeLine"  Edge="Edge116"  Width="0" />
-    <NP_Node41 Type="NodePoint"  Node="Node41"  Radius="3" />
-    <NP_Node42 Type="NodePoint"  Node="Node42"  Radius="3" />
-    <NP_Node43 Type="NodePoint"  Node="Node43"  Radius="3" />
-    <NP_Node44 Type="NodePoint"  Node="Node44"  Radius="3" />
-    <NP_Node45 Type="NodePoint"  Node="Node45"  Radius="3" />
-    <NP_Node46 Type="NodePoint"  Node="Node46"  Radius="3" />
-    <NP_Node47 Type="NodePoint"  Node="Node47"  Radius="3" />
-    <NP_Node48 Type="NodePoint"  Node="Node48"  Radius="3" />
-    <EL_Edge121 Type="EdgeLine"  Edge="Edge121"  Width="0" />
-    <EL_Edge123 Type="EdgeLine"  Edge="Edge123"  Width="0" />
-    <EL_Edge124 Type="EdgeLine"  Edge="Edge124"  Width="0" />
-    <EL_Edge126 Type="EdgeLine"  Edge="Edge126"  Width="0" />
-    <EL_Edge127 Type="EdgeLine"  Edge="Edge127"  Width="0" />
-    <EL_Edge129 Type="EdgeLine"  Edge="Edge129"  Width="0" />
-    <EL_Edge130 Type="EdgeLine"  Edge="Edge130"  Width="0" />
-    <EL_Edge132 Type="EdgeLine"  Edge="Edge132"  Width="0" />
-    <EL_Edge133 Type="EdgeLine"  Edge="Edge133"  Width="0" />
-    <EL_Edge136 Type="EdgeLine"  Edge="Edge136"  Width="0" />
-    <EL_Edge137 Type="EdgeLine"  Edge="Edge137"  Width="0" />
-    <EL_Edge140 Type="EdgeLine"  Edge="Edge140"  Width="0" />
-    <NP_Node49 Type="NodePoint"  Node="Node49"  Radius="3" />
-    <NP_Node50 Type="NodePoint"  Node="Node50"  Radius="3" />
-    <NP_Node51 Type="NodePoint"  Node="Node51"  Radius="3" />
-    <NP_Node52 Type="NodePoint"  Node="Node52"  Radius="3" />
-    <NP_Node53 Type="NodePoint"  Node="Node53"  Radius="3" />
-    <NP_Node54 Type="NodePoint"  Node="Node54"  Radius="3" />
-    <NP_Node55 Type="NodePoint"  Node="Node55"  Radius="3" />
-    <NP_Node56 Type="NodePoint"  Node="Node56"  Radius="3" />
-    <EL_Edge145 Type="EdgeLine"  Edge="Edge145"  Width="0" />
-    <EL_Edge147 Type="EdgeLine"  Edge="Edge147"  Width="0" />
-    <EL_Edge148 Type="EdgeLine"  Edge="Edge148"  Width="0" />
-    <EL_Edge150 Type="EdgeLine"  Edge="Edge150"  Width="0" />
-    <EL_Edge151 Type="EdgeLine"  Edge="Edge151"  Width="0" />
-    <EL_Edge153 Type="EdgeLine"  Edge="Edge153"  Width="0" />
-    <EL_Edge154 Type="EdgeLine"  Edge="Edge154"  Width="0" />
-    <EL_Edge156 Type="EdgeLine"  Edge="Edge156"  Width="0" />
-    <EL_Edge157 Type="EdgeLine"  Edge="Edge157"  Width="0" />
-    <EL_Edge160 Type="EdgeLine"  Edge="Edge160"  Width="0" />
-    <EL_Edge161 Type="EdgeLine"  Edge="Edge161"  Width="0" />
-    <EL_Edge164 Type="EdgeLine"  Edge="Edge164"  Width="0" />
-    <NF_Node56 Type="NodeFixer"  Node="Node56"  Radius="5" />
-    <NF_Node55 Type="NodeFixer"  Node="Node55"  Radius="5" />
-    <NF_Node54 Type="NodeFixer"  Node="Node54"  Radius="5" />
-    <NF_Node53 Type="NodeFixer"  Node="Node53"  Radius="5" />
-    <NF_Node52 Type="NodeFixer"  Node="Node52"  Radius="5" />
-    <NF_Node51 Type="NodeFixer"  Node="Node51"  Radius="5" />
-    <NF_Node50 Type="NodeFixer"  Node="Node50"  Radius="5" />
-    <NF_Node49 Type="NodeFixer"  Node="Node49"  Radius="5" />
-    <NF_Node40 Type="NodeFixer"  Node="Node40"  Radius="5" />
-    <NF_Node39 Type="NodeFixer"  Node="Node39"  Radius="5" />
-    <NF_Node38 Type="NodeFixer"  Node="Node38"  Radius="5" />
-    <NF_Node37 Type="NodeFixer"  Node="Node37"  Radius="5" />
-    <NF_Node36 Type="NodeFixer"  Node="Node36"  Radius="5" />
-    <NF_Node35 Type="NodeFixer"  Node="Node35"  Radius="5" />
-    <NF_Node34 Type="NodeFixer"  Node="Node34"  Radius="5" />
-    <NF_Node33 Type="NodeFixer"  Node="Node33"  Radius="5" />
-    <NF_Node32 Type="NodeFixer"  Node="Node32"  Radius="5" />
-    <NF_Node31 Type="NodeFixer"  Node="Node31"  Radius="5" />
-    <NF_Node30 Type="NodeFixer"  Node="Node30"  Radius="5" />
-    <NF_Node29 Type="NodeFixer"  Node="Node29"  Radius="5" />
-    <NF_Node28 Type="NodeFixer"  Node="Node28"  Radius="5" />
-    <NF_Node27 Type="NodeFixer"  Node="Node27"  Radius="5" />
-    <NF_Node26 Type="NodeFixer"  Node="Node26"  Radius="5" />
-    <NF_Node25 Type="NodeFixer"  Node="Node25"  Radius="5" />
-    <NF_Node24 Type="NodeFixer"  Node="Node24"  Radius="5" />
-    <NF_Node23 Type="NodeFixer"  Node="Node23"  Radius="5" />
-    <NF_Node22 Type="NodeFixer"  Node="Node22"  Radius="5" />
-    <NF_Node21 Type="NodeFixer"  Node="Node21"  Radius="5" />
-    <NF_Node20 Type="NodeFixer"  Node="Node20"  Radius="5" />
-    <NF_Node19 Type="NodeFixer"  Node="Node19"  Radius="5" />
-    <NF_Node18 Type="NodeFixer"  Node="Node18"  Radius="5" />
-    <NF_Node17 Type="NodeFixer"  Node="Node17"  Radius="5" />
-    <NF_Node16 Type="NodeFixer"  Node="Node16"  Radius="5" />
-    <NF_Node15 Type="NodeFixer"  Node="Node15"  Radius="5" />
-    <NF_Node14 Type="NodeFixer"  Node="Node14"  Radius="5" />
-    <NF_Node13 Type="NodeFixer"  Node="Node13"  Radius="5" />
-    <NF_Node12 Type="NodeFixer"  Node="Node12"  Radius="5" />
-    <NF_Node11 Type="NodeFixer"  Node="Node11"  Radius="5" />
-    <NF_Node10 Type="NodeFixer"  Node="Node10"  Radius="5" />
-    <NF_NPivot Type="NodeFixer"  Node="NPivot"  Radius="5" />
-  </Figures>
-  <GroupsOfSelection>
-    <SG-1/>
-    <SG-2/>
-    <SG-3/>
-    <SG-4/>
-    <SG-5/>
-    <SG-6/>
-    <SG-7/>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<NPivot Type="Node" X="170" Y="650.988830566406" Z="-17.5608310699463" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node10 Type="Node" X="200" Y="650.625" Z="-18.3521862030029" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node11 Type="Node" X="200" Y="870" Z="-18.3582534790039" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node12 Type="Node" X="170" Y="870" Z="-17.6327342987061" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node13 Type="Node" X="170" Y="651.021423339844" Z="32.4279136657715" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node14 Type="Node" X="200" Y="650.625" Z="31.6465396881104" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node15 Type="Node" X="200" Y="870" Z="31.6112728118896" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node16 Type="Node" X="170" Y="870" Z="32.3853607177734" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node17 Type="Node" X="319.440734863281" Y="870.006286621094" Z="0.0194365177303553" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node18 Type="Node" X="429.440704345703" Y="870.012634277344" Z="0.0197582226246595" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node19 Type="Node" X="429.434448242188" Y="890.012634277344" Z="0.0260747279971838" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node20 Type="Node" X="319.434448242188" Y="890.006286621094" Z="0.0257176011800766" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node21 Type="Node" X="319.440368652344" Y="870" Z="50.0194282531738" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node22 Type="Node" X="429.440399169922" Y="870.006286621094" Z="50.0197448730469" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node23 Type="Node" X="429.43408203125" Y="890.006286621094" Z="50.0260772705078" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node24 Type="Node" X="319.43408203125" Y="890" Z="50.0257263183594" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node25 Type="Node" X="169.943115234375" Y="870" Z="-0.483284384012222" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node26 Type="Node" X="209.943115234375" Y="870" Z="-0.483300536870956" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node27 Type="Node" X="209.943115234375" Y="890" Z="-0.483296543359756" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node28 Type="Node" X="169.943115234375" Y="890" Z="-0.483277946710587" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node29 Type="Node" X="169.943115234375" Y="870" Z="49.5167198181152" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node30 Type="Node" X="209.943115234375" Y="870" Z="49.5167045593262" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node31 Type="Node" X="209.943130493164" Y="890" Z="49.5166969299316" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node32 Type="Node" X="169.943115234375" Y="890" Z="49.5167236328125" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node33 Type="Node" X="399.943115234375" Y="650" Z="-0.4832763671875" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node34 Type="Node" X="429.943115234375" Y="650" Z="-0.483305066823959" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node35 Type="Node" X="429.928497314453" Y="870.66259765625" Z="-0.483303070068359" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node36 Type="Node" X="399.957733154297" Y="869.33740234375" Z="-0.483272552490234" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node37 Type="Node" X="399.943115234375" Y="650" Z="49.5167274475098" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node38 Type="Node" X="429.943115234375" Y="650" Z="49.5166969299316" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node39 Type="Node" X="429.928497314453" Y="870.66259765625" Z="49.5166969299316" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node40 Type="Node" X="399.957733154297" Y="869.33740234375" Z="49.5167274475098" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node41 Type="Node" X="204.470748901367" Y="869.981506347656" Z="-9.72747802734375E-5" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node42 Type="Node" X="324.470245361328" Y="870.307434082031" Z="-8.58306520967744E-5" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node43 Type="Node" X="324.415985107422" Y="890.307556152344" Z="-7.45985671528615E-5" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node44 Type="Node" X="204.416427612305" Y="889.9814453125" Z="-8.7314190750476E-5" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node45 Type="Node" X="204.470748901367" Y="869.981506347656" Z="49.9999122619629" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node46 Type="Node" X="324.470245361328" Y="870.307434082031" Z="49.9998893737793" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node47 Type="Node" X="324.415985107422" Y="890.307556152344" Z="49.9998817443848" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node48 Type="Node" X="204.416427612305" Y="889.9814453125" Z="49.9999084472656" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node49 Type="Node" X="170" Y="606" Z="0" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node50 Type="Node" X="430" Y="606" Z="0" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node51 Type="Node" X="430" Y="651" Z="0" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node52 Type="Node" X="170" Y="651" Z="0" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node53 Type="Node" X="170" Y="606" Z="50" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node54 Type="Node" X="430" Y="606" Z="50" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node55 Type="Node" X="430" Y="651" Z="50" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node56 Type="Node" X="170" Y="651" Z="50" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+	</Nodes>
+	<Edges>
+		<Edge25 Type="Edge" Length="30.0126399993896" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node10"/>
+		<Edge26 Type="Edge" Length="221.057754516602" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node11"/>
+		<Edge27 Type="Edge" Length="219.011184692383" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node12"/>
+		<Edge28 Type="Edge" Length="219.375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node10" End2="Node11"/>
+		<Edge29 Type="Edge" Length="221.417953491211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node10" End2="Node12"/>
+		<Edge30 Type="Edge" Length="30.0087718963623" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node11" End2="Node12"/>
+		<Edge31 Type="Edge" Length="30.0127906799316" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node13" End2="Node14"/>
+		<Edge32 Type="Edge" Length="221.025588989258" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node13" End2="Node15"/>
+		<Edge33 Type="Edge" Length="218.978637695313" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node13" End2="Node16"/>
+		<Edge34 Type="Edge" Length="219.375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node14" End2="Node15"/>
+		<Edge35 Type="Edge" Length="221.418014526367" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node14" End2="Node16"/>
+		<Edge36 Type="Edge" Length="30.0099849700928" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node15" End2="Node16"/>
+		<Edge37 Type="Edge" Length="49.9887504577637" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node13"/>
+		<Edge38 Type="Edge" Length="57.632438659668" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node14"/>
+		<Edge39 Type="Edge" Length="58.9811401367188" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node13" End2="Node10"/>
+		<Edge40 Type="Edge" Length="49.9987258911133" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node14" End2="Node10"/>
+		<Edge41 Type="Edge" Length="50.0180969238281" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node12" End2="Node16"/>
+		<Edge42 Type="Edge" Length="57.6625671386719" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node12" End2="Node15"/>
+		<Edge43 Type="Edge" Length="58.9484062194824" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node16" End2="Node11"/>
+		<Edge44 Type="Edge" Length="49.9695281982422" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node15" End2="Node11"/>
+		<Edge45 Type="Edge" Length="224.992752075195" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node10" End2="Node15"/>
+		<Edge46 Type="Edge" Length="225.001937866211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node14" End2="Node11"/>
+		<Edge47 Type="Edge" Length="224.634185791016" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node16"/>
+		<Edge48 Type="Edge" Length="224.627944946289" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node13" End2="Node12"/>
+		<Edge49 Type="Edge" Length="110" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node18"/>
+		<Edge50 Type="Edge" Length="111.79833984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node19"/>
+		<Edge51 Type="Edge" Length="20.0000019073486" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node20"/>
+		<Edge52 Type="Edge" Length="20.0000019073486" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node18" End2="Node19"/>
+		<Edge53 Type="Edge" Length="111.808456420898" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node18" End2="Node20"/>
+		<Edge54 Type="Edge" Length="110" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node19" End2="Node20"/>
+		<Edge55 Type="Edge" Length="110" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node21" End2="Node22"/>
+		<Edge56 Type="Edge" Length="111.798324584961" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node21" End2="Node23"/>
+		<Edge57 Type="Edge" Length="19.9999408721924" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node21" End2="Node24"/>
+		<Edge58 Type="Edge" Length="20.0000019073486" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node22" End2="Node23"/>
+		<Edge59 Type="Edge" Length="111.808456420898" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node22" End2="Node24"/>
+		<Edge60 Type="Edge" Length="110" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node23" End2="Node24"/>
+		<Edge61 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node21"/>
+		<Edge62 Type="Edge" Length="120.830276489258" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node22"/>
+		<Edge63 Type="Edge" Length="120.830642700195" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node21" End2="Node18"/>
+		<Edge64 Type="Edge" Length="49.9999847412109" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node22" End2="Node18"/>
+		<Edge65 Type="Edge" Length="50.0000114440918" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node20" End2="Node24"/>
+		<Edge66 Type="Edge" Length="120.830284118652" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node20" End2="Node23"/>
+		<Edge67 Type="Edge" Length="120.830642700195" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node24" End2="Node19"/>
+		<Edge68 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node23" End2="Node19"/>
+		<Edge69 Type="Edge" Length="53.855152130127" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node18" End2="Node23"/>
+		<Edge70 Type="Edge" Length="53.8481369018555" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node22" End2="Node19"/>
+		<Edge71 Type="Edge" Length="53.855152130127" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node17" End2="Node24"/>
+		<Edge72 Type="Edge" Length="53.8481369018555" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node21" End2="Node20"/>
+		<Edge73 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node26"/>
+		<Edge74 Type="Edge" Length="44.7213745117188" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node27"/>
+		<Edge75 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node28"/>
+		<Edge76 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node26" End2="Node27"/>
+		<Edge77 Type="Edge" Length="44.7213478088379" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node26" End2="Node28"/>
+		<Edge78 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node27" End2="Node28"/>
+		<Edge79 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node29" End2="Node30"/>
+		<Edge80 Type="Edge" Length="44.7213745117188" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node29" End2="Node31"/>
+		<Edge81 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node29" End2="Node32"/>
+		<Edge82 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node30" End2="Node31"/>
+		<Edge83 Type="Edge" Length="44.7213478088379" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node30" End2="Node32"/>
+		<Edge84 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node31" End2="Node32"/>
+		<Edge85 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node29"/>
+		<Edge86 Type="Edge" Length="64.0312423706055" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node30"/>
+		<Edge87 Type="Edge" Length="64.03125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node29" End2="Node26"/>
+		<Edge88 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node30" End2="Node26"/>
+		<Edge89 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node28" End2="Node32"/>
+		<Edge90 Type="Edge" Length="64.0312347412109" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node28" End2="Node31"/>
+		<Edge91 Type="Edge" Length="64.03125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node32" End2="Node27"/>
+		<Edge92 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node31" End2="Node27"/>
+		<Edge93 Type="Edge" Length="53.8516502380371" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node26" End2="Node31"/>
+		<Edge94 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node30" End2="Node27"/>
+		<Edge95 Type="Edge" Length="53.8516502380371" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node25" End2="Node32"/>
+		<Edge96 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node29" End2="Node28"/>
+		<Edge97 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node34"/>
+		<Edge98 Type="Edge" Length="222.69059753418" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node35"/>
+		<Edge99 Type="Edge" Length="219.33740234375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node36"/>
+		<Edge100 Type="Edge" Length="220.66259765625" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node34" End2="Node35"/>
+		<Edge101 Type="Edge" Length="221.377548217773" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node34" End2="Node36"/>
+		<Edge102 Type="Edge" Length="30.0000476837158" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node35" End2="Node36"/>
+		<Edge103 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node37" End2="Node38"/>
+		<Edge104 Type="Edge" Length="222.69059753418" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node37" End2="Node39"/>
+		<Edge105 Type="Edge" Length="219.33740234375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node37" End2="Node40"/>
+		<Edge106 Type="Edge" Length="220.66259765625" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node38" End2="Node39"/>
+		<Edge107 Type="Edge" Length="221.377548217773" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node38" End2="Node40"/>
+		<Edge108 Type="Edge" Length="30.0000476837158" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node39" End2="Node40"/>
+		<Edge109 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node37"/>
+		<Edge110 Type="Edge" Length="58.309497833252" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node38"/>
+		<Edge111 Type="Edge" Length="58.3095474243164" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node37" End2="Node34"/>
+		<Edge112 Type="Edge" Length="50.0000038146973" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node38" End2="Node34"/>
+		<Edge113 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node36" End2="Node40"/>
+		<Edge114 Type="Edge" Length="58.3095169067383" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node36" End2="Node39"/>
+		<Edge115 Type="Edge" Length="58.3095703125" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node40" End2="Node35"/>
+		<Edge116 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node39" End2="Node35"/>
+		<Edge117 Type="Edge" Length="226.256454467773" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node34" End2="Node39"/>
+		<Edge118 Type="Edge" Length="226.256454467773" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node38" End2="Node35"/>
+		<Edge119 Type="Edge" Length="224.964218139648" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node33" End2="Node40"/>
+		<Edge120 Type="Edge" Length="224.964218139648" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node37" End2="Node36"/>
+		<Edge121 Type="Edge" Length="119.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node42"/>
+		<Edge122 Type="Edge" Length="121.655235290527" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node43"/>
+		<Edge123 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node44"/>
+		<Edge124 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node42" End2="Node43"/>
+		<Edge125 Type="Edge" Length="121.655235290527" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node42" End2="Node44"/>
+		<Edge126 Type="Edge" Length="119.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node43" End2="Node44"/>
+		<Edge127 Type="Edge" Length="119.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node45" End2="Node46"/>
+		<Edge128 Type="Edge" Length="121.655235290527" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node45" End2="Node47"/>
+		<Edge129 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node45" End2="Node48"/>
+		<Edge130 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node46" End2="Node47"/>
+		<Edge131 Type="Edge" Length="121.655235290527" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node46" End2="Node48"/>
+		<Edge132 Type="Edge" Length="119.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node47" End2="Node48"/>
+		<Edge133 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node45"/>
+		<Edge134 Type="Edge" Length="129.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node46"/>
+		<Edge135 Type="Edge" Length="129.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node45" End2="Node42"/>
+		<Edge136 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node46" End2="Node42"/>
+		<Edge137 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node44" End2="Node48"/>
+		<Edge138 Type="Edge" Length="129.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node44" End2="Node47"/>
+		<Edge139 Type="Edge" Length="129.999984741211" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node48" End2="Node43"/>
+		<Edge140 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node47" End2="Node43"/>
+		<Edge141 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node42" End2="Node47"/>
+		<Edge142 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node46" End2="Node43"/>
+		<Edge143 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node41" End2="Node48"/>
+		<Edge144 Type="Edge" Length="53.8516464233398" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node45" End2="Node44"/>
+		<Edge145 Type="Edge" Length="230" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node50"/>
+		<Edge146 Type="Edge" Length="234.36083984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node51"/>
+		<Edge147 Type="Edge" Length="45" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node52"/>
+		<Edge148 Type="Edge" Length="45" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node50" End2="Node51"/>
+		<Edge149 Type="Edge" Length="234.36083984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node50" End2="Node52"/>
+		<Edge150 Type="Edge" Length="230" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node51" End2="Node52"/>
+		<Edge151 Type="Edge" Length="230" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node53" End2="Node54"/>
+		<Edge152 Type="Edge" Length="234.36083984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node53" End2="Node55"/>
+		<Edge153 Type="Edge" Length="45" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node53" End2="Node56"/>
+		<Edge154 Type="Edge" Length="45" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node54" End2="Node55"/>
+		<Edge155 Type="Edge" Length="234.36083984375" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node54" End2="Node56"/>
+		<Edge156 Type="Edge" Length="230" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node55" End2="Node56"/>
+		<Edge157 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node53"/>
+		<Edge158 Type="Edge" Length="235.372039794922" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node54"/>
+		<Edge159 Type="Edge" Length="235.372039794922" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node53" End2="Node50"/>
+		<Edge160 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node54" End2="Node50"/>
+		<Edge161 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node52" End2="Node56"/>
+		<Edge162 Type="Edge" Length="235.372039794922" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node52" End2="Node55"/>
+		<Edge163 Type="Edge" Length="235.372039794922" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node56" End2="Node51"/>
+		<Edge164 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node55" End2="Node51"/>
+		<Edge165 Type="Edge" Length="67.2681198120117" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node50" End2="Node55"/>
+		<Edge166 Type="Edge" Length="67.2681198120117" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node54" End2="Node51"/>
+		<Edge167 Type="Edge" Length="67.2681198120117" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node49" End2="Node56"/>
+		<Edge168 Type="Edge" Length="67.2681198120117" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node53" End2="Node52"/>
+	</Edges>
+	<Figures>
+		<Triangle-13 Type="Triangle" Shading="-1" Node1="NPivot" Node2="Node10" Node3="Node11"/>
+		<Triangle-14 Type="Triangle" Shading="-1" Node1="NPivot" Node2="Node11" Node3="Node12"/>
+		<Triangle-18 Type="Triangle" Shading="-1" Node1="Node10" Node2="Node15" Node3="Node11"/>
+		<Triangle-24 Type="Triangle" Shading="-1" Node1="Node11" Node2="Node15" Node3="Node12"/>
+		<Triangle-22 Type="Triangle" Shading="-1" Node1="NPivot" Node2="Node14" Node3="Node10"/>
+		<Triangle-20 Type="Triangle" Shading="-1" Node1="Node12" Node2="Node16" Node3="NPivot"/>
+		<Triangle-49 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node34" Node3="Node35"/>
+		<Triangle-37 Type="Triangle" Shading="-1" Node1="Node25" Node2="Node26" Node3="Node27"/>
+		<Triangle-38 Type="Triangle" Shading="-1" Node1="Node25" Node2="Node27" Node3="Node28"/>
+		<Triangle-50 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node35" Node3="Node36"/>
+		<Triangle-2 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node43" Node3="Node44"/>
+		<Triangle-1 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node42" Node3="Node43"/>
+		<Triangle-62 Type="Triangle" Shading="-1" Node1="Node49" Node2="Node51" Node3="Node52"/>
+		<Triangle-61 Type="Triangle" Shading="-1" Node1="Node49" Node2="Node50" Node3="Node51"/>
+		<Triangle-25 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node18" Node3="Node19"/>
+		<Triangle-26 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node19" Node3="Node20"/>
+		<Triangle-17 Type="Triangle" Shading="-1" Node1="Node10" Node2="Node14" Node3="Node15"/>
+		<Triangle-23 Type="Triangle" Shading="-1" Node1="Node15" Node2="Node16" Node3="Node12"/>
+		<Triangle-21 Type="Triangle" Shading="-1" Node1="NPivot" Node2="Node13" Node3="Node14"/>
+		<Triangle-19 Type="Triangle" Shading="-1" Node1="Node16" Node2="Node13" Node3="NPivot"/>
+		<Triangle-54 Type="Triangle" Shading="-1" Node1="Node34" Node2="Node39" Node3="Node35"/>
+		<Triangle-42 Type="Triangle" Shading="-1" Node1="Node26" Node2="Node31" Node3="Node27"/>
+		<Triangle-46 Type="Triangle" Shading="-1" Node1="Node25" Node2="Node30" Node3="Node26"/>
+		<Triangle-58 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node38" Node3="Node34"/>
+		<Triangle-48 Type="Triangle" Shading="-1" Node1="Node27" Node2="Node31" Node3="Node28"/>
+		<Triangle-60 Type="Triangle" Shading="-1" Node1="Node35" Node2="Node39" Node3="Node36"/>
+		<Triangle-44 Type="Triangle" Shading="-1" Node1="Node28" Node2="Node32" Node3="Node25"/>
+		<Triangle-56 Type="Triangle" Shading="-1" Node1="Node36" Node2="Node40" Node3="Node33"/>
+		<Triangle-10 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node46" Node3="Node42"/>
+		<Triangle-12 Type="Triangle" Shading="-1" Node1="Node43" Node2="Node47" Node3="Node44"/>
+		<Triangle-8 Type="Triangle" Shading="-1" Node1="Node44" Node2="Node48" Node3="Node41"/>
+		<Triangle-6 Type="Triangle" Shading="-1" Node1="Node42" Node2="Node47" Node3="Node43"/>
+		<Triangle-68 Type="Triangle" Shading="-1" Node1="Node52" Node2="Node56" Node3="Node49"/>
+		<Triangle-70 Type="Triangle" Shading="-1" Node1="Node49" Node2="Node54" Node3="Node50"/>
+		<Triangle-72 Type="Triangle" Shading="-1" Node1="Node51" Node2="Node55" Node3="Node52"/>
+		<Triangle-66 Type="Triangle" Shading="-1" Node1="Node50" Node2="Node55" Node3="Node51"/>
+		<Triangle-34 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node22" Node3="Node18"/>
+		<Triangle-32 Type="Triangle" Shading="-1" Node1="Node20" Node2="Node24" Node3="Node17"/>
+		<Triangle-30 Type="Triangle" Shading="-1" Node1="Node18" Node2="Node23" Node3="Node19"/>
+		<Triangle-36 Type="Triangle" Shading="-1" Node1="Node19" Node2="Node23" Node3="Node20"/>
+		<Triangle-15 Type="Triangle" Shading="-1" Node1="Node15" Node2="Node14" Node3="Node13"/>
+		<Triangle-16 Type="Triangle" Shading="-1" Node1="Node16" Node2="Node15" Node3="Node13"/>
+		<Triangle-53 Type="Triangle" Shading="-1" Node1="Node34" Node2="Node38" Node3="Node39"/>
+		<Triangle-41 Type="Triangle" Shading="-1" Node1="Node26" Node2="Node30" Node3="Node31"/>
+		<Triangle-45 Type="Triangle" Shading="-1" Node1="Node25" Node2="Node29" Node3="Node30"/>
+		<Triangle-57 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node37" Node3="Node38"/>
+		<Triangle-47 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node32" Node3="Node28"/>
+		<Triangle-43 Type="Triangle" Shading="-1" Node1="Node32" Node2="Node29" Node3="Node25"/>
+		<Triangle-59 Type="Triangle" Shading="-1" Node1="Node39" Node2="Node40" Node3="Node36"/>
+		<Triangle-55 Type="Triangle" Shading="-1" Node1="Node40" Node2="Node37" Node3="Node33"/>
+		<Triangle-5 Type="Triangle" Shading="-1" Node1="Node42" Node2="Node46" Node3="Node47"/>
+		<Triangle-11 Type="Triangle" Shading="-1" Node1="Node47" Node2="Node48" Node3="Node44"/>
+		<Triangle-9 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node45" Node3="Node46"/>
+		<Triangle-7 Type="Triangle" Shading="-1" Node1="Node48" Node2="Node45" Node3="Node41"/>
+		<Triangle-67 Type="Triangle" Shading="-1" Node1="Node56" Node2="Node53" Node3="Node49"/>
+		<Triangle-69 Type="Triangle" Shading="-1" Node1="Node49" Node2="Node53" Node3="Node54"/>
+		<Triangle-71 Type="Triangle" Shading="-1" Node1="Node55" Node2="Node56" Node3="Node52"/>
+		<Triangle-65 Type="Triangle" Shading="-1" Node1="Node50" Node2="Node54" Node3="Node55"/>
+		<Triangle-33 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node21" Node3="Node22"/>
+		<Triangle-31 Type="Triangle" Shading="-1" Node1="Node24" Node2="Node21" Node3="Node17"/>
+		<Triangle-29 Type="Triangle" Shading="-1" Node1="Node18" Node2="Node22" Node3="Node23"/>
+		<Triangle-35 Type="Triangle" Shading="-1" Node1="Node23" Node2="Node24" Node3="Node20"/>
+		<Triangle-39 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node30" Node3="Node29"/>
+		<Triangle-51 Type="Triangle" Shading="-1" Node1="Node39" Node2="Node38" Node3="Node37"/>
+		<Triangle-40 Type="Triangle" Shading="-1" Node1="Node32" Node2="Node31" Node3="Node29"/>
+		<Triangle-52 Type="Triangle" Shading="-1" Node1="Node40" Node2="Node39" Node3="Node37"/>
+		<Triangle-3 Type="Triangle" Shading="-1" Node1="Node47" Node2="Node46" Node3="Node45"/>
+		<Triangle-4 Type="Triangle" Shading="-1" Node1="Node48" Node2="Node47" Node3="Node45"/>
+		<Triangle-64 Type="Triangle" Shading="-1" Node1="Node56" Node2="Node55" Node3="Node53"/>
+		<Triangle-63 Type="Triangle" Shading="-1" Node1="Node55" Node2="Node54" Node3="Node53"/>
+		<Triangle-27 Type="Triangle" Shading="-1" Node1="Node23" Node2="Node22" Node3="Node21"/>
+		<Triangle-28 Type="Triangle" Shading="-1" Node1="Node24" Node2="Node23" Node3="Node21"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+		<NP_Node10 Type="NodePoint" Node="Node10" Radius="3"/>
+		<NP_Node11 Type="NodePoint" Node="Node11" Radius="3"/>
+		<NP_Node12 Type="NodePoint" Node="Node12" Radius="3"/>
+		<NP_Node13 Type="NodePoint" Node="Node13" Radius="3"/>
+		<NP_Node14 Type="NodePoint" Node="Node14" Radius="3"/>
+		<NP_Node15 Type="NodePoint" Node="Node15" Radius="3"/>
+		<NP_Node16 Type="NodePoint" Node="Node16" Radius="3"/>
+		<EL_Edge25 Type="EdgeLine" Edge="Edge25" Width="0"/>
+		<EL_Edge27 Type="EdgeLine" Edge="Edge27" Width="0"/>
+		<EL_Edge28 Type="EdgeLine" Edge="Edge28" Width="0"/>
+		<EL_Edge30 Type="EdgeLine" Edge="Edge30" Width="0"/>
+		<EL_Edge31 Type="EdgeLine" Edge="Edge31" Width="0"/>
+		<EL_Edge33 Type="EdgeLine" Edge="Edge33" Width="0"/>
+		<EL_Edge34 Type="EdgeLine" Edge="Edge34" Width="0"/>
+		<EL_Edge36 Type="EdgeLine" Edge="Edge36" Width="0"/>
+		<EL_Edge37 Type="EdgeLine" Edge="Edge37" Width="0"/>
+		<EL_Edge40 Type="EdgeLine" Edge="Edge40" Width="0"/>
+		<EL_Edge41 Type="EdgeLine" Edge="Edge41" Width="0"/>
+		<EL_Edge44 Type="EdgeLine" Edge="Edge44" Width="0"/>
+		<NP_Node17 Type="NodePoint" Node="Node17" Radius="3"/>
+		<NP_Node18 Type="NodePoint" Node="Node18" Radius="3"/>
+		<NP_Node19 Type="NodePoint" Node="Node19" Radius="3"/>
+		<NP_Node20 Type="NodePoint" Node="Node20" Radius="3"/>
+		<NP_Node21 Type="NodePoint" Node="Node21" Radius="3"/>
+		<NP_Node22 Type="NodePoint" Node="Node22" Radius="3"/>
+		<NP_Node23 Type="NodePoint" Node="Node23" Radius="3"/>
+		<NP_Node24 Type="NodePoint" Node="Node24" Radius="3"/>
+		<EL_Edge49 Type="EdgeLine" Edge="Edge49" Width="0"/>
+		<EL_Edge51 Type="EdgeLine" Edge="Edge51" Width="0"/>
+		<EL_Edge52 Type="EdgeLine" Edge="Edge52" Width="0"/>
+		<EL_Edge54 Type="EdgeLine" Edge="Edge54" Width="0"/>
+		<EL_Edge55 Type="EdgeLine" Edge="Edge55" Width="0"/>
+		<EL_Edge57 Type="EdgeLine" Edge="Edge57" Width="0"/>
+		<EL_Edge58 Type="EdgeLine" Edge="Edge58" Width="0"/>
+		<EL_Edge60 Type="EdgeLine" Edge="Edge60" Width="0"/>
+		<EL_Edge61 Type="EdgeLine" Edge="Edge61" Width="0"/>
+		<EL_Edge64 Type="EdgeLine" Edge="Edge64" Width="0"/>
+		<EL_Edge65 Type="EdgeLine" Edge="Edge65" Width="0"/>
+		<EL_Edge68 Type="EdgeLine" Edge="Edge68" Width="0"/>
+		<NP_Node25 Type="NodePoint" Node="Node25" Radius="3"/>
+		<NP_Node26 Type="NodePoint" Node="Node26" Radius="3"/>
+		<NP_Node27 Type="NodePoint" Node="Node27" Radius="3"/>
+		<NP_Node28 Type="NodePoint" Node="Node28" Radius="3"/>
+		<NP_Node29 Type="NodePoint" Node="Node29" Radius="3"/>
+		<NP_Node30 Type="NodePoint" Node="Node30" Radius="3"/>
+		<NP_Node31 Type="NodePoint" Node="Node31" Radius="3"/>
+		<NP_Node32 Type="NodePoint" Node="Node32" Radius="3"/>
+		<EL_Edge73 Type="EdgeLine" Edge="Edge73" Width="0"/>
+		<EL_Edge75 Type="EdgeLine" Edge="Edge75" Width="0"/>
+		<EL_Edge76 Type="EdgeLine" Edge="Edge76" Width="0"/>
+		<EL_Edge78 Type="EdgeLine" Edge="Edge78" Width="0"/>
+		<EL_Edge79 Type="EdgeLine" Edge="Edge79" Width="0"/>
+		<EL_Edge81 Type="EdgeLine" Edge="Edge81" Width="0"/>
+		<EL_Edge82 Type="EdgeLine" Edge="Edge82" Width="0"/>
+		<EL_Edge84 Type="EdgeLine" Edge="Edge84" Width="0"/>
+		<EL_Edge85 Type="EdgeLine" Edge="Edge85" Width="0"/>
+		<EL_Edge88 Type="EdgeLine" Edge="Edge88" Width="0"/>
+		<EL_Edge89 Type="EdgeLine" Edge="Edge89" Width="0"/>
+		<EL_Edge92 Type="EdgeLine" Edge="Edge92" Width="0"/>
+		<NP_Node33 Type="NodePoint" Node="Node33" Radius="3"/>
+		<NP_Node34 Type="NodePoint" Node="Node34" Radius="3"/>
+		<NP_Node35 Type="NodePoint" Node="Node35" Radius="3"/>
+		<NP_Node36 Type="NodePoint" Node="Node36" Radius="3"/>
+		<NP_Node37 Type="NodePoint" Node="Node37" Radius="3"/>
+		<NP_Node38 Type="NodePoint" Node="Node38" Radius="3"/>
+		<NP_Node39 Type="NodePoint" Node="Node39" Radius="3"/>
+		<NP_Node40 Type="NodePoint" Node="Node40" Radius="3"/>
+		<EL_Edge97 Type="EdgeLine" Edge="Edge97" Width="0"/>
+		<EL_Edge99 Type="EdgeLine" Edge="Edge99" Width="0"/>
+		<EL_Edge100 Type="EdgeLine" Edge="Edge100" Width="0"/>
+		<EL_Edge102 Type="EdgeLine" Edge="Edge102" Width="0"/>
+		<EL_Edge103 Type="EdgeLine" Edge="Edge103" Width="0"/>
+		<EL_Edge105 Type="EdgeLine" Edge="Edge105" Width="0"/>
+		<EL_Edge106 Type="EdgeLine" Edge="Edge106" Width="0"/>
+		<EL_Edge108 Type="EdgeLine" Edge="Edge108" Width="0"/>
+		<EL_Edge109 Type="EdgeLine" Edge="Edge109" Width="0"/>
+		<EL_Edge112 Type="EdgeLine" Edge="Edge112" Width="0"/>
+		<EL_Edge113 Type="EdgeLine" Edge="Edge113" Width="0"/>
+		<EL_Edge116 Type="EdgeLine" Edge="Edge116" Width="0"/>
+		<NP_Node41 Type="NodePoint" Node="Node41" Radius="3"/>
+		<NP_Node42 Type="NodePoint" Node="Node42" Radius="3"/>
+		<NP_Node43 Type="NodePoint" Node="Node43" Radius="3"/>
+		<NP_Node44 Type="NodePoint" Node="Node44" Radius="3"/>
+		<NP_Node45 Type="NodePoint" Node="Node45" Radius="3"/>
+		<NP_Node46 Type="NodePoint" Node="Node46" Radius="3"/>
+		<NP_Node47 Type="NodePoint" Node="Node47" Radius="3"/>
+		<NP_Node48 Type="NodePoint" Node="Node48" Radius="3"/>
+		<EL_Edge121 Type="EdgeLine" Edge="Edge121" Width="0"/>
+		<EL_Edge123 Type="EdgeLine" Edge="Edge123" Width="0"/>
+		<EL_Edge124 Type="EdgeLine" Edge="Edge124" Width="0"/>
+		<EL_Edge126 Type="EdgeLine" Edge="Edge126" Width="0"/>
+		<EL_Edge127 Type="EdgeLine" Edge="Edge127" Width="0"/>
+		<EL_Edge129 Type="EdgeLine" Edge="Edge129" Width="0"/>
+		<EL_Edge130 Type="EdgeLine" Edge="Edge130" Width="0"/>
+		<EL_Edge132 Type="EdgeLine" Edge="Edge132" Width="0"/>
+		<EL_Edge133 Type="EdgeLine" Edge="Edge133" Width="0"/>
+		<EL_Edge136 Type="EdgeLine" Edge="Edge136" Width="0"/>
+		<EL_Edge137 Type="EdgeLine" Edge="Edge137" Width="0"/>
+		<EL_Edge140 Type="EdgeLine" Edge="Edge140" Width="0"/>
+		<NP_Node49 Type="NodePoint" Node="Node49" Radius="3"/>
+		<NP_Node50 Type="NodePoint" Node="Node50" Radius="3"/>
+		<NP_Node51 Type="NodePoint" Node="Node51" Radius="3"/>
+		<NP_Node52 Type="NodePoint" Node="Node52" Radius="3"/>
+		<NP_Node53 Type="NodePoint" Node="Node53" Radius="3"/>
+		<NP_Node54 Type="NodePoint" Node="Node54" Radius="3"/>
+		<NP_Node55 Type="NodePoint" Node="Node55" Radius="3"/>
+		<NP_Node56 Type="NodePoint" Node="Node56" Radius="3"/>
+		<EL_Edge145 Type="EdgeLine" Edge="Edge145" Width="0"/>
+		<EL_Edge147 Type="EdgeLine" Edge="Edge147" Width="0"/>
+		<EL_Edge148 Type="EdgeLine" Edge="Edge148" Width="0"/>
+		<EL_Edge150 Type="EdgeLine" Edge="Edge150" Width="0"/>
+		<EL_Edge151 Type="EdgeLine" Edge="Edge151" Width="0"/>
+		<EL_Edge153 Type="EdgeLine" Edge="Edge153" Width="0"/>
+		<EL_Edge154 Type="EdgeLine" Edge="Edge154" Width="0"/>
+		<EL_Edge156 Type="EdgeLine" Edge="Edge156" Width="0"/>
+		<EL_Edge157 Type="EdgeLine" Edge="Edge157" Width="0"/>
+		<EL_Edge160 Type="EdgeLine" Edge="Edge160" Width="0"/>
+		<EL_Edge161 Type="EdgeLine" Edge="Edge161" Width="0"/>
+		<EL_Edge164 Type="EdgeLine" Edge="Edge164" Width="0"/>
+		<NF_Node56 Type="NodeFixer" Node="Node56" Radius="5"/>
+		<NF_Node55 Type="NodeFixer" Node="Node55" Radius="5"/>
+		<NF_Node54 Type="NodeFixer" Node="Node54" Radius="5"/>
+		<NF_Node53 Type="NodeFixer" Node="Node53" Radius="5"/>
+		<NF_Node52 Type="NodeFixer" Node="Node52" Radius="5"/>
+		<NF_Node51 Type="NodeFixer" Node="Node51" Radius="5"/>
+		<NF_Node50 Type="NodeFixer" Node="Node50" Radius="5"/>
+		<NF_Node49 Type="NodeFixer" Node="Node49" Radius="5"/>
+		<NF_Node40 Type="NodeFixer" Node="Node40" Radius="5"/>
+		<NF_Node39 Type="NodeFixer" Node="Node39" Radius="5"/>
+		<NF_Node38 Type="NodeFixer" Node="Node38" Radius="5"/>
+		<NF_Node37 Type="NodeFixer" Node="Node37" Radius="5"/>
+		<NF_Node36 Type="NodeFixer" Node="Node36" Radius="5"/>
+		<NF_Node35 Type="NodeFixer" Node="Node35" Radius="5"/>
+		<NF_Node34 Type="NodeFixer" Node="Node34" Radius="5"/>
+		<NF_Node33 Type="NodeFixer" Node="Node33" Radius="5"/>
+		<NF_Node32 Type="NodeFixer" Node="Node32" Radius="5"/>
+		<NF_Node31 Type="NodeFixer" Node="Node31" Radius="5"/>
+		<NF_Node30 Type="NodeFixer" Node="Node30" Radius="5"/>
+		<NF_Node29 Type="NodeFixer" Node="Node29" Radius="5"/>
+		<NF_Node28 Type="NodeFixer" Node="Node28" Radius="5"/>
+		<NF_Node27 Type="NodeFixer" Node="Node27" Radius="5"/>
+		<NF_Node26 Type="NodeFixer" Node="Node26" Radius="5"/>
+		<NF_Node25 Type="NodeFixer" Node="Node25" Radius="5"/>
+		<NF_Node24 Type="NodeFixer" Node="Node24" Radius="5"/>
+		<NF_Node23 Type="NodeFixer" Node="Node23" Radius="5"/>
+		<NF_Node22 Type="NodeFixer" Node="Node22" Radius="5"/>
+		<NF_Node21 Type="NodeFixer" Node="Node21" Radius="5"/>
+		<NF_Node20 Type="NodeFixer" Node="Node20" Radius="5"/>
+		<NF_Node19 Type="NodeFixer" Node="Node19" Radius="5"/>
+		<NF_Node18 Type="NodeFixer" Node="Node18" Radius="5"/>
+		<NF_Node17 Type="NodeFixer" Node="Node17" Radius="5"/>
+		<NF_Node16 Type="NodeFixer" Node="Node16" Radius="5"/>
+		<NF_Node15 Type="NodeFixer" Node="Node15" Radius="5"/>
+		<NF_Node14 Type="NodeFixer" Node="Node14" Radius="5"/>
+		<NF_Node13 Type="NodeFixer" Node="Node13" Radius="5"/>
+		<NF_Node12 Type="NodeFixer" Node="Node12" Radius="5"/>
+		<NF_Node11 Type="NodeFixer" Node="Node11" Radius="5"/>
+		<NF_Node10 Type="NodeFixer" Node="Node10" Radius="5"/>
+		<NF_NPivot Type="NodeFixer" Node="NPivot" Radius="5"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1/>
+		<SG-2/>
+		<SG-3/>
+		<SG-4/>
+		<SG-5/>
+		<SG-6/>
+		<SG-7/>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

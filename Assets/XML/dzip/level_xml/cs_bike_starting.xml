@@ -1,58 +1,58 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0.8" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building2"/>
-        <Object Name="LampPost"/>
-        <Object Name="Building3"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building1"/>
-        <Object Name="Building3">
-          <Content>
-            <Object Name="Building2Image" X="1529" Y="-537"/>
-            <Object Name="BillboardImage" X="3512" Y="532"/>
-            <Object Name="Building2Image" X="4309" Y="73"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500CSBikeStarting" X="-1180" Y="10" DeltaX="-1180" DeltaY="10"/>
-            <Object Name="TriggerCameraStart" X="-1635" Y="-85"/>
-            <Spawn X="-1600" Y="40" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Camera X="-1420" Y="105"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="BotTrekRoof-1" X="2655" Y="-20" DeltaX="1185" DeltaY="-30"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0.8" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building2"/>
+				<Object Name="LampPost"/>
+				<Object Name="Building3"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building1"/>
+				<Object Name="Building3">
+					<Content>
+						<Object Name="Building2Image" X="1529" Y="-537"/>
+						<Object Name="BillboardImage" X="3512" Y="532"/>
+						<Object Name="Building2Image" X="4309" Y="73"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500CSBikeStarting" X="-1180" Y="10" DeltaX="-1180" DeltaY="10"/>
+						<Object Name="TriggerCameraStart" X="-1635" Y="-85"/>
+						<Spawn X="-1600" Y="40" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Camera X="-1420" Y="105"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="BotTrekRoof-1" X="2655" Y="-20" DeltaX="1185" DeltaY="-30"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

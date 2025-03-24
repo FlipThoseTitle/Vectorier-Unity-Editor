@@ -1,174 +1,174 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Node25 Type="Node"  X="216.316345214844"  Y="12.0427703857422"  Z="7.96522569656372"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NPivot Type="Node"  X="1.28448486328125"  Y="12.0420064926147"  Z="47.7941741943359"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node27 Type="Node"  X="1.34771728515625"  Y="12.0419454574585"  Z="-32.2058181762695"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node28 Type="Node"  X="1.31573486328125"  Y="125.04207611084"  Z="7.79411554336548"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <MacroNode35 Type="MacroNode"  X="202.664123535156"  Y="12.5033597946167"  Z="14.9892177581787"  Mass="0.41413202881813"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.00407641008496284"  LCC2="0.936527252197266"  LCC3="0.117633797228336"  LCC4="-0.0582374595105648" />
-    <MacroNode36 Type="MacroNode"  X="-45.0229949951172"  Y="70.4818344116211"  Z="19.7542381286621"  Mass="0.614521265029907"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.517167806625366"  LCC2="-0.215485438704491"  LCC3="0.499120712280273"  LCC4="0.19919690489769" />
-    <MacroNode37 Type="MacroNode"  X="108.786781311035"  Y="83.2664566040039"  Z="34.0085792541504"  Mass="0.426166892051697"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.630300879478455"  LCC2="0.49996018409729"  LCC3="0.261481046676636"  LCC4="-0.39174211025238" />
-    <MacroNode38 Type="MacroNode"  X="12.3962841033936"  Y="122.136032104492"  Z="25.3290748596191"  Mass="0.353335082530975"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.974282264709473"  LCC2="0.0516017638146877"  LCC3="0.206134632229805"  LCC4="-0.232018649578094" />
-    <MacroNode39 Type="MacroNode"  X="-102.635192871094"  Y="98.8033981323242"  Z="14.4672050476074"  Mass="0.338666796684265"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.767802834510803"  LCC2="-0.483467698097229"  LCC3="0.442279547452927"  LCC4="0.273385256528854" />
-    <MacroNode40 Type="MacroNode"  X="-108.205833435059"  Y="108.924865722656"  Z="0.966660499572754"  Mass="0.303236842155457"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.857373535633087"  LCC2="-0.509427070617676"  LCC3="0.241772681474686"  LCC4="0.410280883312225" />
-    <MacroNode41 Type="MacroNode"  X="129.561065673828"  Y="101.154647827148"  Z="26.0770587921143"  Mass="0.320599913597107"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.788602709770203"  LCC2="0.596555650234222"  LCC3="0.034681960940361"  LCC4="-0.41984036564827" />
-    <MacroNode42 Type="MacroNode"  X="-97.1084442138672"  Y="12.2725887298584"  Z="41.6825866699219"  Mass="0.227302506566048"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.00204381346702576"  LCC2="-0.457663178443909"  LCC3="1.15239334106445"  LCC4="0.30322602391243" />
-    <MacroNode43 Type="MacroNode"  X="23.9387435913086"  Y="110.773262023926"  Z="23.4219398498535"  Mass="0.435295432806015"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.873726606369019"  LCC2="0.105280339717865"  LCC3="0.205619141459465"  LCC4="-0.184626117348671" />
-    <MacroNode44 Type="MacroNode"  X="202.675247192383"  Y="12.5033493041992"  Z="0.934963703155518"  Mass="0.414163440465927"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.00407640635967255"  LCC2="0.936527252197266"  LCC3="-0.0580444037914276"  LCC4="0.117440745234489" />
-    <MacroNode45 Type="MacroNode"  X="-45.0040397644043"  Y="70.481819152832"  Z="-4.22421646118164"  Mass="0.614639163017273"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.517167925834656"  LCC2="-0.215485438704491"  LCC3="0.199389979243279"  LCC4="0.498927623033524" />
-    <MacroNode46 Type="MacroNode"  X="12.4239768981934"  Y="122.136001586914"  Z="-9.70773696899414"  Mass="0.353392124176025"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.974282264709473"  LCC2="0.0516017638146877"  LCC3="-0.231825545430183"  LCC4="0.205941528081894" />
-    <MacroNode47 Type="MacroNode"  X="-29.8547706604004"  Y="45.4484939575195"  Z="26.1282787322998"  Mass="0.644835352897644"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.295633554458618"  LCC2="-0.144912645220757"  LCC3="0.654125869274139"  LCC4="0.195153161883354" />
-    <MacroNode48 Type="MacroNode"  X="-108.216499328613"  Y="108.924865722656"  Z="14.462760925293"  Mass="0.303220689296722"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.857373476028442"  LCC2="-0.509427070617676"  LCC3="0.410473942756653"  LCC4="0.241579622030258" />
-    <MacroNode49 Type="MacroNode"  X="213.155120849609"  Y="27.0666904449463"  Z="17.2602519989014"  Mass="0.362197697162628"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.132954955101013"  LCC2="0.985331118106842"  LCC3="0.0570762529969215"  LCC4="-0.175362333655357" />
-    <MacroNode50 Type="MacroNode"  X="199.000106811523"  Y="64.8585357666016"  Z="20.5706443786621"  Mass="0.311612010002136"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.467396289110184"  LCC2="0.91950660943985"  LCC3="-0.0357112288475037"  LCC4="-0.35119166970253" />
-    <MacroNode51 Type="MacroNode"  X="108.828071594238"  Y="83.2664184570313"  Z="-18.2338237762451"  Mass="0.426290541887283"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.630300879478455"  LCC2="0.49996018409729"  LCC3="-0.391549050807953"  LCC4="0.261287987232208" />
-    <MacroNode52 Type="MacroNode"  X="-102.624519348145"  Y="98.8033905029297"  Z="0.971107482910156"  Mass="0.338686943054199"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.767802894115448"  LCC2="-0.483467698097229"  LCC3="0.273578315973282"  LCC4="0.442086517810822" />
-    <MacroNode53 Type="MacroNode"  X="-97.0547561645508"  Y="12.2725400924683"  Z="-26.2353477478027"  Mass="0.227348268032074"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.00204384326934814"  LCC2="-0.457663178443909"  LCC3="0.303419083356857"  LCC4="1.15220022201538" />
-    <MacroNode54 Type="MacroNode"  X="23.9634056091309"  Y="110.773239135742"  Z="-7.78223371505737"  Mass="0.435372531414032"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.873726606369019"  LCC2="0.105280339717865"  LCC3="-0.184433072805405"  LCC4="0.205426096916199" />
-    <MacroNode55 Type="MacroNode"  X="129.589782714844"  Y="101.15461730957"  Z="-10.2692775726318"  Mass="0.320648580789566"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.788602709770203"  LCC2="0.596555650234222"  LCC3="-0.419647306203842"  LCC4="0.0344888903200626" />
-    <MacroNode56 Type="MacroNode"  X="-29.8257617950439"  Y="45.4484634399414"  Z="-10.5740900039673"  Mass="0.645034313201904"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.295633554458618"  LCC2="-0.144912645220757"  LCC3="0.195346221327782"  LCC4="0.653932809829712" />
-    <MacroNode57 Type="MacroNode"  X="213.169799804688"  Y="27.0666751861572"  Z="-1.31939029693604"  Mass="0.362229466438293"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.132954955101013"  LCC2="0.985331118106842"  LCC3="-0.175169289112091"  LCC4="0.0568832084536552" />
-    <MacroNode58 Type="MacroNode"  X="199.020050048828"  Y="64.858528137207"  Z="-4.65234518051147"  Mass="0.311643898487091"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Node28"  ChildNode2="Node25"  ChildNode3="NPivot"  ChildNode4="Node27"  LCC1="0.467396318912506"  LCC2="0.91950660943985"  LCC3="-0.350998640060425"  LCC4="-0.0359042771160603" />
-  </Nodes>
-  <Edges>
-    <Edge47 Type="Edge"  Length="119.870765686035"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node28"  End2="Node27" />
-    <Edge48 Type="Edge"  Length="119.870765686035"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node28"  End2="NPivot" />
-    <Edge49 Type="Edge"  Length="242.886810302734"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node28"  End2="Node25" />
-    <Edge50 Type="Edge"  Length="80"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node27"  End2="NPivot" />
-    <Edge51 Type="Edge"  Length="218.689270019531"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node27"  End2="Node25" />
-    <Edge52 Type="Edge"  Length="218.689270019531"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NPivot"  End2="Node25" />
-  </Edges>
-  <Figures>
-    <Triangle-36 Type="Triangle"  DoubleSided="0"  Node1="MacroNode56"  Node2="MacroNode42"  Node3="MacroNode53" />
-    <Triangle-35 Type="Triangle"  DoubleSided="0"  Node1="MacroNode56"  Node2="MacroNode47"  Node3="MacroNode42" />
-    <Triangle-28 Type="Triangle"  DoubleSided="0"  Node1="MacroNode40"  Node2="MacroNode39"  Node3="MacroNode52" />
-    <Triangle-27 Type="Triangle"  DoubleSided="0"  Node1="MacroNode40"  Node2="MacroNode48"  Node3="MacroNode39" />
-    <Triangle-24 Type="Triangle"  DoubleSided="0"  Node1="MacroNode52"  Node2="MacroNode39"  Node3="MacroNode36" />
-    <Triangle-25 Type="Triangle"  DoubleSided="0"  Node1="MacroNode52"  Node2="MacroNode36"  Node3="MacroNode45" />
-    <Triangle-20 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode47"  Node3="MacroNode56" />
-    <Triangle-44 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode53"  Node3="MacroNode42" />
-    <Triangle-19 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode36"  Node3="MacroNode47" />
-    <Triangle-23 Type="Triangle"  DoubleSided="0"  Node1="MacroNode44"  Node2="MacroNode53"  Node3="MacroNode56" />
-    <Triangle-31 Type="Triangle"  DoubleSided="0"  Node1="MacroNode40"  Node2="MacroNode52"  Node3="MacroNode46" />
-    <Triangle-39 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode52"  Node3="MacroNode46" />
-    <Triangle-1 Type="Triangle"  DoubleSided="0"  Node1="MacroNode38"  Node2="MacroNode48"  Node3="MacroNode40" />
-    <Triangle-8 Type="Triangle"  DoubleSided="0"  Node1="MacroNode48"  Node2="MacroNode38"  Node3="MacroNode39" />
-    <Triangle-4 Type="Triangle"  DoubleSided="0"  Node1="MacroNode36"  Node2="MacroNode38"  Node3="MacroNode39" />
-    <Triangle-9 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode47"  Node3="MacroNode42" />
-    <Triangle-26 Type="Triangle"  DoubleSided="0"  Node1="MacroNode44"  Node2="MacroNode56"  Node3="MacroNode45" />
-    <Triangle-40 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode46"  Node3="MacroNode54" />
-    <Triangle-2 Type="Triangle"  DoubleSided="0"  Node1="MacroNode38"  Node2="MacroNode40"  Node3="MacroNode46" />
-    <Triangle-12 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode36"  Node3="MacroNode47" />
-    <Triangle-17 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode54"  Node3="MacroNode51" />
-    <Triangle-43 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode44"  Node3="MacroNode53" />
-    <Triangle-3 Type="Triangle"  DoubleSided="0"  Node1="MacroNode36"  Node2="MacroNode43"  Node3="MacroNode38" />
-    <Triangle-18 Type="Triangle"  DoubleSided="0"  Node1="MacroNode45"  Node2="MacroNode51"  Node3="MacroNode44" />
-    <Triangle-41 Type="Triangle"  DoubleSided="0"  Node1="MacroNode54"  Node2="MacroNode46"  Node3="MacroNode38" />
-    <Triangle-11 Type="Triangle"  DoubleSided="0"  Node1="MacroNode36"  Node2="MacroNode37"  Node3="MacroNode43" />
-    <Triangle-42 Type="Triangle"  DoubleSided="0"  Node1="MacroNode54"  Node2="MacroNode38"  Node3="MacroNode43" />
-    <Triangle-33 Type="Triangle"  DoubleSided="0"  Node1="MacroNode43"  Node2="MacroNode51"  Node3="MacroNode54" />
-    <Triangle-10 Type="Triangle"  DoubleSided="0"  Node1="MacroNode36"  Node2="MacroNode35"  Node3="MacroNode37" />
-    <Triangle-32 Type="Triangle"  DoubleSided="0"  Node1="MacroNode43"  Node2="MacroNode37"  Node3="MacroNode51" />
-    <Triangle-30 Type="Triangle"  DoubleSided="0"  Node1="MacroNode55"  Node2="MacroNode37"  Node3="MacroNode51" />
-    <Triangle-22 Type="Triangle"  DoubleSided="0"  Node1="MacroNode57"  Node2="MacroNode51"  Node3="MacroNode44" />
-    <Triangle-21 Type="Triangle"  DoubleSided="0"  Node1="MacroNode57"  Node2="MacroNode55"  Node3="MacroNode51" />
-    <Triangle-38 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode57"  Node3="MacroNode44" />
-    <Triangle-29 Type="Triangle"  DoubleSided="0"  Node1="MacroNode55"  Node2="MacroNode41"  Node3="MacroNode37" />
-    <Triangle-6 Type="Triangle"  DoubleSided="0"  Node1="MacroNode49"  Node2="MacroNode35"  Node3="MacroNode37" />
-    <Triangle-34 Type="Triangle"  DoubleSided="0"  Node1="MacroNode55"  Node2="MacroNode57"  Node3="MacroNode58" />
-    <Triangle-37 Type="Triangle"  DoubleSided="0"  Node1="MacroNode35"  Node2="MacroNode49"  Node3="MacroNode57" />
-    <Triangle-13 Type="Triangle"  DoubleSided="0"  Node1="MacroNode58"  Node2="MacroNode55"  Node3="MacroNode41" />
-    <Triangle-7 Type="Triangle"  DoubleSided="0"  Node1="MacroNode49"  Node2="MacroNode37"  Node3="MacroNode41" />
-    <Triangle-15 Type="Triangle"  DoubleSided="0"  Node1="MacroNode58"  Node2="MacroNode57"  Node3="MacroNode49" />
-    <Triangle-5 Type="Triangle"  DoubleSided="0"  Node1="MacroNode41"  Node2="MacroNode50"  Node3="MacroNode49" />
-    <Triangle-14 Type="Triangle"  DoubleSided="0"  Node1="MacroNode58"  Node2="MacroNode41"  Node3="MacroNode50" />
-    <Triangle-16 Type="Triangle"  DoubleSided="0"  Node1="MacroNode58"  Node2="MacroNode49"  Node3="MacroNode50" />
-    <NP_Node25 Type="NodePoint"  Node="Node25"  Radius="3" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-    <NP_Node27 Type="NodePoint"  Node="Node27"  Radius="3" />
-    <NP_Node28 Type="NodePoint"  Node="Node28"  Radius="3" />
-    <EL_Edge47 Type="EdgeLine"  Edge="Edge47"  Width="1" />
-    <EL_Edge48 Type="EdgeLine"  Edge="Edge48"  Width="1" />
-    <EL_Edge49 Type="EdgeLine"  Edge="Edge49"  Width="1" />
-    <EL_Edge50 Type="EdgeLine"  Edge="Edge50"  Width="1" />
-    <EL_Edge51 Type="EdgeLine"  Edge="Edge51"  Width="1" />
-    <EL_Edge52 Type="EdgeLine"  Edge="Edge52"  Width="1" />
-    <NP_MacroNode35 Type="NodePoint"  Node="MacroNode35"  Radius="3" />
-    <NP_MacroNode36 Type="NodePoint"  Node="MacroNode36"  Radius="3" />
-    <NP_MacroNode37 Type="NodePoint"  Node="MacroNode37"  Radius="3" />
-    <NP_MacroNode38 Type="NodePoint"  Node="MacroNode38"  Radius="3" />
-    <NP_MacroNode39 Type="NodePoint"  Node="MacroNode39"  Radius="3" />
-    <NP_MacroNode40 Type="NodePoint"  Node="MacroNode40"  Radius="3" />
-    <NP_MacroNode41 Type="NodePoint"  Node="MacroNode41"  Radius="3" />
-    <NP_MacroNode42 Type="NodePoint"  Node="MacroNode42"  Radius="3" />
-    <NP_MacroNode43 Type="NodePoint"  Node="MacroNode43"  Radius="3" />
-    <NP_MacroNode44 Type="NodePoint"  Node="MacroNode44"  Radius="3" />
-    <NP_MacroNode45 Type="NodePoint"  Node="MacroNode45"  Radius="3" />
-    <NP_MacroNode46 Type="NodePoint"  Node="MacroNode46"  Radius="3" />
-    <NP_MacroNode47 Type="NodePoint"  Node="MacroNode47"  Radius="3" />
-    <NP_MacroNode48 Type="NodePoint"  Node="MacroNode48"  Radius="3" />
-    <NP_MacroNode49 Type="NodePoint"  Node="MacroNode49"  Radius="3" />
-    <NP_MacroNode50 Type="NodePoint"  Node="MacroNode50"  Radius="3" />
-    <NP_MacroNode51 Type="NodePoint"  Node="MacroNode51"  Radius="3" />
-    <NP_MacroNode52 Type="NodePoint"  Node="MacroNode52"  Radius="3" />
-    <NP_MacroNode53 Type="NodePoint"  Node="MacroNode53"  Radius="3" />
-    <NP_MacroNode54 Type="NodePoint"  Node="MacroNode54"  Radius="3" />
-    <NP_MacroNode55 Type="NodePoint"  Node="MacroNode55"  Radius="3" />
-    <NP_MacroNode56 Type="NodePoint"  Node="MacroNode56"  Radius="3" />
-    <NP_MacroNode57 Type="NodePoint"  Node="MacroNode57"  Radius="3" />
-    <NP_MacroNode58 Type="NodePoint"  Node="MacroNode58"  Radius="3" />
-    <NF_Node28 Type="NodeFixer"  Node="Node28"  Radius="5" />
-    <NF_Node27 Type="NodeFixer"  Node="Node27"  Radius="5" />
-    <NF_NPivot Type="NodeFixer"  Node="NPivot"  Radius="5" />
-    <NF_Node25 Type="NodeFixer"  Node="Node25"  Radius="5" />
-  </Figures>
-  <GroupsOfSelection>
-    <SG-1>
-      <NPivot Type="Node" />
-      <NPelvisF Type="Node" />
-      <NHip_2 Type="Node" />
-      <NHip_1 Type="Node" />
-      <NShoulder_2 Type="Node" />
-      <NShoulder_1 Type="Node" />
-      <NNeck Type="Node" />
-    </SG-1>
-    <SG-2>
-      <NKnucklesS_1 Type="Node" />
-      <NFingertips_1 Type="Node" />
-      <NKnuckles_1 Type="Node" />
-      <NWrist_1 Type="Node" />
-    </SG-2>
-    <SG-3>
-      <NKnucklesS_2 Type="Node" />
-      <NFingertips_2 Type="Node" />
-      <NKnuckles_2 Type="Node" />
-      <NWrist_2 Type="Node" />
-    </SG-3>
-    <SG-4>
-      <NToeS_2 Type="Node" />
-      <NToeTip_2 Type="Node" />
-      <NToe_2 Type="Node" />
-      <NHeel_2 Type="Node" />
-      <NAnkle_2 Type="Node" />
-    </SG-4>
-    <SG-5>
-      <NToeS_1 Type="Node" />
-      <NToeTip_1 Type="Node" />
-      <NHeel_1 Type="Node" />
-      <NToe_1 Type="Node" />
-      <NAnkle_1 Type="Node" />
-    </SG-5>
-    <SG-6>
-      <NHeadF Type="Node" />
-      <NHeadS_2 Type="Node" />
-      <NHeadS_1 Type="Node" />
-      <NTop Type="Node" />
-      <NHead Type="Node" />
-    </SG-6>
-    <SG-7>
-      <COM Type="Node" />
-    </SG-7>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<Node25 Type="Node" X="216.316345214844" Y="12.0427703857422" Z="7.96522569656372" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NPivot Type="Node" X="1.28448486328125" Y="12.0420064926147" Z="47.7941741943359" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node27 Type="Node" X="1.34771728515625" Y="12.0419454574585" Z="-32.2058181762695" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node28 Type="Node" X="1.31573486328125" Y="125.04207611084" Z="7.79411554336548" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<MacroNode35 Type="MacroNode" X="202.664123535156" Y="12.5033597946167" Z="14.9892177581787" Mass="0.41413202881813" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.00407641008496284" LCC2="0.936527252197266" LCC3="0.117633797228336" LCC4="-0.0582374595105648"/>
+		<MacroNode36 Type="MacroNode" X="-45.0229949951172" Y="70.4818344116211" Z="19.7542381286621" Mass="0.614521265029907" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.517167806625366" LCC2="-0.215485438704491" LCC3="0.499120712280273" LCC4="0.19919690489769"/>
+		<MacroNode37 Type="MacroNode" X="108.786781311035" Y="83.2664566040039" Z="34.0085792541504" Mass="0.426166892051697" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.630300879478455" LCC2="0.49996018409729" LCC3="0.261481046676636" LCC4="-0.39174211025238"/>
+		<MacroNode38 Type="MacroNode" X="12.3962841033936" Y="122.136032104492" Z="25.3290748596191" Mass="0.353335082530975" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.974282264709473" LCC2="0.0516017638146877" LCC3="0.206134632229805" LCC4="-0.232018649578094"/>
+		<MacroNode39 Type="MacroNode" X="-102.635192871094" Y="98.8033981323242" Z="14.4672050476074" Mass="0.338666796684265" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.767802834510803" LCC2="-0.483467698097229" LCC3="0.442279547452927" LCC4="0.273385256528854"/>
+		<MacroNode40 Type="MacroNode" X="-108.205833435059" Y="108.924865722656" Z="0.966660499572754" Mass="0.303236842155457" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.857373535633087" LCC2="-0.509427070617676" LCC3="0.241772681474686" LCC4="0.410280883312225"/>
+		<MacroNode41 Type="MacroNode" X="129.561065673828" Y="101.154647827148" Z="26.0770587921143" Mass="0.320599913597107" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.788602709770203" LCC2="0.596555650234222" LCC3="0.034681960940361" LCC4="-0.41984036564827"/>
+		<MacroNode42 Type="MacroNode" X="-97.1084442138672" Y="12.2725887298584" Z="41.6825866699219" Mass="0.227302506566048" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.00204381346702576" LCC2="-0.457663178443909" LCC3="1.15239334106445" LCC4="0.30322602391243"/>
+		<MacroNode43 Type="MacroNode" X="23.9387435913086" Y="110.773262023926" Z="23.4219398498535" Mass="0.435295432806015" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.873726606369019" LCC2="0.105280339717865" LCC3="0.205619141459465" LCC4="-0.184626117348671"/>
+		<MacroNode44 Type="MacroNode" X="202.675247192383" Y="12.5033493041992" Z="0.934963703155518" Mass="0.414163440465927" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.00407640635967255" LCC2="0.936527252197266" LCC3="-0.0580444037914276" LCC4="0.117440745234489"/>
+		<MacroNode45 Type="MacroNode" X="-45.0040397644043" Y="70.481819152832" Z="-4.22421646118164" Mass="0.614639163017273" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.517167925834656" LCC2="-0.215485438704491" LCC3="0.199389979243279" LCC4="0.498927623033524"/>
+		<MacroNode46 Type="MacroNode" X="12.4239768981934" Y="122.136001586914" Z="-9.70773696899414" Mass="0.353392124176025" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.974282264709473" LCC2="0.0516017638146877" LCC3="-0.231825545430183" LCC4="0.205941528081894"/>
+		<MacroNode47 Type="MacroNode" X="-29.8547706604004" Y="45.4484939575195" Z="26.1282787322998" Mass="0.644835352897644" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.295633554458618" LCC2="-0.144912645220757" LCC3="0.654125869274139" LCC4="0.195153161883354"/>
+		<MacroNode48 Type="MacroNode" X="-108.216499328613" Y="108.924865722656" Z="14.462760925293" Mass="0.303220689296722" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.857373476028442" LCC2="-0.509427070617676" LCC3="0.410473942756653" LCC4="0.241579622030258"/>
+		<MacroNode49 Type="MacroNode" X="213.155120849609" Y="27.0666904449463" Z="17.2602519989014" Mass="0.362197697162628" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.132954955101013" LCC2="0.985331118106842" LCC3="0.0570762529969215" LCC4="-0.175362333655357"/>
+		<MacroNode50 Type="MacroNode" X="199.000106811523" Y="64.8585357666016" Z="20.5706443786621" Mass="0.311612010002136" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.467396289110184" LCC2="0.91950660943985" LCC3="-0.0357112288475037" LCC4="-0.35119166970253"/>
+		<MacroNode51 Type="MacroNode" X="108.828071594238" Y="83.2664184570313" Z="-18.2338237762451" Mass="0.426290541887283" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.630300879478455" LCC2="0.49996018409729" LCC3="-0.391549050807953" LCC4="0.261287987232208"/>
+		<MacroNode52 Type="MacroNode" X="-102.624519348145" Y="98.8033905029297" Z="0.971107482910156" Mass="0.338686943054199" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.767802894115448" LCC2="-0.483467698097229" LCC3="0.273578315973282" LCC4="0.442086517810822"/>
+		<MacroNode53 Type="MacroNode" X="-97.0547561645508" Y="12.2725400924683" Z="-26.2353477478027" Mass="0.227348268032074" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.00204384326934814" LCC2="-0.457663178443909" LCC3="0.303419083356857" LCC4="1.15220022201538"/>
+		<MacroNode54 Type="MacroNode" X="23.9634056091309" Y="110.773239135742" Z="-7.78223371505737" Mass="0.435372531414032" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.873726606369019" LCC2="0.105280339717865" LCC3="-0.184433072805405" LCC4="0.205426096916199"/>
+		<MacroNode55 Type="MacroNode" X="129.589782714844" Y="101.15461730957" Z="-10.2692775726318" Mass="0.320648580789566" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.788602709770203" LCC2="0.596555650234222" LCC3="-0.419647306203842" LCC4="0.0344888903200626"/>
+		<MacroNode56 Type="MacroNode" X="-29.8257617950439" Y="45.4484634399414" Z="-10.5740900039673" Mass="0.645034313201904" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.295633554458618" LCC2="-0.144912645220757" LCC3="0.195346221327782" LCC4="0.653932809829712"/>
+		<MacroNode57 Type="MacroNode" X="213.169799804688" Y="27.0666751861572" Z="-1.31939029693604" Mass="0.362229466438293" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.132954955101013" LCC2="0.985331118106842" LCC3="-0.175169289112091" LCC4="0.0568832084536552"/>
+		<MacroNode58 Type="MacroNode" X="199.020050048828" Y="64.858528137207" Z="-4.65234518051147" Mass="0.311643898487091" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Node28" ChildNode2="Node25" ChildNode3="NPivot" ChildNode4="Node27" LCC1="0.467396318912506" LCC2="0.91950660943985" LCC3="-0.350998640060425" LCC4="-0.0359042771160603"/>
+	</Nodes>
+	<Edges>
+		<Edge47 Type="Edge" Length="119.870765686035" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node28" End2="Node27"/>
+		<Edge48 Type="Edge" Length="119.870765686035" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node28" End2="NPivot"/>
+		<Edge49 Type="Edge" Length="242.886810302734" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node28" End2="Node25"/>
+		<Edge50 Type="Edge" Length="80" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node27" End2="NPivot"/>
+		<Edge51 Type="Edge" Length="218.689270019531" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node27" End2="Node25"/>
+		<Edge52 Type="Edge" Length="218.689270019531" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NPivot" End2="Node25"/>
+	</Edges>
+	<Figures>
+		<Triangle-36 Type="Triangle" DoubleSided="0" Node1="MacroNode56" Node2="MacroNode42" Node3="MacroNode53"/>
+		<Triangle-35 Type="Triangle" DoubleSided="0" Node1="MacroNode56" Node2="MacroNode47" Node3="MacroNode42"/>
+		<Triangle-28 Type="Triangle" DoubleSided="0" Node1="MacroNode40" Node2="MacroNode39" Node3="MacroNode52"/>
+		<Triangle-27 Type="Triangle" DoubleSided="0" Node1="MacroNode40" Node2="MacroNode48" Node3="MacroNode39"/>
+		<Triangle-24 Type="Triangle" DoubleSided="0" Node1="MacroNode52" Node2="MacroNode39" Node3="MacroNode36"/>
+		<Triangle-25 Type="Triangle" DoubleSided="0" Node1="MacroNode52" Node2="MacroNode36" Node3="MacroNode45"/>
+		<Triangle-20 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode47" Node3="MacroNode56"/>
+		<Triangle-44 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode53" Node3="MacroNode42"/>
+		<Triangle-19 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode36" Node3="MacroNode47"/>
+		<Triangle-23 Type="Triangle" DoubleSided="0" Node1="MacroNode44" Node2="MacroNode53" Node3="MacroNode56"/>
+		<Triangle-31 Type="Triangle" DoubleSided="0" Node1="MacroNode40" Node2="MacroNode52" Node3="MacroNode46"/>
+		<Triangle-39 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode52" Node3="MacroNode46"/>
+		<Triangle-1 Type="Triangle" DoubleSided="0" Node1="MacroNode38" Node2="MacroNode48" Node3="MacroNode40"/>
+		<Triangle-8 Type="Triangle" DoubleSided="0" Node1="MacroNode48" Node2="MacroNode38" Node3="MacroNode39"/>
+		<Triangle-4 Type="Triangle" DoubleSided="0" Node1="MacroNode36" Node2="MacroNode38" Node3="MacroNode39"/>
+		<Triangle-9 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode47" Node3="MacroNode42"/>
+		<Triangle-26 Type="Triangle" DoubleSided="0" Node1="MacroNode44" Node2="MacroNode56" Node3="MacroNode45"/>
+		<Triangle-40 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode46" Node3="MacroNode54"/>
+		<Triangle-2 Type="Triangle" DoubleSided="0" Node1="MacroNode38" Node2="MacroNode40" Node3="MacroNode46"/>
+		<Triangle-12 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode36" Node3="MacroNode47"/>
+		<Triangle-17 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode54" Node3="MacroNode51"/>
+		<Triangle-43 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode44" Node3="MacroNode53"/>
+		<Triangle-3 Type="Triangle" DoubleSided="0" Node1="MacroNode36" Node2="MacroNode43" Node3="MacroNode38"/>
+		<Triangle-18 Type="Triangle" DoubleSided="0" Node1="MacroNode45" Node2="MacroNode51" Node3="MacroNode44"/>
+		<Triangle-41 Type="Triangle" DoubleSided="0" Node1="MacroNode54" Node2="MacroNode46" Node3="MacroNode38"/>
+		<Triangle-11 Type="Triangle" DoubleSided="0" Node1="MacroNode36" Node2="MacroNode37" Node3="MacroNode43"/>
+		<Triangle-42 Type="Triangle" DoubleSided="0" Node1="MacroNode54" Node2="MacroNode38" Node3="MacroNode43"/>
+		<Triangle-33 Type="Triangle" DoubleSided="0" Node1="MacroNode43" Node2="MacroNode51" Node3="MacroNode54"/>
+		<Triangle-10 Type="Triangle" DoubleSided="0" Node1="MacroNode36" Node2="MacroNode35" Node3="MacroNode37"/>
+		<Triangle-32 Type="Triangle" DoubleSided="0" Node1="MacroNode43" Node2="MacroNode37" Node3="MacroNode51"/>
+		<Triangle-30 Type="Triangle" DoubleSided="0" Node1="MacroNode55" Node2="MacroNode37" Node3="MacroNode51"/>
+		<Triangle-22 Type="Triangle" DoubleSided="0" Node1="MacroNode57" Node2="MacroNode51" Node3="MacroNode44"/>
+		<Triangle-21 Type="Triangle" DoubleSided="0" Node1="MacroNode57" Node2="MacroNode55" Node3="MacroNode51"/>
+		<Triangle-38 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode57" Node3="MacroNode44"/>
+		<Triangle-29 Type="Triangle" DoubleSided="0" Node1="MacroNode55" Node2="MacroNode41" Node3="MacroNode37"/>
+		<Triangle-6 Type="Triangle" DoubleSided="0" Node1="MacroNode49" Node2="MacroNode35" Node3="MacroNode37"/>
+		<Triangle-34 Type="Triangle" DoubleSided="0" Node1="MacroNode55" Node2="MacroNode57" Node3="MacroNode58"/>
+		<Triangle-37 Type="Triangle" DoubleSided="0" Node1="MacroNode35" Node2="MacroNode49" Node3="MacroNode57"/>
+		<Triangle-13 Type="Triangle" DoubleSided="0" Node1="MacroNode58" Node2="MacroNode55" Node3="MacroNode41"/>
+		<Triangle-7 Type="Triangle" DoubleSided="0" Node1="MacroNode49" Node2="MacroNode37" Node3="MacroNode41"/>
+		<Triangle-15 Type="Triangle" DoubleSided="0" Node1="MacroNode58" Node2="MacroNode57" Node3="MacroNode49"/>
+		<Triangle-5 Type="Triangle" DoubleSided="0" Node1="MacroNode41" Node2="MacroNode50" Node3="MacroNode49"/>
+		<Triangle-14 Type="Triangle" DoubleSided="0" Node1="MacroNode58" Node2="MacroNode41" Node3="MacroNode50"/>
+		<Triangle-16 Type="Triangle" DoubleSided="0" Node1="MacroNode58" Node2="MacroNode49" Node3="MacroNode50"/>
+		<NP_Node25 Type="NodePoint" Node="Node25" Radius="3"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+		<NP_Node27 Type="NodePoint" Node="Node27" Radius="3"/>
+		<NP_Node28 Type="NodePoint" Node="Node28" Radius="3"/>
+		<EL_Edge47 Type="EdgeLine" Edge="Edge47" Width="1"/>
+		<EL_Edge48 Type="EdgeLine" Edge="Edge48" Width="1"/>
+		<EL_Edge49 Type="EdgeLine" Edge="Edge49" Width="1"/>
+		<EL_Edge50 Type="EdgeLine" Edge="Edge50" Width="1"/>
+		<EL_Edge51 Type="EdgeLine" Edge="Edge51" Width="1"/>
+		<EL_Edge52 Type="EdgeLine" Edge="Edge52" Width="1"/>
+		<NP_MacroNode35 Type="NodePoint" Node="MacroNode35" Radius="3"/>
+		<NP_MacroNode36 Type="NodePoint" Node="MacroNode36" Radius="3"/>
+		<NP_MacroNode37 Type="NodePoint" Node="MacroNode37" Radius="3"/>
+		<NP_MacroNode38 Type="NodePoint" Node="MacroNode38" Radius="3"/>
+		<NP_MacroNode39 Type="NodePoint" Node="MacroNode39" Radius="3"/>
+		<NP_MacroNode40 Type="NodePoint" Node="MacroNode40" Radius="3"/>
+		<NP_MacroNode41 Type="NodePoint" Node="MacroNode41" Radius="3"/>
+		<NP_MacroNode42 Type="NodePoint" Node="MacroNode42" Radius="3"/>
+		<NP_MacroNode43 Type="NodePoint" Node="MacroNode43" Radius="3"/>
+		<NP_MacroNode44 Type="NodePoint" Node="MacroNode44" Radius="3"/>
+		<NP_MacroNode45 Type="NodePoint" Node="MacroNode45" Radius="3"/>
+		<NP_MacroNode46 Type="NodePoint" Node="MacroNode46" Radius="3"/>
+		<NP_MacroNode47 Type="NodePoint" Node="MacroNode47" Radius="3"/>
+		<NP_MacroNode48 Type="NodePoint" Node="MacroNode48" Radius="3"/>
+		<NP_MacroNode49 Type="NodePoint" Node="MacroNode49" Radius="3"/>
+		<NP_MacroNode50 Type="NodePoint" Node="MacroNode50" Radius="3"/>
+		<NP_MacroNode51 Type="NodePoint" Node="MacroNode51" Radius="3"/>
+		<NP_MacroNode52 Type="NodePoint" Node="MacroNode52" Radius="3"/>
+		<NP_MacroNode53 Type="NodePoint" Node="MacroNode53" Radius="3"/>
+		<NP_MacroNode54 Type="NodePoint" Node="MacroNode54" Radius="3"/>
+		<NP_MacroNode55 Type="NodePoint" Node="MacroNode55" Radius="3"/>
+		<NP_MacroNode56 Type="NodePoint" Node="MacroNode56" Radius="3"/>
+		<NP_MacroNode57 Type="NodePoint" Node="MacroNode57" Radius="3"/>
+		<NP_MacroNode58 Type="NodePoint" Node="MacroNode58" Radius="3"/>
+		<NF_Node28 Type="NodeFixer" Node="Node28" Radius="5"/>
+		<NF_Node27 Type="NodeFixer" Node="Node27" Radius="5"/>
+		<NF_NPivot Type="NodeFixer" Node="NPivot" Radius="5"/>
+		<NF_Node25 Type="NodeFixer" Node="Node25" Radius="5"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1>
+			<NPivot Type="Node"/>
+			<NPelvisF Type="Node"/>
+			<NHip_2 Type="Node"/>
+			<NHip_1 Type="Node"/>
+			<NShoulder_2 Type="Node"/>
+			<NShoulder_1 Type="Node"/>
+			<NNeck Type="Node"/>
+		</SG-1>
+		<SG-2>
+			<NKnucklesS_1 Type="Node"/>
+			<NFingertips_1 Type="Node"/>
+			<NKnuckles_1 Type="Node"/>
+			<NWrist_1 Type="Node"/>
+		</SG-2>
+		<SG-3>
+			<NKnucklesS_2 Type="Node"/>
+			<NFingertips_2 Type="Node"/>
+			<NKnuckles_2 Type="Node"/>
+			<NWrist_2 Type="Node"/>
+		</SG-3>
+		<SG-4>
+			<NToeS_2 Type="Node"/>
+			<NToeTip_2 Type="Node"/>
+			<NToe_2 Type="Node"/>
+			<NHeel_2 Type="Node"/>
+			<NAnkle_2 Type="Node"/>
+		</SG-4>
+		<SG-5>
+			<NToeS_1 Type="Node"/>
+			<NToeTip_1 Type="Node"/>
+			<NHeel_1 Type="Node"/>
+			<NToe_1 Type="Node"/>
+			<NAnkle_1 Type="Node"/>
+		</SG-5>
+		<SG-6>
+			<NHeadF Type="Node"/>
+			<NHeadS_2 Type="Node"/>
+			<NHeadS_1 Type="Node"/>
+			<NTop Type="Node"/>
+			<NHead Type="Node"/>
+		</SG-6>
+		<SG-7>
+			<COM Type="Node"/>
+		</SG-7>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

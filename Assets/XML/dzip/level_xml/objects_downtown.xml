@@ -1,660 +1,660 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <Library FileName="common.swf"/>
-    <Library FileName="downtown.swf"/>
-  </Sets>
-  <Objects>
-    <Object Name="BackgroundImage">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_bg" Width="2121" Height="1116"/>
-      </Content>
-    </Object>
-    <Object Name="BackJamb">
-      <Content>
-        <Image X="0" Y="0" Width="70" Height="500" ClassName="v_dark_gray"/>
-      </Content>
-    </Object>
-    <Object Name="BackConditoner">
-      <Content>
-        <Image X="-6" Y="-4" Width="366" Height="89" ClassName="v_fan_1_2"/>
-      </Content>
-    </Object>
-    <Object Name="BillboardImage">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_billboard_1" Width="325" Height="605"/>
-      </Content>
-    </Object>
-    <Object Name="Booth">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_booth_1_1" Width="1373" Height="399"/>
-      </Content>
-    </Object>
-    <Object Name="Building1Image">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_building_1" Width="1789" Height="2599"/>
-      </Content>
-    </Object>
-    <Object Name="Building2Image">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_building_2" Width="1070" Height="2283"/>
-      </Content>
-    </Object>
-    <Object Name="Building3Image" Label="">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_building_3" Width="1083" Height="2311"/>
-      </Content>
-    </Object>
-    <Object Name="DoorHT">
-      <Content>
-        <Image X="0" Y="0" Width="178" Height="255" ClassName="doorHT"/>
-      </Content>
-    </Object>
-    <Object Name="Fence">
-      <Content>
-        <Image X="0" Y="0" Width="400" Height="200" ClassName="v_dark_gray"/>
-      </Content>
-    </Object>
-    <Object Name="Fog">
-      <Content>
-        <Image X="0" Y="0" Width="500" Height="250" ClassName="fog"/>
-      </Content>
-    </Object>
-    <Object Name="Grating">
-      <Content>
-        <Image X="-15" Y="-10" ClassName="v_grating_1" Width="915" Height="188"/>
-      </Content>
-    </Object>
-    <Object Name="LampPostImage" Label="">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_lamppost_1" Width="150" Height="620"/>
-      </Content>
-    </Object>
-    <Object Name="Lift01">
-      <Content>
-        <Image X="54" Y="601" ClassName="vent_lamp" Width="235" Height="40"/>
-        <Image X="0" Y="306" ClassName="v_Pipe_5" Width="28" Height="215"/>
-        <Image X="330" Y="304" ClassName="v_Pipe_5" Width="28" Height="215"/>
-        <Image X="116" Y="67" ClassName="v_railing_1" Width="140" Height="54"/>
-        <Image X="19" Y="118" ClassName="v_black" Type="3" Width="3" Height="191"/>
-        <Image X="336" Y="116" ClassName="v_black" Type="3" Width="3" Height="191"/>
-        <Image X="21" Y="424" ClassName="gas" Width="325" Height="110"/>
-        <Image X="135" Y="0" ClassName="v_object_02" Width="99" Height="96"/>
-        <Image X="18" Y="495" ClassName="gas" Width="325" Height="110"/>
-        <Image X="17" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="56" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="96" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="137" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="177" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="255" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="216" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Image X="293" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
-        <Platform X="22" Y="428" Width="316" Height="180" Name="platform"/>
-      </Content>
-    </Object>
-    <Object Name="Table">
-      <Content>
-        <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
-        <Platform X="0" Y="0" Width="300" Height="90"/>
-      </Content>
-    </Object>
-    <Object Name="TableT" Label="Standard obstacles">
-      <Content>
-        <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
-        <Platform X="0" Y="0" Width="300" Height="90"/>
-        <Object Name="TriggerHighJump500" X="-700" Y="-60"/>
-        <Object Name="TriggerDivingKong" X="-200" Y="-110"/>
-      </Content>
-    </Object>
-    <Object Name="Max_table_1">
-      <Content>
-        <Image X="-3" Y="-10" Width="126" Height="101" ClassName="v_table_1"/>
-        <Platform X="0" Y="0" Width="120" Height="90"/>
-        <Object Name="TriggerHighJump500" X="-700" Y="-60"/>
-        <Object Name="TriggerSpeedVault" X="-200" Y="-110"/>
-      </Content>
-    </Object>
-    <Object Name="Max_table_2">
-      <Content>
-        <Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
-        <Platform X="0" Y="0" Width="300" Height="90"/>
-        <Object Name="TriggerHighJump500" X="-700" Y="-60"/>
-        <Object Name="TriggerDivingKong" X="-200" Y="-110"/>
-      </Content>
-    </Object>
-    <Object Name="Office_battery">
-      <Content>
-        <Image X="0" Y="0" Width="258" Height="105" ClassName="office_battery"/>
-      </Content>
-    </Object>
-    <Object Name="Office_blank">
-      <Content>
-        <Image X="0" Y="0" Width="1255" Height="430" ClassName="office_blank"/>
-      </Content>
-    </Object>
-    <Object Name="Office_cooler" Label="">
-      <Content>
-        <Image X="0" Y="0" Width="84" Height="218" ClassName="office_cooler"/>
-      </Content>
-    </Object>
-    <Object Name="Office_door">
-      <Content>
-        <Image X="0" Y="0" Width="182" Height="256" ClassName="office_door"/>
-      </Content>
-    </Object>
-    <Object Name="Office_glads">
-      <Content>
-        <Image X="0" Y="0" Width="370" Height="179" ClassName="office_glads"/>
-      </Content>
-    </Object>
-    <Object Name="Office_lightened_piece">
-      <Content>
-        <Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece"/>
-      </Content>
-    </Object>
-    <Object Name="Office_lightened_piece_down">
-      <Content>
-        <Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece_down"/>
-      </Content>
-    </Object>
-    <Object Name="Office_printer">
-      <Content>
-        <Image X="0" Y="0" Width="106" Height="134" ClassName="office_printer"/>
-      </Content>
-    </Object>
-    <Object Name="Office_socket">
-      <Content>
-        <Image X="0" Y="0" Width="26" Height="27" ClassName="office_socket"/>
-      </Content>
-    </Object>
-    <Object Name="Office_table">
-      <Content>
-        <Image X="0" Y="0" Width="397" Height="164" ClassName="office_table"/>
-      </Content>
-    </Object>
-    <Object Name="Office_talents">
-      <Content>
-        <Image X="0" Y="0" Width="94" Height="117" ClassName="office_talents"/>
-      </Content>
-    </Object>
-    <Object Name="Office_urn">
-      <Content>
-        <Image X="0" Y="0" Width="54" Height="61" ClassName="office_urn"/>
-      </Content>
-    </Object>
-    <Object Name="Office_x_passage_edge">
-      <Content>
-        <Image X="0" Y="0" Width="30" Height="430" ClassName="office_x_passage_edge"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_blank">
-      <Content>
-        <Image X="0" Y="0" Width="410" Height="330" ClassName="passage_blank"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_blank_long">
-      <Content>
-        <Image X="0" Y="0" Width="820" Height="330" ClassName="passage_blank_long"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_gallery">
-      <Content>
-        <Image X="0" Y="0" Width="820" Height="330" ClassName="passage_gallery"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_nosmokin">
-      <Content>
-        <Image X="0" Y="0" Width="54" Height="49" ClassName="passage_nosmokin"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_wayout">
-      <Content>
-        <Image X="0" Y="0" Width="77" Height="39" ClassName="passage_wayout"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_windowz">
-      <Content>
-        <Image X="0" Y="0" Width="410" Height="330" ClassName="passage_windowz"/>
-      </Content>
-    </Object>
-    <Object Name="Railing">
-      <Content>
-        <Image X="-8" Y="-7" ClassName="v_railing_1_1" Width="484" Height="87"/>
-      </Content>
-    </Object>
-    <Object Name="ShortTableT" Label="Standard obstacles">
-      <Content>
-        <Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101"/>
-        <Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
-        <Object Name="TriggerHighJump500" X="-720" Y="-60"/>
-        <Object Name="TriggerSpeedVault" X="-220" Y="-110"/>
-      </Content>
-    </Object>
-    <Object Name="V_bgnew" Label="">
-      <Content>
-        <Image X="0" Y="0" Width="1061" Height="558" ClassName="v_bg"/>
-      </Content>
-    </Object>
-    <Object Name="V_antenna">
-      <Content>
-        <Image X="0" Y="0" Width="95" Height="90" ClassName="v_antenna"/>
-      </Content>
-    </Object>
-    <Object Name="V_bar_binocular" Label="">
-      <Content>
-        <Image X="0" Y="0" Width="66" Height="150" ClassName="v_bar_binocular"/>
-      </Content>
-    </Object>
-    <Object Name="v_barrel_01">
-      <Content>
-        <Image X="0" Y="0" Width="75" Height="90" ClassName="v_barrel_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="v_fan_1_1">
-      <Content>
-        <Image X="-30" Y="-5" Width="200" Height="90" ClassName="v_fan_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_box_1">
-      <Content>
-        <Image X="0" Y="0" Width="68" Height="62" ClassName="v_box_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_billboard_2">
-      <Content>
-        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2"/>
-      </Content>
-    </Object>
-    <Object Name="V_table_1">
-      <Content>
-        <Image X="0" Y="0" Width="126" Height="100" ClassName="v_table_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_table_2">
-      <Content>
-        <Image X="0" Y="0" Width="320" Height="95" ClassName="v_table_2"/>
-      </Content>
-    </Object>
-    <Object Name="V_billboard_2_pattern">
-      <Content>
-        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="V_billboard_1_pattern">
-      <Content>
-        <Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_1_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="V_boothAngle_1_1">
-      <Content>
-        <Image X="0" Y="0" Width="612" Height="385" ClassName="v_boothAngle_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_booth_1_1">
-      <Content>
-        <Image X="0" Y="0" Width="1392" Height="399" ClassName="v_booth_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_building_1_pattern">
-      <Content>
-        <Image X="0" Y="0" Width="895" Height="527" ClassName="v_building_1_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="V_building_2_3_pattern">
-      <Content>
-        <Image X="0" Y="0" Width="546" Height="527" ClassName="v_building_2_3_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="V_fence" Label="">
-      <Content>
-        <Image X="0" Y="0" Width="225" Height="100" ClassName="v_fence"/>
-      </Content>
-    </Object>
-    <Object Name="V_fence_bar">
-      <Content>
-        <Image X="0" Y="0" Width="70" Height="100" ClassName="v_fence_bar"/>
-      </Content>
-    </Object>
-    <Object Name="V_muorny_tank_1_1">
-      <Content>
-        <Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_muorny_tank_1">
-      <Content>
-        <Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_muorny_tank_2">
-      <Content>
-        <Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2"/>
-      </Content>
-    </Object>
-    <Object Name="V_muorny_tank_2_1">
-      <Content>
-        <Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2_1"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_blank" Label="">
-      <Content>
-        <Image X="0" Y="0" Width="1255" Height="430" ClassName="v_office_blank"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_lightened_piece">
-      <Content>
-        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_lightened_piece_down">
-      <Content>
-        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece_down"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_pattern">
-      <Content>
-        <Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_socket">
-      <Content>
-        <Image X="0" Y="0" Width="26" Height="27" ClassName="v_office_socket"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_urn">
-      <Content>
-        <Image X="0" Y="0" Width="54" Height="61" ClassName="v_office_urn"/>
-      </Content>
-    </Object>
-    <Object Name="V_office_x_passage_edge">
-      <Content>
-        <Image X="0" Y="0" Width="30" Height="430" ClassName="v_office_x_passage_edge"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_blank">
-      <Content>
-        <Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_blank"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_blank_long">
-      <Content>
-        <Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_blank_long"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_gallery2">
-      <Content>
-        <Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_gallery2"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_nosmokin">
-      <Content>
-        <Image X="0" Y="0" Width="54" Height="49" ClassName="v_passage_nosmokin"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_wayout">
-      <Content>
-        <Image X="0" Y="0" Width="77" Height="39" ClassName="v_passage_wayout"/>
-      </Content>
-    </Object>
-    <Object Name="V_passage_window">
-      <Content>
-        <Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_window"/>
-      </Content>
-    </Object>
-    <Object Name="V_rail_left">
-      <Content>
-        <Image X="0" Y="0" Width="403" Height="264" ClassName="v_rail_left"/>
-      </Content>
-    </Object>
-    <Object Name="V_rail_longleft">
-      <Content>
-        <Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longleft"/>
-      </Content>
-    </Object>
-    <Object Name="V_rail_longright">
-      <Content>
-        <Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longleft">
-          <Properties>
-            <Static>
-              <Matrix A="-824" B="0" C="0" D="267" Tx="824" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-      </Content>
-    </Object>
-    <Object Name="V_rail_right">
-      <Content>
-        <Image X="0" Y="0" Width="395" Height="264" ClassName="v_rail_left">
-          <Properties>
-            <Static>
-              <Matrix A="-395" B="0" C="0" D="264" Tx="395" Ty="264"/>
-            </Static>
-          </Properties>
-        </Image>
-      </Content>
-    </Object>
-    <Object Name="V_rail_upleft">
-      <Content>
-        <Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upleft"/>
-      </Content>
-    </Object>
-    <Object Name="V_rail_upright">
-      <Content>
-        <Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upleft">
-          <Properties>
-            <Static>
-              <Matrix A="-288" B="0" C="0" D="142" Tx="288" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-      </Content>
-    </Object>
-    <Object Name="V_screen">
-      <Content>
-        <Image X="0" Y="0" Width="391" Height="315" ClassName="v_screen"/>
-      </Content>
-    </Object>
-    <Object Name="V_table_screen">
-      <Content>
-        <Image X="0" Y="0" Width="456" Height="185" ClassName="v_table_screen"/>
-      </Content>
-    </Object>
-    <Object Name="V_table_screen_min">
-      <Content>
-        <Image X="0" Y="0" Width="457" Height="220" ClassName="v_table_screen_min"/>
-      </Content>
-    </Object>
-    <Object Name="V_table_simple">
-      <Content>
-        <Image X="0" Y="0" Width="417" Height="90" ClassName="v_table_simple"/>
-      </Content>
-    </Object>
-    <Object Name="V_venthole_1_1">
-      <Content>
-        <Image X="0" Y="0" Width="127" Height="173" ClassName="v_venthole_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="Ventilation_holes_roof">
-      <Content>
-        <Image X="0" Y="0" Width="643" Height="150" ClassName="ventilation_holes_roof"/>
-      </Content>
-    </Object>
-    <Object Name="Ventilation_passage">
-      <Content>
-        <Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_passage"/>
-      </Content>
-    </Object>
-    <Object Name="Ventilation_hole">
-      <Content>
-        <Image X="0" Y="0" Width="117" Height="103" ClassName="ventilation_hole"/>
-      </Content>
-    </Object>
-    <Object Name="Ventilation_enter">
-      <Content>
-        <Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_enter"/>
-      </Content>
-    </Object>
-    <Object Name="Volts">
-      <Content>
-        <Image X="0" Y="0" Width="120" Height="200" ClassName="volts"/>
-      </Content>
-    </Object>
-    <Object Name="Wall_left">
-      <Content>
-        <Image X="0" Y="0" Width="35" Height="330" ClassName="wall_right">
-          <Properties>
-            <Static>
-              <Matrix A="-35" B="0" C="0" D="330" Tx="35" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-      </Content>
-    </Object>
-    <Object Name="Wall_right">
-      <Content>
-        <Image X="0" Y="0" Width="35" Height="330" ClassName="wall_right"/>
-      </Content>
-    </Object>
-    <Object Name="Constantine_office_pattern1560x865">
-      <Content>
-        <Image X="0" Y="0" Width="1560" Height="865" ClassName="v_office_pattern"/>
-      </Content>
-    </Object>
-    <Object Name="Max_barrels">
-      <Content>
-        <Image X="71" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="141" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="0" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="214" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="287" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="243" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="170" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="95" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="210" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-        <Image X="135" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
-      </Content>
-    </Object>
-    <Object Name="MaxBack_Wall">
-      <Content>
-        <Image X="0" Y="0" Width="2919" Height="1000" ClassName="office_blank"/>
-      </Content>
-    </Object>
-    <Object Name="MaxWall_Window">
-      <Content>
-        <Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
-        <Image X="1492" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
-        <Image X="726" Y="0" Width="770" Height="401" ClassName="passage_gallery"/>
-      </Content>
-    </Object>
-    <Object Name="MaxWall_Window1">
-      <Content>
-        <Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
-        <Image X="1468" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
-        <Image X="729" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
-      </Content>
-    </Object>
-    <Object Name="Passage_blank_long4000x1050">
-      <Content>
-        <Image X="0" Y="0" Width="4000" Height="1050" ClassName="passage_blank_long"/>
-      </Content>
-    </Object>
-    <Object Name="TriggerCS01DowntownMain">
-      <Content>
-        <Trigger Name="TriggerCS01DowntownMain" X="0" Y="0" Width="509" Height="300">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="0"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="Time" Value="480"/>
-              <SetVariable Name="Start" Value="CS01DownTownMain"/>
-              <SetVariable Name="StartFrame" Value="20"/>
-              <SetVariable Name="ReversedStart" Value="0"/>
-              <SetVariable Name="End" Value=""/>
-              <SetVariable Name="ReversedEnd" Value="0"/>
-              <SetVariable Name="EndFrame" Value=""/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
+	<Sets>
+		<Library FileName="common.swf"/>
+		<Library FileName="downtown.swf"/>
+	</Sets>
+	<Objects>
+		<Object Name="BackgroundImage">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_bg" Width="2121" Height="1116"/>
+			</Content>
+		</Object>
+		<Object Name="BackJamb">
+			<Content>
+				<Image X="0" Y="0" Width="70" Height="500" ClassName="v_dark_gray"/>
+			</Content>
+		</Object>
+		<Object Name="BackConditoner">
+			<Content>
+				<Image X="-6" Y="-4" Width="366" Height="89" ClassName="v_fan_1_2"/>
+			</Content>
+		</Object>
+		<Object Name="BillboardImage">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_billboard_1" Width="325" Height="605"/>
+			</Content>
+		</Object>
+		<Object Name="Booth">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_booth_1_1" Width="1373" Height="399"/>
+			</Content>
+		</Object>
+		<Object Name="Building1Image">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_building_1" Width="1789" Height="2599"/>
+			</Content>
+		</Object>
+		<Object Name="Building2Image">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_building_2" Width="1070" Height="2283"/>
+			</Content>
+		</Object>
+		<Object Name="Building3Image" Label="">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_building_3" Width="1083" Height="2311"/>
+			</Content>
+		</Object>
+		<Object Name="DoorHT">
+			<Content>
+				<Image X="0" Y="0" Width="178" Height="255" ClassName="doorHT"/>
+			</Content>
+		</Object>
+		<Object Name="Fence">
+			<Content>
+				<Image X="0" Y="0" Width="400" Height="200" ClassName="v_dark_gray"/>
+			</Content>
+		</Object>
+		<Object Name="Fog">
+			<Content>
+				<Image X="0" Y="0" Width="500" Height="250" ClassName="fog"/>
+			</Content>
+		</Object>
+		<Object Name="Grating">
+			<Content>
+				<Image X="-15" Y="-10" ClassName="v_grating_1" Width="915" Height="188"/>
+			</Content>
+		</Object>
+		<Object Name="LampPostImage" Label="">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_lamppost_1" Width="150" Height="620"/>
+			</Content>
+		</Object>
+		<Object Name="Lift01">
+			<Content>
+				<Image X="54" Y="601" ClassName="vent_lamp" Width="235" Height="40"/>
+				<Image X="0" Y="306" ClassName="v_Pipe_5" Width="28" Height="215"/>
+				<Image X="330" Y="304" ClassName="v_Pipe_5" Width="28" Height="215"/>
+				<Image X="116" Y="67" ClassName="v_railing_1" Width="140" Height="54"/>
+				<Image X="19" Y="118" ClassName="v_black" Type="3" Width="3" Height="191"/>
+				<Image X="336" Y="116" ClassName="v_black" Type="3" Width="3" Height="191"/>
+				<Image X="21" Y="424" ClassName="gas" Width="325" Height="110"/>
+				<Image X="135" Y="0" ClassName="v_object_02" Width="99" Height="96"/>
+				<Image X="18" Y="495" ClassName="gas" Width="325" Height="110"/>
+				<Image X="17" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="56" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="96" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="137" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="177" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="255" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="216" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Image X="293" Y="112" ClassName="v_object_01" Width="48" Height="48"/>
+				<Platform X="22" Y="428" Width="316" Height="180" Name="platform"/>
+			</Content>
+		</Object>
+		<Object Name="Table">
+			<Content>
+				<Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+				<Platform X="0" Y="0" Width="300" Height="90"/>
+			</Content>
+		</Object>
+		<Object Name="TableT" Label="Standard obstacles">
+			<Content>
+				<Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+				<Platform X="0" Y="0" Width="300" Height="90"/>
+				<Object Name="TriggerHighJump500" X="-700" Y="-60"/>
+				<Object Name="TriggerDivingKong" X="-200" Y="-110"/>
+			</Content>
+		</Object>
+		<Object Name="Max_table_1">
+			<Content>
+				<Image X="-3" Y="-10" Width="126" Height="101" ClassName="v_table_1"/>
+				<Platform X="0" Y="0" Width="120" Height="90"/>
+				<Object Name="TriggerHighJump500" X="-700" Y="-60"/>
+				<Object Name="TriggerSpeedVault" X="-200" Y="-110"/>
+			</Content>
+		</Object>
+		<Object Name="Max_table_2">
+			<Content>
+				<Image X="-9" Y="-5" Width="320" Height="95" ClassName="v_table_2"/>
+				<Platform X="0" Y="0" Width="300" Height="90"/>
+				<Object Name="TriggerHighJump500" X="-700" Y="-60"/>
+				<Object Name="TriggerDivingKong" X="-200" Y="-110"/>
+			</Content>
+		</Object>
+		<Object Name="Office_battery">
+			<Content>
+				<Image X="0" Y="0" Width="258" Height="105" ClassName="office_battery"/>
+			</Content>
+		</Object>
+		<Object Name="Office_blank">
+			<Content>
+				<Image X="0" Y="0" Width="1255" Height="430" ClassName="office_blank"/>
+			</Content>
+		</Object>
+		<Object Name="Office_cooler" Label="">
+			<Content>
+				<Image X="0" Y="0" Width="84" Height="218" ClassName="office_cooler"/>
+			</Content>
+		</Object>
+		<Object Name="Office_door">
+			<Content>
+				<Image X="0" Y="0" Width="182" Height="256" ClassName="office_door"/>
+			</Content>
+		</Object>
+		<Object Name="Office_glads">
+			<Content>
+				<Image X="0" Y="0" Width="370" Height="179" ClassName="office_glads"/>
+			</Content>
+		</Object>
+		<Object Name="Office_lightened_piece">
+			<Content>
+				<Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece"/>
+			</Content>
+		</Object>
+		<Object Name="Office_lightened_piece_down">
+			<Content>
+				<Image X="0" Y="0" Width="795" Height="430" ClassName="office_lightened_piece_down"/>
+			</Content>
+		</Object>
+		<Object Name="Office_printer">
+			<Content>
+				<Image X="0" Y="0" Width="106" Height="134" ClassName="office_printer"/>
+			</Content>
+		</Object>
+		<Object Name="Office_socket">
+			<Content>
+				<Image X="0" Y="0" Width="26" Height="27" ClassName="office_socket"/>
+			</Content>
+		</Object>
+		<Object Name="Office_table">
+			<Content>
+				<Image X="0" Y="0" Width="397" Height="164" ClassName="office_table"/>
+			</Content>
+		</Object>
+		<Object Name="Office_talents">
+			<Content>
+				<Image X="0" Y="0" Width="94" Height="117" ClassName="office_talents"/>
+			</Content>
+		</Object>
+		<Object Name="Office_urn">
+			<Content>
+				<Image X="0" Y="0" Width="54" Height="61" ClassName="office_urn"/>
+			</Content>
+		</Object>
+		<Object Name="Office_x_passage_edge">
+			<Content>
+				<Image X="0" Y="0" Width="30" Height="430" ClassName="office_x_passage_edge"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_blank">
+			<Content>
+				<Image X="0" Y="0" Width="410" Height="330" ClassName="passage_blank"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_blank_long">
+			<Content>
+				<Image X="0" Y="0" Width="820" Height="330" ClassName="passage_blank_long"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_gallery">
+			<Content>
+				<Image X="0" Y="0" Width="820" Height="330" ClassName="passage_gallery"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_nosmokin">
+			<Content>
+				<Image X="0" Y="0" Width="54" Height="49" ClassName="passage_nosmokin"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_wayout">
+			<Content>
+				<Image X="0" Y="0" Width="77" Height="39" ClassName="passage_wayout"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_windowz">
+			<Content>
+				<Image X="0" Y="0" Width="410" Height="330" ClassName="passage_windowz"/>
+			</Content>
+		</Object>
+		<Object Name="Railing">
+			<Content>
+				<Image X="-8" Y="-7" ClassName="v_railing_1_1" Width="484" Height="87"/>
+			</Content>
+		</Object>
+		<Object Name="ShortTableT" Label="Standard obstacles">
+			<Content>
+				<Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101"/>
+				<Platform X="0" Y="0" Width="120" Height="90" Name="platform"/>
+				<Object Name="TriggerHighJump500" X="-720" Y="-60"/>
+				<Object Name="TriggerSpeedVault" X="-220" Y="-110"/>
+			</Content>
+		</Object>
+		<Object Name="V_bgnew" Label="">
+			<Content>
+				<Image X="0" Y="0" Width="1061" Height="558" ClassName="v_bg"/>
+			</Content>
+		</Object>
+		<Object Name="V_antenna">
+			<Content>
+				<Image X="0" Y="0" Width="95" Height="90" ClassName="v_antenna"/>
+			</Content>
+		</Object>
+		<Object Name="V_bar_binocular" Label="">
+			<Content>
+				<Image X="0" Y="0" Width="66" Height="150" ClassName="v_bar_binocular"/>
+			</Content>
+		</Object>
+		<Object Name="v_barrel_01">
+			<Content>
+				<Image X="0" Y="0" Width="75" Height="90" ClassName="v_barrel_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="v_fan_1_1">
+			<Content>
+				<Image X="-30" Y="-5" Width="200" Height="90" ClassName="v_fan_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_box_1">
+			<Content>
+				<Image X="0" Y="0" Width="68" Height="62" ClassName="v_box_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_billboard_2">
+			<Content>
+				<Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2"/>
+			</Content>
+		</Object>
+		<Object Name="V_table_1">
+			<Content>
+				<Image X="0" Y="0" Width="126" Height="100" ClassName="v_table_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_table_2">
+			<Content>
+				<Image X="0" Y="0" Width="320" Height="95" ClassName="v_table_2"/>
+			</Content>
+		</Object>
+		<Object Name="V_billboard_2_pattern">
+			<Content>
+				<Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_2_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="V_billboard_1_pattern">
+			<Content>
+				<Image X="0" Y="0" Width="165" Height="303" ClassName="v_billboard_1_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="V_boothAngle_1_1">
+			<Content>
+				<Image X="0" Y="0" Width="612" Height="385" ClassName="v_boothAngle_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_booth_1_1">
+			<Content>
+				<Image X="0" Y="0" Width="1392" Height="399" ClassName="v_booth_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_building_1_pattern">
+			<Content>
+				<Image X="0" Y="0" Width="895" Height="527" ClassName="v_building_1_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="V_building_2_3_pattern">
+			<Content>
+				<Image X="0" Y="0" Width="546" Height="527" ClassName="v_building_2_3_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="V_fence" Label="">
+			<Content>
+				<Image X="0" Y="0" Width="225" Height="100" ClassName="v_fence"/>
+			</Content>
+		</Object>
+		<Object Name="V_fence_bar">
+			<Content>
+				<Image X="0" Y="0" Width="70" Height="100" ClassName="v_fence_bar"/>
+			</Content>
+		</Object>
+		<Object Name="V_muorny_tank_1_1">
+			<Content>
+				<Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_muorny_tank_1">
+			<Content>
+				<Image X="0" Y="0" Width="86" Height="91" ClassName="v_muorny_tank_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_muorny_tank_2">
+			<Content>
+				<Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2"/>
+			</Content>
+		</Object>
+		<Object Name="V_muorny_tank_2_1">
+			<Content>
+				<Image X="0" Y="0" Width="198" Height="125" ClassName="v_muorny_tank_2_1"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_blank" Label="">
+			<Content>
+				<Image X="0" Y="0" Width="1255" Height="430" ClassName="v_office_blank"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_lightened_piece">
+			<Content>
+				<Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_lightened_piece_down">
+			<Content>
+				<Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_lightened_piece_down"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_pattern">
+			<Content>
+				<Image X="0" Y="0" Width="795" Height="430" ClassName="v_office_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_socket">
+			<Content>
+				<Image X="0" Y="0" Width="26" Height="27" ClassName="v_office_socket"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_urn">
+			<Content>
+				<Image X="0" Y="0" Width="54" Height="61" ClassName="v_office_urn"/>
+			</Content>
+		</Object>
+		<Object Name="V_office_x_passage_edge">
+			<Content>
+				<Image X="0" Y="0" Width="30" Height="430" ClassName="v_office_x_passage_edge"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_blank">
+			<Content>
+				<Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_blank"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_blank_long">
+			<Content>
+				<Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_blank_long"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_gallery2">
+			<Content>
+				<Image X="0" Y="0" Width="820" Height="330" ClassName="v_passage_gallery2"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_nosmokin">
+			<Content>
+				<Image X="0" Y="0" Width="54" Height="49" ClassName="v_passage_nosmokin"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_wayout">
+			<Content>
+				<Image X="0" Y="0" Width="77" Height="39" ClassName="v_passage_wayout"/>
+			</Content>
+		</Object>
+		<Object Name="V_passage_window">
+			<Content>
+				<Image X="0" Y="0" Width="410" Height="330" ClassName="v_passage_window"/>
+			</Content>
+		</Object>
+		<Object Name="V_rail_left">
+			<Content>
+				<Image X="0" Y="0" Width="403" Height="264" ClassName="v_rail_left"/>
+			</Content>
+		</Object>
+		<Object Name="V_rail_longleft">
+			<Content>
+				<Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longleft"/>
+			</Content>
+		</Object>
+		<Object Name="V_rail_longright">
+			<Content>
+				<Image X="0" Y="0" Width="824" Height="267" ClassName="v_rail_longleft">
+					<Properties>
+						<Static>
+							<Matrix A="-824" B="0" C="0" D="267" Tx="824" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="V_rail_right">
+			<Content>
+				<Image X="0" Y="0" Width="395" Height="264" ClassName="v_rail_left">
+					<Properties>
+						<Static>
+							<Matrix A="-395" B="0" C="0" D="264" Tx="395" Ty="264"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="V_rail_upleft">
+			<Content>
+				<Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upleft"/>
+			</Content>
+		</Object>
+		<Object Name="V_rail_upright">
+			<Content>
+				<Image X="0" Y="0" Width="288" Height="142" ClassName="v_rail_upleft">
+					<Properties>
+						<Static>
+							<Matrix A="-288" B="0" C="0" D="142" Tx="288" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="V_screen">
+			<Content>
+				<Image X="0" Y="0" Width="391" Height="315" ClassName="v_screen"/>
+			</Content>
+		</Object>
+		<Object Name="V_table_screen">
+			<Content>
+				<Image X="0" Y="0" Width="456" Height="185" ClassName="v_table_screen"/>
+			</Content>
+		</Object>
+		<Object Name="V_table_screen_min">
+			<Content>
+				<Image X="0" Y="0" Width="457" Height="220" ClassName="v_table_screen_min"/>
+			</Content>
+		</Object>
+		<Object Name="V_table_simple">
+			<Content>
+				<Image X="0" Y="0" Width="417" Height="90" ClassName="v_table_simple"/>
+			</Content>
+		</Object>
+		<Object Name="V_venthole_1_1">
+			<Content>
+				<Image X="0" Y="0" Width="127" Height="173" ClassName="v_venthole_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="Ventilation_holes_roof">
+			<Content>
+				<Image X="0" Y="0" Width="643" Height="150" ClassName="ventilation_holes_roof"/>
+			</Content>
+		</Object>
+		<Object Name="Ventilation_passage">
+			<Content>
+				<Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_passage"/>
+			</Content>
+		</Object>
+		<Object Name="Ventilation_hole">
+			<Content>
+				<Image X="0" Y="0" Width="117" Height="103" ClassName="ventilation_hole"/>
+			</Content>
+		</Object>
+		<Object Name="Ventilation_enter">
+			<Content>
+				<Image X="0" Y="0" Width="100" Height="100" ClassName="ventilation_enter"/>
+			</Content>
+		</Object>
+		<Object Name="Volts">
+			<Content>
+				<Image X="0" Y="0" Width="120" Height="200" ClassName="volts"/>
+			</Content>
+		</Object>
+		<Object Name="Wall_left">
+			<Content>
+				<Image X="0" Y="0" Width="35" Height="330" ClassName="wall_right">
+					<Properties>
+						<Static>
+							<Matrix A="-35" B="0" C="0" D="330" Tx="35" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+			</Content>
+		</Object>
+		<Object Name="Wall_right">
+			<Content>
+				<Image X="0" Y="0" Width="35" Height="330" ClassName="wall_right"/>
+			</Content>
+		</Object>
+		<Object Name="Constantine_office_pattern1560x865">
+			<Content>
+				<Image X="0" Y="0" Width="1560" Height="865" ClassName="v_office_pattern"/>
+			</Content>
+		</Object>
+		<Object Name="Max_barrels">
+			<Content>
+				<Image X="71" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="141" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="0" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="214" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="287" Y="176" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="243" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="170" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="95" Y="88" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="210" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+				<Image X="135" Y="0" Width="74" Height="90" ClassName="v_barrel_1_1"/>
+			</Content>
+		</Object>
+		<Object Name="MaxBack_Wall">
+			<Content>
+				<Image X="0" Y="0" Width="2919" Height="1000" ClassName="office_blank"/>
+			</Content>
+		</Object>
+		<Object Name="MaxWall_Window">
+			<Content>
+				<Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
+				<Image X="1492" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+				<Image X="726" Y="0" Width="770" Height="401" ClassName="passage_gallery"/>
+			</Content>
+		</Object>
+		<Object Name="MaxWall_Window1">
+			<Content>
+				<Image X="0" Y="0" Width="729" Height="401" ClassName="passage_blank_long"/>
+				<Image X="1468" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+				<Image X="729" Y="0" Width="740" Height="401" ClassName="passage_blank_long"/>
+			</Content>
+		</Object>
+		<Object Name="Passage_blank_long4000x1050">
+			<Content>
+				<Image X="0" Y="0" Width="4000" Height="1050" ClassName="passage_blank_long"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerCS01DowntownMain">
+			<Content>
+				<Trigger Name="TriggerCS01DowntownMain" X="0" Y="0" Width="509" Height="300">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Time" Value="480"/>
+							<SetVariable Name="Start" Value="CS01DownTownMain"/>
+							<SetVariable Name="StartFrame" Value="20"/>
+							<SetVariable Name="ReversedStart" Value="0"/>
+							<SetVariable Name="End" Value=""/>
+							<SetVariable Name="ReversedEnd" Value="0"/>
+							<SetVariable Name="EndFrame" Value=""/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
 						<Loop>
-							<Events Template="FreqUsed.Enter" />
-							<Conditions Template="FreqUsed.TriggeredByPlayer" />
+							<Events Template="FreqUsed.Enter"/>
+							<Conditions Template="FreqUsed.TriggeredByPlayer"/>
 							<Actions>
-								<Control Switch="Off" Model="Player" />
-								<Camera Stop="1" />
-								<EndGame Result="Win" Model="_$Model" Frames="_Time" />
-								<ForceAnimation Name="_Start" Model="Player" Frame="_StartFrame" Reversed="_ReversedStart" />
-								<SetVariable Name="$AI" Value="1" />
+								<Control Switch="Off" Model="Player"/>
+								<Camera Stop="1"/>
+								<EndGame Result="Win" Model="_$Model" Frames="_Time"/>
+								<ForceAnimation Name="_Start" Model="Player" Frame="_StartFrame" Reversed="_ReversedStart"/>
+								<SetVariable Name="$AI" Value="1"/>
 							</Actions>
-						</Loop>  
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-    <Object Name="TriggerCS01DowntownSecond">
-      <Content>
-        <Trigger Name="TriggerCS01DowntownSecond" X="0" Y="0" Width="500" Height="300">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="0"/>
-              <SetVariable Name="$Node" Value="NPivot"/>
-              <SetVariable Name="AnimName" Value="CS01DownTownSecond"/>
-              <SetVariable Name="AnimFrame" Value="20"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="ModelAnimation"/>
-          </Content>
-        </Trigger>
-        <Model X="215" Y="-922" Type="1" ClassName="cs01_downtown_second"/>
-      </Content>
-    </Object>
-    <Object Name="TriggerCS01DowntownCtrlOut">
-      <Content>
-        <Trigger Name="TriggerCS01DowntownCtrlOut" Width="200" Height="300">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="$AI" Value="0"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="Control"/>
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-    <Object Name="TriggerCS01aDowntownCoil">
-      <Content>
-        <Trigger Name="TriggerCS01aDowntownCoil" X="0" Y="135" Width="500" Height="300">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="-1"/>
-              <SetVariable Name="$Node" Value="NPivot"/>
-              <SetVariable Name="AnimName" Value="CS01aDownTownCoil"/>
-              <SetVariable Name="AnimFrame" Value="1"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="ModelAnimation"/>
-          </Content>
-        </Trigger>
-        <Model X="270" Y="200" Type="1" ClassName="cs01a_downtown_coil"/>
-      </Content>
-    </Object>
-    <Object Name="ShortTableT_R">
-      <Content>
-        <Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101" NativeX="126" NativeY="101"/>
-        <Platform X="0" Y="0" Width="120" Height="90"/>
-        <Object Name="TriggerHighJump500" X="420" Y="-60"/>
-        <Object Name="TriggerSpeedVault" X="320" Y="-110"/>
-      </Content>
-    </Object>
-    <Object Name="TableT_R">
-      <Content>
-        <Image X="-9" Y="-5" ClassName="v_table_2" Width="320" Height="95" NativeX="320" NativeY="95"/>
-        <Platform X="0" Y="0" Width="300" Height="90"/>
-        <Object Name="TriggerHighJump500" X="500" Y="-60"/>
-        <Object Name="TriggerDivingKong" X="400" Y="-110"/>
-      </Content>
-    </Object>
-  </Objects>
+						</Loop>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerCS01DowntownSecond">
+			<Content>
+				<Trigger Name="TriggerCS01DowntownSecond" X="0" Y="0" Width="500" Height="300">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="NPivot"/>
+							<SetVariable Name="AnimName" Value="CS01DownTownSecond"/>
+							<SetVariable Name="AnimFrame" Value="20"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="ModelAnimation"/>
+					</Content>
+				</Trigger>
+				<Model X="215" Y="-922" Type="1" ClassName="cs01_downtown_second"/>
+			</Content>
+		</Object>
+		<Object Name="TriggerCS01DowntownCtrlOut">
+			<Content>
+				<Trigger Name="TriggerCS01DowntownCtrlOut" Width="200" Height="300">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="Control"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="TriggerCS01aDowntownCoil">
+			<Content>
+				<Trigger Name="TriggerCS01aDowntownCoil" X="0" Y="135" Width="500" Height="300">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="NPivot"/>
+							<SetVariable Name="AnimName" Value="CS01aDownTownCoil"/>
+							<SetVariable Name="AnimFrame" Value="1"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="ModelAnimation"/>
+					</Content>
+				</Trigger>
+				<Model X="270" Y="200" Type="1" ClassName="cs01a_downtown_coil"/>
+			</Content>
+		</Object>
+		<Object Name="ShortTableT_R">
+			<Content>
+				<Image X="-3" Y="-11" ClassName="v_table_1" Width="126" Height="101" NativeX="126" NativeY="101"/>
+				<Platform X="0" Y="0" Width="120" Height="90"/>
+				<Object Name="TriggerHighJump500" X="420" Y="-60"/>
+				<Object Name="TriggerSpeedVault" X="320" Y="-110"/>
+			</Content>
+		</Object>
+		<Object Name="TableT_R">
+			<Content>
+				<Image X="-9" Y="-5" ClassName="v_table_2" Width="320" Height="95" NativeX="320" NativeY="95"/>
+				<Platform X="0" Y="0" Width="300" Height="90"/>
+				<Object Name="TriggerHighJump500" X="500" Y="-60"/>
+				<Object Name="TriggerDivingKong" X="400" Y="-110"/>
+			</Content>
+		</Object>
+	</Objects>
 </Root>

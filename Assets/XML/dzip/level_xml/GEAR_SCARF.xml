@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Scarf-MacroNode194 Type="MacroNode"  X="-0.796812057495117"  Y="189.301986694336"  Z="22.553035736084"  Mass="0.310958623886108"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="NNeck"  ChildNode2="NHead"  LCC1="0.600000023841858"  LCC2="0.400000005960464" />
-    <Scarf-Node195 Type="Node"  X="-1.05670380592346"  Y="196.022399902344"  Z="9.14537620544434"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node196 Type="Node"  X="-2.57329916954041"  Y="189.871383666992"  Z="6.16666078567505"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node197 Type="Node"  X="0.635160267353058"  Y="202.179672241211"  Z="-4.42552852630615"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node198 Type="Node"  X="0.234872370958328"  Y="195.817611694336"  Z="-7.31767845153809"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node199 Type="Node"  X="0.274010717868805"  Y="208.40837097168"  Z="-18.0638046264648"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node200 Type="Node"  X="2.29645609855652"  Y="202.252578735352"  Z="-20.7119026184082"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node201 Type="Node"  X="0.349384635686874"  Y="214.362823486328"  Z="-31.8288078308105"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Scarf-Node202 Type="Node"  X="2.96962261199951"  Y="208.395172119141"  Z="-34.3811988830566"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-  </Nodes>
-  <Edges>
-    <Scarf-Edge203 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node195"  End2="Scarf-MacroNode194" />
-    <Scarf-Edge204 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node196"  End2="NNeck" />
-    <Scarf-Edge205 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node197"  End2="Scarf-Node195" />
-    <Scarf-Edge206 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node199"  End2="Scarf-Node197" />
-    <Scarf-Edge207 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node201"  End2="Scarf-Node199" />
-    <Scarf-Edge208 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node202"  End2="Scarf-Node200" />
-    <Scarf-Edge209 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node200"  End2="Scarf-Node198" />
-    <Scarf-Edge210 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node198"  End2="Scarf-Node196" />
-    <Scarf-Edge211 Type="Edge"  Length="7"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node202"  End2="Scarf-Node201" />
-    <Scarf-Edge212 Type="Edge"  Length="7"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node200"  End2="Scarf-Node199" />
-    <Scarf-Edge213 Type="Edge"  Length="7"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node198"  End2="Scarf-Node197" />
-    <Scarf-Edge214 Type="Edge"  Length="7"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node196"  End2="Scarf-Node195" />
-    <Scarf-Edge220 Type="Edge"  Length="16.5529460906982"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node195"  End2="NNeck" />
-    <Scarf-Edge221 Type="Edge"  Length="16.5529460906982"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node197"  End2="Scarf-Node196" />
-    <Scarf-Edge222 Type="Edge"  Length="16.5529460906982"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node199"  End2="Scarf-Node198" />
-    <Scarf-Edge223 Type="Edge"  Length="16.5529460906982"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Scarf-Node201"  End2="Scarf-Node200" />
-  </Edges>
-  <Figures>
-    <Scarf-Triangle-1 Type="Triangle"  Shading="0"  Node1="Scarf-Node196"  Node2="Scarf-Node195"  Node3="NNeck" />
-    <Scarf-Triangle-2 Type="Triangle"  Shading="0"  Node1="Scarf-Node195"  Node2="NNeck"  Node3="Scarf-MacroNode194" />
-    <Scarf-Triangle-4 Type="Triangle"  Shading="0"  Node1="Scarf-Node197"  Node2="Scarf-Node196"  Node3="Scarf-Node195" />
-    <Scarf-Triangle-3 Type="Triangle"  Shading="0"  Node1="Scarf-Node198"  Node2="Scarf-Node197"  Node3="Scarf-Node196" />
-    <Scarf-Triangle-6 Type="Triangle"  Shading="0"  Node1="Scarf-Node199"  Node2="Scarf-Node198"  Node3="Scarf-Node197" />
-    <Scarf-Triangle-5 Type="Triangle"  Shading="0"  Node1="Scarf-Node200"  Node2="Scarf-Node199"  Node3="Scarf-Node198" />
-    <Scarf-Triangle-8 Type="Triangle"  Shading="0"  Node1="Scarf-Node201"  Node2="Scarf-Node200"  Node3="Scarf-Node199" />
-    <Scarf-Triangle-7 Type="Triangle"  Shading="0"  Node1="Scarf-Node202"  Node2="Scarf-Node201"  Node3="Scarf-Node200" />
-  </Figures>
+	<Nodes>
+		<Scarf-MacroNode194 Type="MacroNode" X="-0.796812057495117" Y="189.301986694336" Z="22.553035736084" Mass="0.310958623886108" Fixed="0" Visible="1" NodesCount="2" ChildNode1="NNeck" ChildNode2="NHead" LCC1="0.600000023841858" LCC2="0.400000005960464"/>
+		<Scarf-Node195 Type="Node" X="-1.05670380592346" Y="196.022399902344" Z="9.14537620544434" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node196 Type="Node" X="-2.57329916954041" Y="189.871383666992" Z="6.16666078567505" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node197 Type="Node" X="0.635160267353058" Y="202.179672241211" Z="-4.42552852630615" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node198 Type="Node" X="0.234872370958328" Y="195.817611694336" Z="-7.31767845153809" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node199 Type="Node" X="0.274010717868805" Y="208.40837097168" Z="-18.0638046264648" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node200 Type="Node" X="2.29645609855652" Y="202.252578735352" Z="-20.7119026184082" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node201 Type="Node" X="0.349384635686874" Y="214.362823486328" Z="-31.8288078308105" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Scarf-Node202 Type="Node" X="2.96962261199951" Y="208.395172119141" Z="-34.3811988830566" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+	</Nodes>
+	<Edges>
+		<Scarf-Edge203 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node195" End2="Scarf-MacroNode194"/>
+		<Scarf-Edge204 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node196" End2="NNeck"/>
+		<Scarf-Edge205 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node197" End2="Scarf-Node195"/>
+		<Scarf-Edge206 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node199" End2="Scarf-Node197"/>
+		<Scarf-Edge207 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node201" End2="Scarf-Node199"/>
+		<Scarf-Edge208 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node202" End2="Scarf-Node200"/>
+		<Scarf-Edge209 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node200" End2="Scarf-Node198"/>
+		<Scarf-Edge210 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node198" End2="Scarf-Node196"/>
+		<Scarf-Edge211 Type="Edge" Length="7" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node202" End2="Scarf-Node201"/>
+		<Scarf-Edge212 Type="Edge" Length="7" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node200" End2="Scarf-Node199"/>
+		<Scarf-Edge213 Type="Edge" Length="7" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node198" End2="Scarf-Node197"/>
+		<Scarf-Edge214 Type="Edge" Length="7" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node196" End2="Scarf-Node195"/>
+		<Scarf-Edge220 Type="Edge" Length="16.5529460906982" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node195" End2="NNeck"/>
+		<Scarf-Edge221 Type="Edge" Length="16.5529460906982" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node197" End2="Scarf-Node196"/>
+		<Scarf-Edge222 Type="Edge" Length="16.5529460906982" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node199" End2="Scarf-Node198"/>
+		<Scarf-Edge223 Type="Edge" Length="16.5529460906982" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Scarf-Node201" End2="Scarf-Node200"/>
+	</Edges>
+	<Figures>
+		<Scarf-Triangle-1 Type="Triangle" Shading="0" Node1="Scarf-Node196" Node2="Scarf-Node195" Node3="NNeck"/>
+		<Scarf-Triangle-2 Type="Triangle" Shading="0" Node1="Scarf-Node195" Node2="NNeck" Node3="Scarf-MacroNode194"/>
+		<Scarf-Triangle-4 Type="Triangle" Shading="0" Node1="Scarf-Node197" Node2="Scarf-Node196" Node3="Scarf-Node195"/>
+		<Scarf-Triangle-3 Type="Triangle" Shading="0" Node1="Scarf-Node198" Node2="Scarf-Node197" Node3="Scarf-Node196"/>
+		<Scarf-Triangle-6 Type="Triangle" Shading="0" Node1="Scarf-Node199" Node2="Scarf-Node198" Node3="Scarf-Node197"/>
+		<Scarf-Triangle-5 Type="Triangle" Shading="0" Node1="Scarf-Node200" Node2="Scarf-Node199" Node3="Scarf-Node198"/>
+		<Scarf-Triangle-8 Type="Triangle" Shading="0" Node1="Scarf-Node201" Node2="Scarf-Node200" Node3="Scarf-Node199"/>
+		<Scarf-Triangle-7 Type="Triangle" Shading="0" Node1="Scarf-Node202" Node2="Scarf-Node201" Node3="Scarf-Node200"/>
+	</Figures>
 </Scene>

@@ -1,285 +1,285 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <Library FileName="common.swf"/>
-    <Library FileName="construction.swf"/>
-  </Sets>
-  <Objects>
-    <Object Name="Air_platform_01">
-      <Content>
-        <Image X="91" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="169" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="245" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="319" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="396" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="474" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="17" Y="-503" ClassName="v_black" Type="3" Width="3" Height="1201"/>
-        <Image X="276" Y="-708" ClassName="v_object_02" Width="99" Height="96"/>
-        <Image X="309" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="373" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="180" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="244" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="946" Y="-509" ClassName="v_black" Type="3" Width="3" Height="1214"/>
-        <Image X="16" Y="767" ClassName="v_black" Type="3" Width="934" Height="108"/>
-        <Image X="20" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="53" Y="671" ClassName="v_booth_2_02" Width="65" Height="27"/>
-        <Image X="115" Y="673" ClassName="v_booth_2_04" Width="42" Height="25"/>
-        <Image X="156" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
-        <Image X="193" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="234" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="295" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="335" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="396" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
-        <Image X="438" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
-        <Image X="475" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="516" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="604" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
-        <Image X="571" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="551" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="14" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="7" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="309" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="927" Y="-550" ClassName="gas_vertical" Width="30" Height="67"/>
-        <Image X="0" Y="-550" ClassName="gas_vertical" Width="30" Height="64"/>
-        <Image X="6" Y="-468" ClassName="v_black" Type="3" Width="947" Height="20"/>
-        <Image X="610" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="609" Y="-708" ClassName="v_object_02" Width="99" Height="96"/>
-        <Image X="642" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="706" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="513" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="577" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="626" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="703" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="781" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="642" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="703" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
-        <Image X="745" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
-        <Image X="782" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="823" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="903" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
-        <Image X="878" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="858" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Platform X="8" Y="673" Width="936" Height="200" Name="platform"/>
-      </Content>
-    </Object>
-    <Object Name="Air_platform_02">
-      <Content>
-        <Image X="83" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="161" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="237" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="311" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="388" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="466" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="9" Y="-440" ClassName="v_black" Type="3" Width="3" Height="1114"/>
-        <Image X="276" Y="-645" ClassName="v_object_02" Width="99" Height="96"/>
-        <Image X="309" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="373" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="180" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="244" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="632" Y="-443" ClassName="v_black" Type="3" Width="3" Height="1121"/>
-        <Image X="10" Y="767" ClassName="v_black" Type="3" Width="621" Height="108"/>
-        <Image X="5" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="45" Y="671" ClassName="v_booth_2_02" Width="65" Height="27"/>
-        <Image X="107" Y="673" ClassName="v_booth_2_04" Width="42" Height="25"/>
-        <Image X="148" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
-        <Image X="185" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="226" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="287" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="327" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="388" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
-        <Image X="430" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
-        <Image X="467" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="508" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
-        <Image X="596" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
-        <Image X="563" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
-        <Image X="543" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="6" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
-        <Image X="7" Y="-519" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="309" Y="-519" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="619" Y="-487" ClassName="gas_vertical" Width="30" Height="67"/>
-        <Image X="0" Y="-487" ClassName="gas_vertical" Width="30" Height="64"/>
-        <Image X="6" Y="-405" ClassName="v_black" Type="3" Width="642" Height="20"/>
-        <Platform X="8" Y="673" Width="625" Height="200" Name="platform"/>
-      </Content>
-    </Object>
-    <Object Name="Air_platform_upholder">
-      <Content>
-        <Image X="127" Y="-14" ClassName="v_object_02" Width="119" Height="115"/>
-        <Image X="160" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="224" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="31" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="95" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
-        <Image X="3" Y="130" ClassName="v_crane_1_02" Width="341" Height="241"/>
-        <Image X="317" Y="170" ClassName="gas_vertical" Width="30" Height="90"/>
-        <Image X="0" Y="171" ClassName="gas_vertical" Width="30" Height="90"/>
-        <Image X="118" Y="223" ClassName="generator" Width="117" Height="65"/>
-      </Content>
-    </Object>
-    <Object Name="WaterTower_2">
-      <Content>
-        <Image X="-30" Y="-6" ClassName="cons_tower2" Width="263" Height="512"/>
-        <Platform X="0" Y="0" Width="200" Height="375" Name="platform"/>
-        <Object Name="TriggerCrawlingStart" X="-100" Y="375"/>
-        <Object Name="TriggerCrawlingMiddle" X="-50" Y="375"/>
-        <Object Name="TriggerCrawlingFinish" X="200" Y="375"/>
-      </Content>
-    </Object>
-    <Object Name="WaterTower_3">
-      <Content>
-        <Image X="-5" Y="-1" ClassName="cons_tower" Width="225" Height="510"/>
-        <Platform X="0" Y="0" Width="216" Height="360" Name="platform"/>
-        <Object Name="TriggerCrawlingFinish" X="217" Y="360"/>
-        <Object Name="TriggerCrawlingStart" X="-83" Y="360"/>
-        <Object Name="TriggerCrawlingMiddle" X="-33" Y="360"/>
-      </Content>
-    </Object>
-    <Object Name="Cons_exc_downhill">
-      <Content>
-        <Image X="-28" Y="-10" ClassName="cons_ex_right" Width="1218" Height="569">
-          <Properties>
-            <Static>
-              <Matrix A="-1218" B="0" C="0" D="569" Tx="1218" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-        <Platform X="0" Y="0" Width="480" Height="560" Name="platform"/>
-        <Trapezoid X="480" Y="1" Width="450" Type="2" Name="trapezoid" Height1="15" Height="240"/>
-        <Platform X="480" Y="195" Width="700" Height="365" Name="platform"/>
-      </Content>
-    </Object>
-    <Object Name="Cons_exc_uphill">
-      <Content>
-        <Image X="-15" Y="-9" ClassName="cons_ex_right" Width="1218" Height="569"/>
-        <Platform X="700" Y="0" Width="480" Height="560" Name="platform"/>
-        <Trapezoid X="250" Y="225" Width="456" Type="1" Name="trapezoid" Height="12" Height1="240"/>
-        <Platform X="0" Y="195" Width="700" Height="365" Name="platform"/>
-      </Content>
-    </Object>
-    <Object Name="CSSpawn139">
-      <Content>
-        <Spawn X="0" Y="0" Name="RevolutionGirlSpawn" Animation="CSYardCS02GirlPart1|30"/>
-        <Trigger Name="CutStart" X="2620" Y="-735" Width="200" Height="836">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="Spawn" Value="RevolutionGirlSpawn"/>
-              <SetVariable Name="SpawnModel" Value="RevolutionGirl"/>
-              <SetVariable Name="Frames" Value="90"/>
-              <SetVariable Name="$AI" Value="0"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="Respawn"/>
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-    <Object Name="ElevatorCS139">
-      <Properties>
-        <Dynamic>
-          <Transformation Name="Transform_idp600098944">
-            <Move>
-              <MoveInterval Number="1" FramesToMove="100" Delay="0">
-                <Point Name="Start" X="0.0" Y="0.0"/>
-                <Point Name="Support" Number="1" X="0.0" Y="-200.0"/>
-                <Point Name="Finish" X="0.0" Y="-400.0"/>
-              </MoveInterval>
-            </Move>
-          </Transformation>
-        </Dynamic>
-      </Properties>
-      <Content>
-        <Trigger Name="LiftHimUp" X="-10" Y="944" Width="195" Height="135">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="-1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Loop>
-              <Events>
-                <EventBlock Template="FreqUsed.Enter"/>
-              </Events>
-              <Actions>
-                <ActionBlock Template="FreqUsed.SwitchOff"/>
-                <Transform Name="Transform_idp600098944"/>
-              </Actions>
-            </Loop>
-          </Content>
-        </Trigger>
-        <Trigger Name="DontLetHimGo" X="220" Y="1120" Width="95" Height="210">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="AnimName" Value="CornerClingLow"/>
-              <SetVariable Name="AnimFrame" Value="3"/>
-              <SetVariable Name="Reversed" Value="0"/>
-              <SetVariable Name="DelayedAnimName" Value="WallRunFail"/>
-              <SetVariable Name="DelayedAnimFrame" Value="38"/>
-              <SetVariable Name="DelayedReversed" Value="0"/>
-              <SetVariable Name="ActivatorToCheck" Value="DontLetHimGo"/>
-              <SetVariable Name="Mode" Value="0"/>
-              <SetVariable Name="NewModel" Value="None"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="ForcedVariableAnimation"/>
-          </Content>
-        </Trigger>
-        <Platform X="220" Y="1190" Width="30" Height="145"/>
-        <Trigger Name="JustFall" X="-5" Y="1015" Width="225" Height="75">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="0"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="AnimName" Value=""/>
-              <SetVariable Name="AnimFrame" Value=""/>
-              <SetVariable Name="Reversed" Value="0"/>
-              <SetVariable Name="Activator" Value="DontLetHimGo"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Loop Template="ForcedAnimation.Only"/>
-            <Loop>
-              <Events Template="FreqUsed.EnterOrExit"/>
-              <Actions Template="FreqUsed.DispatchEvent"/>
-            </Loop>
-          </Content>
-        </Trigger>
-        <Trigger Name="TriggerJump" X="505" Y="1060" Width="100" Height="250">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="Key" Value="Up"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="AI_noFollow"/>
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-    <Object Name="BotCS139">
-      <Content>
-        <Spawn X="1640" Y="-165" Name="Respawn" Animation="JumpOff|18|1"/>
-        <Trigger Name="TriggerRespawn" X="0" Y="-500" Width="150" Height="500">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="Spawn" Value="Respawn"/>
-              <SetVariable Name="Frames" Value="42"/>
-              <SetVariable Name="SpawnModel" Value="Hunter"/>
-              <SetVariable Name="$AI" Value="0"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="Respawn_OnScreen"/>
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-  </Objects>
+	<Sets>
+		<Library FileName="common.swf"/>
+		<Library FileName="construction.swf"/>
+	</Sets>
+	<Objects>
+		<Object Name="Air_platform_01">
+			<Content>
+				<Image X="91" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="169" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="245" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="319" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="396" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="474" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="17" Y="-503" ClassName="v_black" Type="3" Width="3" Height="1201"/>
+				<Image X="276" Y="-708" ClassName="v_object_02" Width="99" Height="96"/>
+				<Image X="309" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="373" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="180" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="244" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="946" Y="-509" ClassName="v_black" Type="3" Width="3" Height="1214"/>
+				<Image X="16" Y="767" ClassName="v_black" Type="3" Width="934" Height="108"/>
+				<Image X="20" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="53" Y="671" ClassName="v_booth_2_02" Width="65" Height="27"/>
+				<Image X="115" Y="673" ClassName="v_booth_2_04" Width="42" Height="25"/>
+				<Image X="156" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
+				<Image X="193" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="234" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="295" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="335" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="396" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
+				<Image X="438" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
+				<Image X="475" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="516" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="604" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
+				<Image X="571" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="551" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="14" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="7" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="309" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="927" Y="-550" ClassName="gas_vertical" Width="30" Height="67"/>
+				<Image X="0" Y="-550" ClassName="gas_vertical" Width="30" Height="64"/>
+				<Image X="6" Y="-468" ClassName="v_black" Type="3" Width="947" Height="20"/>
+				<Image X="610" Y="-582" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="609" Y="-708" ClassName="v_object_02" Width="99" Height="96"/>
+				<Image X="642" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="706" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="513" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="577" Y="-619" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="626" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="703" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="781" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="642" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="703" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
+				<Image X="745" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
+				<Image X="782" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="823" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="903" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
+				<Image X="878" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="858" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Platform X="8" Y="673" Width="936" Height="200" Name="platform"/>
+			</Content>
+		</Object>
+		<Object Name="Air_platform_02">
+			<Content>
+				<Image X="83" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="161" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="237" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="311" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="388" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="466" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="9" Y="-440" ClassName="v_black" Type="3" Width="3" Height="1114"/>
+				<Image X="276" Y="-645" ClassName="v_object_02" Width="99" Height="96"/>
+				<Image X="309" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="373" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="180" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="244" Y="-556" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="632" Y="-443" ClassName="v_black" Type="3" Width="3" Height="1121"/>
+				<Image X="10" Y="767" ClassName="v_black" Type="3" Width="621" Height="108"/>
+				<Image X="5" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="45" Y="671" ClassName="v_booth_2_02" Width="65" Height="27"/>
+				<Image X="107" Y="673" ClassName="v_booth_2_04" Width="42" Height="25"/>
+				<Image X="148" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
+				<Image X="185" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="226" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="287" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="327" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="388" Y="673" ClassName="v_booth_2_04" Width="43" Height="25"/>
+				<Image X="430" Y="673" ClassName="v_booth_2_06" Width="42" Height="25"/>
+				<Image X="467" Y="671" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="508" Y="671" ClassName="v_booth_2_02" Width="64" Height="27"/>
+				<Image X="596" Y="670" ClassName="v_booth_2_03" Width="42" Height="27"/>
+				<Image X="563" Y="670" ClassName="v_booth_2_01" Width="42" Height="27"/>
+				<Image X="543" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="6" Y="679" ClassName="v_object_01" Width="93" Height="95"/>
+				<Image X="7" Y="-519" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="309" Y="-519" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="619" Y="-487" ClassName="gas_vertical" Width="30" Height="67"/>
+				<Image X="0" Y="-487" ClassName="gas_vertical" Width="30" Height="64"/>
+				<Image X="6" Y="-405" ClassName="v_black" Type="3" Width="642" Height="20"/>
+				<Platform X="8" Y="673" Width="625" Height="200" Name="platform"/>
+			</Content>
+		</Object>
+		<Object Name="Air_platform_upholder">
+			<Content>
+				<Image X="127" Y="-14" ClassName="v_object_02" Width="119" Height="115"/>
+				<Image X="160" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="224" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="31" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="95" Y="89" ClassName="v_Pipe_3" Width="91" Height="77"/>
+				<Image X="3" Y="130" ClassName="v_crane_1_02" Width="341" Height="241"/>
+				<Image X="317" Y="170" ClassName="gas_vertical" Width="30" Height="90"/>
+				<Image X="0" Y="171" ClassName="gas_vertical" Width="30" Height="90"/>
+				<Image X="118" Y="223" ClassName="generator" Width="117" Height="65"/>
+			</Content>
+		</Object>
+		<Object Name="WaterTower_2">
+			<Content>
+				<Image X="-30" Y="-6" ClassName="cons_tower2" Width="263" Height="512"/>
+				<Platform X="0" Y="0" Width="200" Height="375" Name="platform"/>
+				<Object Name="TriggerCrawlingStart" X="-100" Y="375"/>
+				<Object Name="TriggerCrawlingMiddle" X="-50" Y="375"/>
+				<Object Name="TriggerCrawlingFinish" X="200" Y="375"/>
+			</Content>
+		</Object>
+		<Object Name="WaterTower_3">
+			<Content>
+				<Image X="-5" Y="-1" ClassName="cons_tower" Width="225" Height="510"/>
+				<Platform X="0" Y="0" Width="216" Height="360" Name="platform"/>
+				<Object Name="TriggerCrawlingFinish" X="217" Y="360"/>
+				<Object Name="TriggerCrawlingStart" X="-83" Y="360"/>
+				<Object Name="TriggerCrawlingMiddle" X="-33" Y="360"/>
+			</Content>
+		</Object>
+		<Object Name="Cons_exc_downhill">
+			<Content>
+				<Image X="-28" Y="-10" ClassName="cons_ex_right" Width="1218" Height="569">
+					<Properties>
+						<Static>
+							<Matrix A="-1218" B="0" C="0" D="569" Tx="1218" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Platform X="0" Y="0" Width="480" Height="560" Name="platform"/>
+				<Trapezoid X="480" Y="1" Width="450" Type="2" Name="trapezoid" Height1="15" Height="240"/>
+				<Platform X="480" Y="195" Width="700" Height="365" Name="platform"/>
+			</Content>
+		</Object>
+		<Object Name="Cons_exc_uphill">
+			<Content>
+				<Image X="-15" Y="-9" ClassName="cons_ex_right" Width="1218" Height="569"/>
+				<Platform X="700" Y="0" Width="480" Height="560" Name="platform"/>
+				<Trapezoid X="250" Y="225" Width="456" Type="1" Name="trapezoid" Height="12" Height1="240"/>
+				<Platform X="0" Y="195" Width="700" Height="365" Name="platform"/>
+			</Content>
+		</Object>
+		<Object Name="CSSpawn139">
+			<Content>
+				<Spawn X="0" Y="0" Name="RevolutionGirlSpawn" Animation="CSYardCS02GirlPart1|30"/>
+				<Trigger Name="CutStart" X="2620" Y="-735" Width="200" Height="836">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Spawn" Value="RevolutionGirlSpawn"/>
+							<SetVariable Name="SpawnModel" Value="RevolutionGirl"/>
+							<SetVariable Name="Frames" Value="90"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="Respawn"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="ElevatorCS139">
+			<Properties>
+				<Dynamic>
+					<Transformation Name="Transform_idp600098944">
+						<Move>
+							<MoveInterval Number="1" FramesToMove="100" Delay="0">
+								<Point Name="Start" X="0.0" Y="0.0"/>
+								<Point Name="Support" Number="1" X="0.0" Y="-200.0"/>
+								<Point Name="Finish" X="0.0" Y="-400.0"/>
+							</MoveInterval>
+						</Move>
+					</Transformation>
+				</Dynamic>
+			</Properties>
+			<Content>
+				<Trigger Name="LiftHimUp" X="-10" Y="944" Width="195" Height="135">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="-1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop>
+							<Events>
+								<EventBlock Template="FreqUsed.Enter"/>
+							</Events>
+							<Actions>
+								<ActionBlock Template="FreqUsed.SwitchOff"/>
+								<Transform Name="Transform_idp600098944"/>
+							</Actions>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Trigger Name="DontLetHimGo" X="220" Y="1120" Width="95" Height="210">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="AnimName" Value="CornerClingLow"/>
+							<SetVariable Name="AnimFrame" Value="3"/>
+							<SetVariable Name="Reversed" Value="0"/>
+							<SetVariable Name="DelayedAnimName" Value="WallRunFail"/>
+							<SetVariable Name="DelayedAnimFrame" Value="38"/>
+							<SetVariable Name="DelayedReversed" Value="0"/>
+							<SetVariable Name="ActivatorToCheck" Value="DontLetHimGo"/>
+							<SetVariable Name="Mode" Value="0"/>
+							<SetVariable Name="NewModel" Value="None"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="ForcedVariableAnimation"/>
+					</Content>
+				</Trigger>
+				<Platform X="220" Y="1190" Width="30" Height="145"/>
+				<Trigger Name="JustFall" X="-5" Y="1015" Width="225" Height="75">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="AnimName" Value=""/>
+							<SetVariable Name="AnimFrame" Value=""/>
+							<SetVariable Name="Reversed" Value="0"/>
+							<SetVariable Name="Activator" Value="DontLetHimGo"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Loop Template="ForcedAnimation.Only"/>
+						<Loop>
+							<Events Template="FreqUsed.EnterOrExit"/>
+							<Actions Template="FreqUsed.DispatchEvent"/>
+						</Loop>
+					</Content>
+				</Trigger>
+				<Trigger Name="TriggerJump" X="505" Y="1060" Width="100" Height="250">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Up"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="BotCS139">
+			<Content>
+				<Spawn X="1640" Y="-165" Name="Respawn" Animation="JumpOff|18|1"/>
+				<Trigger Name="TriggerRespawn" X="0" Y="-500" Width="150" Height="500">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Spawn" Value="Respawn"/>
+							<SetVariable Name="Frames" Value="42"/>
+							<SetVariable Name="SpawnModel" Value="Hunter"/>
+							<SetVariable Name="$AI" Value="0"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="Respawn_OnScreen"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+	</Objects>
 </Root>

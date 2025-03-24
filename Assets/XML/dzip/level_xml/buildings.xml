@@ -1,151 +1,151 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <Ground FileName="objects.xml"/>
-  </Sets>
-  <Objects>
-    <Object Name="Crane" InX="0" InY="0" OutX="4000" OutY="0" BoxX="0" BoxY="-205" BoxWidth="4010" BoxHeight="405">
-      <Content>
-        <Object Name="CraneObject" X="0" Y="0"/>
-        <Object Name="TriggerSpeedUp" X="1430" Y="-200"/>
-        <Object Name="TriggerCatch" X="1330" Y="-150"/>
-        <Object Name="TriggerJump" X="620" Y="-200"/>
-        <Object Name="RunIndicator" X="1480" Y="-180"/>
-        <Image X="658" Y="825" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
-          <Properties>
-            <Static>
-              <Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-        <Image X="658" Y="1788" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
-          <Properties>
-            <Static>
-              <Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-        <Image X="658" Y="2746" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
-          <Properties>
-            <Static>
-              <Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
-            </Static>
-          </Properties>
-        </Image>
-        <Area Name="TriggerRunFast" X="1125" Y="-155" Width="2885" Height="150" Type="Animation"/>
-        <Trigger Name="TriggerSpeedUp" X="1750" Y="-205" Width="100" Height="200">
-          <Content>
-            <Init>
-              <SetVariable Name="$Active" Value="1"/>
-              <SetVariable Name="$AI" Value="5"/>
-              <SetVariable Name="$Node" Value="COM"/>
-              <SetVariable Name="Key" Value="Right"/>
-            	<SetVariable Name="Flag1" Value="0"/>
-            </Init>
-            <Template Name="AI_noFollow"/>
-          </Content>
-        </Trigger>
-      </Content>
-    </Object>
-    <Object Name="Crane_cons" InX="0" InY="0" OutX="4000" OutY="0">
-      <Content>
-        <Object Name="TriggerSpeedUp" X="1430" Y="-200"/>
-        <Object Name="TriggerCatch" X="1330" Y="-150"/>
-        <Object Name="TriggerJump" X="620" Y="-200"/>
-        <Object Name="RunIndicator" X="1480" Y="-180"/>
-        <Object Name="TriggerDivingKong" X="620" Y="-200"/>
-        <Image X="1379" Y="-135" ClassName="v_crane_1_02" Width="1364" Height="964" NativeX="681" NativeY="482"/>
-        <Image X="2743" Y="-135" ClassName="v_crane_1_03" Width="1336" Height="964" NativeX="667" NativeY="482"/>
-        <Image X="-3" Y="-135" ClassName="v_crane_2_01" Width="1386" Height="964" NativeX="693" NativeY="482"/>
-        <Image X="663" Y="829" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
-        <Image X="663" Y="1792" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
-        <Image X="663" Y="2750" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
-        <Object Name="TriggerHighJump500" X="120" Y="-150"/>
-        <Area Name="TriggerRunFast" X="1125" Y="-155" Width="2885" Height="150" Type="Animation"/>
-        <Platform X="0" Y="0" Width="4000" Height="200"/>
-        <Platform X="820" Y="-90" Width="300" Height="90"/>
-      </Content>
-    </Object>
-    <Object Name="MoveTest01" InX="0" InY="0" OutX="4000" OutY="0" BoxX="0" BoxY="-1195" BoxWidth="5800" BoxHeight="1495">
-      <Content>
-        <Image X="0" Y="0" ClassName="v_black" Width="5800" Height="300" NativeX="50" NativeY="50"/>
-        <Image X="3500" Y="-1000" ClassName="v_black" Width="500" Height="1000" NativeX="50" NativeY="50"/>
-        <Object Name="MoveTestLift" X="2100" Y="0"/>
-        <Platform X="0" Y="0" Width="5800" Height="300"/>
-        <Platform X="3500" Y="-1000" Width="500" Height="1000"/>
-        <Object X="0" Y="0">
-          <Properties>
-            <Dynamic>
-              <Transformation Name="Transform_idp346707536">
-                <Move>
-                  <MoveInterval Number="1" FramesToMove="10" Delay="5.0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="40.0"/>
-                    <Point Name="Finish" X="0.0" Y="40.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="2" FramesToMove="10" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                    <Point Name="Finish" X="0.0" Y="-40.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="3" FramesToMove="5" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
-                    <Point Name="Finish" X="0.0" Y="-10.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="4" FramesToMove="8" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                    <Point Name="Finish" X="0.0" Y="8.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="5" FramesToMove="4" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="2.0"/>
-                    <Point Name="Finish" X="0.0" Y="2.0"/>
-                  </MoveInterval>
-                </Move>
-              </Transformation>
-            </Dynamic>
-          </Properties>
-          <Content>
-            <Image Type="3" Depth="0" X="4240" Y="-935" ClassName="long_generator" Width="370" Height="100" NativeX="370" NativeY="100"/>
-            <Image Type="3" Depth="0" X="4245" Y="-995" ClassName="v_black" Width="359" Height="141" NativeX="50" NativeY="50"/>
-            <Image Type="3" Depth="0" X="4240" Y="-995" ClassName="long_generator" Width="370" Height="100" NativeX="370" NativeY="100"/>
-            <Platform X="4235" Y="-990" Width="370" Height="160"/>
-            <Trigger Name="" X="4200" Y="-995" Width="410" Height="165">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                  <SetVariable Name="$Node" Value="DetectorH"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Loop>
-                  <Events>
-                    <EventBlock Template="FreqUsed.Enter"/>
-                  </Events>
-                  <Actions>
-                    <ActionBlock Template="FreqUsed.SwitchOff"/>
-                    <Transform Name="Transform_idp346707536"/>
-                  </Actions>
-                </Loop>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerJump" X="4510" Y="-1195" Width="100" Height="200">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Key" Value="Up"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="AI_noFollow"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Objects>
+	<Sets>
+		<Ground FileName="objects.xml"/>
+	</Sets>
+	<Objects>
+		<Object Name="Crane" InX="0" InY="0" OutX="4000" OutY="0" BoxX="0" BoxY="-205" BoxWidth="4010" BoxHeight="405">
+			<Content>
+				<Object Name="CraneObject" X="0" Y="0"/>
+				<Object Name="TriggerSpeedUp" X="1430" Y="-200"/>
+				<Object Name="TriggerCatch" X="1330" Y="-150"/>
+				<Object Name="TriggerJump" X="620" Y="-200"/>
+				<Object Name="RunIndicator" X="1480" Y="-180"/>
+				<Image X="658" Y="825" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
+					<Properties>
+						<Static>
+							<Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image X="658" Y="1788" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
+					<Properties>
+						<Static>
+							<Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Image X="658" Y="2746" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482">
+					<Properties>
+						<Static>
+							<Matrix A="412" B="0" C="0" D="964" Tx="0" Ty="0"/>
+						</Static>
+					</Properties>
+				</Image>
+				<Area Name="TriggerRunFast" X="1125" Y="-155" Width="2885" Height="150" Type="Animation"/>
+				<Trigger Name="TriggerSpeedUp" X="1750" Y="-205" Width="100" Height="200">
+					<Content>
+						<Init>
+							<SetVariable Name="$Active" Value="1"/>
+							<SetVariable Name="$AI" Value="5"/>
+							<SetVariable Name="$Node" Value="COM"/>
+							<SetVariable Name="Key" Value="Right"/>
+							<SetVariable Name="Flag1" Value="0"/>
+						</Init>
+						<Template Name="AI_noFollow"/>
+					</Content>
+				</Trigger>
+			</Content>
+		</Object>
+		<Object Name="Crane_cons" InX="0" InY="0" OutX="4000" OutY="0">
+			<Content>
+				<Object Name="TriggerSpeedUp" X="1430" Y="-200"/>
+				<Object Name="TriggerCatch" X="1330" Y="-150"/>
+				<Object Name="TriggerJump" X="620" Y="-200"/>
+				<Object Name="RunIndicator" X="1480" Y="-180"/>
+				<Object Name="TriggerDivingKong" X="620" Y="-200"/>
+				<Image X="1379" Y="-135" ClassName="v_crane_1_02" Width="1364" Height="964" NativeX="681" NativeY="482"/>
+				<Image X="2743" Y="-135" ClassName="v_crane_1_03" Width="1336" Height="964" NativeX="667" NativeY="482"/>
+				<Image X="-3" Y="-135" ClassName="v_crane_2_01" Width="1386" Height="964" NativeX="693" NativeY="482"/>
+				<Image X="663" Y="829" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
+				<Image X="663" Y="1792" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
+				<Image X="663" Y="2750" ClassName="v_crane_tile" Width="412" Height="964" NativeX="206" NativeY="482"/>
+				<Object Name="TriggerHighJump500" X="120" Y="-150"/>
+				<Area Name="TriggerRunFast" X="1125" Y="-155" Width="2885" Height="150" Type="Animation"/>
+				<Platform X="0" Y="0" Width="4000" Height="200"/>
+				<Platform X="820" Y="-90" Width="300" Height="90"/>
+			</Content>
+		</Object>
+		<Object Name="MoveTest01" InX="0" InY="0" OutX="4000" OutY="0" BoxX="0" BoxY="-1195" BoxWidth="5800" BoxHeight="1495">
+			<Content>
+				<Image X="0" Y="0" ClassName="v_black" Width="5800" Height="300" NativeX="50" NativeY="50"/>
+				<Image X="3500" Y="-1000" ClassName="v_black" Width="500" Height="1000" NativeX="50" NativeY="50"/>
+				<Object Name="MoveTestLift" X="2100" Y="0"/>
+				<Platform X="0" Y="0" Width="5800" Height="300"/>
+				<Platform X="3500" Y="-1000" Width="500" Height="1000"/>
+				<Object X="0" Y="0">
+					<Properties>
+						<Dynamic>
+							<Transformation Name="Transform_idp346707536">
+								<Move>
+									<MoveInterval Number="1" FramesToMove="10" Delay="5.0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="40.0"/>
+										<Point Name="Finish" X="0.0" Y="40.0"/>
+									</MoveInterval>
+									<MoveInterval Number="2" FramesToMove="10" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+										<Point Name="Finish" X="0.0" Y="-40.0"/>
+									</MoveInterval>
+									<MoveInterval Number="3" FramesToMove="5" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
+										<Point Name="Finish" X="0.0" Y="-10.0"/>
+									</MoveInterval>
+									<MoveInterval Number="4" FramesToMove="8" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+										<Point Name="Finish" X="0.0" Y="8.0"/>
+									</MoveInterval>
+									<MoveInterval Number="5" FramesToMove="4" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="2.0"/>
+										<Point Name="Finish" X="0.0" Y="2.0"/>
+									</MoveInterval>
+								</Move>
+							</Transformation>
+						</Dynamic>
+					</Properties>
+					<Content>
+						<Image Type="3" Depth="0" X="4240" Y="-935" ClassName="long_generator" Width="370" Height="100" NativeX="370" NativeY="100"/>
+						<Image Type="3" Depth="0" X="4245" Y="-995" ClassName="v_black" Width="359" Height="141" NativeX="50" NativeY="50"/>
+						<Image Type="3" Depth="0" X="4240" Y="-995" ClassName="long_generator" Width="370" Height="100" NativeX="370" NativeY="100"/>
+						<Platform X="4235" Y="-990" Width="370" Height="160"/>
+						<Trigger Name="" X="4200" Y="-995" Width="410" Height="165">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="$Node" Value="DetectorH"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Loop>
+									<Events>
+										<EventBlock Template="FreqUsed.Enter"/>
+									</Events>
+									<Actions>
+										<ActionBlock Template="FreqUsed.SwitchOff"/>
+										<Transform Name="Transform_idp346707536"/>
+									</Actions>
+								</Loop>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerJump" X="4510" Y="-1195" Width="100" Height="200">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Key" Value="Up"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="AI_noFollow"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Objects>
 </Root>

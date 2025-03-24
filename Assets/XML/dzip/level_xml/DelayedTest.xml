@@ -1,48 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" AllowedSpawns="PlayerLag" Murders="Hunter" Arrests="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0.3" Respawns="Player" AllowedSpawns="SceneRespawn" Skins="hunter" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn_2" AI="1" Time="2.35" Respawns="Player|Hunter" AllowedSpawns="Respawn" Skins="hunter" Icon="1" Victory="1" Lose="1"/>
-  </Models>
-  <Coins Value="40"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="ConstructionYardBackground"/>
-        <Object Name="ConstructionYardBackground"/>
-        <Object Name="ConstructionYardBackground"/>
-        <Object Name="ConstructionYardBackground"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="ConstructionYardBuilding1" X="40" Y="-1090"/>
-        <Object Name="ConstructionYardBuilding2" X="1857" Y="-971"/>
-        <Object Name="ConstructionYardBuilding2" X="3310" Y="-855"/>
-        <Object Name="ConstructionYardBuilding1" X="5495" Y="-850"/>
-        <Object Name="ConstructionYardBuilding1" X="6225" Y="-535"/>
-        <Object Name="ConstructionYardBuilding2" X="8640" Y="-600"/>
-        <Object Name="ConstructionYardBuilding2" X="9875" Y="-360"/>
-        <Object Name="ConstructionYardBuilding2" X="11295" Y="-615"/>
-        <Object Name="ConstructionYardBuilding1" X="12625" Y="-815"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="DelayedTestRoof-1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Camera X="865" Y="-255"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" AllowedSpawns="PlayerLag" Murders="Hunter" Arrests="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn" AI="1" Time="0.3" Respawns="Player" AllowedSpawns="SceneRespawn" Skins="hunter" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="BotSpawn_2" AI="1" Time="2.35" Respawns="Player|Hunter" AllowedSpawns="Respawn" Skins="hunter" Icon="1" Victory="1" Lose="1"/>
+	</Models>
+	<Coins Value="40"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="ConstructionYardBackground"/>
+				<Object Name="ConstructionYardBackground"/>
+				<Object Name="ConstructionYardBackground"/>
+				<Object Name="ConstructionYardBackground"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="ConstructionYardBuilding1" X="40" Y="-1090"/>
+				<Object Name="ConstructionYardBuilding2" X="1857" Y="-971"/>
+				<Object Name="ConstructionYardBuilding2" X="3310" Y="-855"/>
+				<Object Name="ConstructionYardBuilding1" X="5495" Y="-850"/>
+				<Object Name="ConstructionYardBuilding1" X="6225" Y="-535"/>
+				<Object Name="ConstructionYardBuilding2" X="8640" Y="-600"/>
+				<Object Name="ConstructionYardBuilding2" X="9875" Y="-360"/>
+				<Object Name="ConstructionYardBuilding2" X="11295" Y="-615"/>
+				<Object Name="ConstructionYardBuilding1" X="12625" Y="-815"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="DelayedTestRoof-1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Camera X="865" Y="-255"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

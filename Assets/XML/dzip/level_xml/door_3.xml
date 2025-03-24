@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <NPivot Type="Node"  X="0"  Y="0"  Z="0"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node2 Type="Node"  X="0"  Y="300"  Z="0"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node3 Type="Node"  X="50"  Y="300"  Z="0"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node4 Type="Node"  X="50"  Y="0"  Z="0"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <COM Type="CenterOfMass"  X="25"  Y="150"  Z="0"  Mass="40"  Fixed="1"  Visible="1"  NodesCount="4"  ChildNode1="Node4"  ChildNode2="Node3"  ChildNode3="Node2"  ChildNode4="NPivot" />
-  </Nodes>
-  <Edges>
-    <Edge5 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node4"  End2="NPivot" />
-    <Edge6 Type="Edge"  Length="300"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node2"  End2="NPivot" />
-    <Edge7 Type="Edge"  Length="300"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node4"  End2="Node3" />
-    <Edge8 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node3"  End2="Node2" />
-  </Edges>
-  <Figures>
-    <Triangle-1 Type="Triangle"  Shading="0"  Node1="Node4"  Node2="NPivot"  Node3="Node2" />
-    <Triangle-2 Type="Triangle"  Shading="0"  Node1="Node4"  Node2="Node3"  Node3="Node2" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-    <NP_Node2 Type="NodePoint"  Node="Node2"  Radius="3" />
-    <NP_Node3 Type="NodePoint"  Node="Node3"  Radius="3" />
-    <NP_Node4 Type="NodePoint"  Node="Node4"  Radius="3" />
-    <EL_Edge5 Type="EdgeLine"  Edge="Edge5"  Width="0" />
-    <EL_Edge6 Type="EdgeLine"  Edge="Edge6"  Width="0" />
-    <EL_Edge7 Type="EdgeLine"  Edge="Edge7"  Width="0" />
-    <EL_Edge8 Type="EdgeLine"  Edge="Edge8"  Width="0" />
-    <CL_COM Type="COMLocator"  Node="COM"  Radius="10" />
-  </Figures>
-  <GroupsOfSelection>
-    <SG-1/>
-    <SG-2/>
-    <SG-3/>
-    <SG-4/>
-    <SG-5/>
-    <SG-6/>
-    <SG-7/>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<NPivot Type="Node" X="0" Y="0" Z="0" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node2 Type="Node" X="0" Y="300" Z="0" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node3 Type="Node" X="50" Y="300" Z="0" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node4 Type="Node" X="50" Y="0" Z="0" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<COM Type="CenterOfMass" X="25" Y="150" Z="0" Mass="40" Fixed="1" Visible="1" NodesCount="4" ChildNode1="Node4" ChildNode2="Node3" ChildNode3="Node2" ChildNode4="NPivot"/>
+	</Nodes>
+	<Edges>
+		<Edge5 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node4" End2="NPivot"/>
+		<Edge6 Type="Edge" Length="300" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node2" End2="NPivot"/>
+		<Edge7 Type="Edge" Length="300" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node4" End2="Node3"/>
+		<Edge8 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node3" End2="Node2"/>
+	</Edges>
+	<Figures>
+		<Triangle-1 Type="Triangle" Shading="0" Node1="Node4" Node2="NPivot" Node3="Node2"/>
+		<Triangle-2 Type="Triangle" Shading="0" Node1="Node4" Node2="Node3" Node3="Node2"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+		<NP_Node2 Type="NodePoint" Node="Node2" Radius="3"/>
+		<NP_Node3 Type="NodePoint" Node="Node3" Radius="3"/>
+		<NP_Node4 Type="NodePoint" Node="Node4" Radius="3"/>
+		<EL_Edge5 Type="EdgeLine" Edge="Edge5" Width="0"/>
+		<EL_Edge6 Type="EdgeLine" Edge="Edge6" Width="0"/>
+		<EL_Edge7 Type="EdgeLine" Edge="Edge7" Width="0"/>
+		<EL_Edge8 Type="EdgeLine" Edge="Edge8" Width="0"/>
+		<CL_COM Type="COMLocator" Node="COM" Radius="10"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1/>
+		<SG-2/>
+		<SG-3/>
+		<SG-4/>
+		<SG-5/>
+		<SG-6/>
+		<SG-7/>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

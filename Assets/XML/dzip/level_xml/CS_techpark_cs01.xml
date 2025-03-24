@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_techpark.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnTechnoCS01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track><Object Factor="0.1"><Content><Object Name="Techpark_bg1" X="-500" Y="350"/><Object Name="Techpark_bg1" X="1550" Y="350"/><Object Name="Techpark_bg1" X="3598" Y="350"/></Content></Object>  
-    
--   <Object Factor="0.5"><Content><Object Name="Banner_TP_building_2" X="0" Y="-440"/><Object Name="Banner_TP_building_1" X="295" Y="-1405"/><Object Name="Banner_TP_building_2" X="4595" Y="95"/><Object Name="Banner_TP_building_2" X="6750" Y="95"/><Object Name="Banner_TP_building_2" X="10100" Y="-220"/><Object Name="Banner_TP_building_1" X="11795" Y="-535"/><Object Name="Banner_TP_building_2" X="13195" Y="-365"/><Object Name="Banner_TP_building_1" X="15250" Y="-580"/><Object Name="Banner_TP_building_1" X="17350" Y="-225"/></Content></Object>
-    
-    <Object Factor="1"><Content><Object X="0" Y="0"><Content><Object Name="RoofTechnoCS01" X="-640" Y="800" DeltaX="-640" DeltaY="800"/><Object Name="TriggerCSTechnoCS01GliderMain" X="626" Y="-1545"/><Object Name="TriggerCameraStart" X="353" Y="-502"/><Camera X="791" Y="-1820"/><Object Name="TriggerZoomMin" X="3315" Y="-1780"/><Trigger Name="CameraStart" X="243" Y="-697" Width="160" Height="650"><Content><Init><SetVariable Name="$Active" Value="1"/><SetVariable Name="$Node" Value="COM"/><SetVariable Name="Follow" Value="_$Model"/><SetVariable Name="$AI" Value="0"/></Init><Template Name="CameraFollow"/></Content></Trigger><Spawn X="-359" Y="-970" Name="SpawnTechnoCS01" Animation="CSTechParkCS01Player|1"/></Content></Object><Object X="0" Y="0"><Content><Object Name="Roof2TechnoCS01" X="11720" Y="860" DeltaX="13870" DeltaY="-690"/></Content></Object></Content></Object>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_techpark.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnTechnoCS01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track><Object Factor="0.1"><Content><Object Name="Techpark_bg1" X="-500" Y="350"/><Object Name="Techpark_bg1" X="1550" Y="350"/><Object Name="Techpark_bg1" X="3598" Y="350"/></Content></Object>	
+		
+-	 <Object Factor="0.5"><Content><Object Name="Banner_TP_building_2" X="0" Y="-440"/><Object Name="Banner_TP_building_1" X="295" Y="-1405"/><Object Name="Banner_TP_building_2" X="4595" Y="95"/><Object Name="Banner_TP_building_2" X="6750" Y="95"/><Object Name="Banner_TP_building_2" X="10100" Y="-220"/><Object Name="Banner_TP_building_1" X="11795" Y="-535"/><Object Name="Banner_TP_building_2" X="13195" Y="-365"/><Object Name="Banner_TP_building_1" X="15250" Y="-580"/><Object Name="Banner_TP_building_1" X="17350" Y="-225"/></Content></Object>
+		
+		<Object Factor="1"><Content><Object X="0" Y="0"><Content><Object Name="RoofTechnoCS01" X="-640" Y="800" DeltaX="-640" DeltaY="800"/><Object Name="TriggerCSTechnoCS01GliderMain" X="626" Y="-1545"/><Object Name="TriggerCameraStart" X="353" Y="-502"/><Camera X="791" Y="-1820"/><Object Name="TriggerZoomMin" X="3315" Y="-1780"/><Trigger Name="CameraStart" X="243" Y="-697" Width="160" Height="650"><Content><Init><SetVariable Name="$Active" Value="1"/><SetVariable Name="$Node" Value="COM"/><SetVariable Name="Follow" Value="_$Model"/><SetVariable Name="$AI" Value="0"/></Init><Template Name="CameraFollow"/></Content></Trigger><Spawn X="-359" Y="-970" Name="SpawnTechnoCS01" Animation="CSTechParkCS01Player|1"/></Content></Object><Object X="0" Y="0"><Content><Object Name="Roof2TechnoCS01" X="11720" Y="860" DeltaX="13870" DeltaY="-690"/></Content></Object></Content></Object>
 
-  </Track>
+	</Track>
 </Root>

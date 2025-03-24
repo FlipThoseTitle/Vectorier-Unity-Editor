@@ -1,64 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnCSyardcs01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="ConstructionYardBackground"/>
-        <Object Name="ConstructionYardBackground"/>
-        <Object Name="ConstructionYardBackground"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="ConstructionYardBuilding1" X="-8540" Y="-1550"/>
-        <Object Name="ConstructionYardBuilding2" X="-7089" Y="-1265"/>
-        <Object Name="ConstructionYardBuilding2" X="-5549" Y="-1186"/>
-        <Object Name="ConstructionYardBuilding1" X="-4010" Y="-1360"/>
-        <Object Name="ConstructionYardBuilding2" X="-2559" Y="-1075"/>
-        <Object Name="ConstructionYardBuilding2" X="-1019" Y="-996"/>
-        <Object Name="ConstructionYardBuilding1" X="830" Y="-695"/>
-        <Object Name="ConstructionYardBuilding1" X="2955" Y="-790"/>
-        <Object Name="ConstructionYardBuilding2" X="4760" Y="-545"/>
-        <Object Name="ConstructionYardBuilding1" X="6570" Y="-720"/>
-        <Object Name="ConstructionYardBuilding2" X="8335" Y="400"/>
-        <Object Name="ConstructionYardBuilding1" X="9830" Y="145"/>
-        <Object Name="ConstructionYardBuilding2" X="11845" Y="430"/>
-        <Object Name="ConstructionYardBuilding1" X="13840" Y="345"/>
-        <Object Name="ConstructionYardBuilding1" X="16135" Y="475"/>
-        <Object Name="ConstructionYardBuilding1" X="18290" Y="340"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS01Building1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerCSYardCS01Truck" X="-50" Y="-190"/>
-            <Object Name="SpawnCSyardcs01" X="-215" Y="-330"/>
-            <Object Name="TriggerCameraStart" X="545" Y="-540"/>
-            <Camera X="2840" Y="-810"/>
-            <Image X="2610" Y="-1015" Width="70" Height="90" ClassName="cons_barrel" NativeX="" NativeY=""/>
-            <Object Name="TriggerZoomMin" X="-163" Y="-1915"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS01Building2" X="6405" Y="-790" DeltaX="405" DeltaY="-790"/>
-            <Object Name="TriggerCameraFluencyCS02" X="8398" Y="755"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="SpawnCSyardcs01" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="ConstructionYardBackground"/>
+				<Object Name="ConstructionYardBackground"/>
+				<Object Name="ConstructionYardBackground"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="ConstructionYardBuilding1" X="-8540" Y="-1550"/>
+				<Object Name="ConstructionYardBuilding2" X="-7089" Y="-1265"/>
+				<Object Name="ConstructionYardBuilding2" X="-5549" Y="-1186"/>
+				<Object Name="ConstructionYardBuilding1" X="-4010" Y="-1360"/>
+				<Object Name="ConstructionYardBuilding2" X="-2559" Y="-1075"/>
+				<Object Name="ConstructionYardBuilding2" X="-1019" Y="-996"/>
+				<Object Name="ConstructionYardBuilding1" X="830" Y="-695"/>
+				<Object Name="ConstructionYardBuilding1" X="2955" Y="-790"/>
+				<Object Name="ConstructionYardBuilding2" X="4760" Y="-545"/>
+				<Object Name="ConstructionYardBuilding1" X="6570" Y="-720"/>
+				<Object Name="ConstructionYardBuilding2" X="8335" Y="400"/>
+				<Object Name="ConstructionYardBuilding1" X="9830" Y="145"/>
+				<Object Name="ConstructionYardBuilding2" X="11845" Y="430"/>
+				<Object Name="ConstructionYardBuilding1" X="13840" Y="345"/>
+				<Object Name="ConstructionYardBuilding1" X="16135" Y="475"/>
+				<Object Name="ConstructionYardBuilding1" X="18290" Y="340"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS01Building1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerCSYardCS01Truck" X="-50" Y="-190"/>
+						<Object Name="SpawnCSyardcs01" X="-215" Y="-330"/>
+						<Object Name="TriggerCameraStart" X="545" Y="-540"/>
+						<Camera X="2840" Y="-810"/>
+						<Image X="2610" Y="-1015" Width="70" Height="90" ClassName="cons_barrel" NativeX="" NativeY=""/>
+						<Object Name="TriggerZoomMin" X="-163" Y="-1915"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS01Building2" X="6405" Y="-790" DeltaX="405" DeltaY="-790"/>
+						<Object Name="TriggerCameraFluencyCS02" X="8398" Y="755"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

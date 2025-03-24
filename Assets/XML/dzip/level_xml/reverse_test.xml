@@ -1,103 +1,103 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-    <City FileName="buildings_test.xml"/>
-  </Sets>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-  </Models>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background" X="-2630" Y="-505"/>
-        <Object Name="Background" X="-500" Y="-500"/>
-        <Object Name="Background" X="1620" Y="-500"/>
-        <Object Name="Background" X="3740" Y="-500"/>
-        <Object Name="Background" X="5860" Y="-500"/>
-        <Object Name="Background" X="7980" Y="-500"/>
-        <Object Name="Background" X="10100" Y="-500"/>
-        <Object Name="Background" X="12220" Y="-500"/>
-        <Object Name="Background" X="14340" Y="-500"/>
-        <Object Name="Background" X="16460" Y="-500"/>
-        <Object Name="Background" X="18580" Y="-500"/>
-        <Object Name="Background" X="20700" Y="-500"/>
-        <Object Name="Background" X="22820" Y="-500"/>
-        <Object Name="Background" X="24940" Y="-500"/>
-        <Object Name="Background" X="27060" Y="-500"/>
-        <Object Name="Background" X="29180" Y="-500"/>
-        <Object Name="Background" X="31300" Y="-500"/>
-        <Object Name="Background" X="33420" Y="-500"/>
-        <Object Name="Background" X="35540" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building2"/>
-        <Object Name="LampPost"/>
-        <Object Name="Building3"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building1"/>
-        <Object Name="Building3"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="1820" Y="-135" DeltaX="1820" DeltaY="-135"/>
-            <Spawn X="2070" Y="-283" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Object Name="TriggerCameraStart" X="2225" Y="-520"/>
-            <Camera X="2245" Y="-272"/>
-            <Object Name="TriggerRunInhibition" X="3110" Y="-320"/>
-            <Object Name="TriggerRunFromInhibition" X="3305" Y="-320"/>
-            <Object Name="TriggerRunReverseFromInhibition" X="3305" Y="-325"/>
-            <Object Name="TriggerRunReverse" X="2755" Y="-320"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="4040" Y="-135" DeltaX="220" DeltaY="0"/>
-            <Object Name="TriggerFlyingArrow" X="5365" Y="-335"/>
-            <Object Name="SmallPipe" X="5970" Y="-225"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="6035" Y="-135" DeltaX="-5" DeltaY="0"/>
-            <Object Name="TriggerLongCircle" X="7175" Y="-330"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="8030" Y="-45" DeltaX="-5" DeltaY="90"/>
-            <Object Name="SmallPipe" X="9970" Y="-135"/>
-            <Object Name="TriggerJumpSpinVault" X="9165" Y="-235"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="10030" Y="-45" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerSpin360" X="11450" Y="-220"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="12230" Y="-135" DeltaX="200" DeltaY="-90"/>
-            <Object Name="TriggerDoubleSpinVault" X="12830" Y="-325"/>
-            <Object Name="DoubleConditioner" X="13470" Y="-225"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="14230" Y="-135" DeltaX="0" DeltaY="0"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+		<City FileName="buildings_test.xml"/>
+	</Sets>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	</Models>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background" X="-2630" Y="-505"/>
+				<Object Name="Background" X="-500" Y="-500"/>
+				<Object Name="Background" X="1620" Y="-500"/>
+				<Object Name="Background" X="3740" Y="-500"/>
+				<Object Name="Background" X="5860" Y="-500"/>
+				<Object Name="Background" X="7980" Y="-500"/>
+				<Object Name="Background" X="10100" Y="-500"/>
+				<Object Name="Background" X="12220" Y="-500"/>
+				<Object Name="Background" X="14340" Y="-500"/>
+				<Object Name="Background" X="16460" Y="-500"/>
+				<Object Name="Background" X="18580" Y="-500"/>
+				<Object Name="Background" X="20700" Y="-500"/>
+				<Object Name="Background" X="22820" Y="-500"/>
+				<Object Name="Background" X="24940" Y="-500"/>
+				<Object Name="Background" X="27060" Y="-500"/>
+				<Object Name="Background" X="29180" Y="-500"/>
+				<Object Name="Background" X="31300" Y="-500"/>
+				<Object Name="Background" X="33420" Y="-500"/>
+				<Object Name="Background" X="35540" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building2"/>
+				<Object Name="LampPost"/>
+				<Object Name="Building3"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building1"/>
+				<Object Name="Building3"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="1820" Y="-135" DeltaX="1820" DeltaY="-135"/>
+						<Spawn X="2070" Y="-283" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Object Name="TriggerCameraStart" X="2225" Y="-520"/>
+						<Camera X="2245" Y="-272"/>
+						<Object Name="TriggerRunInhibition" X="3110" Y="-320"/>
+						<Object Name="TriggerRunFromInhibition" X="3305" Y="-320"/>
+						<Object Name="TriggerRunReverseFromInhibition" X="3305" Y="-325"/>
+						<Object Name="TriggerRunReverse" X="2755" Y="-320"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="4040" Y="-135" DeltaX="220" DeltaY="0"/>
+						<Object Name="TriggerFlyingArrow" X="5365" Y="-335"/>
+						<Object Name="SmallPipe" X="5970" Y="-225"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="6035" Y="-135" DeltaX="-5" DeltaY="0"/>
+						<Object Name="TriggerLongCircle" X="7175" Y="-330"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="8030" Y="-45" DeltaX="-5" DeltaY="90"/>
+						<Object Name="SmallPipe" X="9970" Y="-135"/>
+						<Object Name="TriggerJumpSpinVault" X="9165" Y="-235"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="10030" Y="-45" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerSpin360" X="11450" Y="-220"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="12230" Y="-135" DeltaX="200" DeltaY="-90"/>
+						<Object Name="TriggerDoubleSpinVault" X="12830" Y="-325"/>
+						<Object Name="DoubleConditioner" X="13470" Y="-225"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="14230" Y="-135" DeltaX="0" DeltaY="0"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

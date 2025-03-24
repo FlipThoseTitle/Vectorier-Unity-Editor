@@ -1,178 +1,164 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Root>
-
-  <Sets>
-    <City FileName="buildings.xml"/>
+	<Sets>
+		<City FileName="buildings.xml"/>
 		<City FileName="buildings_construction.xml"/>
-  </Sets>
-  
-  <Music Name="music_dinamic" Volume="0.3"/>
-  
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  
-  <!--Models>
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1"/>
-  </Models-->
-  
-  <Coins Value="50"/>
-  <Variable Name="Money">50</Variable>
-  
-  <Layers>
-    <Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
-      <ConstructionYardBackground X="0" Y="-720" DeltaX="0" DeltaY="-720"/>
-      <ConstructionYardBackground X="2120" Y="-720" DeltaX="0" DeltaY="0"/>
-      <ConstructionYardBackground X="4241" Y="-720" DeltaX="1" DeltaY="0"/>
-      <ConstructionYardBackground X="6361" Y="-720" DeltaX="0" DeltaY="0"/>
-    </Layer>
-    
-    <Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
-      <ConstructionYardBuilding1 DeltaX="38" DeltaY="-152"/>
-      <ConstructionYardBuilding2 DeltaX="654" DeltaY="119"/>
-      <ConstructionYardBuilding2 DeltaX="437" DeltaY="244"/>
-      <ConstructionYardBuilding1 DeltaX="385" DeltaY="-294"/>
-      <ConstructionYardBuilding1 DeltaX="163" DeltaY="475"/>
-      <ConstructionYardBuilding2 DeltaX="543" DeltaY="28"/>
-      <ConstructionYardBuilding2 DeltaX="437" DeltaY="18"/>
-      <ConstructionYardBuilding1 DeltaX="366" DeltaY="-140"/>
-      <ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
-      <ConstructionYardBuilding2 DeltaX="246" DeltaY="156"/>
-      <ConstructionYardBuilding1 DeltaX="360" DeltaY="-125"/>
-      <ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
-      <ConstructionYardBuilding2 DeltaX="246" DeltaY="156"/>
-      <ConstructionYardBuilding1 DeltaX="154" DeltaY="-143"/>
-      <ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
-    </Layer>
-    
-
-
-
-    <Layer Name="Forward_Layer" Factor="2" Type="2"/>
-    
-
-    <Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
-      <CONSTRUCTION_STORY_04_1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-219" BoxY="-2247" BoxWidth="5164" BoxHeight="3867">
-        <TriggerZoomMax X="618" Y="-1880"/>
-        <TriggerZoom80 X="2227" Y="-2247"/>
-        <Pill X="3641" Y="-782"/>
-        <TriggerZoomMin X="4309" Y="-2141"/>
-        <TriggerJump X="4845" Y="-810"/>
-        <TriggerLossPanic X="1625" Y="360"/>
-        <TriggerCameraStart X="515" Y="-395"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Comment X="1995" Y="-1890" Width="2680" Height="130" Text="СДЕЛАНО&#xD;Веревки надо сделать статическими" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="2431" Y="-345" Width="785" Height="349" Text="СДЕЛАНО&#xD;Башню надо поднять, чтобы проход под ней был 130+" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="4252" Y="-874" Width="624" Height="367" Text="СДЕЛАНО&#xD;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Spawn X="-169" Y="-150" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Camera X="765" Y="-160"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_04_1>
-      <CONSTRUCTION_STORY_04_2 X="5905" Y="0" DeltaX="1005" DeltaY="615" BoxX="-1785" BoxY="-1748" BoxWidth="8465" BoxHeight="4166">
-        <TriggerZoomNormal X="5" Y="-1748"/>
-        <Pill X="173" Y="-92"/>
-        <Respawn_2.5sec X="80" Y="15"/>
-        <TriggerZoomMax X="2177" Y="-1258"/>
-        <TriggerRailFlipVault X="2300" Y="890"/>
-        <TriggerZoomNormal X="3513" Y="-1082"/>
-        <Pill X="4054" Y="783"/>
-        <TriggerJump X="5234" Y="572"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1785" Y="685" Width="2005" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
-            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1605" Y="710" Width="1840" Height="170" Node="COM" Priority="0" SubType="0"/>
-            <Item X="5115" Y="680" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3555" Y="1280" Width="3020" Height="170" Node="COM" Priority="0" SubType="0"/>
-            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3535" Y="1350" Width="3145" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
-            <Comment X="4565" Y="540" Width="480" Height="205" Text="СДЕЛАНО&#xD;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="4565" Y="815" Width="805" Height="365" Text="СДЕЛАНО&#xD;Платформу надо увеличить вниз и добавить графику. Сейчас при слайде с висящей на веревках платформы моделька умирает" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="4605" Y="1685" Width="585" Height="375" Text="СДЕЛАНО&#xD;Виден обрезанный край при падении вниз" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="1615" Y="-215" Width="575" Height="395" Text="СДЕЛАНО&#xD;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_04_2>
-      <Crane_cons X="11485" Y="580" DeltaX="230" DeltaY="-190" BoxX="0" BoxY="-1877" BoxWidth="4010" BoxHeight="3500">
-        <TriggerJump X="3880" Y="-200"/>
-        <Respawn_2.5sec X="12" Y="-8"/>
-        <TriggerZoomMin X="1121" Y="-1877"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Item X="265" Y="-100" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="1040" Y="-180" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="2155" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Item X="2810" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
-            <Trigger X="3865" Y="-205" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
-            <Trigger X="625" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
-            <Trigger Name="TriggerSpeedUp" Type="1" AI="5" Node="COM" Key1="2" PressType="0" Priority="1" Factor="1" X="1430" Y="-200" Width="100" Height="200" Follow="0"/>
-          </Elements>
-        </ObjectNULL>
-      </Crane_cons>
-      <CONSTRUCTION_STORY_04_3 X="16945" Y="865" DeltaX="1460" DeltaY="285" BoxX="-1575" BoxY="-1365" BoxWidth="6100" BoxHeight="5290">
-        <TriggerZoomMax X="65" Y="-1365"/>
-        <Pill X="154" Y="-91"/>
-        <TriggerDashVault X="2715" Y="2234"/>
-        <TriggerZoomNormal X="4115" Y="425"/>
-        <Respawn_2sec X="3845" Y="2344"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1575" Y="299" Width="1720" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
-            <Item X="1820" Y="2344" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="2315" Y="2259" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Item X="3105" Y="2254" Score="10" Radius="80" Type="1" GroupId="2"/>
-            <Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1280" Y="714" Width="1385" Height="170" Node="COM" Priority="0" SubType="0"/>
-            <Comment X="305" Y="834" Width="920" Height="495" Text="СДЕЛАНО&#xD;Имеет смысл сделать тут намного более долгое падение вниз. Возможно для этого надо будет разбить здание на два, отделив столб для приземления после прыжка с крана от остального здания." FontSize="40" Colour="13382400" Transparency="1"/>
-          </Elements>
-        </ObjectNULL>
-        <ObjectNULL X="-16945" Y="-865" Group="1">
-          <Objects/>
-          <Elements>
-            <Spawn X="18525" Y="3200" Name="Respawn" Animation="JumpOff|18"/>
-            <Trigger X="18450" Y="2200" Width="150" Height="1100" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_04_3>
-      <CONSTRUCTION_STORY_04_4 X="21065" Y="3305" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-2152" BoxWidth="7900" BoxHeight="3681">
-        <TriggerZoom80 X="1702" Y="-2152"/>
-        <Pill X="3001" Y="-613"/>
-        <TriggerZoomMin X="3140" Y="-2009"/>
-        <Respawn_2.5sec X="4049" Y="-6"/>
-        <TriggerZoom80 X="7114" Y="-1971"/>
-        <Pill X="7331" Y="-488"/>
-        <TriggerJump X="7382" Y="-604"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Item X="919" Y="-171" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="1394" Y="-264" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="1918" Y="-573" Score="10" Radius="80" Type="1" GroupId="3"/>
-            <Item X="3954" Y="-111" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="6459" Y="-101" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="7099" Y="-301" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Comment X="729" Y="-276" Width="390" Height="200" Text="СДЕЛАНО&#xD;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
-            <Comment X="1595" Y="-1005" Width="805" Height="550" Text="СДЕЛАНО&#xD;Тут надо поставить условные триггеры, сейчас если ты чуть-чуть ошибешься при прыжке и зацепишься за висящую платформу вместо того чтобы закатиться на нее - бот убивает" FontSize="40" Colour="13382400" Transparency="1"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_04_4>
-      <CONSTRUCTION_STORY_04_5 X="28510" Y="3305" DeltaX="0" DeltaY="400" BoxX="0" BoxY="-1808" BoxWidth="4515" BoxHeight="3500">
-        <Respawn_2.5sec X="1289" Y="-5"/>
-        <TriggerZoomNormal X="1516" Y="-1808"/>
-        <TriggerAirBomb X="1604" Y="-205"/>
-        <ObjectNULL X="0" Y="0">
-          <Elements>
-            <Item X="1104" Y="-195" Score="10" Radius="80" Type="1" GroupId="4"/>
-            <Item X="2824" Y="380" Score="10" Radius="80" Type="1" GroupId="5"/>
-            <Item X="3914" Y="-40" Score="10" Radius="80" Type="1" GroupId="5"/>
-            <Comment X="909" Y="-360" Width="485" Height="290" Text="СДЕЛАНО&#xD;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
-          </Elements>
-        </ObjectNULL>
-      </CONSTRUCTION_STORY_04_5>
-      <FinalRoof_5 X="32610" Y="3460" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-1991" BoxWidth="3000" BoxHeight="3500">
-        <TriggerZoomMin X="546" Y="-1991"/>
-      </FinalRoof_5>
-    </Layer>
-
-  </Layers>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<!--Models>
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1"/>
+	</Models-->
+	<Coins Value="50"/>
+	<Variable Name="Money">50</Variable>
+	<Layers>
+		<Layer Name="BG_Layer" Factor="0.05" Type="1" DeltaX="-500" DeltaY="0">
+			<ConstructionYardBackground X="0" Y="-720" DeltaX="0" DeltaY="-720"/>
+			<ConstructionYardBackground X="2120" Y="-720" DeltaX="0" DeltaY="0"/>
+			<ConstructionYardBackground X="4241" Y="-720" DeltaX="1" DeltaY="0"/>
+			<ConstructionYardBackground X="6361" Y="-720" DeltaX="0" DeltaY="0"/>
+		</Layer>
+		<Layer Name="Banner_Layer" Factor="0.5" Type="2" DeltaX="0" DeltaY="-370">
+			<ConstructionYardBuilding1 DeltaX="38" DeltaY="-152"/>
+			<ConstructionYardBuilding2 DeltaX="654" DeltaY="119"/>
+			<ConstructionYardBuilding2 DeltaX="437" DeltaY="244"/>
+			<ConstructionYardBuilding1 DeltaX="385" DeltaY="-294"/>
+			<ConstructionYardBuilding1 DeltaX="163" DeltaY="475"/>
+			<ConstructionYardBuilding2 DeltaX="543" DeltaY="28"/>
+			<ConstructionYardBuilding2 DeltaX="437" DeltaY="18"/>
+			<ConstructionYardBuilding1 DeltaX="366" DeltaY="-140"/>
+			<ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
+			<ConstructionYardBuilding2 DeltaX="246" DeltaY="156"/>
+			<ConstructionYardBuilding1 DeltaX="360" DeltaY="-125"/>
+			<ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
+			<ConstructionYardBuilding2 DeltaX="246" DeltaY="156"/>
+			<ConstructionYardBuilding1 DeltaX="154" DeltaY="-143"/>
+			<ConstructionYardBuilding1 DeltaX="431" DeltaY="-5"/>
+		</Layer>
+		<Layer Name="Forward_Layer" Factor="2" Type="2"/>
+		<Layer Name="Game_Layer" Factor="1" Type="3" DeltaX="0" DeltaY="0">
+			<CONSTRUCTION_STORY_04_1 X="0" Y="0" DeltaX="0" DeltaY="0" BoxX="-219" BoxY="-2247" BoxWidth="5164" BoxHeight="3867">
+				<TriggerZoomMax X="618" Y="-1880"/>
+				<TriggerZoom80 X="2227" Y="-2247"/>
+				<Pill X="3641" Y="-782"/>
+				<TriggerZoomMin X="4309" Y="-2141"/>
+				<TriggerJump X="4845" Y="-810"/>
+				<TriggerLossPanic X="1625" Y="360"/>
+				<TriggerCameraStart X="515" Y="-395"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Comment X="1995" Y="-1890" Width="2680" Height="130" Text="СДЕЛАНО&#13;Веревки надо сделать статическими" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="2431" Y="-345" Width="785" Height="349" Text="СДЕЛАНО&#13;Башню надо поднять, чтобы проход под ней был 130+" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="4252" Y="-874" Width="624" Height="367" Text="СДЕЛАНО&#13;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Spawn X="-169" Y="-150" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Camera X="765" Y="-160"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_04_1>
+			<CONSTRUCTION_STORY_04_2 X="5905" Y="0" DeltaX="1005" DeltaY="615" BoxX="-1785" BoxY="-1748" BoxWidth="8465" BoxHeight="4166">
+				<TriggerZoomNormal X="5" Y="-1748"/>
+				<Pill X="173" Y="-92"/>
+				<Respawn_2.5sec X="80" Y="15"/>
+				<TriggerZoomMax X="2177" Y="-1258"/>
+				<TriggerRailFlipVault X="2300" Y="890"/>
+				<TriggerZoomNormal X="3513" Y="-1082"/>
+				<Pill X="4054" Y="783"/>
+				<TriggerJump X="5234" Y="572"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1785" Y="685" Width="2005" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+						<Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1605" Y="710" Width="1840" Height="170" Node="COM" Priority="0" SubType="0"/>
+						<Item X="5115" Y="680" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="3555" Y="1280" Width="3020" Height="170" Node="COM" Priority="0" SubType="0"/>
+						<Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="3535" Y="1350" Width="3145" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+						<Comment X="4565" Y="540" Width="480" Height="205" Text="СДЕЛАНО&#13;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="4565" Y="815" Width="805" Height="365" Text="СДЕЛАНО&#13;Платформу надо увеличить вниз и добавить графику. Сейчас при слайде с висящей на веревках платформы моделька умирает" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="4605" Y="1685" Width="585" Height="375" Text="СДЕЛАНО&#13;Виден обрезанный край при падении вниз" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="1615" Y="-215" Width="575" Height="395" Text="СДЕЛАНО&#13;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_04_2>
+			<Crane_cons X="11485" Y="580" DeltaX="230" DeltaY="-190" BoxX="0" BoxY="-1877" BoxWidth="4010" BoxHeight="3500">
+				<TriggerJump X="3880" Y="-200"/>
+				<Respawn_2.5sec X="12" Y="-8"/>
+				<TriggerZoomMin X="1121" Y="-1877"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Item X="265" Y="-100" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="1040" Y="-180" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="2155" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Item X="2810" Y="-105" Score="10" Radius="80" Type="1" GroupId="1"/>
+						<Trigger X="3865" Y="-205" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+						<Trigger X="625" Y="-200" Width="100" Height="200" Name="TriggerJump" Type="1" AI="5" Node="COM" Priority="1" Key1="1" PressType="0" Follow="0"/>
+						<Trigger Name="TriggerSpeedUp" Type="1" AI="5" Node="COM" Key1="2" PressType="0" Priority="1" Factor="1" X="1430" Y="-200" Width="100" Height="200" Follow="0"/>
+					</Elements>
+				</ObjectNULL>
+			</Crane_cons>
+			<CONSTRUCTION_STORY_04_3 X="16945" Y="865" DeltaX="1460" DeltaY="285" BoxX="-1575" BoxY="-1365" BoxWidth="6100" BoxHeight="5290">
+				<TriggerZoomMax X="65" Y="-1365"/>
+				<Pill X="154" Y="-91"/>
+				<TriggerDashVault X="2715" Y="2234"/>
+				<TriggerZoomNormal X="4115" Y="425"/>
+				<Respawn_2sec X="3845" Y="2344"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Trigger Name="TriggerLossPanic" Type="5" SubType="3" Time="2" X="-1575" Y="299" Width="1720" Height="100" Node="COM" Priority="0" Start="FlyPanic|1" Animation="JumpOff"/>
+						<Item X="1820" Y="2344" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="2315" Y="2259" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Item X="3105" Y="2254" Score="10" Radius="80" Type="1" GroupId="2"/>
+						<Trigger Name="TriggerZoomMax" Type="2" Value="1.1" X="-1280" Y="714" Width="1385" Height="170" Node="COM" Priority="0" SubType="0"/>
+						<Comment X="305" Y="834" Width="920" Height="495" Text="СДЕЛАНО&#13;Имеет смысл сделать тут намного более долгое падение вниз. Возможно для этого надо будет разбить здание на два, отделив столб для приземления после прыжка с крана от остального здания." FontSize="40" Colour="13382400" Transparency="1"/>
+					</Elements>
+				</ObjectNULL>
+				<ObjectNULL X="-16945" Y="-865" Group="1">
+					<Objects/>
+					<Elements>
+						<Spawn X="18525" Y="3200" Name="Respawn" Animation="JumpOff|18"/>
+						<Trigger X="18450" Y="2200" Width="150" Height="1100" Name="TriggerRespawn" Type="11" Node="COM" Priority="0" Spawn="Respawn" Time="2" SubType="0"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_04_3>
+			<CONSTRUCTION_STORY_04_4 X="21065" Y="3305" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-2152" BoxWidth="7900" BoxHeight="3681">
+				<TriggerZoom80 X="1702" Y="-2152"/>
+				<Pill X="3001" Y="-613"/>
+				<TriggerZoomMin X="3140" Y="-2009"/>
+				<Respawn_2.5sec X="4049" Y="-6"/>
+				<TriggerZoom80 X="7114" Y="-1971"/>
+				<Pill X="7331" Y="-488"/>
+				<TriggerJump X="7382" Y="-604"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Item X="919" Y="-171" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="1394" Y="-264" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="1918" Y="-573" Score="10" Radius="80" Type="1" GroupId="3"/>
+						<Item X="3954" Y="-111" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="6459" Y="-101" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="7099" Y="-301" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Comment X="729" Y="-276" Width="390" Height="200" Text="СДЕЛАНО&#13;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
+						<Comment X="1595" Y="-1005" Width="805" Height="550" Text="СДЕЛАНО&#13;Тут надо поставить условные триггеры, сейчас если ты чуть-чуть ошибешься при прыжке и зацепишься за висящую платформу вместо того чтобы закатиться на нее - бот убивает" FontSize="40" Colour="13382400" Transparency="1"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_04_4>
+			<CONSTRUCTION_STORY_04_5 X="28510" Y="3305" DeltaX="0" DeltaY="400" BoxX="0" BoxY="-1808" BoxWidth="4515" BoxHeight="3500">
+				<Respawn_2.5sec X="1289" Y="-5"/>
+				<TriggerZoomNormal X="1516" Y="-1808"/>
+				<TriggerAirBomb X="1604" Y="-205"/>
+				<ObjectNULL X="0" Y="0">
+					<Elements>
+						<Item X="1104" Y="-195" Score="10" Radius="80" Type="1" GroupId="4"/>
+						<Item X="2824" Y="380" Score="10" Radius="80" Type="1" GroupId="5"/>
+						<Item X="3914" Y="-40" Score="10" Radius="80" Type="1" GroupId="5"/>
+						<Comment X="909" Y="-360" Width="485" Height="290" Text="СДЕЛАНО&#13;Пыль тут лишняя" FontSize="40" Colour="13382400" Transparency="1"/>
+					</Elements>
+				</ObjectNULL>
+			</CONSTRUCTION_STORY_04_5>
+			<FinalRoof_5 X="32610" Y="3460" DeltaX="0" DeltaY="0" BoxX="0" BoxY="-1991" BoxWidth="3000" BoxHeight="3500">
+				<TriggerZoomMin X="546" Y="-1991"/>
+			</FinalRoof_5>
+		</Layer>
+	</Layers>
 </Root>

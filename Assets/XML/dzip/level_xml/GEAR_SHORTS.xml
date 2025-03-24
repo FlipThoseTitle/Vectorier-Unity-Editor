@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Shorts-Node194 Type="Node"  X="13.3434009552002"  Y="106.704193115234"  Z="45.183967590332"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" />
-    <Shorts-Node196 Type="Node"  X="-14.8010864257813"  Y="106.629669189453"  Z="44.9715728759766"  Mass="0.1"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" />
-  </Nodes>
-  <Edges>
-    <Shorts-Edge197 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHip_1"  End2="Shorts-Node196" />
-    <Shorts-Edge198 Type="Edge"  Length="23"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Shorts-Node196"  End2="NKnee_1" />
-    <Shorts-Edge199 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHip_2"  End2="Shorts-Node194" />
-    <Shorts-Edge200 Type="Edge"  Length="23"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Shorts-Node194"  End2="NKnee_2" />
-  </Edges>
-  <Figures>
-    <Shorts-Triangle-3 Type="Triangle"  Shading="0"  Node1="NHip_2"  Node2="Shorts-Node196"  Node3="NHip_1" />
-    <Shorts-Triangle-4 Type="Triangle"  Shading="0"  Node1="NHip_2"  Node2="NHip_1"  Node3="Shorts-Node194" />
-    <Shorts-Triangle-2 Type="Triangle"  Shading="0"  Node1="NHip_1"  Node2="Shorts-Node196"  Node3="NKnee_1" />
-    <Shorts-Triangle-1 Type="Triangle"  Shading="0"  Node1="NHip_2"  Node2="Shorts-Node194"  Node3="NKnee_2" />
-  </Figures>
+	<Nodes>
+		<Shorts-Node194 Type="Node" X="13.3434009552002" Y="106.704193115234" Z="45.183967590332" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0"/>
+		<Shorts-Node196 Type="Node" X="-14.8010864257813" Y="106.629669189453" Z="44.9715728759766" Mass="0.1" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0"/>
+	</Nodes>
+	<Edges>
+		<Shorts-Edge197 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHip_1" End2="Shorts-Node196"/>
+		<Shorts-Edge198 Type="Edge" Length="23" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Shorts-Node196" End2="NKnee_1"/>
+		<Shorts-Edge199 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHip_2" End2="Shorts-Node194"/>
+		<Shorts-Edge200 Type="Edge" Length="23" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Shorts-Node194" End2="NKnee_2"/>
+	</Edges>
+	<Figures>
+		<Shorts-Triangle-3 Type="Triangle" Shading="0" Node1="NHip_2" Node2="Shorts-Node196" Node3="NHip_1"/>
+		<Shorts-Triangle-4 Type="Triangle" Shading="0" Node1="NHip_2" Node2="NHip_1" Node3="Shorts-Node194"/>
+		<Shorts-Triangle-2 Type="Triangle" Shading="0" Node1="NHip_1" Node2="Shorts-Node196" Node3="NKnee_1"/>
+		<Shorts-Triangle-1 Type="Triangle" Shading="0" Node1="NHip_2" Node2="Shorts-Node194" Node3="NKnee_2"/>
+	</Figures>
 </Scene>

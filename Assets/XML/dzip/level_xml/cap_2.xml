@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <MacroNode201 Type="MacroNode"  X="-8.49381637573242"  Y="199.515060424805"  Z="48.1480178833008"  Mass="0.0133136408403516"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.245445013046265"  LCC2="-1.0607795715332"  LCC3="-0.224711284041405"  LCC4="2.04004573822021" />
-    <MacroNode202 Type="MacroNode"  X="-4.3260555267334"  Y="202.976623535156"  Z="53.7249450683594"  Mass="0.0076762274838984"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.481626987457275"  LCC2="-1.23266732692719"  LCC3="-0.872285544872284"  LCC4="2.62332606315613" />
-    <MacroNode203 Type="MacroNode"  X="1.76368832588196"  Y="202.976623535156"  Z="53.7410621643066"  Mass="0.0076677929610014"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.481898069381714"  LCC2="-0.885981202125549"  LCC3="-1.22156739234924"  LCC4="2.62565064430237" />
-    <MacroNode204 Type="MacroNode"  X="5.7380485534668"  Y="199.450973510742"  Z="48.1480255126953"  Mass="0.0133777800947428"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.242174863815308"  LCC2="-0.246933922171593"  LCC3="-1.03736388683319"  LCC4="2.04212307929993" />
-    <MacroNode205 Type="MacroNode"  X="-1.10203957557678"  Y="211.630523681641"  Z="31.6095886230469"  Mass="0.0934968143701553"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.814429640769958"  LCC2="0.101439766585827"  LCC3="0.0917830094695091"  LCC4="-0.00765239587053657" />
-  </Nodes>
-  <Edges>
-  </Edges>
-  <Figures>
-    <Triangle-5 Type="Triangle"  Shading="0"  Node1="NHeadS_2"  Node2="MacroNode204"  Node3="MacroNode205" />
-    <Triangle-4 Type="Triangle"  Shading="0"  Node1="MacroNode204"  Node2="MacroNode203"  Node3="MacroNode205" />
-    <Triangle-2 Type="Triangle"  Shading="0"  Node1="MacroNode205"  Node2="MacroNode202"  Node3="NHeadS_1" />
-    <Triangle-3 Type="Triangle"  Shading="0"  Node1="MacroNode205"  Node2="MacroNode203"  Node3="MacroNode202" />
-    <Triangle-1 Type="Triangle"  Shading="0"  Node1="MacroNode202"  Node2="NHeadS_1"  Node3="MacroNode201" />
-    <NP_MacroNode201 Type="NodePoint"  Node="MacroNode201"  Radius="3" />
-    <NP_MacroNode202 Type="NodePoint"  Node="MacroNode202"  Radius="3" />
-    <NP_MacroNode203 Type="NodePoint"  Node="MacroNode203"  Radius="3" />
-    <NP_MacroNode204 Type="NodePoint"  Node="MacroNode204"  Radius="3" />
-    <NP_MacroNode205 Type="NodePoint"  Node="MacroNode205"  Radius="3" />
-  </Figures>
+	<Nodes>
+		<MacroNode201 Type="MacroNode" X="-8.49381637573242" Y="199.515060424805" Z="48.1480178833008" Mass="0.0133136408403516" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.245445013046265" LCC2="-1.0607795715332" LCC3="-0.224711284041405" LCC4="2.04004573822021"/>
+		<MacroNode202 Type="MacroNode" X="-4.3260555267334" Y="202.976623535156" Z="53.7249450683594" Mass="0.0076762274838984" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.481626987457275" LCC2="-1.23266732692719" LCC3="-0.872285544872284" LCC4="2.62332606315613"/>
+		<MacroNode203 Type="MacroNode" X="1.76368832588196" Y="202.976623535156" Z="53.7410621643066" Mass="0.0076677929610014" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.481898069381714" LCC2="-0.885981202125549" LCC3="-1.22156739234924" LCC4="2.62565064430237"/>
+		<MacroNode204 Type="MacroNode" X="5.7380485534668" Y="199.450973510742" Z="48.1480255126953" Mass="0.0133777800947428" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.242174863815308" LCC2="-0.246933922171593" LCC3="-1.03736388683319" LCC4="2.04212307929993"/>
+		<MacroNode205 Type="MacroNode" X="-1.10203957557678" Y="211.630523681641" Z="31.6095886230469" Mass="0.0934968143701553" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.814429640769958" LCC2="0.101439766585827" LCC3="0.0917830094695091" LCC4="-0.00765239587053657"/>
+	</Nodes>
+	<Edges>
+	</Edges>
+	<Figures>
+		<Triangle-5 Type="Triangle" Shading="0" Node1="NHeadS_2" Node2="MacroNode204" Node3="MacroNode205"/>
+		<Triangle-4 Type="Triangle" Shading="0" Node1="MacroNode204" Node2="MacroNode203" Node3="MacroNode205"/>
+		<Triangle-2 Type="Triangle" Shading="0" Node1="MacroNode205" Node2="MacroNode202" Node3="NHeadS_1"/>
+		<Triangle-3 Type="Triangle" Shading="0" Node1="MacroNode205" Node2="MacroNode203" Node3="MacroNode202"/>
+		<Triangle-1 Type="Triangle" Shading="0" Node1="MacroNode202" Node2="NHeadS_1" Node3="MacroNode201"/>
+		<NP_MacroNode201 Type="NodePoint" Node="MacroNode201" Radius="3"/>
+		<NP_MacroNode202 Type="NodePoint" Node="MacroNode202" Radius="3"/>
+		<NP_MacroNode203 Type="NodePoint" Node="MacroNode203" Radius="3"/>
+		<NP_MacroNode204 Type="NodePoint" Node="MacroNode204" Radius="3"/>
+		<NP_MacroNode205 Type="NodePoint" Node="MacroNode205" Radius="3"/>
+	</Figures>
 </Scene>

@@ -1,703 +1,703 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <NHip_1 Type="Node"  X="-171.060577392578"  Y="119.62629699707"  Z="17.4658336639404"  Mass="4.94999980926514"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHip_2 Type="Node"  X="-171.909469604492"  Y="118.664260864258"  Z="0.0127448588609695"  Mass="4.94999980926514"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NStomach Type="Node"  X="-155.349456787109"  Y="125.818756103516"  Z="7.5864429473877"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NChest Type="Node"  X="-138.518005371094"  Y="130.605285644531"  Z="7.64703226089478"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NNeck Type="Node"  X="-121.412300109863"  Y="134.285903930664"  Z="7.91951370239258"  Mass="3.65000009536743"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NShoulder_1 Type="Node"  X="-121.07836151123"  Y="129.636947631836"  Z="24.7873611450195"  Mass="3"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NShoulder_2 Type="Node"  X="-120.928588867188"  Y="130.5400390625"  Z="-9.16797256469727"  Mass="3"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnee_1 Type="Node"  X="-134.309753417969"  Y="94.7635040283203"  Z="34.4211349487305"  Mass="6.44999980926514"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnee_2 Type="Node"  X="-134.494033813477"  Y="96.2306594848633"  Z="-18.7776145935059"  Mass="6.44999980926514"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NAnkle_1 Type="Node"  X="-165.482315063477"  Y="73.4185104370117"  Z="21.2811546325684"  Mass="2.20000004768372"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NAnkle_2 Type="Node"  X="-165.387222290039"  Y="73.332145690918"  Z="-7.76547861099243"  Mass="2.20000004768372"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToe_1 Type="Node"  X="-166.742080688477"  Y="55.9771995544434"  Z="21.9607906341553"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHeel_1 Type="Node"  X="-175.46614074707"  Y="73.9664459228516"  Z="21.4319362640381"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToeTip_1 Type="Node"  X="-163.700897216797"  Y="48.5812950134277"  Z="22.1875953674316"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToeS_1 Type="Node"  X="-166.605117797852"  Y="56.2786865234375"  Z="29.9539184570313"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHeel_2 Type="Node"  X="-175.11116027832"  Y="73.8054962158203"  Z="-5.48058462142944"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToe_2 Type="Node"  X="-166.825698852539"  Y="55.9292907714844"  Z="-8.91479778289795"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToeTip_2 Type="Node"  X="-163.627410888672"  Y="48.7220840454102"  Z="-10.2666158676147"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NToeS_2 Type="Node"  X="-168.619018554688"  Y="56.5905265808105"  Z="-16.6831130981445"  Mass="0.300000011920929"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NElbow_1 Type="Node"  X="-110.103897094727"  Y="109.982818603516"  Z="44.6186180114746"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NElbow_2 Type="Node"  X="-109.288436889648"  Y="110.911483764648"  Z="-28.6416091918945"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NWrist_1 Type="Node"  X="-85.4554138183594"  Y="96.5335540771484"  Z="34.0562973022461"  Mass="1"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NWrist_2 Type="Node"  X="-85.7301177978516"  Y="95.7013244628906"  Z="-17.9804573059082"  Mass="1"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnuckles_1 Type="Node"  X="-76.498908996582"  Y="93.1564712524414"  Z="36.9505882263184"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NFingertips_1 Type="Node"  X="-85.7195587158203"  Y="95.2894821166992"  Z="33.721061706543"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnucklesS_1 Type="Node"  X="-73.3433074951172"  Y="94.6494140625"  Z="28.9271240234375"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnuckles_2 Type="Node"  X="-76.5740661621094"  Y="92.6072387695313"  Z="-20.5481281280518"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NFingertips_2 Type="Node"  X="-86.0439987182617"  Y="93.6651763916016"  Z="-17.5147113800049"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NKnucklesS_2 Type="Node"  X="-73.7957611083984"  Y="94.0476837158203"  Z="-12.3769283294678"  Mass="0.189999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHead Type="Node"  X="-104.516647338867"  Y="138.626205444336"  Z="9.31306743621826"  Mass="1.51999998092651"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NTop Type="Node"  X="-97.03173828125"  Y="154.412445068359"  Z="10.3211154937744"  Mass="0.759999990463257"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <NChestS_1 Type="Node"  X="-138.645355224609"  Y="130.544097900391"  Z="16.3959217071533"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NChestS_2 Type="Node"  X="-138.392425537109"  Y="130.663848876953"  Z="-1.10188269615173"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NStomachS_1 Type="Node"  X="-155.411605834961"  Y="125.922019958496"  Z="16.3356189727783"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NStomachS_2 Type="Node"  X="-155.289520263672"  Y="125.714019775391"  Z="-1.16272914409637"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NChestF Type="Node"  X="-136.677703857422"  Y="122.050567626953"  Z="7.61509132385254"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NStomachF Type="Node"  X="-152.957626342773"  Y="117.402587890625"  Z="7.70316457748413"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="1"  Cloth="0"  Rank="0" />
-    <NPelvisF Type="Node"  X="-168.126647949219"  Y="111.07063293457"  Z="9.02101516723633"  Mass="1.89999997615814"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHeadS_1 Type="Node"  X="-105.42650604248"  Y="138.501724243164"  Z="18.0147266387939"  Mass="0.759999990463257"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHeadS_2 Type="Node"  X="-103.607231140137"  Y="138.750442504883"  Z="0.61136120557785"  Mass="0.759999990463257"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NHeadF Type="Node"  X="-96.6600341796875"  Y="134.851821899414"  Z="10.0804224014282"  Mass="0.759999990463257"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NPivot Type="Node"  X="-171.485992431641"  Y="119.145248413086"  Z="8.73933410644531"  Mass="4.94999980926514"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer2_DetectorH Type="Node"  X="-141.056076049805"  Y="0"  Z="8.03708171844482"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <DetectorV Type="Node"  X="-91.0560760498047"  Y="100"  Z="8.03708171844482"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <COM Type="CenterOfMass"  X="-141.056076049805"  Y="112.960891723633"  Z="8.03708171844482"  Mass="72.8000030517578"  Fixed="0"  Visible="1"  NodesCount="42"  ChildNode1="NPivot"  ChildNode2="NHeadF"  ChildNode3="NHeadS_2"  ChildNode4="NHeadS_1"  ChildNode5="NPelvisF"  ChildNode6="NStomachF"  ChildNode7="NChestF"  ChildNode8="NStomachS_2"  ChildNode9="NStomachS_1"  ChildNode10="NChestS_2"  ChildNode11="NChestS_1"  ChildNode12="NTop"  ChildNode13="NHead"  ChildNode14="NKnucklesS_2"  ChildNode15="NFingertips_2"  ChildNode16="NKnuckles_2"  ChildNode17="NKnucklesS_1"  ChildNode18="NFingertips_1"  ChildNode19="NKnuckles_1"  ChildNode20="NWrist_2"  ChildNode21="NWrist_1"  ChildNode22="NElbow_2"  ChildNode23="NElbow_1"  ChildNode24="NToeS_2"  ChildNode25="NToeTip_2"  ChildNode26="NToe_2"  ChildNode27="NHeel_2"  ChildNode28="NToeS_1"  ChildNode29="NToeTip_1"  ChildNode30="NHeel_1"  ChildNode31="NToe_1"  ChildNode32="NAnkle_2"  ChildNode33="NAnkle_1"  ChildNode34="NKnee_2"  ChildNode35="NKnee_1"  ChildNode36="NShoulder_2"  ChildNode37="NShoulder_1"  ChildNode38="NNeck"  ChildNode39="NChest"  ChildNode40="NStomach"  ChildNode41="NHip_2"  ChildNode42="NHip_1" />
-    <Camera Type="Node"  X="8.94392395019531"  Y="85"  Z="8.03708171844482"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer1_Layer1_Node25 Type="Node"  X="8.4752311706543"  Y="12.1557140350342"  Z="7.96572160720825"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer1_Layer1_NPivot Type="Node"  X="-206.556625366211"  Y="12.1556797027588"  Z="47.7942886352539"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer1_Layer1_Node27 Type="Node"  X="-206.492691040039"  Y="12.1556177139282"  Z="-32.2058181762695"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer1_Layer1_Node28 Type="Node"  X="-206.524887084961"  Y="125.155654907227"  Z="7.79411745071411"  Mass="10"  Fixed="1"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Layer1_MacroNode35 Type="MacroNode"  X="-5.17702674865723"  Y="12.6163501739502"  Z="14.9896965026855"  Mass="0.41413202881813"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.00407641008496284"  LCC2="0.936527252197266"  LCC3="0.117633797228336"  LCC4="-0.0582374595105648" />
-    <Layer1_MacroNode36 Type="MacroNode"  X="-252.863693237305"  Y="70.5956115722656"  Z="19.7541885375977"  Mass="0.614521265029907"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.517167806625366"  LCC2="-0.215485438704491"  LCC3="0.499120712280273"  LCC4="0.19919690489769" />
-    <Layer1_MacroNode37 Type="MacroNode"  X="-99.054313659668"  Y="83.3796997070313"  Z="34.0088577270508"  Mass="0.426166892051697"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.630300879478455"  LCC2="0.49996018409729"  LCC3="0.261481046676636"  LCC4="-0.39174211025238" />
-    <Layer1_MacroNode38 Type="MacroNode"  X="-195.444519042969"  Y="122.249572753906"  Z="25.3291244506836"  Mass="0.353335082530975"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.974282264709473"  LCC2="0.0516017638146877"  LCC3="0.206134632229805"  LCC4="-0.232018649578094" />
-    <Layer1_MacroNode39 Type="MacroNode"  X="-310.475708007813"  Y="98.9173431396484"  Z="14.4670181274414"  Mass="0.338666796684265"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.767802834510803"  LCC2="-0.483467698097229"  LCC3="0.442279547452927"  LCC4="0.273385256528854" />
-    <Layer1_MacroNode40 Type="MacroNode"  X="-316.046234130859"  Y="109.03882598877"  Z="0.966437339782715"  Mass="0.303236842155457"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.857373535633087"  LCC2="-0.509427070617676"  LCC3="0.241772681474686"  LCC4="0.410280883312225" />
-    <Layer1_MacroNode41 Type="MacroNode"  X="-78.2799530029297"  Y="101.26781463623"  Z="26.0773601531982"  Mass="0.320599913597107"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.788602709770203"  LCC2="0.596555650234222"  LCC3="0.034681960940361"  LCC4="-0.41984036564827" />
-    <Layer1_MacroNode42 Type="MacroNode"  X="-304.949340820313"  Y="12.3865966796875"  Z="41.682487487793"  Mass="0.227302506566048"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.00204381346702576"  LCC2="-0.457663178443909"  LCC3="1.15239334106445"  LCC4="0.30322602391243" />
-    <Layer1_MacroNode43 Type="MacroNode"  X="-183.902069091797"  Y="110.886772155762"  Z="23.4220180511475"  Mass="0.435295432806015"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.873726606369019"  LCC2="0.105280339717865"  LCC3="0.205619141459465"  LCC4="-0.184626117348671" />
-    <Layer1_MacroNode44 Type="MacroNode"  X="-5.16579437255859"  Y="12.6163377761841"  Z="0.935421466827393"  Mass="0.414163440465927"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.00407640635967255"  LCC2="0.936527252197266"  LCC3="-0.0580444037914276"  LCC4="0.117440745234489" />
-    <Layer1_MacroNode45 Type="MacroNode"  X="-252.844573974609"  Y="70.5956039428711"  Z="-4.22430038452148"  Mass="0.614639163017273"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.517167925834656"  LCC2="-0.215485438704491"  LCC3="0.199389979243279"  LCC4="0.498927623033524" />
-    <Layer1_MacroNode46 Type="MacroNode"  X="-195.416519165039"  Y="122.249549865723"  Z="-9.70773696899414"  Mass="0.353392124176025"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.974282264709473"  LCC2="0.0516017638146877"  LCC3="-0.231825545430183"  LCC4="0.205941528081894" />
-    <Layer1_MacroNode47 Type="MacroNode"  X="-237.695587158203"  Y="45.5622444152832"  Z="26.1282825469971"  Mass="0.644835352897644"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.295633554458618"  LCC2="-0.144912645220757"  LCC3="0.654125869274139"  LCC4="0.195153161883354" />
-    <Layer1_MacroNode48 Type="MacroNode"  X="-316.057006835938"  Y="109.03882598877"  Z="14.4625568389893"  Mass="0.303220689296722"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.857373476028442"  LCC2="-0.509427070617676"  LCC3="0.410473942756653"  LCC4="0.241579622030258" />
-    <Layer1_MacroNode49 Type="MacroNode"  X="5.31396484375"  Y="27.179630279541"  Z="17.2607460021973"  Mass="0.362197697162628"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.132954955101013"  LCC2="0.985331118106842"  LCC3="0.0570762529969215"  LCC4="-0.175362333655357" />
-    <Layer1_MacroNode50 Type="MacroNode"  X="-8.84103393554688"  Y="64.9714965820313"  Z="20.5710983276367"  Mass="0.311612010002136"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.467396289110184"  LCC2="0.91950660943985"  LCC3="-0.0357112288475037"  LCC4="-0.35119166970253" />
-    <Layer1_MacroNode51 Type="MacroNode"  X="-99.0125579833984"  Y="83.3796615600586"  Z="-18.2336196899414"  Mass="0.426290541887283"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.630300879478455"  LCC2="0.49996018409729"  LCC3="-0.391549050807953"  LCC4="0.261287987232208" />
-    <Layer1_MacroNode52 Type="MacroNode"  X="-310.464965820313"  Y="98.9173431396484"  Z="0.970900535583496"  Mass="0.338686943054199"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.767802894115448"  LCC2="-0.483467698097229"  LCC3="0.273578315973282"  LCC4="0.442086517810822" />
-    <Layer1_MacroNode53 Type="MacroNode"  X="-304.895050048828"  Y="12.3865461349487"  Z="-26.235538482666"  Mass="0.227348268032074"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.00204384326934814"  LCC2="-0.457663178443909"  LCC3="0.303419083356857"  LCC4="1.15220022201538" />
-    <Layer1_MacroNode54 Type="MacroNode"  X="-183.877136230469"  Y="110.886741638184"  Z="-7.78220129013062"  Mass="0.435372531414032"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.873726606369019"  LCC2="0.105280339717865"  LCC3="-0.184433072805405"  LCC4="0.205426096916199" />
-    <Layer1_MacroNode55 Type="MacroNode"  X="-78.2509078979492"  Y="101.267784118652"  Z="-10.2690277099609"  Mass="0.320648580789566"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.788602709770203"  LCC2="0.596555650234222"  LCC3="-0.419647306203842"  LCC4="0.0344888903200626" />
-    <Layer1_MacroNode56 Type="MacroNode"  X="-237.666259765625"  Y="45.5622177124023"  Z="-10.5741395950317"  Mass="0.645034313201904"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.295633554458618"  LCC2="-0.144912645220757"  LCC3="0.195346221327782"  LCC4="0.653932809829712" />
-    <Layer1_MacroNode57 Type="MacroNode"  X="5.32881259918213"  Y="27.1796169281006"  Z="-1.31892108917236"  Mass="0.362229466438293"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.132954955101013"  LCC2="0.985331118106842"  LCC3="-0.175169289112091"  LCC4="0.0568832084536552" />
-    <Layer1_MacroNode58 Type="MacroNode"  X="-8.82087707519531"  Y="64.9714889526367"  Z="-4.65192842483521"  Mass="0.311643898487091"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="Layer1_Layer1_Node28"  ChildNode2="Layer1_Layer1_Node25"  ChildNode3="Layer1_Layer1_NPivot"  ChildNode4="Layer1_Layer1_Node27"  LCC1="0.467396318912506"  LCC2="0.91950660943985"  LCC3="-0.350998640060425"  LCC4="-0.0359042771160603" />
-  </Nodes>
-  <Edges>
-    <EPelvis_2 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NStomach"  End2="NHip_2" />
-    <EPelvis_1 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NStomach"  End2="NHip_1" />
-    <EGroin Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NHip_2"  End2="NHip_1" />
-    <EStomach Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NChest"  End2="NStomach" />
-    <EChest Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NNeck"  End2="NChest" />
-    <EClavicle_1 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NShoulder_1"  End2="NNeck" />
-    <EClavicle_2 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NShoulder_2"  End2="NNeck" />
-    <EThigh_1 Type="Edge"  Length="47.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NKnee_1"  End2="NHip_1" />
-    <EThigh_2 Type="Edge"  Length="47.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NKnee_2"  End2="NHip_2" />
-    <ECalf_1 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NAnkle_1"  End2="NKnee_1" />
-    <ECalf_2 Type="Edge"  Length="40"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NAnkle_2"  End2="NKnee_2" />
-    <EInstep_1 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToe_1"  End2="NAnkle_1" />
-    <EHeel_1 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeel_1"  End2="NAnkle_1" />
-    <EFoot_1 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeel_1"  End2="NToe_1" />
-    <EToe_1 Type="Edge"  Length="8"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToe_1"  End2="NToeTip_1" />
-    <EToeC_1 Type="Edge"  Length="8"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NToe_1"  SubNode2="NAnkle_1"  SubNode3="NHeel_1"  End1="NToe_1"  End2="NToeS_1" />
-    <EToeS_1 Type="Edge"  Length="11.3137083053589"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToeTip_1"  End2="NToeS_1" />
-    <EFootS_1 Type="Edge"  Length="21.5406589508057"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeel_1"  End2="NToeS_1" />
-    <EInstepS_1 Type="Edge"  Length="19.2418823242188"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NAnkle_1"  End2="NToeS_1" />
-    <EHeep_2 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeel_2"  End2="NAnkle_2" />
-    <EInstep_2 Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToe_2"  End2="NAnkle_2" />
-    <EFoot_2 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToe_2"  End2="NHeel_2" />
-    <EToe_2 Type="Edge"  Length="8"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToeTip_2"  End2="NToe_2" />
-    <EToeC_2 Type="Edge"  Length="8"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NToe_2"  SubNode2="NHeel_2"  SubNode3="NAnkle_2"  End1="NToe_2"  End2="NToeS_2" />
-    <EToeS_2 Type="Edge"  Length="11.3137083053589"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToeTip_2"  End2="NToeS_2" />
-    <EFootS_2 Type="Edge"  Length="21.5406589508057"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToeS_2"  End2="NHeel_2" />
-    <EInstepS_2 Type="Edge"  Length="19.2418823242188"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NToeS_2"  End2="NAnkle_2" />
-    <EArm_1 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NElbow_1"  End2="NShoulder_1" />
-    <EForearm_1 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NWrist_1"  End2="NElbow_1" />
-    <EHand_1 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnuckles_1"  End2="NWrist_1" />
-    <EFingers_1 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NFingertips_1"  End2="NKnuckles_1" />
-    <EHandC_1 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnuckles_1"  End2="NKnucklesS_1" />
-    <EHandS_1 Type="Edge"  Length="13.2876825332642"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnucklesS_1"  End2="NWrist_1" />
-    <EFingersS_1 Type="Edge"  Length="13.2876825332642"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NFingertips_1"  End2="NKnucklesS_1" />
-    <EArm_2 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NElbow_2"  End2="NShoulder_2" />
-    <EForearm_2 Type="Edge"  Length="30"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NWrist_2"  End2="NElbow_2" />
-    <EHand_2 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnuckles_2"  End2="NWrist_2" />
-    <EFingers_2 Type="Edge"  Length="10"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NFingertips_2"  End2="NKnuckles_2" />
-    <EHandC_2 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnucklesS_2"  End2="NKnuckles_2" />
-    <EHandS_2 Type="Edge"  Length="13.2876825332642"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NKnucklesS_2"  End2="NWrist_2" />
-    <EFingersS_2 Type="Edge"  Length="13.2876825332642"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NFingertips_2"  End2="NKnucklesS_2" />
-    <ENeck Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NNeck"  End2="NHead" />
-    <EHead Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NHead"  End2="NTop" />
-    <EChestHS_1 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChest"  End2="NChestS_1" />
-    <EChestHS_2 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestS_2"  End2="NChest" />
-    <EStomachHS_1 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomach"  End2="NStomachS_1" />
-    <EStomachHS_2 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomach"  End2="NStomachS_2" />
-    <EChestS_1 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NNeck"  End2="NChestS_1" />
-    <EChestS_2 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestS_2"  End2="NNeck" />
-    <EStomachS_1 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachS_1"  End2="NChest" />
-    <EStomachS_2 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachS_2"  End2="NChest" />
-    <EChestH Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestS_2"  End2="NChestS_1" />
-    <EStomachH Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachS_2"  End2="NStomachS_1" />
-    <EChestHD_1 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestS_1"  End2="NChestF" />
-    <EChestHD_2 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestS_2"  End2="NChestF" />
-    <EStomachHD_1 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachF"  End2="NStomachS_1" />
-    <EStomachHD_2 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachF"  End2="NStomachS_2" />
-    <EChestF Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NChestF"  End2="NNeck" />
-    <EStomachF Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomachF"  End2="NChest" />
-    <EChestHF Type="Edge"  Length="8.75"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NChest"  SubNode2="NChestS_2"  SubNode3="NNeck"  End1="NChest"  End2="NChestF" />
-    <EStomachHF Type="Edge"  Length="8.75"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NStomach"  SubNode2="NStomachS_2"  SubNode3="NChest"  End1="NStomach"  End2="NStomachF" />
-    <EPelvisHD_1 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NPelvisF"  End2="NHip_1" />
-    <EPelvisHD_2 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHip_2"  End2="NPelvisF" />
-    <EPelvisF Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="NStomach"  End2="NPelvisF" />
-    <EHeadHS_1 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHead"  End2="NHeadS_1" />
-    <EHeadHS_2 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadS_2"  End2="NHead" />
-    <EHeadS_1 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NTop"  End2="NHeadS_1" />
-    <EHeadS_2 Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadS_2"  End2="NTop" />
-    <EHeadH Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadS_1"  End2="NHeadS_2" />
-    <EHeadHF Type="Edge"  Length="8.75"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NHead"  SubNode2="NTop"  SubNode3="NHeadS_2"  End1="NHeadF"  End2="NHead" />
-    <EHeadHD_1 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadF"  End2="NHeadS_1" />
-    <EHeadHD_2 Type="Edge"  Length="12.3743686676025"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadS_2"  End2="NHeadF" />
-    <EHeadF Type="Edge"  Length="19.5655956268311"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHeadF"  End2="NTop" />
-    <Muscle115 Type="Muscle"  Length="19.489444732666"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NShoulder_1" />
-    <Muscle116 Type="Muscle"  Length="17.3917903900146"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_1"  End2="NChestS_1" />
-    <Muscle117 Type="Muscle"  Length="16.9057331085205"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NStomachS_1" />
-    <Muscle118 Type="Muscle"  Length="19.2370147705078"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NShoulder_2" />
-    <Muscle119 Type="Muscle"  Length="17.6072807312012"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_2"  End2="NChestS_2" />
-    <Muscle120 Type="Muscle"  Length="18.0915336608887"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NStomachS_2" />
-    <EPelvisM Type="Edge"  Length="17.5"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomach"  End2="NPivot" />
-    <EPelvisF Type="Edge"  Length="19.5655956268311"  WithSign="1"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="3"  SubNode1="NPivot"  SubNode2="NStomach"  SubNode3="NHip_2"  End1="NPelvisF"  End2="NPivot" />
-    <EPelvisHS_1 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHip_2"  End2="NPivot" />
-    <EPelvisHS_2 Type="Edge"  Length="8.75"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NHip_1"  End2="NPivot" />
-    <Muscle126 Type="Muscle"  Length="48.2643737792969"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_2"  End2="NHeel_2" />
-    <Muscle127 Type="Muscle"  Length="45.3071327209473"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NHeel_2" />
-    <Muscle128 Type="Muscle"  Length="52.6004943847656"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_2"  End2="NToe_2" />
-    <Muscle129 Type="Muscle"  Length="63.5706062316895"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NToe_2" />
-    <Muscle130 Type="Muscle"  Length="24.7993507385254"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NAnkle_2"  End2="NToeTip_2" />
-    <Muscle131 Type="Muscle"  Length="56.3760185241699"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_2"  End2="NToeTip_2" />
-    <Muscle132 Type="Muscle"  Length="52.3473167419434"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_2"  End2="NToeS_2" />
-    <Muscle133 Type="Muscle"  Length="46.454719543457"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NAnkle_2" />
-    <Muscle134 Type="Muscle"  Length="46.0884094238281"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NPelvisF"  End2="NKnee_2" />
-    <Muscle135 Type="Muscle"  Length="56.5513534545898"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NKnee_2" />
-    <Muscle136 Type="Muscle"  Length="44.7824478149414"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomach"  End2="NKnee_2" />
-    <Muscle137 Type="Muscle"  Length="53.0278663635254"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NAnkle_2" />
-    <Muscle138 Type="Muscle"  Length="64.3640213012695"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NToeS_2" />
-    <Muscle139 Type="Muscle"  Length="24.9175109863281"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NAnkle_1"  End2="NToeTip_1" />
-    <Muscle140 Type="Muscle"  Length="56.0918464660645"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_1"  End2="NToeTip_1" />
-    <Muscle141 Type="Muscle"  Length="52.0720024108887"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_1"  End2="NToe_1" />
-    <Muscle142 Type="Muscle"  Length="63.9535903930664"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NToe_1" />
-    <Muscle143 Type="Muscle"  Length="47.9070472717285"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_1"  End2="NHeel_1" />
-    <Muscle144 Type="Muscle"  Length="46.0430335998535"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NHeel_1" />
-    <Muscle145 Type="Muscle"  Length="50.4383544921875"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NKnee_1"  End2="NToeS_1" />
-    <Muscle146 Type="Muscle"  Length="64.720344543457"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NToeS_1" />
-    <Muscle147 Type="Muscle"  Length="46.699390411377"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NAnkle_1" />
-    <Muscle148 Type="Muscle"  Length="50.4066619873047"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NAnkle_1" />
-    <Muscle149 Type="Muscle"  Length="45.3284759521484"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NPelvisF"  End2="NKnee_1" />
-    <Muscle150 Type="Muscle"  Length="46.1215629577637"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomach"  End2="NKnee_1" />
-    <Muscle151 Type="Muscle"  Length="56.2931785583496"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NKnee_1" />
-    <Muscle152 Type="Muscle"  Length="2.1121883392334"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NWrist_2"  End2="NFingertips_2" />
-    <Muscle153 Type="Muscle"  Length="31.0088195800781"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_2"  End2="NFingertips_2" />
-    <Muscle154 Type="Muscle"  Length="38.3507461547852"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_2"  End2="NKnuckles_2" />
-    <Muscle155 Type="Muscle"  Length="59.4619941711426"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NKnuckles_2" />
-    <Muscle156 Type="Muscle"  Length="42.5283164978027"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_2"  End2="NKnucklesS_2" />
-    <Muscle157 Type="Muscle"  Length="59.6949996948242"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NKnucklesS_2" />
-    <Muscle158 Type="Muscle"  Length="24.5311431884766"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NChestF" />
-    <Muscle159 Type="Muscle"  Length="31.1029987335205"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NShoulder_2" />
-    <Muscle160 Type="Muscle"  Length="50.3023681640625"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NWrist_2" />
-    <Muscle165 Type="Muscle"  Length="45.056266784668"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NNeck"  End2="NElbow_2" />
-    <Muscle166 Type="Muscle"  Length="62.8098030090332"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestF"  End2="NWrist_2" />
-    <Muscle167 Type="Muscle"  Length="58.5900726318359"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NNeck"  End2="NWrist_2" />
-    <Muscle168 Type="Muscle"  Length="65.4261627197266"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NWrist_2" />
-    <Muscle169 Type="Muscle"  Length="72.0817337036133"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NWrist_2" />
-    <Muscle171 Type="Muscle"  Length="44.6725273132324"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NElbow_2" />
-    <Muscle173 Type="Muscle"  Length="57.2332725524902"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NElbow_2" />
-    <Muscle174 Type="Muscle"  Length="75.1529846191406"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NKnuckles_2" />
-    <Muscle175 Type="Muscle"  Length="24.4085941314697"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestF"  End2="NShoulder_1" />
-    <Muscle176 Type="Muscle"  Length="31.1622257232666"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NShoulder_1" />
-    <Muscle177 Type="Muscle"  Length="1.31524538993835"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NWrist_1"  End2="NFingertips_1" />
-    <Muscle178 Type="Muscle"  Length="30.4835510253906"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_1"  End2="NFingertips_1" />
-    <Muscle179 Type="Muscle"  Length="38.3564834594727"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_1"  End2="NKnuckles_1" />
-    <Muscle180 Type="Muscle"  Length="58.8735656738281"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_1"  End2="NKnuckles_1" />
-    <Muscle181 Type="Muscle"  Length="42.8097801208496"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NElbow_1"  End2="NKnucklesS_1" />
-    <Muscle182 Type="Muscle"  Length="59.3287506103516"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_1"  End2="NKnucklesS_1" />
-    <Muscle183 Type="Muscle"  Length="49.5049705505371"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_1"  End2="NWrist_1" />
-    <Muscle184 Type="Muscle"  Length="63.0394973754883"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestF"  End2="NWrist_1" />
-    <Muscle185 Type="Muscle"  Length="65.5574264526367"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NWrist_1" />
-    <Muscle186 Type="Muscle"  Length="72.133918762207"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NWrist_1" />
-    <Muscle187 Type="Muscle"  Length="58.3204002380371"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NNeck"  End2="NWrist_1" />
-    <Muscle188 Type="Muscle"  Length="45.4460563659668"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NNeck"  End2="NElbow_1" />
-    <Muscle189 Type="Muscle"  Length="45.0987968444824"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NElbow_1" />
-    <Muscle190 Type="Muscle"  Length="57.6047744750977"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NElbow_1" />
-    <Muscle191 Type="Muscle"  Length="75.3824234008789"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NKnuckles_1" />
-    <Muscle192 Type="Muscle"  Length="16.9306621551514"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachF"  End2="NChestF" />
-    <Muscle193 Type="Muscle"  Length="16.4902877807617"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NPelvisF"  End2="NStomachF" />
-    <Muscle194 Type="Muscle"  Length="21.2862491607666"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_1"  End2="NStomachF" />
-    <Muscle195 Type="Muscle"  Length="21.5762596130371"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestS_2"  End2="NStomachF" />
-    <Muscle196 Type="Muscle"  Length="20.8743724822998"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_1"  End2="NPelvisF" />
-    <Muscle197 Type="Muscle"  Length="21.9756526947021"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_2"  End2="NPelvisF" />
-    <Muscle198 Type="Muscle"  Length="19.3709087371826"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHeadS_1"  End2="NNeck" />
-    <Muscle199 Type="Muscle"  Length="24.852855682373"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHeadF"  End2="NNeck" />
-    <Muscle200 Type="Muscle"  Length="19.7575721740723"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHeadS_2"  End2="NNeck" />
-    <Muscle201 Type="Muscle"  Length="31.70578956604"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NNeck"  End2="NTop" />
-    <Muscle202 Type="Muscle"  Length="36.2211036682129"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHead"  End2="NChestF" />
-    <Muscle203 Type="Muscle"  Length="24.383415222168"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHead"  End2="NShoulder_1" />
-    <Muscle204 Type="Muscle"  Length="26.0055141448975"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NHead" />
-    <Muscle211 Type="Muscle"  Length="33.9676704406738"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NShoulder_1" />
-    <Muscle212 Type="Muscle"  Length="21.0236740112305"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_1"  End2="NChestF" />
-    <Muscle213 Type="Muscle"  Length="20.9014530181885"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomachS_2"  End2="NChestF" />
-    <Muscle214 Type="Muscle"  Length="20.6874694824219"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NStomachF" />
-    <Muscle215 Type="Muscle"  Length="20.491626739502"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NStomachF" />
-    <Muscle216 Type="Muscle"  Length="42.087574005127"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChestF"  End2="NHeadF" />
-    <Muscle205 Type="Muscle"  Length="34.9743232727051"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NChest"  End2="NHead" />
-    <Muscle206 Type="Muscle"  Length="34.9790534973145"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NStomach"  End2="NNeck" />
-    <Muscle207 Type="Muscle"  Length="35.7206687927246"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_1"  End2="NChest" />
-    <Muscle208 Type="Muscle"  Length="36.274787902832"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NHip_2"  End2="NChest" />
-    <Muscle209 Type="Muscle"  Length="19.2206516265869"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_1"  End2="NHeadS_1" />
-    <Muscle210 Type="Muscle"  Length="21.5191898345947"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  Tension="0"  MinLength="0"  MaxLength="100000"  SubNodesCount="0"  End1="NShoulder_2"  End2="NHeadS_2" />
-    <Layer1_Edge47 Type="Edge"  Length="119.870765686035"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_Node28"  End2="Layer1_Layer1_Node27" />
-    <Layer1_Edge48 Type="Edge"  Length="119.870765686035"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_Node28"  End2="Layer1_Layer1_NPivot" />
-    <Layer1_Edge49 Type="Edge"  Length="242.886810302734"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_Node28"  End2="Layer1_Layer1_Node25" />
-    <Layer1_Edge50 Type="Edge"  Length="80"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_Node27"  End2="Layer1_Layer1_NPivot" />
-    <Layer1_Edge51 Type="Edge"  Length="218.689270019531"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_Node27"  End2="Layer1_Layer1_Node25" />
-    <Layer1_Edge52 Type="Edge"  Length="218.689270019531"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Layer1_Layer1_NPivot"  End2="Layer1_Layer1_Node25" />
-  </Edges>
-  <Figures>
-    <Capsule_EToeS_2 Type="Capsule"  Edge="EToeS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToeC_2 Type="Capsule"  Edge="EToeC_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToe_2 Type="Capsule"  Edge="EToe_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFootS_2 Type="Capsule"  Edge="EFootS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstepS_2 Type="Capsule"  Edge="EInstepS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFoot_2 Type="Capsule"  Edge="EFoot_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstep_2 Type="Capsule"  Edge="EInstep_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHeep_2 Type="Capsule"  Edge="EHeep_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_ECalf_2 Type="Capsule"  Edge="ECalf_2"  Radius1="6"  Radius2="6"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EToe_1 Type="Capsule"  Edge="EToe_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToeS_1 Type="Capsule"  Edge="EToeS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToeC_1 Type="Capsule"  Edge="EToeC_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFoot_1 Type="Capsule"  Edge="EFoot_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFootS_1 Type="Capsule"  Edge="EFootS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstep_1 Type="Capsule"  Edge="EInstep_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstepS_1 Type="Capsule"  Edge="EInstepS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHeel_1 Type="Capsule"  Edge="EHeel_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule-1_ECalf_2 Type="Capsule"  Edge="ECalf_2"  Radius1="10"  Radius2="10"  Margin1="0.5"  Margin2="0" />
-    <Capsule_ECalf_1 Type="Capsule"  Edge="ECalf_1"  Radius1="6"  Radius2="6"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EThigh_2 Type="Capsule"  Edge="EThigh_2"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule-1_EThigh_2 Type="Capsule"  Edge="EThigh_2"  Radius1="12"  Radius2="12"  Margin1="0.400000005960464"  Margin2="0" />
-    <Capsule_EGroin Type="Capsule"  Edge="EGroin"  Radius1="12"  Radius2="12"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle120 Type="Capsule"  Edge="Muscle120"  Radius1="8"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Capsule_EPelvisM Type="Capsule"  Edge="EPelvisM"  Radius1="12"  Radius2="12"  Margin1="0"  Margin2="0" />
-    <Capsule-1_EThigh_1 Type="Capsule"  Edge="EThigh_1"  Radius1="12"  Radius2="12"  Margin1="0.400000005960464"  Margin2="0" />
-    <Capsule_Muscle117 Type="Capsule"  Edge="Muscle117"  Radius1="8"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Capsule_EArm_2 Type="Capsule"  Edge="EArm_2"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule-1_EForearm_2 Type="Capsule"  Edge="EForearm_2"  Radius1="7"  Radius2="7"  Margin1="0.5"  Margin2="0" />
-    <Capsule-1_ECalf_1 Type="Capsule"  Edge="ECalf_1"  Radius1="10"  Radius2="10"  Margin1="0.5"  Margin2="0" />
-    <Capsule_Muscle119 Type="Capsule"  Edge="Muscle119"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_EStomach Type="Capsule"  Edge="EStomach"  Radius1="13"  Radius2="13"  Margin1="0"  Margin2="0" />
-    <Capsule_EForearm_2 Type="Capsule"  Edge="EForearm_2"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EThigh_1 Type="Capsule"  Edge="EThigh_1"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EFingers_2 Type="Capsule"  Edge="EFingers_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule-1_EArm_2 Type="Capsule"  Edge="EArm_2"  Radius1="10"  Radius2="10"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EHand_2 Type="Capsule"  Edge="EHand_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle118 Type="Capsule"  Edge="Muscle118"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle116 Type="Capsule"  Edge="Muscle116"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_EFingersS_2 Type="Capsule"  Edge="EFingersS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandS_2 Type="Capsule"  Edge="EHandS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandC_2 Type="Capsule"  Edge="EHandC_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EChest Type="Capsule"  Edge="EChest"  Radius1="13"  Radius2="13"  Margin1="0.200000002980232"  Margin2="0" />
-    <Capsule_EClavicle_2 Type="Capsule"  Edge="EClavicle_2"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle115 Type="Capsule"  Edge="Muscle115"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_EClavicle_1 Type="Capsule"  Edge="EClavicle_1"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Capsule_ENeck Type="Capsule"  Edge="ENeck"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0" />
-    <Capsule-1_EArm_1 Type="Capsule"  Edge="EArm_1"  Radius1="10"  Radius2="10"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EArm_1 Type="Capsule"  Edge="EArm_1"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule-1_EForearm_1 Type="Capsule"  Edge="EForearm_1"  Radius1="7"  Radius2="7"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EForearm_1 Type="Capsule"  Edge="EForearm_1"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EFingersS_1 Type="Capsule"  Edge="EFingersS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandS_1 Type="Capsule"  Edge="EHandS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFingers_1 Type="Capsule"  Edge="EFingers_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHand_1 Type="Capsule"  Edge="EHand_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHead Type="Capsule"  Edge="EHead"  Radius1="12"  Radius2="12"  Margin1="0"  Margin2="0.5" />
-    <Capsule_EHandC_1 Type="Capsule"  Edge="EHandC_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Layer1_Triangle-36 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode56"  Node2="Layer1_MacroNode42"  Node3="Layer1_MacroNode53" />
-    <Layer1_Triangle-35 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode56"  Node2="Layer1_MacroNode47"  Node3="Layer1_MacroNode42" />
-    <Layer1_Triangle-28 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode40"  Node2="Layer1_MacroNode39"  Node3="Layer1_MacroNode52" />
-    <Layer1_Triangle-27 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode40"  Node2="Layer1_MacroNode48"  Node3="Layer1_MacroNode39" />
-    <Layer1_Triangle-24 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode52"  Node2="Layer1_MacroNode39"  Node3="Layer1_MacroNode36" />
-    <Layer1_Triangle-25 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode52"  Node2="Layer1_MacroNode36"  Node3="Layer1_MacroNode45" />
-    <Layer1_Triangle-20 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode47"  Node3="Layer1_MacroNode56" />
-    <Layer1_Triangle-44 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode53"  Node3="Layer1_MacroNode42" />
-    <Layer1_Triangle-19 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode36"  Node3="Layer1_MacroNode47" />
-    <Layer1_Triangle-23 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode44"  Node2="Layer1_MacroNode53"  Node3="Layer1_MacroNode56" />
-    <Layer1_Triangle-31 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode40"  Node2="Layer1_MacroNode52"  Node3="Layer1_MacroNode46" />
-    <Layer1_Triangle-39 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode52"  Node3="Layer1_MacroNode46" />
-    <Layer1_Triangle-1 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode38"  Node2="Layer1_MacroNode48"  Node3="Layer1_MacroNode40" />
-    <Layer1_Triangle-8 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode48"  Node2="Layer1_MacroNode38"  Node3="Layer1_MacroNode39" />
-    <Layer1_Triangle-4 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode36"  Node2="Layer1_MacroNode38"  Node3="Layer1_MacroNode39" />
-    <Layer1_Triangle-9 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode47"  Node3="Layer1_MacroNode42" />
-    <Layer1_Triangle-26 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode44"  Node2="Layer1_MacroNode56"  Node3="Layer1_MacroNode45" />
-    <Layer1_Triangle-40 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode46"  Node3="Layer1_MacroNode54" />
-    <Layer1_Triangle-2 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode38"  Node2="Layer1_MacroNode40"  Node3="Layer1_MacroNode46" />
-    <Layer1_Triangle-12 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode36"  Node3="Layer1_MacroNode47" />
-    <Layer1_Triangle-17 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode54"  Node3="Layer1_MacroNode51" />
-    <Layer1_Triangle-43 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode44"  Node3="Layer1_MacroNode53" />
-    <Layer1_Triangle-3 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode36"  Node2="Layer1_MacroNode43"  Node3="Layer1_MacroNode38" />
-    <Layer1_Triangle-18 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode45"  Node2="Layer1_MacroNode51"  Node3="Layer1_MacroNode44" />
-    <Layer1_Triangle-41 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode54"  Node2="Layer1_MacroNode46"  Node3="Layer1_MacroNode38" />
-    <Layer1_Triangle-11 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode36"  Node2="Layer1_MacroNode37"  Node3="Layer1_MacroNode43" />
-    <Layer1_Triangle-42 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode54"  Node2="Layer1_MacroNode38"  Node3="Layer1_MacroNode43" />
-    <Layer1_Triangle-33 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode43"  Node2="Layer1_MacroNode51"  Node3="Layer1_MacroNode54" />
-    <Layer1_Triangle-10 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode36"  Node2="Layer1_MacroNode35"  Node3="Layer1_MacroNode37" />
-    <Layer1_Triangle-32 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode43"  Node2="Layer1_MacroNode37"  Node3="Layer1_MacroNode51" />
-    <Layer1_Triangle-30 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode55"  Node2="Layer1_MacroNode37"  Node3="Layer1_MacroNode51" />
-    <Layer1_Triangle-22 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode57"  Node2="Layer1_MacroNode51"  Node3="Layer1_MacroNode44" />
-    <Layer1_Triangle-21 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode57"  Node2="Layer1_MacroNode55"  Node3="Layer1_MacroNode51" />
-    <Layer1_Triangle-38 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode57"  Node3="Layer1_MacroNode44" />
-    <Layer1_Triangle-29 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode55"  Node2="Layer1_MacroNode41"  Node3="Layer1_MacroNode37" />
-    <Layer1_Triangle-6 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode49"  Node2="Layer1_MacroNode35"  Node3="Layer1_MacroNode37" />
-    <Layer1_Triangle-34 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode55"  Node2="Layer1_MacroNode57"  Node3="Layer1_MacroNode58" />
-    <Layer1_Triangle-37 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode35"  Node2="Layer1_MacroNode49"  Node3="Layer1_MacroNode57" />
-    <Layer1_Triangle-13 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode58"  Node2="Layer1_MacroNode55"  Node3="Layer1_MacroNode41" />
-    <Layer1_Triangle-7 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode49"  Node2="Layer1_MacroNode37"  Node3="Layer1_MacroNode41" />
-    <Layer1_Triangle-15 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode58"  Node2="Layer1_MacroNode57"  Node3="Layer1_MacroNode49" />
-    <Layer1_Triangle-5 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode41"  Node2="Layer1_MacroNode50"  Node3="Layer1_MacroNode49" />
-    <Layer1_Triangle-14 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode58"  Node2="Layer1_MacroNode41"  Node3="Layer1_MacroNode50" />
-    <Layer1_Triangle-16 Type="Triangle"  DoubleSided="0"  Node1="Layer1_MacroNode58"  Node2="Layer1_MacroNode49"  Node3="Layer1_MacroNode50" />
-    <ML_Muscle115 Type="MuscleLine"  Edge="Muscle115"  Width="0" />
-    <ML_Muscle116 Type="MuscleLine"  Edge="Muscle116"  Width="0" />
-    <ML_Muscle117 Type="MuscleLine"  Edge="Muscle117"  Width="0" />
-    <ML_Muscle118 Type="MuscleLine"  Edge="Muscle118"  Width="0" />
-    <ML_Muscle119 Type="MuscleLine"  Edge="Muscle119"  Width="0" />
-    <ML_Muscle120 Type="MuscleLine"  Edge="Muscle120"  Width="0" />
-    <ML_Muscle126 Type="MuscleLine"  Edge="Muscle126"  Width="0" />
-    <ML_Muscle127 Type="MuscleLine"  Edge="Muscle127"  Width="0" />
-    <ML_Muscle128 Type="MuscleLine"  Edge="Muscle128"  Width="0" />
-    <ML_Muscle129 Type="MuscleLine"  Edge="Muscle129"  Width="0" />
-    <ML_Muscle130 Type="MuscleLine"  Edge="Muscle130"  Width="0" />
-    <ML_Muscle131 Type="MuscleLine"  Edge="Muscle131"  Width="0" />
-    <ML_Muscle132 Type="MuscleLine"  Edge="Muscle132"  Width="0" />
-    <ML_Muscle133 Type="MuscleLine"  Edge="Muscle133"  Width="0" />
-    <ML_Muscle134 Type="MuscleLine"  Edge="Muscle134"  Width="0" />
-    <ML_Muscle135 Type="MuscleLine"  Edge="Muscle135"  Width="0" />
-    <ML_Muscle136 Type="MuscleLine"  Edge="Muscle136"  Width="0" />
-    <ML_Muscle137 Type="MuscleLine"  Edge="Muscle137"  Width="0" />
-    <ML_Muscle138 Type="MuscleLine"  Edge="Muscle138"  Width="0" />
-    <ML_Muscle139 Type="MuscleLine"  Edge="Muscle139"  Width="0" />
-    <ML_Muscle140 Type="MuscleLine"  Edge="Muscle140"  Width="0" />
-    <ML_Muscle141 Type="MuscleLine"  Edge="Muscle141"  Width="0" />
-    <ML_Muscle142 Type="MuscleLine"  Edge="Muscle142"  Width="0" />
-    <ML_Muscle143 Type="MuscleLine"  Edge="Muscle143"  Width="0" />
-    <ML_Muscle144 Type="MuscleLine"  Edge="Muscle144"  Width="0" />
-    <ML_Muscle145 Type="MuscleLine"  Edge="Muscle145"  Width="0" />
-    <ML_Muscle146 Type="MuscleLine"  Edge="Muscle146"  Width="0" />
-    <ML_Muscle147 Type="MuscleLine"  Edge="Muscle147"  Width="0" />
-    <ML_Muscle148 Type="MuscleLine"  Edge="Muscle148"  Width="0" />
-    <ML_Muscle149 Type="MuscleLine"  Edge="Muscle149"  Width="0" />
-    <ML_Muscle150 Type="MuscleLine"  Edge="Muscle150"  Width="0" />
-    <ML_Muscle151 Type="MuscleLine"  Edge="Muscle151"  Width="0" />
-    <ML_Muscle152 Type="MuscleLine"  Edge="Muscle152"  Width="0" />
-    <ML_Muscle153 Type="MuscleLine"  Edge="Muscle153"  Width="0" />
-    <ML_Muscle154 Type="MuscleLine"  Edge="Muscle154"  Width="0" />
-    <ML_Muscle155 Type="MuscleLine"  Edge="Muscle155"  Width="0" />
-    <ML_Muscle156 Type="MuscleLine"  Edge="Muscle156"  Width="0" />
-    <ML_Muscle157 Type="MuscleLine"  Edge="Muscle157"  Width="0" />
-    <ML_Muscle158 Type="MuscleLine"  Edge="Muscle158"  Width="0" />
-    <ML_Muscle159 Type="MuscleLine"  Edge="Muscle159"  Width="0" />
-    <ML_Muscle160 Type="MuscleLine"  Edge="Muscle160"  Width="0" />
-    <ML_Muscle165 Type="MuscleLine"  Edge="Muscle165"  Width="0" />
-    <ML_Muscle166 Type="MuscleLine"  Edge="Muscle166"  Width="0" />
-    <ML_Muscle167 Type="MuscleLine"  Edge="Muscle167"  Width="0" />
-    <ML_Muscle168 Type="MuscleLine"  Edge="Muscle168"  Width="0" />
-    <ML_Muscle169 Type="MuscleLine"  Edge="Muscle169"  Width="0" />
-    <ML_Muscle171 Type="MuscleLine"  Edge="Muscle171"  Width="0" />
-    <ML_Muscle173 Type="MuscleLine"  Edge="Muscle173"  Width="0" />
-    <ML_Muscle174 Type="MuscleLine"  Edge="Muscle174"  Width="0" />
-    <ML_Muscle175 Type="MuscleLine"  Edge="Muscle175"  Width="0" />
-    <ML_Muscle176 Type="MuscleLine"  Edge="Muscle176"  Width="0" />
-    <ML_Muscle177 Type="MuscleLine"  Edge="Muscle177"  Width="0" />
-    <ML_Muscle178 Type="MuscleLine"  Edge="Muscle178"  Width="0" />
-    <ML_Muscle179 Type="MuscleLine"  Edge="Muscle179"  Width="0" />
-    <ML_Muscle180 Type="MuscleLine"  Edge="Muscle180"  Width="0" />
-    <ML_Muscle181 Type="MuscleLine"  Edge="Muscle181"  Width="0" />
-    <ML_Muscle182 Type="MuscleLine"  Edge="Muscle182"  Width="0" />
-    <ML_Muscle183 Type="MuscleLine"  Edge="Muscle183"  Width="0" />
-    <ML_Muscle184 Type="MuscleLine"  Edge="Muscle184"  Width="0" />
-    <ML_Muscle185 Type="MuscleLine"  Edge="Muscle185"  Width="0" />
-    <ML_Muscle186 Type="MuscleLine"  Edge="Muscle186"  Width="0" />
-    <ML_Muscle187 Type="MuscleLine"  Edge="Muscle187"  Width="0" />
-    <ML_Muscle188 Type="MuscleLine"  Edge="Muscle188"  Width="0" />
-    <ML_Muscle189 Type="MuscleLine"  Edge="Muscle189"  Width="0" />
-    <ML_Muscle190 Type="MuscleLine"  Edge="Muscle190"  Width="0" />
-    <ML_Muscle191 Type="MuscleLine"  Edge="Muscle191"  Width="0" />
-    <ML_Muscle192 Type="MuscleLine"  Edge="Muscle192"  Width="0" />
-    <ML_Muscle193 Type="MuscleLine"  Edge="Muscle193"  Width="0" />
-    <ML_Muscle194 Type="MuscleLine"  Edge="Muscle194"  Width="0" />
-    <ML_Muscle195 Type="MuscleLine"  Edge="Muscle195"  Width="0" />
-    <ML_Muscle196 Type="MuscleLine"  Edge="Muscle196"  Width="0" />
-    <ML_Muscle197 Type="MuscleLine"  Edge="Muscle197"  Width="0" />
-    <ML_Muscle198 Type="MuscleLine"  Edge="Muscle198"  Width="0" />
-    <ML_Muscle199 Type="MuscleLine"  Edge="Muscle199"  Width="0" />
-    <ML_Muscle200 Type="MuscleLine"  Edge="Muscle200"  Width="0" />
-    <ML_Muscle201 Type="MuscleLine"  Edge="Muscle201"  Width="0" />
-    <ML_Muscle202 Type="MuscleLine"  Edge="Muscle202"  Width="0" />
-    <ML_Muscle203 Type="MuscleLine"  Edge="Muscle203"  Width="0" />
-    <ML_Muscle204 Type="MuscleLine"  Edge="Muscle204"  Width="0" />
-    <ML_Muscle211 Type="MuscleLine"  Edge="Muscle211"  Width="0" />
-    <ML_Muscle212 Type="MuscleLine"  Edge="Muscle212"  Width="0" />
-    <ML_Muscle213 Type="MuscleLine"  Edge="Muscle213"  Width="0" />
-    <ML_Muscle214 Type="MuscleLine"  Edge="Muscle214"  Width="0" />
-    <ML_Muscle215 Type="MuscleLine"  Edge="Muscle215"  Width="0" />
-    <ML_Muscle216 Type="MuscleLine"  Edge="Muscle216"  Width="0" />
-    <ML_Muscle205 Type="MuscleLine"  Edge="Muscle205"  Width="0" />
-    <ML_Muscle206 Type="MuscleLine"  Edge="Muscle206"  Width="0" />
-    <ML_Muscle207 Type="MuscleLine"  Edge="Muscle207"  Width="0" />
-    <ML_Muscle208 Type="MuscleLine"  Edge="Muscle208"  Width="0" />
-    <ML_Muscle209 Type="MuscleLine"  Edge="Muscle209"  Width="0" />
-    <ML_Muscle210 Type="MuscleLine"  Edge="Muscle210"  Width="0" />
-    <NP_NHip_1 Type="NodePoint"  Node="NHip_1"  Radius="3" />
-    <NP_NHip_2 Type="NodePoint"  Node="NHip_2"  Radius="3" />
-    <NP_NStomach Type="NodePoint"  Node="NStomach"  Radius="3" />
-    <NP_NChest Type="NodePoint"  Node="NChest"  Radius="3" />
-    <NP_NNeck Type="NodePoint"  Node="NNeck"  Radius="3" />
-    <NP_NShoulder_1 Type="NodePoint"  Node="NShoulder_1"  Radius="3" />
-    <NP_NShoulder_2 Type="NodePoint"  Node="NShoulder_2"  Radius="3" />
-    <EL_EPelvis_2 Type="EdgeLine"  Edge="EPelvis_2"  Width="3" />
-    <EL_EPelvis_1 Type="EdgeLine"  Edge="EPelvis_1"  Width="3" />
-    <EL_EGroin Type="EdgeLine"  Edge="EGroin"  Width="3" />
-    <EL_EStomach Type="EdgeLine"  Edge="EStomach"  Width="3" />
-    <EL_EChest Type="EdgeLine"  Edge="EChest"  Width="3" />
-    <EL_EClavicle_1 Type="EdgeLine"  Edge="EClavicle_1"  Width="3" />
-    <EL_EClavicle_2 Type="EdgeLine"  Edge="EClavicle_2"  Width="3" />
-    <NP_NKnee_1 Type="NodePoint"  Node="NKnee_1"  Radius="3" />
-    <NP_NKnee_2 Type="NodePoint"  Node="NKnee_2"  Radius="3" />
-    <NP_NAnkle_1 Type="NodePoint"  Node="NAnkle_1"  Radius="3" />
-    <NP_NAnkle_2 Type="NodePoint"  Node="NAnkle_2"  Radius="3" />
-    <NP_NToe_1 Type="NodePoint"  Node="NToe_1"  Radius="3" />
-    <NP_NHeel_1 Type="NodePoint"  Node="NHeel_1"  Radius="3" />
-    <NP_NToeTip_1 Type="NodePoint"  Node="NToeTip_1"  Radius="3" />
-    <NP_NToeS_1 Type="NodePoint"  Node="NToeS_1"  Radius="3" />
-    <NP_NHeel_2 Type="NodePoint"  Node="NHeel_2"  Radius="3" />
-    <NP_NToe_2 Type="NodePoint"  Node="NToe_2"  Radius="3" />
-    <NP_NToeTip_2 Type="NodePoint"  Node="NToeTip_2"  Radius="3" />
-    <NP_NToeS_2 Type="NodePoint"  Node="NToeS_2"  Radius="3" />
-    <EL_EThigh_1 Type="EdgeLine"  Edge="EThigh_1"  Width="3" />
-    <EL_EThigh_2 Type="EdgeLine"  Edge="EThigh_2"  Width="3" />
-    <EL_ECalf_1 Type="EdgeLine"  Edge="ECalf_1"  Width="3" />
-    <EL_ECalf_2 Type="EdgeLine"  Edge="ECalf_2"  Width="3" />
-    <EL_EInstep_1 Type="EdgeLine"  Edge="EInstep_1"  Width="3" />
-    <EL_EHeel_1 Type="EdgeLine"  Edge="EHeel_1"  Width="3" />
-    <EL_EFoot_1 Type="EdgeLine"  Edge="EFoot_1"  Width="3" />
-    <EL_EToe_1 Type="EdgeLine"  Edge="EToe_1"  Width="3" />
-    <EL_EToeC_1 Type="EdgeLine"  Edge="EToeC_1"  Width="1" />
-    <EL_EToeS_1 Type="EdgeLine"  Edge="EToeS_1"  Width="1" />
-    <EL_EFootS_1 Type="EdgeLine"  Edge="EFootS_1"  Width="1" />
-    <EL_EInstepS_1 Type="EdgeLine"  Edge="EInstepS_1"  Width="1" />
-    <EL_EHeep_2 Type="EdgeLine"  Edge="EHeep_2"  Width="3" />
-    <EL_EInstep_2 Type="EdgeLine"  Edge="EInstep_2"  Width="3" />
-    <EL_EFoot_2 Type="EdgeLine"  Edge="EFoot_2"  Width="3" />
-    <EL_EToe_2 Type="EdgeLine"  Edge="EToe_2"  Width="3" />
-    <EL_EToeC_2 Type="EdgeLine"  Edge="EToeC_2"  Width="1" />
-    <EL_EToeS_2 Type="EdgeLine"  Edge="EToeS_2"  Width="1" />
-    <EL_EFootS_2 Type="EdgeLine"  Edge="EFootS_2"  Width="1" />
-    <EL_EInstepS_2 Type="EdgeLine"  Edge="EInstepS_2"  Width="1" />
-    <NP_NElbow_1 Type="NodePoint"  Node="NElbow_1"  Radius="3" />
-    <NP_NElbow_2 Type="NodePoint"  Node="NElbow_2"  Radius="3" />
-    <NP_NWrist_1 Type="NodePoint"  Node="NWrist_1"  Radius="3" />
-    <NP_NWrist_2 Type="NodePoint"  Node="NWrist_2"  Radius="3" />
-    <NP_NKnuckles_1 Type="NodePoint"  Node="NKnuckles_1"  Radius="3" />
-    <NP_NFingertips_1 Type="NodePoint"  Node="NFingertips_1"  Radius="3" />
-    <NP_NKnucklesS_1 Type="NodePoint"  Node="NKnucklesS_1"  Radius="3" />
-    <NP_NKnuckles_2 Type="NodePoint"  Node="NKnuckles_2"  Radius="3" />
-    <NP_NFingertips_2 Type="NodePoint"  Node="NFingertips_2"  Radius="3" />
-    <NP_NKnucklesS_2 Type="NodePoint"  Node="NKnucklesS_2"  Radius="3" />
-    <EL_EArm_1 Type="EdgeLine"  Edge="EArm_1"  Width="3" />
-    <EL_EForearm_1 Type="EdgeLine"  Edge="EForearm_1"  Width="3" />
-    <EL_EHand_1 Type="EdgeLine"  Edge="EHand_1"  Width="3" />
-    <EL_EFingers_1 Type="EdgeLine"  Edge="EFingers_1"  Width="3" />
-    <EL_EHandC_1 Type="EdgeLine"  Edge="EHandC_1"  Width="1" />
-    <EL_EHandS_1 Type="EdgeLine"  Edge="EHandS_1"  Width="1" />
-    <EL_EFingersS_1 Type="EdgeLine"  Edge="EFingersS_1"  Width="1" />
-    <EL_EArm_2 Type="EdgeLine"  Edge="EArm_2"  Width="3" />
-    <EL_EForearm_2 Type="EdgeLine"  Edge="EForearm_2"  Width="3" />
-    <EL_EHand_2 Type="EdgeLine"  Edge="EHand_2"  Width="3" />
-    <EL_EFingers_2 Type="EdgeLine"  Edge="EFingers_2"  Width="3" />
-    <EL_EHandC_2 Type="EdgeLine"  Edge="EHandC_2"  Width="1" />
-    <EL_EHandS_2 Type="EdgeLine"  Edge="EHandS_2"  Width="1" />
-    <EL_EFingersS_2 Type="EdgeLine"  Edge="EFingersS_2"  Width="1" />
-    <NP_NHead Type="NodePoint"  Node="NHead"  Radius="3" />
-    <NP_NTop Type="NodePoint"  Node="NTop"  Radius="3" />
-    <EL_ENeck Type="EdgeLine"  Edge="ENeck"  Width="3" />
-    <EL_EHead Type="EdgeLine"  Edge="EHead"  Width="3" />
-    <NP_NChestS_1 Type="NodePoint"  Node="NChestS_1"  Radius="3" />
-    <NP_NChestS_2 Type="NodePoint"  Node="NChestS_2"  Radius="3" />
-    <NP_NStomachS_1 Type="NodePoint"  Node="NStomachS_1"  Radius="3" />
-    <NP_NStomachS_2 Type="NodePoint"  Node="NStomachS_2"  Radius="3" />
-    <EL_EChestHS_1 Type="EdgeLine"  Edge="EChestHS_1"  Width="1" />
-    <EL_EChestHS_2 Type="EdgeLine"  Edge="EChestHS_2"  Width="1" />
-    <EL_EStomachHS_1 Type="EdgeLine"  Edge="EStomachHS_1"  Width="1" />
-    <EL_EStomachHS_2 Type="EdgeLine"  Edge="EStomachHS_2"  Width="1" />
-    <EL_EChestS_1 Type="EdgeLine"  Edge="EChestS_1"  Width="1" />
-    <EL_EChestS_2 Type="EdgeLine"  Edge="EChestS_2"  Width="1" />
-    <EL_EStomachS_1 Type="EdgeLine"  Edge="EStomachS_1"  Width="1" />
-    <EL_EStomachS_2 Type="EdgeLine"  Edge="EStomachS_2"  Width="1" />
-    <EL_EChestH Type="EdgeLine"  Edge="EChestH"  Width="1" />
-    <EL_EStomachH Type="EdgeLine"  Edge="EStomachH"  Width="1" />
-    <NP_NChestF Type="NodePoint"  Node="NChestF"  Radius="3" />
-    <NP_NStomachF Type="NodePoint"  Node="NStomachF"  Radius="3" />
-    <EL_EChestHD_1 Type="EdgeLine"  Edge="EChestHD_1"  Width="1" />
-    <EL_EChestHD_2 Type="EdgeLine"  Edge="EChestHD_2"  Width="1" />
-    <EL_EStomachHD_1 Type="EdgeLine"  Edge="EStomachHD_1"  Width="1" />
-    <EL_EStomachHD_2 Type="EdgeLine"  Edge="EStomachHD_2"  Width="1" />
-    <EL_EChestF Type="EdgeLine"  Edge="EChestF"  Width="1" />
-    <EL_EStomachF Type="EdgeLine"  Edge="EStomachF"  Width="1" />
-    <EL_EChestHF Type="EdgeLine"  Edge="EChestHF"  Width="1" />
-    <EL_EStomachHF Type="EdgeLine"  Edge="EStomachHF"  Width="1" />
-    <NP_NPelvisF Type="NodePoint"  Node="NPelvisF"  Radius="3" />
-    <EL_EPelvisHD_1 Type="EdgeLine"  Edge="EPelvisHD_1"  Width="1" />
-    <EL_EPelvisHD_2 Type="EdgeLine"  Edge="EPelvisHD_2"  Width="1" />
-    <EL_EPelvisF Type="EdgeLine"  Edge="EPelvisF"  Width="1" />
-    <NP_NHeadS_1 Type="NodePoint"  Node="NHeadS_1"  Radius="3" />
-    <NP_NHeadS_2 Type="NodePoint"  Node="NHeadS_2"  Radius="3" />
-    <EL_EHeadHS_1 Type="EdgeLine"  Edge="EHeadHS_1"  Width="1" />
-    <EL_EHeadHS_2 Type="EdgeLine"  Edge="EHeadHS_2"  Width="1" />
-    <EL_EHeadS_1 Type="EdgeLine"  Edge="EHeadS_1"  Width="1" />
-    <EL_EHeadS_2 Type="EdgeLine"  Edge="EHeadS_2"  Width="1" />
-    <EL_EHeadH Type="EdgeLine"  Edge="EHeadH"  Width="1" />
-    <NP_NHeadF Type="NodePoint"  Node="NHeadF"  Radius="3" />
-    <EL_EHeadHF Type="EdgeLine"  Edge="EHeadHF"  Width="1" />
-    <EL_EHeadHD_1 Type="EdgeLine"  Edge="EHeadHD_1"  Width="1" />
-    <EL_EHeadHD_2 Type="EdgeLine"  Edge="EHeadHD_2"  Width="1" />
-    <EL_EHeadF Type="EdgeLine"  Edge="EHeadF"  Width="1" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-    <EL_EPelvisM Type="EdgeLine"  Edge="EPelvisM"  Width="1" />
-    <EL_EPelvisF Type="EdgeLine"  Edge="EPelvisF"  Width="1" />
-    <EL_EPelvisHS_1 Type="EdgeLine"  Edge="EPelvisHS_1"  Width="1" />
-    <EL_EPelvisHS_2 Type="EdgeLine"  Edge="EPelvisHS_2"  Width="1" />
-    <Layer2_NP_DetectorH Type="NodePoint"  Node="Layer2_DetectorH"  Radius="3" />
-    <NP_DetectorV Type="NodePoint"  Node="DetectorV"  Radius="3" />
-    <CL_COM Type="COMLocator"  Node="COM"  Radius="10" />
-    <NP_Camera Type="NodePoint"  Node="Camera"  Radius="3" />
-    <Layer1_Layer1_NP_Layer1_Node25 Type="NodePoint"  Node="Layer1_Layer1_Node25"  Radius="3" />
-    <Layer1_Layer1_NP_Layer1_NPivot Type="NodePoint"  Node="Layer1_Layer1_NPivot"  Radius="3" />
-    <Layer1_Layer1_NP_Layer1_Node27 Type="NodePoint"  Node="Layer1_Layer1_Node27"  Radius="3" />
-    <Layer1_Layer1_NP_Layer1_Node28 Type="NodePoint"  Node="Layer1_Layer1_Node28"  Radius="3" />
-    <Layer1_EL_Edge47 Type="EdgeLine"  Edge="Layer1_Edge47"  Width="1" />
-    <Layer1_EL_Edge48 Type="EdgeLine"  Edge="Layer1_Edge48"  Width="1" />
-    <Layer1_EL_Edge49 Type="EdgeLine"  Edge="Layer1_Edge49"  Width="1" />
-    <Layer1_EL_Edge50 Type="EdgeLine"  Edge="Layer1_Edge50"  Width="1" />
-    <Layer1_EL_Edge51 Type="EdgeLine"  Edge="Layer1_Edge51"  Width="1" />
-    <Layer1_EL_Edge52 Type="EdgeLine"  Edge="Layer1_Edge52"  Width="1" />
-    <Layer1_NP_MacroNode35 Type="NodePoint"  Node="Layer1_MacroNode35"  Radius="3" />
-    <Layer1_NP_MacroNode36 Type="NodePoint"  Node="Layer1_MacroNode36"  Radius="3" />
-    <Layer1_NP_MacroNode37 Type="NodePoint"  Node="Layer1_MacroNode37"  Radius="3" />
-    <Layer1_NP_MacroNode38 Type="NodePoint"  Node="Layer1_MacroNode38"  Radius="3" />
-    <Layer1_NP_MacroNode39 Type="NodePoint"  Node="Layer1_MacroNode39"  Radius="3" />
-    <Layer1_NP_MacroNode40 Type="NodePoint"  Node="Layer1_MacroNode40"  Radius="3" />
-    <Layer1_NP_MacroNode41 Type="NodePoint"  Node="Layer1_MacroNode41"  Radius="3" />
-    <Layer1_NP_MacroNode42 Type="NodePoint"  Node="Layer1_MacroNode42"  Radius="3" />
-    <Layer1_NP_MacroNode43 Type="NodePoint"  Node="Layer1_MacroNode43"  Radius="3" />
-    <Layer1_NP_MacroNode44 Type="NodePoint"  Node="Layer1_MacroNode44"  Radius="3" />
-    <Layer1_NP_MacroNode45 Type="NodePoint"  Node="Layer1_MacroNode45"  Radius="3" />
-    <Layer1_NP_MacroNode46 Type="NodePoint"  Node="Layer1_MacroNode46"  Radius="3" />
-    <Layer1_NP_MacroNode47 Type="NodePoint"  Node="Layer1_MacroNode47"  Radius="3" />
-    <Layer1_NP_MacroNode48 Type="NodePoint"  Node="Layer1_MacroNode48"  Radius="3" />
-    <Layer1_NP_MacroNode49 Type="NodePoint"  Node="Layer1_MacroNode49"  Radius="3" />
-    <Layer1_NP_MacroNode50 Type="NodePoint"  Node="Layer1_MacroNode50"  Radius="3" />
-    <Layer1_NP_MacroNode51 Type="NodePoint"  Node="Layer1_MacroNode51"  Radius="3" />
-    <Layer1_NP_MacroNode52 Type="NodePoint"  Node="Layer1_MacroNode52"  Radius="3" />
-    <Layer1_NP_MacroNode53 Type="NodePoint"  Node="Layer1_MacroNode53"  Radius="3" />
-    <Layer1_NP_MacroNode54 Type="NodePoint"  Node="Layer1_MacroNode54"  Radius="3" />
-    <Layer1_NP_MacroNode55 Type="NodePoint"  Node="Layer1_MacroNode55"  Radius="3" />
-    <Layer1_NP_MacroNode56 Type="NodePoint"  Node="Layer1_MacroNode56"  Radius="3" />
-    <Layer1_NP_MacroNode57 Type="NodePoint"  Node="Layer1_MacroNode57"  Radius="3" />
-    <Layer1_NP_MacroNode58 Type="NodePoint"  Node="Layer1_MacroNode58"  Radius="3" />
-    <NF_Camera Type="NodeFixer"  Node="Camera"  Radius="5" />
-    <Layer2_NF_DetectorH Type="NodeFixer"  Node="Layer2_DetectorH"  Radius="5" />
-    <Layer1_NF_Layer1_Node28 Type="NodeFixer"  Node="Layer1_Layer1_Node28"  Radius="5" />
-    <Layer1_NF_Layer1_Node27 Type="NodeFixer"  Node="Layer1_Layer1_Node27"  Radius="5" />
-    <Layer1_NF_Layer1_NPivot Type="NodeFixer"  Node="Layer1_Layer1_NPivot"  Radius="5" />
-    <Layer1_NF_Layer1_Node25 Type="NodeFixer"  Node="Layer1_Layer1_Node25"  Radius="5" />
-    <NF_DetectorV Type="NodeFixer"  Node="DetectorV"  Radius="5" />
-    <NF_NShoulder_1 Type="NodeFixer"  Node="NShoulder_1"  Radius="5" />
-    <NF_NPivot Type="NodeFixer"  Node="NPivot"  Radius="5" />
-    <NF_NHeadF Type="NodeFixer"  Node="NHeadF"  Radius="5" />
-    <NF_NHeadS_2 Type="NodeFixer"  Node="NHeadS_2"  Radius="5" />
-    <NF_NHeadS_1 Type="NodeFixer"  Node="NHeadS_1"  Radius="5" />
-    <NF_NPelvisF Type="NodeFixer"  Node="NPelvisF"  Radius="5" />
-    <NF_NStomachF Type="NodeFixer"  Node="NStomachF"  Radius="5" />
-    <NF_NChestF Type="NodeFixer"  Node="NChestF"  Radius="5" />
-    <NF_NStomachS_2 Type="NodeFixer"  Node="NStomachS_2"  Radius="5" />
-    <NF_NStomachS_1 Type="NodeFixer"  Node="NStomachS_1"  Radius="5" />
-    <NF_NChestS_2 Type="NodeFixer"  Node="NChestS_2"  Radius="5" />
-    <NF_NChestS_1 Type="NodeFixer"  Node="NChestS_1"  Radius="5" />
-    <NF_NTop Type="NodeFixer"  Node="NTop"  Radius="5" />
-    <NF_NHead Type="NodeFixer"  Node="NHead"  Radius="5" />
-    <NF_NKnucklesS_2 Type="NodeFixer"  Node="NKnucklesS_2"  Radius="5" />
-    <NF_NFingertips_2 Type="NodeFixer"  Node="NFingertips_2"  Radius="5" />
-    <NF_NKnuckles_2 Type="NodeFixer"  Node="NKnuckles_2"  Radius="5" />
-    <NF_NKnucklesS_1 Type="NodeFixer"  Node="NKnucklesS_1"  Radius="5" />
-    <NF_NFingertips_1 Type="NodeFixer"  Node="NFingertips_1"  Radius="5" />
-    <NF_NKnuckles_1 Type="NodeFixer"  Node="NKnuckles_1"  Radius="5" />
-    <NF_NWrist_2 Type="NodeFixer"  Node="NWrist_2"  Radius="5" />
-    <NF_NWrist_1 Type="NodeFixer"  Node="NWrist_1"  Radius="5" />
-    <NF_NElbow_2 Type="NodeFixer"  Node="NElbow_2"  Radius="5" />
-    <NF_NElbow_1 Type="NodeFixer"  Node="NElbow_1"  Radius="5" />
-    <NF_NToeS_2 Type="NodeFixer"  Node="NToeS_2"  Radius="5" />
-    <NF_NToeTip_2 Type="NodeFixer"  Node="NToeTip_2"  Radius="5" />
-    <NF_NToe_2 Type="NodeFixer"  Node="NToe_2"  Radius="5" />
-    <NF_NHeel_2 Type="NodeFixer"  Node="NHeel_2"  Radius="5" />
-    <NF_NToeS_1 Type="NodeFixer"  Node="NToeS_1"  Radius="5" />
-    <NF_NToeTip_1 Type="NodeFixer"  Node="NToeTip_1"  Radius="5" />
-    <NF_NHeel_1 Type="NodeFixer"  Node="NHeel_1"  Radius="5" />
-    <NF_NToe_1 Type="NodeFixer"  Node="NToe_1"  Radius="5" />
-    <NF_NAnkle_2 Type="NodeFixer"  Node="NAnkle_2"  Radius="5" />
-    <NF_NAnkle_1 Type="NodeFixer"  Node="NAnkle_1"  Radius="5" />
-    <NF_NKnee_2 Type="NodeFixer"  Node="NKnee_2"  Radius="5" />
-    <NF_NKnee_1 Type="NodeFixer"  Node="NKnee_1"  Radius="5" />
-    <NF_NShoulder_2 Type="NodeFixer"  Node="NShoulder_2"  Radius="5" />
-    <NF_NNeck Type="NodeFixer"  Node="NNeck"  Radius="5" />
-    <NF_NChest Type="NodeFixer"  Node="NChest"  Radius="5" />
-    <NF_NStomach Type="NodeFixer"  Node="NStomach"  Radius="5" />
-    <NF_NHip_2 Type="NodeFixer"  Node="NHip_2"  Radius="5" />
-    <NF_NHip_1 Type="NodeFixer"  Node="NHip_1"  Radius="5" />
-  </Figures>
-  <GroupsOfSelection>
-    <SG-1>
-      <NPivot Type="Node" />
-      <NPelvisF Type="Node" />
-      <NHip_2 Type="Node" />
-      <NHip_1 Type="Node" />
-      <NShoulder_2 Type="Node" />
-      <NShoulder_1 Type="Node" />
-      <NNeck Type="Node" />
-    </SG-1>
-    <SG-2>
-      <NKnucklesS_1 Type="Node" />
-      <NFingertips_1 Type="Node" />
-      <NKnuckles_1 Type="Node" />
-      <NWrist_1 Type="Node" />
-    </SG-2>
-    <SG-3>
-      <NKnucklesS_2 Type="Node" />
-      <NFingertips_2 Type="Node" />
-      <NKnuckles_2 Type="Node" />
-      <NWrist_2 Type="Node" />
-    </SG-3>
-    <SG-4>
-      <NToeS_2 Type="Node" />
-      <NToeTip_2 Type="Node" />
-      <NToe_2 Type="Node" />
-      <NHeel_2 Type="Node" />
-      <NAnkle_2 Type="Node" />
-    </SG-4>
-    <SG-5>
-      <NToeS_1 Type="Node" />
-      <NToeTip_1 Type="Node" />
-      <NHeel_1 Type="Node" />
-      <NToe_1 Type="Node" />
-      <NAnkle_1 Type="Node" />
-    </SG-5>
-    <SG-6>
-      <NHeadF Type="Node" />
-      <NHeadS_2 Type="Node" />
-      <NHeadS_1 Type="Node" />
-      <NTop Type="Node" />
-      <NHead Type="Node" />
-    </SG-6>
-    <SG-7>
-      <COM Type="Node" />
-    </SG-7>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<NHip_1 Type="Node" X="-171.060577392578" Y="119.62629699707" Z="17.4658336639404" Mass="4.94999980926514" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NHip_2 Type="Node" X="-171.909469604492" Y="118.664260864258" Z="0.0127448588609695" Mass="4.94999980926514" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NStomach Type="Node" X="-155.349456787109" Y="125.818756103516" Z="7.5864429473877" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NChest Type="Node" X="-138.518005371094" Y="130.605285644531" Z="7.64703226089478" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NNeck Type="Node" X="-121.412300109863" Y="134.285903930664" Z="7.91951370239258" Mass="3.65000009536743" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NShoulder_1 Type="Node" X="-121.07836151123" Y="129.636947631836" Z="24.7873611450195" Mass="3" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NShoulder_2 Type="Node" X="-120.928588867188" Y="130.5400390625" Z="-9.16797256469727" Mass="3" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NKnee_1 Type="Node" X="-134.309753417969" Y="94.7635040283203" Z="34.4211349487305" Mass="6.44999980926514" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NKnee_2 Type="Node" X="-134.494033813477" Y="96.2306594848633" Z="-18.7776145935059" Mass="6.44999980926514" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NAnkle_1 Type="Node" X="-165.482315063477" Y="73.4185104370117" Z="21.2811546325684" Mass="2.20000004768372" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NAnkle_2 Type="Node" X="-165.387222290039" Y="73.332145690918" Z="-7.76547861099243" Mass="2.20000004768372" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NToe_1 Type="Node" X="-166.742080688477" Y="55.9771995544434" Z="21.9607906341553" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHeel_1 Type="Node" X="-175.46614074707" Y="73.9664459228516" Z="21.4319362640381" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NToeTip_1 Type="Node" X="-163.700897216797" Y="48.5812950134277" Z="22.1875953674316" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NToeS_1 Type="Node" X="-166.605117797852" Y="56.2786865234375" Z="29.9539184570313" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHeel_2 Type="Node" X="-175.11116027832" Y="73.8054962158203" Z="-5.48058462142944" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NToe_2 Type="Node" X="-166.825698852539" Y="55.9292907714844" Z="-8.91479778289795" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NToeTip_2 Type="Node" X="-163.627410888672" Y="48.7220840454102" Z="-10.2666158676147" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NToeS_2 Type="Node" X="-168.619018554688" Y="56.5905265808105" Z="-16.6831130981445" Mass="0.300000011920929" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NElbow_1 Type="Node" X="-110.103897094727" Y="109.982818603516" Z="44.6186180114746" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NElbow_2 Type="Node" X="-109.288436889648" Y="110.911483764648" Z="-28.6416091918945" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NWrist_1 Type="Node" X="-85.4554138183594" Y="96.5335540771484" Z="34.0562973022461" Mass="1" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NWrist_2 Type="Node" X="-85.7301177978516" Y="95.7013244628906" Z="-17.9804573059082" Mass="1" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NKnuckles_1 Type="Node" X="-76.498908996582" Y="93.1564712524414" Z="36.9505882263184" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NFingertips_1 Type="Node" X="-85.7195587158203" Y="95.2894821166992" Z="33.721061706543" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NKnucklesS_1 Type="Node" X="-73.3433074951172" Y="94.6494140625" Z="28.9271240234375" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NKnuckles_2 Type="Node" X="-76.5740661621094" Y="92.6072387695313" Z="-20.5481281280518" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NFingertips_2 Type="Node" X="-86.0439987182617" Y="93.6651763916016" Z="-17.5147113800049" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NKnucklesS_2 Type="Node" X="-73.7957611083984" Y="94.0476837158203" Z="-12.3769283294678" Mass="0.189999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHead Type="Node" X="-104.516647338867" Y="138.626205444336" Z="9.31306743621826" Mass="1.51999998092651" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NTop Type="Node" X="-97.03173828125" Y="154.412445068359" Z="10.3211154937744" Mass="0.759999990463257" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<NChestS_1 Type="Node" X="-138.645355224609" Y="130.544097900391" Z="16.3959217071533" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NChestS_2 Type="Node" X="-138.392425537109" Y="130.663848876953" Z="-1.10188269615173" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NStomachS_1 Type="Node" X="-155.411605834961" Y="125.922019958496" Z="16.3356189727783" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NStomachS_2 Type="Node" X="-155.289520263672" Y="125.714019775391" Z="-1.16272914409637" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NChestF Type="Node" X="-136.677703857422" Y="122.050567626953" Z="7.61509132385254" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NStomachF Type="Node" X="-152.957626342773" Y="117.402587890625" Z="7.70316457748413" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="1" Cloth="0" Rank="0"/>
+		<NPelvisF Type="Node" X="-168.126647949219" Y="111.07063293457" Z="9.02101516723633" Mass="1.89999997615814" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHeadS_1 Type="Node" X="-105.42650604248" Y="138.501724243164" Z="18.0147266387939" Mass="0.759999990463257" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHeadS_2 Type="Node" X="-103.607231140137" Y="138.750442504883" Z="0.61136120557785" Mass="0.759999990463257" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NHeadF Type="Node" X="-96.6600341796875" Y="134.851821899414" Z="10.0804224014282" Mass="0.759999990463257" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NPivot Type="Node" X="-171.485992431641" Y="119.145248413086" Z="8.73933410644531" Mass="4.94999980926514" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Layer2_DetectorH Type="Node" X="-141.056076049805" Y="0" Z="8.03708171844482" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<DetectorV Type="Node" X="-91.0560760498047" Y="100" Z="8.03708171844482" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<COM Type="CenterOfMass" X="-141.056076049805" Y="112.960891723633" Z="8.03708171844482" Mass="72.8000030517578" Fixed="0" Visible="1" NodesCount="42" ChildNode1="NPivot" ChildNode2="NHeadF" ChildNode3="NHeadS_2" ChildNode4="NHeadS_1" ChildNode5="NPelvisF" ChildNode6="NStomachF" ChildNode7="NChestF" ChildNode8="NStomachS_2" ChildNode9="NStomachS_1" ChildNode10="NChestS_2" ChildNode11="NChestS_1" ChildNode12="NTop" ChildNode13="NHead" ChildNode14="NKnucklesS_2" ChildNode15="NFingertips_2" ChildNode16="NKnuckles_2" ChildNode17="NKnucklesS_1" ChildNode18="NFingertips_1" ChildNode19="NKnuckles_1" ChildNode20="NWrist_2" ChildNode21="NWrist_1" ChildNode22="NElbow_2" ChildNode23="NElbow_1" ChildNode24="NToeS_2" ChildNode25="NToeTip_2" ChildNode26="NToe_2" ChildNode27="NHeel_2" ChildNode28="NToeS_1" ChildNode29="NToeTip_1" ChildNode30="NHeel_1" ChildNode31="NToe_1" ChildNode32="NAnkle_2" ChildNode33="NAnkle_1" ChildNode34="NKnee_2" ChildNode35="NKnee_1" ChildNode36="NShoulder_2" ChildNode37="NShoulder_1" ChildNode38="NNeck" ChildNode39="NChest" ChildNode40="NStomach" ChildNode41="NHip_2" ChildNode42="NHip_1"/>
+		<Camera Type="Node" X="8.94392395019531" Y="85" Z="8.03708171844482" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Layer1_Layer1_Node25 Type="Node" X="8.4752311706543" Y="12.1557140350342" Z="7.96572160720825" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Layer1_Layer1_NPivot Type="Node" X="-206.556625366211" Y="12.1556797027588" Z="47.7942886352539" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Layer1_Layer1_Node27 Type="Node" X="-206.492691040039" Y="12.1556177139282" Z="-32.2058181762695" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Layer1_Layer1_Node28 Type="Node" X="-206.524887084961" Y="125.155654907227" Z="7.79411745071411" Mass="10" Fixed="1" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Layer1_MacroNode35 Type="MacroNode" X="-5.17702674865723" Y="12.6163501739502" Z="14.9896965026855" Mass="0.41413202881813" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.00407641008496284" LCC2="0.936527252197266" LCC3="0.117633797228336" LCC4="-0.0582374595105648"/>
+		<Layer1_MacroNode36 Type="MacroNode" X="-252.863693237305" Y="70.5956115722656" Z="19.7541885375977" Mass="0.614521265029907" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.517167806625366" LCC2="-0.215485438704491" LCC3="0.499120712280273" LCC4="0.19919690489769"/>
+		<Layer1_MacroNode37 Type="MacroNode" X="-99.054313659668" Y="83.3796997070313" Z="34.0088577270508" Mass="0.426166892051697" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.630300879478455" LCC2="0.49996018409729" LCC3="0.261481046676636" LCC4="-0.39174211025238"/>
+		<Layer1_MacroNode38 Type="MacroNode" X="-195.444519042969" Y="122.249572753906" Z="25.3291244506836" Mass="0.353335082530975" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.974282264709473" LCC2="0.0516017638146877" LCC3="0.206134632229805" LCC4="-0.232018649578094"/>
+		<Layer1_MacroNode39 Type="MacroNode" X="-310.475708007813" Y="98.9173431396484" Z="14.4670181274414" Mass="0.338666796684265" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.767802834510803" LCC2="-0.483467698097229" LCC3="0.442279547452927" LCC4="0.273385256528854"/>
+		<Layer1_MacroNode40 Type="MacroNode" X="-316.046234130859" Y="109.03882598877" Z="0.966437339782715" Mass="0.303236842155457" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.857373535633087" LCC2="-0.509427070617676" LCC3="0.241772681474686" LCC4="0.410280883312225"/>
+		<Layer1_MacroNode41 Type="MacroNode" X="-78.2799530029297" Y="101.26781463623" Z="26.0773601531982" Mass="0.320599913597107" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.788602709770203" LCC2="0.596555650234222" LCC3="0.034681960940361" LCC4="-0.41984036564827"/>
+		<Layer1_MacroNode42 Type="MacroNode" X="-304.949340820313" Y="12.3865966796875" Z="41.682487487793" Mass="0.227302506566048" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.00204381346702576" LCC2="-0.457663178443909" LCC3="1.15239334106445" LCC4="0.30322602391243"/>
+		<Layer1_MacroNode43 Type="MacroNode" X="-183.902069091797" Y="110.886772155762" Z="23.4220180511475" Mass="0.435295432806015" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.873726606369019" LCC2="0.105280339717865" LCC3="0.205619141459465" LCC4="-0.184626117348671"/>
+		<Layer1_MacroNode44 Type="MacroNode" X="-5.16579437255859" Y="12.6163377761841" Z="0.935421466827393" Mass="0.414163440465927" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.00407640635967255" LCC2="0.936527252197266" LCC3="-0.0580444037914276" LCC4="0.117440745234489"/>
+		<Layer1_MacroNode45 Type="MacroNode" X="-252.844573974609" Y="70.5956039428711" Z="-4.22430038452148" Mass="0.614639163017273" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.517167925834656" LCC2="-0.215485438704491" LCC3="0.199389979243279" LCC4="0.498927623033524"/>
+		<Layer1_MacroNode46 Type="MacroNode" X="-195.416519165039" Y="122.249549865723" Z="-9.70773696899414" Mass="0.353392124176025" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.974282264709473" LCC2="0.0516017638146877" LCC3="-0.231825545430183" LCC4="0.205941528081894"/>
+		<Layer1_MacroNode47 Type="MacroNode" X="-237.695587158203" Y="45.5622444152832" Z="26.1282825469971" Mass="0.644835352897644" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.295633554458618" LCC2="-0.144912645220757" LCC3="0.654125869274139" LCC4="0.195153161883354"/>
+		<Layer1_MacroNode48 Type="MacroNode" X="-316.057006835938" Y="109.03882598877" Z="14.4625568389893" Mass="0.303220689296722" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.857373476028442" LCC2="-0.509427070617676" LCC3="0.410473942756653" LCC4="0.241579622030258"/>
+		<Layer1_MacroNode49 Type="MacroNode" X="5.31396484375" Y="27.179630279541" Z="17.2607460021973" Mass="0.362197697162628" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.132954955101013" LCC2="0.985331118106842" LCC3="0.0570762529969215" LCC4="-0.175362333655357"/>
+		<Layer1_MacroNode50 Type="MacroNode" X="-8.84103393554688" Y="64.9714965820313" Z="20.5710983276367" Mass="0.311612010002136" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.467396289110184" LCC2="0.91950660943985" LCC3="-0.0357112288475037" LCC4="-0.35119166970253"/>
+		<Layer1_MacroNode51 Type="MacroNode" X="-99.0125579833984" Y="83.3796615600586" Z="-18.2336196899414" Mass="0.426290541887283" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.630300879478455" LCC2="0.49996018409729" LCC3="-0.391549050807953" LCC4="0.261287987232208"/>
+		<Layer1_MacroNode52 Type="MacroNode" X="-310.464965820313" Y="98.9173431396484" Z="0.970900535583496" Mass="0.338686943054199" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.767802894115448" LCC2="-0.483467698097229" LCC3="0.273578315973282" LCC4="0.442086517810822"/>
+		<Layer1_MacroNode53 Type="MacroNode" X="-304.895050048828" Y="12.3865461349487" Z="-26.235538482666" Mass="0.227348268032074" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.00204384326934814" LCC2="-0.457663178443909" LCC3="0.303419083356857" LCC4="1.15220022201538"/>
+		<Layer1_MacroNode54 Type="MacroNode" X="-183.877136230469" Y="110.886741638184" Z="-7.78220129013062" Mass="0.435372531414032" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.873726606369019" LCC2="0.105280339717865" LCC3="-0.184433072805405" LCC4="0.205426096916199"/>
+		<Layer1_MacroNode55 Type="MacroNode" X="-78.2509078979492" Y="101.267784118652" Z="-10.2690277099609" Mass="0.320648580789566" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.788602709770203" LCC2="0.596555650234222" LCC3="-0.419647306203842" LCC4="0.0344888903200626"/>
+		<Layer1_MacroNode56 Type="MacroNode" X="-237.666259765625" Y="45.5622177124023" Z="-10.5741395950317" Mass="0.645034313201904" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.295633554458618" LCC2="-0.144912645220757" LCC3="0.195346221327782" LCC4="0.653932809829712"/>
+		<Layer1_MacroNode57 Type="MacroNode" X="5.32881259918213" Y="27.1796169281006" Z="-1.31892108917236" Mass="0.362229466438293" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.132954955101013" LCC2="0.985331118106842" LCC3="-0.175169289112091" LCC4="0.0568832084536552"/>
+		<Layer1_MacroNode58 Type="MacroNode" X="-8.82087707519531" Y="64.9714889526367" Z="-4.65192842483521" Mass="0.311643898487091" Fixed="0" Visible="1" NodesCount="4" ChildNode1="Layer1_Layer1_Node28" ChildNode2="Layer1_Layer1_Node25" ChildNode3="Layer1_Layer1_NPivot" ChildNode4="Layer1_Layer1_Node27" LCC1="0.467396318912506" LCC2="0.91950660943985" LCC3="-0.350998640060425" LCC4="-0.0359042771160603"/>
+	</Nodes>
+	<Edges>
+		<EPelvis_2 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NStomach" End2="NHip_2"/>
+		<EPelvis_1 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NStomach" End2="NHip_1"/>
+		<EGroin Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NHip_2" End2="NHip_1"/>
+		<EStomach Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NChest" End2="NStomach"/>
+		<EChest Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NNeck" End2="NChest"/>
+		<EClavicle_1 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NShoulder_1" End2="NNeck"/>
+		<EClavicle_2 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NShoulder_2" End2="NNeck"/>
+		<EThigh_1 Type="Edge" Length="47.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NKnee_1" End2="NHip_1"/>
+		<EThigh_2 Type="Edge" Length="47.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NKnee_2" End2="NHip_2"/>
+		<ECalf_1 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NAnkle_1" End2="NKnee_1"/>
+		<ECalf_2 Type="Edge" Length="40" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NAnkle_2" End2="NKnee_2"/>
+		<EInstep_1 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToe_1" End2="NAnkle_1"/>
+		<EHeel_1 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeel_1" End2="NAnkle_1"/>
+		<EFoot_1 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeel_1" End2="NToe_1"/>
+		<EToe_1 Type="Edge" Length="8" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToe_1" End2="NToeTip_1"/>
+		<EToeC_1 Type="Edge" Length="8" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NToe_1" SubNode2="NAnkle_1" SubNode3="NHeel_1" End1="NToe_1" End2="NToeS_1"/>
+		<EToeS_1 Type="Edge" Length="11.3137083053589" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToeTip_1" End2="NToeS_1"/>
+		<EFootS_1 Type="Edge" Length="21.5406589508057" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeel_1" End2="NToeS_1"/>
+		<EInstepS_1 Type="Edge" Length="19.2418823242188" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NAnkle_1" End2="NToeS_1"/>
+		<EHeep_2 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeel_2" End2="NAnkle_2"/>
+		<EInstep_2 Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToe_2" End2="NAnkle_2"/>
+		<EFoot_2 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToe_2" End2="NHeel_2"/>
+		<EToe_2 Type="Edge" Length="8" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToeTip_2" End2="NToe_2"/>
+		<EToeC_2 Type="Edge" Length="8" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NToe_2" SubNode2="NHeel_2" SubNode3="NAnkle_2" End1="NToe_2" End2="NToeS_2"/>
+		<EToeS_2 Type="Edge" Length="11.3137083053589" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToeTip_2" End2="NToeS_2"/>
+		<EFootS_2 Type="Edge" Length="21.5406589508057" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToeS_2" End2="NHeel_2"/>
+		<EInstepS_2 Type="Edge" Length="19.2418823242188" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NToeS_2" End2="NAnkle_2"/>
+		<EArm_1 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NElbow_1" End2="NShoulder_1"/>
+		<EForearm_1 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NWrist_1" End2="NElbow_1"/>
+		<EHand_1 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnuckles_1" End2="NWrist_1"/>
+		<EFingers_1 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NFingertips_1" End2="NKnuckles_1"/>
+		<EHandC_1 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnuckles_1" End2="NKnucklesS_1"/>
+		<EHandS_1 Type="Edge" Length="13.2876825332642" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnucklesS_1" End2="NWrist_1"/>
+		<EFingersS_1 Type="Edge" Length="13.2876825332642" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NFingertips_1" End2="NKnucklesS_1"/>
+		<EArm_2 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NElbow_2" End2="NShoulder_2"/>
+		<EForearm_2 Type="Edge" Length="30" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NWrist_2" End2="NElbow_2"/>
+		<EHand_2 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnuckles_2" End2="NWrist_2"/>
+		<EFingers_2 Type="Edge" Length="10" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NFingertips_2" End2="NKnuckles_2"/>
+		<EHandC_2 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnucklesS_2" End2="NKnuckles_2"/>
+		<EHandS_2 Type="Edge" Length="13.2876825332642" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NKnucklesS_2" End2="NWrist_2"/>
+		<EFingersS_2 Type="Edge" Length="13.2876825332642" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NFingertips_2" End2="NKnucklesS_2"/>
+		<ENeck Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NNeck" End2="NHead"/>
+		<EHead Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NHead" End2="NTop"/>
+		<EChestHS_1 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChest" End2="NChestS_1"/>
+		<EChestHS_2 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestS_2" End2="NChest"/>
+		<EStomachHS_1 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomach" End2="NStomachS_1"/>
+		<EStomachHS_2 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomach" End2="NStomachS_2"/>
+		<EChestS_1 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NNeck" End2="NChestS_1"/>
+		<EChestS_2 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestS_2" End2="NNeck"/>
+		<EStomachS_1 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachS_1" End2="NChest"/>
+		<EStomachS_2 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachS_2" End2="NChest"/>
+		<EChestH Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestS_2" End2="NChestS_1"/>
+		<EStomachH Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachS_2" End2="NStomachS_1"/>
+		<EChestHD_1 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestS_1" End2="NChestF"/>
+		<EChestHD_2 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestS_2" End2="NChestF"/>
+		<EStomachHD_1 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachF" End2="NStomachS_1"/>
+		<EStomachHD_2 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachF" End2="NStomachS_2"/>
+		<EChestF Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NChestF" End2="NNeck"/>
+		<EStomachF Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomachF" End2="NChest"/>
+		<EChestHF Type="Edge" Length="8.75" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NChest" SubNode2="NChestS_2" SubNode3="NNeck" End1="NChest" End2="NChestF"/>
+		<EStomachHF Type="Edge" Length="8.75" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NStomach" SubNode2="NStomachS_2" SubNode3="NChest" End1="NStomach" End2="NStomachF"/>
+		<EPelvisHD_1 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NPelvisF" End2="NHip_1"/>
+		<EPelvisHD_2 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHip_2" End2="NPelvisF"/>
+		<EPelvisF Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="NStomach" End2="NPelvisF"/>
+		<EHeadHS_1 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHead" End2="NHeadS_1"/>
+		<EHeadHS_2 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadS_2" End2="NHead"/>
+		<EHeadS_1 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NTop" End2="NHeadS_1"/>
+		<EHeadS_2 Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadS_2" End2="NTop"/>
+		<EHeadH Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadS_1" End2="NHeadS_2"/>
+		<EHeadHF Type="Edge" Length="8.75" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NHead" SubNode2="NTop" SubNode3="NHeadS_2" End1="NHeadF" End2="NHead"/>
+		<EHeadHD_1 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadF" End2="NHeadS_1"/>
+		<EHeadHD_2 Type="Edge" Length="12.3743686676025" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadS_2" End2="NHeadF"/>
+		<EHeadF Type="Edge" Length="19.5655956268311" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHeadF" End2="NTop"/>
+		<Muscle115 Type="Muscle" Length="19.489444732666" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NShoulder_1"/>
+		<Muscle116 Type="Muscle" Length="17.3917903900146" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_1" End2="NChestS_1"/>
+		<Muscle117 Type="Muscle" Length="16.9057331085205" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NStomachS_1"/>
+		<Muscle118 Type="Muscle" Length="19.2370147705078" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NShoulder_2"/>
+		<Muscle119 Type="Muscle" Length="17.6072807312012" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_2" End2="NChestS_2"/>
+		<Muscle120 Type="Muscle" Length="18.0915336608887" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NStomachS_2"/>
+		<EPelvisM Type="Edge" Length="17.5" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomach" End2="NPivot"/>
+		<EPelvisF Type="Edge" Length="19.5655956268311" WithSign="1" Fixed="0" Visible="1" Collisible="0" SubNodesCount="3" SubNode1="NPivot" SubNode2="NStomach" SubNode3="NHip_2" End1="NPelvisF" End2="NPivot"/>
+		<EPelvisHS_1 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHip_2" End2="NPivot"/>
+		<EPelvisHS_2 Type="Edge" Length="8.75" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NHip_1" End2="NPivot"/>
+		<Muscle126 Type="Muscle" Length="48.2643737792969" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_2" End2="NHeel_2"/>
+		<Muscle127 Type="Muscle" Length="45.3071327209473" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NHeel_2"/>
+		<Muscle128 Type="Muscle" Length="52.6004943847656" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_2" End2="NToe_2"/>
+		<Muscle129 Type="Muscle" Length="63.5706062316895" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NToe_2"/>
+		<Muscle130 Type="Muscle" Length="24.7993507385254" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NAnkle_2" End2="NToeTip_2"/>
+		<Muscle131 Type="Muscle" Length="56.3760185241699" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_2" End2="NToeTip_2"/>
+		<Muscle132 Type="Muscle" Length="52.3473167419434" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_2" End2="NToeS_2"/>
+		<Muscle133 Type="Muscle" Length="46.454719543457" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NAnkle_2"/>
+		<Muscle134 Type="Muscle" Length="46.0884094238281" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NPelvisF" End2="NKnee_2"/>
+		<Muscle135 Type="Muscle" Length="56.5513534545898" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NKnee_2"/>
+		<Muscle136 Type="Muscle" Length="44.7824478149414" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomach" End2="NKnee_2"/>
+		<Muscle137 Type="Muscle" Length="53.0278663635254" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NAnkle_2"/>
+		<Muscle138 Type="Muscle" Length="64.3640213012695" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NToeS_2"/>
+		<Muscle139 Type="Muscle" Length="24.9175109863281" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NAnkle_1" End2="NToeTip_1"/>
+		<Muscle140 Type="Muscle" Length="56.0918464660645" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_1" End2="NToeTip_1"/>
+		<Muscle141 Type="Muscle" Length="52.0720024108887" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_1" End2="NToe_1"/>
+		<Muscle142 Type="Muscle" Length="63.9535903930664" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NToe_1"/>
+		<Muscle143 Type="Muscle" Length="47.9070472717285" WithSign="0" Fixed="0" Visible="1" Collisible="1" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_1" End2="NHeel_1"/>
+		<Muscle144 Type="Muscle" Length="46.0430335998535" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NHeel_1"/>
+		<Muscle145 Type="Muscle" Length="50.4383544921875" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NKnee_1" End2="NToeS_1"/>
+		<Muscle146 Type="Muscle" Length="64.720344543457" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NToeS_1"/>
+		<Muscle147 Type="Muscle" Length="46.699390411377" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NAnkle_1"/>
+		<Muscle148 Type="Muscle" Length="50.4066619873047" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NAnkle_1"/>
+		<Muscle149 Type="Muscle" Length="45.3284759521484" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NPelvisF" End2="NKnee_1"/>
+		<Muscle150 Type="Muscle" Length="46.1215629577637" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomach" End2="NKnee_1"/>
+		<Muscle151 Type="Muscle" Length="56.2931785583496" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NKnee_1"/>
+		<Muscle152 Type="Muscle" Length="2.1121883392334" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NWrist_2" End2="NFingertips_2"/>
+		<Muscle153 Type="Muscle" Length="31.0088195800781" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_2" End2="NFingertips_2"/>
+		<Muscle154 Type="Muscle" Length="38.3507461547852" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_2" End2="NKnuckles_2"/>
+		<Muscle155 Type="Muscle" Length="59.4619941711426" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NKnuckles_2"/>
+		<Muscle156 Type="Muscle" Length="42.5283164978027" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_2" End2="NKnucklesS_2"/>
+		<Muscle157 Type="Muscle" Length="59.6949996948242" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NKnucklesS_2"/>
+		<Muscle158 Type="Muscle" Length="24.5311431884766" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NChestF"/>
+		<Muscle159 Type="Muscle" Length="31.1029987335205" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NShoulder_2"/>
+		<Muscle160 Type="Muscle" Length="50.3023681640625" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NWrist_2"/>
+		<Muscle165 Type="Muscle" Length="45.056266784668" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NNeck" End2="NElbow_2"/>
+		<Muscle166 Type="Muscle" Length="62.8098030090332" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestF" End2="NWrist_2"/>
+		<Muscle167 Type="Muscle" Length="58.5900726318359" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NNeck" End2="NWrist_2"/>
+		<Muscle168 Type="Muscle" Length="65.4261627197266" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NWrist_2"/>
+		<Muscle169 Type="Muscle" Length="72.0817337036133" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NWrist_2"/>
+		<Muscle171 Type="Muscle" Length="44.6725273132324" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NElbow_2"/>
+		<Muscle173 Type="Muscle" Length="57.2332725524902" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NElbow_2"/>
+		<Muscle174 Type="Muscle" Length="75.1529846191406" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NKnuckles_2"/>
+		<Muscle175 Type="Muscle" Length="24.4085941314697" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestF" End2="NShoulder_1"/>
+		<Muscle176 Type="Muscle" Length="31.1622257232666" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NShoulder_1"/>
+		<Muscle177 Type="Muscle" Length="1.31524538993835" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NWrist_1" End2="NFingertips_1"/>
+		<Muscle178 Type="Muscle" Length="30.4835510253906" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_1" End2="NFingertips_1"/>
+		<Muscle179 Type="Muscle" Length="38.3564834594727" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_1" End2="NKnuckles_1"/>
+		<Muscle180 Type="Muscle" Length="58.8735656738281" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_1" End2="NKnuckles_1"/>
+		<Muscle181 Type="Muscle" Length="42.8097801208496" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NElbow_1" End2="NKnucklesS_1"/>
+		<Muscle182 Type="Muscle" Length="59.3287506103516" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_1" End2="NKnucklesS_1"/>
+		<Muscle183 Type="Muscle" Length="49.5049705505371" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_1" End2="NWrist_1"/>
+		<Muscle184 Type="Muscle" Length="63.0394973754883" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestF" End2="NWrist_1"/>
+		<Muscle185 Type="Muscle" Length="65.5574264526367" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NWrist_1"/>
+		<Muscle186 Type="Muscle" Length="72.133918762207" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NWrist_1"/>
+		<Muscle187 Type="Muscle" Length="58.3204002380371" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NNeck" End2="NWrist_1"/>
+		<Muscle188 Type="Muscle" Length="45.4460563659668" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NNeck" End2="NElbow_1"/>
+		<Muscle189 Type="Muscle" Length="45.0987968444824" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NElbow_1"/>
+		<Muscle190 Type="Muscle" Length="57.6047744750977" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NElbow_1"/>
+		<Muscle191 Type="Muscle" Length="75.3824234008789" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NKnuckles_1"/>
+		<Muscle192 Type="Muscle" Length="16.9306621551514" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachF" End2="NChestF"/>
+		<Muscle193 Type="Muscle" Length="16.4902877807617" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NPelvisF" End2="NStomachF"/>
+		<Muscle194 Type="Muscle" Length="21.2862491607666" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_1" End2="NStomachF"/>
+		<Muscle195 Type="Muscle" Length="21.5762596130371" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestS_2" End2="NStomachF"/>
+		<Muscle196 Type="Muscle" Length="20.8743724822998" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_1" End2="NPelvisF"/>
+		<Muscle197 Type="Muscle" Length="21.9756526947021" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_2" End2="NPelvisF"/>
+		<Muscle198 Type="Muscle" Length="19.3709087371826" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHeadS_1" End2="NNeck"/>
+		<Muscle199 Type="Muscle" Length="24.852855682373" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHeadF" End2="NNeck"/>
+		<Muscle200 Type="Muscle" Length="19.7575721740723" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHeadS_2" End2="NNeck"/>
+		<Muscle201 Type="Muscle" Length="31.70578956604" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NNeck" End2="NTop"/>
+		<Muscle202 Type="Muscle" Length="36.2211036682129" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHead" End2="NChestF"/>
+		<Muscle203 Type="Muscle" Length="24.383415222168" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHead" End2="NShoulder_1"/>
+		<Muscle204 Type="Muscle" Length="26.0055141448975" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NHead"/>
+		<Muscle211 Type="Muscle" Length="33.9676704406738" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NShoulder_1"/>
+		<Muscle212 Type="Muscle" Length="21.0236740112305" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_1" End2="NChestF"/>
+		<Muscle213 Type="Muscle" Length="20.9014530181885" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomachS_2" End2="NChestF"/>
+		<Muscle214 Type="Muscle" Length="20.6874694824219" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NStomachF"/>
+		<Muscle215 Type="Muscle" Length="20.491626739502" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NStomachF"/>
+		<Muscle216 Type="Muscle" Length="42.087574005127" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChestF" End2="NHeadF"/>
+		<Muscle205 Type="Muscle" Length="34.9743232727051" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NChest" End2="NHead"/>
+		<Muscle206 Type="Muscle" Length="34.9790534973145" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NStomach" End2="NNeck"/>
+		<Muscle207 Type="Muscle" Length="35.7206687927246" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_1" End2="NChest"/>
+		<Muscle208 Type="Muscle" Length="36.274787902832" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NHip_2" End2="NChest"/>
+		<Muscle209 Type="Muscle" Length="19.2206516265869" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_1" End2="NHeadS_1"/>
+		<Muscle210 Type="Muscle" Length="21.5191898345947" WithSign="0" Fixed="0" Visible="1" Collisible="0" Tension="0" MinLength="0" MaxLength="100000" SubNodesCount="0" End1="NShoulder_2" End2="NHeadS_2"/>
+		<Layer1_Edge47 Type="Edge" Length="119.870765686035" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_Node28" End2="Layer1_Layer1_Node27"/>
+		<Layer1_Edge48 Type="Edge" Length="119.870765686035" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_Node28" End2="Layer1_Layer1_NPivot"/>
+		<Layer1_Edge49 Type="Edge" Length="242.886810302734" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_Node28" End2="Layer1_Layer1_Node25"/>
+		<Layer1_Edge50 Type="Edge" Length="80" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_Node27" End2="Layer1_Layer1_NPivot"/>
+		<Layer1_Edge51 Type="Edge" Length="218.689270019531" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_Node27" End2="Layer1_Layer1_Node25"/>
+		<Layer1_Edge52 Type="Edge" Length="218.689270019531" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Layer1_Layer1_NPivot" End2="Layer1_Layer1_Node25"/>
+	</Edges>
+	<Figures>
+		<Capsule_EToeS_2 Type="Capsule" Edge="EToeS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToeC_2 Type="Capsule" Edge="EToeC_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToe_2 Type="Capsule" Edge="EToe_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFootS_2 Type="Capsule" Edge="EFootS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstepS_2 Type="Capsule" Edge="EInstepS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFoot_2 Type="Capsule" Edge="EFoot_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstep_2 Type="Capsule" Edge="EInstep_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHeep_2 Type="Capsule" Edge="EHeep_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_ECalf_2 Type="Capsule" Edge="ECalf_2" Radius1="6" Radius2="6" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EToe_1 Type="Capsule" Edge="EToe_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToeS_1 Type="Capsule" Edge="EToeS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToeC_1 Type="Capsule" Edge="EToeC_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFoot_1 Type="Capsule" Edge="EFoot_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFootS_1 Type="Capsule" Edge="EFootS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstep_1 Type="Capsule" Edge="EInstep_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstepS_1 Type="Capsule" Edge="EInstepS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHeel_1 Type="Capsule" Edge="EHeel_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule-1_ECalf_2 Type="Capsule" Edge="ECalf_2" Radius1="10" Radius2="10" Margin1="0.5" Margin2="0"/>
+		<Capsule_ECalf_1 Type="Capsule" Edge="ECalf_1" Radius1="6" Radius2="6" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EThigh_2 Type="Capsule" Edge="EThigh_2" Radius1="10" Radius2="10" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule-1_EThigh_2 Type="Capsule" Edge="EThigh_2" Radius1="12" Radius2="12" Margin1="0.400000005960464" Margin2="0"/>
+		<Capsule_EGroin Type="Capsule" Edge="EGroin" Radius1="12" Radius2="12" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle120 Type="Capsule" Edge="Muscle120" Radius1="8" Radius2="8" Margin1="0" Margin2="0"/>
+		<Capsule_EPelvisM Type="Capsule" Edge="EPelvisM" Radius1="12" Radius2="12" Margin1="0" Margin2="0"/>
+		<Capsule-1_EThigh_1 Type="Capsule" Edge="EThigh_1" Radius1="12" Radius2="12" Margin1="0.400000005960464" Margin2="0"/>
+		<Capsule_Muscle117 Type="Capsule" Edge="Muscle117" Radius1="8" Radius2="8" Margin1="0" Margin2="0"/>
+		<Capsule_EArm_2 Type="Capsule" Edge="EArm_2" Radius1="7" Radius2="7" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule-1_EForearm_2 Type="Capsule" Edge="EForearm_2" Radius1="7" Radius2="7" Margin1="0.5" Margin2="0"/>
+		<Capsule-1_ECalf_1 Type="Capsule" Edge="ECalf_1" Radius1="10" Radius2="10" Margin1="0.5" Margin2="0"/>
+		<Capsule_Muscle119 Type="Capsule" Edge="Muscle119" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_EStomach Type="Capsule" Edge="EStomach" Radius1="13" Radius2="13" Margin1="0" Margin2="0"/>
+		<Capsule_EForearm_2 Type="Capsule" Edge="EForearm_2" Radius1="5" Radius2="5" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EThigh_1 Type="Capsule" Edge="EThigh_1" Radius1="10" Radius2="10" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EFingers_2 Type="Capsule" Edge="EFingers_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule-1_EArm_2 Type="Capsule" Edge="EArm_2" Radius1="10" Radius2="10" Margin1="0.5" Margin2="0"/>
+		<Capsule_EHand_2 Type="Capsule" Edge="EHand_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle118 Type="Capsule" Edge="Muscle118" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle116 Type="Capsule" Edge="Muscle116" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_EFingersS_2 Type="Capsule" Edge="EFingersS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandS_2 Type="Capsule" Edge="EHandS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandC_2 Type="Capsule" Edge="EHandC_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EChest Type="Capsule" Edge="EChest" Radius1="13" Radius2="13" Margin1="0.200000002980232" Margin2="0"/>
+		<Capsule_EClavicle_2 Type="Capsule" Edge="EClavicle_2" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle115 Type="Capsule" Edge="Muscle115" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_EClavicle_1 Type="Capsule" Edge="EClavicle_1" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Capsule_ENeck Type="Capsule" Edge="ENeck" Radius1="5" Radius2="5" Margin1="0" Margin2="0"/>
+		<Capsule-1_EArm_1 Type="Capsule" Edge="EArm_1" Radius1="10" Radius2="10" Margin1="0.5" Margin2="0"/>
+		<Capsule_EArm_1 Type="Capsule" Edge="EArm_1" Radius1="7" Radius2="7" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule-1_EForearm_1 Type="Capsule" Edge="EForearm_1" Radius1="7" Radius2="7" Margin1="0.5" Margin2="0"/>
+		<Capsule_EForearm_1 Type="Capsule" Edge="EForearm_1" Radius1="5" Radius2="5" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EFingersS_1 Type="Capsule" Edge="EFingersS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandS_1 Type="Capsule" Edge="EHandS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFingers_1 Type="Capsule" Edge="EFingers_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHand_1 Type="Capsule" Edge="EHand_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHead Type="Capsule" Edge="EHead" Radius1="12" Radius2="12" Margin1="0" Margin2="0.5"/>
+		<Capsule_EHandC_1 Type="Capsule" Edge="EHandC_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Layer1_Triangle-36 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode56" Node2="Layer1_MacroNode42" Node3="Layer1_MacroNode53"/>
+		<Layer1_Triangle-35 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode56" Node2="Layer1_MacroNode47" Node3="Layer1_MacroNode42"/>
+		<Layer1_Triangle-28 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode40" Node2="Layer1_MacroNode39" Node3="Layer1_MacroNode52"/>
+		<Layer1_Triangle-27 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode40" Node2="Layer1_MacroNode48" Node3="Layer1_MacroNode39"/>
+		<Layer1_Triangle-24 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode52" Node2="Layer1_MacroNode39" Node3="Layer1_MacroNode36"/>
+		<Layer1_Triangle-25 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode52" Node2="Layer1_MacroNode36" Node3="Layer1_MacroNode45"/>
+		<Layer1_Triangle-20 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode47" Node3="Layer1_MacroNode56"/>
+		<Layer1_Triangle-44 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode53" Node3="Layer1_MacroNode42"/>
+		<Layer1_Triangle-19 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode36" Node3="Layer1_MacroNode47"/>
+		<Layer1_Triangle-23 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode44" Node2="Layer1_MacroNode53" Node3="Layer1_MacroNode56"/>
+		<Layer1_Triangle-31 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode40" Node2="Layer1_MacroNode52" Node3="Layer1_MacroNode46"/>
+		<Layer1_Triangle-39 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode52" Node3="Layer1_MacroNode46"/>
+		<Layer1_Triangle-1 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode38" Node2="Layer1_MacroNode48" Node3="Layer1_MacroNode40"/>
+		<Layer1_Triangle-8 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode48" Node2="Layer1_MacroNode38" Node3="Layer1_MacroNode39"/>
+		<Layer1_Triangle-4 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode36" Node2="Layer1_MacroNode38" Node3="Layer1_MacroNode39"/>
+		<Layer1_Triangle-9 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode47" Node3="Layer1_MacroNode42"/>
+		<Layer1_Triangle-26 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode44" Node2="Layer1_MacroNode56" Node3="Layer1_MacroNode45"/>
+		<Layer1_Triangle-40 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode46" Node3="Layer1_MacroNode54"/>
+		<Layer1_Triangle-2 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode38" Node2="Layer1_MacroNode40" Node3="Layer1_MacroNode46"/>
+		<Layer1_Triangle-12 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode36" Node3="Layer1_MacroNode47"/>
+		<Layer1_Triangle-17 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode54" Node3="Layer1_MacroNode51"/>
+		<Layer1_Triangle-43 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode44" Node3="Layer1_MacroNode53"/>
+		<Layer1_Triangle-3 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode36" Node2="Layer1_MacroNode43" Node3="Layer1_MacroNode38"/>
+		<Layer1_Triangle-18 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode45" Node2="Layer1_MacroNode51" Node3="Layer1_MacroNode44"/>
+		<Layer1_Triangle-41 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode54" Node2="Layer1_MacroNode46" Node3="Layer1_MacroNode38"/>
+		<Layer1_Triangle-11 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode36" Node2="Layer1_MacroNode37" Node3="Layer1_MacroNode43"/>
+		<Layer1_Triangle-42 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode54" Node2="Layer1_MacroNode38" Node3="Layer1_MacroNode43"/>
+		<Layer1_Triangle-33 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode43" Node2="Layer1_MacroNode51" Node3="Layer1_MacroNode54"/>
+		<Layer1_Triangle-10 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode36" Node2="Layer1_MacroNode35" Node3="Layer1_MacroNode37"/>
+		<Layer1_Triangle-32 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode43" Node2="Layer1_MacroNode37" Node3="Layer1_MacroNode51"/>
+		<Layer1_Triangle-30 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode55" Node2="Layer1_MacroNode37" Node3="Layer1_MacroNode51"/>
+		<Layer1_Triangle-22 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode57" Node2="Layer1_MacroNode51" Node3="Layer1_MacroNode44"/>
+		<Layer1_Triangle-21 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode57" Node2="Layer1_MacroNode55" Node3="Layer1_MacroNode51"/>
+		<Layer1_Triangle-38 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode57" Node3="Layer1_MacroNode44"/>
+		<Layer1_Triangle-29 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode55" Node2="Layer1_MacroNode41" Node3="Layer1_MacroNode37"/>
+		<Layer1_Triangle-6 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode49" Node2="Layer1_MacroNode35" Node3="Layer1_MacroNode37"/>
+		<Layer1_Triangle-34 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode55" Node2="Layer1_MacroNode57" Node3="Layer1_MacroNode58"/>
+		<Layer1_Triangle-37 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode35" Node2="Layer1_MacroNode49" Node3="Layer1_MacroNode57"/>
+		<Layer1_Triangle-13 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode58" Node2="Layer1_MacroNode55" Node3="Layer1_MacroNode41"/>
+		<Layer1_Triangle-7 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode49" Node2="Layer1_MacroNode37" Node3="Layer1_MacroNode41"/>
+		<Layer1_Triangle-15 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode58" Node2="Layer1_MacroNode57" Node3="Layer1_MacroNode49"/>
+		<Layer1_Triangle-5 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode41" Node2="Layer1_MacroNode50" Node3="Layer1_MacroNode49"/>
+		<Layer1_Triangle-14 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode58" Node2="Layer1_MacroNode41" Node3="Layer1_MacroNode50"/>
+		<Layer1_Triangle-16 Type="Triangle" DoubleSided="0" Node1="Layer1_MacroNode58" Node2="Layer1_MacroNode49" Node3="Layer1_MacroNode50"/>
+		<ML_Muscle115 Type="MuscleLine" Edge="Muscle115" Width="0"/>
+		<ML_Muscle116 Type="MuscleLine" Edge="Muscle116" Width="0"/>
+		<ML_Muscle117 Type="MuscleLine" Edge="Muscle117" Width="0"/>
+		<ML_Muscle118 Type="MuscleLine" Edge="Muscle118" Width="0"/>
+		<ML_Muscle119 Type="MuscleLine" Edge="Muscle119" Width="0"/>
+		<ML_Muscle120 Type="MuscleLine" Edge="Muscle120" Width="0"/>
+		<ML_Muscle126 Type="MuscleLine" Edge="Muscle126" Width="0"/>
+		<ML_Muscle127 Type="MuscleLine" Edge="Muscle127" Width="0"/>
+		<ML_Muscle128 Type="MuscleLine" Edge="Muscle128" Width="0"/>
+		<ML_Muscle129 Type="MuscleLine" Edge="Muscle129" Width="0"/>
+		<ML_Muscle130 Type="MuscleLine" Edge="Muscle130" Width="0"/>
+		<ML_Muscle131 Type="MuscleLine" Edge="Muscle131" Width="0"/>
+		<ML_Muscle132 Type="MuscleLine" Edge="Muscle132" Width="0"/>
+		<ML_Muscle133 Type="MuscleLine" Edge="Muscle133" Width="0"/>
+		<ML_Muscle134 Type="MuscleLine" Edge="Muscle134" Width="0"/>
+		<ML_Muscle135 Type="MuscleLine" Edge="Muscle135" Width="0"/>
+		<ML_Muscle136 Type="MuscleLine" Edge="Muscle136" Width="0"/>
+		<ML_Muscle137 Type="MuscleLine" Edge="Muscle137" Width="0"/>
+		<ML_Muscle138 Type="MuscleLine" Edge="Muscle138" Width="0"/>
+		<ML_Muscle139 Type="MuscleLine" Edge="Muscle139" Width="0"/>
+		<ML_Muscle140 Type="MuscleLine" Edge="Muscle140" Width="0"/>
+		<ML_Muscle141 Type="MuscleLine" Edge="Muscle141" Width="0"/>
+		<ML_Muscle142 Type="MuscleLine" Edge="Muscle142" Width="0"/>
+		<ML_Muscle143 Type="MuscleLine" Edge="Muscle143" Width="0"/>
+		<ML_Muscle144 Type="MuscleLine" Edge="Muscle144" Width="0"/>
+		<ML_Muscle145 Type="MuscleLine" Edge="Muscle145" Width="0"/>
+		<ML_Muscle146 Type="MuscleLine" Edge="Muscle146" Width="0"/>
+		<ML_Muscle147 Type="MuscleLine" Edge="Muscle147" Width="0"/>
+		<ML_Muscle148 Type="MuscleLine" Edge="Muscle148" Width="0"/>
+		<ML_Muscle149 Type="MuscleLine" Edge="Muscle149" Width="0"/>
+		<ML_Muscle150 Type="MuscleLine" Edge="Muscle150" Width="0"/>
+		<ML_Muscle151 Type="MuscleLine" Edge="Muscle151" Width="0"/>
+		<ML_Muscle152 Type="MuscleLine" Edge="Muscle152" Width="0"/>
+		<ML_Muscle153 Type="MuscleLine" Edge="Muscle153" Width="0"/>
+		<ML_Muscle154 Type="MuscleLine" Edge="Muscle154" Width="0"/>
+		<ML_Muscle155 Type="MuscleLine" Edge="Muscle155" Width="0"/>
+		<ML_Muscle156 Type="MuscleLine" Edge="Muscle156" Width="0"/>
+		<ML_Muscle157 Type="MuscleLine" Edge="Muscle157" Width="0"/>
+		<ML_Muscle158 Type="MuscleLine" Edge="Muscle158" Width="0"/>
+		<ML_Muscle159 Type="MuscleLine" Edge="Muscle159" Width="0"/>
+		<ML_Muscle160 Type="MuscleLine" Edge="Muscle160" Width="0"/>
+		<ML_Muscle165 Type="MuscleLine" Edge="Muscle165" Width="0"/>
+		<ML_Muscle166 Type="MuscleLine" Edge="Muscle166" Width="0"/>
+		<ML_Muscle167 Type="MuscleLine" Edge="Muscle167" Width="0"/>
+		<ML_Muscle168 Type="MuscleLine" Edge="Muscle168" Width="0"/>
+		<ML_Muscle169 Type="MuscleLine" Edge="Muscle169" Width="0"/>
+		<ML_Muscle171 Type="MuscleLine" Edge="Muscle171" Width="0"/>
+		<ML_Muscle173 Type="MuscleLine" Edge="Muscle173" Width="0"/>
+		<ML_Muscle174 Type="MuscleLine" Edge="Muscle174" Width="0"/>
+		<ML_Muscle175 Type="MuscleLine" Edge="Muscle175" Width="0"/>
+		<ML_Muscle176 Type="MuscleLine" Edge="Muscle176" Width="0"/>
+		<ML_Muscle177 Type="MuscleLine" Edge="Muscle177" Width="0"/>
+		<ML_Muscle178 Type="MuscleLine" Edge="Muscle178" Width="0"/>
+		<ML_Muscle179 Type="MuscleLine" Edge="Muscle179" Width="0"/>
+		<ML_Muscle180 Type="MuscleLine" Edge="Muscle180" Width="0"/>
+		<ML_Muscle181 Type="MuscleLine" Edge="Muscle181" Width="0"/>
+		<ML_Muscle182 Type="MuscleLine" Edge="Muscle182" Width="0"/>
+		<ML_Muscle183 Type="MuscleLine" Edge="Muscle183" Width="0"/>
+		<ML_Muscle184 Type="MuscleLine" Edge="Muscle184" Width="0"/>
+		<ML_Muscle185 Type="MuscleLine" Edge="Muscle185" Width="0"/>
+		<ML_Muscle186 Type="MuscleLine" Edge="Muscle186" Width="0"/>
+		<ML_Muscle187 Type="MuscleLine" Edge="Muscle187" Width="0"/>
+		<ML_Muscle188 Type="MuscleLine" Edge="Muscle188" Width="0"/>
+		<ML_Muscle189 Type="MuscleLine" Edge="Muscle189" Width="0"/>
+		<ML_Muscle190 Type="MuscleLine" Edge="Muscle190" Width="0"/>
+		<ML_Muscle191 Type="MuscleLine" Edge="Muscle191" Width="0"/>
+		<ML_Muscle192 Type="MuscleLine" Edge="Muscle192" Width="0"/>
+		<ML_Muscle193 Type="MuscleLine" Edge="Muscle193" Width="0"/>
+		<ML_Muscle194 Type="MuscleLine" Edge="Muscle194" Width="0"/>
+		<ML_Muscle195 Type="MuscleLine" Edge="Muscle195" Width="0"/>
+		<ML_Muscle196 Type="MuscleLine" Edge="Muscle196" Width="0"/>
+		<ML_Muscle197 Type="MuscleLine" Edge="Muscle197" Width="0"/>
+		<ML_Muscle198 Type="MuscleLine" Edge="Muscle198" Width="0"/>
+		<ML_Muscle199 Type="MuscleLine" Edge="Muscle199" Width="0"/>
+		<ML_Muscle200 Type="MuscleLine" Edge="Muscle200" Width="0"/>
+		<ML_Muscle201 Type="MuscleLine" Edge="Muscle201" Width="0"/>
+		<ML_Muscle202 Type="MuscleLine" Edge="Muscle202" Width="0"/>
+		<ML_Muscle203 Type="MuscleLine" Edge="Muscle203" Width="0"/>
+		<ML_Muscle204 Type="MuscleLine" Edge="Muscle204" Width="0"/>
+		<ML_Muscle211 Type="MuscleLine" Edge="Muscle211" Width="0"/>
+		<ML_Muscle212 Type="MuscleLine" Edge="Muscle212" Width="0"/>
+		<ML_Muscle213 Type="MuscleLine" Edge="Muscle213" Width="0"/>
+		<ML_Muscle214 Type="MuscleLine" Edge="Muscle214" Width="0"/>
+		<ML_Muscle215 Type="MuscleLine" Edge="Muscle215" Width="0"/>
+		<ML_Muscle216 Type="MuscleLine" Edge="Muscle216" Width="0"/>
+		<ML_Muscle205 Type="MuscleLine" Edge="Muscle205" Width="0"/>
+		<ML_Muscle206 Type="MuscleLine" Edge="Muscle206" Width="0"/>
+		<ML_Muscle207 Type="MuscleLine" Edge="Muscle207" Width="0"/>
+		<ML_Muscle208 Type="MuscleLine" Edge="Muscle208" Width="0"/>
+		<ML_Muscle209 Type="MuscleLine" Edge="Muscle209" Width="0"/>
+		<ML_Muscle210 Type="MuscleLine" Edge="Muscle210" Width="0"/>
+		<NP_NHip_1 Type="NodePoint" Node="NHip_1" Radius="3"/>
+		<NP_NHip_2 Type="NodePoint" Node="NHip_2" Radius="3"/>
+		<NP_NStomach Type="NodePoint" Node="NStomach" Radius="3"/>
+		<NP_NChest Type="NodePoint" Node="NChest" Radius="3"/>
+		<NP_NNeck Type="NodePoint" Node="NNeck" Radius="3"/>
+		<NP_NShoulder_1 Type="NodePoint" Node="NShoulder_1" Radius="3"/>
+		<NP_NShoulder_2 Type="NodePoint" Node="NShoulder_2" Radius="3"/>
+		<EL_EPelvis_2 Type="EdgeLine" Edge="EPelvis_2" Width="3"/>
+		<EL_EPelvis_1 Type="EdgeLine" Edge="EPelvis_1" Width="3"/>
+		<EL_EGroin Type="EdgeLine" Edge="EGroin" Width="3"/>
+		<EL_EStomach Type="EdgeLine" Edge="EStomach" Width="3"/>
+		<EL_EChest Type="EdgeLine" Edge="EChest" Width="3"/>
+		<EL_EClavicle_1 Type="EdgeLine" Edge="EClavicle_1" Width="3"/>
+		<EL_EClavicle_2 Type="EdgeLine" Edge="EClavicle_2" Width="3"/>
+		<NP_NKnee_1 Type="NodePoint" Node="NKnee_1" Radius="3"/>
+		<NP_NKnee_2 Type="NodePoint" Node="NKnee_2" Radius="3"/>
+		<NP_NAnkle_1 Type="NodePoint" Node="NAnkle_1" Radius="3"/>
+		<NP_NAnkle_2 Type="NodePoint" Node="NAnkle_2" Radius="3"/>
+		<NP_NToe_1 Type="NodePoint" Node="NToe_1" Radius="3"/>
+		<NP_NHeel_1 Type="NodePoint" Node="NHeel_1" Radius="3"/>
+		<NP_NToeTip_1 Type="NodePoint" Node="NToeTip_1" Radius="3"/>
+		<NP_NToeS_1 Type="NodePoint" Node="NToeS_1" Radius="3"/>
+		<NP_NHeel_2 Type="NodePoint" Node="NHeel_2" Radius="3"/>
+		<NP_NToe_2 Type="NodePoint" Node="NToe_2" Radius="3"/>
+		<NP_NToeTip_2 Type="NodePoint" Node="NToeTip_2" Radius="3"/>
+		<NP_NToeS_2 Type="NodePoint" Node="NToeS_2" Radius="3"/>
+		<EL_EThigh_1 Type="EdgeLine" Edge="EThigh_1" Width="3"/>
+		<EL_EThigh_2 Type="EdgeLine" Edge="EThigh_2" Width="3"/>
+		<EL_ECalf_1 Type="EdgeLine" Edge="ECalf_1" Width="3"/>
+		<EL_ECalf_2 Type="EdgeLine" Edge="ECalf_2" Width="3"/>
+		<EL_EInstep_1 Type="EdgeLine" Edge="EInstep_1" Width="3"/>
+		<EL_EHeel_1 Type="EdgeLine" Edge="EHeel_1" Width="3"/>
+		<EL_EFoot_1 Type="EdgeLine" Edge="EFoot_1" Width="3"/>
+		<EL_EToe_1 Type="EdgeLine" Edge="EToe_1" Width="3"/>
+		<EL_EToeC_1 Type="EdgeLine" Edge="EToeC_1" Width="1"/>
+		<EL_EToeS_1 Type="EdgeLine" Edge="EToeS_1" Width="1"/>
+		<EL_EFootS_1 Type="EdgeLine" Edge="EFootS_1" Width="1"/>
+		<EL_EInstepS_1 Type="EdgeLine" Edge="EInstepS_1" Width="1"/>
+		<EL_EHeep_2 Type="EdgeLine" Edge="EHeep_2" Width="3"/>
+		<EL_EInstep_2 Type="EdgeLine" Edge="EInstep_2" Width="3"/>
+		<EL_EFoot_2 Type="EdgeLine" Edge="EFoot_2" Width="3"/>
+		<EL_EToe_2 Type="EdgeLine" Edge="EToe_2" Width="3"/>
+		<EL_EToeC_2 Type="EdgeLine" Edge="EToeC_2" Width="1"/>
+		<EL_EToeS_2 Type="EdgeLine" Edge="EToeS_2" Width="1"/>
+		<EL_EFootS_2 Type="EdgeLine" Edge="EFootS_2" Width="1"/>
+		<EL_EInstepS_2 Type="EdgeLine" Edge="EInstepS_2" Width="1"/>
+		<NP_NElbow_1 Type="NodePoint" Node="NElbow_1" Radius="3"/>
+		<NP_NElbow_2 Type="NodePoint" Node="NElbow_2" Radius="3"/>
+		<NP_NWrist_1 Type="NodePoint" Node="NWrist_1" Radius="3"/>
+		<NP_NWrist_2 Type="NodePoint" Node="NWrist_2" Radius="3"/>
+		<NP_NKnuckles_1 Type="NodePoint" Node="NKnuckles_1" Radius="3"/>
+		<NP_NFingertips_1 Type="NodePoint" Node="NFingertips_1" Radius="3"/>
+		<NP_NKnucklesS_1 Type="NodePoint" Node="NKnucklesS_1" Radius="3"/>
+		<NP_NKnuckles_2 Type="NodePoint" Node="NKnuckles_2" Radius="3"/>
+		<NP_NFingertips_2 Type="NodePoint" Node="NFingertips_2" Radius="3"/>
+		<NP_NKnucklesS_2 Type="NodePoint" Node="NKnucklesS_2" Radius="3"/>
+		<EL_EArm_1 Type="EdgeLine" Edge="EArm_1" Width="3"/>
+		<EL_EForearm_1 Type="EdgeLine" Edge="EForearm_1" Width="3"/>
+		<EL_EHand_1 Type="EdgeLine" Edge="EHand_1" Width="3"/>
+		<EL_EFingers_1 Type="EdgeLine" Edge="EFingers_1" Width="3"/>
+		<EL_EHandC_1 Type="EdgeLine" Edge="EHandC_1" Width="1"/>
+		<EL_EHandS_1 Type="EdgeLine" Edge="EHandS_1" Width="1"/>
+		<EL_EFingersS_1 Type="EdgeLine" Edge="EFingersS_1" Width="1"/>
+		<EL_EArm_2 Type="EdgeLine" Edge="EArm_2" Width="3"/>
+		<EL_EForearm_2 Type="EdgeLine" Edge="EForearm_2" Width="3"/>
+		<EL_EHand_2 Type="EdgeLine" Edge="EHand_2" Width="3"/>
+		<EL_EFingers_2 Type="EdgeLine" Edge="EFingers_2" Width="3"/>
+		<EL_EHandC_2 Type="EdgeLine" Edge="EHandC_2" Width="1"/>
+		<EL_EHandS_2 Type="EdgeLine" Edge="EHandS_2" Width="1"/>
+		<EL_EFingersS_2 Type="EdgeLine" Edge="EFingersS_2" Width="1"/>
+		<NP_NHead Type="NodePoint" Node="NHead" Radius="3"/>
+		<NP_NTop Type="NodePoint" Node="NTop" Radius="3"/>
+		<EL_ENeck Type="EdgeLine" Edge="ENeck" Width="3"/>
+		<EL_EHead Type="EdgeLine" Edge="EHead" Width="3"/>
+		<NP_NChestS_1 Type="NodePoint" Node="NChestS_1" Radius="3"/>
+		<NP_NChestS_2 Type="NodePoint" Node="NChestS_2" Radius="3"/>
+		<NP_NStomachS_1 Type="NodePoint" Node="NStomachS_1" Radius="3"/>
+		<NP_NStomachS_2 Type="NodePoint" Node="NStomachS_2" Radius="3"/>
+		<EL_EChestHS_1 Type="EdgeLine" Edge="EChestHS_1" Width="1"/>
+		<EL_EChestHS_2 Type="EdgeLine" Edge="EChestHS_2" Width="1"/>
+		<EL_EStomachHS_1 Type="EdgeLine" Edge="EStomachHS_1" Width="1"/>
+		<EL_EStomachHS_2 Type="EdgeLine" Edge="EStomachHS_2" Width="1"/>
+		<EL_EChestS_1 Type="EdgeLine" Edge="EChestS_1" Width="1"/>
+		<EL_EChestS_2 Type="EdgeLine" Edge="EChestS_2" Width="1"/>
+		<EL_EStomachS_1 Type="EdgeLine" Edge="EStomachS_1" Width="1"/>
+		<EL_EStomachS_2 Type="EdgeLine" Edge="EStomachS_2" Width="1"/>
+		<EL_EChestH Type="EdgeLine" Edge="EChestH" Width="1"/>
+		<EL_EStomachH Type="EdgeLine" Edge="EStomachH" Width="1"/>
+		<NP_NChestF Type="NodePoint" Node="NChestF" Radius="3"/>
+		<NP_NStomachF Type="NodePoint" Node="NStomachF" Radius="3"/>
+		<EL_EChestHD_1 Type="EdgeLine" Edge="EChestHD_1" Width="1"/>
+		<EL_EChestHD_2 Type="EdgeLine" Edge="EChestHD_2" Width="1"/>
+		<EL_EStomachHD_1 Type="EdgeLine" Edge="EStomachHD_1" Width="1"/>
+		<EL_EStomachHD_2 Type="EdgeLine" Edge="EStomachHD_2" Width="1"/>
+		<EL_EChestF Type="EdgeLine" Edge="EChestF" Width="1"/>
+		<EL_EStomachF Type="EdgeLine" Edge="EStomachF" Width="1"/>
+		<EL_EChestHF Type="EdgeLine" Edge="EChestHF" Width="1"/>
+		<EL_EStomachHF Type="EdgeLine" Edge="EStomachHF" Width="1"/>
+		<NP_NPelvisF Type="NodePoint" Node="NPelvisF" Radius="3"/>
+		<EL_EPelvisHD_1 Type="EdgeLine" Edge="EPelvisHD_1" Width="1"/>
+		<EL_EPelvisHD_2 Type="EdgeLine" Edge="EPelvisHD_2" Width="1"/>
+		<EL_EPelvisF Type="EdgeLine" Edge="EPelvisF" Width="1"/>
+		<NP_NHeadS_1 Type="NodePoint" Node="NHeadS_1" Radius="3"/>
+		<NP_NHeadS_2 Type="NodePoint" Node="NHeadS_2" Radius="3"/>
+		<EL_EHeadHS_1 Type="EdgeLine" Edge="EHeadHS_1" Width="1"/>
+		<EL_EHeadHS_2 Type="EdgeLine" Edge="EHeadHS_2" Width="1"/>
+		<EL_EHeadS_1 Type="EdgeLine" Edge="EHeadS_1" Width="1"/>
+		<EL_EHeadS_2 Type="EdgeLine" Edge="EHeadS_2" Width="1"/>
+		<EL_EHeadH Type="EdgeLine" Edge="EHeadH" Width="1"/>
+		<NP_NHeadF Type="NodePoint" Node="NHeadF" Radius="3"/>
+		<EL_EHeadHF Type="EdgeLine" Edge="EHeadHF" Width="1"/>
+		<EL_EHeadHD_1 Type="EdgeLine" Edge="EHeadHD_1" Width="1"/>
+		<EL_EHeadHD_2 Type="EdgeLine" Edge="EHeadHD_2" Width="1"/>
+		<EL_EHeadF Type="EdgeLine" Edge="EHeadF" Width="1"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+		<EL_EPelvisM Type="EdgeLine" Edge="EPelvisM" Width="1"/>
+		<EL_EPelvisF Type="EdgeLine" Edge="EPelvisF" Width="1"/>
+		<EL_EPelvisHS_1 Type="EdgeLine" Edge="EPelvisHS_1" Width="1"/>
+		<EL_EPelvisHS_2 Type="EdgeLine" Edge="EPelvisHS_2" Width="1"/>
+		<Layer2_NP_DetectorH Type="NodePoint" Node="Layer2_DetectorH" Radius="3"/>
+		<NP_DetectorV Type="NodePoint" Node="DetectorV" Radius="3"/>
+		<CL_COM Type="COMLocator" Node="COM" Radius="10"/>
+		<NP_Camera Type="NodePoint" Node="Camera" Radius="3"/>
+		<Layer1_Layer1_NP_Layer1_Node25 Type="NodePoint" Node="Layer1_Layer1_Node25" Radius="3"/>
+		<Layer1_Layer1_NP_Layer1_NPivot Type="NodePoint" Node="Layer1_Layer1_NPivot" Radius="3"/>
+		<Layer1_Layer1_NP_Layer1_Node27 Type="NodePoint" Node="Layer1_Layer1_Node27" Radius="3"/>
+		<Layer1_Layer1_NP_Layer1_Node28 Type="NodePoint" Node="Layer1_Layer1_Node28" Radius="3"/>
+		<Layer1_EL_Edge47 Type="EdgeLine" Edge="Layer1_Edge47" Width="1"/>
+		<Layer1_EL_Edge48 Type="EdgeLine" Edge="Layer1_Edge48" Width="1"/>
+		<Layer1_EL_Edge49 Type="EdgeLine" Edge="Layer1_Edge49" Width="1"/>
+		<Layer1_EL_Edge50 Type="EdgeLine" Edge="Layer1_Edge50" Width="1"/>
+		<Layer1_EL_Edge51 Type="EdgeLine" Edge="Layer1_Edge51" Width="1"/>
+		<Layer1_EL_Edge52 Type="EdgeLine" Edge="Layer1_Edge52" Width="1"/>
+		<Layer1_NP_MacroNode35 Type="NodePoint" Node="Layer1_MacroNode35" Radius="3"/>
+		<Layer1_NP_MacroNode36 Type="NodePoint" Node="Layer1_MacroNode36" Radius="3"/>
+		<Layer1_NP_MacroNode37 Type="NodePoint" Node="Layer1_MacroNode37" Radius="3"/>
+		<Layer1_NP_MacroNode38 Type="NodePoint" Node="Layer1_MacroNode38" Radius="3"/>
+		<Layer1_NP_MacroNode39 Type="NodePoint" Node="Layer1_MacroNode39" Radius="3"/>
+		<Layer1_NP_MacroNode40 Type="NodePoint" Node="Layer1_MacroNode40" Radius="3"/>
+		<Layer1_NP_MacroNode41 Type="NodePoint" Node="Layer1_MacroNode41" Radius="3"/>
+		<Layer1_NP_MacroNode42 Type="NodePoint" Node="Layer1_MacroNode42" Radius="3"/>
+		<Layer1_NP_MacroNode43 Type="NodePoint" Node="Layer1_MacroNode43" Radius="3"/>
+		<Layer1_NP_MacroNode44 Type="NodePoint" Node="Layer1_MacroNode44" Radius="3"/>
+		<Layer1_NP_MacroNode45 Type="NodePoint" Node="Layer1_MacroNode45" Radius="3"/>
+		<Layer1_NP_MacroNode46 Type="NodePoint" Node="Layer1_MacroNode46" Radius="3"/>
+		<Layer1_NP_MacroNode47 Type="NodePoint" Node="Layer1_MacroNode47" Radius="3"/>
+		<Layer1_NP_MacroNode48 Type="NodePoint" Node="Layer1_MacroNode48" Radius="3"/>
+		<Layer1_NP_MacroNode49 Type="NodePoint" Node="Layer1_MacroNode49" Radius="3"/>
+		<Layer1_NP_MacroNode50 Type="NodePoint" Node="Layer1_MacroNode50" Radius="3"/>
+		<Layer1_NP_MacroNode51 Type="NodePoint" Node="Layer1_MacroNode51" Radius="3"/>
+		<Layer1_NP_MacroNode52 Type="NodePoint" Node="Layer1_MacroNode52" Radius="3"/>
+		<Layer1_NP_MacroNode53 Type="NodePoint" Node="Layer1_MacroNode53" Radius="3"/>
+		<Layer1_NP_MacroNode54 Type="NodePoint" Node="Layer1_MacroNode54" Radius="3"/>
+		<Layer1_NP_MacroNode55 Type="NodePoint" Node="Layer1_MacroNode55" Radius="3"/>
+		<Layer1_NP_MacroNode56 Type="NodePoint" Node="Layer1_MacroNode56" Radius="3"/>
+		<Layer1_NP_MacroNode57 Type="NodePoint" Node="Layer1_MacroNode57" Radius="3"/>
+		<Layer1_NP_MacroNode58 Type="NodePoint" Node="Layer1_MacroNode58" Radius="3"/>
+		<NF_Camera Type="NodeFixer" Node="Camera" Radius="5"/>
+		<Layer2_NF_DetectorH Type="NodeFixer" Node="Layer2_DetectorH" Radius="5"/>
+		<Layer1_NF_Layer1_Node28 Type="NodeFixer" Node="Layer1_Layer1_Node28" Radius="5"/>
+		<Layer1_NF_Layer1_Node27 Type="NodeFixer" Node="Layer1_Layer1_Node27" Radius="5"/>
+		<Layer1_NF_Layer1_NPivot Type="NodeFixer" Node="Layer1_Layer1_NPivot" Radius="5"/>
+		<Layer1_NF_Layer1_Node25 Type="NodeFixer" Node="Layer1_Layer1_Node25" Radius="5"/>
+		<NF_DetectorV Type="NodeFixer" Node="DetectorV" Radius="5"/>
+		<NF_NShoulder_1 Type="NodeFixer" Node="NShoulder_1" Radius="5"/>
+		<NF_NPivot Type="NodeFixer" Node="NPivot" Radius="5"/>
+		<NF_NHeadF Type="NodeFixer" Node="NHeadF" Radius="5"/>
+		<NF_NHeadS_2 Type="NodeFixer" Node="NHeadS_2" Radius="5"/>
+		<NF_NHeadS_1 Type="NodeFixer" Node="NHeadS_1" Radius="5"/>
+		<NF_NPelvisF Type="NodeFixer" Node="NPelvisF" Radius="5"/>
+		<NF_NStomachF Type="NodeFixer" Node="NStomachF" Radius="5"/>
+		<NF_NChestF Type="NodeFixer" Node="NChestF" Radius="5"/>
+		<NF_NStomachS_2 Type="NodeFixer" Node="NStomachS_2" Radius="5"/>
+		<NF_NStomachS_1 Type="NodeFixer" Node="NStomachS_1" Radius="5"/>
+		<NF_NChestS_2 Type="NodeFixer" Node="NChestS_2" Radius="5"/>
+		<NF_NChestS_1 Type="NodeFixer" Node="NChestS_1" Radius="5"/>
+		<NF_NTop Type="NodeFixer" Node="NTop" Radius="5"/>
+		<NF_NHead Type="NodeFixer" Node="NHead" Radius="5"/>
+		<NF_NKnucklesS_2 Type="NodeFixer" Node="NKnucklesS_2" Radius="5"/>
+		<NF_NFingertips_2 Type="NodeFixer" Node="NFingertips_2" Radius="5"/>
+		<NF_NKnuckles_2 Type="NodeFixer" Node="NKnuckles_2" Radius="5"/>
+		<NF_NKnucklesS_1 Type="NodeFixer" Node="NKnucklesS_1" Radius="5"/>
+		<NF_NFingertips_1 Type="NodeFixer" Node="NFingertips_1" Radius="5"/>
+		<NF_NKnuckles_1 Type="NodeFixer" Node="NKnuckles_1" Radius="5"/>
+		<NF_NWrist_2 Type="NodeFixer" Node="NWrist_2" Radius="5"/>
+		<NF_NWrist_1 Type="NodeFixer" Node="NWrist_1" Radius="5"/>
+		<NF_NElbow_2 Type="NodeFixer" Node="NElbow_2" Radius="5"/>
+		<NF_NElbow_1 Type="NodeFixer" Node="NElbow_1" Radius="5"/>
+		<NF_NToeS_2 Type="NodeFixer" Node="NToeS_2" Radius="5"/>
+		<NF_NToeTip_2 Type="NodeFixer" Node="NToeTip_2" Radius="5"/>
+		<NF_NToe_2 Type="NodeFixer" Node="NToe_2" Radius="5"/>
+		<NF_NHeel_2 Type="NodeFixer" Node="NHeel_2" Radius="5"/>
+		<NF_NToeS_1 Type="NodeFixer" Node="NToeS_1" Radius="5"/>
+		<NF_NToeTip_1 Type="NodeFixer" Node="NToeTip_1" Radius="5"/>
+		<NF_NHeel_1 Type="NodeFixer" Node="NHeel_1" Radius="5"/>
+		<NF_NToe_1 Type="NodeFixer" Node="NToe_1" Radius="5"/>
+		<NF_NAnkle_2 Type="NodeFixer" Node="NAnkle_2" Radius="5"/>
+		<NF_NAnkle_1 Type="NodeFixer" Node="NAnkle_1" Radius="5"/>
+		<NF_NKnee_2 Type="NodeFixer" Node="NKnee_2" Radius="5"/>
+		<NF_NKnee_1 Type="NodeFixer" Node="NKnee_1" Radius="5"/>
+		<NF_NShoulder_2 Type="NodeFixer" Node="NShoulder_2" Radius="5"/>
+		<NF_NNeck Type="NodeFixer" Node="NNeck" Radius="5"/>
+		<NF_NChest Type="NodeFixer" Node="NChest" Radius="5"/>
+		<NF_NStomach Type="NodeFixer" Node="NStomach" Radius="5"/>
+		<NF_NHip_2 Type="NodeFixer" Node="NHip_2" Radius="5"/>
+		<NF_NHip_1 Type="NodeFixer" Node="NHip_1" Radius="5"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1>
+			<NPivot Type="Node"/>
+			<NPelvisF Type="Node"/>
+			<NHip_2 Type="Node"/>
+			<NHip_1 Type="Node"/>
+			<NShoulder_2 Type="Node"/>
+			<NShoulder_1 Type="Node"/>
+			<NNeck Type="Node"/>
+		</SG-1>
+		<SG-2>
+			<NKnucklesS_1 Type="Node"/>
+			<NFingertips_1 Type="Node"/>
+			<NKnuckles_1 Type="Node"/>
+			<NWrist_1 Type="Node"/>
+		</SG-2>
+		<SG-3>
+			<NKnucklesS_2 Type="Node"/>
+			<NFingertips_2 Type="Node"/>
+			<NKnuckles_2 Type="Node"/>
+			<NWrist_2 Type="Node"/>
+		</SG-3>
+		<SG-4>
+			<NToeS_2 Type="Node"/>
+			<NToeTip_2 Type="Node"/>
+			<NToe_2 Type="Node"/>
+			<NHeel_2 Type="Node"/>
+			<NAnkle_2 Type="Node"/>
+		</SG-4>
+		<SG-5>
+			<NToeS_1 Type="Node"/>
+			<NToeTip_1 Type="Node"/>
+			<NHeel_1 Type="Node"/>
+			<NToe_1 Type="Node"/>
+			<NAnkle_1 Type="Node"/>
+		</SG-5>
+		<SG-6>
+			<NHeadF Type="Node"/>
+			<NHeadS_2 Type="Node"/>
+			<NHeadS_1 Type="Node"/>
+			<NTop Type="Node"/>
+			<NHead Type="Node"/>
+		</SG-6>
+		<SG-7>
+			<COM Type="Node"/>
+		</SG-7>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

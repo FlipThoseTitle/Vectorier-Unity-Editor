@@ -1,337 +1,337 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_techpark_bonus.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="HPSpawn" AI="1" Time="0" AllowedSpawns="RespawnBot" Skins="Hunter" Murders="Player" Arrests="Player" Icon=""/>
-    <Model Name="Hunter2" Type="0" Color="0" BirthSpawn="HPSpawn" AI="1" Time="2" AllowedSpawns="RespawnBot2" Skins="Hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="RespawnBoto" AI="0" Time="2" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1" AllowedSpawns="Despawn"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Techpark_bg1" X="-500" Y="-725"/>
-        <Object Name="Techpark_bg1" X="1548" Y="-725"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="BGTree2" X="1760" Y="-540"/>
-        <Object Name="BGTree1" X="2640" Y="-570"/>
-        <Object Name="BGTree2" X="3128" Y="-514"/>
-        <Object Name="Banner_TP_167" X="4075" Y="-705"/>
-        <Object Name="Banner_TP_167_2" X="5900" Y="-330"/>
-        <Object Name="BGTree1" X="7650" Y="-450"/>
-        <Object Name="BGTree2" X="8125" Y="-349"/>
-        <Object Name="BGTree2" X="9099" Y="-195"/>
-        <Object Name="Banner_TP_building_2" X="10027" Y="-1590"/>
-        <Object Name="Banner_TP_167_2" X="12729" Y="-555"/>
-        <Object Name="BGTree1" X="15086" Y="-746"/>
-        <Object Name="BGTree1" X="15596" Y="-746"/>
-        <Object Name="BGTree2" X="16041" Y="-646"/>
-        <Object Name="Banner_TP_167" X="17519" Y="55"/>
-        <Object Name="Banner_TP_167_2" X="19299" Y="-460"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_1" X="0" Y="-410" DeltaX="0" DeltaY="-410"/>
-            <Object Name="TriggerZoomMin" X="940" Y="-2005"/>
-            <Object Name="TriggerZoomNormal" X="4350" Y="-2525"/>
-            <Object Name="TriggerCameraStart" X="625" Y="-2075"/>
-            <Object Name="TriggerCameraStart" X="50" Y="-1305"/>
-            <Object Name="TriggerZoomMin" X="5615" Y="-2295"/>
-            <Object Name="TriggerMonkeyToBackflip" X="3095" Y="-815"/>
-            <Object Name="TriggerZoomMax" X="3040" Y="-2575"/>
-            <Object Name="TriggerJump" X="6200" Y="-566"/>
-            <Object Name="HunterModJump" X="6350" Y="-564"/>
-            <Spawn X="1965" Y="-2705" Name="HPSpawn" Animation="JumpOff|18"/>
-            <Spawn X="440" Y="-2700" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Camera X="840" Y="-1930" Name="" Zoom="0"/>
-            <Spawn X="-355" Y="-1160" Name="RespawnBoto" Animation="JumpOff|18"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="100" Y="-1150" Name="RespawnBot" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn" X="650" Y="-2560" Width="255" Height="250">
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_techpark_bonus.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="HPSpawn" AI="1" Time="0" AllowedSpawns="RespawnBot" Skins="Hunter" Murders="Player" Arrests="Player" Icon=""/>
+		<Model Name="Hunter2" Type="0" Color="0" BirthSpawn="HPSpawn" AI="1" Time="2" AllowedSpawns="RespawnBot2" Skins="Hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="RespawnBoto" AI="0" Time="2" Trick="1" Skins="hunter" Murders="Player" Arrests="Player" Lose="1" AllowedSpawns="Despawn"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Techpark_bg1" X="-500" Y="-725"/>
+				<Object Name="Techpark_bg1" X="1548" Y="-725"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="BGTree2" X="1760" Y="-540"/>
+				<Object Name="BGTree1" X="2640" Y="-570"/>
+				<Object Name="BGTree2" X="3128" Y="-514"/>
+				<Object Name="Banner_TP_167" X="4075" Y="-705"/>
+				<Object Name="Banner_TP_167_2" X="5900" Y="-330"/>
+				<Object Name="BGTree1" X="7650" Y="-450"/>
+				<Object Name="BGTree2" X="8125" Y="-349"/>
+				<Object Name="BGTree2" X="9099" Y="-195"/>
+				<Object Name="Banner_TP_building_2" X="10027" Y="-1590"/>
+				<Object Name="Banner_TP_167_2" X="12729" Y="-555"/>
+				<Object Name="BGTree1" X="15086" Y="-746"/>
+				<Object Name="BGTree1" X="15596" Y="-746"/>
+				<Object Name="BGTree2" X="16041" Y="-646"/>
+				<Object Name="Banner_TP_167" X="17519" Y="55"/>
+				<Object Name="Banner_TP_167_2" X="19299" Y="-460"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_1" X="0" Y="-410" DeltaX="0" DeltaY="-410"/>
+						<Object Name="TriggerZoomMin" X="940" Y="-2005"/>
+						<Object Name="TriggerZoomNormal" X="4350" Y="-2525"/>
+						<Object Name="TriggerCameraStart" X="625" Y="-2075"/>
+						<Object Name="TriggerCameraStart" X="50" Y="-1305"/>
+						<Object Name="TriggerZoomMin" X="5615" Y="-2295"/>
+						<Object Name="TriggerMonkeyToBackflip" X="3095" Y="-815"/>
+						<Object Name="TriggerZoomMax" X="3040" Y="-2575"/>
+						<Object Name="TriggerJump" X="6200" Y="-566"/>
+						<Object Name="HunterModJump" X="6350" Y="-564"/>
+						<Spawn X="1965" Y="-2705" Name="HPSpawn" Animation="JumpOff|18"/>
+						<Spawn X="440" Y="-2700" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Camera X="840" Y="-1930" Name="" Zoom="0"/>
+						<Spawn X="-355" Y="-1160" Name="RespawnBoto" Animation="JumpOff|18"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="100" Y="-1150" Name="RespawnBot" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn" X="650" Y="-2560" Width="255" Height="250">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="RespawnBot"/>
-                      <SetVariable Name="Frames" Value="0"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_2" X="7110" Y="-5" DeltaX="290" DeltaY="360"/>
-            <Object Name="Pill" X="7075" Y="-79"/>
-            <Object Name="TriggerJump" X="11745" Y="-574"/>
-            <Object Name="HunterModJump" X="11705" Y="-574"/>
-            <Object Name="HunterModeRespawn_4sec" X="9405" Y="-1134"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="7070" Y="-334.05" Name="RespawnBot2" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn" X="7020" Y="-954.05" Width="150" Height="950">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="RespawnBot"/>
+											<SetVariable Name="Frames" Value="0"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_2" X="7110" Y="-5" DeltaX="290" DeltaY="360"/>
+						<Object Name="Pill" X="7075" Y="-79"/>
+						<Object Name="TriggerJump" X="11745" Y="-574"/>
+						<Object Name="HunterModJump" X="11705" Y="-574"/>
+						<Object Name="HunterModeRespawn_4sec" X="9405" Y="-1134"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="7070" Y="-334.05" Name="RespawnBot2" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn" X="7020" Y="-954.05" Width="150" Height="950">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="RespawnBot2"/>
-                      <SetVariable Name="Frames" Value="150"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_3" X="13330" Y="0" DeltaX="520" DeltaY="365"/>
-            <Object Name="TriggerZoomNormal" X="14019" Y="-1816"/>
-            <Object Name="Pill" X="13409" Y="-76"/>
-            <Object Name="TriggerJump" X="16799" Y="-196"/>
-            <Object Name="HunterModJump" X="17089" Y="-196"/>
-            <Object Name="HunterModeRespawn_4sec" X="15589" Y="-706"/>
-            <Object Name="Pill" X="16165" Y="-385"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="13689.05" Y="-110.8" Name="RespawnBot2" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn2" X="13614.05" Y="-1345.8" Width="150" Height="1350">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="RespawnBot2"/>
+											<SetVariable Name="Frames" Value="150"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_3" X="13330" Y="0" DeltaX="520" DeltaY="365"/>
+						<Object Name="TriggerZoomNormal" X="14019" Y="-1816"/>
+						<Object Name="Pill" X="13409" Y="-76"/>
+						<Object Name="TriggerJump" X="16799" Y="-196"/>
+						<Object Name="HunterModJump" X="17089" Y="-196"/>
+						<Object Name="HunterModeRespawn_4sec" X="15589" Y="-706"/>
+						<Object Name="Pill" X="16165" Y="-385"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="13689.05" Y="-110.8" Name="RespawnBot2" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn2" X="13614.05" Y="-1345.8" Width="150" Height="1350">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="RespawnBot2"/>
-                      <SetVariable Name="Frames" Value="150"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_4" X="17329" Y="4" DeltaX="-1" DeltaY="4"/>
-            <Object Name="TriggerZoomMin" X="19705" Y="-2210"/>
-            <Object Name="TriggerCatch" X="20109" Y="-506"/>
-            <Object Name="TriggerJump" X="22514" Y="-2571"/>
-            <Object Name="HunterModJump" X="17654" Y="-196"/>
-            <Object Name="HunterModSlide" X="22334" Y="-556"/>
-            <Object Name="TriggerWallBackRoll" X="17709" Y="-196"/>
-            <Object Name="Respawn_2.5sec" X="18405" Y="-175"/>
-            <Object Name="TriggerZoomMax" X="18040" Y="-1990"/>
-            <Object Name="TriggerZoomNormal" X="18925" Y="-2055"/>
-            <Object Name="Respawn_3.3sec" X="21085" Y="-350"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="21149.05" Y="-2580.75" Name="RespawnBot2" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn" X="22754.05" Y="-2370.7" Width="355" Height="130">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="RespawnBot2"/>
+											<SetVariable Name="Frames" Value="150"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_4" X="17329" Y="4" DeltaX="-1" DeltaY="4"/>
+						<Object Name="TriggerZoomMin" X="19705" Y="-2210"/>
+						<Object Name="TriggerCatch" X="20109" Y="-506"/>
+						<Object Name="TriggerJump" X="22514" Y="-2571"/>
+						<Object Name="HunterModJump" X="17654" Y="-196"/>
+						<Object Name="HunterModSlide" X="22334" Y="-556"/>
+						<Object Name="TriggerWallBackRoll" X="17709" Y="-196"/>
+						<Object Name="Respawn_2.5sec" X="18405" Y="-175"/>
+						<Object Name="TriggerZoomMax" X="18040" Y="-1990"/>
+						<Object Name="TriggerZoomNormal" X="18925" Y="-2055"/>
+						<Object Name="Respawn_3.3sec" X="21085" Y="-350"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="21149.05" Y="-2580.75" Name="RespawnBot2" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn" X="22754.05" Y="-2370.7" Width="355" Height="130">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="RespawnBot2"/>
-                      <SetVariable Name="Frames" Value="15"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_5" X="22679" Y="-176" DeltaX="0" DeltaY="180"/>
-            <Object Name="Pill" X="24109" Y="-1151"/>
-            <Object Name="TriggerZoomMin" X="23114" Y="-4831"/>
-            <Object Name="TriggerJump" X="26235" Y="-2570"/>
-            <Object Name="HunterModJump" X="26235" Y="-2570"/>
-            <Object Name="HunterModeRespawn_4sec" X="23779" Y="-676"/>
-            <Object Name="HunterModeRespawn_4sec" X="23409" Y="-2871"/>
-            <Trigger Name="TriggerZoomMax" X="23829" Y="-1316" Width="100" Height="355">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1.1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_6" X="28909" Y="-906" DeltaX="2650" DeltaY="1465"/>
-            <Object Name="TriggerCatch" X="30560" Y="-956"/>
-            <Object Name="TriggerZoomNormal" X="28915" Y="-3336"/>
-            <Image X="31105" Y="-616" Width="256" Height="60" ClassName="tp_longgrass" NativeX="" NativeY="" Type="3" Depth="1"/>
-            <Object Name="TriggerJump" X="35110" Y="-201"/>
-            <Object Name="TriggerZoomMin" X="33770" Y="-1616"/>
-            <Object Name="Pill" X="32075" Y="-1506"/>
-            <Object Name="Pill" X="32985" Y="-81"/>
-            <Object Name="HunterModJump" X="35240" Y="-201"/>
-            <Object Name="TriggerLongCircle" X="29300" Y="-1106"/>
-            <Trigger Name="TriggerLossPanic" X="26409" Y="-636" Width="2500" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value="FlyPanic"/>
-                  <SetVariable Name="StartFrame" Value="1"/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="HunterModeRespawn" X="32550" Y="-2261" Width="150" Height="1701">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="RespawnBot2"/>
+											<SetVariable Name="Frames" Value="15"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_5" X="22679" Y="-176" DeltaX="0" DeltaY="180"/>
+						<Object Name="Pill" X="24109" Y="-1151"/>
+						<Object Name="TriggerZoomMin" X="23114" Y="-4831"/>
+						<Object Name="TriggerJump" X="26235" Y="-2570"/>
+						<Object Name="HunterModJump" X="26235" Y="-2570"/>
+						<Object Name="HunterModeRespawn_4sec" X="23779" Y="-676"/>
+						<Object Name="HunterModeRespawn_4sec" X="23409" Y="-2871"/>
+						<Trigger Name="TriggerZoomMax" X="23829" Y="-1316" Width="100" Height="355">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1.1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_6" X="28909" Y="-906" DeltaX="2650" DeltaY="1465"/>
+						<Object Name="TriggerCatch" X="30560" Y="-956"/>
+						<Object Name="TriggerZoomNormal" X="28915" Y="-3336"/>
+						<Image X="31105" Y="-616" Width="256" Height="60" ClassName="tp_longgrass" NativeX="" NativeY="" Type="3" Depth="1"/>
+						<Object Name="TriggerJump" X="35110" Y="-201"/>
+						<Object Name="TriggerZoomMin" X="33770" Y="-1616"/>
+						<Object Name="Pill" X="32075" Y="-1506"/>
+						<Object Name="Pill" X="32985" Y="-81"/>
+						<Object Name="HunterModJump" X="35240" Y="-201"/>
+						<Object Name="TriggerLongCircle" X="29300" Y="-1106"/>
+						<Trigger Name="TriggerLossPanic" X="26409" Y="-636" Width="2500" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value="FlyPanic"/>
+									<SetVariable Name="StartFrame" Value="1"/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="HunterModeRespawn" X="32550" Y="-2261" Width="150" Height="1701">
 							<Properties>
 								<Static>
 									<Selection Choice="AITriggers" Variant="HunterMode"/>
 								</Static>
 							</Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="180"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerLossPanic" X="34705" Y="704" Width="2500" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value="FlyPanic"/>
-                  <SetVariable Name="StartFrame" Value="1"/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="28985" Y="-1021" Name="RespawnBot2" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn2" X="28910" Y="-2031" Width="150" Height="1125">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="180"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerLossPanic" X="34705" Y="704" Width="2500" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value="FlyPanic"/>
+									<SetVariable Name="StartFrame" Value="1"/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="28985" Y="-1021" Name="RespawnBot2" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn2" X="28910" Y="-2031" Width="150" Height="1125">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="RespawnBot2"/>
-                      <SetVariable Name="Frames" Value="120"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_07_7" X="35409" Y="259" DeltaX="0" DeltaY="170"/>
-            <Object Name="TriggerZoomMax" X="40085" Y="-2080"/>
-            <Object Name="Pill" X="36725" Y="88"/>
-            <Object Name="HunterModeRespawn_3sec" X="36900" Y="-242"/>
-            <Trigger Name="HunterModeRespawn" X="38290" Y="-767" Width="150" Height="500">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="RespawnBot2"/>
+											<SetVariable Name="Frames" Value="120"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_07_7" X="35409" Y="259" DeltaX="0" DeltaY="170"/>
+						<Object Name="TriggerZoomMax" X="40085" Y="-2080"/>
+						<Object Name="Pill" X="36725" Y="88"/>
+						<Object Name="HunterModeRespawn_3sec" X="36900" Y="-242"/>
+						<Trigger Name="HunterModeRespawn" X="38290" Y="-767" Width="150" Height="500">
 							<Properties>
 								<Static>
 									<Selection Choice="AITriggers" Variant="HunterMode"/>
 								</Static>
 							</Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Frames" Value="0"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="RespawnHunterMode"/>
-              </Content>
-            </Trigger>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Frames" Value="0"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="$AI" Value="-1"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="RespawnHunterMode"/>
+							</Content>
+						</Trigger>
 						<Item X="13875" Y="-75" Score="10" Radius="80" Type="1" GroupId="1"/>
 						<Item X="14745" Y="-75" Score="10" Radius="80" Type="1" GroupId="1"/>
 						<Item X="15700" Y="-285" Score="10" Radius="80" Type="1" GroupId="1"/>
@@ -347,9 +347,9 @@
 						<Item X="37495" Y="175" Score="10" Radius="80" Type="1" GroupId="5"/>
 						<Item X="37685" Y="175" Score="10" Radius="80" Type="1" GroupId="5"/>
 						<Item X="38010" Y="5" Score="10" Radius="80" Type="1" GroupId="5"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

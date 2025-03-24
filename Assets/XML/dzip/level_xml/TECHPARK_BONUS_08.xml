@@ -1,178 +1,178 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_techpark_bonus.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1" Stocks="bike"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn_1" AI="1" Time="4" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Respawns="Hunter" Victory="1" Stocks="bike"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn_1" AI="0" Time="5" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.1">
-      <Content>
-        <Object Name="Techpark_bg1" X="-500" Y="-500"/>
-        <Object Name="Techpark_bg1" X="1548" Y="-500"/>
-        <Object Name="Techpark_bg1" X="3596" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Banner_TP_building_1" X="-505" Y="-1710"/>
-        <Object Name="Banner_TP_building_2" X="25" Y="-1355">
-          <Content>
-            <Image X="2205" Y="-645" Width="500" Height="918" ClassName="park_billboard" NativeX="" NativeY=""/>
-          </Content>
-        </Object>
-        <Object Name="BGTree2" X="5365" Y="-970"/>
-        <Object Name="Banner_TP_building_2" X="6910" Y="-1515"/>
-        <Object Name="Banner_TP_building_1" X="10570" Y="-1110">
-          <Content>
-            <Image X="9600" Y="-405" Width="500" Height="918" ClassName="park_billboard" NativeX="500" NativeY="917.978"/>
-          </Content>
-        </Object>
-        <Object Name="Banner_TP_building_2" X="11670" Y="-15"/>
-        <Object Name="Banner_TP_building_1" X="14245" Y="-435"/>
-        <Object Name="BGTree2" X="14440" Y="740"/>
-        <Object Name="BGTree1" X="15425" Y="730"/>
-        <Object Name="Banner_TP_building_1" X="15720" Y="45"/>
-        <Object Name="Banner_TP_building_2" X="17585" Y="325">
-          <Content>
-            <Image X="17020" Y="510" Width="500" Height="918" ClassName="park_billboard" NativeX="" NativeY=""/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerZoomNormal" X="2660" Y="-2490"/>
-            <Object Name="TriggerCameraStart" X="1485" Y="-400"/>
-            <Spawn X="135" Y="-535" Name="DefaultSpawn_1" Animation="JumpOff|18"/>
-            <Camera X="1400" Y="-555" Name="" Zoom="0"/>
-            <Trigger Name="TriggerZoomMin" X="500" Y="-350" Width="1600" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Spawn X="-174" Y="-1228" Name="DefaultSpawn" Animation="JumpOff|18"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_2" X="4605" Y="-315" DeltaX="433" DeltaY="179"/>
-            <Object Name="Pill" X="6759" Y="-10"/>
-            <Object Name="Pill" X="4495" Y="-690"/>
-            <Object Name="TriggerZoomMin" X="4235" Y="-2850"/>
-            <Object Name="TriggerZoomNormal" X="11140" Y="-1620"/>
-            <Object Name="HunterModeRespawn_3sec" X="11305" Y="-240"/>
-            <Object Name="HunterModeRespawn_3sec" X="12365" Y="-1370"/>
-            <Object Name="Respawn_3sec" X="5285" Y="10"/>
-            <Trigger Name="TriggerZoomMin" X="11440" Y="-125" Width="1180" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Object X="0" Y="0">
-              <Content>
-                <Spawn X="11565" Y="-2175" Name="Respawn" Animation="JumpOff|18"/>
-                <Trigger Name="TriggerRespawn" X="12304" Y="-1358.95" Width="150" Height="500">
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_techpark_bonus.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1" Stocks="bike"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn_1" AI="1" Time="4" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Respawns="Hunter" Victory="1" Stocks="bike"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn_1" AI="0" Time="5" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.1">
+			<Content>
+				<Object Name="Techpark_bg1" X="-500" Y="-500"/>
+				<Object Name="Techpark_bg1" X="1548" Y="-500"/>
+				<Object Name="Techpark_bg1" X="3596" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Banner_TP_building_1" X="-505" Y="-1710"/>
+				<Object Name="Banner_TP_building_2" X="25" Y="-1355">
+					<Content>
+						<Image X="2205" Y="-645" Width="500" Height="918" ClassName="park_billboard" NativeX="" NativeY=""/>
+					</Content>
+				</Object>
+				<Object Name="BGTree2" X="5365" Y="-970"/>
+				<Object Name="Banner_TP_building_2" X="6910" Y="-1515"/>
+				<Object Name="Banner_TP_building_1" X="10570" Y="-1110">
+					<Content>
+						<Image X="9600" Y="-405" Width="500" Height="918" ClassName="park_billboard" NativeX="500" NativeY="917.978"/>
+					</Content>
+				</Object>
+				<Object Name="Banner_TP_building_2" X="11670" Y="-15"/>
+				<Object Name="Banner_TP_building_1" X="14245" Y="-435"/>
+				<Object Name="BGTree2" X="14440" Y="740"/>
+				<Object Name="BGTree1" X="15425" Y="730"/>
+				<Object Name="Banner_TP_building_1" X="15720" Y="45"/>
+				<Object Name="Banner_TP_building_2" X="17585" Y="325">
+					<Content>
+						<Image X="17020" Y="510" Width="500" Height="918" ClassName="park_billboard" NativeX="" NativeY=""/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_1" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerZoomNormal" X="2660" Y="-2490"/>
+						<Object Name="TriggerCameraStart" X="1485" Y="-400"/>
+						<Spawn X="135" Y="-535" Name="DefaultSpawn_1" Animation="JumpOff|18"/>
+						<Camera X="1400" Y="-555" Name="" Zoom="0"/>
+						<Trigger Name="TriggerZoomMin" X="500" Y="-350" Width="1600" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Spawn X="-174" Y="-1228" Name="DefaultSpawn" Animation="JumpOff|18"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_2" X="4605" Y="-315" DeltaX="433" DeltaY="179"/>
+						<Object Name="Pill" X="6759" Y="-10"/>
+						<Object Name="Pill" X="4495" Y="-690"/>
+						<Object Name="TriggerZoomMin" X="4235" Y="-2850"/>
+						<Object Name="TriggerZoomNormal" X="11140" Y="-1620"/>
+						<Object Name="HunterModeRespawn_3sec" X="11305" Y="-240"/>
+						<Object Name="HunterModeRespawn_3sec" X="12365" Y="-1370"/>
+						<Object Name="Respawn_3sec" X="5285" Y="10"/>
+						<Trigger Name="TriggerZoomMin" X="11440" Y="-125" Width="1180" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Object X="0" Y="0">
+							<Content>
+								<Spawn X="11565" Y="-2175" Name="Respawn" Animation="JumpOff|18"/>
+								<Trigger Name="TriggerRespawn" X="12304" Y="-1358.95" Width="150" Height="500">
 									<Properties>
 										<Static>
 											<Selection Choice="AITriggers" Variant="CommonMode"/>
 										</Static>
 									</Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="Spawn" Value="Respawn"/>
-                      <SetVariable Name="Frames" Value="0"/>
-                      <SetVariable Name="SpawnModel" Value="Hunter"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                    	<SetVariable Name="Flag1" Value="0"/>
-                    </Init>
-                    <Template Name="Respawn"/>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_3" X="12247" Y="-873" DeltaX="-356" DeltaY="-1130"/>
-            <Object Name="TriggerZoomMax" X="13059" Y="-2790"/>
-            <Object Name="TriggerZoomMin" X="14632" Y="-2897"/>
-            <Object Name="TriggerZoomNormal" X="16232" Y="-2292"/>
-            <Object Name="Respawn_2sec" X="15407" Y="-1142"/>
-            <Object Name="TriggerMonkeyToBomb" X="16950" Y="-1071"/>
-            <Object Name="Pill" X="15734" Y="-972"/>
-            <Object Name="HunterModeRespawn_3sec" X="16755" Y="-1370"/>
-            <Object Name="TriggerKingKongToBend" X="12732" Y="-1073"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_4" X="18013" Y="-573" DeltaX="301" DeltaY="390"/>
-            <Object Name="TriggerZoomMin" X="20602" Y="-1731"/>
-            <Object Name="TriggerZoomNormal" X="23253" Y="-771"/>
-            <Object Name="Pill" X="22482" Y="839"/>
-            <Object Name="Pill" X="20322" Y="-31"/>
-            <Object Name="Pill" X="18975" Y="-760"/>
-            <Object Name="HunterModeRespawn_4sec" X="22855" Y="426"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_5" X="23403" Y="1561" DeltaX="375" DeltaY="635"/>
-            <Object Name="TriggerZoomMin" X="27095" Y="-210"/>
-            <Object Name="TriggerZoomMax" X="25064" Y="-260"/>
-            <Object Name="Respawn_3sec" X="28134" Y="1559"/>
-            <Object Name="TriggerJump" X="30995" Y="1267"/>
-            <Object Name="Pill_huntermode" X="27165" Y="1510"/>
-            <Object Name="HunterModeRespawn_5sec" X="29485" Y="895"/>
-            <Object Name="Pill" X="24830" Y="1095"/>
-            <Object Name="TriggerWallBackRoll" X="28803" Y="1361"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_6" X="31753" Y="2814" DeltaX="590" DeltaY="1350"/>
-            <Object Name="TriggerZoomNormal" X="33999" Y="271"/>
-            <Object Name="TriggerZoomMax" X="36579" Y="526"/>
-            <Object Name="Respawn" X="33384" Y="2720"/>
-            <Object Name="Pill_commonmode" X="33704" Y="2506"/>
-            <Object Name="Pill" X="31533" Y="1701"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="TECHPARK_BONUS_08_7" X="37908" Y="2594" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerZoomMin" X="38080" Y="665"/>
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="Spawn" Value="Respawn"/>
+											<SetVariable Name="Frames" Value="0"/>
+											<SetVariable Name="SpawnModel" Value="Hunter"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="Flag1" Value="0"/>
+										</Init>
+										<Template Name="Respawn"/>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_3" X="12247" Y="-873" DeltaX="-356" DeltaY="-1130"/>
+						<Object Name="TriggerZoomMax" X="13059" Y="-2790"/>
+						<Object Name="TriggerZoomMin" X="14632" Y="-2897"/>
+						<Object Name="TriggerZoomNormal" X="16232" Y="-2292"/>
+						<Object Name="Respawn_2sec" X="15407" Y="-1142"/>
+						<Object Name="TriggerMonkeyToBomb" X="16950" Y="-1071"/>
+						<Object Name="Pill" X="15734" Y="-972"/>
+						<Object Name="HunterModeRespawn_3sec" X="16755" Y="-1370"/>
+						<Object Name="TriggerKingKongToBend" X="12732" Y="-1073"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_4" X="18013" Y="-573" DeltaX="301" DeltaY="390"/>
+						<Object Name="TriggerZoomMin" X="20602" Y="-1731"/>
+						<Object Name="TriggerZoomNormal" X="23253" Y="-771"/>
+						<Object Name="Pill" X="22482" Y="839"/>
+						<Object Name="Pill" X="20322" Y="-31"/>
+						<Object Name="Pill" X="18975" Y="-760"/>
+						<Object Name="HunterModeRespawn_4sec" X="22855" Y="426"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_5" X="23403" Y="1561" DeltaX="375" DeltaY="635"/>
+						<Object Name="TriggerZoomMin" X="27095" Y="-210"/>
+						<Object Name="TriggerZoomMax" X="25064" Y="-260"/>
+						<Object Name="Respawn_3sec" X="28134" Y="1559"/>
+						<Object Name="TriggerJump" X="30995" Y="1267"/>
+						<Object Name="Pill_huntermode" X="27165" Y="1510"/>
+						<Object Name="HunterModeRespawn_5sec" X="29485" Y="895"/>
+						<Object Name="Pill" X="24830" Y="1095"/>
+						<Object Name="TriggerWallBackRoll" X="28803" Y="1361"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_6" X="31753" Y="2814" DeltaX="590" DeltaY="1350"/>
+						<Object Name="TriggerZoomNormal" X="33999" Y="271"/>
+						<Object Name="TriggerZoomMax" X="36579" Y="526"/>
+						<Object Name="Respawn" X="33384" Y="2720"/>
+						<Object Name="Pill_commonmode" X="33704" Y="2506"/>
+						<Object Name="Pill" X="31533" Y="1701"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="TECHPARK_BONUS_08_7" X="37908" Y="2594" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerZoomMin" X="38080" Y="665"/>
 						<Item X="12460" Y="-945" Score="10" Radius="80" Type="1" GroupId="1"/>
 						<Item X="12635" Y="-945" Score="10" Radius="80" Type="1" GroupId="1"/>
 						<Item X="13475" Y="-1045" Score="10" Radius="80" Type="1" GroupId="1"/>
@@ -188,9 +188,9 @@
 						<Item X="35635" Y="3280" Score="10" Radius="80" Type="1" GroupId="5"/>
 						<Item X="36250" Y="2430" Score="10" Radius="80" Type="1" GroupId="5"/>
 						<Item X="36745" Y="2520" Score="10" Radius="80" Type="1" GroupId="5"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

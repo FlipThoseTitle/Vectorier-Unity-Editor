@@ -1,475 +1,475 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Node1 Type="Node"  X="-305.000823974609"  Y="438.479553222656"  Z="10.0944290161133"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node2 Type="Node"  X="-307.989410400391"  Y="441.416015625"  Z="10.6641616821289"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node3 Type="Node"  X="-298.426452636719"  Y="442.851196289063"  Z="26.7649154663086"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node4 Type="Node"  X="-301.688568115234"  Y="445.531311035156"  Z="26.5276870727539"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node5 Type="Node"  X="-298.690521240234"  Y="446.497497558594"  Z="32.764518737793"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node6 Type="Node"  X="-301.724060058594"  Y="447.574584960938"  Z="30.0114440917969"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node7 Type="Node"  X="-306.30859375"  Y="454.729187011719"  Z="39.688346862793"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node8 Type="Node"  X="-295.516998291016"  Y="462.746032714844"  Z="79.9744338989258"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node9 Type="Node"  X="-305.464874267578"  Y="444.324584960938"  Z="8.91304016113281"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node10 Type="Node"  X="-299.1796875"  Y="448.429931640625"  Z="24.7383041381836"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node11 Type="Node"  X="-299.257354736328"  Y="450.654663085938"  Z="28.4882125854492"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node12 Type="Node"  X="-309.853881835938"  Y="456.367370605469"  Z="38.0595169067383"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node13 Type="Node"  X="-307.75830078125"  Y="459.895385742188"  Z="37.0382614135742"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node14 Type="Node"  X="-299.115783691406"  Y="464.917846679688"  Z="80.4340896606445"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node15 Type="Node"  X="-297.026702880859"  Y="468.527709960938"  Z="79.7381210327148"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node16 Type="Node"  X="-305.031372070313"  Y="438.43310546875"  Z="-11.5397796630859"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node17 Type="Node"  X="-308.021362304688"  Y="441.3671875"  Z="-12.1186752319336"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node18 Type="Node"  X="-298.50439453125"  Y="442.732849121094"  Z="-28.2425308227539"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node19 Type="Node"  X="-301.765625"  Y="445.413452148438"  Z="-28.0128860473633"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node20 Type="Node"  X="-298.785430908203"  Y="446.353332519531"  Z="-34.2595062255859"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node21 Type="Node"  X="-301.810760498047"  Y="447.442016601563"  Z="-31.5063858032227"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node22 Type="Node"  X="-306.423156738281"  Y="454.554992675781"  Z="-41.210319519043"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node23 Type="Node"  X="-295.745178222656"  Y="462.398620605469"  Z="-81.553337097168"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node24 Type="Node"  X="-305.492004394531"  Y="444.282592773438"  Z="-10.3860702514648"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node25 Type="Node"  X="-299.251831054688"  Y="448.319641113281"  Z="-26.2418441772461"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node26 Type="Node"  X="-299.339874267578"  Y="450.529052734375"  Z="-30.0025253295898"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node27 Type="Node"  X="-309.963714599609"  Y="456.200378417969"  Z="-39.5834007263184"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node28 Type="Node"  X="-307.865295410156"  Y="459.732788085938"  Z="-38.5829200744629"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node29 Type="Node"  X="-299.345825195313"  Y="464.568054199219"  Z="-82.0173950195313"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node30 Type="Node"  X="-297.25439453125"  Y="468.181030273438"  Z="-81.3426666259766"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node31 Type="Node"  X="-562.390747070313"  Y="434.785522460938"  Z="10.3470840454102"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node32 Type="Node"  X="-558.504638671875"  Y="438.412780761719"  Z="10.7253646850586"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node33 Type="Node"  X="-546.225830078125"  Y="444.0947265625"  Z="11.5032730102539"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node34 Type="Node"  X="-520.28564453125"  Y="447.261840820313"  Z="13.1537322998047"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node35 Type="Node"  X="-485.842254638672"  Y="447.569580078125"  Z="15.3604736328125"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node36 Type="Node"  X="-378.534790039063"  Y="447.763610839844"  Z="22.1653289794922"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node37 Type="Node"  X="-355.761901855469"  Y="451.432250976563"  Z="18.8864059448242"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node38 Type="Node"  X="-325.694580078125"  Y="456.497314453125"  Z="13.490104675293"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node39 Type="Node"  X="-305.866271972656"  Y="446.895385742188"  Z="13.7003707885742"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node40 Type="Node"  X="-278.435577392578"  Y="433.625061035156"  Z="32.1059494018555"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node41 Type="Node"  X="-532.437866210938"  Y="434.663269042969"  Z="12.4899978637695"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node42 Type="Node"  X="-483.437164306641"  Y="434.467102050781"  Z="18.3325653076172"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node43 Type="Node"  X="-333.51318359375"  Y="433.856323242188"  Z="30.7797927856445"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node44 Type="Node"  X="-562.421081542969"  Y="434.739013671875"  Z="-11.34228515625"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node45 Type="Node"  X="-558.535888671875"  Y="438.364013671875"  Z="-11.7448425292969"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node46 Type="Node"  X="-546.260131835938"  Y="444.04296875"  Z="-12.5715408325195"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node47 Type="Node"  X="-520.324340820313"  Y="447.202514648438"  Z="-14.2818145751953"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node48 Type="Node"  X="-485.887359619141"  Y="447.500854492188"  Z="-16.548942565918"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node49 Type="Node"  X="-378.599578857422"  Y="447.665405273438"  Z="-23.5382919311523"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node50 Type="Node"  X="-355.817199707031"  Y="451.347900390625"  Z="-20.3164138793945"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node51 Type="Node"  X="-325.73486328125"  Y="456.436218261719"  Z="-14.9962005615234"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node52 Type="Node"  X="-305.907165527344"  Y="446.833618164063"  Z="-15.1937255859375"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node53 Type="Node"  X="-278.528656005859"  Y="433.483825683594"  Z="-33.5812568664551"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node54 Type="Node"  X="-532.47412109375"  Y="434.606994628906"  Z="-13.5357894897461"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node55 Type="Node"  X="-483.490631103516"  Y="434.385864257813"  Z="-19.4612579345703"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node56 Type="Node"  X="-333.602233886719"  Y="433.721130371094"  Z="-32.1619758605957"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node57 Type="Node"  X="-799.36962890625"  Y="651.880126953125"  Z="8.64360809326172"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node58 Type="Node"  X="-688.83056640625"  Y="622.296813964844"  Z="26.8388061523438"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node59 Type="Node"  X="-512.044677734375"  Y="570.843505859375"  Z="54.3111343383789"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node60 Type="Node"  X="-386.215850830078"  Y="529.245788574219"  Z="71.604118347168"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node61 Type="Node"  X="-273.687316894531"  Y="483.587585449219"  Z="83.2471237182617"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node62 Type="Node"  X="-227.686645507813"  Y="458.545471191406"  Z="88.0847549438477"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node63 Type="Node"  X="-191.336044311523"  Y="433.450134277344"  Z="92.0822372436523"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node64 Type="Node"  X="-850.917236328125"  Y="662.052734375"  Z="1.05330657958984"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node65 Type="Node"  X="-689.573364257813"  Y="609.336547851563"  Z="28.8858108520508"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node66 Type="Node"  X="-494.825866699219"  Y="556.140625"  Z="58.0607833862305"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node67 Type="Node"  X="-393.558502197266"  Y="518.65087890625"  Z="71.4143295288086"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node68 Type="Node"  X="-326.936645507813"  Y="484.088317871094"  Z="78.341667175293"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node69 Type="Node"  X="-292.763305664063"  Y="456.925109863281"  Z="81.8887252807617"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node70 Type="Node"  X="-277.884490966797"  Y="434.110656738281"  Z="82.8329086303711"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node71 Type="Node"  X="-386.123962402344"  Y="529.469299316406"  Z="68.5844650268555"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node72 Type="Node"  X="-273.600311279297"  Y="483.803161621094"  Z="76.4858627319336"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node73 Type="Node"  X="-227.606384277344"  Y="458.751159667969"  Z="76.6931076049805"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node74 Type="Node"  X="-191.267044067383"  Y="433.409484863281"  Z="73.4384994506836"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node75 Type="Node"  X="-799.396484375"  Y="651.839599609375"  Z="-10.223030090332"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node76 Type="Node"  X="-688.908508300781"  Y="622.178039550781"  Z="-28.4939193725586"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node77 Type="Node"  X="-512.200927734375"  Y="570.606018066406"  Z="-56.0467376708984"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node78 Type="Node"  X="-386.421264648438"  Y="528.93408203125"  Z="-73.3521194458008"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node79 Type="Node"  X="-273.925109863281"  Y="483.22607421875"  Z="-84.9650115966797"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node80 Type="Node"  X="-227.938110351563"  Y="458.1630859375"  Z="-89.7591934204102"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node81 Type="Node"  X="-191.598785400391"  Y="433.050659179688"  Z="-93.6966323852539"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node82 Type="Node"  X="-851.580932617188"  Y="659.994506835938"  Z="-2.5697021484375"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node83 Type="Node"  X="-689.657348632813"  Y="609.208618164063"  Z="-30.4775238037109"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node84 Type="Node"  X="-494.992828369141"  Y="555.887023925781"  Z="-59.7541046142578"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node85 Type="Node"  X="-393.762451171875"  Y="518.339782714844"  Z="-73.0980834960938"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node86 Type="Node"  X="-327.160278320313"  Y="483.747680664063"  Z="-79.9707794189453"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node87 Type="Node"  X="-292.997375488281"  Y="456.5693359375"  Z="-83.4440155029297"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node88 Type="Node"  X="-278.122436523438"  Y="433.372253417969"  Z="-84.301399230957"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node89 Type="Node"  X="-386.320678710938"  Y="529.170104980469"  Z="-70.3336639404297"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node90 Type="Node"  X="-273.819152832031"  Y="483.470642089844"  Z="-78.2050704956055"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node91 Type="Node"  X="-227.825668334961"  Y="458.417358398438"  Z="-78.3688354492188"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node92 Type="Node"  X="-191.477081298828"  Y="433.090454101563"  Z="-75.0529098510742"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node93 Type="Node"  X="-519.651489257813"  Y="445.550537109375"  Z="11.4044342041016"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node94 Type="Node"  X="-501.510498046875"  Y="457.328186035156"  Z="10.4691390991211"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node95 Type="Node"  X="-482.192138671875"  Y="466.845153808594"  Z="9.34611511230469"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node96 Type="Node"  X="-397.133880615234"  Y="502.312072753906"  Z="5.85675048828125"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node97 Type="Node"  X="-352.790283203125"  Y="517.073913574219"  Z="4.85089874267578"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node98 Type="Node"  X="-231.423034667969"  Y="537.657897949219"  Z="2.78968811035156"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node99 Type="Node"  X="-487.769104003906"  Y="446.729370117188"  Z="11.7094650268555"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node100 Type="Node"  X="-484.1728515625"  Y="452.450988769531"  Z="11.5547561645508"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node101 Type="Node"  X="-475.427825927734"  Y="457.832275390625"  Z="10.8794097900391"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node102 Type="Node"  X="-444.986389160156"  Y="472.833618164063"  Z="9.30408477783203"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node103 Type="Node"  X="-401.5830078125"  Y="491.409606933594"  Z="7.4805908203125"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node104 Type="Node"  X="-350.063781738281"  Y="510.040344238281"  Z="4.96391296386719"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node105 Type="Node"  X="-215.360076904297"  Y="535.775207519531"  Z="3.591796875"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node106 Type="Node"  X="-519.460205078125"  Y="444.833374023438"  Z="4.05186462402344"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node107 Type="Node"  X="-501.31494140625"  Y="456.677795410156"  Z="5.79974365234375"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node108 Type="Node"  X="-481.994323730469"  Y="466.197814941406"  Z="6.01327514648438"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node109 Type="Node"  X="-440.812561035156"  Y="485.299133300781"  Z="6.81287384033203"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node110 Type="Node"  X="-519.685241699219"  Y="445.4990234375"  Z="-12.5166778564453"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node111 Type="Node"  X="-501.54150390625"  Y="457.280578613281"  Z="-11.6699600219727"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node112 Type="Node"  X="-482.220001220703"  Y="466.802185058594"  Z="-10.6263961791992"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node113 Type="Node"  X="-397.152618408203"  Y="502.283569335938"  Z="-7.45553588867188"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node114 Type="Node"  X="-352.806457519531"  Y="517.049072265625"  Z="-6.59758758544922"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node115 Type="Node"  X="-231.433883666992"  Y="537.641479492188"  Z="-4.84459686279297"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node116 Type="Node"  X="-487.804016113281"  Y="446.676513671875"  Z="-12.8821182250977"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node117 Type="Node"  X="-484.207153320313"  Y="452.398742675781"  Z="-12.7614288330078"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node118 Type="Node"  X="-475.460327148438"  Y="457.78271484375"  Z="-12.1272659301758"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node119 Type="Node"  X="-445.01416015625"  Y="472.791015625"  Z="-10.6772384643555"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node120 Type="Node"  X="-401.606353759766"  Y="491.374206542969"  Z="-9.01863861083984"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node121 Type="Node"  X="-350.080413818359"  Y="510.015258789063"  Z="-6.68100738525391"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node122 Type="Node"  X="-215.373107910156"  Y="535.754821777344"  Z="-5.66498565673828"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node123 Type="Node"  X="-519.472534179688"  Y="444.813537597656"  Z="-5.16101837158203"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node124 Type="Node"  X="-501.333099365234"  Y="456.650390625"  Z="-6.99777221679688"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node125 Type="Node"  X="-482.013458251953"  Y="466.169250488281"  Z="-7.29071044921875"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node126 Type="Node"  X="-440.834045410156"  Y="485.266357421875"  Z="-8.25394439697266"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node127 Type="Node"  X="-411.5126953125"  Y="476.535583496094"  Z="205.117614746094"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node128 Type="Node"  X="-493.46728515625"  Y="532.453247070313"  Z="164.400970458984"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node129 Type="Node"  X="-664.416625976563"  Y="601.461486816406"  Z="97.305534362793"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node130 Type="Node"  X="-856.53125"  Y="658.601318359375"  Z="32.289924621582"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node131 Type="Node"  X="-223.782623291016"  Y="527.823181152344"  Z="43.9548263549805"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node132 Type="Node"  X="-312.413208007813"  Y="514.350769042969"  Z="106.522911071777"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node133 Type="Node"  X="-371.756256103516"  Y="498.375732421875"  Z="161.111755371094"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node134 Type="Node"  X="-406.981689453125"  Y="492.87255859375"  Z="-219.673965454102"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node135 Type="Node"  X="-490.269866943359"  Y="546.69873046875"  Z="-176.944305419922"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node136 Type="Node"  X="-660.630981445313"  Y="614.046081542969"  Z="-109.831512451172"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node137 Type="Node"  X="-854.328247070313"  Y="673.147583007813"  Z="-46.418586730957"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node138 Type="Node"  X="-1121.99841308594"  Y="738.893371582031"  Z="-0.65594482421875"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node139 Type="Node"  X="-838.423950195313"  Y="673.714599609375"  Z="-0.803413391113281"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node140 Type="Node"  X="-577.571044921875"  Y="616.036376953125"  Z="-0.922149658203125"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node141 Type="Node"  X="-311.504608154297"  Y="564.483764648438"  Z="-1.02424621582031"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node142 Type="Node"  X="-149.357131958008"  Y="525.098510742188"  Z="-0.544212341308594"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node143 Type="Node"  X="-222.329254150391"  Y="532.347961425781"  Z="-48.221794128418"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node144 Type="Node"  X="-309.220062255859"  Y="522.682067871094"  Z="-114.544898986816"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <NPivot Type="Node"  X="-369.414459228516"  Y="533.742980957031"  Z="-173.652557373047"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-  </Nodes>
-  <Edges/>
-  <Figures>
-    <Triangle-119 Type="Triangle"  Shading="-1"  Node1="Node139"  Node2="Node138"  Node3="Node137" />
-    <Triangle-109 Type="Triangle"  Shading="-1"  Node1="Node139"  Node2="Node130"  Node3="Node138" />
-    <Triangle-62 Type="Triangle"  Shading="-1"  Node1="Node75"  Node2="Node83"  Node3="Node82" />
-    <Triangle-39 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node44"  Node3="Node45" />
-    <Triangle-12 Type="Triangle"  Shading="-1"  Node1="Node44"  Node2="Node46"  Node3="Node45" />
-    <Triangle-41 Type="Triangle"  Shading="-1"  Node1="Node57"  Node2="Node64"  Node3="Node65" />
-    <Triangle-61 Type="Triangle"  Shading="-1"  Node1="Node75"  Node2="Node76"  Node3="Node83" />
-    <Triangle-40 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node45"  Node3="Node32" />
-    <Triangle-37 Type="Triangle"  Shading="-1"  Node1="Node32"  Node2="Node45"  Node3="Node46" />
-    <Triangle-120 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node139"  Node3="Node137" />
-    <Triangle-121 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node137"  Node3="Node136" />
-    <Triangle-14 Type="Triangle"  Shading="-1"  Node1="Node44"  Node2="Node47"  Node3="Node46" />
-    <Triangle-13 Type="Triangle"  Shading="-1"  Node1="Node44"  Node2="Node54"  Node3="Node47" />
-    <Triangle-1 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node32"  Node3="Node33" />
-    <Triangle-38 Type="Triangle"  Shading="-1"  Node1="Node32"  Node2="Node46"  Node3="Node33" />
-    <Triangle-111 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node130"  Node3="Node139" />
-    <Triangle-35 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node46"  Node3="Node47" />
-    <Triangle-124 Type="Triangle"  Shading="-1"  Node1="Node136"  Node2="Node135"  Node3="NPivot" />
-    <Triangle-2 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node33"  Node3="Node34" />
-    <Triangle-126 Type="Triangle"  Shading="-1"  Node1="Node134"  Node2="NPivot"  Node3="Node135" />
-    <Triangle-3 Type="Triangle"  Shading="-1"  Node1="Node31"  Node2="Node34"  Node3="Node41" />
-    <Triangle-18 Type="Triangle"  Shading="-1"  Node1="Node54"  Node2="Node48"  Node3="Node47" />
-    <Triangle-36 Type="Triangle"  Shading="-1"  Node1="Node33"  Node2="Node47"  Node3="Node34" />
-    <Triangle-17 Type="Triangle"  Shading="-1"  Node1="Node54"  Node2="Node55"  Node3="Node48" />
-    <Triangle-42 Type="Triangle"  Shading="-1"  Node1="Node57"  Node2="Node65"  Node3="Node58" />
-    <Triangle-95 Type="Triangle"  Shading="-1"  Node1="Node123"  Node2="Node110"  Node3="Node111" />
-    <Triangle-64 Type="Triangle"  Shading="-1"  Node1="Node76"  Node2="Node84"  Node3="Node83" />
-    <Triangle-33 Type="Triangle"  Shading="-1"  Node1="Node34"  Node2="Node47"  Node3="Node48" />
-    <Triangle-96 Type="Triangle"  Shading="-1"  Node1="Node123"  Node2="Node111"  Node3="Node124" />
-    <Triangle-108 Type="Triangle"  Shading="-1"  Node1="Node123"  Node2="Node117"  Node3="Node116" />
-    <Triangle-107 Type="Triangle"  Shading="-1"  Node1="Node123"  Node2="Node124"  Node3="Node117" />
-    <Triangle-6 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node34"  Node3="Node35" />
-    <Triangle-82 Type="Triangle"  Shading="-1"  Node1="Node106"  Node2="Node94"  Node3="Node93" />
-    <Triangle-81 Type="Triangle"  Shading="-1"  Node1="Node106"  Node2="Node107"  Node3="Node94" />
-    <Triangle-7 Type="Triangle"  Shading="-1"  Node1="Node41"  Node2="Node35"  Node3="Node42" />
-    <Triangle-34 Type="Triangle"  Shading="-1"  Node1="Node34"  Node2="Node48"  Node3="Node35" />
-    <Triangle-101 Type="Triangle"  Shading="-1"  Node1="Node124"  Node2="Node111"  Node3="Node112" />
-    <Triangle-94 Type="Triangle"  Shading="-1"  Node1="Node106"  Node2="Node100"  Node3="Node107" />
-    <Triangle-106 Type="Triangle"  Shading="-1"  Node1="Node124"  Node2="Node118"  Node3="Node117" />
-    <Triangle-93 Type="Triangle"  Shading="-1"  Node1="Node106"  Node2="Node99"  Node3="Node100" />
-    <Triangle-105 Type="Triangle"  Shading="-1"  Node1="Node124"  Node2="Node125"  Node3="Node118" />
-    <Triangle-102 Type="Triangle"  Shading="-1"  Node1="Node124"  Node2="Node112"  Node3="Node125" />
-    <Triangle-110 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node129"  Node3="Node130" />
-    <Triangle-63 Type="Triangle"  Shading="-1"  Node1="Node76"  Node2="Node77"  Node3="Node84" />
-    <Triangle-88 Type="Triangle"  Shading="-1"  Node1="Node107"  Node2="Node95"  Node3="Node94" />
-    <Triangle-16 Type="Triangle"  Shading="-1"  Node1="Node55"  Node2="Node49"  Node3="Node48" />
-    <Triangle-125 Type="Triangle"  Shading="-1"  Node1="Node136"  Node2="NPivot"  Node3="Node144" />
-    <Triangle-91 Type="Triangle"  Shading="-1"  Node1="Node107"  Node2="Node100"  Node3="Node101" />
-    <Triangle-92 Type="Triangle"  Shading="-1"  Node1="Node107"  Node2="Node101"  Node3="Node108" />
-    <Triangle-87 Type="Triangle"  Shading="-1"  Node1="Node107"  Node2="Node108"  Node3="Node95" />
-    <Triangle-31 Type="Triangle"  Shading="-1"  Node1="Node35"  Node2="Node48"  Node3="Node49" />
-    <Triangle-122 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node136"  Node3="Node144" />
-    <Triangle-104 Type="Triangle"  Shading="-1"  Node1="Node126"  Node2="Node118"  Node3="Node125" />
-    <Triangle-144 Type="Triangle"  Shading="-1"  Node1="Node125"  Node2="Node112"  Node3="Node126" />
-    <Triangle-103 Type="Triangle"  Shading="-1"  Node1="Node126"  Node2="Node119"  Node3="Node118" />
-    <Triangle-43 Type="Triangle"  Shading="-1"  Node1="Node58"  Node2="Node65"  Node3="Node66" />
-    <Triangle-89 Type="Triangle"  Shading="-1"  Node1="Node109"  Node2="Node108"  Node3="Node101" />
-    <Triangle-141 Type="Triangle"  Shading="-1"  Node1="Node108"  Node2="Node109"  Node3="Node95" />
-    <Triangle-4 Type="Triangle"  Shading="-1"  Node1="Node42"  Node2="Node35"  Node3="Node36" />
-    <Triangle-15 Type="Triangle"  Shading="-1"  Node1="Node55"  Node2="Node56"  Node3="Node49" />
-    <Triangle-80 Type="Triangle"  Shading="-1"  Node1="Node77"  Node2="Node85"  Node3="Node84" />
-    <Triangle-90 Type="Triangle"  Shading="-1"  Node1="Node109"  Node2="Node101"  Node3="Node102" />
-    <Triangle-32 Type="Triangle"  Shading="-1"  Node1="Node35"  Node2="Node49"  Node3="Node36" />
-    <Triangle-79 Type="Triangle"  Shading="-1"  Node1="Node77"  Node2="Node89"  Node3="Node85" />
-    <Triangle-78 Type="Triangle"  Shading="-1"  Node1="Node77"  Node2="Node78"  Node3="Node89" />
-    <Triangle-146 Type="Triangle"  Shading="-1"  Node1="Node113"  Node2="Node119"  Node3="Node126" />
-    <Triangle-20 Type="Triangle"  Shading="-1"  Node1="Node56"  Node2="Node50"  Node3="Node49" />
-    <Triangle-5 Type="Triangle"  Shading="-1"  Node1="Node42"  Node2="Node36"  Node3="Node43" />
-    <Triangle-44 Type="Triangle"  Shading="-1"  Node1="Node58"  Node2="Node66"  Node3="Node59" />
-    <Triangle-145 Type="Triangle"  Shading="-1"  Node1="Node113"  Node2="Node120"  Node3="Node119" />
-    <Triangle-142 Type="Triangle"  Shading="-1"  Node1="Node96"  Node2="Node109"  Node3="Node102" />
-    <Triangle-70 Type="Triangle"  Shading="-1"  Node1="Node89"  Node2="Node86"  Node3="Node85" />
-    <Triangle-29 Type="Triangle"  Shading="-1"  Node1="Node36"  Node2="Node49"  Node3="Node50" />
-    <Triangle-143 Type="Triangle"  Shading="-1"  Node1="Node96"  Node2="Node102"  Node3="Node103" />
-    <Triangle-19 Type="Triangle"  Shading="-1"  Node1="Node56"  Node2="Node53"  Node3="Node50" />
-    <Triangle-65 Type="Triangle"  Shading="-1"  Node1="Node89"  Node2="Node78"  Node3="Node79" />
-    <Triangle-163 Type="Triangle"  Shading="-1"  Node1="Node23"  Node2="Node29"  Node3="Node27" />
-    <Triangle-69 Type="Triangle"  Shading="-1"  Node1="Node89"  Node2="Node90"  Node3="Node86" />
-    <Triangle-30 Type="Triangle"  Shading="-1"  Node1="Node36"  Node2="Node50"  Node3="Node37" />
-    <Triangle-153 Type="Triangle"  Shading="-1"  Node1="Node29"  Node2="Node30"  Node3="Node28" />
-    <Triangle-77 Type="Triangle"  Shading="-1"  Node1="Node90"  Node2="Node87"  Node3="Node86" />
-    <Triangle-164 Type="Triangle"  Shading="-1"  Node1="Node23"  Node2="Node27"  Node3="Node22" />
-    <Triangle-154 Type="Triangle"  Shading="-1"  Node1="Node29"  Node2="Node28"  Node3="Node27" />
-    <Triangle-74 Type="Triangle"  Shading="-1"  Node1="Node91"  Node2="Node88"  Node3="Node87" />
-    <Triangle-28 Type="Triangle"  Shading="-1"  Node1="Node51"  Node2="Node37"  Node3="Node50" />
-    <Triangle-22 Type="Triangle"  Shading="-1"  Node1="Node50"  Node2="Node52"  Node3="Node51" />
-    <Triangle-21 Type="Triangle"  Shading="-1"  Node1="Node50"  Node2="Node53"  Node3="Node52" />
-    <Triangle-165 Type="Triangle"  Shading="-1"  Node1="Node20"  Node2="Node22"  Node3="Node27" />
-    <Triangle-66 Type="Triangle"  Shading="-1"  Node1="Node89"  Node2="Node79"  Node3="Node90" />
-    <Triangle-140 Type="Triangle"  Shading="-1"  Node1="Node28"  Node2="Node21"  Node3="Node27" />
-    <Triangle-166 Type="Triangle"  Shading="-1"  Node1="Node20"  Node2="Node27"  Node3="Node21" />
-    <Triangle-98 Type="Triangle"  Shading="-1"  Node1="Node114"  Node2="Node120"  Node3="Node113" />
-    <Triangle-8 Type="Triangle"  Shading="-1"  Node1="Node43"  Node2="Node36"  Node3="Node37" />
-    <Triangle-155 Type="Triangle"  Shading="-1"  Node1="Node20"  Node2="Node21"  Node3="Node19" />
-    <Triangle-156 Type="Triangle"  Shading="-1"  Node1="Node20"  Node2="Node19"  Node3="Node18" />
-    <Triangle-139 Type="Triangle"  Shading="-1"  Node1="Node28"  Node2="Node26"  Node3="Node21" />
-    <Triangle-137 Type="Triangle"  Shading="-1"  Node1="Node19"  Node2="Node21"  Node3="Node26" />
-    <Triangle-157 Type="Triangle"  Shading="-1"  Node1="Node18"  Node2="Node19"  Node3="Node17" />
-    <Triangle-158 Type="Triangle"  Shading="-1"  Node1="Node18"  Node2="Node17"  Node3="Node16" />
-    <Triangle-138 Type="Triangle"  Shading="-1"  Node1="Node19"  Node2="Node26"  Node3="Node25" />
-    <Triangle-135 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node19"  Node3="Node25" />
-    <Triangle-76 Type="Triangle"  Shading="-1"  Node1="Node90"  Node2="Node91"  Node3="Node87" />
-    <Triangle-136 Type="Triangle"  Shading="-1"  Node1="Node17"  Node2="Node25"  Node3="Node24" />
-    <Triangle-27 Type="Triangle"  Shading="-1"  Node1="Node51"  Node2="Node38"  Node3="Node37" />
-    <Triangle-83 Type="Triangle"  Shading="-1"  Node1="Node97"  Node2="Node96"  Node3="Node103" />
-    <Triangle-113 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node132"  Node3="Node129" />
-    <Triangle-75 Type="Triangle"  Shading="-1"  Node1="Node92"  Node2="Node81"  Node3="Node88" />
-    <Triangle-25 Type="Triangle"  Shading="-1"  Node1="Node38"  Node2="Node51"  Node3="Node52" />
-    <Triangle-73 Type="Triangle"  Shading="-1"  Node1="Node91"  Node2="Node92"  Node3="Node88" />
-    <Triangle-97 Type="Triangle"  Shading="-1"  Node1="Node114"  Node2="Node121"  Node3="Node120" />
-    <Triangle-71 Type="Triangle"  Shading="-1"  Node1="Node90"  Node2="Node79"  Node3="Node80" />
-    <Triangle-123 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node144"  Node3="Node143" />
-    <Triangle-23 Type="Triangle"  Shading="-1"  Node1="Node39"  Node2="Node52"  Node3="Node53" />
-    <Triangle-10 Type="Triangle"  Shading="-1"  Node1="Node37"  Node2="Node38"  Node3="Node39" />
-    <Triangle-72 Type="Triangle"  Shading="-1"  Node1="Node90"  Node2="Node80"  Node3="Node91" />
-    <Triangle-26 Type="Triangle"  Shading="-1"  Node1="Node38"  Node2="Node52"  Node3="Node39" />
-    <Triangle-59 Type="Triangle"  Shading="-1"  Node1="Node59"  Node2="Node66"  Node3="Node67" />
-    <Triangle-84 Type="Triangle"  Shading="-1"  Node1="Node97"  Node2="Node103"  Node3="Node104" />
-    <Triangle-9 Type="Triangle"  Shading="-1"  Node1="Node43"  Node2="Node37"  Node3="Node40" />
-    <Triangle-67 Type="Triangle"  Shading="-1"  Node1="Node91"  Node2="Node80"  Node3="Node81" />
-    <Triangle-11 Type="Triangle"  Shading="-1"  Node1="Node37"  Node2="Node39"  Node3="Node40" />
-    <Triangle-151 Type="Triangle"  Shading="-1"  Node1="Node3"  Node2="Node1"  Node3="Node2" />
-    <Triangle-24 Type="Triangle"  Shading="-1"  Node1="Node39"  Node2="Node53"  Node3="Node40" />
-    <Triangle-129 Type="Triangle"  Shading="-1"  Node1="Node2"  Node2="Node9"  Node3="Node10" />
-    <Triangle-68 Type="Triangle"  Shading="-1"  Node1="Node91"  Node2="Node81"  Node3="Node92" />
-    <Triangle-152 Type="Triangle"  Shading="-1"  Node1="Node3"  Node2="Node2"  Node3="Node4" />
-    <Triangle-130 Type="Triangle"  Shading="-1"  Node1="Node2"  Node2="Node10"  Node3="Node4" />
-    <Triangle-60 Type="Triangle"  Shading="-1"  Node1="Node59"  Node2="Node67"  Node3="Node71" />
-    <Triangle-149 Type="Triangle"  Shading="-1"  Node1="Node5"  Node2="Node3"  Node3="Node4" />
-    <Triangle-131 Type="Triangle"  Shading="-1"  Node1="Node4"  Node2="Node10"  Node3="Node11" />
-    <Triangle-115 Type="Triangle"  Shading="-1"  Node1="Node129"  Node2="Node133"  Node3="Node128" />
-    <Triangle-132 Type="Triangle"  Shading="-1"  Node1="Node4"  Node2="Node11"  Node3="Node6" />
-    <Triangle-150 Type="Triangle"  Shading="-1"  Node1="Node5"  Node2="Node4"  Node3="Node6" />
-    <Triangle-58 Type="Triangle"  Shading="-1"  Node1="Node59"  Node2="Node71"  Node3="Node60" />
-    <Triangle-161 Type="Triangle"  Shading="-1"  Node1="Node5"  Node2="Node6"  Node3="Node12" />
-    <Triangle-134 Type="Triangle"  Shading="-1"  Node1="Node13"  Node2="Node6"  Node3="Node11" />
-    <Triangle-133 Type="Triangle"  Shading="-1"  Node1="Node13"  Node2="Node12"  Node3="Node6" />
-    <Triangle-128 Type="Triangle"  Shading="-1"  Node1="Node143"  Node2="Node141"  Node3="Node140" />
-    <Triangle-162 Type="Triangle"  Shading="-1"  Node1="Node5"  Node2="Node12"  Node3="Node7" />
-    <Triangle-100 Type="Triangle"  Shading="-1"  Node1="Node115"  Node2="Node121"  Node3="Node114" />
-    <Triangle-159 Type="Triangle"  Shading="-1"  Node1="Node8"  Node2="Node7"  Node3="Node12" />
-    <Triangle-147 Type="Triangle"  Shading="-1"  Node1="Node14"  Node2="Node12"  Node3="Node13" />
-    <Triangle-114 Type="Triangle"  Shading="-1"  Node1="Node129"  Node2="Node132"  Node3="Node133" />
-    <Triangle-118 Type="Triangle"  Shading="-1"  Node1="Node131"  Node2="Node140"  Node3="Node141" />
-    <Triangle-85 Type="Triangle"  Shading="-1"  Node1="Node98"  Node2="Node97"  Node3="Node104" />
-    <Triangle-49 Type="Triangle"  Shading="-1"  Node1="Node71"  Node2="Node67"  Node3="Node68" />
-    <Triangle-160 Type="Triangle"  Shading="-1"  Node1="Node8"  Node2="Node12"  Node3="Node14" />
-    <Triangle-148 Type="Triangle"  Shading="-1"  Node1="Node14"  Node2="Node13"  Node3="Node15" />
-    <Triangle-112 Type="Triangle"  Shading="-1"  Node1="Node140"  Node2="Node131"  Node3="Node132" />
-    <Triangle-46 Type="Triangle"  Shading="-1"  Node1="Node71"  Node2="Node61"  Node3="Node60" />
-    <Triangle-50 Type="Triangle"  Shading="-1"  Node1="Node71"  Node2="Node68"  Node3="Node72" />
-    <Triangle-116 Type="Triangle"  Shading="-1"  Node1="Node127"  Node2="Node128"  Node3="Node133" />
-    <Triangle-56 Type="Triangle"  Shading="-1"  Node1="Node72"  Node2="Node68"  Node3="Node69" />
-    <Triangle-99 Type="Triangle"  Shading="-1"  Node1="Node115"  Node2="Node122"  Node3="Node121" />
-    <Triangle-45 Type="Triangle"  Shading="-1"  Node1="Node71"  Node2="Node72"  Node3="Node61" />
-    <Triangle-53 Type="Triangle"  Shading="-1"  Node1="Node73"  Node2="Node69"  Node3="Node70" />
-    <Triangle-86 Type="Triangle"  Shading="-1"  Node1="Node98"  Node2="Node104"  Node3="Node105" />
-    <Triangle-57 Type="Triangle"  Shading="-1"  Node1="Node72"  Node2="Node69"  Node3="Node73" />
-    <Triangle-127 Type="Triangle"  Shading="-1"  Node1="Node143"  Node2="Node142"  Node3="Node141" />
-    <Triangle-54 Type="Triangle"  Shading="-1"  Node1="Node73"  Node2="Node70"  Node3="Node74" />
-    <Triangle-55 Type="Triangle"  Shading="-1"  Node1="Node74"  Node2="Node70"  Node3="Node63" />
-    <Triangle-52 Type="Triangle"  Shading="-1"  Node1="Node72"  Node2="Node62"  Node3="Node61" />
-    <Triangle-51 Type="Triangle"  Shading="-1"  Node1="Node72"  Node2="Node73"  Node3="Node62" />
-    <Triangle-117 Type="Triangle"  Shading="-1"  Node1="Node131"  Node2="Node141"  Node3="Node142" />
-    <Triangle-47 Type="Triangle"  Shading="-1"  Node1="Node73"  Node2="Node74"  Node3="Node63" />
-    <Triangle-48 Type="Triangle"  Shading="-1"  Node1="Node73"  Node2="Node63"  Node3="Node62" />
-    <NP_Node1 Type="NodePoint"  Node="Node1"  Radius="3" />
-    <NP_Node2 Type="NodePoint"  Node="Node2"  Radius="3" />
-    <NP_Node3 Type="NodePoint"  Node="Node3"  Radius="3" />
-    <NP_Node4 Type="NodePoint"  Node="Node4"  Radius="3" />
-    <NP_Node5 Type="NodePoint"  Node="Node5"  Radius="3" />
-    <NP_Node6 Type="NodePoint"  Node="Node6"  Radius="3" />
-    <NP_Node7 Type="NodePoint"  Node="Node7"  Radius="3" />
-    <NP_Node8 Type="NodePoint"  Node="Node8"  Radius="3" />
-    <NP_Node9 Type="NodePoint"  Node="Node9"  Radius="3" />
-    <NP_Node10 Type="NodePoint"  Node="Node10"  Radius="3" />
-    <NP_Node11 Type="NodePoint"  Node="Node11"  Radius="3" />
-    <NP_Node12 Type="NodePoint"  Node="Node12"  Radius="3" />
-    <NP_Node13 Type="NodePoint"  Node="Node13"  Radius="3" />
-    <NP_Node14 Type="NodePoint"  Node="Node14"  Radius="3" />
-    <NP_Node15 Type="NodePoint"  Node="Node15"  Radius="3" />
-    <NP_Node16 Type="NodePoint"  Node="Node16"  Radius="3" />
-    <NP_Node17 Type="NodePoint"  Node="Node17"  Radius="3" />
-    <NP_Node18 Type="NodePoint"  Node="Node18"  Radius="3" />
-    <NP_Node19 Type="NodePoint"  Node="Node19"  Radius="3" />
-    <NP_Node20 Type="NodePoint"  Node="Node20"  Radius="3" />
-    <NP_Node21 Type="NodePoint"  Node="Node21"  Radius="3" />
-    <NP_Node22 Type="NodePoint"  Node="Node22"  Radius="3" />
-    <NP_Node23 Type="NodePoint"  Node="Node23"  Radius="3" />
-    <NP_Node24 Type="NodePoint"  Node="Node24"  Radius="3" />
-    <NP_Node25 Type="NodePoint"  Node="Node25"  Radius="3" />
-    <NP_Node26 Type="NodePoint"  Node="Node26"  Radius="3" />
-    <NP_Node27 Type="NodePoint"  Node="Node27"  Radius="3" />
-    <NP_Node28 Type="NodePoint"  Node="Node28"  Radius="3" />
-    <NP_Node29 Type="NodePoint"  Node="Node29"  Radius="3" />
-    <NP_Node30 Type="NodePoint"  Node="Node30"  Radius="3" />
-    <NP_Node31 Type="NodePoint"  Node="Node31"  Radius="3" />
-    <NP_Node32 Type="NodePoint"  Node="Node32"  Radius="3" />
-    <NP_Node33 Type="NodePoint"  Node="Node33"  Radius="3" />
-    <NP_Node34 Type="NodePoint"  Node="Node34"  Radius="3" />
-    <NP_Node35 Type="NodePoint"  Node="Node35"  Radius="3" />
-    <NP_Node36 Type="NodePoint"  Node="Node36"  Radius="3" />
-    <NP_Node37 Type="NodePoint"  Node="Node37"  Radius="3" />
-    <NP_Node38 Type="NodePoint"  Node="Node38"  Radius="3" />
-    <NP_Node39 Type="NodePoint"  Node="Node39"  Radius="3" />
-    <NP_Node40 Type="NodePoint"  Node="Node40"  Radius="3" />
-    <NP_Node41 Type="NodePoint"  Node="Node41"  Radius="3" />
-    <NP_Node42 Type="NodePoint"  Node="Node42"  Radius="3" />
-    <NP_Node43 Type="NodePoint"  Node="Node43"  Radius="3" />
-    <NP_Node44 Type="NodePoint"  Node="Node44"  Radius="3" />
-    <NP_Node45 Type="NodePoint"  Node="Node45"  Radius="3" />
-    <NP_Node46 Type="NodePoint"  Node="Node46"  Radius="3" />
-    <NP_Node47 Type="NodePoint"  Node="Node47"  Radius="3" />
-    <NP_Node48 Type="NodePoint"  Node="Node48"  Radius="3" />
-    <NP_Node49 Type="NodePoint"  Node="Node49"  Radius="3" />
-    <NP_Node50 Type="NodePoint"  Node="Node50"  Radius="3" />
-    <NP_Node51 Type="NodePoint"  Node="Node51"  Radius="3" />
-    <NP_Node52 Type="NodePoint"  Node="Node52"  Radius="3" />
-    <NP_Node53 Type="NodePoint"  Node="Node53"  Radius="3" />
-    <NP_Node54 Type="NodePoint"  Node="Node54"  Radius="3" />
-    <NP_Node55 Type="NodePoint"  Node="Node55"  Radius="3" />
-    <NP_Node56 Type="NodePoint"  Node="Node56"  Radius="3" />
-    <NP_Node57 Type="NodePoint"  Node="Node57"  Radius="3" />
-    <NP_Node58 Type="NodePoint"  Node="Node58"  Radius="3" />
-    <NP_Node59 Type="NodePoint"  Node="Node59"  Radius="3" />
-    <NP_Node60 Type="NodePoint"  Node="Node60"  Radius="3" />
-    <NP_Node61 Type="NodePoint"  Node="Node61"  Radius="3" />
-    <NP_Node62 Type="NodePoint"  Node="Node62"  Radius="3" />
-    <NP_Node63 Type="NodePoint"  Node="Node63"  Radius="3" />
-    <NP_Node64 Type="NodePoint"  Node="Node64"  Radius="3" />
-    <NP_Node65 Type="NodePoint"  Node="Node65"  Radius="3" />
-    <NP_Node66 Type="NodePoint"  Node="Node66"  Radius="3" />
-    <NP_Node67 Type="NodePoint"  Node="Node67"  Radius="3" />
-    <NP_Node68 Type="NodePoint"  Node="Node68"  Radius="3" />
-    <NP_Node69 Type="NodePoint"  Node="Node69"  Radius="3" />
-    <NP_Node70 Type="NodePoint"  Node="Node70"  Radius="3" />
-    <NP_Node71 Type="NodePoint"  Node="Node71"  Radius="3" />
-    <NP_Node72 Type="NodePoint"  Node="Node72"  Radius="3" />
-    <NP_Node73 Type="NodePoint"  Node="Node73"  Radius="3" />
-    <NP_Node74 Type="NodePoint"  Node="Node74"  Radius="3" />
-    <NP_Node75 Type="NodePoint"  Node="Node75"  Radius="3" />
-    <NP_Node76 Type="NodePoint"  Node="Node76"  Radius="3" />
-    <NP_Node77 Type="NodePoint"  Node="Node77"  Radius="3" />
-    <NP_Node78 Type="NodePoint"  Node="Node78"  Radius="3" />
-    <NP_Node79 Type="NodePoint"  Node="Node79"  Radius="3" />
-    <NP_Node80 Type="NodePoint"  Node="Node80"  Radius="3" />
-    <NP_Node81 Type="NodePoint"  Node="Node81"  Radius="3" />
-    <NP_Node82 Type="NodePoint"  Node="Node82"  Radius="3" />
-    <NP_Node83 Type="NodePoint"  Node="Node83"  Radius="3" />
-    <NP_Node84 Type="NodePoint"  Node="Node84"  Radius="3" />
-    <NP_Node85 Type="NodePoint"  Node="Node85"  Radius="3" />
-    <NP_Node86 Type="NodePoint"  Node="Node86"  Radius="3" />
-    <NP_Node87 Type="NodePoint"  Node="Node87"  Radius="3" />
-    <NP_Node88 Type="NodePoint"  Node="Node88"  Radius="3" />
-    <NP_Node89 Type="NodePoint"  Node="Node89"  Radius="3" />
-    <NP_Node90 Type="NodePoint"  Node="Node90"  Radius="3" />
-    <NP_Node91 Type="NodePoint"  Node="Node91"  Radius="3" />
-    <NP_Node92 Type="NodePoint"  Node="Node92"  Radius="3" />
-    <NP_Node93 Type="NodePoint"  Node="Node93"  Radius="3" />
-    <NP_Node94 Type="NodePoint"  Node="Node94"  Radius="3" />
-    <NP_Node95 Type="NodePoint"  Node="Node95"  Radius="3" />
-    <NP_Node96 Type="NodePoint"  Node="Node96"  Radius="3" />
-    <NP_Node97 Type="NodePoint"  Node="Node97"  Radius="3" />
-    <NP_Node98 Type="NodePoint"  Node="Node98"  Radius="3" />
-    <NP_Node99 Type="NodePoint"  Node="Node99"  Radius="3" />
-    <NP_Node100 Type="NodePoint"  Node="Node100"  Radius="3" />
-    <NP_Node101 Type="NodePoint"  Node="Node101"  Radius="3" />
-    <NP_Node102 Type="NodePoint"  Node="Node102"  Radius="3" />
-    <NP_Node103 Type="NodePoint"  Node="Node103"  Radius="3" />
-    <NP_Node104 Type="NodePoint"  Node="Node104"  Radius="3" />
-    <NP_Node105 Type="NodePoint"  Node="Node105"  Radius="3" />
-    <NP_Node106 Type="NodePoint"  Node="Node106"  Radius="3" />
-    <NP_Node107 Type="NodePoint"  Node="Node107"  Radius="3" />
-    <NP_Node108 Type="NodePoint"  Node="Node108"  Radius="3" />
-    <NP_Node109 Type="NodePoint"  Node="Node109"  Radius="3" />
-    <NP_Node110 Type="NodePoint"  Node="Node110"  Radius="3" />
-    <NP_Node111 Type="NodePoint"  Node="Node111"  Radius="3" />
-    <NP_Node112 Type="NodePoint"  Node="Node112"  Radius="3" />
-    <NP_Node113 Type="NodePoint"  Node="Node113"  Radius="3" />
-    <NP_Node114 Type="NodePoint"  Node="Node114"  Radius="3" />
-    <NP_Node115 Type="NodePoint"  Node="Node115"  Radius="3" />
-    <NP_Node116 Type="NodePoint"  Node="Node116"  Radius="3" />
-    <NP_Node117 Type="NodePoint"  Node="Node117"  Radius="3" />
-    <NP_Node118 Type="NodePoint"  Node="Node118"  Radius="3" />
-    <NP_Node119 Type="NodePoint"  Node="Node119"  Radius="3" />
-    <NP_Node120 Type="NodePoint"  Node="Node120"  Radius="3" />
-    <NP_Node121 Type="NodePoint"  Node="Node121"  Radius="3" />
-    <NP_Node122 Type="NodePoint"  Node="Node122"  Radius="3" />
-    <NP_Node123 Type="NodePoint"  Node="Node123"  Radius="3" />
-    <NP_Node124 Type="NodePoint"  Node="Node124"  Radius="3" />
-    <NP_Node125 Type="NodePoint"  Node="Node125"  Radius="3" />
-    <NP_Node126 Type="NodePoint"  Node="Node126"  Radius="3" />
-    <NP_Node127 Type="NodePoint"  Node="Node127"  Radius="3" />
-    <NP_Node128 Type="NodePoint"  Node="Node128"  Radius="3" />
-    <NP_Node129 Type="NodePoint"  Node="Node129"  Radius="3" />
-    <NP_Node130 Type="NodePoint"  Node="Node130"  Radius="3" />
-    <NP_Node131 Type="NodePoint"  Node="Node131"  Radius="3" />
-    <NP_Node132 Type="NodePoint"  Node="Node132"  Radius="3" />
-    <NP_Node133 Type="NodePoint"  Node="Node133"  Radius="3" />
-    <NP_Node134 Type="NodePoint"  Node="Node134"  Radius="3" />
-    <NP_Node135 Type="NodePoint"  Node="Node135"  Radius="3" />
-    <NP_Node136 Type="NodePoint"  Node="Node136"  Radius="3" />
-    <NP_Node137 Type="NodePoint"  Node="Node137"  Radius="3" />
-    <NP_Node138 Type="NodePoint"  Node="Node138"  Radius="3" />
-    <NP_Node139 Type="NodePoint"  Node="Node139"  Radius="3" />
-    <NP_Node140 Type="NodePoint"  Node="Node140"  Radius="3" />
-    <NP_Node141 Type="NodePoint"  Node="Node141"  Radius="3" />
-    <NP_Node142 Type="NodePoint"  Node="Node142"  Radius="3" />
-    <NP_Node143 Type="NodePoint"  Node="Node143"  Radius="3" />
-    <NP_Node144 Type="NodePoint"  Node="Node144"  Radius="3" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-  </Figures>
-  <GroupsOfSelection>
-    <SG-1/>
-    <SG-2/>
-    <SG-3/>
-    <SG-4/>
-    <SG-5/>
-    <SG-6/>
-    <SG-7/>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<Node1 Type="Node" X="-305.000823974609" Y="438.479553222656" Z="10.0944290161133" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node2 Type="Node" X="-307.989410400391" Y="441.416015625" Z="10.6641616821289" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node3 Type="Node" X="-298.426452636719" Y="442.851196289063" Z="26.7649154663086" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node4 Type="Node" X="-301.688568115234" Y="445.531311035156" Z="26.5276870727539" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node5 Type="Node" X="-298.690521240234" Y="446.497497558594" Z="32.764518737793" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node6 Type="Node" X="-301.724060058594" Y="447.574584960938" Z="30.0114440917969" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node7 Type="Node" X="-306.30859375" Y="454.729187011719" Z="39.688346862793" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node8 Type="Node" X="-295.516998291016" Y="462.746032714844" Z="79.9744338989258" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node9 Type="Node" X="-305.464874267578" Y="444.324584960938" Z="8.91304016113281" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node10 Type="Node" X="-299.1796875" Y="448.429931640625" Z="24.7383041381836" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node11 Type="Node" X="-299.257354736328" Y="450.654663085938" Z="28.4882125854492" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node12 Type="Node" X="-309.853881835938" Y="456.367370605469" Z="38.0595169067383" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node13 Type="Node" X="-307.75830078125" Y="459.895385742188" Z="37.0382614135742" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node14 Type="Node" X="-299.115783691406" Y="464.917846679688" Z="80.4340896606445" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node15 Type="Node" X="-297.026702880859" Y="468.527709960938" Z="79.7381210327148" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node16 Type="Node" X="-305.031372070313" Y="438.43310546875" Z="-11.5397796630859" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node17 Type="Node" X="-308.021362304688" Y="441.3671875" Z="-12.1186752319336" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node18 Type="Node" X="-298.50439453125" Y="442.732849121094" Z="-28.2425308227539" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node19 Type="Node" X="-301.765625" Y="445.413452148438" Z="-28.0128860473633" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node20 Type="Node" X="-298.785430908203" Y="446.353332519531" Z="-34.2595062255859" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node21 Type="Node" X="-301.810760498047" Y="447.442016601563" Z="-31.5063858032227" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node22 Type="Node" X="-306.423156738281" Y="454.554992675781" Z="-41.210319519043" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node23 Type="Node" X="-295.745178222656" Y="462.398620605469" Z="-81.553337097168" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node24 Type="Node" X="-305.492004394531" Y="444.282592773438" Z="-10.3860702514648" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node25 Type="Node" X="-299.251831054688" Y="448.319641113281" Z="-26.2418441772461" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node26 Type="Node" X="-299.339874267578" Y="450.529052734375" Z="-30.0025253295898" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node27 Type="Node" X="-309.963714599609" Y="456.200378417969" Z="-39.5834007263184" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node28 Type="Node" X="-307.865295410156" Y="459.732788085938" Z="-38.5829200744629" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node29 Type="Node" X="-299.345825195313" Y="464.568054199219" Z="-82.0173950195313" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node30 Type="Node" X="-297.25439453125" Y="468.181030273438" Z="-81.3426666259766" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node31 Type="Node" X="-562.390747070313" Y="434.785522460938" Z="10.3470840454102" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node32 Type="Node" X="-558.504638671875" Y="438.412780761719" Z="10.7253646850586" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node33 Type="Node" X="-546.225830078125" Y="444.0947265625" Z="11.5032730102539" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node34 Type="Node" X="-520.28564453125" Y="447.261840820313" Z="13.1537322998047" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node35 Type="Node" X="-485.842254638672" Y="447.569580078125" Z="15.3604736328125" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node36 Type="Node" X="-378.534790039063" Y="447.763610839844" Z="22.1653289794922" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node37 Type="Node" X="-355.761901855469" Y="451.432250976563" Z="18.8864059448242" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node38 Type="Node" X="-325.694580078125" Y="456.497314453125" Z="13.490104675293" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node39 Type="Node" X="-305.866271972656" Y="446.895385742188" Z="13.7003707885742" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node40 Type="Node" X="-278.435577392578" Y="433.625061035156" Z="32.1059494018555" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node41 Type="Node" X="-532.437866210938" Y="434.663269042969" Z="12.4899978637695" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node42 Type="Node" X="-483.437164306641" Y="434.467102050781" Z="18.3325653076172" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node43 Type="Node" X="-333.51318359375" Y="433.856323242188" Z="30.7797927856445" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node44 Type="Node" X="-562.421081542969" Y="434.739013671875" Z="-11.34228515625" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node45 Type="Node" X="-558.535888671875" Y="438.364013671875" Z="-11.7448425292969" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node46 Type="Node" X="-546.260131835938" Y="444.04296875" Z="-12.5715408325195" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node47 Type="Node" X="-520.324340820313" Y="447.202514648438" Z="-14.2818145751953" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node48 Type="Node" X="-485.887359619141" Y="447.500854492188" Z="-16.548942565918" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node49 Type="Node" X="-378.599578857422" Y="447.665405273438" Z="-23.5382919311523" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node50 Type="Node" X="-355.817199707031" Y="451.347900390625" Z="-20.3164138793945" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node51 Type="Node" X="-325.73486328125" Y="456.436218261719" Z="-14.9962005615234" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node52 Type="Node" X="-305.907165527344" Y="446.833618164063" Z="-15.1937255859375" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node53 Type="Node" X="-278.528656005859" Y="433.483825683594" Z="-33.5812568664551" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node54 Type="Node" X="-532.47412109375" Y="434.606994628906" Z="-13.5357894897461" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node55 Type="Node" X="-483.490631103516" Y="434.385864257813" Z="-19.4612579345703" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node56 Type="Node" X="-333.602233886719" Y="433.721130371094" Z="-32.1619758605957" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node57 Type="Node" X="-799.36962890625" Y="651.880126953125" Z="8.64360809326172" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node58 Type="Node" X="-688.83056640625" Y="622.296813964844" Z="26.8388061523438" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node59 Type="Node" X="-512.044677734375" Y="570.843505859375" Z="54.3111343383789" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node60 Type="Node" X="-386.215850830078" Y="529.245788574219" Z="71.604118347168" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node61 Type="Node" X="-273.687316894531" Y="483.587585449219" Z="83.2471237182617" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node62 Type="Node" X="-227.686645507813" Y="458.545471191406" Z="88.0847549438477" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node63 Type="Node" X="-191.336044311523" Y="433.450134277344" Z="92.0822372436523" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node64 Type="Node" X="-850.917236328125" Y="662.052734375" Z="1.05330657958984" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node65 Type="Node" X="-689.573364257813" Y="609.336547851563" Z="28.8858108520508" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node66 Type="Node" X="-494.825866699219" Y="556.140625" Z="58.0607833862305" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node67 Type="Node" X="-393.558502197266" Y="518.65087890625" Z="71.4143295288086" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node68 Type="Node" X="-326.936645507813" Y="484.088317871094" Z="78.341667175293" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node69 Type="Node" X="-292.763305664063" Y="456.925109863281" Z="81.8887252807617" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node70 Type="Node" X="-277.884490966797" Y="434.110656738281" Z="82.8329086303711" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node71 Type="Node" X="-386.123962402344" Y="529.469299316406" Z="68.5844650268555" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node72 Type="Node" X="-273.600311279297" Y="483.803161621094" Z="76.4858627319336" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node73 Type="Node" X="-227.606384277344" Y="458.751159667969" Z="76.6931076049805" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node74 Type="Node" X="-191.267044067383" Y="433.409484863281" Z="73.4384994506836" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node75 Type="Node" X="-799.396484375" Y="651.839599609375" Z="-10.223030090332" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node76 Type="Node" X="-688.908508300781" Y="622.178039550781" Z="-28.4939193725586" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node77 Type="Node" X="-512.200927734375" Y="570.606018066406" Z="-56.0467376708984" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node78 Type="Node" X="-386.421264648438" Y="528.93408203125" Z="-73.3521194458008" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node79 Type="Node" X="-273.925109863281" Y="483.22607421875" Z="-84.9650115966797" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node80 Type="Node" X="-227.938110351563" Y="458.1630859375" Z="-89.7591934204102" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node81 Type="Node" X="-191.598785400391" Y="433.050659179688" Z="-93.6966323852539" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node82 Type="Node" X="-851.580932617188" Y="659.994506835938" Z="-2.5697021484375" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node83 Type="Node" X="-689.657348632813" Y="609.208618164063" Z="-30.4775238037109" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node84 Type="Node" X="-494.992828369141" Y="555.887023925781" Z="-59.7541046142578" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node85 Type="Node" X="-393.762451171875" Y="518.339782714844" Z="-73.0980834960938" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node86 Type="Node" X="-327.160278320313" Y="483.747680664063" Z="-79.9707794189453" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node87 Type="Node" X="-292.997375488281" Y="456.5693359375" Z="-83.4440155029297" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node88 Type="Node" X="-278.122436523438" Y="433.372253417969" Z="-84.301399230957" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node89 Type="Node" X="-386.320678710938" Y="529.170104980469" Z="-70.3336639404297" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node90 Type="Node" X="-273.819152832031" Y="483.470642089844" Z="-78.2050704956055" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node91 Type="Node" X="-227.825668334961" Y="458.417358398438" Z="-78.3688354492188" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node92 Type="Node" X="-191.477081298828" Y="433.090454101563" Z="-75.0529098510742" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node93 Type="Node" X="-519.651489257813" Y="445.550537109375" Z="11.4044342041016" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node94 Type="Node" X="-501.510498046875" Y="457.328186035156" Z="10.4691390991211" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node95 Type="Node" X="-482.192138671875" Y="466.845153808594" Z="9.34611511230469" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node96 Type="Node" X="-397.133880615234" Y="502.312072753906" Z="5.85675048828125" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node97 Type="Node" X="-352.790283203125" Y="517.073913574219" Z="4.85089874267578" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node98 Type="Node" X="-231.423034667969" Y="537.657897949219" Z="2.78968811035156" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node99 Type="Node" X="-487.769104003906" Y="446.729370117188" Z="11.7094650268555" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node100 Type="Node" X="-484.1728515625" Y="452.450988769531" Z="11.5547561645508" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node101 Type="Node" X="-475.427825927734" Y="457.832275390625" Z="10.8794097900391" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node102 Type="Node" X="-444.986389160156" Y="472.833618164063" Z="9.30408477783203" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node103 Type="Node" X="-401.5830078125" Y="491.409606933594" Z="7.4805908203125" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node104 Type="Node" X="-350.063781738281" Y="510.040344238281" Z="4.96391296386719" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node105 Type="Node" X="-215.360076904297" Y="535.775207519531" Z="3.591796875" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node106 Type="Node" X="-519.460205078125" Y="444.833374023438" Z="4.05186462402344" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node107 Type="Node" X="-501.31494140625" Y="456.677795410156" Z="5.79974365234375" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node108 Type="Node" X="-481.994323730469" Y="466.197814941406" Z="6.01327514648438" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node109 Type="Node" X="-440.812561035156" Y="485.299133300781" Z="6.81287384033203" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node110 Type="Node" X="-519.685241699219" Y="445.4990234375" Z="-12.5166778564453" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node111 Type="Node" X="-501.54150390625" Y="457.280578613281" Z="-11.6699600219727" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node112 Type="Node" X="-482.220001220703" Y="466.802185058594" Z="-10.6263961791992" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node113 Type="Node" X="-397.152618408203" Y="502.283569335938" Z="-7.45553588867188" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node114 Type="Node" X="-352.806457519531" Y="517.049072265625" Z="-6.59758758544922" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node115 Type="Node" X="-231.433883666992" Y="537.641479492188" Z="-4.84459686279297" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node116 Type="Node" X="-487.804016113281" Y="446.676513671875" Z="-12.8821182250977" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node117 Type="Node" X="-484.207153320313" Y="452.398742675781" Z="-12.7614288330078" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node118 Type="Node" X="-475.460327148438" Y="457.78271484375" Z="-12.1272659301758" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node119 Type="Node" X="-445.01416015625" Y="472.791015625" Z="-10.6772384643555" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node120 Type="Node" X="-401.606353759766" Y="491.374206542969" Z="-9.01863861083984" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node121 Type="Node" X="-350.080413818359" Y="510.015258789063" Z="-6.68100738525391" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node122 Type="Node" X="-215.373107910156" Y="535.754821777344" Z="-5.66498565673828" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node123 Type="Node" X="-519.472534179688" Y="444.813537597656" Z="-5.16101837158203" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node124 Type="Node" X="-501.333099365234" Y="456.650390625" Z="-6.99777221679688" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node125 Type="Node" X="-482.013458251953" Y="466.169250488281" Z="-7.29071044921875" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node126 Type="Node" X="-440.834045410156" Y="485.266357421875" Z="-8.25394439697266" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node127 Type="Node" X="-411.5126953125" Y="476.535583496094" Z="205.117614746094" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node128 Type="Node" X="-493.46728515625" Y="532.453247070313" Z="164.400970458984" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node129 Type="Node" X="-664.416625976563" Y="601.461486816406" Z="97.305534362793" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node130 Type="Node" X="-856.53125" Y="658.601318359375" Z="32.289924621582" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node131 Type="Node" X="-223.782623291016" Y="527.823181152344" Z="43.9548263549805" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node132 Type="Node" X="-312.413208007813" Y="514.350769042969" Z="106.522911071777" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node133 Type="Node" X="-371.756256103516" Y="498.375732421875" Z="161.111755371094" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node134 Type="Node" X="-406.981689453125" Y="492.87255859375" Z="-219.673965454102" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node135 Type="Node" X="-490.269866943359" Y="546.69873046875" Z="-176.944305419922" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node136 Type="Node" X="-660.630981445313" Y="614.046081542969" Z="-109.831512451172" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node137 Type="Node" X="-854.328247070313" Y="673.147583007813" Z="-46.418586730957" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node138 Type="Node" X="-1121.99841308594" Y="738.893371582031" Z="-0.65594482421875" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node139 Type="Node" X="-838.423950195313" Y="673.714599609375" Z="-0.803413391113281" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node140 Type="Node" X="-577.571044921875" Y="616.036376953125" Z="-0.922149658203125" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node141 Type="Node" X="-311.504608154297" Y="564.483764648438" Z="-1.02424621582031" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node142 Type="Node" X="-149.357131958008" Y="525.098510742188" Z="-0.544212341308594" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node143 Type="Node" X="-222.329254150391" Y="532.347961425781" Z="-48.221794128418" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node144 Type="Node" X="-309.220062255859" Y="522.682067871094" Z="-114.544898986816" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<NPivot Type="Node" X="-369.414459228516" Y="533.742980957031" Z="-173.652557373047" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+	</Nodes>
+	<Edges/>
+	<Figures>
+		<Triangle-119 Type="Triangle" Shading="-1" Node1="Node139" Node2="Node138" Node3="Node137"/>
+		<Triangle-109 Type="Triangle" Shading="-1" Node1="Node139" Node2="Node130" Node3="Node138"/>
+		<Triangle-62 Type="Triangle" Shading="-1" Node1="Node75" Node2="Node83" Node3="Node82"/>
+		<Triangle-39 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node44" Node3="Node45"/>
+		<Triangle-12 Type="Triangle" Shading="-1" Node1="Node44" Node2="Node46" Node3="Node45"/>
+		<Triangle-41 Type="Triangle" Shading="-1" Node1="Node57" Node2="Node64" Node3="Node65"/>
+		<Triangle-61 Type="Triangle" Shading="-1" Node1="Node75" Node2="Node76" Node3="Node83"/>
+		<Triangle-40 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node45" Node3="Node32"/>
+		<Triangle-37 Type="Triangle" Shading="-1" Node1="Node32" Node2="Node45" Node3="Node46"/>
+		<Triangle-120 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node139" Node3="Node137"/>
+		<Triangle-121 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node137" Node3="Node136"/>
+		<Triangle-14 Type="Triangle" Shading="-1" Node1="Node44" Node2="Node47" Node3="Node46"/>
+		<Triangle-13 Type="Triangle" Shading="-1" Node1="Node44" Node2="Node54" Node3="Node47"/>
+		<Triangle-1 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node32" Node3="Node33"/>
+		<Triangle-38 Type="Triangle" Shading="-1" Node1="Node32" Node2="Node46" Node3="Node33"/>
+		<Triangle-111 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node130" Node3="Node139"/>
+		<Triangle-35 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node46" Node3="Node47"/>
+		<Triangle-124 Type="Triangle" Shading="-1" Node1="Node136" Node2="Node135" Node3="NPivot"/>
+		<Triangle-2 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node33" Node3="Node34"/>
+		<Triangle-126 Type="Triangle" Shading="-1" Node1="Node134" Node2="NPivot" Node3="Node135"/>
+		<Triangle-3 Type="Triangle" Shading="-1" Node1="Node31" Node2="Node34" Node3="Node41"/>
+		<Triangle-18 Type="Triangle" Shading="-1" Node1="Node54" Node2="Node48" Node3="Node47"/>
+		<Triangle-36 Type="Triangle" Shading="-1" Node1="Node33" Node2="Node47" Node3="Node34"/>
+		<Triangle-17 Type="Triangle" Shading="-1" Node1="Node54" Node2="Node55" Node3="Node48"/>
+		<Triangle-42 Type="Triangle" Shading="-1" Node1="Node57" Node2="Node65" Node3="Node58"/>
+		<Triangle-95 Type="Triangle" Shading="-1" Node1="Node123" Node2="Node110" Node3="Node111"/>
+		<Triangle-64 Type="Triangle" Shading="-1" Node1="Node76" Node2="Node84" Node3="Node83"/>
+		<Triangle-33 Type="Triangle" Shading="-1" Node1="Node34" Node2="Node47" Node3="Node48"/>
+		<Triangle-96 Type="Triangle" Shading="-1" Node1="Node123" Node2="Node111" Node3="Node124"/>
+		<Triangle-108 Type="Triangle" Shading="-1" Node1="Node123" Node2="Node117" Node3="Node116"/>
+		<Triangle-107 Type="Triangle" Shading="-1" Node1="Node123" Node2="Node124" Node3="Node117"/>
+		<Triangle-6 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node34" Node3="Node35"/>
+		<Triangle-82 Type="Triangle" Shading="-1" Node1="Node106" Node2="Node94" Node3="Node93"/>
+		<Triangle-81 Type="Triangle" Shading="-1" Node1="Node106" Node2="Node107" Node3="Node94"/>
+		<Triangle-7 Type="Triangle" Shading="-1" Node1="Node41" Node2="Node35" Node3="Node42"/>
+		<Triangle-34 Type="Triangle" Shading="-1" Node1="Node34" Node2="Node48" Node3="Node35"/>
+		<Triangle-101 Type="Triangle" Shading="-1" Node1="Node124" Node2="Node111" Node3="Node112"/>
+		<Triangle-94 Type="Triangle" Shading="-1" Node1="Node106" Node2="Node100" Node3="Node107"/>
+		<Triangle-106 Type="Triangle" Shading="-1" Node1="Node124" Node2="Node118" Node3="Node117"/>
+		<Triangle-93 Type="Triangle" Shading="-1" Node1="Node106" Node2="Node99" Node3="Node100"/>
+		<Triangle-105 Type="Triangle" Shading="-1" Node1="Node124" Node2="Node125" Node3="Node118"/>
+		<Triangle-102 Type="Triangle" Shading="-1" Node1="Node124" Node2="Node112" Node3="Node125"/>
+		<Triangle-110 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node129" Node3="Node130"/>
+		<Triangle-63 Type="Triangle" Shading="-1" Node1="Node76" Node2="Node77" Node3="Node84"/>
+		<Triangle-88 Type="Triangle" Shading="-1" Node1="Node107" Node2="Node95" Node3="Node94"/>
+		<Triangle-16 Type="Triangle" Shading="-1" Node1="Node55" Node2="Node49" Node3="Node48"/>
+		<Triangle-125 Type="Triangle" Shading="-1" Node1="Node136" Node2="NPivot" Node3="Node144"/>
+		<Triangle-91 Type="Triangle" Shading="-1" Node1="Node107" Node2="Node100" Node3="Node101"/>
+		<Triangle-92 Type="Triangle" Shading="-1" Node1="Node107" Node2="Node101" Node3="Node108"/>
+		<Triangle-87 Type="Triangle" Shading="-1" Node1="Node107" Node2="Node108" Node3="Node95"/>
+		<Triangle-31 Type="Triangle" Shading="-1" Node1="Node35" Node2="Node48" Node3="Node49"/>
+		<Triangle-122 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node136" Node3="Node144"/>
+		<Triangle-104 Type="Triangle" Shading="-1" Node1="Node126" Node2="Node118" Node3="Node125"/>
+		<Triangle-144 Type="Triangle" Shading="-1" Node1="Node125" Node2="Node112" Node3="Node126"/>
+		<Triangle-103 Type="Triangle" Shading="-1" Node1="Node126" Node2="Node119" Node3="Node118"/>
+		<Triangle-43 Type="Triangle" Shading="-1" Node1="Node58" Node2="Node65" Node3="Node66"/>
+		<Triangle-89 Type="Triangle" Shading="-1" Node1="Node109" Node2="Node108" Node3="Node101"/>
+		<Triangle-141 Type="Triangle" Shading="-1" Node1="Node108" Node2="Node109" Node3="Node95"/>
+		<Triangle-4 Type="Triangle" Shading="-1" Node1="Node42" Node2="Node35" Node3="Node36"/>
+		<Triangle-15 Type="Triangle" Shading="-1" Node1="Node55" Node2="Node56" Node3="Node49"/>
+		<Triangle-80 Type="Triangle" Shading="-1" Node1="Node77" Node2="Node85" Node3="Node84"/>
+		<Triangle-90 Type="Triangle" Shading="-1" Node1="Node109" Node2="Node101" Node3="Node102"/>
+		<Triangle-32 Type="Triangle" Shading="-1" Node1="Node35" Node2="Node49" Node3="Node36"/>
+		<Triangle-79 Type="Triangle" Shading="-1" Node1="Node77" Node2="Node89" Node3="Node85"/>
+		<Triangle-78 Type="Triangle" Shading="-1" Node1="Node77" Node2="Node78" Node3="Node89"/>
+		<Triangle-146 Type="Triangle" Shading="-1" Node1="Node113" Node2="Node119" Node3="Node126"/>
+		<Triangle-20 Type="Triangle" Shading="-1" Node1="Node56" Node2="Node50" Node3="Node49"/>
+		<Triangle-5 Type="Triangle" Shading="-1" Node1="Node42" Node2="Node36" Node3="Node43"/>
+		<Triangle-44 Type="Triangle" Shading="-1" Node1="Node58" Node2="Node66" Node3="Node59"/>
+		<Triangle-145 Type="Triangle" Shading="-1" Node1="Node113" Node2="Node120" Node3="Node119"/>
+		<Triangle-142 Type="Triangle" Shading="-1" Node1="Node96" Node2="Node109" Node3="Node102"/>
+		<Triangle-70 Type="Triangle" Shading="-1" Node1="Node89" Node2="Node86" Node3="Node85"/>
+		<Triangle-29 Type="Triangle" Shading="-1" Node1="Node36" Node2="Node49" Node3="Node50"/>
+		<Triangle-143 Type="Triangle" Shading="-1" Node1="Node96" Node2="Node102" Node3="Node103"/>
+		<Triangle-19 Type="Triangle" Shading="-1" Node1="Node56" Node2="Node53" Node3="Node50"/>
+		<Triangle-65 Type="Triangle" Shading="-1" Node1="Node89" Node2="Node78" Node3="Node79"/>
+		<Triangle-163 Type="Triangle" Shading="-1" Node1="Node23" Node2="Node29" Node3="Node27"/>
+		<Triangle-69 Type="Triangle" Shading="-1" Node1="Node89" Node2="Node90" Node3="Node86"/>
+		<Triangle-30 Type="Triangle" Shading="-1" Node1="Node36" Node2="Node50" Node3="Node37"/>
+		<Triangle-153 Type="Triangle" Shading="-1" Node1="Node29" Node2="Node30" Node3="Node28"/>
+		<Triangle-77 Type="Triangle" Shading="-1" Node1="Node90" Node2="Node87" Node3="Node86"/>
+		<Triangle-164 Type="Triangle" Shading="-1" Node1="Node23" Node2="Node27" Node3="Node22"/>
+		<Triangle-154 Type="Triangle" Shading="-1" Node1="Node29" Node2="Node28" Node3="Node27"/>
+		<Triangle-74 Type="Triangle" Shading="-1" Node1="Node91" Node2="Node88" Node3="Node87"/>
+		<Triangle-28 Type="Triangle" Shading="-1" Node1="Node51" Node2="Node37" Node3="Node50"/>
+		<Triangle-22 Type="Triangle" Shading="-1" Node1="Node50" Node2="Node52" Node3="Node51"/>
+		<Triangle-21 Type="Triangle" Shading="-1" Node1="Node50" Node2="Node53" Node3="Node52"/>
+		<Triangle-165 Type="Triangle" Shading="-1" Node1="Node20" Node2="Node22" Node3="Node27"/>
+		<Triangle-66 Type="Triangle" Shading="-1" Node1="Node89" Node2="Node79" Node3="Node90"/>
+		<Triangle-140 Type="Triangle" Shading="-1" Node1="Node28" Node2="Node21" Node3="Node27"/>
+		<Triangle-166 Type="Triangle" Shading="-1" Node1="Node20" Node2="Node27" Node3="Node21"/>
+		<Triangle-98 Type="Triangle" Shading="-1" Node1="Node114" Node2="Node120" Node3="Node113"/>
+		<Triangle-8 Type="Triangle" Shading="-1" Node1="Node43" Node2="Node36" Node3="Node37"/>
+		<Triangle-155 Type="Triangle" Shading="-1" Node1="Node20" Node2="Node21" Node3="Node19"/>
+		<Triangle-156 Type="Triangle" Shading="-1" Node1="Node20" Node2="Node19" Node3="Node18"/>
+		<Triangle-139 Type="Triangle" Shading="-1" Node1="Node28" Node2="Node26" Node3="Node21"/>
+		<Triangle-137 Type="Triangle" Shading="-1" Node1="Node19" Node2="Node21" Node3="Node26"/>
+		<Triangle-157 Type="Triangle" Shading="-1" Node1="Node18" Node2="Node19" Node3="Node17"/>
+		<Triangle-158 Type="Triangle" Shading="-1" Node1="Node18" Node2="Node17" Node3="Node16"/>
+		<Triangle-138 Type="Triangle" Shading="-1" Node1="Node19" Node2="Node26" Node3="Node25"/>
+		<Triangle-135 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node19" Node3="Node25"/>
+		<Triangle-76 Type="Triangle" Shading="-1" Node1="Node90" Node2="Node91" Node3="Node87"/>
+		<Triangle-136 Type="Triangle" Shading="-1" Node1="Node17" Node2="Node25" Node3="Node24"/>
+		<Triangle-27 Type="Triangle" Shading="-1" Node1="Node51" Node2="Node38" Node3="Node37"/>
+		<Triangle-83 Type="Triangle" Shading="-1" Node1="Node97" Node2="Node96" Node3="Node103"/>
+		<Triangle-113 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node132" Node3="Node129"/>
+		<Triangle-75 Type="Triangle" Shading="-1" Node1="Node92" Node2="Node81" Node3="Node88"/>
+		<Triangle-25 Type="Triangle" Shading="-1" Node1="Node38" Node2="Node51" Node3="Node52"/>
+		<Triangle-73 Type="Triangle" Shading="-1" Node1="Node91" Node2="Node92" Node3="Node88"/>
+		<Triangle-97 Type="Triangle" Shading="-1" Node1="Node114" Node2="Node121" Node3="Node120"/>
+		<Triangle-71 Type="Triangle" Shading="-1" Node1="Node90" Node2="Node79" Node3="Node80"/>
+		<Triangle-123 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node144" Node3="Node143"/>
+		<Triangle-23 Type="Triangle" Shading="-1" Node1="Node39" Node2="Node52" Node3="Node53"/>
+		<Triangle-10 Type="Triangle" Shading="-1" Node1="Node37" Node2="Node38" Node3="Node39"/>
+		<Triangle-72 Type="Triangle" Shading="-1" Node1="Node90" Node2="Node80" Node3="Node91"/>
+		<Triangle-26 Type="Triangle" Shading="-1" Node1="Node38" Node2="Node52" Node3="Node39"/>
+		<Triangle-59 Type="Triangle" Shading="-1" Node1="Node59" Node2="Node66" Node3="Node67"/>
+		<Triangle-84 Type="Triangle" Shading="-1" Node1="Node97" Node2="Node103" Node3="Node104"/>
+		<Triangle-9 Type="Triangle" Shading="-1" Node1="Node43" Node2="Node37" Node3="Node40"/>
+		<Triangle-67 Type="Triangle" Shading="-1" Node1="Node91" Node2="Node80" Node3="Node81"/>
+		<Triangle-11 Type="Triangle" Shading="-1" Node1="Node37" Node2="Node39" Node3="Node40"/>
+		<Triangle-151 Type="Triangle" Shading="-1" Node1="Node3" Node2="Node1" Node3="Node2"/>
+		<Triangle-24 Type="Triangle" Shading="-1" Node1="Node39" Node2="Node53" Node3="Node40"/>
+		<Triangle-129 Type="Triangle" Shading="-1" Node1="Node2" Node2="Node9" Node3="Node10"/>
+		<Triangle-68 Type="Triangle" Shading="-1" Node1="Node91" Node2="Node81" Node3="Node92"/>
+		<Triangle-152 Type="Triangle" Shading="-1" Node1="Node3" Node2="Node2" Node3="Node4"/>
+		<Triangle-130 Type="Triangle" Shading="-1" Node1="Node2" Node2="Node10" Node3="Node4"/>
+		<Triangle-60 Type="Triangle" Shading="-1" Node1="Node59" Node2="Node67" Node3="Node71"/>
+		<Triangle-149 Type="Triangle" Shading="-1" Node1="Node5" Node2="Node3" Node3="Node4"/>
+		<Triangle-131 Type="Triangle" Shading="-1" Node1="Node4" Node2="Node10" Node3="Node11"/>
+		<Triangle-115 Type="Triangle" Shading="-1" Node1="Node129" Node2="Node133" Node3="Node128"/>
+		<Triangle-132 Type="Triangle" Shading="-1" Node1="Node4" Node2="Node11" Node3="Node6"/>
+		<Triangle-150 Type="Triangle" Shading="-1" Node1="Node5" Node2="Node4" Node3="Node6"/>
+		<Triangle-58 Type="Triangle" Shading="-1" Node1="Node59" Node2="Node71" Node3="Node60"/>
+		<Triangle-161 Type="Triangle" Shading="-1" Node1="Node5" Node2="Node6" Node3="Node12"/>
+		<Triangle-134 Type="Triangle" Shading="-1" Node1="Node13" Node2="Node6" Node3="Node11"/>
+		<Triangle-133 Type="Triangle" Shading="-1" Node1="Node13" Node2="Node12" Node3="Node6"/>
+		<Triangle-128 Type="Triangle" Shading="-1" Node1="Node143" Node2="Node141" Node3="Node140"/>
+		<Triangle-162 Type="Triangle" Shading="-1" Node1="Node5" Node2="Node12" Node3="Node7"/>
+		<Triangle-100 Type="Triangle" Shading="-1" Node1="Node115" Node2="Node121" Node3="Node114"/>
+		<Triangle-159 Type="Triangle" Shading="-1" Node1="Node8" Node2="Node7" Node3="Node12"/>
+		<Triangle-147 Type="Triangle" Shading="-1" Node1="Node14" Node2="Node12" Node3="Node13"/>
+		<Triangle-114 Type="Triangle" Shading="-1" Node1="Node129" Node2="Node132" Node3="Node133"/>
+		<Triangle-118 Type="Triangle" Shading="-1" Node1="Node131" Node2="Node140" Node3="Node141"/>
+		<Triangle-85 Type="Triangle" Shading="-1" Node1="Node98" Node2="Node97" Node3="Node104"/>
+		<Triangle-49 Type="Triangle" Shading="-1" Node1="Node71" Node2="Node67" Node3="Node68"/>
+		<Triangle-160 Type="Triangle" Shading="-1" Node1="Node8" Node2="Node12" Node3="Node14"/>
+		<Triangle-148 Type="Triangle" Shading="-1" Node1="Node14" Node2="Node13" Node3="Node15"/>
+		<Triangle-112 Type="Triangle" Shading="-1" Node1="Node140" Node2="Node131" Node3="Node132"/>
+		<Triangle-46 Type="Triangle" Shading="-1" Node1="Node71" Node2="Node61" Node3="Node60"/>
+		<Triangle-50 Type="Triangle" Shading="-1" Node1="Node71" Node2="Node68" Node3="Node72"/>
+		<Triangle-116 Type="Triangle" Shading="-1" Node1="Node127" Node2="Node128" Node3="Node133"/>
+		<Triangle-56 Type="Triangle" Shading="-1" Node1="Node72" Node2="Node68" Node3="Node69"/>
+		<Triangle-99 Type="Triangle" Shading="-1" Node1="Node115" Node2="Node122" Node3="Node121"/>
+		<Triangle-45 Type="Triangle" Shading="-1" Node1="Node71" Node2="Node72" Node3="Node61"/>
+		<Triangle-53 Type="Triangle" Shading="-1" Node1="Node73" Node2="Node69" Node3="Node70"/>
+		<Triangle-86 Type="Triangle" Shading="-1" Node1="Node98" Node2="Node104" Node3="Node105"/>
+		<Triangle-57 Type="Triangle" Shading="-1" Node1="Node72" Node2="Node69" Node3="Node73"/>
+		<Triangle-127 Type="Triangle" Shading="-1" Node1="Node143" Node2="Node142" Node3="Node141"/>
+		<Triangle-54 Type="Triangle" Shading="-1" Node1="Node73" Node2="Node70" Node3="Node74"/>
+		<Triangle-55 Type="Triangle" Shading="-1" Node1="Node74" Node2="Node70" Node3="Node63"/>
+		<Triangle-52 Type="Triangle" Shading="-1" Node1="Node72" Node2="Node62" Node3="Node61"/>
+		<Triangle-51 Type="Triangle" Shading="-1" Node1="Node72" Node2="Node73" Node3="Node62"/>
+		<Triangle-117 Type="Triangle" Shading="-1" Node1="Node131" Node2="Node141" Node3="Node142"/>
+		<Triangle-47 Type="Triangle" Shading="-1" Node1="Node73" Node2="Node74" Node3="Node63"/>
+		<Triangle-48 Type="Triangle" Shading="-1" Node1="Node73" Node2="Node63" Node3="Node62"/>
+		<NP_Node1 Type="NodePoint" Node="Node1" Radius="3"/>
+		<NP_Node2 Type="NodePoint" Node="Node2" Radius="3"/>
+		<NP_Node3 Type="NodePoint" Node="Node3" Radius="3"/>
+		<NP_Node4 Type="NodePoint" Node="Node4" Radius="3"/>
+		<NP_Node5 Type="NodePoint" Node="Node5" Radius="3"/>
+		<NP_Node6 Type="NodePoint" Node="Node6" Radius="3"/>
+		<NP_Node7 Type="NodePoint" Node="Node7" Radius="3"/>
+		<NP_Node8 Type="NodePoint" Node="Node8" Radius="3"/>
+		<NP_Node9 Type="NodePoint" Node="Node9" Radius="3"/>
+		<NP_Node10 Type="NodePoint" Node="Node10" Radius="3"/>
+		<NP_Node11 Type="NodePoint" Node="Node11" Radius="3"/>
+		<NP_Node12 Type="NodePoint" Node="Node12" Radius="3"/>
+		<NP_Node13 Type="NodePoint" Node="Node13" Radius="3"/>
+		<NP_Node14 Type="NodePoint" Node="Node14" Radius="3"/>
+		<NP_Node15 Type="NodePoint" Node="Node15" Radius="3"/>
+		<NP_Node16 Type="NodePoint" Node="Node16" Radius="3"/>
+		<NP_Node17 Type="NodePoint" Node="Node17" Radius="3"/>
+		<NP_Node18 Type="NodePoint" Node="Node18" Radius="3"/>
+		<NP_Node19 Type="NodePoint" Node="Node19" Radius="3"/>
+		<NP_Node20 Type="NodePoint" Node="Node20" Radius="3"/>
+		<NP_Node21 Type="NodePoint" Node="Node21" Radius="3"/>
+		<NP_Node22 Type="NodePoint" Node="Node22" Radius="3"/>
+		<NP_Node23 Type="NodePoint" Node="Node23" Radius="3"/>
+		<NP_Node24 Type="NodePoint" Node="Node24" Radius="3"/>
+		<NP_Node25 Type="NodePoint" Node="Node25" Radius="3"/>
+		<NP_Node26 Type="NodePoint" Node="Node26" Radius="3"/>
+		<NP_Node27 Type="NodePoint" Node="Node27" Radius="3"/>
+		<NP_Node28 Type="NodePoint" Node="Node28" Radius="3"/>
+		<NP_Node29 Type="NodePoint" Node="Node29" Radius="3"/>
+		<NP_Node30 Type="NodePoint" Node="Node30" Radius="3"/>
+		<NP_Node31 Type="NodePoint" Node="Node31" Radius="3"/>
+		<NP_Node32 Type="NodePoint" Node="Node32" Radius="3"/>
+		<NP_Node33 Type="NodePoint" Node="Node33" Radius="3"/>
+		<NP_Node34 Type="NodePoint" Node="Node34" Radius="3"/>
+		<NP_Node35 Type="NodePoint" Node="Node35" Radius="3"/>
+		<NP_Node36 Type="NodePoint" Node="Node36" Radius="3"/>
+		<NP_Node37 Type="NodePoint" Node="Node37" Radius="3"/>
+		<NP_Node38 Type="NodePoint" Node="Node38" Radius="3"/>
+		<NP_Node39 Type="NodePoint" Node="Node39" Radius="3"/>
+		<NP_Node40 Type="NodePoint" Node="Node40" Radius="3"/>
+		<NP_Node41 Type="NodePoint" Node="Node41" Radius="3"/>
+		<NP_Node42 Type="NodePoint" Node="Node42" Radius="3"/>
+		<NP_Node43 Type="NodePoint" Node="Node43" Radius="3"/>
+		<NP_Node44 Type="NodePoint" Node="Node44" Radius="3"/>
+		<NP_Node45 Type="NodePoint" Node="Node45" Radius="3"/>
+		<NP_Node46 Type="NodePoint" Node="Node46" Radius="3"/>
+		<NP_Node47 Type="NodePoint" Node="Node47" Radius="3"/>
+		<NP_Node48 Type="NodePoint" Node="Node48" Radius="3"/>
+		<NP_Node49 Type="NodePoint" Node="Node49" Radius="3"/>
+		<NP_Node50 Type="NodePoint" Node="Node50" Radius="3"/>
+		<NP_Node51 Type="NodePoint" Node="Node51" Radius="3"/>
+		<NP_Node52 Type="NodePoint" Node="Node52" Radius="3"/>
+		<NP_Node53 Type="NodePoint" Node="Node53" Radius="3"/>
+		<NP_Node54 Type="NodePoint" Node="Node54" Radius="3"/>
+		<NP_Node55 Type="NodePoint" Node="Node55" Radius="3"/>
+		<NP_Node56 Type="NodePoint" Node="Node56" Radius="3"/>
+		<NP_Node57 Type="NodePoint" Node="Node57" Radius="3"/>
+		<NP_Node58 Type="NodePoint" Node="Node58" Radius="3"/>
+		<NP_Node59 Type="NodePoint" Node="Node59" Radius="3"/>
+		<NP_Node60 Type="NodePoint" Node="Node60" Radius="3"/>
+		<NP_Node61 Type="NodePoint" Node="Node61" Radius="3"/>
+		<NP_Node62 Type="NodePoint" Node="Node62" Radius="3"/>
+		<NP_Node63 Type="NodePoint" Node="Node63" Radius="3"/>
+		<NP_Node64 Type="NodePoint" Node="Node64" Radius="3"/>
+		<NP_Node65 Type="NodePoint" Node="Node65" Radius="3"/>
+		<NP_Node66 Type="NodePoint" Node="Node66" Radius="3"/>
+		<NP_Node67 Type="NodePoint" Node="Node67" Radius="3"/>
+		<NP_Node68 Type="NodePoint" Node="Node68" Radius="3"/>
+		<NP_Node69 Type="NodePoint" Node="Node69" Radius="3"/>
+		<NP_Node70 Type="NodePoint" Node="Node70" Radius="3"/>
+		<NP_Node71 Type="NodePoint" Node="Node71" Radius="3"/>
+		<NP_Node72 Type="NodePoint" Node="Node72" Radius="3"/>
+		<NP_Node73 Type="NodePoint" Node="Node73" Radius="3"/>
+		<NP_Node74 Type="NodePoint" Node="Node74" Radius="3"/>
+		<NP_Node75 Type="NodePoint" Node="Node75" Radius="3"/>
+		<NP_Node76 Type="NodePoint" Node="Node76" Radius="3"/>
+		<NP_Node77 Type="NodePoint" Node="Node77" Radius="3"/>
+		<NP_Node78 Type="NodePoint" Node="Node78" Radius="3"/>
+		<NP_Node79 Type="NodePoint" Node="Node79" Radius="3"/>
+		<NP_Node80 Type="NodePoint" Node="Node80" Radius="3"/>
+		<NP_Node81 Type="NodePoint" Node="Node81" Radius="3"/>
+		<NP_Node82 Type="NodePoint" Node="Node82" Radius="3"/>
+		<NP_Node83 Type="NodePoint" Node="Node83" Radius="3"/>
+		<NP_Node84 Type="NodePoint" Node="Node84" Radius="3"/>
+		<NP_Node85 Type="NodePoint" Node="Node85" Radius="3"/>
+		<NP_Node86 Type="NodePoint" Node="Node86" Radius="3"/>
+		<NP_Node87 Type="NodePoint" Node="Node87" Radius="3"/>
+		<NP_Node88 Type="NodePoint" Node="Node88" Radius="3"/>
+		<NP_Node89 Type="NodePoint" Node="Node89" Radius="3"/>
+		<NP_Node90 Type="NodePoint" Node="Node90" Radius="3"/>
+		<NP_Node91 Type="NodePoint" Node="Node91" Radius="3"/>
+		<NP_Node92 Type="NodePoint" Node="Node92" Radius="3"/>
+		<NP_Node93 Type="NodePoint" Node="Node93" Radius="3"/>
+		<NP_Node94 Type="NodePoint" Node="Node94" Radius="3"/>
+		<NP_Node95 Type="NodePoint" Node="Node95" Radius="3"/>
+		<NP_Node96 Type="NodePoint" Node="Node96" Radius="3"/>
+		<NP_Node97 Type="NodePoint" Node="Node97" Radius="3"/>
+		<NP_Node98 Type="NodePoint" Node="Node98" Radius="3"/>
+		<NP_Node99 Type="NodePoint" Node="Node99" Radius="3"/>
+		<NP_Node100 Type="NodePoint" Node="Node100" Radius="3"/>
+		<NP_Node101 Type="NodePoint" Node="Node101" Radius="3"/>
+		<NP_Node102 Type="NodePoint" Node="Node102" Radius="3"/>
+		<NP_Node103 Type="NodePoint" Node="Node103" Radius="3"/>
+		<NP_Node104 Type="NodePoint" Node="Node104" Radius="3"/>
+		<NP_Node105 Type="NodePoint" Node="Node105" Radius="3"/>
+		<NP_Node106 Type="NodePoint" Node="Node106" Radius="3"/>
+		<NP_Node107 Type="NodePoint" Node="Node107" Radius="3"/>
+		<NP_Node108 Type="NodePoint" Node="Node108" Radius="3"/>
+		<NP_Node109 Type="NodePoint" Node="Node109" Radius="3"/>
+		<NP_Node110 Type="NodePoint" Node="Node110" Radius="3"/>
+		<NP_Node111 Type="NodePoint" Node="Node111" Radius="3"/>
+		<NP_Node112 Type="NodePoint" Node="Node112" Radius="3"/>
+		<NP_Node113 Type="NodePoint" Node="Node113" Radius="3"/>
+		<NP_Node114 Type="NodePoint" Node="Node114" Radius="3"/>
+		<NP_Node115 Type="NodePoint" Node="Node115" Radius="3"/>
+		<NP_Node116 Type="NodePoint" Node="Node116" Radius="3"/>
+		<NP_Node117 Type="NodePoint" Node="Node117" Radius="3"/>
+		<NP_Node118 Type="NodePoint" Node="Node118" Radius="3"/>
+		<NP_Node119 Type="NodePoint" Node="Node119" Radius="3"/>
+		<NP_Node120 Type="NodePoint" Node="Node120" Radius="3"/>
+		<NP_Node121 Type="NodePoint" Node="Node121" Radius="3"/>
+		<NP_Node122 Type="NodePoint" Node="Node122" Radius="3"/>
+		<NP_Node123 Type="NodePoint" Node="Node123" Radius="3"/>
+		<NP_Node124 Type="NodePoint" Node="Node124" Radius="3"/>
+		<NP_Node125 Type="NodePoint" Node="Node125" Radius="3"/>
+		<NP_Node126 Type="NodePoint" Node="Node126" Radius="3"/>
+		<NP_Node127 Type="NodePoint" Node="Node127" Radius="3"/>
+		<NP_Node128 Type="NodePoint" Node="Node128" Radius="3"/>
+		<NP_Node129 Type="NodePoint" Node="Node129" Radius="3"/>
+		<NP_Node130 Type="NodePoint" Node="Node130" Radius="3"/>
+		<NP_Node131 Type="NodePoint" Node="Node131" Radius="3"/>
+		<NP_Node132 Type="NodePoint" Node="Node132" Radius="3"/>
+		<NP_Node133 Type="NodePoint" Node="Node133" Radius="3"/>
+		<NP_Node134 Type="NodePoint" Node="Node134" Radius="3"/>
+		<NP_Node135 Type="NodePoint" Node="Node135" Radius="3"/>
+		<NP_Node136 Type="NodePoint" Node="Node136" Radius="3"/>
+		<NP_Node137 Type="NodePoint" Node="Node137" Radius="3"/>
+		<NP_Node138 Type="NodePoint" Node="Node138" Radius="3"/>
+		<NP_Node139 Type="NodePoint" Node="Node139" Radius="3"/>
+		<NP_Node140 Type="NodePoint" Node="Node140" Radius="3"/>
+		<NP_Node141 Type="NodePoint" Node="Node141" Radius="3"/>
+		<NP_Node142 Type="NodePoint" Node="Node142" Radius="3"/>
+		<NP_Node143 Type="NodePoint" Node="Node143" Radius="3"/>
+		<NP_Node144 Type="NodePoint" Node="Node144" Radius="3"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1/>
+		<SG-2/>
+		<SG-3/>
+		<SG-4/>
+		<SG-5/>
+		<SG-6/>
+		<SG-7/>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

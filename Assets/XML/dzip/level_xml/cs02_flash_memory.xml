@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Node489 Type="Node"  X="482.080871582031"  Y="-116.826416015625"  Z="17.0814056396484"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node490 Type="Node"  X="482.077941894531"  Y="-116.839080810547"  Z="17.0814056396484"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="0"  Rank="0" />
-  </Nodes>
-  <Edges>
-    <Edge491 Type="Edge"  Length="0.013089737854898"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node490"  End2="Node489" />
-  </Edges>
-  <Figures>
-    <Capsule_Edge491 Type="Capsule"  Edge="Edge491"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0" />
-    <NP_Node489 Type="NodePoint"  Node="Node489"  Radius="3" />
-    <NP_Node490 Type="NodePoint"  Node="Node490"  Radius="3" />
-    <EL_Edge491 Type="EdgeLine"  Edge="Edge491"  Width="0" />
-  </Figures>
+	<Nodes>
+		<Node489 Type="Node" X="482.080871582031" Y="-116.826416015625" Z="17.0814056396484" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+		<Node490 Type="Node" X="482.077941894531" Y="-116.839080810547" Z="17.0814056396484" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="0" Rank="0"/>
+	</Nodes>
+	<Edges>
+		<Edge491 Type="Edge" Length="0.013089737854898" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node490" End2="Node489"/>
+	</Edges>
+	<Figures>
+		<Capsule_Edge491 Type="Capsule" Edge="Edge491" Radius1="5" Radius2="5" Margin1="0" Margin2="0"/>
+		<NP_Node489 Type="NodePoint" Node="Node489" Radius="3"/>
+		<NP_Node490 Type="NodePoint" Node="Node490" Radius="3"/>
+		<EL_Edge491 Type="EdgeLine" Edge="Edge491" Width="0"/>
+	</Figures>
 </Scene>

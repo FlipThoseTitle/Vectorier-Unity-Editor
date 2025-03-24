@@ -1,38 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|RevolutionGirl" ForceBlasts="Hunter" Skins="1|50" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="RevolutionGirl" Type="0" Color="0" BirthSpawn="RevolutionGirlSpawn" AllowedSpawns="RevolutionGirlSpawn" AI="2" Time="3.5" Skins="revolution_girl|tail" Icon="1"/>
-  </Models>
-  <Track>
-    <Object Factor="0.1">
-      <Content>
-        <Object Name="ConstructionYardBackground" X="-1100" Y="-630"/>
-        <Object Name="ConstructionYardBackground" X="1017" Y="-630"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS_Yard_cs02_build1New" X="-5" Y="175" DeltaX="-5" DeltaY="175"/>
-            <Camera X="555" Y="75"/>
-            <Object Name="TriggerCameraStart" X="275" Y="-160"/>
-            <Spawn X="740" Y="40" Name="DefaultSpawn" Animation="JumpOff|18|1"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS_Yard_cs02_build2" X="625" Y="-1300" DeltaX="630" DeltaY="-1475"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="1"/>
-    <Object Factor="1"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter|RevolutionGirl" ForceBlasts="Hunter" Skins="1|50" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="RevolutionGirl" Type="0" Color="0" BirthSpawn="RevolutionGirlSpawn" AllowedSpawns="RevolutionGirlSpawn" AI="2" Time="3.5" Skins="revolution_girl|tail" Icon="1"/>
+	</Models>
+	<Track>
+		<Object Factor="0.1">
+			<Content>
+				<Object Name="ConstructionYardBackground" X="-1100" Y="-630"/>
+				<Object Name="ConstructionYardBackground" X="1017" Y="-630"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS_Yard_cs02_build1New" X="-5" Y="175" DeltaX="-5" DeltaY="175"/>
+						<Camera X="555" Y="75"/>
+						<Object Name="TriggerCameraStart" X="275" Y="-160"/>
+						<Spawn X="740" Y="40" Name="DefaultSpawn" Animation="JumpOff|18|1"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS_Yard_cs02_build2" X="625" Y="-1300" DeltaX="630" DeltaY="-1475"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="1"/>
+		<Object Factor="1"/>
+	</Track>
 </Root>

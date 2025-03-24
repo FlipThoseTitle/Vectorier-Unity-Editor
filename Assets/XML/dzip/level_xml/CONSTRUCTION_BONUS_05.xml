@@ -1,354 +1,354 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
-    <Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
-  </Models>
-  <Coins Value="70"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="ConstructionYardBackground" X="-500" Y="-550"/>
-        <Object Name="ConstructionYardBackground" X="1620" Y="-500"/>
-        <Object Name="ConstructionYardBackground" X="3740" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="ConstructionYardBuilding2" X="50" Y="555"/>
-        <Object Name="ConstructionYardBuilding1" X="1440" Y="985"/>
-        <Object Name="ConstructionYardBuilding2" X="2949" Y="45"/>
-        <Object Name="ConstructionYardBuilding1" X="4369" Y="85"/>
-        <Object Name="ConstructionYardBuilding2" X="6140" Y="-1025"/>
-        <Object Name="ConstructionYardBuilding2" X="7880" Y="-2550"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_1" X="715" Y="3499" DeltaX="715" DeltaY="3499"/>
-            <Spawn X="220" Y="3064" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Object Name="Pill" X="2010" Y="3234"/>
-            <Object Name="TriggerJump" X="4520" Y="2524"/>
-            <Camera X="1215" Y="3394"/>
-            <Object Name="TriggerCameraStart" X="1065" Y="3099"/>
-            <Object Name="TriggerLossPanic" X="4710" Y="3385"/>
-            <Trigger Name="zoommin" X="2905" Y="1970" Width="160" Height="775">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_6" X="5715" Y="-395" DeltaX="5005" DeltaY="-3109"/>
-            <Object Name="TriggerLossPanic" X="4755" Y="-865"/>
-            <Object Name="TriggerJump" X="7080" Y="-2170"/>
-            <Object Name="Respawn_2sec" X="5770" Y="-2100"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="6215" Y="-1575"/>
-            <Trigger Name="zoommax" X="5735" Y="-2685" Width="190" Height="610">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1.1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoomnormal" X="6795" Y="-2450" Width="160" Height="495">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoomnormal" X="9206" Y="-1165" Width="190" Height="770">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Item Type="1" X="6380" Y="-2180" Radius="80" Score="10" GroupId="5"/>
-            <Item Type="1" X="7555" Y="-1260" Radius="80" Score="10" GroupId="4"/>
-            <Item Type="1" X="9040" Y="-485" Radius="80" Score="10" GroupId="3"/>
-            <Item Type="1" X="6320" Y="-1155" Radius="80" Score="10" GroupId="4"/>
-            <Item Type="1" X="5865" Y="-1255" Radius="80" Score="10" GroupId="4"/>
-            <Item Type="1" X="7085" Y="-2050" Radius="80" Score="10" GroupId="5"/>
-            <Item Type="1" X="6030" Y="-2180" Radius="80" Score="10" GroupId="5"/>
-            <Spawn X="9565" Y="-495" Name="Respawn" Animation="JumpOff|18|1"/>
-            <Trigger Name="TriggerRespawn" X="9490" Y="-895" Width="150" Height="500">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="CommonMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Spawn" Value="Respawn"/>
-                  <SetVariable Name="Frames" Value="120"/>
-                  <SetVariable Name="SpawnModel" Value="Hunter"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="Respawn"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_2" X="5715" Y="2755" DeltaX="-1805" DeltaY="4725"/>
-            <Object Name="TriggerJump" X="6064" Y="1585"/>
-            <Object Name="Pill" X="6925" Y="2490"/>
-            <Object Name="TriggerTripleHit" X="7510" Y="1585"/>
-            <Object Name="Respawn" X="5632" Y="2750"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="5795" Y="2255"/>
-            <Trigger Name="zoommax" X="5752" Y="1996" Width="165" Height="800">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1.1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoomnormal" X="7495" Y="2010" Width="190" Height="770">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Item Type="1" X="6145" Y="1725" Radius="80" Score="10" GroupId="1"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_3" X="6235" Y="1180" DeltaX="520" DeltaY="-615"/>
-            <Object Name="TriggerJump" X="9490" Y="980"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="6480" Y="685"/>
-            <Trigger Name="zoommin" X="7177" Y="432" Width="160" Height="775">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Item Type="1" X="6875" Y="1120" Radius="80" Score="10" GroupId="1"/>
-            <Item Type="1" X="6435" Y="1120" Radius="80" Score="10" GroupId="1"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_7" X="7325" Y="-3795" DeltaX="-2310" DeltaY="-3150"/>
-            <Object Name="Pill" X="7390" Y="-3980"/>
-            <Object Name="TriggerJump" X="9175" Y="-3995"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="7750" Y="-4290"/>
-            <Trigger Name="zoommin" X="7411" Y="-4369" Width="160" Height="775">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Item Type="1" X="8820" Y="-3880" Radius="80" Score="10" GroupId="6"/>
-            <Item Type="1" X="7735" Y="-3880" Radius="80" Score="10" GroupId="6"/>
-            <Item Type="1" X="8275" Y="-3880" Radius="80" Score="10" GroupId="6"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_5" X="9635" Y="-360" DeltaX="4350" DeltaY="4845"/>
-            <Object Name="TriggerLossPanic" X="9675" Y="24"/>
-            <Object Name="TriggerJump" X="9665" Y="-394"/>
-            <Object Name="Pill" X="12630" Y="-645"/>
-            <Object Name="TriggerTripleSwing" X="10910" Y="-595"/>
-            <Object Name="Respawn" X="10720" Y="1177"/>
-            <Object Name="TriggerJump" X="13717" Y="978"/>
-            <Object Name="HunterModeRespawn_3sec" X="13410" Y="685"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="11200" Y="-880"/>
-            <Trigger Name="zoommax" X="10780" Y="428" Width="165" Height="800">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1.1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoomnormal" X="13070" Y="435" Width="190" Height="770">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoommin" X="13370" Y="-1182" Width="160" Height="775">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Item Type="1" X="12930" Y="1105" Radius="80" Score="10" GroupId="2"/>
-            <Item Type="1" X="11570" Y="-560" Radius="80" Score="10" GroupId="3"/>
-            <Item Type="1" X="13595" Y="1110" Radius="80" Score="10" GroupId="2"/>
-            <Item Type="1" X="13240" Y="1100" Radius="80" Score="10" GroupId="2"/>
-            <Item Type="1" X="12040" Y="-460" Radius="80" Score="10" GroupId="3"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_8" X="10705" Y="-2845" DeltaX="1070" DeltaY="-2650"/>
-            <Object Name="TriggerRollForward" X="11375" Y="-3045"/>
-            <Object Name="TriggerSlide" X="14314" Y="-3831"/>
-            <Object Name="TriggerLossPanic" X="14314" Y="-2476"/>
-            <Object Name="TriggerLossPanic" X="9760" Y="-2426"/>
-            <Trigger Name="zoommax" X="9778" Y="-2430" Width="975" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="2"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoomnormal" X="10745" Y="-4669" Width="190" Height="1030">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="zoommin" X="13742" Y="-4417" Width="160" Height="775">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.65"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CONSTRUCTION_BONUS_05_4" X="10720" Y="1180" DeltaX="-3895" DeltaY="4025"/>
-            <Object Name="TriggerLossPanic" X="9725" Y="1669"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="FinalRoof_8" X="14945" Y="-2850" DeltaX="310" DeltaY="-4030"/>
-            <Object Name="Pill" X="14799" Y="-3071"/>
-            <Object Name="TriggerZoomNormal" X="15631" Y="-4997"/>
-            <Object Name="HunterModJump" X="16000" Y="-3050"/>
-            <Object Name="HunterModJump" X="16780" Y="-3050"/>
-            <Object Name="HunterModeRespawn_3.5sec" X="15200" Y="-3350"/>
-            <Item Type="1" X="16815" Y="-2940" Radius="80" Score="10" GroupId="7"/>
-            <Item Type="1" X="17460" Y="-2935" Radius="80" Score="10" GroupId="7"/>
-            <Item Type="1" X="15885" Y="-2935" Radius="80" Score="10" GroupId="7"/>
-            <Spawn X="15050" Y="-2950" Name="Respawn" Animation="JumpOff|18"/>
-            <Trigger Name="TriggerRespawn" X="14975" Y="-3710" Width="150" Height="860">
-              <Properties>
-                <Static>
-                  <Selection Choice="AITriggers" Variant="CommonMode"/>
-                </Static>
-              </Properties>
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Spawn" Value="Respawn"/>
-                  <SetVariable Name="Frames" Value="120"/>
-                  <SetVariable Name="SpawnModel" Value="Hunter"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                	<SetVariable Name="Flag1" Value="0"/>
-                </Init>
-                <Template Name="Respawn"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="5" Time="0" Victory="1" Respawns="Hunter"/>
+		<Model Name="Hunter" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="1.5" Trick="1" Item="1" Skins="hunter" Murders="Player" AllowedSpawns="Despawn" Arrests="Player" Lose="1"/>
+	</Models>
+	<Coins Value="70"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="ConstructionYardBackground" X="-500" Y="-550"/>
+				<Object Name="ConstructionYardBackground" X="1620" Y="-500"/>
+				<Object Name="ConstructionYardBackground" X="3740" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="ConstructionYardBuilding2" X="50" Y="555"/>
+				<Object Name="ConstructionYardBuilding1" X="1440" Y="985"/>
+				<Object Name="ConstructionYardBuilding2" X="2949" Y="45"/>
+				<Object Name="ConstructionYardBuilding1" X="4369" Y="85"/>
+				<Object Name="ConstructionYardBuilding2" X="6140" Y="-1025"/>
+				<Object Name="ConstructionYardBuilding2" X="7880" Y="-2550"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_1" X="715" Y="3499" DeltaX="715" DeltaY="3499"/>
+						<Spawn X="220" Y="3064" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Object Name="Pill" X="2010" Y="3234"/>
+						<Object Name="TriggerJump" X="4520" Y="2524"/>
+						<Camera X="1215" Y="3394"/>
+						<Object Name="TriggerCameraStart" X="1065" Y="3099"/>
+						<Object Name="TriggerLossPanic" X="4710" Y="3385"/>
+						<Trigger Name="zoommin" X="2905" Y="1970" Width="160" Height="775">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_6" X="5715" Y="-395" DeltaX="5005" DeltaY="-3109"/>
+						<Object Name="TriggerLossPanic" X="4755" Y="-865"/>
+						<Object Name="TriggerJump" X="7080" Y="-2170"/>
+						<Object Name="Respawn_2sec" X="5770" Y="-2100"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="6215" Y="-1575"/>
+						<Trigger Name="zoommax" X="5735" Y="-2685" Width="190" Height="610">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1.1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoomnormal" X="6795" Y="-2450" Width="160" Height="495">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoomnormal" X="9206" Y="-1165" Width="190" Height="770">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Item Type="1" X="6380" Y="-2180" Radius="80" Score="10" GroupId="5"/>
+						<Item Type="1" X="7555" Y="-1260" Radius="80" Score="10" GroupId="4"/>
+						<Item Type="1" X="9040" Y="-485" Radius="80" Score="10" GroupId="3"/>
+						<Item Type="1" X="6320" Y="-1155" Radius="80" Score="10" GroupId="4"/>
+						<Item Type="1" X="5865" Y="-1255" Radius="80" Score="10" GroupId="4"/>
+						<Item Type="1" X="7085" Y="-2050" Radius="80" Score="10" GroupId="5"/>
+						<Item Type="1" X="6030" Y="-2180" Radius="80" Score="10" GroupId="5"/>
+						<Spawn X="9565" Y="-495" Name="Respawn" Animation="JumpOff|18|1"/>
+						<Trigger Name="TriggerRespawn" X="9490" Y="-895" Width="150" Height="500">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="CommonMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Spawn" Value="Respawn"/>
+									<SetVariable Name="Frames" Value="120"/>
+									<SetVariable Name="SpawnModel" Value="Hunter"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="Respawn"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_2" X="5715" Y="2755" DeltaX="-1805" DeltaY="4725"/>
+						<Object Name="TriggerJump" X="6064" Y="1585"/>
+						<Object Name="Pill" X="6925" Y="2490"/>
+						<Object Name="TriggerTripleHit" X="7510" Y="1585"/>
+						<Object Name="Respawn" X="5632" Y="2750"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="5795" Y="2255"/>
+						<Trigger Name="zoommax" X="5752" Y="1996" Width="165" Height="800">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1.1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoomnormal" X="7495" Y="2010" Width="190" Height="770">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Item Type="1" X="6145" Y="1725" Radius="80" Score="10" GroupId="1"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_3" X="6235" Y="1180" DeltaX="520" DeltaY="-615"/>
+						<Object Name="TriggerJump" X="9490" Y="980"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="6480" Y="685"/>
+						<Trigger Name="zoommin" X="7177" Y="432" Width="160" Height="775">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Item Type="1" X="6875" Y="1120" Radius="80" Score="10" GroupId="1"/>
+						<Item Type="1" X="6435" Y="1120" Radius="80" Score="10" GroupId="1"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_7" X="7325" Y="-3795" DeltaX="-2310" DeltaY="-3150"/>
+						<Object Name="Pill" X="7390" Y="-3980"/>
+						<Object Name="TriggerJump" X="9175" Y="-3995"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="7750" Y="-4290"/>
+						<Trigger Name="zoommin" X="7411" Y="-4369" Width="160" Height="775">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Item Type="1" X="8820" Y="-3880" Radius="80" Score="10" GroupId="6"/>
+						<Item Type="1" X="7735" Y="-3880" Radius="80" Score="10" GroupId="6"/>
+						<Item Type="1" X="8275" Y="-3880" Radius="80" Score="10" GroupId="6"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_5" X="9635" Y="-360" DeltaX="4350" DeltaY="4845"/>
+						<Object Name="TriggerLossPanic" X="9675" Y="24"/>
+						<Object Name="TriggerJump" X="9665" Y="-394"/>
+						<Object Name="Pill" X="12630" Y="-645"/>
+						<Object Name="TriggerTripleSwing" X="10910" Y="-595"/>
+						<Object Name="Respawn" X="10720" Y="1177"/>
+						<Object Name="TriggerJump" X="13717" Y="978"/>
+						<Object Name="HunterModeRespawn_3sec" X="13410" Y="685"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="11200" Y="-880"/>
+						<Trigger Name="zoommax" X="10780" Y="428" Width="165" Height="800">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1.1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoomnormal" X="13070" Y="435" Width="190" Height="770">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoommin" X="13370" Y="-1182" Width="160" Height="775">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Item Type="1" X="12930" Y="1105" Radius="80" Score="10" GroupId="2"/>
+						<Item Type="1" X="11570" Y="-560" Radius="80" Score="10" GroupId="3"/>
+						<Item Type="1" X="13595" Y="1110" Radius="80" Score="10" GroupId="2"/>
+						<Item Type="1" X="13240" Y="1100" Radius="80" Score="10" GroupId="2"/>
+						<Item Type="1" X="12040" Y="-460" Radius="80" Score="10" GroupId="3"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_8" X="10705" Y="-2845" DeltaX="1070" DeltaY="-2650"/>
+						<Object Name="TriggerRollForward" X="11375" Y="-3045"/>
+						<Object Name="TriggerSlide" X="14314" Y="-3831"/>
+						<Object Name="TriggerLossPanic" X="14314" Y="-2476"/>
+						<Object Name="TriggerLossPanic" X="9760" Y="-2426"/>
+						<Trigger Name="zoommax" X="9778" Y="-2430" Width="975" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="2"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoomnormal" X="10745" Y="-4669" Width="190" Height="1030">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="zoommin" X="13742" Y="-4417" Width="160" Height="775">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.65"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CONSTRUCTION_BONUS_05_4" X="10720" Y="1180" DeltaX="-3895" DeltaY="4025"/>
+						<Object Name="TriggerLossPanic" X="9725" Y="1669"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="FinalRoof_8" X="14945" Y="-2850" DeltaX="310" DeltaY="-4030"/>
+						<Object Name="Pill" X="14799" Y="-3071"/>
+						<Object Name="TriggerZoomNormal" X="15631" Y="-4997"/>
+						<Object Name="HunterModJump" X="16000" Y="-3050"/>
+						<Object Name="HunterModJump" X="16780" Y="-3050"/>
+						<Object Name="HunterModeRespawn_3.5sec" X="15200" Y="-3350"/>
+						<Item Type="1" X="16815" Y="-2940" Radius="80" Score="10" GroupId="7"/>
+						<Item Type="1" X="17460" Y="-2935" Radius="80" Score="10" GroupId="7"/>
+						<Item Type="1" X="15885" Y="-2935" Radius="80" Score="10" GroupId="7"/>
+						<Spawn X="15050" Y="-2950" Name="Respawn" Animation="JumpOff|18"/>
+						<Trigger Name="TriggerRespawn" X="14975" Y="-3710" Width="150" Height="860">
+							<Properties>
+								<Static>
+									<Selection Choice="AITriggers" Variant="CommonMode"/>
+								</Static>
+							</Properties>
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Spawn" Value="Respawn"/>
+									<SetVariable Name="Frames" Value="120"/>
+									<SetVariable Name="SpawnModel" Value="Hunter"/>
+									<SetVariable Name="$AI" Value="0"/>
+									<SetVariable Name="Flag1" Value="0"/>
+								</Init>
+								<Template Name="Respawn"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

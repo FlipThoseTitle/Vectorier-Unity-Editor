@@ -1,182 +1,182 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Coins Value="40"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background" X="-500" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="Building2000x500" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TrackStart" X="-260" Y="0"/>
-            <Object X="0" Y="0">
-              <Properties>
-                <Dynamic>
-                  <Transformation Name="Transform_idp490411648">
-                    <Move>
-                      <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                        <Point Name="Finish" X="0.0" Y="1000.0"/>
-                      </MoveInterval>
-                    </Move>
-                  </Transformation>
-                </Dynamic>
-              </Properties>
-              <Content>
-                <Image X="800" Y="-770" Width="225" Height="510" ClassName="cons_tower" NativeX="" NativeY="" Type="3"/>
-                <Trigger Name="" X="800" Y="-375" Width="265" Height="355">
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="-1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                    </Init>
-                    <Loop>
-                      <Events>
-                        <EventBlock Template="FreqUsed.Enter"/>
-                      </Events>
-                      <Actions>
-                        <ActionBlock Template="FreqUsed.SwitchOff"/>
-                        <Transform Name=""/>
-                      </Actions>
-                    </Loop>
-                  </Content>
-                </Trigger>
-                <Object Name="RunIndicator" X="800" Y="-270"/>
-                <Move>
-                  <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                    <Point Name="Finish" X="0.0" Y="1000.0"/>
-                  </MoveInterval>
-                </Move>
-              </Content>
-            </Object>
-            <Object X="0" Y="0">
-              <Properties>
-                <Dynamic>
-                  <Transformation Name="Transform_idp490422400">
-                    <Move>
-                      <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                        <Point Name="Finish" X="0.0" Y="1000.0"/>
-                      </MoveInterval>
-                    </Move>
-                  </Transformation>
-                </Dynamic>
-              </Properties>
-              <Content>
-                <Image X="1200" Y="-770" Width="225" Height="510" ClassName="cons_tower" NativeX="" NativeY="" Type="3">
-                  <Properties>
-                    <Dynamic>
-                      <Transformation Name="Transform_idp490436608">
-                        <Move>
-                          <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                            <Point Name="Start" X="0.0" Y="0.0"/>
-                            <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                            <Point Name="Finish" X="0.0" Y="1000.0"/>
-                          </MoveInterval>
-                        </Move>
-                      </Transformation>
-                    </Dynamic>
-                  </Properties>
-                </Image>
-                <Trigger Name="" X="1200" Y="-375" Width="265" Height="355">
-                  <Properties>
-                    <Dynamic>
-                      <Transformation Name="Transform_idp490505600">
-                        <Move>
-                          <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                            <Point Name="Start" X="0.0" Y="0.0"/>
-                            <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                            <Point Name="Finish" X="0.0" Y="1000.0"/>
-                          </MoveInterval>
-                        </Move>
-                      </Transformation>
-                    </Dynamic>
-                  </Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="-1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                    </Init>
-                    <Loop>
-                      <Events>
-                        <EventBlock Template="FreqUsed.Enter"/>
-                      </Events>
-                      <Actions>
-                        <ActionBlock Template="FreqUsed.SwitchOff"/>
-                        <Choose Order="Sync">
-                          <Transform Name="Transform_idp490436608"/>
-                          <Transform Name="Transform_idp490505600"/>
-                          <Transform Name="Transform_idp490576640"/>
-                        </Choose>
-                      </Actions>
-                    </Loop>
-                    <Transformation Name="Transform_idp490505600">
-                      <Move>
-                        <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                          <Point Name="Start" X="0.0" Y="0.0"/>
-                          <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                          <Point Name="Finish" X="0.0" Y="1000.0"/>
-                        </MoveInterval>
-                      </Move>
-                    </Transformation>
-                  </Content>
-                </Trigger>
-                <Object Name="RunIndicator" X="1200" Y="-270">
-                  <Properties>
-                    <Dynamic>
-                      <Transformation Name="Transform_idp490576640">
-                        <Move>
-                          <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                            <Point Name="Start" X="0.0" Y="0.0"/>
-                            <Point Name="Support" Number="1" X="0.0" Y="-500.0"/>
-                            <Point Name="Finish" X="0.0" Y="-1000.0"/>
-                          </MoveInterval>
-                        </Move>
-                      </Transformation>
-                    </Dynamic>
-                  </Properties>
-                  <Content>
-                    <Move>
-                      <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="-500.0"/>
-                        <Point Name="Finish" X="0.0" Y="-1000.0"/>
-                      </MoveInterval>
-                    </Move>
-                  </Content>
-                </Object>
-                <Move>
-                  <MoveInterval Number="1" FramesToMove="50" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="500.0"/>
-                    <Point Name="Finish" X="0.0" Y="1000.0"/>
-                  </MoveInterval>
-                </Move>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Coins Value="40"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background" X="-500" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="Building2000x500" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TrackStart" X="-260" Y="0"/>
+						<Object X="0" Y="0">
+							<Properties>
+								<Dynamic>
+									<Transformation Name="Transform_idp490411648">
+										<Move>
+											<MoveInterval Number="1" FramesToMove="50" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+												<Point Name="Finish" X="0.0" Y="1000.0"/>
+											</MoveInterval>
+										</Move>
+									</Transformation>
+								</Dynamic>
+							</Properties>
+							<Content>
+								<Image X="800" Y="-770" Width="225" Height="510" ClassName="cons_tower" NativeX="" NativeY="" Type="3"/>
+								<Trigger Name="" X="800" Y="-375" Width="265" Height="355">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="-1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+										</Init>
+										<Loop>
+											<Events>
+												<EventBlock Template="FreqUsed.Enter"/>
+											</Events>
+											<Actions>
+												<ActionBlock Template="FreqUsed.SwitchOff"/>
+												<Transform Name=""/>
+											</Actions>
+										</Loop>
+									</Content>
+								</Trigger>
+								<Object Name="RunIndicator" X="800" Y="-270"/>
+								<Move>
+									<MoveInterval Number="1" FramesToMove="50" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+										<Point Name="Finish" X="0.0" Y="1000.0"/>
+									</MoveInterval>
+								</Move>
+							</Content>
+						</Object>
+						<Object X="0" Y="0">
+							<Properties>
+								<Dynamic>
+									<Transformation Name="Transform_idp490422400">
+										<Move>
+											<MoveInterval Number="1" FramesToMove="50" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+												<Point Name="Finish" X="0.0" Y="1000.0"/>
+											</MoveInterval>
+										</Move>
+									</Transformation>
+								</Dynamic>
+							</Properties>
+							<Content>
+								<Image X="1200" Y="-770" Width="225" Height="510" ClassName="cons_tower" NativeX="" NativeY="" Type="3">
+									<Properties>
+										<Dynamic>
+											<Transformation Name="Transform_idp490436608">
+												<Move>
+													<MoveInterval Number="1" FramesToMove="50" Delay="0">
+														<Point Name="Start" X="0.0" Y="0.0"/>
+														<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+														<Point Name="Finish" X="0.0" Y="1000.0"/>
+													</MoveInterval>
+												</Move>
+											</Transformation>
+										</Dynamic>
+									</Properties>
+								</Image>
+								<Trigger Name="" X="1200" Y="-375" Width="265" Height="355">
+									<Properties>
+										<Dynamic>
+											<Transformation Name="Transform_idp490505600">
+												<Move>
+													<MoveInterval Number="1" FramesToMove="50" Delay="0">
+														<Point Name="Start" X="0.0" Y="0.0"/>
+														<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+														<Point Name="Finish" X="0.0" Y="1000.0"/>
+													</MoveInterval>
+												</Move>
+											</Transformation>
+										</Dynamic>
+									</Properties>
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="-1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+										</Init>
+										<Loop>
+											<Events>
+												<EventBlock Template="FreqUsed.Enter"/>
+											</Events>
+											<Actions>
+												<ActionBlock Template="FreqUsed.SwitchOff"/>
+												<Choose Order="Sync">
+													<Transform Name="Transform_idp490436608"/>
+													<Transform Name="Transform_idp490505600"/>
+													<Transform Name="Transform_idp490576640"/>
+												</Choose>
+											</Actions>
+										</Loop>
+										<Transformation Name="Transform_idp490505600">
+											<Move>
+												<MoveInterval Number="1" FramesToMove="50" Delay="0">
+													<Point Name="Start" X="0.0" Y="0.0"/>
+													<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+													<Point Name="Finish" X="0.0" Y="1000.0"/>
+												</MoveInterval>
+											</Move>
+										</Transformation>
+									</Content>
+								</Trigger>
+								<Object Name="RunIndicator" X="1200" Y="-270">
+									<Properties>
+										<Dynamic>
+											<Transformation Name="Transform_idp490576640">
+												<Move>
+													<MoveInterval Number="1" FramesToMove="50" Delay="0">
+														<Point Name="Start" X="0.0" Y="0.0"/>
+														<Point Name="Support" Number="1" X="0.0" Y="-500.0"/>
+														<Point Name="Finish" X="0.0" Y="-1000.0"/>
+													</MoveInterval>
+												</Move>
+											</Transformation>
+										</Dynamic>
+									</Properties>
+									<Content>
+										<Move>
+											<MoveInterval Number="1" FramesToMove="50" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="-500.0"/>
+												<Point Name="Finish" X="0.0" Y="-1000.0"/>
+											</MoveInterval>
+										</Move>
+									</Content>
+								</Object>
+								<Move>
+									<MoveInterval Number="1" FramesToMove="50" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="500.0"/>
+										<Point Name="Finish" X="0.0" Y="1000.0"/>
+									</MoveInterval>
+								</Move>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

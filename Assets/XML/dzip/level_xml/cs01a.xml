@@ -1,47 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings_downtown.xml"/>
-    <City FileName="buildings.xml"/>
-  </Sets>
-  <Music Name="pk" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Helper" Type="0" Color="0" BirthSpawn="SpawnHelper" AI="2" Time="0" Skins="helper"/>
-    <Model Name="Coil" Type="0" Color="0" BirthSpawn="SpawnCoil" AI="3" Time="0" Skins="hunter"/>
-  </Models>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building2"/>
-        <Object Name="LampPost"/>
-        <Object Name="Building3"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building1"/>
-        <Object Name="Building3"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS01a_building" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerCameraStart" X="360" Y="-397"/>
-            <Camera X="180" Y="-215"/>
-            <Object Name="TriggerCS01aDowntownCoil" X="-335" Y="330"/>
-            <Spawn X="-78" Y="780" Name="DefaultSpawn" Animation="CS01aDownTownMain|1"/>
-            <Spawn X="-78" Y="640" Name="SpawnHelper" Animation="CS01aDownTownSecond|1"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings_downtown.xml"/>
+		<City FileName="buildings.xml"/>
+	</Sets>
+	<Music Name="pk" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Helper" Type="0" Color="0" BirthSpawn="SpawnHelper" AI="2" Time="0" Skins="helper"/>
+		<Model Name="Coil" Type="0" Color="0" BirthSpawn="SpawnCoil" AI="3" Time="0" Skins="hunter"/>
+	</Models>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building2"/>
+				<Object Name="LampPost"/>
+				<Object Name="Building3"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building1"/>
+				<Object Name="Building3"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS01a_building" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerCameraStart" X="360" Y="-397"/>
+						<Camera X="180" Y="-215"/>
+						<Object Name="TriggerCS01aDowntownCoil" X="-335" Y="330"/>
+						<Spawn X="-78" Y="780" Name="DefaultSpawn" Animation="CS01aDownTownMain|1"/>
+						<Spawn X="-78" Y="640" Name="SpawnHelper" Animation="CS01aDownTownSecond|1"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

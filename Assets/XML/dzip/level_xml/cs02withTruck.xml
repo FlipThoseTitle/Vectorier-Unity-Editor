@@ -1,68 +1,68 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0.8" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Helper" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="2" Time="0" AllowedSpawns="RespawnCS02HelpbotPart2" LifeTime="5" Skins="helper|shirt"/>
-    <Model Name="Hunter" Type="0" Color="0" AI="1" Time="5.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Helper" Arrests="Helper" Icon="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building2"/>
-        <Object Name="LampPost"/>
-        <Object Name="Building3"/>
-        <Object Name="Billboard"/>
-        <Object Name="Building1"/>
-        <Object Name="Building3">
-          <Content>
-            <Object Name="Building2Image" X="1529" Y="-537"/>
-            <Object Name="BillboardImage" X="3512" Y="532"/>
-            <Object Name="Building2Image" X="4309" Y="73"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS02production" X="5" Y="-5" DeltaX="5" DeltaY="-5"/>
-            <Object Name="TriggerCameraStart" X="1409" Y="-408"/>
-            <Spawn X="170" Y="-1790" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Camera X="1511" Y="-210"/>
-            <Object Name="CS02HelpbotPart1" X="2819" Y="-205"/>
-            <Object Name="TriggerCS02PlayerPart1WithTruck" X="2490" Y="-205"/>
-            <Object Name="TriggerCS02DowntownFlashMemory" X="3490" Y="-205"/>
-            <Object Name="TriggerZoomMax" X="1760" Y="-1425"/>
-            <Object Name="TriggerZoomMinForCS02" X="2990" Y="-1420"/>
-            <Object Name="TriggerCameraVelocity500CS02" X="1190" Y="-305"/>
-            <Object Name="TriggerCS02Hunter" X="2310" Y="-210"/>
-            <Object Name="Respawn_5.2sec" X="2025" Y="15"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="CS02Building3production" X="3995" Y="-752" DeltaX="0" DeltaY="0"/>
-            <Object Name="TriggerVictoryCS02" X="12220" Y="-1080"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-    <Object Factor="2"/>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0.8" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Helper" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="2" Time="0" AllowedSpawns="RespawnCS02HelpbotPart2" LifeTime="5" Skins="helper|shirt"/>
+		<Model Name="Hunter" Type="0" Color="0" AI="1" Time="5.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Helper" Arrests="Helper" Icon="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building2"/>
+				<Object Name="LampPost"/>
+				<Object Name="Building3"/>
+				<Object Name="Billboard"/>
+				<Object Name="Building1"/>
+				<Object Name="Building3">
+					<Content>
+						<Object Name="Building2Image" X="1529" Y="-537"/>
+						<Object Name="BillboardImage" X="3512" Y="532"/>
+						<Object Name="Building2Image" X="4309" Y="73"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS02production" X="5" Y="-5" DeltaX="5" DeltaY="-5"/>
+						<Object Name="TriggerCameraStart" X="1409" Y="-408"/>
+						<Spawn X="170" Y="-1790" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Camera X="1511" Y="-210"/>
+						<Object Name="CS02HelpbotPart1" X="2819" Y="-205"/>
+						<Object Name="TriggerCS02PlayerPart1WithTruck" X="2490" Y="-205"/>
+						<Object Name="TriggerCS02DowntownFlashMemory" X="3490" Y="-205"/>
+						<Object Name="TriggerZoomMax" X="1760" Y="-1425"/>
+						<Object Name="TriggerZoomMinForCS02" X="2990" Y="-1420"/>
+						<Object Name="TriggerCameraVelocity500CS02" X="1190" Y="-305"/>
+						<Object Name="TriggerCS02Hunter" X="2310" Y="-210"/>
+						<Object Name="Respawn_5.2sec" X="2025" Y="15"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="CS02Building3production" X="3995" Y="-752" DeltaX="0" DeltaY="0"/>
+						<Object Name="TriggerVictoryCS02" X="12220" Y="-1080"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+		<Object Factor="2"/>
+	</Track>
 </Root>

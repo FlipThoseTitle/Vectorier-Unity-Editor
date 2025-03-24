@@ -1,109 +1,109 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_techpark.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-    <City FileName="buildings_construction.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-  </Models>
-  <Coins Value="30"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.1">
-      <Content>
-        <Object Name="Techpark_bg1" X="-500" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Banner_TP_building_2" X="1280" Y="-1675"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="empty_building" X="-115" Y="230" DeltaX="-115" DeltaY="230"/>
-            <Spawn X="1614" Y="-231" Name="DefaultSpawn" Animation="JumpOff|18"/>
-            <Object Name="TriggerCameraStart" X="1616" Y="-396"/>
-            <Camera X="1816" Y="-96"/>
-            <Image X="2755" Y="-598" Width="841" Height="603" ClassName="v_black" NativeX="50" NativeY="50"/>
-            <Image X="0" Y="0" Width="3602" Height="497" ClassName="v_black" NativeX="50" NativeY="50"/>
-            <Platform X="0" Y="0" Width="3413" Height="415"/>
-            <Platform X="2755" Y="-1145" Width="830" Height="1145"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Image X="2534" Y="-377" Width="226" Height="460" ClassName="elevator" NativeX="226" NativeY="460" Type="3" Depth="0" AccelerationX="0" AccelerationY="0">
-                  <Properties>
-                    <Dynamic>
-                      <Transformation Name="Transform_idp490394368">
-                        <Move>
-                          <MoveInterval Number="1" FramesToMove="140" Delay="10.0">
-                            <Point Name="Start" X="0.0" Y="0.0"/>
-                            <Point Name="Support" Number="1" X="0.0" Y="-350.0"/>
-                            <Point Name="Finish" X="0.0" Y="-700.0"/>
-                          </MoveInterval>
-                        </Move>
-                      </Transformation>
-                    </Dynamic>
-                  </Properties>
-                </Image>
-                <Platform X="2531" Y="50" Width="227" Height="240" AccelerationX="0" AccelerationY="0">
-                  <Move>
-                    <MoveInterval Number="1" FramesToMove="150" Delay="0">
-                      <Point Name="Start" X="0.0" Y="0.0"/>
-                      <Point Name="Support" Number="1" X="0.0" Y="-375.0"/>
-                      <Point Name="Finish" X="0.0" Y="-750.0"/>
-                    </MoveInterval>
-                  </Move>
-                </Platform>
-                <Trigger Name="LiftTrigger" X="2529" Y="-377" Width="225" Height="375">
-                  <Properties>
-                    <Dynamic>
-                      <Transformation Name="Transform_idp490570368">
-                        <Move/>
-                      </Transformation>
-                    </Dynamic>
-                  </Properties>
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="0"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                      <SetVariable Name="ReqAnim" Value="StandAfterInhibition|WallCollisionFromRuntoStand|Stand|WallCollisionFromSlidetoStand|WallCollisionFromRoll41-42toStand"/>
-                    </Init>
-                    <Loop>
-                      <Events>
-                        <EventBlock Template="FreqUsed.Enter"/>
-                        <EventBlock Template="CommonLib.RequiredAnimation"/>
-                      </Events>
-                      <Conditions>
-                        <ConditionBlock Template="CommonLib.RequiredAnimation"/>
-                      </Conditions>
-                      <Actions>
-                        <ActionBlock Template="FreqUsed.SwitchOff"/>
-                        <Choose Order="Sync">
-                          <Transform Name="Transform_idp490394368"/>
-                          <Transform Name="Transform_idp490465024"/>
-                          <Transform Name="Transform_idp490570368"/>
-                        </Choose>
-                      </Actions>
-                    </Loop>
-                    <Transformation Name="Transform_idp490570368">
-                      <Move/>
-                    </Transformation>
-                  </Content>
-                </Trigger>
-                <Area Name="TriggerRunInhibition" X="2391" Y="-200" Width="373" Height="200" Type="Animation"/>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_techpark.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+		<City FileName="buildings_construction.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	</Models>
+	<Coins Value="30"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.1">
+			<Content>
+				<Object Name="Techpark_bg1" X="-500" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Banner_TP_building_2" X="1280" Y="-1675"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="empty_building" X="-115" Y="230" DeltaX="-115" DeltaY="230"/>
+						<Spawn X="1614" Y="-231" Name="DefaultSpawn" Animation="JumpOff|18"/>
+						<Object Name="TriggerCameraStart" X="1616" Y="-396"/>
+						<Camera X="1816" Y="-96"/>
+						<Image X="2755" Y="-598" Width="841" Height="603" ClassName="v_black" NativeX="50" NativeY="50"/>
+						<Image X="0" Y="0" Width="3602" Height="497" ClassName="v_black" NativeX="50" NativeY="50"/>
+						<Platform X="0" Y="0" Width="3413" Height="415"/>
+						<Platform X="2755" Y="-1145" Width="830" Height="1145"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Image X="2534" Y="-377" Width="226" Height="460" ClassName="elevator" NativeX="226" NativeY="460" Type="3" Depth="0" AccelerationX="0" AccelerationY="0">
+									<Properties>
+										<Dynamic>
+											<Transformation Name="Transform_idp490394368">
+												<Move>
+													<MoveInterval Number="1" FramesToMove="140" Delay="10.0">
+														<Point Name="Start" X="0.0" Y="0.0"/>
+														<Point Name="Support" Number="1" X="0.0" Y="-350.0"/>
+														<Point Name="Finish" X="0.0" Y="-700.0"/>
+													</MoveInterval>
+												</Move>
+											</Transformation>
+										</Dynamic>
+									</Properties>
+								</Image>
+								<Platform X="2531" Y="50" Width="227" Height="240" AccelerationX="0" AccelerationY="0">
+									<Move>
+										<MoveInterval Number="1" FramesToMove="150" Delay="0">
+											<Point Name="Start" X="0.0" Y="0.0"/>
+											<Point Name="Support" Number="1" X="0.0" Y="-375.0"/>
+											<Point Name="Finish" X="0.0" Y="-750.0"/>
+										</MoveInterval>
+									</Move>
+								</Platform>
+								<Trigger Name="LiftTrigger" X="2529" Y="-377" Width="225" Height="375">
+									<Properties>
+										<Dynamic>
+											<Transformation Name="Transform_idp490570368">
+												<Move/>
+											</Transformation>
+										</Dynamic>
+									</Properties>
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="0"/>
+											<SetVariable Name="$Node" Value="COM"/>
+											<SetVariable Name="ReqAnim" Value="StandAfterInhibition|WallCollisionFromRuntoStand|Stand|WallCollisionFromSlidetoStand|WallCollisionFromRoll41-42toStand"/>
+										</Init>
+										<Loop>
+											<Events>
+												<EventBlock Template="FreqUsed.Enter"/>
+												<EventBlock Template="CommonLib.RequiredAnimation"/>
+											</Events>
+											<Conditions>
+												<ConditionBlock Template="CommonLib.RequiredAnimation"/>
+											</Conditions>
+											<Actions>
+												<ActionBlock Template="FreqUsed.SwitchOff"/>
+												<Choose Order="Sync">
+													<Transform Name="Transform_idp490394368"/>
+													<Transform Name="Transform_idp490465024"/>
+													<Transform Name="Transform_idp490570368"/>
+												</Choose>
+											</Actions>
+										</Loop>
+										<Transformation Name="Transform_idp490570368">
+											<Move/>
+										</Transformation>
+									</Content>
+								</Trigger>
+								<Area Name="TriggerRunInhibition" X="2391" Y="-200" Width="373" Height="200" Type="Animation"/>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

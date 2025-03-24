@@ -1,176 +1,176 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-  </Models>
-  <Coins Value="50"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-        <Object Name="Background"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Building1" X="200" Y="-100"/>
-        <Object Name="Billboard" X="1995" Y="305"/>
-        <Object Name="Building2" X="3014" Y="-150"/>
-        <Object Name="Building3" X="4834" Y="350"/>
-        <Object Name="Billboard" X="6570" Y="235"/>
-        <Object Name="Building1" X="6842" Y="350"/>
-        <Object Name="Building3" X="8931" Y="350"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="MoveTest01" X="0" Y="0" DeltaX="0" DeltaY="0"/>
-            <Object Name="TrackStart" X="-345" Y="0"/>
-            <Object Name="MoveTestLift" X="6055" Y="-1460"/>
-            <Object X="0" Y="0">
-              <Content>
-                <Image X="4802" Y="-992" Width="370" Height="155" ClassName="v_black" NativeX="50" NativeY="50" Type="3" Depth="0"/>
-              </Content>
-            </Object>
-            <Object X="0" Y="0">
-              <Properties>
-                <Dynamic>
-                  <Transformation Name="Transform_idp490543744">
-                    <Move>
-                      <MoveInterval Number="1" FramesToMove="91" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="-455.0"/>
-                        <Point Name="Finish" X="0.0" Y="-910.0"/>
-                      </MoveInterval>
-                    </Move>
-                  </Transformation>
-                </Dynamic>
-              </Properties>
-              <Content>
-                <Move>
-                  <MoveInterval Number="1" FramesToMove="91" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="-455.0"/>
-                    <Point Name="Finish" X="0.0" Y="-910.0"/>
-                  </MoveInterval>
-                </Move>
-                <Image X="5445" Y="-965" Width="1400" Height="90" ClassName="v_black" NativeX="50" NativeY="50" Type="3" Depth="0"/>
-                <Platform X="5445" Y="-965" Width="1400" Height="90"/>
-                <Trigger Name="LiftMeUp" X="5745" Y="-1165" Width="100" Height="200">
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="-1"/>
-                      <SetVariable Name="$Node" Value="COM"/>
-                    </Init>
-                    <Loop>
-                      <Events>
-                        <EventBlock Template="FreqUsed.Enter"/>
-                      </Events>
-                      <Actions>
-                        <ActionBlock Template="FreqUsed.SwitchOff"/>
-                        <Transform Name="Transform_idp490543744"/>
-                      </Actions>
-                    </Loop>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-            <Object X="0" Y="0">
-              <Properties>
-                <Dynamic>
-                  <Transformation Name="Transform_idp490488960">
-                    <Move>
-                      <MoveInterval Number="1" FramesToMove="10" Delay="5.0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="40.0"/>
-                        <Point Name="Finish" X="0.0" Y="40.0"/>
-                      </MoveInterval>
-                      <MoveInterval Number="2" FramesToMove="10" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                        <Point Name="Finish" X="0.0" Y="-40.0"/>
-                      </MoveInterval>
-                      <MoveInterval Number="3" FramesToMove="5" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
-                        <Point Name="Finish" X="0.0" Y="-10.0"/>
-                      </MoveInterval>
-                      <MoveInterval Number="4" FramesToMove="8" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                        <Point Name="Finish" X="0.0" Y="8.0"/>
-                      </MoveInterval>
-                      <MoveInterval Number="5" FramesToMove="4" Delay="0">
-                        <Point Name="Start" X="0.0" Y="0.0"/>
-                        <Point Name="Support" Number="1" X="0.0" Y="2.0"/>
-                        <Point Name="Finish" X="0.0" Y="2.0"/>
-                      </MoveInterval>
-                    </Move>
-                  </Transformation>
-                </Dynamic>
-              </Properties>
-              <Content>
-                <Move>
-                  <MoveInterval Number="1" FramesToMove="10" Delay="5.0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="40.0"/>
-                    <Point Name="Finish" X="0.0" Y="40.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="2" FramesToMove="10" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                    <Point Name="Finish" X="0.0" Y="-40.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="3" FramesToMove="5" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
-                    <Point Name="Finish" X="0.0" Y="-10.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="4" FramesToMove="8" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="0.0"/>
-                    <Point Name="Finish" X="0.0" Y="8.0"/>
-                  </MoveInterval>
-                  <MoveInterval Number="5" FramesToMove="4" Delay="0">
-                    <Point Name="Start" X="0.0" Y="0.0"/>
-                    <Point Name="Support" Number="1" X="0.0" Y="2.0"/>
-                    <Point Name="Finish" X="0.0" Y="2.0"/>
-                  </MoveInterval>
-                </Move>
-                <Platform X="4802" Y="-997" Width="370" Height="160"/>
-                <Trigger Name="" X="4767" Y="-1002" Width="410" Height="165">
-                  <Content>
-                    <Init>
-                      <SetVariable Name="$Active" Value="1"/>
-                      <SetVariable Name="$AI" Value="-1"/>
-                      <SetVariable Name="$Node" Value="DetectorH"/>
-                    </Init>
-                    <Loop>
-                      <Events>
-                        <EventBlock Template="FreqUsed.Enter"/>
-                      </Events>
-                      <Actions>
-                        <ActionBlock Template="FreqUsed.SwitchOff"/>
-                        <Transform Name="Transform_idp490488960"/>
-                      </Actions>
-                    </Loop>
-                  </Content>
-                </Trigger>
-              </Content>
-            </Object>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="0" Respawns="Hunter|Helper|RevolutionGirl" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+	</Models>
+	<Coins Value="50"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05">
+			<Content>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+				<Object Name="Background"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Building1" X="200" Y="-100"/>
+				<Object Name="Billboard" X="1995" Y="305"/>
+				<Object Name="Building2" X="3014" Y="-150"/>
+				<Object Name="Building3" X="4834" Y="350"/>
+				<Object Name="Billboard" X="6570" Y="235"/>
+				<Object Name="Building1" X="6842" Y="350"/>
+				<Object Name="Building3" X="8931" Y="350"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="MoveTest01" X="0" Y="0" DeltaX="0" DeltaY="0"/>
+						<Object Name="TrackStart" X="-345" Y="0"/>
+						<Object Name="MoveTestLift" X="6055" Y="-1460"/>
+						<Object X="0" Y="0">
+							<Content>
+								<Image X="4802" Y="-992" Width="370" Height="155" ClassName="v_black" NativeX="50" NativeY="50" Type="3" Depth="0"/>
+							</Content>
+						</Object>
+						<Object X="0" Y="0">
+							<Properties>
+								<Dynamic>
+									<Transformation Name="Transform_idp490543744">
+										<Move>
+											<MoveInterval Number="1" FramesToMove="91" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="-455.0"/>
+												<Point Name="Finish" X="0.0" Y="-910.0"/>
+											</MoveInterval>
+										</Move>
+									</Transformation>
+								</Dynamic>
+							</Properties>
+							<Content>
+								<Move>
+									<MoveInterval Number="1" FramesToMove="91" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="-455.0"/>
+										<Point Name="Finish" X="0.0" Y="-910.0"/>
+									</MoveInterval>
+								</Move>
+								<Image X="5445" Y="-965" Width="1400" Height="90" ClassName="v_black" NativeX="50" NativeY="50" Type="3" Depth="0"/>
+								<Platform X="5445" Y="-965" Width="1400" Height="90"/>
+								<Trigger Name="LiftMeUp" X="5745" Y="-1165" Width="100" Height="200">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="-1"/>
+											<SetVariable Name="$Node" Value="COM"/>
+										</Init>
+										<Loop>
+											<Events>
+												<EventBlock Template="FreqUsed.Enter"/>
+											</Events>
+											<Actions>
+												<ActionBlock Template="FreqUsed.SwitchOff"/>
+												<Transform Name="Transform_idp490543744"/>
+											</Actions>
+										</Loop>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+						<Object X="0" Y="0">
+							<Properties>
+								<Dynamic>
+									<Transformation Name="Transform_idp490488960">
+										<Move>
+											<MoveInterval Number="1" FramesToMove="10" Delay="5.0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="40.0"/>
+												<Point Name="Finish" X="0.0" Y="40.0"/>
+											</MoveInterval>
+											<MoveInterval Number="2" FramesToMove="10" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+												<Point Name="Finish" X="0.0" Y="-40.0"/>
+											</MoveInterval>
+											<MoveInterval Number="3" FramesToMove="5" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
+												<Point Name="Finish" X="0.0" Y="-10.0"/>
+											</MoveInterval>
+											<MoveInterval Number="4" FramesToMove="8" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+												<Point Name="Finish" X="0.0" Y="8.0"/>
+											</MoveInterval>
+											<MoveInterval Number="5" FramesToMove="4" Delay="0">
+												<Point Name="Start" X="0.0" Y="0.0"/>
+												<Point Name="Support" Number="1" X="0.0" Y="2.0"/>
+												<Point Name="Finish" X="0.0" Y="2.0"/>
+											</MoveInterval>
+										</Move>
+									</Transformation>
+								</Dynamic>
+							</Properties>
+							<Content>
+								<Move>
+									<MoveInterval Number="1" FramesToMove="10" Delay="5.0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="40.0"/>
+										<Point Name="Finish" X="0.0" Y="40.0"/>
+									</MoveInterval>
+									<MoveInterval Number="2" FramesToMove="10" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+										<Point Name="Finish" X="0.0" Y="-40.0"/>
+									</MoveInterval>
+									<MoveInterval Number="3" FramesToMove="5" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="-10.0"/>
+										<Point Name="Finish" X="0.0" Y="-10.0"/>
+									</MoveInterval>
+									<MoveInterval Number="4" FramesToMove="8" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="0.0"/>
+										<Point Name="Finish" X="0.0" Y="8.0"/>
+									</MoveInterval>
+									<MoveInterval Number="5" FramesToMove="4" Delay="0">
+										<Point Name="Start" X="0.0" Y="0.0"/>
+										<Point Name="Support" Number="1" X="0.0" Y="2.0"/>
+										<Point Name="Finish" X="0.0" Y="2.0"/>
+									</MoveInterval>
+								</Move>
+								<Platform X="4802" Y="-997" Width="370" Height="160"/>
+								<Trigger Name="" X="4767" Y="-1002" Width="410" Height="165">
+									<Content>
+										<Init>
+											<SetVariable Name="$Active" Value="1"/>
+											<SetVariable Name="$AI" Value="-1"/>
+											<SetVariable Name="$Node" Value="DetectorH"/>
+										</Init>
+										<Loop>
+											<Events>
+												<EventBlock Template="FreqUsed.Enter"/>
+											</Events>
+											<Actions>
+												<ActionBlock Template="FreqUsed.SwitchOff"/>
+												<Transform Name="Transform_idp490488960"/>
+											</Actions>
+										</Loop>
+									</Content>
+								</Trigger>
+							</Content>
+						</Object>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

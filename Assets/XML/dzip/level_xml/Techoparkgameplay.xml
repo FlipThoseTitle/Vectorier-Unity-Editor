@@ -1,132 +1,132 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_techpark.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models>
-    <Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
-    <Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
-  </Models>
-  <Coins Value="30"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.1">
-      <Content>
-        <Object Name="Techpark_bg1" X="-500" Y="-500"/>
-        <Object Name="Techpark_bg1" X="1548" Y="-500"/>
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-        <Object Name="Banner_TP_building_1" X="130" Y="-725"/>
-        <Object Name="Banner_TP_building_2" X="1680" Y="-300"/>
-        <Object Name="Banner_TP_building_2" X="5035" Y="-370"/>
-        <Object Name="Banner_TP_building_1" X="7715" Y="-640"/>
-        <Object Name="Banner_TP_building_1" X="9370" Y="-960"/>
-        <Object Name="Banner_TP_building_2" X="11220" Y="-490"/>
-        <Object Name="Banner_TP_building_2" X="13545" Y="-410"/>
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="RoofTechGameplay_1" X="45" Y="260" DeltaX="50" DeltaY="305"/>
-            <Object Name="TrackStart" X="-275" Y="305"/>
-            <Object Name="TriggerZoom80" X="3860" Y="-975"/>
-            <Trigger Name="TriggerLoss" X="4020" Y="1110" Width="2110" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="RoofTechGameplay_2" X="5845" Y="-665" DeltaX="320" DeltaY="15"/>
-            <Object Name="TriggerZoomNormal" X="6225" Y="-1120"/>
-            <Object Name="TriggerZoomMin" X="9275" Y="-3990"/>
-            <Trigger Name="TriggerLoss" X="10055" Y="550" Width="5075" Height="100">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Time" Value="120"/>
-                  <SetVariable Name="Start" Value=""/>
-                  <SetVariable Name="ReversedStart" Value="0"/>
-                  <SetVariable Name="StartFrame" Value=""/>
-                  <SetVariable Name="End" Value=""/>
-                  <SetVariable Name="ReversedEnd" Value="0"/>
-                  <SetVariable Name="EndFrame" Value=""/>
-                  <SetVariable Name="$AI" Value="-1"/>
-                </Init>
-                <Template Name="TriggerLoss"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerZoom80" X="9225" Y="-30" Width="100" Height="1830">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="0.8"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-            <Trigger Name="TriggerZoomNormal" X="9335" Y="-450" Width="100" Height="445">
-              <Content>
-                <Init>
-                  <SetVariable Name="$Active" Value="1"/>
-                  <SetVariable Name="$Node" Value="COM"/>
-                  <SetVariable Name="Zoom" Value="1"/>
-                  <SetVariable Name="$AI" Value="0"/>
-                </Init>
-                <Template Name="CameraZoom"/>
-              </Content>
-            </Trigger>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="RoofTechGameplay_3" X="15030" Y="140" DeltaX="1330" DeltaY="175"/>
-            <Object Name="TriggerLoss" X="18200" Y="1145"/>
-            <Object Name="TriggerLoss" X="19140" Y="715"/>
-            <Object Name="TriggerZoomNormal" X="15445" Y="-1105"/>
-            <Object Name="TriggerZoom80" X="17145" Y="-780"/>
-            <Object Name="TriggerZoomNormal" X="18910" Y="-1290"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="RoofTechGameplay_4" X="19884" Y="262" DeltaX="484" DeltaY="17"/>
-            <Object Name="TriggerLoss" X="24400" Y="441"/>
-            <Object Name="TriggerZoom80" X="21445" Y="-1815"/>
-            <Object Name="TriggerZoomNormal" X="23765" Y="-1575"/>
-            <Object Name="TriggerZoomMin" X="24260" Y="-1780"/>
-          </Content>
-        </Object>
-        <Object X="0" Y="0">
-          <Content>
-            <Object Name="FinalRoofTechGameplay_5" X="25310" Y="1" DeltaX="811" DeltaY="299"/>
-            <Object Name="TriggerZoomNormal" X="25605" Y="-1575"/>
-          </Content>
-        </Object>
-      </Content>
-    </Object>
-  </Track>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_techpark.xml"/>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models>
+		<Model Name="Player" Type="1" Color="0" BirthSpawn="DefaultSpawn" AI="0" Time="0" Respawns="Hunter" ForceBlasts="Hunter" Trick="1" Item="1" Victory="1" Lose="1"/>
+		<Model Name="Hunter" Type="0" Color="0" BirthSpawn="DefaultSpawn" AI="1" Time="1.5" AllowedSpawns="Respawn" Skins="hunter" Murders="Player" Arrests="Player" Icon="1"/>
+	</Models>
+	<Coins Value="30"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.1">
+			<Content>
+				<Object Name="Techpark_bg1" X="-500" Y="-500"/>
+				<Object Name="Techpark_bg1" X="1548" Y="-500"/>
+			</Content>
+		</Object>
+		<Object Factor="0.5">
+			<Content>
+				<Object Name="Banner_TP_building_1" X="130" Y="-725"/>
+				<Object Name="Banner_TP_building_2" X="1680" Y="-300"/>
+				<Object Name="Banner_TP_building_2" X="5035" Y="-370"/>
+				<Object Name="Banner_TP_building_1" X="7715" Y="-640"/>
+				<Object Name="Banner_TP_building_1" X="9370" Y="-960"/>
+				<Object Name="Banner_TP_building_2" X="11220" Y="-490"/>
+				<Object Name="Banner_TP_building_2" X="13545" Y="-410"/>
+			</Content>
+		</Object>
+		<Object Factor="1">
+			<Content>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="RoofTechGameplay_1" X="45" Y="260" DeltaX="50" DeltaY="305"/>
+						<Object Name="TrackStart" X="-275" Y="305"/>
+						<Object Name="TriggerZoom80" X="3860" Y="-975"/>
+						<Trigger Name="TriggerLoss" X="4020" Y="1110" Width="2110" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="RoofTechGameplay_2" X="5845" Y="-665" DeltaX="320" DeltaY="15"/>
+						<Object Name="TriggerZoomNormal" X="6225" Y="-1120"/>
+						<Object Name="TriggerZoomMin" X="9275" Y="-3990"/>
+						<Trigger Name="TriggerLoss" X="10055" Y="550" Width="5075" Height="100">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Time" Value="120"/>
+									<SetVariable Name="Start" Value=""/>
+									<SetVariable Name="ReversedStart" Value="0"/>
+									<SetVariable Name="StartFrame" Value=""/>
+									<SetVariable Name="End" Value=""/>
+									<SetVariable Name="ReversedEnd" Value="0"/>
+									<SetVariable Name="EndFrame" Value=""/>
+									<SetVariable Name="$AI" Value="-1"/>
+								</Init>
+								<Template Name="TriggerLoss"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerZoom80" X="9225" Y="-30" Width="100" Height="1830">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="0.8"/>
+									<SetVariable Name="$AI" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+						<Trigger Name="TriggerZoomNormal" X="9335" Y="-450" Width="100" Height="445">
+							<Content>
+								<Init>
+									<SetVariable Name="$Active" Value="1"/>
+									<SetVariable Name="$Node" Value="COM"/>
+									<SetVariable Name="Zoom" Value="1"/>
+									<SetVariable Name="$AI" Value="0"/>
+								</Init>
+								<Template Name="CameraZoom"/>
+							</Content>
+						</Trigger>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="RoofTechGameplay_3" X="15030" Y="140" DeltaX="1330" DeltaY="175"/>
+						<Object Name="TriggerLoss" X="18200" Y="1145"/>
+						<Object Name="TriggerLoss" X="19140" Y="715"/>
+						<Object Name="TriggerZoomNormal" X="15445" Y="-1105"/>
+						<Object Name="TriggerZoom80" X="17145" Y="-780"/>
+						<Object Name="TriggerZoomNormal" X="18910" Y="-1290"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="RoofTechGameplay_4" X="19884" Y="262" DeltaX="484" DeltaY="17"/>
+						<Object Name="TriggerLoss" X="24400" Y="441"/>
+						<Object Name="TriggerZoom80" X="21445" Y="-1815"/>
+						<Object Name="TriggerZoomNormal" X="23765" Y="-1575"/>
+						<Object Name="TriggerZoomMin" X="24260" Y="-1780"/>
+					</Content>
+				</Object>
+				<Object X="0" Y="0">
+					<Content>
+						<Object Name="FinalRoofTechGameplay_5" X="25310" Y="1" DeltaX="811" DeltaY="299"/>
+						<Object Name="TriggerZoomNormal" X="25605" Y="-1575"/>
+					</Content>
+				</Object>
+			</Content>
+		</Object>
+	</Track>
 </Root>

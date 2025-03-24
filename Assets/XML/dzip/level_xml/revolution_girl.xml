@@ -1,135 +1,135 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <MacroNode1 Type="MacroNode"  X="751.30712890625"  Y="119.833824157715"  Z="-8.93469142913818"  Mass="0.0662826374173164"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NNeck"  ChildNode2="NChestS_2"  ChildNode3="NChestS_1"  ChildNode4="NChestF"  LCC1="0.168746948242188"  LCC2="-0.816790163516998"  LCC3="0.301019489765167"  LCC4="1.34702372550964" />
-    <MacroNode2 Type="MacroNode"  X="754.525207519531"  Y="120.153961181641"  Z="11.0164241790771"  Mass="0.069730706512928"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NNeck"  ChildNode2="NChestS_2"  ChildNode3="NChestS_1"  ChildNode4="NChestF"  LCC1="0.107374787330627"  LCC2="0.398323506116867"  LCC3="-0.797500550746918"  LCC4="1.29180228710175" />
-    <MacroNode3 Type="MacroNode"  X="748.913452148438"  Y="136.772247314453"  Z="0.466767549514771"  Mass="0.0922589302062988"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NNeck"  ChildNode2="NChestS_2"  ChildNode3="NChestS_1"  ChildNode4="NChestF"  LCC1="1.053386926651"  LCC2="-0.31690314412117"  LCC3="-0.328838020563126"  LCC4="0.592354118824005" />
-    <MacroNode4 Type="MacroNode"  X="753.62158203125"  Y="119.756568908691"  Z="-10.3456764221191"  Mass="0.0836458578705788"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NNeck"  ChildNode2="NChestS_2"  ChildNode3="NChestS_1"  ChildNode4="NChestF"  LCC1="0.0882223844528198"  LCC2="-0.72605836391449"  LCC3="0.512845456600189"  LCC4="1.12499058246613" />
-    <MacroNode5 Type="MacroNode"  X="756.812805175781"  Y="121.677299499512"  Z="12.6275720596313"  Mass="0.0849421322345734"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NNeck"  ChildNode2="NChestS_2"  ChildNode3="NChestS_1"  ChildNode4="NChestF"  LCC1="0.105536341667175"  LCC2="0.647586464881897"  LCC3="-0.762690782546997"  LCC4="1.00956797599792" />
-    <MacroNode7 Type="MacroNode"  X="759.656372070313"  Y="166.900726318359"  Z="9.01770496368408"  Mass="0.0133215393871069"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.672618746757507"  LCC2="1.12562310695648"  LCC3="0.127186745405197"  LCC4="-0.925428628921509" />
-    <MacroNode8 Type="MacroNode"  X="753.398620605469"  Y="171.847763061523"  Z="-8.57333469390869"  Mass="0.0246624443680048"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.873735547065735"  LCC2="-0.364535987377167"  LCC3="0.678204417228699"  LCC4="-0.187403947114944" />
-    <MacroNode9 Type="MacroNode"  X="759.536254882813"  Y="168.227767944336"  Z="-7.93379974365234"  Mass="0.0136899929493666"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.696092307567596"  LCC2="0.138447672128677"  LCC3="1.08270406723022"  LCC4="-0.917244017124176" />
-    <MacroNode10 Type="MacroNode"  X="746.0390625"  Y="173.372772216797"  Z="0.0240188017487526"  Mass="0.0213537942618132"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.954990684986115"  LCC2="-0.351427376270294"  LCC3="-0.276506304740906"  LCC4="0.672942936420441" />
-    <MacroNode11 Type="MacroNode"  X="749.63037109375"  Y="175.550384521484"  Z="0.0242975689470768"  Mass="0.0245594251900911"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="1.09433948993683"  LCC2="-0.231491401791573"  LCC3="-0.145164236426353"  LCC4="0.282316237688065" />
-    <MacroNode12 Type="MacroNode"  X="757.233154296875"  Y="155.794021606445"  Z="-0.927164614200592"  Mass="0.0167219173163176"  Fixed="0"  Visible="1"  NodesCount="3"  ChildNode1="NHeadS_2"  ChildNode2="NHeadS_1"  ChildNode3="NHeadF"  LCC1="0.842330634593964"  LCC2="0.911937415599823"  LCC3="-0.754268050193787" />
-    <MacroNode13 Type="MacroNode"  X="764.403930664063"  Y="169.1455078125"  Z="0.0275058746337891"  Mass="0.00823414698243141"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.793439507484436"  LCC2="0.812013626098633"  LCC3="0.850758790969849"  LCC4="-1.45621192455292" />
-    <MacroNode14 Type="MacroNode"  X="764.316772460938"  Y="159.263778686523"  Z="0.028816431760788"  Mass="0.00686639687046409"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.230796456336975"  LCC2="1.16104686260223"  LCC3="1.13905394077301"  LCC4="-1.53089725971222" />
-    <MacroNode15 Type="MacroNode"  X="760.273376464844"  Y="152.593475341797"  Z="0.0290690213441849"  Mass="0.00892836134880781"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="-0.166132092475891"  LCC2="1.17706704139709"  LCC3="1.11628174781799"  LCC4="-1.1272166967392" />
-    <MacroNode16 Type="MacroNode"  X="766.671752929688"  Y="161.744293212891"  Z="0.0288596451282501"  Mass="0.00557389901950955"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.382065534591675"  LCC2="1.20201277732849"  LCC3="1.19397389888763"  LCC4="-1.7780522108078" />
-    <MacroNode17 Type="MacroNode"  X="766.122680664063"  Y="159.140747070313"  Z="0.0291204750537872"  Mass="0.00556185375899076"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.231563329696655"  LCC2="1.26497149467468"  LCC3="1.24122154712677"  LCC4="-1.73775637149811" />
-    <MacroNode18 Type="MacroNode"  X="753.290893554688"  Y="170.916732788086"  Z="9.01619243621826"  Mass="0.0262357369065285"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.873753190040588"  LCC2="0.631031572818756"  LCC3="-0.339179456233978"  LCC4="-0.165605336427689" />
-    <MacroNode19 Type="MacroNode"  X="756.458557128906"  Y="174.192474365234"  Z="-0.929620325565338"  Mass="0.0226096380501986"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="1.04353809356689"  LCC2="0.14085379242897"  LCC3="0.324050545692444"  LCC4="-0.508442401885986" />
-    <MacroNode20 Type="MacroNode"  X="764.404418945313"  Y="162.337905883789"  Z="0.0282438099384308"  Mass="0.00736205885186791"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.406090021133423"  LCC2="1.05579149723053"  LCC3="1.05268013477325"  LCC4="-1.51456165313721" />
-    <MacroNode21 Type="MacroNode"  X="760.16552734375"  Y="159.132034301758"  Z="-7.42612886428833"  Mass="0.0106427725404501"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.182791829109192"  LCC2="0.526692152023315"  LCC3="1.35686433315277"  LCC4="-1.06634831428528" />
-    <MacroNode22 Type="MacroNode"  X="762.42822265625"  Y="158.717178344727"  Z="7.89180660247803"  Mass="0.00793439149856567"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.215471506118774"  LCC2="1.50935590267181"  LCC3="0.587705612182617"  LCC4="-1.31253302097321" />
-    <MacroNode23 Type="MacroNode"  X="768.400512695313"  Y="162.419464111328"  Z="0.0283529758453369"  Mass="0.00471388315781951"  Fixed="0"  Visible="1"  NodesCount="4"  ChildNode1="NTop"  ChildNode2="NHeadS_2"  ChildNode3="NHeadS_1"  ChildNode4="NHeadF"  LCC1="0.427915334701538"  LCC2="1.27307856082916"  LCC3="1.2683140039444"  LCC4="-1.9693078994751" />
-  </Nodes>
-  <Edges>
-    <Edge2 Type="Edge"  Length="20.4656429290771"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="MacroNode2"  End2="MacroNode3" />
-    <Edge3 Type="Edge"  Length="19.5190677642822"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="MacroNode3"  End2="MacroNode1" />
-    <Edge4 Type="Edge"  Length="23.2044048309326"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="MacroNode4"  End2="MacroNode5" />
-  </Edges>
-  <Figures>
-    <Capsule_EToe_2 Type="Capsule"  Edge="EToe_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0.200000002980232"  Margin2="0" />
-    <Capsule_EFoot_2 Type="Capsule"  Edge="EFoot_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Triangle-38 Type="Triangle"  Shading="0"  Node1="NHeel_2"  Node2="NAnkle_2"  Node3="NToe_2" />
-    <Capsule_EHeep_2 Type="Capsule"  Edge="EHeep_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToeS_2 Type="Capsule"  Edge="EToeS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0.200000002980232"  Margin2="0" />
-    <Capsule_EFootS_2 Type="Capsule"  Edge="EFootS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstep_2 Type="Capsule"  Edge="EInstep_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToeC_2 Type="Capsule"  Edge="EToeC_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstepS_2 Type="Capsule"  Edge="EInstepS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_ECalf_2 Type="Capsule"  Edge="ECalf_2"  Radius1="5"  Radius2="5"  Margin1="-0.0500000007450581"  Margin2="0.600000023841858" />
-    <Capsule_EToeS_1 Type="Capsule"  Edge="EToeS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0.200000002980232"  Margin2="0" />
-    <Capsule_EToeC_1 Type="Capsule"  Edge="EToeC_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EToe_1 Type="Capsule"  Edge="EToe_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0.200000002980232" />
-    <Capsule_EInstepS_1 Type="Capsule"  Edge="EInstepS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule-1_ECalf_1 Type="Capsule"  Edge="ECalf_1"  Radius1="7"  Radius2="7"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EThigh_1 Type="Capsule"  Edge="EThigh_1"  Radius1="9"  Radius2="9"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EFootS_1 Type="Capsule"  Edge="EFootS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EInstep_1 Type="Capsule"  Edge="EInstep_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_ECalf_1 Type="Capsule"  Edge="ECalf_1"  Radius1="5"  Radius2="5"  Margin1="-0.0500000007450581"  Margin2="0.600000023841858" />
-    <Capsule_EFoot_1 Type="Capsule"  Edge="EFoot_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Triangle-37 Type="Triangle"  Shading="0"  Node1="NHeel_1"  Node2="NToe_1"  Node3="NAnkle_1" />
-    <Capsule-1_ECalf_2 Type="Capsule"  Edge="ECalf_2"  Radius1="7"  Radius2="7"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EHeel_1 Type="Capsule"  Edge="EHeel_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule-1_EThigh_1 Type="Capsule"  Edge="EThigh_1"  Radius1="11"  Radius2="11"  Margin1="0.400000005960464"  Margin2="0" />
-    <Capsule_EHandC_1 Type="Capsule"  Edge="EHandC_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EThigh_2 Type="Capsule"  Edge="EThigh_2"  Radius1="9"  Radius2="9"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule_EFingers_1 Type="Capsule"  Edge="EFingers_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle117 Type="Capsule"  Edge="Muscle117"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0" />
-    <Capsule_EHand_1 Type="Capsule"  Edge="EHand_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFingersS_1 Type="Capsule"  Edge="EFingersS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandS_1 Type="Capsule"  Edge="EHandS_1"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle115 Type="Capsule"  Edge="Muscle115"  Radius1="8"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Capsule_Muscle116 Type="Capsule"  Edge="Muscle116"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0" />
-    <Capsule-1_EArm_1 Type="Capsule"  Edge="EArm_1"  Radius1="8"  Radius2="8"  Margin1="0.5"  Margin2="0" />
-    <Capsule_Edge3 Type="Capsule"  Edge="Edge3"  Radius1="4"  Radius2="4"  Margin1="0"  Margin2="0" />
-    <Capsule_EGroin Type="Capsule"  Edge="EGroin"  Radius1="14"  Radius2="14"  Margin1="0"  Margin2="0" />
-    <Capsule_EClavicle_1 Type="Capsule"  Edge="EClavicle_1"  Radius1="8"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Capsule_EPelvisM Type="Capsule"  Edge="EPelvisM"  Radius1="12"  Radius2="12"  Margin1="0"  Margin2="0" />
-    <Capsule_EForearm_1 Type="Capsule"  Edge="EForearm_1"  Radius1="4"  Radius2="4"  Margin1="0"  Margin2="0.600000023841858" />
-    <Capsule-1_EThigh_2 Type="Capsule"  Edge="EThigh_2"  Radius1="11"  Radius2="11"  Margin1="0.400000005960464"  Margin2="0" />
-    <Capsule_Edge4 Type="Capsule"  Edge="Edge4"  Radius1="8"  Radius2="8"  Margin1="0.300000011920929"  Margin2="0.300000011920929" />
-    <Capsule_EStomach Type="Capsule"  Edge="EStomach"  Radius1="10"  Radius2="10"  Margin1="0"  Margin2="0" />
-    <Triangle-28 Type="Triangle"  Shading="0"  Node1="NHeadS_1"  Node2="MacroNode21"  Node3="MacroNode9" />
-    <Capsule_EChest Type="Capsule"  Edge="EChest"  Radius1="11"  Radius2="11"  Margin1="0.200000002980232"  Margin2="0" />
-    <Capsule_ENeck Type="Capsule"  Edge="ENeck"  Radius1="5"  Radius2="5"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge2 Type="Capsule"  Edge="Edge2"  Radius1="4"  Radius2="4"  Margin1="0"  Margin2="0" />
-    <Triangle-11 Type="Triangle"  Shading="0"  Node1="MacroNode9"  Node2="MacroNode8"  Node3="MacroNode19" />
-    <Capsule_Muscle120 Type="Capsule"  Edge="Muscle120"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0" />
-    <Triangle-9 Type="Triangle"  Shading="0"  Node1="MacroNode10"  Node2="MacroNode11"  Node3="MacroNode8" />
-    <Triangle-15 Type="Triangle"  Shading="0"  Node1="MacroNode20"  Node2="MacroNode21"  Node3="MacroNode9" />
-    <Capsule_EHead Type="Capsule"  Edge="EHead"  Radius1="11"  Radius2="11"  Margin1="0"  Margin2="0.550000011920929" />
-    <Triangle-10 Type="Triangle"  Shading="0"  Node1="MacroNode8"  Node2="MacroNode11"  Node3="MacroNode19" />
-    <Triangle-17 Type="Triangle"  Shading="0"  Node1="MacroNode15"  Node2="MacroNode21"  Node3="MacroNode14" />
-    <Triangle-1 Type="Triangle"  Shading="0"  Node1="MacroNode12"  Node2="MacroNode11"  Node3="MacroNode10" />
-    <Capsule-1_EForearm_1 Type="Capsule"  Edge="EForearm_1"  Radius1="6"  Radius2="6"  Margin1="0.5"  Margin2="0" />
-    <Triangle-16 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode20"  Node3="MacroNode21" />
-    <Triangle-4 Type="Triangle"  Shading="0"  Node1="MacroNode15"  Node2="MacroNode14"  Node3="MacroNode10" />
-    <Triangle-2 Type="Triangle"  Shading="0"  Node1="MacroNode10"  Node2="MacroNode11"  Node3="MacroNode19" />
-    <Capsule_Muscle119 Type="Capsule"  Edge="Muscle119"  Radius1="7"  Radius2="7"  Margin1="0"  Margin2="0" />
-    <Triangle-13 Type="Triangle"  Shading="0"  Node1="MacroNode13"  Node2="MacroNode19"  Node3="MacroNode9" />
-    <Triangle-5 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode10"  Node3="MacroNode11" />
-    <Capsule_EArm_1 Type="Capsule"  Edge="EArm_1"  Radius1="6"  Radius2="6"  Margin1="0"  Margin2="0.699999988079071" />
-    <Triangle-14 Type="Triangle"  Shading="0"  Node1="MacroNode9"  Node2="MacroNode13"  Node3="MacroNode20" />
-    <Triangle-6 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode19"  Node3="MacroNode11" />
-    <Capsule_EClavicle_2 Type="Capsule"  Edge="EClavicle_2"  Radius1="9"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Triangle-12 Type="Triangle"  Shading="0"  Node1="MacroNode7"  Node2="MacroNode19"  Node3="MacroNode9" />
-    <Triangle-18 Type="Triangle"  Shading="0"  Node1="MacroNode10"  Node2="MacroNode11"  Node3="MacroNode18" />
-    <Triangle-3 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode13"  Node3="MacroNode19" />
-    <Triangle-7 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode17"  Node3="MacroNode16" />
-    <Triangle-8 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode16"  Node3="MacroNode20" />
-    <Triangle-25 Type="Triangle"  Shading="0"  Node1="MacroNode15"  Node2="MacroNode14"  Node3="MacroNode22" />
-    <Triangle-19 Type="Triangle"  Shading="0"  Node1="MacroNode18"  Node2="MacroNode19"  Node3="MacroNode11" />
-    <Triangle-29 Type="Triangle"  Shading="0"  Node1="MacroNode23"  Node2="MacroNode17"  Node3="MacroNode16" />
-    <Triangle-24 Type="Triangle"  Shading="0"  Node1="MacroNode14"  Node2="MacroNode20"  Node3="MacroNode22" />
-    <Triangle-20 Type="Triangle"  Shading="0"  Node1="MacroNode18"  Node2="MacroNode19"  Node3="MacroNode13" />
-    <Triangle-23 Type="Triangle"  Shading="0"  Node1="MacroNode13"  Node2="MacroNode20"  Node3="MacroNode22" />
-    <Capsule_Muscle118 Type="Capsule"  Edge="Muscle118"  Radius1="8"  Radius2="8"  Margin1="0"  Margin2="0" />
-    <Triangle-27 Type="Triangle"  Shading="0"  Node1="NHeadS_2"  Node2="MacroNode22"  Node3="MacroNode7" />
-    <Triangle-22 Type="Triangle"  Shading="0"  Node1="MacroNode22"  Node2="MacroNode13"  Node3="MacroNode7" />
-    <Triangle-21 Type="Triangle"  Shading="0"  Node1="MacroNode13"  Node2="MacroNode7"  Node3="MacroNode18" />
-    <Triangle-26 Type="Triangle"  Shading="0"  Node1="MacroNode22"  Node2="MacroNode7"  Node3="MacroNode18" />
-    <Capsule-1_EArm_2 Type="Capsule"  Edge="EArm_2"  Radius1="8"  Radius2="8"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EArm_2 Type="Capsule"  Edge="EArm_2"  Radius1="6"  Radius2="6"  Margin1="0"  Margin2="0.699999988079071" />
-    <Capsule-1_EForearm_2 Type="Capsule"  Edge="EForearm_2"  Radius1="6"  Radius2="6"  Margin1="0.5"  Margin2="0" />
-    <Capsule_EForearm_2 Type="Capsule"  Edge="EForearm_2"  Radius1="4"  Radius2="4"  Margin1="0"  Margin2="0.600000023841858" />
-    <Capsule_EHand_2 Type="Capsule"  Edge="EHand_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandS_2 Type="Capsule"  Edge="EHandS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFingers_2 Type="Capsule"  Edge="EFingers_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EHandC_2 Type="Capsule"  Edge="EHandC_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    <Capsule_EFingersS_2 Type="Capsule"  Edge="EFingersS_2"  Radius1="3.5"  Radius2="3.5"  Margin1="0"  Margin2="0" />
-    </Figures>
-  <GroupsOfSelection>
-    <SG-1/>
-    <SG-2/>
-    <SG-3/>
-    <SG-4/>
-    <SG-5/>
-    <SG-6/>
-    <SG-7/>
-    <SG-8/>
-    <SG-9/>
-  </GroupsOfSelection>
+	<Nodes>
+		<MacroNode1 Type="MacroNode" X="751.30712890625" Y="119.833824157715" Z="-8.93469142913818" Mass="0.0662826374173164" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NNeck" ChildNode2="NChestS_2" ChildNode3="NChestS_1" ChildNode4="NChestF" LCC1="0.168746948242188" LCC2="-0.816790163516998" LCC3="0.301019489765167" LCC4="1.34702372550964"/>
+		<MacroNode2 Type="MacroNode" X="754.525207519531" Y="120.153961181641" Z="11.0164241790771" Mass="0.069730706512928" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NNeck" ChildNode2="NChestS_2" ChildNode3="NChestS_1" ChildNode4="NChestF" LCC1="0.107374787330627" LCC2="0.398323506116867" LCC3="-0.797500550746918" LCC4="1.29180228710175"/>
+		<MacroNode3 Type="MacroNode" X="748.913452148438" Y="136.772247314453" Z="0.466767549514771" Mass="0.0922589302062988" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NNeck" ChildNode2="NChestS_2" ChildNode3="NChestS_1" ChildNode4="NChestF" LCC1="1.053386926651" LCC2="-0.31690314412117" LCC3="-0.328838020563126" LCC4="0.592354118824005"/>
+		<MacroNode4 Type="MacroNode" X="753.62158203125" Y="119.756568908691" Z="-10.3456764221191" Mass="0.0836458578705788" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NNeck" ChildNode2="NChestS_2" ChildNode3="NChestS_1" ChildNode4="NChestF" LCC1="0.0882223844528198" LCC2="-0.72605836391449" LCC3="0.512845456600189" LCC4="1.12499058246613"/>
+		<MacroNode5 Type="MacroNode" X="756.812805175781" Y="121.677299499512" Z="12.6275720596313" Mass="0.0849421322345734" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NNeck" ChildNode2="NChestS_2" ChildNode3="NChestS_1" ChildNode4="NChestF" LCC1="0.105536341667175" LCC2="0.647586464881897" LCC3="-0.762690782546997" LCC4="1.00956797599792"/>
+		<MacroNode7 Type="MacroNode" X="759.656372070313" Y="166.900726318359" Z="9.01770496368408" Mass="0.0133215393871069" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.672618746757507" LCC2="1.12562310695648" LCC3="0.127186745405197" LCC4="-0.925428628921509"/>
+		<MacroNode8 Type="MacroNode" X="753.398620605469" Y="171.847763061523" Z="-8.57333469390869" Mass="0.0246624443680048" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.873735547065735" LCC2="-0.364535987377167" LCC3="0.678204417228699" LCC4="-0.187403947114944"/>
+		<MacroNode9 Type="MacroNode" X="759.536254882813" Y="168.227767944336" Z="-7.93379974365234" Mass="0.0136899929493666" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.696092307567596" LCC2="0.138447672128677" LCC3="1.08270406723022" LCC4="-0.917244017124176"/>
+		<MacroNode10 Type="MacroNode" X="746.0390625" Y="173.372772216797" Z="0.0240188017487526" Mass="0.0213537942618132" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.954990684986115" LCC2="-0.351427376270294" LCC3="-0.276506304740906" LCC4="0.672942936420441"/>
+		<MacroNode11 Type="MacroNode" X="749.63037109375" Y="175.550384521484" Z="0.0242975689470768" Mass="0.0245594251900911" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.09433948993683" LCC2="-0.231491401791573" LCC3="-0.145164236426353" LCC4="0.282316237688065"/>
+		<MacroNode12 Type="MacroNode" X="757.233154296875" Y="155.794021606445" Z="-0.927164614200592" Mass="0.0167219173163176" Fixed="0" Visible="1" NodesCount="3" ChildNode1="NHeadS_2" ChildNode2="NHeadS_1" ChildNode3="NHeadF" LCC1="0.842330634593964" LCC2="0.911937415599823" LCC3="-0.754268050193787"/>
+		<MacroNode13 Type="MacroNode" X="764.403930664063" Y="169.1455078125" Z="0.0275058746337891" Mass="0.00823414698243141" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.793439507484436" LCC2="0.812013626098633" LCC3="0.850758790969849" LCC4="-1.45621192455292"/>
+		<MacroNode14 Type="MacroNode" X="764.316772460938" Y="159.263778686523" Z="0.028816431760788" Mass="0.00686639687046409" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.230796456336975" LCC2="1.16104686260223" LCC3="1.13905394077301" LCC4="-1.53089725971222"/>
+		<MacroNode15 Type="MacroNode" X="760.273376464844" Y="152.593475341797" Z="0.0290690213441849" Mass="0.00892836134880781" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="-0.166132092475891" LCC2="1.17706704139709" LCC3="1.11628174781799" LCC4="-1.1272166967392"/>
+		<MacroNode16 Type="MacroNode" X="766.671752929688" Y="161.744293212891" Z="0.0288596451282501" Mass="0.00557389901950955" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.382065534591675" LCC2="1.20201277732849" LCC3="1.19397389888763" LCC4="-1.7780522108078"/>
+		<MacroNode17 Type="MacroNode" X="766.122680664063" Y="159.140747070313" Z="0.0291204750537872" Mass="0.00556185375899076" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.231563329696655" LCC2="1.26497149467468" LCC3="1.24122154712677" LCC4="-1.73775637149811"/>
+		<MacroNode18 Type="MacroNode" X="753.290893554688" Y="170.916732788086" Z="9.01619243621826" Mass="0.0262357369065285" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.873753190040588" LCC2="0.631031572818756" LCC3="-0.339179456233978" LCC4="-0.165605336427689"/>
+		<MacroNode19 Type="MacroNode" X="756.458557128906" Y="174.192474365234" Z="-0.929620325565338" Mass="0.0226096380501986" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="1.04353809356689" LCC2="0.14085379242897" LCC3="0.324050545692444" LCC4="-0.508442401885986"/>
+		<MacroNode20 Type="MacroNode" X="764.404418945313" Y="162.337905883789" Z="0.0282438099384308" Mass="0.00736205885186791" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.406090021133423" LCC2="1.05579149723053" LCC3="1.05268013477325" LCC4="-1.51456165313721"/>
+		<MacroNode21 Type="MacroNode" X="760.16552734375" Y="159.132034301758" Z="-7.42612886428833" Mass="0.0106427725404501" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.182791829109192" LCC2="0.526692152023315" LCC3="1.35686433315277" LCC4="-1.06634831428528"/>
+		<MacroNode22 Type="MacroNode" X="762.42822265625" Y="158.717178344727" Z="7.89180660247803" Mass="0.00793439149856567" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.215471506118774" LCC2="1.50935590267181" LCC3="0.587705612182617" LCC4="-1.31253302097321"/>
+		<MacroNode23 Type="MacroNode" X="768.400512695313" Y="162.419464111328" Z="0.0283529758453369" Mass="0.00471388315781951" Fixed="0" Visible="1" NodesCount="4" ChildNode1="NTop" ChildNode2="NHeadS_2" ChildNode3="NHeadS_1" ChildNode4="NHeadF" LCC1="0.427915334701538" LCC2="1.27307856082916" LCC3="1.2683140039444" LCC4="-1.9693078994751"/>
+	</Nodes>
+	<Edges>
+		<Edge2 Type="Edge" Length="20.4656429290771" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="MacroNode2" End2="MacroNode3"/>
+		<Edge3 Type="Edge" Length="19.5190677642822" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="MacroNode3" End2="MacroNode1"/>
+		<Edge4 Type="Edge" Length="23.2044048309326" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="MacroNode4" End2="MacroNode5"/>
+	</Edges>
+	<Figures>
+		<Capsule_EToe_2 Type="Capsule" Edge="EToe_2" Radius1="3.5" Radius2="3.5" Margin1="0.200000002980232" Margin2="0"/>
+		<Capsule_EFoot_2 Type="Capsule" Edge="EFoot_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Triangle-38 Type="Triangle" Shading="0" Node1="NHeel_2" Node2="NAnkle_2" Node3="NToe_2"/>
+		<Capsule_EHeep_2 Type="Capsule" Edge="EHeep_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToeS_2 Type="Capsule" Edge="EToeS_2" Radius1="3.5" Radius2="3.5" Margin1="0.200000002980232" Margin2="0"/>
+		<Capsule_EFootS_2 Type="Capsule" Edge="EFootS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstep_2 Type="Capsule" Edge="EInstep_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToeC_2 Type="Capsule" Edge="EToeC_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstepS_2 Type="Capsule" Edge="EInstepS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_ECalf_2 Type="Capsule" Edge="ECalf_2" Radius1="5" Radius2="5" Margin1="-0.0500000007450581" Margin2="0.600000023841858"/>
+		<Capsule_EToeS_1 Type="Capsule" Edge="EToeS_1" Radius1="3.5" Radius2="3.5" Margin1="0.200000002980232" Margin2="0"/>
+		<Capsule_EToeC_1 Type="Capsule" Edge="EToeC_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EToe_1 Type="Capsule" Edge="EToe_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0.200000002980232"/>
+		<Capsule_EInstepS_1 Type="Capsule" Edge="EInstepS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule-1_ECalf_1 Type="Capsule" Edge="ECalf_1" Radius1="7" Radius2="7" Margin1="0.5" Margin2="0"/>
+		<Capsule_EThigh_1 Type="Capsule" Edge="EThigh_1" Radius1="9" Radius2="9" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EFootS_1 Type="Capsule" Edge="EFootS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EInstep_1 Type="Capsule" Edge="EInstep_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_ECalf_1 Type="Capsule" Edge="ECalf_1" Radius1="5" Radius2="5" Margin1="-0.0500000007450581" Margin2="0.600000023841858"/>
+		<Capsule_EFoot_1 Type="Capsule" Edge="EFoot_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Triangle-37 Type="Triangle" Shading="0" Node1="NHeel_1" Node2="NToe_1" Node3="NAnkle_1"/>
+		<Capsule-1_ECalf_2 Type="Capsule" Edge="ECalf_2" Radius1="7" Radius2="7" Margin1="0.5" Margin2="0"/>
+		<Capsule_EHeel_1 Type="Capsule" Edge="EHeel_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule-1_EThigh_1 Type="Capsule" Edge="EThigh_1" Radius1="11" Radius2="11" Margin1="0.400000005960464" Margin2="0"/>
+		<Capsule_EHandC_1 Type="Capsule" Edge="EHandC_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EThigh_2 Type="Capsule" Edge="EThigh_2" Radius1="9" Radius2="9" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule_EFingers_1 Type="Capsule" Edge="EFingers_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle117 Type="Capsule" Edge="Muscle117" Radius1="7" Radius2="7" Margin1="0" Margin2="0"/>
+		<Capsule_EHand_1 Type="Capsule" Edge="EHand_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFingersS_1 Type="Capsule" Edge="EFingersS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandS_1 Type="Capsule" Edge="EHandS_1" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle115 Type="Capsule" Edge="Muscle115" Radius1="8" Radius2="8" Margin1="0" Margin2="0"/>
+		<Capsule_Muscle116 Type="Capsule" Edge="Muscle116" Radius1="7" Radius2="7" Margin1="0" Margin2="0"/>
+		<Capsule-1_EArm_1 Type="Capsule" Edge="EArm_1" Radius1="8" Radius2="8" Margin1="0.5" Margin2="0"/>
+		<Capsule_Edge3 Type="Capsule" Edge="Edge3" Radius1="4" Radius2="4" Margin1="0" Margin2="0"/>
+		<Capsule_EGroin Type="Capsule" Edge="EGroin" Radius1="14" Radius2="14" Margin1="0" Margin2="0"/>
+		<Capsule_EClavicle_1 Type="Capsule" Edge="EClavicle_1" Radius1="8" Radius2="8" Margin1="0" Margin2="0"/>
+		<Capsule_EPelvisM Type="Capsule" Edge="EPelvisM" Radius1="12" Radius2="12" Margin1="0" Margin2="0"/>
+		<Capsule_EForearm_1 Type="Capsule" Edge="EForearm_1" Radius1="4" Radius2="4" Margin1="0" Margin2="0.600000023841858"/>
+		<Capsule-1_EThigh_2 Type="Capsule" Edge="EThigh_2" Radius1="11" Radius2="11" Margin1="0.400000005960464" Margin2="0"/>
+		<Capsule_Edge4 Type="Capsule" Edge="Edge4" Radius1="8" Radius2="8" Margin1="0.300000011920929" Margin2="0.300000011920929"/>
+		<Capsule_EStomach Type="Capsule" Edge="EStomach" Radius1="10" Radius2="10" Margin1="0" Margin2="0"/>
+		<Triangle-28 Type="Triangle" Shading="0" Node1="NHeadS_1" Node2="MacroNode21" Node3="MacroNode9"/>
+		<Capsule_EChest Type="Capsule" Edge="EChest" Radius1="11" Radius2="11" Margin1="0.200000002980232" Margin2="0"/>
+		<Capsule_ENeck Type="Capsule" Edge="ENeck" Radius1="5" Radius2="5" Margin1="0" Margin2="0"/>
+		<Capsule_Edge2 Type="Capsule" Edge="Edge2" Radius1="4" Radius2="4" Margin1="0" Margin2="0"/>
+		<Triangle-11 Type="Triangle" Shading="0" Node1="MacroNode9" Node2="MacroNode8" Node3="MacroNode19"/>
+		<Capsule_Muscle120 Type="Capsule" Edge="Muscle120" Radius1="7" Radius2="7" Margin1="0" Margin2="0"/>
+		<Triangle-9 Type="Triangle" Shading="0" Node1="MacroNode10" Node2="MacroNode11" Node3="MacroNode8"/>
+		<Triangle-15 Type="Triangle" Shading="0" Node1="MacroNode20" Node2="MacroNode21" Node3="MacroNode9"/>
+		<Capsule_EHead Type="Capsule" Edge="EHead" Radius1="11" Radius2="11" Margin1="0" Margin2="0.550000011920929"/>
+		<Triangle-10 Type="Triangle" Shading="0" Node1="MacroNode8" Node2="MacroNode11" Node3="MacroNode19"/>
+		<Triangle-17 Type="Triangle" Shading="0" Node1="MacroNode15" Node2="MacroNode21" Node3="MacroNode14"/>
+		<Triangle-1 Type="Triangle" Shading="0" Node1="MacroNode12" Node2="MacroNode11" Node3="MacroNode10"/>
+		<Capsule-1_EForearm_1 Type="Capsule" Edge="EForearm_1" Radius1="6" Radius2="6" Margin1="0.5" Margin2="0"/>
+		<Triangle-16 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode20" Node3="MacroNode21"/>
+		<Triangle-4 Type="Triangle" Shading="0" Node1="MacroNode15" Node2="MacroNode14" Node3="MacroNode10"/>
+		<Triangle-2 Type="Triangle" Shading="0" Node1="MacroNode10" Node2="MacroNode11" Node3="MacroNode19"/>
+		<Capsule_Muscle119 Type="Capsule" Edge="Muscle119" Radius1="7" Radius2="7" Margin1="0" Margin2="0"/>
+		<Triangle-13 Type="Triangle" Shading="0" Node1="MacroNode13" Node2="MacroNode19" Node3="MacroNode9"/>
+		<Triangle-5 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode10" Node3="MacroNode11"/>
+		<Capsule_EArm_1 Type="Capsule" Edge="EArm_1" Radius1="6" Radius2="6" Margin1="0" Margin2="0.699999988079071"/>
+		<Triangle-14 Type="Triangle" Shading="0" Node1="MacroNode9" Node2="MacroNode13" Node3="MacroNode20"/>
+		<Triangle-6 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode19" Node3="MacroNode11"/>
+		<Capsule_EClavicle_2 Type="Capsule" Edge="EClavicle_2" Radius1="9" Radius2="8" Margin1="0" Margin2="0"/>
+		<Triangle-12 Type="Triangle" Shading="0" Node1="MacroNode7" Node2="MacroNode19" Node3="MacroNode9"/>
+		<Triangle-18 Type="Triangle" Shading="0" Node1="MacroNode10" Node2="MacroNode11" Node3="MacroNode18"/>
+		<Triangle-3 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode13" Node3="MacroNode19"/>
+		<Triangle-7 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode17" Node3="MacroNode16"/>
+		<Triangle-8 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode16" Node3="MacroNode20"/>
+		<Triangle-25 Type="Triangle" Shading="0" Node1="MacroNode15" Node2="MacroNode14" Node3="MacroNode22"/>
+		<Triangle-19 Type="Triangle" Shading="0" Node1="MacroNode18" Node2="MacroNode19" Node3="MacroNode11"/>
+		<Triangle-29 Type="Triangle" Shading="0" Node1="MacroNode23" Node2="MacroNode17" Node3="MacroNode16"/>
+		<Triangle-24 Type="Triangle" Shading="0" Node1="MacroNode14" Node2="MacroNode20" Node3="MacroNode22"/>
+		<Triangle-20 Type="Triangle" Shading="0" Node1="MacroNode18" Node2="MacroNode19" Node3="MacroNode13"/>
+		<Triangle-23 Type="Triangle" Shading="0" Node1="MacroNode13" Node2="MacroNode20" Node3="MacroNode22"/>
+		<Capsule_Muscle118 Type="Capsule" Edge="Muscle118" Radius1="8" Radius2="8" Margin1="0" Margin2="0"/>
+		<Triangle-27 Type="Triangle" Shading="0" Node1="NHeadS_2" Node2="MacroNode22" Node3="MacroNode7"/>
+		<Triangle-22 Type="Triangle" Shading="0" Node1="MacroNode22" Node2="MacroNode13" Node3="MacroNode7"/>
+		<Triangle-21 Type="Triangle" Shading="0" Node1="MacroNode13" Node2="MacroNode7" Node3="MacroNode18"/>
+		<Triangle-26 Type="Triangle" Shading="0" Node1="MacroNode22" Node2="MacroNode7" Node3="MacroNode18"/>
+		<Capsule-1_EArm_2 Type="Capsule" Edge="EArm_2" Radius1="8" Radius2="8" Margin1="0.5" Margin2="0"/>
+		<Capsule_EArm_2 Type="Capsule" Edge="EArm_2" Radius1="6" Radius2="6" Margin1="0" Margin2="0.699999988079071"/>
+		<Capsule-1_EForearm_2 Type="Capsule" Edge="EForearm_2" Radius1="6" Radius2="6" Margin1="0.5" Margin2="0"/>
+		<Capsule_EForearm_2 Type="Capsule" Edge="EForearm_2" Radius1="4" Radius2="4" Margin1="0" Margin2="0.600000023841858"/>
+		<Capsule_EHand_2 Type="Capsule" Edge="EHand_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandS_2 Type="Capsule" Edge="EHandS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFingers_2 Type="Capsule" Edge="EFingers_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EHandC_2 Type="Capsule" Edge="EHandC_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+		<Capsule_EFingersS_2 Type="Capsule" Edge="EFingersS_2" Radius1="3.5" Radius2="3.5" Margin1="0" Margin2="0"/>
+	</Figures>
+	<GroupsOfSelection>
+		<SG-1/>
+		<SG-2/>
+		<SG-3/>
+		<SG-4/>
+		<SG-5/>
+		<SG-6/>
+		<SG-7/>
+		<SG-8/>
+		<SG-9/>
+	</GroupsOfSelection>
 </Scene>

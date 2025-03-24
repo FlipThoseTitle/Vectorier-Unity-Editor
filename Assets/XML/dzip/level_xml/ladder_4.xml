@@ -1,91 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <NPivot Type="Node"  X="-42.2765045166016"  Y="0"  Z="-20.9065952301025"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node2 Type="Node"  X="14.5372362136841"  Y="188.04280090332"  Z="-58.9592742919922"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node3 Type="Node"  X="41.7802314758301"  Y="188.057678222656"  Z="-15.3736219406128"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node4 Type="Node"  X="-17.2604808807373"  Y="0.0135117089375854"  Z="19.1160736083984"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node5 Type="Node"  X="73.952033996582"  Y="0.0238030422478914"  Z="-93.1753234863281"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <Node6 Type="Node"  X="98.6270370483398"  Y="0.0372901409864426"  Z="-53.6982612609863"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="1"  Passive="0"  Cloth="0"  Rank="0" />
-    <MacroNode7 Type="MacroNode"  X="0.509479522705078"  Y="141.032196044922"  Z="-49.1650390625"  Mass="1.79775285720825"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node2"  ChildNode2="NPivot"  LCC1="0.75"  LCC2="0.25" />
-    <MacroNode8 Type="MacroNode"  X="-14.0432090759277"  Y="94.0213012695313"  Z="-40.217399597168"  Mass="2.35294127464294"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node2"  ChildNode2="NPivot"  LCC1="0.5"  LCC2="0.5" />
-    <MacroNode9 Type="MacroNode"  X="-28.9552230834961"  Y="47.0102233886719"  Z="-31.8311080932617"  Mass="1.9753086566925"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node2"  ChildNode2="NPivot"  LCC1="0.25"  LCC2="0.75" />
-    <MacroNode10 Type="MacroNode"  X="26.8443756103516"  Y="141.046539306641"  Z="-7.03226280212402"  Mass="1.79775285720825"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node4"  ChildNode2="Node3"  LCC1="0.25"  LCC2="0.75" />
-    <MacroNode11 Type="MacroNode"  X="12.4395332336426"  Y="94.0356903076172"  Z="2.15188598632813"  Mass="2.35294127464294"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node4"  ChildNode2="Node3"  LCC1="0.5"  LCC2="0.5" />
-    <MacroNode12 Type="MacroNode"  X="-1.61814880371094"  Y="47.025032043457"  Z="11.9049911499023"  Mass="1.9753086566925"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node4"  ChildNode2="Node3"  LCC1="0.75"  LCC2="0.25" />
-    <MacroNode13 Type="MacroNode"  X="43.9843368530273"  Y="94.0331573486328"  Z="-76.477783203125"  Mass="2.66666674613953"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node5"  ChildNode2="Node2"  LCC1="0.5"  LCC2="0.5" />
-    <MacroNode14 Type="MacroNode"  X="70.4585647583008"  Y="94.0476226806641"  Z="-34.1221084594727"  Mass="2.66666674613953"  Fixed="0"  Visible="1"  NodesCount="2"  ChildNode1="Node6"  ChildNode2="Node3"  LCC1="0.5"  LCC2="0.5" />
-  </Nodes>
-  <Edges>
-    <Edge15 Type="Edge"  Length="200"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node2"  End2="Node5" />
-    <Edge16 Type="Edge"  Length="200"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node3"  End2="Node6" />
-    <Edge17 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node3"  End2="Node2" />
-    <Edge18 Type="Edge"  Length="200"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node2"  End2="NPivot" />
-    <Edge19 Type="Edge"  Length="200"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="1"  SubNodesCount="0"  End1="Node4"  End2="Node3" />
-    <Edge20 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode10"  End2="MacroNode7" />
-    <Edge21 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode11"  End2="MacroNode8" />
-    <Edge22 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode12"  End2="MacroNode9" />
-    <Edge23 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode14"  End2="MacroNode13" />
-    <Edge24 Type="Edge"  Length="206.155288696289"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node3"  End2="Node5" />
-    <Edge25 Type="Edge"  Length="206.155288696289"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node2"  End2="Node6" />
-    <Edge26 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node6"  End2="Node5" />
-    <Edge27 Type="Edge"  Length="50"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node4"  End2="NPivot" />
-    <Edge28 Type="Edge"  Length="206.155288696289"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node4"  End2="Node2" />
-    <Edge29 Type="Edge"  Length="206.155288696289"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NPivot"  End2="Node3" />
-    <Edge30 Type="Edge"  Length="150"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node6"  End2="Node4" />
-    <Edge31 Type="Edge"  Length="130.787445068359"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node6"  End2="NPivot" />
-    <Edge32 Type="Edge"  Length="130.787445068359"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node4"  End2="Node5" />
-    <Edge33 Type="Edge"  Length="150"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node5"  End2="NPivot" />
-    <Edge34 Type="Edge"  Length="68.4250564575195"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode14"  End2="MacroNode11" />
-    <Edge35 Type="Edge"  Length="68.4250640869141"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="MacroNode13"  End2="MacroNode8" />
-  </Edges>
-  <Figures>
-    <Capsule_Edge16 Type="Capsule"  Edge="Edge16"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge23 Type="Capsule"  Edge="Edge23"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge34 Type="Capsule"  Edge="Edge34"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge15 Type="Capsule"  Edge="Edge15"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge19 Type="Capsule"  Edge="Edge19"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge35 Type="Capsule"  Edge="Edge35"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge22 Type="Capsule"  Edge="Edge22"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge21 Type="Capsule"  Edge="Edge21"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge20 Type="Capsule"  Edge="Edge20"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge17 Type="Capsule"  Edge="Edge17"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <Capsule_Edge18 Type="Capsule"  Edge="Edge18"  Radius1="3"  Radius2="3"  Margin1="0"  Margin2="0" />
-    <NP_NPivot Type="NodePoint"  Node="NPivot"  Radius="3" />
-    <NP_Node2 Type="NodePoint"  Node="Node2"  Radius="3" />
-    <NP_Node3 Type="NodePoint"  Node="Node3"  Radius="3" />
-    <NP_Node4 Type="NodePoint"  Node="Node4"  Radius="3" />
-    <NP_Node5 Type="NodePoint"  Node="Node5"  Radius="3" />
-    <NP_Node6 Type="NodePoint"  Node="Node6"  Radius="3" />
-    <NP_MacroNode7 Type="NodePoint"  Node="MacroNode7"  Radius="3" />
-    <NP_MacroNode8 Type="NodePoint"  Node="MacroNode8"  Radius="3" />
-    <NP_MacroNode9 Type="NodePoint"  Node="MacroNode9"  Radius="3" />
-    <NP_MacroNode10 Type="NodePoint"  Node="MacroNode10"  Radius="3" />
-    <NP_MacroNode11 Type="NodePoint"  Node="MacroNode11"  Radius="3" />
-    <NP_MacroNode12 Type="NodePoint"  Node="MacroNode12"  Radius="3" />
-    <NP_MacroNode13 Type="NodePoint"  Node="MacroNode13"  Radius="3" />
-    <NP_MacroNode14 Type="NodePoint"  Node="MacroNode14"  Radius="3" />
-    <EL_Edge15 Type="EdgeLine"  Edge="Edge15"  Width="0" />
-    <EL_Edge16 Type="EdgeLine"  Edge="Edge16"  Width="0" />
-    <EL_Edge17 Type="EdgeLine"  Edge="Edge17"  Width="0" />
-    <EL_Edge18 Type="EdgeLine"  Edge="Edge18"  Width="0" />
-    <EL_Edge19 Type="EdgeLine"  Edge="Edge19"  Width="0" />
-    <EL_Edge20 Type="EdgeLine"  Edge="Edge20"  Width="0" />
-    <EL_Edge21 Type="EdgeLine"  Edge="Edge21"  Width="0" />
-    <EL_Edge22 Type="EdgeLine"  Edge="Edge22"  Width="0" />
-    <EL_Edge23 Type="EdgeLine"  Edge="Edge23"  Width="0" />
-    <EL_Edge24 Type="EdgeLine"  Edge="Edge24"  Width="0" />
-    <EL_Edge25 Type="EdgeLine"  Edge="Edge25"  Width="0" />
-    <EL_Edge26 Type="EdgeLine"  Edge="Edge26"  Width="0" />
-    <EL_Edge27 Type="EdgeLine"  Edge="Edge27"  Width="0" />
-    <EL_Edge28 Type="EdgeLine"  Edge="Edge28"  Width="0" />
-    <EL_Edge29 Type="EdgeLine"  Edge="Edge29"  Width="0" />
-    <EL_Edge30 Type="EdgeLine"  Edge="Edge30"  Width="0" />
-    <EL_Edge31 Type="EdgeLine"  Edge="Edge31"  Width="0" />
-    <EL_Edge32 Type="EdgeLine"  Edge="Edge32"  Width="0" />
-    <EL_Edge33 Type="EdgeLine"  Edge="Edge33"  Width="0" />
-    <EL_Edge34 Type="EdgeLine"  Edge="Edge34"  Width="0" />
-    <EL_Edge35 Type="EdgeLine"  Edge="Edge35"  Width="0" />
-  </Figures>
-
+	<Nodes>
+		<NPivot Type="Node" X="-42.2765045166016" Y="0" Z="-20.9065952301025" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node2 Type="Node" X="14.5372362136841" Y="188.04280090332" Z="-58.9592742919922" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node3 Type="Node" X="41.7802314758301" Y="188.057678222656" Z="-15.3736219406128" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node4 Type="Node" X="-17.2604808807373" Y="0.0135117089375854" Z="19.1160736083984" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node5 Type="Node" X="73.952033996582" Y="0.0238030422478914" Z="-93.1753234863281" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<Node6 Type="Node" X="98.6270370483398" Y="0.0372901409864426" Z="-53.6982612609863" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="1" Passive="0" Cloth="0" Rank="0"/>
+		<MacroNode7 Type="MacroNode" X="0.509479522705078" Y="141.032196044922" Z="-49.1650390625" Mass="1.79775285720825" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node2" ChildNode2="NPivot" LCC1="0.75" LCC2="0.25"/>
+		<MacroNode8 Type="MacroNode" X="-14.0432090759277" Y="94.0213012695313" Z="-40.217399597168" Mass="2.35294127464294" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node2" ChildNode2="NPivot" LCC1="0.5" LCC2="0.5"/>
+		<MacroNode9 Type="MacroNode" X="-28.9552230834961" Y="47.0102233886719" Z="-31.8311080932617" Mass="1.9753086566925" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node2" ChildNode2="NPivot" LCC1="0.25" LCC2="0.75"/>
+		<MacroNode10 Type="MacroNode" X="26.8443756103516" Y="141.046539306641" Z="-7.03226280212402" Mass="1.79775285720825" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node4" ChildNode2="Node3" LCC1="0.25" LCC2="0.75"/>
+		<MacroNode11 Type="MacroNode" X="12.4395332336426" Y="94.0356903076172" Z="2.15188598632813" Mass="2.35294127464294" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node4" ChildNode2="Node3" LCC1="0.5" LCC2="0.5"/>
+		<MacroNode12 Type="MacroNode" X="-1.61814880371094" Y="47.025032043457" Z="11.9049911499023" Mass="1.9753086566925" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node4" ChildNode2="Node3" LCC1="0.75" LCC2="0.25"/>
+		<MacroNode13 Type="MacroNode" X="43.9843368530273" Y="94.0331573486328" Z="-76.477783203125" Mass="2.66666674613953" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node5" ChildNode2="Node2" LCC1="0.5" LCC2="0.5"/>
+		<MacroNode14 Type="MacroNode" X="70.4585647583008" Y="94.0476226806641" Z="-34.1221084594727" Mass="2.66666674613953" Fixed="0" Visible="1" NodesCount="2" ChildNode1="Node6" ChildNode2="Node3" LCC1="0.5" LCC2="0.5"/>
+	</Nodes>
+	<Edges>
+		<Edge15 Type="Edge" Length="200" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node2" End2="Node5"/>
+		<Edge16 Type="Edge" Length="200" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node3" End2="Node6"/>
+		<Edge17 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node3" End2="Node2"/>
+		<Edge18 Type="Edge" Length="200" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node2" End2="NPivot"/>
+		<Edge19 Type="Edge" Length="200" WithSign="0" Fixed="0" Visible="1" Collisible="1" SubNodesCount="0" End1="Node4" End2="Node3"/>
+		<Edge20 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode10" End2="MacroNode7"/>
+		<Edge21 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode11" End2="MacroNode8"/>
+		<Edge22 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode12" End2="MacroNode9"/>
+		<Edge23 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode14" End2="MacroNode13"/>
+		<Edge24 Type="Edge" Length="206.155288696289" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node3" End2="Node5"/>
+		<Edge25 Type="Edge" Length="206.155288696289" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node2" End2="Node6"/>
+		<Edge26 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node6" End2="Node5"/>
+		<Edge27 Type="Edge" Length="50" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node4" End2="NPivot"/>
+		<Edge28 Type="Edge" Length="206.155288696289" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node4" End2="Node2"/>
+		<Edge29 Type="Edge" Length="206.155288696289" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NPivot" End2="Node3"/>
+		<Edge30 Type="Edge" Length="150" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node6" End2="Node4"/>
+		<Edge31 Type="Edge" Length="130.787445068359" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node6" End2="NPivot"/>
+		<Edge32 Type="Edge" Length="130.787445068359" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node4" End2="Node5"/>
+		<Edge33 Type="Edge" Length="150" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node5" End2="NPivot"/>
+		<Edge34 Type="Edge" Length="68.4250564575195" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode14" End2="MacroNode11"/>
+		<Edge35 Type="Edge" Length="68.4250640869141" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="MacroNode13" End2="MacroNode8"/>
+	</Edges>
+	<Figures>
+		<Capsule_Edge16 Type="Capsule" Edge="Edge16" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge23 Type="Capsule" Edge="Edge23" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge34 Type="Capsule" Edge="Edge34" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge15 Type="Capsule" Edge="Edge15" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge19 Type="Capsule" Edge="Edge19" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge35 Type="Capsule" Edge="Edge35" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge22 Type="Capsule" Edge="Edge22" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge21 Type="Capsule" Edge="Edge21" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge20 Type="Capsule" Edge="Edge20" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge17 Type="Capsule" Edge="Edge17" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<Capsule_Edge18 Type="Capsule" Edge="Edge18" Radius1="3" Radius2="3" Margin1="0" Margin2="0"/>
+		<NP_NPivot Type="NodePoint" Node="NPivot" Radius="3"/>
+		<NP_Node2 Type="NodePoint" Node="Node2" Radius="3"/>
+		<NP_Node3 Type="NodePoint" Node="Node3" Radius="3"/>
+		<NP_Node4 Type="NodePoint" Node="Node4" Radius="3"/>
+		<NP_Node5 Type="NodePoint" Node="Node5" Radius="3"/>
+		<NP_Node6 Type="NodePoint" Node="Node6" Radius="3"/>
+		<NP_MacroNode7 Type="NodePoint" Node="MacroNode7" Radius="3"/>
+		<NP_MacroNode8 Type="NodePoint" Node="MacroNode8" Radius="3"/>
+		<NP_MacroNode9 Type="NodePoint" Node="MacroNode9" Radius="3"/>
+		<NP_MacroNode10 Type="NodePoint" Node="MacroNode10" Radius="3"/>
+		<NP_MacroNode11 Type="NodePoint" Node="MacroNode11" Radius="3"/>
+		<NP_MacroNode12 Type="NodePoint" Node="MacroNode12" Radius="3"/>
+		<NP_MacroNode13 Type="NodePoint" Node="MacroNode13" Radius="3"/>
+		<NP_MacroNode14 Type="NodePoint" Node="MacroNode14" Radius="3"/>
+		<EL_Edge15 Type="EdgeLine" Edge="Edge15" Width="0"/>
+		<EL_Edge16 Type="EdgeLine" Edge="Edge16" Width="0"/>
+		<EL_Edge17 Type="EdgeLine" Edge="Edge17" Width="0"/>
+		<EL_Edge18 Type="EdgeLine" Edge="Edge18" Width="0"/>
+		<EL_Edge19 Type="EdgeLine" Edge="Edge19" Width="0"/>
+		<EL_Edge20 Type="EdgeLine" Edge="Edge20" Width="0"/>
+		<EL_Edge21 Type="EdgeLine" Edge="Edge21" Width="0"/>
+		<EL_Edge22 Type="EdgeLine" Edge="Edge22" Width="0"/>
+		<EL_Edge23 Type="EdgeLine" Edge="Edge23" Width="0"/>
+		<EL_Edge24 Type="EdgeLine" Edge="Edge24" Width="0"/>
+		<EL_Edge25 Type="EdgeLine" Edge="Edge25" Width="0"/>
+		<EL_Edge26 Type="EdgeLine" Edge="Edge26" Width="0"/>
+		<EL_Edge27 Type="EdgeLine" Edge="Edge27" Width="0"/>
+		<EL_Edge28 Type="EdgeLine" Edge="Edge28" Width="0"/>
+		<EL_Edge29 Type="EdgeLine" Edge="Edge29" Width="0"/>
+		<EL_Edge30 Type="EdgeLine" Edge="Edge30" Width="0"/>
+		<EL_Edge31 Type="EdgeLine" Edge="Edge31" Width="0"/>
+		<EL_Edge32 Type="EdgeLine" Edge="Edge32" Width="0"/>
+		<EL_Edge33 Type="EdgeLine" Edge="Edge33" Width="0"/>
+		<EL_Edge34 Type="EdgeLine" Edge="Edge34" Width="0"/>
+		<EL_Edge35 Type="EdgeLine" Edge="Edge35" Width="0"/>
+	</Figures>
 </Scene>

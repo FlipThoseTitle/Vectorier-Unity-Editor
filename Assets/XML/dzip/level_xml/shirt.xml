@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Scene>
-  <Nodes>
-    <Node206 Type="Node"  X="0.6050044298172"  Y="129.453689575195"  Z="-0.548447608947754"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Node209 Type="Node"  X="2.00154185295105"  Y="149.343231201172"  Z="-0.123361505568027"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-    <Node210 Type="Node"  X="3.69930076599121"  Y="168.594177246094"  Z="4.89080810546875"  Mass="10"  Fixed="0"  PinFixed="0"  Visible="1"  Collisible="0"  Passive="0"  Cloth="1"  Rank="0" Attenuation="0.1"/>
-  </Nodes>
-  <Edges>
-    <Edge207 Type="Edge"  Length="15"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node206"  End2="NPivot" />
-    <Edge208 Type="Edge"  Length="22.3617324829102"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="NStomach"  End2="Node206" />
-    <Edge211 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node210"  End2="NNeck" />
-    <Edge212 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node209"  End2="Node210" />
-    <Edge213 Type="Edge"  Length="20"  WithSign="0"  Fixed="0"  Visible="1"  Collisible="0"  SubNodesCount="0"  End1="Node206"  End2="Node209" />
-  </Edges>
-  <Figures>
-    <Triangle-5 Type="Triangle"  Shading="0"  Node1="NStomach"  Node2="NPivot"  Node3="Node206" />
-    <Triangle-3 Type="Triangle"  Shading="0"  Node1="Node206"  Node2="NStomach"  Node3="Node209" />
-    <Triangle-2 Type="Triangle"  Shading="0"  Node1="NChest"  Node2="Node209"  Node3="Node210" />
-    <Triangle-4 Type="Triangle"  Shading="0"  Node1="NStomach"  Node2="NChest"  Node3="Node209" />
-    <Triangle-1 Type="Triangle"  Shading="0"  Node1="NNeck"  Node2="Node210"  Node3="NChest" />
-  </Figures>
+	<Nodes>
+		<Node206 Type="Node" X="0.6050044298172" Y="129.453689575195" Z="-0.548447608947754" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Node209 Type="Node" X="2.00154185295105" Y="149.343231201172" Z="-0.123361505568027" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+		<Node210 Type="Node" X="3.69930076599121" Y="168.594177246094" Z="4.89080810546875" Mass="10" Fixed="0" PinFixed="0" Visible="1" Collisible="0" Passive="0" Cloth="1" Rank="0" Attenuation="0.1"/>
+	</Nodes>
+	<Edges>
+		<Edge207 Type="Edge" Length="15" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node206" End2="NPivot"/>
+		<Edge208 Type="Edge" Length="22.3617324829102" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="NStomach" End2="Node206"/>
+		<Edge211 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node210" End2="NNeck"/>
+		<Edge212 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node209" End2="Node210"/>
+		<Edge213 Type="Edge" Length="20" WithSign="0" Fixed="0" Visible="1" Collisible="0" SubNodesCount="0" End1="Node206" End2="Node209"/>
+	</Edges>
+	<Figures>
+		<Triangle-5 Type="Triangle" Shading="0" Node1="NStomach" Node2="NPivot" Node3="Node206"/>
+		<Triangle-3 Type="Triangle" Shading="0" Node1="Node206" Node2="NStomach" Node3="Node209"/>
+		<Triangle-2 Type="Triangle" Shading="0" Node1="NChest" Node2="Node209" Node3="Node210"/>
+		<Triangle-4 Type="Triangle" Shading="0" Node1="NStomach" Node2="NChest" Node3="Node209"/>
+		<Triangle-1 Type="Triangle" Shading="0" Node1="NNeck" Node2="Node210" Node3="NChest"/>
+	</Figures>
 </Scene>

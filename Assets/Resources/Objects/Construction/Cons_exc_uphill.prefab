@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5930991865392879997}
   - component: {fileID: 7194289854019130087}
   m_Layer: 0
-  m_Name: cons_ex_right(Clone)
+  m_Name: cons_ex_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -508,7 +508,7 @@
             <Init>
               <SetVariable Name="$Active" Value="1"/>
               <SetVariable Name="$AI" Value="-1"/>
-              <SetVariable Name="Sound" Value="door_close"/>
+              <SetVariable Name="Sound" Value="hit_chair1"/>
               <SetVariable Name="AnimName" Value="BarrelTower"/>
               <SetVariable Name="AnimFrame" Value="1"/>
               <SetVariable Name="$Node" Value="COM"/>
@@ -6122,6 +6122,48 @@
         </Trigger>
       </Content>
     </Object>
+
+    <Object Name="Bottle_Thin">
+      <Content>
+        <Particle X="5" Y="80" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="5" Y="100" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="5" Y="120" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Particle X="5" Y="140" Width="45" Height="45" Frame="50" Type="0" ClassName="p_glass1_mini"/>
+        <Image Type="2" X="0" Y="100" ClassName="v_black" Width="20" Height="40" NativeX="50" NativeY="50"/>
+        <Image Type="2" X="5" Y="70" ClassName="v_black" Width="10" Height="30" NativeX="50" NativeY="50"/>
+        <Image Type="2" X="0" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150"/>
+        <Image Type="2" X="10" Y="80" ClassName="v_slope_L" Width="10" Height="20" NativeX="300" NativeY="150">
+          <Properties>
+            <Static>
+              <Matrix A="-10" B="0" C="0" D="20" Tx="10" Ty="0"/>
+            </Static>
+          </Properties>
+        </Image>
+        <Trigger Name="" X="0" Y="0" Width="20" Height="200">
+          <Content>
+            <Init>
+              <SetVariable Name="$Active" Value="1"/>
+              <SetVariable Name="$AI" Value="-1"/>
+              <SetVariable Name="$Node" Value="COM"/>
+              <SetVariable Name="Sound" Value="glass_item_drop3"/>
+            	<SetVariable Name="Flag1" Value="0"/>
+            </Init>
+            <Loop>
+              <Events>
+                <EventBlock Template="NoneType.Only"/>
+                <EventBlock Template="CommonLib.ActiveDeath"/>
+              </Events>
+              <Conditions/>
+              <Actions>
+                <ActionBlock Template="NoneType.Only"/>
+                <ActionBlock Template="CommonLib.Sound"/>
+              </Actions>
+            </Loop>
+          </Content>
+        </Trigger>
+      </Content>
+    </Object>
+
     <Object Name="ReversedRunIndicator" Label="Indicators">
       <Content>
         <Image Type="3" Depth="0" X="0" Y="0" ClassName="run_indicator" Width="300" Height="150" NativeX="300" NativeY="150">

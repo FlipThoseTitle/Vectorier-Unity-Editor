@@ -1,60 +1,80 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Root>
-  <Sets>
-    <City FileName="buildings.xml"/>
-    <City FileName="buildings_downtown.xml"/>
+	<Sets>
+		<City FileName="buildings.xml"/>
+		<City FileName="buildings_downtown.xml"/>
 	<Ground FileName="objects.xml"/>
-  </Sets>
-  <Music Name="music_dinamic" Volume="0.3"/>
-  <Models Choice="AITriggers" Variant="CommonMode">
-    <Model Name="Player" Type="1" Color="0" AI="0" Time="0" AllowedSpawns="BikeScene" BirthSpawn="PlayerSpawn" Respawns="Hunter" Trick="1" Item="1" Lose="1" Victory="1" ForceBlasts="Hunter"/>
-    <Model Name="Hunter" Type="0" Color="0" AI="1" Time="0.8" AllowedSpawns="Respawn|BikeScene" BirthSpawn="DefaultSpawn" Icon="1" Murders="Player" Arrests="Player" Skins="hunter"/>
-  </Models>
-  <Models Choice="AITriggers" Variant="HunterMode">
-    <Model Name="Player" Type="0" Color="0" AI="5" Time="0" AllowedSpawns="BikeScene" BirthSpawn="DefaultSpawn" Respawns="Hunter" Victory="1"/>
-    <Model Name="Hunter" Type="1" Color="0" AI="0" Time="1.5" AllowedSpawns="Despawn|BikeScene" BirthSpawn="DefaultSpawn" Trick="1" Item="1" Lose="1" Murders="Player" Arrests="Player" Skins="hunter"/>
-  </Models>
-  <Coins Value="40"/>
-  <Objects Name="Money"/>
-  <Track>
-    <Object Factor="0.05">
-      <Content>
-        <Image X="-3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
-        <Image X="-1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
-        <Image X="-500" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
-        <Image X="1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
-        <Image X="3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
-      </Content>
-    </Object>
-	<Object Factor="0.1">
-      <Content>
-	    
-      </Content>
-    </Object>
-	<Object Factor="0.25">
-      <Content>
-	    
-      </Content>
-    </Object>
-    <Object Factor="0.5">
-      <Content>
-	    
-      </Content>
-    </Object>
-	<Object Factor="0.8">
-      <Content>
-	    
-      </Content>
-    </Object>
-    <Object Factor="1">
-      <Content>
-	    
-      </Content>
-    </Object>
-    <Object Factor="1.001">
-	  <Content>
-	  
-	  </Content>
+	</Sets>
+	<Music Name="music_dinamic" Volume="0.3"/>
+	<Models Choice="AITriggers" Variant="CommonMode">
+		<Model Name="Player" Type="1" Color="0" AI="0" Time="0" AllowedSpawns="BikeScene" BirthSpawn="PlayerSpawn" Respawns="Hunter" Trick="1" Item="1" Lose="1" Victory="1" ForceBlasts="Hunter"/>
+		<Model Name="Hunter" Type="0" Color="0" AI="1" Time="0.8" AllowedSpawns="Respawn|BikeScene" BirthSpawn="DefaultSpawn" Icon="1" Murders="Player" Arrests="Player" Skins="hunter"/>
+	</Models>
+	<Models Choice="AITriggers" Variant="HunterMode">
+		<Model Name="Player" Type="0" Color="0" AI="5" Time="0" AllowedSpawns="BikeScene" BirthSpawn="PlayerSpawn" Respawns="Hunter" Victory="1"/>
+		<Model Name="Hunter" Type="1" Color="0" AI="0" Time="1.5" AllowedSpawns="Despawn|BikeScene" BirthSpawn="DefaultSpawn" Trick="1" Item="1" Lose="1" Murders="Player" Arrests="Player" Skins="hunter"/>
+	</Models>
+	<Coins Value="40"/>
+	<Objects Name="Money"/>
+	<Track>
+		<Object Factor="0.05" Label="0.05">
+			<Content>
+				<Image X="-3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+				<Image X="-1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+				<Image X="-500" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+				<Image X="1620" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+				<Image X="3740" Y="-500" ClassName="v_bg" Width="2121" Height="1116"/>
+			</Content>
+		</Object>
+	<Object Factor="0.1" Label="0.1">
+			<Content>
+			
+			</Content>
+		</Object>
+	<Object Factor="0.25" Label="0.25">
+			<Content>
+			
+			</Content>
+		</Object>
+		<Object Factor="0.5" Label="0.5">
+			<Content>
+			
+			</Content>
+		</Object>
+	<Object Factor="0.8" Label="0.8">
+			<Content>
+			
+			</Content>
+		</Object>
+		<Object Factor="1" Label="Default">
+			<Content>
+			
+			</Content>
+		</Object>
+		<Object Factor="1.0000001" Label="Overlay">
+			<Content>
+			
+			</Content>
+		</Object>
+		<Object Factor="1.001" Label="Frontdrop">
+			<Content>
+			
+			</Content>
+		</Object>
+		<Object Factor="1.125" Label="1.125">
+		<Content>
+		
+		</Content>
 	</Object>
-  </Track>
+		<Object Factor="1.25" Label="1.25">
+		<Content>
+		
+		</Content>
+	</Object>
+		<Object Factor="1.375" Label="1.375">
+		<Content>
+		
+		</Content>
+	</Object>
+	</Track>
 </Root>

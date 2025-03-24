@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4802727608692554934}
   m_Layer: 0
   m_Name: LeftIndicator
-  m_TagString: Object
-  m_Icon: {fileID: 0}
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 3666024306700824136}
   - component: {fileID: 788664845398931951}
   m_Layer: 0
-  m_Name: reverse_indicator_left(Clone)
-  m_TagString: Untagged
+  m_Name: reverse_indicator_left
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,8 +56,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7557910314793793144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22070312, y: 0.1171875, z: 0}
+  m_LocalPosition: {x: -0.05, y: 0.03, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children: []
   m_Father: {fileID: 4802727608692554934}
   m_RootOrder: 0
@@ -101,7 +101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 256
   m_Sprite: {fileID: 21300000, guid: 81c9a03d9641fb246a1d04744bbe917e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8203061901150661597}
   m_Layer: 0
   m_Name: TriggerCatchFast
-  m_TagString: Trigger
-  m_Icon: {fileID: 0}
+  m_TagString: Object
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -102,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 221
-  m_Sprite: {fileID: 21300000, guid: 36039ac4c4b43404ca39cb3bdea5b5e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d99d323bfe09374abe8d6a7d6aa8005, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

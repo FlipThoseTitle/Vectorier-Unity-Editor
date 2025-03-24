@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6193796376630089962}
   - component: {fileID: 8276032324439588008}
   m_Layer: 0
-  m_Name: reverse_indicator_left(Clone)
-  m_TagString: Untagged
+  m_Name: reverse_indicator_left
+  m_TagString: Image
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,9 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2264393515383666074}
-  m_LocalRotation: {x: -0, y: -0, z: -0.9263175, w: 0.37674382}
-  m_LocalPosition: {x: 1.13, y: -0.6, z: 0}
-  m_LocalScale: {x: 0.22070312, y: 0.1171875, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0625, y: 0.2, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children: []
   m_Father: {fileID: 9196580383642081465}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81c9a03d9641fb246a1d04744bbe917e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e38681657ac8fd41a3d4e2291056627, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,8 +93,8 @@ GameObject:
   - component: {fileID: 9196580383642081465}
   m_Layer: 0
   m_Name: RightIndicator
-  m_TagString: Object
-  m_Icon: {fileID: 0}
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

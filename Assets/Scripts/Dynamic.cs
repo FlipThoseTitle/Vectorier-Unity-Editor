@@ -20,6 +20,17 @@ public class Dynamic : MonoBehaviour
         public bool UseMovement3 = false;
         public bool UseMovement4 = false;
         public bool UseMovement5 = false;
+        public bool UseMovement6 = false;
+        public bool UseMovement7 = false;
+        public bool UseMovement8 = false;
+        public bool UseMovement9 = false;
+        public bool UseMovement10 = false;
+        public bool UseMovement11 = false;
+        public bool UseMovement12 = false;
+        public bool UseMovement13 = false;
+        public bool UseMovement14 = false;
+        public bool UseMovement15 = false;
+        public bool UseMovement16 = false;
 
         public bool UseMovement(int index)
         {
@@ -30,6 +41,17 @@ public class Dynamic : MonoBehaviour
                 case 3: return UseMovement3;
                 case 4: return UseMovement4;
                 case 5: return UseMovement5;
+                case 6: return UseMovement6;
+                case 7: return UseMovement7;
+                case 8: return UseMovement8;
+                case 9: return UseMovement9;
+                case 10: return UseMovement10;
+                case 11: return UseMovement11;
+                case 12: return UseMovement12;
+                case 13: return UseMovement13;
+                case 14: return UseMovement14;
+                case 15: return UseMovement15;
+                case 16: return UseMovement16;
                 default: return false; // Out of range
             }
         }
@@ -39,12 +61,21 @@ public class Dynamic : MonoBehaviour
     [Serializable]
     public class Movement
     {
-        [Tooltip("Move Duration in Second")] public float MoveDuration = 1.5f;
-        [Tooltip("Move Delay in Second")] public float Delay = 0f;
-        [Tooltip("Easing Value on the X Axis (Divide by 2 for linear easing)")] public float SupportXAxis = 0.0f;
-        [Tooltip("Easing Value on the Y Axis (Divide by 2 for linear easing)")] public float SupportYAxis = 0.0f;
-        [Tooltip("How much to move on X Axis")] public float MoveXAxis = 0.0f;
-        [Tooltip("How much to move on Y Axis")] public float MoveYAxis = 0.0f;
+        [Tooltip("Move Duration in Second")]
+		public float MoveDuration = 1.5f;
+
+        [Tooltip("Move Delay in Second")]
+		public float Delay = 0f;
+
+        [Tooltip("Easing Value on the X Axis (Divide by 2 for linear easing)")]
+		public float SupportXAxis = 0.0f;
+        [Tooltip("Easing Value on the Y Axis (Divide by 2 for linear easing)")]
+		public float SupportYAxis = 0.0f;
+        [Tooltip("How much to move on X Axis")]
+		public float MoveXAxis = 0.0f;
+
+        [Tooltip("How much to move on Y Axis")]
+		public float MoveYAxis = 0.0f;
     }
 
     [SerializeField] public UseCheck MovementUsage;
@@ -53,6 +84,17 @@ public class Dynamic : MonoBehaviour
     [SerializeField] public Movement MoveInterval3;
     [SerializeField] public Movement MoveInterval4;
     [SerializeField] public Movement MoveInterval5;
+    [SerializeField] public Movement MoveInterval6;
+    [SerializeField] public Movement MoveInterval7;
+    [SerializeField] public Movement MoveInterval8;
+    [SerializeField] public Movement MoveInterval9;
+    [SerializeField] public Movement MoveInterval10;
+    [SerializeField] public Movement MoveInterval11;
+    [SerializeField] public Movement MoveInterval12;
+    [SerializeField] public Movement MoveInterval13;
+    [SerializeField] public Movement MoveInterval14;
+    [SerializeField] public Movement MoveInterval15;
+    [SerializeField] public Movement MoveInterval16;
 
     private Vector2 lastSpecificTopLeft;
 
@@ -67,7 +109,26 @@ public class Dynamic : MonoBehaviour
     public void DuplicateChildrenPreview(string newParentName)
     {
         // Ignore List
-        string[] excludedNames = { "MovePreview1", "MovePreview2", "MovePreview3", "MovePreview4", "MovePreview5", "VisualPointParent", "VisualLineParent" };
+        string[] excludedNames = {
+				"MovePreview1",
+				"MovePreview2",
+				"MovePreview3",
+				"MovePreview4",
+				"MovePreview5",
+				"MovePreview6",
+				"MovePreview7",
+				"MovePreview8",
+				"MovePreview9",
+				"MovePreview10",
+				"MovePreview11",
+				"MovePreview12",
+				"MovePreview13",
+				"MovePreview14",
+				"MovePreview15",
+				"MovePreview16",
+				"VisualPointParent",
+				"VisualLineParent"
+		};
         string triggerTag = "Trigger";
 
         // In case of Image
@@ -107,7 +168,6 @@ public class Dynamic : MonoBehaviour
         newParent.tag = "Unused";
         newParent.transform.SetParent(transform);
         newParent.transform.position = transform.position;
-
 
         // Run through all child objects
         foreach (UnityEngine.Transform child in transform)
@@ -158,6 +218,39 @@ public class Dynamic : MonoBehaviour
                 break;
             case "MovePreview5":
                 targetInterval = MoveInterval5;
+                break;
+            case "MovePreview6":
+                targetInterval = MoveInterval6;
+                break;
+            case "MovePreview7":
+                targetInterval = MoveInterval7;
+                break;
+            case "MovePreview8":
+                targetInterval = MoveInterval8;
+                break;
+            case "MovePreview9":
+                targetInterval = MoveInterval9;
+                break;
+            case "MovePreview10":
+                targetInterval = MoveInterval10;
+                break;
+            case "MovePreview11":
+                targetInterval = MoveInterval11;
+                break;
+            case "MovePreview12":
+                targetInterval = MoveInterval12;
+                break;
+            case "MovePreview13":
+                targetInterval = MoveInterval13;
+                break;
+            case "MovePreview14":
+                targetInterval = MoveInterval14;
+                break;
+            case "MovePreview15":
+                targetInterval = MoveInterval15;
+                break;
+            case "MovePreview16":
+                targetInterval = MoveInterval16;
                 break;
             default:
                 Debug.LogWarning($"No matching MoveInterval found for {movePreview}.");
@@ -254,7 +347,7 @@ public class Dynamic : MonoBehaviour
         // Calculate top-left positions
         Vector2 topLeftSpecific = CalculateTopLeftPosition(false, movePreview);
 
-        // reference top-left position
+        // Reference top-left position
         Vector2 referenceTopLeft;
 
         if (movePreview == "MovePreview1")
@@ -308,8 +401,41 @@ public class Dynamic : MonoBehaviour
         bool hasBounds = false;
 
         // Ignore List
-        string[] excludedNames = { "MovePreview1", "MovePreview2", "MovePreview3", "MovePreview4", "MovePreview5",
-                                "VisualPointParent", "VisualPoint1", "VisualPoint2", "VisualPoint3", "VisualPoint4", "VisualPoint5" };
+        string[] excludedNames = {
+			"MovePreview1",
+			"MovePreview2",
+			"MovePreview3",
+			"MovePreview4",
+			"MovePreview5",
+			"MovePreview6",
+			"MovePreview7",
+			"MovePreview8",
+			"MovePreview9",
+			"MovePreview10",
+			"MovePreview11",
+			"MovePreview12",
+			"MovePreview13",
+			"MovePreview14",
+			"MovePreview15",
+			"MovePreview16",
+            "VisualPointParent",
+			"VisualPoint1",
+			"VisualPoint2",
+			"VisualPoint3",
+			"VisualPoint4",
+			"VisualPoint5",
+			"VisualPoint6",
+			"VisualPoint7",
+			"VisualPoint8",
+			"VisualPoint9",
+			"VisualPoint10",
+			"VisualPoint11",
+			"VisualPoint12",
+			"VisualPoint13",
+			"VisualPoint14",
+			"VisualPoint15",
+			"VisualPoint16"
+		};
         string triggerTag = "Trigger";
 
         void AccumulateBounds(UnityEngine.Transform parent)
@@ -438,7 +564,7 @@ public class Dynamic : MonoBehaviour
         lineObject.transform.SetParent(parent);
         lineObject.tag = "Unused";
 
-        //config
+        // Config
         LineRenderer lineRenderer = lineObject.AddComponent<LineRenderer>();
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
@@ -803,7 +929,7 @@ public class Dynamic : MonoBehaviour
         elapsedTime = 0f;                      // Reset elapsed time
         currentMovementIndex = 0;              // Start from the first movement
 
-        // active movements in sequence
+        // Active movements in sequence
         activeMovements = new List<Movement>();
         if (MovementUsage.UseMovement1) activeMovements.Add(MoveInterval1);
         if (MovementUsage.UseMovement2) activeMovements.Add(MoveInterval2);
@@ -818,7 +944,7 @@ public class Dynamic : MonoBehaviour
             return;
         }
 
-        // preview start
+        // Preview start
         isPlayingPreview = true;
         isWaitingForDelay = activeMovements[0].Delay > 0f;
         EditorApplication.update += UpdatePreviewMovement;
@@ -871,9 +997,9 @@ public class Dynamic : MonoBehaviour
         // Check if movement is complete
         if (adjustedTime >= currentMovement.MoveDuration)
         {
-            transform.position = targetPosition; // snap to the final position
+            transform.position = targetPosition; // Snap to the final position
             currentMovementIndex++;
-            elapsedTime = 0f; // reset elapsed time for the next movement
+            elapsedTime = 0f; // Reset elapsed time for the next movement
 
             // Handle next movement or finishing
             if (currentMovementIndex < activeMovements.Count)

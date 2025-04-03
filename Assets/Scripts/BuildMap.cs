@@ -664,17 +664,85 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 					}
 				}
 			}
-
+			
+			if (factorValue == "1.0000001")
+			{
+				foreach (GameObject frontimageInScene in frontimagesInScene)
+				{
+					SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
+					if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Overlay")
+					{
+						XmlElement topimgNode;
+						buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
+						node.FirstChild.AppendChild(topimgNode);
+					
+						// Apply the modification to the build-map.xml file}
+						xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					}
+				}
+			}
 			if (factorValue == "1.001")
 			{
 				foreach (GameObject frontimageInScene in frontimagesInScene)
 				{
-					XmlElement topimgNode;
-					buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
-					node.FirstChild.AppendChild(topimgNode);
-
-					// Apply the modification to the build-map.xml file}
-					xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
+					if (spriteRenderer != null && (spriteRenderer.sortingLayerName == "Frontdrop" || spriteRenderer.sortingLayerName == "Default"))
+					{
+						XmlElement topimgNode;
+						buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
+						node.FirstChild.AppendChild(topimgNode);
+					
+						// Apply the modification to the build-map.xml file}
+						xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					}
+				}
+			}
+			if (factorValue == "1.125")
+			{
+				foreach (GameObject frontimageInScene in frontimagesInScene)
+				{
+					SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
+					if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_1.125")
+					{
+						XmlElement topimgNode;
+						buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
+						node.FirstChild.AppendChild(topimgNode);
+					
+						// Apply the modification to the build-map.xml file}
+						xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					}
+				}
+			}
+			if (factorValue == "1.25")
+			{
+				foreach (GameObject frontimageInScene in frontimagesInScene)
+				{
+					SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
+					if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_1.25")
+					{
+						XmlElement topimgNode;
+						buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
+						node.FirstChild.AppendChild(topimgNode);
+					
+						// Apply the modification to the build-map.xml file}
+						xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					}
+				}
+			}
+			if (factorValue == "1.375")
+			{
+				foreach (GameObject frontimageInScene in frontimagesInScene)
+				{
+					SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
+					if (spriteRenderer != null && spriteRenderer.sortingLayerName == "Factor_1.375")
+					{
+						XmlElement topimgNode;
+						buildMap.ConvertToTopImage(node, xml, frontimageInScene, out topimgNode);
+						node.FirstChild.AppendChild(topimgNode);
+					
+						// Apply the modification to the build-map.xml file}
+						xml.Save(Application.dataPath + "/XML/dzip/level_xml/" + buildMap.mapToOverride + ".xml");
+					}
 				}
 			}
 		}
@@ -1060,6 +1128,8 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 		XmlElement matrixElement = xml.CreateElement("Matrix");
 		SpriteRenderer spriteRenderer = frontimageInScene.GetComponent<SpriteRenderer>();
 		DynamicColor dynamicColor = frontimageInScene.GetComponent<DynamicColor>();
+		DynamicSize dynamicSize = frontimageInScene.GetComponent<DynamicSize>();
+		DynamicRotate dynamicRotate = frontimageInScene.GetComponent<DynamicRotate>();
 		Color color = spriteRenderer.color;
 
 		// Check if SpriteRenderer exists
@@ -1227,6 +1297,63 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 				colorElement.SetAttribute("Frames", frames.ToString());
 
 				transformationElement.AppendChild(colorElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				ielement.AppendChild(propertiesElement);
+			}
+			// Dynamic Size
+			if (dynamicSize != null)
+			{
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Size");
+				transformationElement.SetAttribute("Name", dynamicSize.TransformationName);
+
+				int frames = dynamicSize.Size.MoveDuration > 0 ? Mathf.CeilToInt(dynamicSize.Size.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				sizeElement.SetAttribute("FinalWidth", dynamicSize.Size.FinalWidth.ToString());
+				sizeElement.SetAttribute("FinalHeight", dynamicSize.Size.FinalHeight.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				ielement.AppendChild(propertiesElement);
+			}
+			
+			// Dynamic Rotate
+			if (dynamicRotate != null)
+			{
+				int nativeWidth = spriteRenderer.sprite.texture.width;
+				int nativeHeight = spriteRenderer.sprite.texture.height;
+				float imageWidth = nativeWidth * frontimageInScene.transform.localScale.x;
+				float imageHeight = nativeHeight * frontimageInScene.transform.localScale.y;
+				string anchorValue = "0|0"; // Default Top-Left
+				
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Rotation");
+				transformationElement.SetAttribute("Name", dynamicRotate.TransformationName);
+				sizeElement.SetAttribute("Angle", (-dynamicRotate.Rotation.Angle).ToString());
+				
+				switch (dynamicRotate.Rotation.Anchor)
+				{
+					case DynamicRotate.AnchorPoint.TopRight:
+						anchorValue = $"{imageWidth}|0";
+						break;
+					case DynamicRotate.AnchorPoint.BottomLeft:
+						anchorValue = $"0|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.BottomRight:
+						anchorValue = $"{imageWidth}|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.Center:
+						anchorValue = $"{imageWidth / 2}|{imageHeight / 2}";
+						break;
+				}
+				sizeElement.SetAttribute("Anchor", anchorValue);
+				
+				int frames = dynamicRotate.Rotation.MoveDuration > 0 ? Mathf.CeilToInt(dynamicRotate.Rotation.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
 				dynamicElement.AppendChild(transformationElement);
 				propertiesElement.AppendChild(dynamicElement);
 				ielement.AppendChild(propertiesElement);
@@ -1404,6 +1531,8 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 
 		SpriteRenderer spriteRenderer = bdInScene.GetComponent<SpriteRenderer>();
 		DynamicColor dynamicColor = bdInScene.GetComponent<DynamicColor>();
+		DynamicSize dynamicSize = bdInScene.GetComponent<DynamicSize>();
+		DynamicRotate dynamicRotate = bdInScene.GetComponent<DynamicRotate>();
 		XmlElement transformationElement = xml.CreateElement("Transformation");
 
 		if (bdInScene.name == "Camera")
@@ -1606,6 +1735,63 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 				propertiesElement.AppendChild(dynamicElement);
 				BD_element.AppendChild(propertiesElement);
 			}
+			// Dynamic Size
+			if (dynamicSize != null)
+			{
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Size");
+				transformationElement.SetAttribute("Name", dynamicSize.TransformationName);
+
+				int frames = dynamicSize.Size.MoveDuration > 0 ? Mathf.CeilToInt(dynamicSize.Size.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				sizeElement.SetAttribute("FinalWidth", dynamicSize.Size.FinalWidth.ToString());
+				sizeElement.SetAttribute("FinalHeight", dynamicSize.Size.FinalHeight.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				BD_element.AppendChild(propertiesElement);
+			}
+			
+			// Dynamic Rotate
+			if (dynamicRotate != null)
+			{
+				int nativeWidth = spriteRenderer.sprite.texture.width;
+				int nativeHeight = spriteRenderer.sprite.texture.height;
+				float imageWidth = nativeWidth * bdInScene.transform.localScale.x;
+				float imageHeight = nativeHeight * bdInScene.transform.localScale.y;
+				string anchorValue = "0|0"; // Default Top-Left
+				
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Rotation");
+				transformationElement.SetAttribute("Name", dynamicRotate.TransformationName);
+				sizeElement.SetAttribute("Angle", (-dynamicRotate.Rotation.Angle).ToString());
+				
+				switch (dynamicRotate.Rotation.Anchor)
+				{
+					case DynamicRotate.AnchorPoint.TopRight:
+						anchorValue = $"{imageWidth}|0";
+						break;
+					case DynamicRotate.AnchorPoint.BottomLeft:
+						anchorValue = $"0|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.BottomRight:
+						anchorValue = $"{imageWidth}|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.Center:
+						anchorValue = $"{imageWidth / 2}|{imageHeight / 2}";
+						break;
+				}
+				sizeElement.SetAttribute("Anchor", anchorValue);
+				
+				int frames = dynamicRotate.Rotation.MoveDuration > 0 ? Mathf.CeilToInt(dynamicRotate.Rotation.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				BD_element.AppendChild(propertiesElement);
+			}
 			backdropNode = BD_element;
 		}
 	}
@@ -1631,6 +1817,8 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 
 		SpriteRenderer spriteRenderer = imageInScene.GetComponent<SpriteRenderer>();
 		DynamicColor dynamicColor = imageInScene.GetComponent<DynamicColor>();
+		DynamicSize dynamicSize = imageInScene.GetComponent<DynamicSize>();
+		DynamicRotate dynamicRotate = imageInScene.GetComponent<DynamicRotate>();
 		Color color = spriteRenderer.color;
 
 		// Check if SpriteRenderer exists
@@ -1805,6 +1993,64 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 				colorElement.SetAttribute("Frames", frames.ToString());
 
 				transformationElement.AppendChild(colorElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				ielement.AppendChild(propertiesElement);
+			}
+			
+			// Dynamic Size
+			if (dynamicSize != null)
+			{
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Size");
+				transformationElement.SetAttribute("Name", dynamicSize.TransformationName);
+
+				int frames = dynamicSize.Size.MoveDuration > 0 ? Mathf.CeilToInt(dynamicSize.Size.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				sizeElement.SetAttribute("FinalWidth", dynamicSize.Size.FinalWidth.ToString());
+				sizeElement.SetAttribute("FinalHeight", dynamicSize.Size.FinalHeight.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
+				dynamicElement.AppendChild(transformationElement);
+				propertiesElement.AppendChild(dynamicElement);
+				ielement.AppendChild(propertiesElement);
+			}
+			
+			// Dynamic Rotate
+			if (dynamicRotate != null)
+			{
+				int nativeWidth = spriteRenderer.sprite.texture.width;
+				int nativeHeight = spriteRenderer.sprite.texture.height;
+				float imageWidth = nativeWidth * imageInScene.transform.localScale.x;
+				float imageHeight = nativeHeight * imageInScene.transform.localScale.y;
+				string anchorValue = "0|0"; // Default Top-Left
+				
+				XmlElement dynamicElement = xml.CreateElement("Dynamic");
+				XmlElement sizeElement = xml.CreateElement("Rotation");
+				transformationElement.SetAttribute("Name", dynamicRotate.TransformationName);
+				sizeElement.SetAttribute("Angle", (-dynamicRotate.Rotation.Angle).ToString());
+				
+				switch (dynamicRotate.Rotation.Anchor)
+				{
+					case DynamicRotate.AnchorPoint.TopRight:
+						anchorValue = $"{imageWidth}|0";
+						break;
+					case DynamicRotate.AnchorPoint.BottomLeft:
+						anchorValue = $"0|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.BottomRight:
+						anchorValue = $"{imageWidth}|{imageHeight}";
+						break;
+					case DynamicRotate.AnchorPoint.Center:
+						anchorValue = $"{imageWidth / 2}|{imageHeight / 2}";
+						break;
+				}
+				sizeElement.SetAttribute("Anchor", anchorValue);
+				
+				int frames = dynamicRotate.Rotation.MoveDuration > 0 ? Mathf.CeilToInt(dynamicRotate.Rotation.MoveDuration * 60) : 1;
+				sizeElement.SetAttribute("Frames", frames.ToString());
+				
+				transformationElement.AppendChild(sizeElement);
 				dynamicElement.AppendChild(transformationElement);
 				propertiesElement.AppendChild(dynamicElement);
 				ielement.AppendChild(propertiesElement);
@@ -3052,26 +3298,26 @@ Lines starting with “>” mean comments. Empty lines are removed.")]
 	}
 
 	// Helper Method: Get MoveInterval by index
-	Dynamic.Movement GetMoveInterval(Dynamic dynamicComponent, int index)
+	Dynamic.MovementGroup.Movement GetMoveInterval(Dynamic dynamicComponent, int index)
 	{
 		switch (index)
 		{
-			case 1: return dynamicComponent.MoveInterval1;
-			case 2: return dynamicComponent.MoveInterval2;
-			case 3: return dynamicComponent.MoveInterval3;
-			case 4: return dynamicComponent.MoveInterval4;
-			case 5: return dynamicComponent.MoveInterval5;
-			case 6: return dynamicComponent.MoveInterval6;
-			case 7: return dynamicComponent.MoveInterval7;
-			case 8: return dynamicComponent.MoveInterval8;
-			case 9: return dynamicComponent.MoveInterval9;
-			case 10: return dynamicComponent.MoveInterval10;
-			case 11: return dynamicComponent.MoveInterval11;
-			case 12: return dynamicComponent.MoveInterval12;
-			case 13: return dynamicComponent.MoveInterval13;
-			case 14: return dynamicComponent.MoveInterval14;
-			case 15: return dynamicComponent.MoveInterval15;
-			case 16: return dynamicComponent.MoveInterval16;
+			case 1: return dynamicComponent.movementGroup.MoveInterval1;
+			case 2: return dynamicComponent.movementGroup.MoveInterval2;
+			case 3: return dynamicComponent.movementGroup.MoveInterval3;
+			case 4: return dynamicComponent.movementGroup.MoveInterval4;
+			case 5: return dynamicComponent.movementGroup.MoveInterval5;
+			case 6: return dynamicComponent.movementGroup.MoveInterval6;
+			case 7: return dynamicComponent.movementGroup.MoveInterval7;
+			case 8: return dynamicComponent.movementGroup.MoveInterval8;
+			case 9: return dynamicComponent.movementGroup.MoveInterval9;
+			case 10: return dynamicComponent.movementGroup.MoveInterval10;
+			case 11: return dynamicComponent.movementGroup.MoveInterval11;
+			case 12: return dynamicComponent.movementGroup.MoveInterval12;
+			case 13: return dynamicComponent.movementGroup.MoveInterval13;
+			case 14: return dynamicComponent.movementGroup.MoveInterval14;
+			case 15: return dynamicComponent.movementGroup.MoveInterval15;
+			case 16: return dynamicComponent.movementGroup.MoveInterval16;
 			default: return null;
 		}
 	}

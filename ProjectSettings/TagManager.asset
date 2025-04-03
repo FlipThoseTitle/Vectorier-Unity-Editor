@@ -72,3 +72,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Overlay
+    uniqueID: 3552844031
+    locked: 0
+  - name: Frontdrop
+    uniqueID: 988597777
+    locked: 0
+  - name: Factor_1.125
+    uniqueID: 789465345
+    locked: 0
+  - name: Factor_1.25
+    uniqueID: 3421924453
+    locked: 0
+  - name: Factor_1.375
+    uniqueID: 3638409867
+    locked: 0

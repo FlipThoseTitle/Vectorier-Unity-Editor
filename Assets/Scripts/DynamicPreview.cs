@@ -19,9 +19,12 @@ public class DynamicPreview : MonoBehaviour
             return;
         }
 
-        // Find all game objects with tag "Dynamic"
-        GameObject[] dynamicObjects = GameObject.FindGameObjectsWithTag("Dynamic");
-        List<Dynamic> matchedDynamics = new List<Dynamic>();
+        List<GameObject> dynamicObjects = new List<GameObject>();
+		dynamicObjects.AddRange(GameObject.FindGameObjectsWithTag("Dynamic"));
+		dynamicObjects.AddRange(GameObject.FindGameObjectsWithTag("Image"));
+		
+		List<Dynamic> matchedDynamics = new List<Dynamic>();
+		List<DynamicColor> matchedColors = new List<DynamicColor>();
 
         foreach (GameObject dynamicObject in dynamicObjects)
         {
@@ -39,9 +42,14 @@ public class DynamicPreview : MonoBehaviour
                     }
                 }
             }
+			DynamicColor dynamicColor = dynamicObject.GetComponent<DynamicColor>();
+            if (dynamicColor != null)
+            {
+                matchedColors.Add(dynamicColor);
+            }
         }
 
-        if (matchedDynamics.Count == 0)
+        if (matchedDynamics.Count == 0 && matchedColors.Count == 0)
         {
             Debug.LogWarning("No matching Dynamic components found for the specified transformation names.");
             return;
@@ -52,10 +60,16 @@ public class DynamicPreview : MonoBehaviour
         {
             dynamic.PlayPreview();
         }
+		
+		// Start color preview
+		foreach (DynamicColor colorComponent in matchedColors)
+        {
+            colorComponent.PreviewColor();
+        }
 
         // Disable GUI buttons and wait for preview to finish
         isPreviewRunning = true;
-        StartCoroutine(WaitForPreviewToEnd(matchedDynamics));
+        StartCoroutine(WaitForPreviewToEnd(matchedDynamics, matchedColors));
     }
 
     public void ResetPreview()
@@ -66,7 +80,9 @@ public class DynamicPreview : MonoBehaviour
             return;
         }
 
-        GameObject[] dynamicObjects = GameObject.FindGameObjectsWithTag("Dynamic");
+        List<GameObject> dynamicObjects = new List<GameObject>();
+		dynamicObjects.AddRange(GameObject.FindGameObjectsWithTag("Dynamic"));
+		dynamicObjects.AddRange(GameObject.FindGameObjectsWithTag("Image"));
 
         foreach (GameObject dynamicObject in dynamicObjects)
         {
@@ -83,10 +99,15 @@ public class DynamicPreview : MonoBehaviour
                     }
                 }
             }
+			DynamicColor dynamicColor = dynamicObject.GetComponent<DynamicColor>();
+            if (dynamicColor != null)
+            {
+                dynamicColor.ResetColor();
+            }
         }
     }
 
-    private System.Collections.IEnumerator WaitForPreviewToEnd(List<Dynamic> dynamics)
+    private System.Collections.IEnumerator WaitForPreviewToEnd(List<Dynamic> dynamics, List<DynamicColor> colorComponents)
     {
         bool allPreviewsFinished = false;
 
@@ -97,6 +118,14 @@ public class DynamicPreview : MonoBehaviour
             foreach (Dynamic dynamic in dynamics)
             {
                 if (dynamic.IsPreviewDisabled)
+                {
+                    allPreviewsFinished = false;
+                    break;
+                }
+            }
+			foreach (DynamicColor colorComponent in colorComponents)
+            {
+                if (colorComponent.IsTransitioning)
                 {
                     allPreviewsFinished = false;
                     break;

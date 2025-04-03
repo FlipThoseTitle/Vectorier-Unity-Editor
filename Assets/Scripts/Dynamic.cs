@@ -59,42 +59,53 @@ public class Dynamic : MonoBehaviour
 
 
     [Serializable]
-    public class Movement
-    {
-        [Tooltip("Move Duration in Second")]
-		public float MoveDuration = 1.5f;
+	public class MovementGroup
+	{
+		[Serializable]
+		public class Movement
+		{
+			[Tooltip("Move Duration in Second")]
+			public float MoveDuration = 1.5f;
 
-        [Tooltip("Move Delay in Second")]
-		public float Delay = 0f;
+			[Tooltip("Move Delay in Second")]
+			public float Delay = 0f;
 
-        [Tooltip("Easing Value on the X Axis (Divide by 2 for linear easing)")]
-		public float SupportXAxis = 0.0f;
-        [Tooltip("Easing Value on the Y Axis (Divide by 2 for linear easing)")]
-		public float SupportYAxis = 0.0f;
-        [Tooltip("How much to move on X Axis")]
-		public float MoveXAxis = 0.0f;
+			[Tooltip("Easing Value on the X Axis (Divide by 2 for linear easing)")]
+			public float SupportXAxis = 0.0f;
+			
+			[Tooltip("Easing Value on the Y Axis (Divide by 2 for linear easing)")]
+			public float SupportYAxis = 0.0f;
+			
+			[Tooltip("How much to move on X Axis")]
+			public float MoveXAxis = 0.0f;
 
-        [Tooltip("How much to move on Y Axis")]
-		public float MoveYAxis = 0.0f;
-    }
-
+			[Tooltip("How much to move on Y Axis")]
+			public float MoveYAxis = 0.0f;
+		}
+		
+		[SerializeField] public Movement MoveInterval1 = new Movement();
+		[SerializeField] public Movement MoveInterval2 = new Movement();
+		[SerializeField] public Movement MoveInterval3 = new Movement();
+		[SerializeField] public Movement MoveInterval4 = new Movement();
+		[SerializeField] public Movement MoveInterval5 = new Movement();
+		[SerializeField] public Movement MoveInterval6 = new Movement();
+		[SerializeField] public Movement MoveInterval7 = new Movement();
+		[SerializeField] public Movement MoveInterval8 = new Movement();
+		[SerializeField] public Movement MoveInterval9 = new Movement();
+		[SerializeField] public Movement MoveInterval10 = new Movement();
+		[SerializeField] public Movement MoveInterval11 = new Movement();
+		[SerializeField] public Movement MoveInterval12 = new Movement();
+		[SerializeField] public Movement MoveInterval13 = new Movement();
+		[SerializeField] public Movement MoveInterval14 = new Movement();
+		[SerializeField] public Movement MoveInterval15 = new Movement();
+		[SerializeField] public Movement MoveInterval16 = new Movement();
+		
+	}
+    	
+	
     [SerializeField] public UseCheck MovementUsage;
-    [SerializeField] public Movement MoveInterval1;
-    [SerializeField] public Movement MoveInterval2;
-    [SerializeField] public Movement MoveInterval3;
-    [SerializeField] public Movement MoveInterval4;
-    [SerializeField] public Movement MoveInterval5;
-    [SerializeField] public Movement MoveInterval6;
-    [SerializeField] public Movement MoveInterval7;
-    [SerializeField] public Movement MoveInterval8;
-    [SerializeField] public Movement MoveInterval9;
-    [SerializeField] public Movement MoveInterval10;
-    [SerializeField] public Movement MoveInterval11;
-    [SerializeField] public Movement MoveInterval12;
-    [SerializeField] public Movement MoveInterval13;
-    [SerializeField] public Movement MoveInterval14;
-    [SerializeField] public Movement MoveInterval15;
-    [SerializeField] public Movement MoveInterval16;
+	[SerializeField] public MovementGroup movementGroup;
+	
 
     private Vector2 lastSpecificTopLeft;
 
@@ -199,58 +210,58 @@ public class Dynamic : MonoBehaviour
 
     private void UpdateMoveInterval(string movePreview, Vector2 positionDifference)
     {
-        Movement targetInterval = null;
+        MovementGroup.Movement targetInterval = null;
 
         // Map MovePreview to the their MoveInterval
         switch (movePreview)
         {
             case "MovePreview1":
-                targetInterval = MoveInterval1;
+                targetInterval = movementGroup.MoveInterval1;
                 break;
             case "MovePreview2":
-                targetInterval = MoveInterval2;
+                targetInterval = movementGroup.MoveInterval2;
                 break;
             case "MovePreview3":
-                targetInterval = MoveInterval3;
+                targetInterval = movementGroup.MoveInterval3;
                 break;
             case "MovePreview4":
-                targetInterval = MoveInterval4;
+                targetInterval = movementGroup.MoveInterval4;
                 break;
             case "MovePreview5":
-                targetInterval = MoveInterval5;
+                targetInterval = movementGroup.MoveInterval5;
                 break;
             case "MovePreview6":
-                targetInterval = MoveInterval6;
+                targetInterval = movementGroup.MoveInterval6;
                 break;
             case "MovePreview7":
-                targetInterval = MoveInterval7;
+                targetInterval = movementGroup.MoveInterval7;
                 break;
             case "MovePreview8":
-                targetInterval = MoveInterval8;
+                targetInterval = movementGroup.MoveInterval8;
                 break;
             case "MovePreview9":
-                targetInterval = MoveInterval9;
+                targetInterval = movementGroup.MoveInterval9;
                 break;
             case "MovePreview10":
-                targetInterval = MoveInterval10;
+                targetInterval = movementGroup.MoveInterval10;
                 break;
             case "MovePreview11":
-                targetInterval = MoveInterval11;
+                targetInterval = movementGroup.MoveInterval11;
                 break;
             case "MovePreview12":
-                targetInterval = MoveInterval12;
+                targetInterval = movementGroup.MoveInterval12;
                 break;
             case "MovePreview13":
-                targetInterval = MoveInterval13;
+                targetInterval = movementGroup.MoveInterval13;
                 break;
             case "MovePreview14":
-                targetInterval = MoveInterval14;
+                targetInterval = movementGroup.MoveInterval14;
                 break;
             case "MovePreview15":
-                targetInterval = MoveInterval15;
+                targetInterval = movementGroup.MoveInterval15;
                 break;
             case "MovePreview16":
-                targetInterval = MoveInterval16;
+                targetInterval = movementGroup.MoveInterval16;
                 break;
             default:
                 Debug.LogWarning($"No matching MoveInterval found for {movePreview}.");
@@ -734,6 +745,7 @@ public class Dynamic : MonoBehaviour
         StartPositionMonitoring("MovePreview5");
     }
 
+
     public void ClearMovePreview()
     {
         // List of MovePreview names
@@ -780,33 +792,21 @@ public class Dynamic : MonoBehaviour
 
     public void ResetMoveIntervals()
     {
-        // Reset all MoveIntervals
-        MoveInterval1.MoveXAxis = 0f;
-        MoveInterval1.MoveYAxis = 0f;
-        MoveInterval1.SupportXAxis = 0f;
-        MoveInterval1.SupportYAxis = 0f;
+        var fields = typeof(MovementGroup).GetFields(); // Get all fields of MovementGroup
 
-        MoveInterval2.MoveXAxis = 0f;
-        MoveInterval2.MoveYAxis = 0f;
-        MoveInterval2.SupportXAxis = 0f;
-        MoveInterval2.SupportYAxis = 0f;
+		foreach (var field in fields)
+		{
+			if (field.FieldType == typeof(MovementGroup.Movement))
+			{
+				MovementGroup.Movement movement = (MovementGroup.Movement)field.GetValue(movementGroup);
+				movement.MoveXAxis = 0f;
+				movement.MoveYAxis = 0f;
+				movement.SupportXAxis = 0f;
+				movement.SupportYAxis = 0f;
+			}
+		}
 
-        MoveInterval3.MoveXAxis = 0f;
-        MoveInterval3.MoveYAxis = 0f;
-        MoveInterval3.SupportXAxis = 0f;
-        MoveInterval3.SupportYAxis = 0f;
-
-        MoveInterval4.MoveXAxis = 0f;
-        MoveInterval4.MoveYAxis = 0f;
-        MoveInterval4.SupportXAxis = 0f;
-        MoveInterval4.SupportYAxis = 0f;
-
-        MoveInterval5.MoveXAxis = 0f;
-        MoveInterval5.MoveYAxis = 0f;
-        MoveInterval5.SupportXAxis = 0f;
-        MoveInterval5.SupportYAxis = 0f;
-
-        Debug.Log("MoveIntervals Resetted.");
+		Debug.Log("MoveIntervals Resetted.");
     }
 
     public void EditMoveSetup()
@@ -864,15 +864,15 @@ public class Dynamic : MonoBehaviour
         }
     }
 
-    private Movement GetMoveInterval(int index)
+    private MovementGroup.Movement GetMoveInterval(int index)
     {
         return index switch
         {
-            1 => MoveInterval1,
-            2 => MoveInterval2,
-            3 => MoveInterval3,
-            4 => MoveInterval4,
-            5 => MoveInterval5,
+            1 => movementGroup.MoveInterval1,
+			2 => movementGroup.MoveInterval2,
+			3 => movementGroup.MoveInterval3,
+			4 => movementGroup.MoveInterval4,
+			5 => movementGroup.MoveInterval5,
             _ => null,
         };
     }
@@ -893,7 +893,7 @@ public class Dynamic : MonoBehaviour
     private bool isWaitingForDelay = false; // Track the delay state
 
     private Vector3 originalPosition;
-    private List<Movement> activeMovements;
+    private List<MovementGroup.Movement> activeMovements;
     private int currentMovementIndex = 0;
     private float elapsedTime = 0f;
 
@@ -930,12 +930,12 @@ public class Dynamic : MonoBehaviour
         currentMovementIndex = 0;              // Start from the first movement
 
         // Active movements in sequence
-        activeMovements = new List<Movement>();
-        if (MovementUsage.UseMovement1) activeMovements.Add(MoveInterval1);
-        if (MovementUsage.UseMovement2) activeMovements.Add(MoveInterval2);
-        if (MovementUsage.UseMovement3) activeMovements.Add(MoveInterval3);
-        if (MovementUsage.UseMovement4) activeMovements.Add(MoveInterval4);
-        if (MovementUsage.UseMovement5) activeMovements.Add(MoveInterval5);
+        activeMovements = new List<MovementGroup.Movement>();
+        if (MovementUsage.UseMovement1) activeMovements.Add(movementGroup.MoveInterval1);
+		if (MovementUsage.UseMovement2) activeMovements.Add(movementGroup.MoveInterval2);
+		if (MovementUsage.UseMovement3) activeMovements.Add(movementGroup.MoveInterval3);
+		if (MovementUsage.UseMovement4) activeMovements.Add(movementGroup.MoveInterval4);
+		if (MovementUsage.UseMovement5) activeMovements.Add(movementGroup.MoveInterval5);
 
         if (activeMovements.Count == 0)
         {
@@ -959,7 +959,7 @@ public class Dynamic : MonoBehaviour
             return;
         }
 
-        Movement currentMovement = activeMovements[currentMovementIndex];
+        MovementGroup.Movement currentMovement = activeMovements[currentMovementIndex];
 
         // Delay 
         if (elapsedTime < currentMovement.Delay)

@@ -1,0 +1,17 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="-1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="Flag1" Value="0"/>
+</Init>
+<Loop>
+	<Events>
+		<Enter/>
+	</Events>
+	<Actions>
+		<Choose Order="Random" Set="1">
+			<EndGame Result="Win" Model="_$Model" Frames="120"/>
+			<EndGame Result="Loss" Model="_$Model" Frames="120"/>
+		</Choose>
+	</Actions>
+</Loop>

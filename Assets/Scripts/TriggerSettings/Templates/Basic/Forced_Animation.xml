@@ -1,0 +1,10 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$AI" Value="0"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="AnimName" Value="AirBombStart"/>
+	<SetVariable Name="AnimFrame" Value="5"/>
+	<SetVariable Name="Reversed" Value="0"/>
+	<SetVariable Name="Flag1" Value="0"/>
+</Init>
+<Template Name="ForcedAnimation"/>

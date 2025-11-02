@@ -1,0 +1,16 @@
+<Init>
+	<SetVariable Name="$Active" Value="1" />
+	<SetVariable Name="$Node" Value="COM" />
+	<SetVariable Name="$AI" Value="1" />
+	<SetVariable Name="Flag1" Value="0"/>
+	<SetVariable Name="Key" Value="Up"/>
+</Init>
+<Loop>
+	<Events Template="FreqUsed.Enter"/>
+	<Conditions>
+		<Equal Value1="?getModel[_$Model].direction" Value2="1"/>
+	</Conditions> 
+	<Actions>
+		<ActionBlock Template="AI_noFollow.Only"/>
+	</Actions>
+</Loop>

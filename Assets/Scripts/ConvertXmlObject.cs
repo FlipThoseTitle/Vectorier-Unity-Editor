@@ -84,64 +84,106 @@ public class ConvertXmlObject : EditorWindow
         }
     }
 
-    private void ConvertXmlToObject(string path, string objectToConvert)
-    {
-        Debug.Log("Converting..");
+	private void ConvertXmlToObject(string path, string objectToConvert)
+	{
+		Debug.Log("Converting..");
 
-        if (string.IsNullOrEmpty(path))
-        {
-            Debug.LogError("No XML file selected!");
-            return;
-        }
+		if (string.IsNullOrEmpty(path))
+		{
+			Debug.LogError("No XML file selected!");
+			return;
+		}
 
-        XmlDocument obj = new XmlDocument();
-        try
-        {
-            obj.Load(path);
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"Failed to load XML file: {e.Message}");
-            return;
-        }
+		XmlDocument obj = new XmlDocument();
+		try
+		{
+			obj.Load(path);
+		}
+		catch (Exception e)
+		{
+			Debug.LogError($"Failed to load XML file: {e.Message}");
+			return;
+		}
 
-        bool objectFound = false;
-        int docNum = 0;
+		bool objectFound = false;
+		int docNum = 0;
 
-        while (!objectFound && docNum < 3)
-        {
-            foreach (XmlNode node in obj.DocumentElement.SelectSingleNode("/Root/Objects"))
-            {
-                if (node.Name == "Object" && node.Attributes["Name"].Value == objectToConvert)
-                {
-                    objectFound = true;
-                    Debug.Log("Object found and processed!");
-                    // Reset orderInLayer
-                    orderInLayer = 0;
+		while (!objectFound && docNum < 3)
+		{
+			foreach (XmlNode node in obj.DocumentElement.SelectSingleNode("/Root/Objects"))
+			{
+				if (node.Name == "Object" && node.Attributes["Name"].Value == objectToConvert)
+				{
+					objectFound = true;
+					Debug.Log("Object found and processed!");
+					orderInLayer = 0;
 
-                    // Extract variables and expressions from the Properties section
-                    Dictionary<string, float> variables = ExtractVariables(node);
+					// Extract variables
+					Dictionary<string, float> variables = ExtractVariables(node);
 
-                    foreach (XmlNode content in node["Content"])
-                    {
-                        StoreExtraArguments(orderInLayer, autoTag, debugObjectFound);
-                        InstantiateObject(content, obj, variables, false, null);
-                    }
-                }
-            }
-            docNum++;
-        }
+					// --- CREATE THE PARENT OBJECT ---
+					DestroyImmediate(GameObject.Find(objectToConvert));
+					actualObject = new GameObject(objectToConvert);
+					actualObject.transform.position = Vector3.zero;
+					actualObject.name = objectToConvert;
 
-        if (!objectFound)
-        {
-            Debug.LogError("Object not found in the XML files");
-        }
-        else
-        {
-            Debug.Log("Conversion done!");
-            actualObject = null;
-        }
-    }
+					// --- CHECK IF OBJECT IS DYNAMIC ---
+					XmlNode parentDynamicNode = node.SelectSingleNode("Properties/Dynamic");
+					bool isDynamic = parentDynamicNode != null;
+
+					// --- TAG LOGIC ---
+					if (isDynamic)
+					{
+						if (autoTag)
+							actualObject.tag = "Dynamic";
+						else
+							actualObject.tag = "Dynamic"; // always Dynamic even without autoTag
+					}
+					else
+					{
+						if (autoTag)
+							actualObject.tag = "Object";
+						else
+							actualObject.tag = "Object";
+					}
+
+					// --- APPLY DYNAMIC COMPONENT (if applicable) ---
+					if (isDynamic)
+					{
+						ApplyDynamicFromXml(parentDynamicNode, actualObject);
+					}
+
+					// --- CREATE CONTENT CHILDREN ---
+					XmlNode contentNode = node.SelectSingleNode("Content");
+					if (contentNode != null)
+					{
+						foreach (XmlNode content in contentNode.ChildNodes)
+						{
+							StoreExtraArguments(orderInLayer, autoTag, debugObjectFound);
+							InstantiateObject(content, obj, variables, false, null);
+						}
+					}
+
+					// --- IF NON-DYNAMIC: TAG ALL CHILDREN "Unused" ---
+					if (!isDynamic)
+					{
+						TagAllChildrenAsUnused(actualObject);
+					}
+				}
+			}
+			docNum++;
+		}
+
+		if (!objectFound)
+		{
+			Debug.LogError("Object not found in the XML files");
+		}
+		else
+		{
+			Debug.Log("Conversion done!");
+			actualObject = null;
+		}
+	}
 
     private Dictionary<string, float> ExtractVariables(XmlNode objectNode)
     {
@@ -161,256 +203,193 @@ public class ConvertXmlObject : EditorWindow
         return variables;
     }
 
-    private void InstantiateObject(XmlNode content, XmlDocument xmlDoc, Dictionary<string, float> variables, bool useParent, GameObject parent)
-    {
-        // Use class fields directly, no redeclarations
-        orderInLayer = RetrieveStoredOrderInLayer();
-        autoTag = RetrieveStoredAutoTag();
-        debugObjectFound = RetrieveStoredDebugObjectFound();
+	private void InstantiateObject(XmlNode content, XmlDocument xmlDoc, Dictionary<string, float> variables, bool useParent, GameObject parent)
+	{
+		orderInLayer = RetrieveStoredOrderInLayer();
+		autoTag = RetrieveStoredAutoTag();
+		debugObjectFound = RetrieveStoredDebugObjectFound();
 
-        
+		// Replace variable placeholders with actual values
+		ReplacePlaceholders(content, variables);
 
-        // Replace variable placeholders with actual values
-        ReplacePlaceholders(content, variables);
+		if (actualObject == null)
+		{
+			actualObject = Instantiate(new GameObject(objectToConvert), Vector3.zero, Quaternion.identity);
+			DestroyImmediate(GameObject.Find(objectToConvert));
+			actualObject.name = objectToConvert;
+		}
 
-        if (actualObject == null)
-        {
-            actualObject = Instantiate(new GameObject(objectToConvert), Vector3.zero, Quaternion.identity);
-            DestroyImmediate(GameObject.Find(objectToConvert));
-            actualObject.name = objectToConvert;
-        }
-        if (!autoTag)
-        {
-            actualObject.tag = "Object";
-        }
+		if (!autoTag)
+		{
+			actualObject.tag = "Object";
+		}
 
-        // Object
-        if (content.Name == "Object")
-        {
+		// ====================== OBJECT NODE ======================
+		if (content.Name == "Object")
+		{
+			XmlAttribute referencedObjectName = content.Attributes["Name"];
 
-            XmlAttribute referencedObjectName = content.Attributes["Name"];
-            if (referencedObjectName != null)
-            {
-                if (debugObjectFound)
-                {
-                    Debug.Log($"Found {content.Name}: {referencedObjectName.Value}");
-                }
+			if (referencedObjectName != null)
+			{
+				if (debugObjectFound)
+					Debug.Log($"Found {content.Name}: {referencedObjectName.Value}");
 
-                // Check if the object has child nodes (nested Content)
-                if (content.SelectSingleNode("Content") != null)
-                {
-                    XmlNode referencedObjectNode = FindObjectNodeByName(referencedObjectName.Value, xmlDoc);
+				// If the object has nested Content
+				if (content.SelectSingleNode("Content") != null)
+				{
+					XmlNode referencedObjectNode = FindObjectNodeByName(referencedObjectName.Value, xmlDoc);
 
-                    Vector3 position = new Vector3(
-                        float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
-                        -float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
-                        0
-                    );
+					Vector3 position = new Vector3(
+						float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
+						-float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
+						0
+					);
 
-                    GameObject nestedObject = new GameObject(referencedObjectName.Value);
-                    nestedObject.transform.position = position;
-                    if (useParent)
-                    {
-                        nestedObject.transform.SetParent(parent.transform, false);
-                    }
-                    else
-                    {
-                        nestedObject.transform.parent = actualObject.transform;
-                    }
+					GameObject nestedObject = new GameObject(referencedObjectName.Value);
+					nestedObject.transform.position = position;
+					if (useParent)
+						nestedObject.transform.SetParent(parent.transform, false);
+					else
+						nestedObject.transform.parent = actualObject.transform;
 
-                    if (referencedObjectNode != null)
-                    {
+					// 🟢 Inject Dynamic processing
+					XmlNode dynamicNode = content.SelectSingleNode("Properties/Dynamic");
+					if (dynamicNode != null)
+						ApplyDynamicFromXml(dynamicNode, nestedObject);
 
-                        // Recursively instantiate nested objects
-                        foreach (XmlNode nestedContent in referencedObjectNode.SelectNodes("Content/*"))
-                        {
-                            InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
-                        }
-                    }
+					// Recursively instantiate referenced content
+					if (referencedObjectNode != null)
+					{
+						foreach (XmlNode nestedContent in referencedObjectNode.SelectNodes("Content/*"))
+							InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
+					}
 
-                    // Recursively instantiate nested objects
-                    foreach (XmlNode nestedContent in content.SelectNodes("Content/*"))
-                    {
-                        InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
-                    }
-                }
-                else
-                {
-                    // This is a simple one-line object, find its definition in the XML and instantiate
-                    XmlNode referencedObjectNode = FindObjectNodeByName(referencedObjectName.Value, xmlDoc);
-                    if (referencedObjectNode != null)
-                    {
-                        Vector3 position = new Vector3(
-                            float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
-                            -float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
-                            0
-                        );
+					foreach (XmlNode nestedContent in content.SelectNodes("Content/*"))
+						InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
+				}
+				else
+				{
+					// Object without local content — use referenced definition
+					XmlNode referencedObjectNode = FindObjectNodeByName(referencedObjectName.Value, xmlDoc);
+					if (referencedObjectNode != null)
+					{
+						Vector3 position = new Vector3(
+							float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
+							-float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
+							0
+						);
 
-                        // Temporarily set the position of the actualObject to match the reference position
-                        GameObject nestedObject = new GameObject(referencedObjectName.Value);
-                        nestedObject.transform.position = position;
-                        if (useParent)
-                        {
-                            nestedObject.transform.SetParent(parent.transform, false);
-                        }
-                        else
-                        {
-                            nestedObject.transform.parent = actualObject.transform;
-                        }
+						GameObject nestedObject = new GameObject(referencedObjectName.Value);
+						nestedObject.transform.position = position;
+						if (useParent)
+							nestedObject.transform.SetParent(parent.transform, false);
+						else
+							nestedObject.transform.parent = actualObject.transform;
 
-                        // Recursively instantiate nested objects
-                        foreach (XmlNode nestedContent in referencedObjectNode.SelectNodes("Content/*"))
-                        {
-                            InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogError($"Referenced object '{referencedObjectName.Value}' not found in the XML file");
-                    }
-                }
-            }
-            else
-            {
-                if (debugObjectFound)
-                {
-                    Debug.Log($"Found {content.Name}");
-                }
-                Vector3 position = new Vector3(
-                        float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
-                        -float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
-                        0
-                    );
+						// 🟢 Inject Dynamic processing
+						XmlNode dynamicNode = content.SelectSingleNode("Properties/Dynamic");
+						if (dynamicNode != null)
+							ApplyDynamicFromXml(dynamicNode, nestedObject);
 
-                GameObject nestedObject = new GameObject(string.Empty);
-                nestedObject.transform.position = position;
-                if (useParent)
-                {
-                    nestedObject.transform.SetParent(parent.transform, false);
-                }
-                else
-                {
-                    nestedObject.transform.parent = actualObject.transform;
-                }
+						foreach (XmlNode nestedContent in referencedObjectNode.SelectNodes("Content/*"))
+							InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
+					}
+					else
+					{
+						Debug.LogError($"Referenced object '{referencedObjectName.Value}' not found in the XML file");
+					}
+				}
+			}
+			else
+			{
+				// Anonymous inline object
+				if (debugObjectFound)
+					Debug.Log($"Found {content.Name}");
 
-                // Recursively instantiate nested objects
-                foreach (XmlNode nestedContent in content.SelectNodes("Content/*"))
-                {
-                    InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
-                }
-            }
-            return;
-        }
+				Vector3 position = new Vector3(
+					float.Parse(content.Attributes.GetNamedItem("X").Value) / 100,
+					-float.Parse(content.Attributes.GetNamedItem("Y").Value) / 100,
+					0
+				);
 
-        if (content.Name == "Image")
-        {
-            // Images
-            HandleImageNode(content, variables);
+				GameObject nestedObject = new GameObject(string.Empty);
+				nestedObject.transform.position = position;
+				if (useParent)
+					nestedObject.transform.SetParent(parent.transform, false);
+				else
+					nestedObject.transform.parent = actualObject.transform;
 
-            if (debugObjectFound)
-            {
-                Debug.Log($"Found {content.Name}: {content.Attributes["ClassName"].Value}");
-            }
+				// 🟢 Inject Dynamic processing
+				XmlNode dynamicNode = content.SelectSingleNode("Properties/Dynamic");
+				if (dynamicNode != null)
+					ApplyDynamicFromXml(dynamicNode, nestedObject);
 
-            if (autoTag)
-            {
-                lastContent.tag = "Image";
-            }
-            else
-            {
-                lastContent.tag = "Unused";
-            }
-        }
-        else if (content.Name == "Platform")
-        {
-            // Platform
-            HandlePlatformNode(content);
+				foreach (XmlNode nestedContent in content.SelectNodes("Content/*"))
+					InstantiateObject(nestedContent, xmlDoc, variables, true, nestedObject);
+			}
+			return;
+		}
 
-            if (debugObjectFound)
-            {
-                Debug.Log($"Found {content.Name}");
-            }
+		// ====================== IMAGE NODE ======================
+		if (content.Name == "Image")
+		{
+			HandleImageNode(content, variables);
+			if (debugObjectFound)
+				Debug.Log($"Found {content.Name}: {content.Attributes["ClassName"].Value}");
 
-            if (autoTag)
-            {
-                lastContent.tag = "Platform";
-            }
-            else
-            {
-                lastContent.tag = "Unused";
-            }
-        }
-        else if (content.Name == "Trapezoid")
-        {
-            if (debugObjectFound)
-            {
-                Debug.Log($"Found {content.Name}");
-            }
-            // Trapezoid
-            HandleTrapezoidNode(content);
+			if (autoTag) lastContent.tag = "Image";
+			else lastContent.tag = "Unused";
+		}
+		else if (content.Name == "Platform")
+		{
+			HandlePlatformNode(content);
+			if (debugObjectFound)
+				Debug.Log($"Found {content.Name}");
 
-            if (autoTag)
-            {
-                lastContent.tag = "Trapezoid";
-            }
-            else
-            {
-                lastContent.tag = "Unused";
-            }
-        }
-        else if (content.Name == "Trigger")
-        {
-            if (debugObjectFound)
-            {
-                Debug.Log($"Found {content.Name}: {content.Attributes["Name"].Value}");
-            }
-            // Trigger
-            HandleTriggerNode(content);
+			if (autoTag) lastContent.tag = "Platform";
+			else lastContent.tag = "Unused";
+		}
+		else if (content.Name == "Trapezoid")
+		{
+			if (debugObjectFound)
+				Debug.Log($"Found {content.Name}");
+			HandleTrapezoidNode(content);
 
-            if (autoTag)
-            {
-                lastContent.tag = "Trigger";
-            }
-            else
-            {
-                lastContent.tag = "Unused";
-            }
-        }
-        else if (content.Name == "Area")
-        {
-            if (debugObjectFound)
-            {
-                Debug.Log($"Found {content.Name}: {content.Attributes["Name"].Value}");
-            }
-            // Area
-            HandleAreaNode(content);
+			if (autoTag) lastContent.tag = "Trapezoid";
+			else lastContent.tag = "Unused";
+		}
+		else if (content.Name == "Trigger")
+		{
+			if (debugObjectFound)
+				Debug.Log($"Found {content.Name}: {content.Attributes["Name"].Value}");
+			HandleTriggerNode(content);
 
-            if (autoTag)
-            {
-                lastContent.tag = "Area";
-            }
-            else
-            {
-                lastContent.tag = "Unused";
-            }
-        }
-        else
-        {
-            return;
-        }
+			if (autoTag) lastContent.tag = "Trigger";
+			else lastContent.tag = "Unused";
+		}
+		else if (content.Name == "Area")
+		{
+			if (debugObjectFound)
+				Debug.Log($"Found {content.Name}: {content.Attributes["Name"].Value}");
+			HandleAreaNode(content);
 
-        // Remove "(Clone)" from object's name
-        lastContent.name = lastContent.name.Replace("(Clone)", string.Empty);
-        if (useParent)
-        {
-            lastContent.transform.SetParent(parent.transform, false);
-        }
-        else
-        {
-            lastContent.transform.parent = actualObject.transform;
-        }
-        DestroyImmediate(dummyObject);
-    }
+			if (autoTag) lastContent.tag = "Area";
+			else lastContent.tag = "Unused";
+		}
+		else
+		{
+			return;
+		}
+
+		// Finalize
+		lastContent.name = lastContent.name.Replace("(Clone)", string.Empty);
+		if (useParent)
+			lastContent.transform.SetParent(parent.transform, false);
+		else
+			lastContent.transform.parent = actualObject.transform;
+
+		DestroyImmediate(dummyObject);
+	}
 
     private int storedOrderInLayer;
     private bool storedAutoTag;
@@ -542,6 +521,98 @@ public class ConvertXmlObject : EditorWindow
 
         return allSprites.FirstOrDefault(sprite => sprite.name.ToLower() == lowerCaseSpriteName);
     }
+
+
+	private void ApplyDynamicFromXml(XmlNode dynamicNode, GameObject targetObject)
+	{
+		if (dynamicNode == null || targetObject == null) return;
+
+		foreach (XmlNode transformationNode in dynamicNode.SelectNodes("Transformation"))
+		{
+			Dynamic dynamicComponent = targetObject.AddComponent<Dynamic>();
+			string nameAttr = transformationNode.Attributes["Name"]?.Value ?? "Unnamed";
+			dynamicComponent.TransformationName = nameAttr;
+
+			XmlNode moveNode = transformationNode.SelectSingleNode("Move");
+			if (moveNode == null) continue;
+
+			// Initialize MovementUsage
+			var useCheck = new Dynamic.UseCheck();
+			dynamicComponent.MovementUsage = useCheck;
+
+			int index = 1;
+			foreach (XmlNode moveInterval in moveNode.SelectNodes("MoveInterval"))
+			{
+				if (index > 16) break;
+
+				// Enable corresponding movement boolean (UseMovement1..16)
+				var useField = typeof(Dynamic.UseCheck).GetField($"UseMovement{index}");
+				if (useField != null) useField.SetValue(useCheck, true);
+
+				int framesToMove = 60;
+				int delayFrames = 0;
+				if (moveInterval.Attributes["FramesToMove"] != null)
+					int.TryParse(moveInterval.Attributes["FramesToMove"].Value, out framesToMove);
+				if (moveInterval.Attributes["Delay"] != null)
+					int.TryParse(moveInterval.Attributes["Delay"].Value, out delayFrames);
+
+				float duration = framesToMove / 60f;
+				float delay = delayFrames / 60f;
+
+				XmlNode supportPoint = moveInterval.SelectSingleNode("Point[@Name='Support']");
+				XmlNode finishPoint = moveInterval.SelectSingleNode("Point[@Name='Finish']");
+
+				float supportX = 0f;
+				float supportY = 0f;
+				float moveX = 0f;
+				float moveY = 0f;
+
+				if (supportPoint != null)
+				{
+					float.TryParse(supportPoint.Attributes["X"]?.Value ?? "0", out supportX);
+					float.TryParse(supportPoint.Attributes["Y"]?.Value ?? "0", out supportY);
+				}
+				if (finishPoint != null)
+				{
+					float.TryParse(finishPoint.Attributes["X"]?.Value ?? "0", out moveX);
+					float.TryParse(finishPoint.Attributes["Y"]?.Value ?? "0", out moveY);
+				}
+
+				// Convert from XML units (which your project uses *100 and inverted Y)
+				supportX = supportX / 100f;
+				supportY = -supportY / 100f;
+				moveX = moveX / 100f;
+				moveY = -moveY / 100f;
+
+				Dynamic.Movement movement = new Dynamic.Movement
+				{
+					MoveDuration = duration,
+					Delay = delay,
+					SupportXAxis = supportX,
+					SupportYAxis = supportY,
+					MoveXAxis = moveX,
+					MoveYAxis = moveY
+				};
+
+				var moveField = typeof(Dynamic).GetField($"MoveInterval{index}");
+				if (moveField != null) moveField.SetValue(dynamicComponent, movement);
+
+				index++;
+			}
+
+			if (debugObjectFound)
+				Debug.Log($"Dynamic added: {dynamicComponent.TransformationName} ({index - 1} intervals) on {targetObject.name}");
+		}
+	}
+
+	private void TagAllChildrenAsUnused(GameObject parent)
+	{
+		foreach (Transform child in parent.GetComponentsInChildren<Transform>(true))
+		{
+			if (child == parent.transform) continue; // skip the root
+			child.gameObject.tag = "Unused";
+		}
+	}
 
     // -=-=-=- //
 
@@ -726,12 +797,49 @@ public class ConvertXmlObject : EditorWindow
         TriggerSettings triggerSettings = lastContent.AddComponent<TriggerSettings>();
 
         // Copy the content of the <Trigger> node to the TriggerSettings component
-        XmlNode contentNode = content.SelectSingleNode("Content");
-        if (contentNode != null)
-        {
-            triggerSettings.Content = contentNode.InnerXml;
-        }
+		XmlNode contentNode = content.SelectSingleNode("Content");
+		if (contentNode != null)
+		{
+			string innerXml = contentNode.InnerXml;
+			triggerSettings.Content = BeautifyXmlContent(innerXml);
+		}
+
     }
+
+	private static string BeautifyXmlContent(string rawXml)
+	{
+		if (string.IsNullOrWhiteSpace(rawXml)) return rawXml;
+
+		try
+		{
+			var xmlDoc = new XmlDocument();
+			xmlDoc.LoadXml($"<Root>{rawXml}</Root>");
+
+			var settings = new XmlWriterSettings
+			{
+				Indent = true,
+				IndentChars = "\t",
+				NewLineHandling = NewLineHandling.None,
+				OmitXmlDeclaration = true,
+				ConformanceLevel = ConformanceLevel.Fragment
+			};
+
+			using (var sw = new StringWriter())
+			using (var xw = XmlWriter.Create(sw, settings))
+			{
+				foreach (XmlNode node in xmlDoc.DocumentElement.ChildNodes)
+					node.WriteTo(xw);
+
+				xw.Flush();
+				return sw.ToString().Replace(" />", "/>");
+			}
+		}
+		catch
+		{
+			// Fail gracefully if XML is malformed
+			return rawXml;
+		}
+	}
 
     // Area
     void HandleAreaNode(XmlNode content)

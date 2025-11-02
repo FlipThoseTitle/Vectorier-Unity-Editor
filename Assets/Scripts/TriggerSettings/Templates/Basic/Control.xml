@@ -1,0 +1,7 @@
+<Init>
+	<SetVariable Name="$Active" Value="1"/>
+	<SetVariable Name="$Node" Value="COM"/>
+	<SetVariable Name="$AI" Value="1"/>
+	<SetVariable Name="Flag1" Value="0"/>
+</Init>
+<Template Name="Control"/>

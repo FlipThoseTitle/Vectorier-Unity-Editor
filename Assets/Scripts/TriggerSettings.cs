@@ -33,7 +33,7 @@ public class TriggerSettingsEditor : Editor
 
 	private void OnEnable()
 	{
-		templatesDirectory = Path.Combine(Application.dataPath, "Scripts", "Unity", "Components", "TriggerSettings", "Templates");
+		templatesDirectory = Path.Combine(Application.dataPath, "Scripts", "TriggerSettings", "Templates");
 		LoadTemplatePaths();
 		EditorApplication.update += OnEditorUpdate;
 	}
@@ -290,4 +290,5 @@ public class TriggerSettingsEditor : Editor
 			return rawXml;
 		}
 	}
+
 }

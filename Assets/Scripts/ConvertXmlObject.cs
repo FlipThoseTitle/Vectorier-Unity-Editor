@@ -584,7 +584,7 @@ public class ConvertXmlObject : EditorWindow
 				moveX = moveX / 100f;
 				moveY = -moveY / 100f;
 
-				Dynamic.Movement movement = new Dynamic.Movement
+				Dynamic.MovementGroup.Movement movement = new Dynamic.MovementGroup.Movement
 				{
 					MoveDuration = duration,
 					Delay = delay,
@@ -935,3 +935,4 @@ public class ConvertXmlObject : EditorWindow
     protected Matrix4x4 _Transformation = Matrix4x4.identity;
     protected GameObject _SupportUnityObject;
 }
+
